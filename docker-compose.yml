@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  app:
+    build: .
+    networks:
+      node_app_net:
+        ipv4_address: 172.25.0.10
+    volumes:
+      - .:/usr/src/app
+networks:
+  node_app_net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.25.0.0/24
