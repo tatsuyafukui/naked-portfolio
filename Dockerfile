@@ -11,6 +11,6 @@ RUN yarn install && rm -rf .npm/
 VOLUME ["/usr/src/app"]
 
 RUN rm -rf .config/
-
+EXPOSE 9000
 EXPOSE 8000
 CMD ["npm", "run", "develop"]
