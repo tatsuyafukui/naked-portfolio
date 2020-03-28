@@ -1,0 +1,23 @@
+@import "../../properties.css";
+
+.root {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: right;
+    align-items: center;
+}
+
+.imageBlock {
+    width: 50%;
+}
+
+.imageBlock img {
+    margin-bottom: 0;
+}
+
+.descriptionBlock {
+    width: 50%;
+    padding-top: 40px;
+}

@@ -1,6 +1,6 @@
 ---
-title: "Sweet Pandas Eating Sweets"
-date: "2017-06-1"
+title: 'Sweet Pandas Eating Sweets'
+date: '2017-06-1'
 ---
 
 Pandas are really sweet.

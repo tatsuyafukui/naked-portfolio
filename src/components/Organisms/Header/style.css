@@ -1,0 +1,28 @@
+.header {
+    background-color: #FFF;
+    height: 48px;
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerLogoContainer {
+    height: 48px;
+    width: 48px;
+    background-color: #2b546a;
+}
+
+.headerMenuContainer {
+    display: flex;
+}
+
+.headerMenu {
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+}
+
+.headerMenu a {
+    color: #2b546a;
+    text-decoration: none;
+}

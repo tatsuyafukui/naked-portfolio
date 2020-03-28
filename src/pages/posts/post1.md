@@ -1,6 +1,6 @@
 ---
-title: "posts 1"
-date: "2020-06-13"
+title: 'posts 1'
+date: '2020-06-13'
 ---
 
 yesyes

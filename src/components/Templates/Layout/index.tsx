@@ -1,9 +1,10 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react';
+import PropTypes from 'prop-types';
+import { useStaticQuery, graphql } from 'gatsby';
 
-import Header from "../../Organisms/Header"
-import "./layout.css"
+import Header from '../../Organisms/Header';
+import './layout.css';
+
 
 const Index = ({ children }: any) => {
   const data = useStaticQuery(graphql`
@@ -14,13 +15,11 @@ const Index = ({ children }: any) => {
         }
       }
     }
-  `)
-
-
+  `);
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header />
       <div
         style={{
           margin: `0 auto`,
@@ -36,11 +35,11 @@ const Index = ({ children }: any) => {
         </footer>
       </div>
     </>
-  )
-}
+  );
+};
 
 Index.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Index
+export default Index;

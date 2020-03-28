@@ -1,0 +1,66 @@
+@import "../../properties.css";
+
+.xxs {
+    font-size: var(--font-size-xxs);
+}
+
+.xs {
+    font-size: var(--font-size-xs);
+}
+
+.s {
+    font-size: var(--font-size-s);
+
+}
+
+.m {
+    font-size: var(--font-size-m);
+}
+
+.l {
+    font-size: var(--font-size-l);
+}
+
+.xl {
+    font-size: var(--font-size-xl);
+}
+
+.xxl {
+    font-size: var(--font-size-xxl);
+}
+
+.xxxl {
+    font-size: var(--font-size-xxxl);
+}
+
+.xxxxl {
+    font-size: var(--font-size-xxxxl);
+}
+
+.base {
+    color: var(--color-text);
+}
+
+.white {
+    color: var(--color-white);
+}
+
+.success {
+    color: var(--color-success);
+}
+
+.info {
+    color: var(--color-info);
+}
+
+.primary {
+    color: var(--color-primary);
+}
+
+.warning {
+    color: var(--color-warning);
+}
+
+.danger {
+    color: var(--color-danger);
+}

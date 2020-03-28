@@ -1,0 +1,12 @@
+@import "../../properties.css";
+
+.root {
+    background: none;
+    background-color: var(--color-primary);
+    color: var(--color-base);
+    cursor: pointer;
+    border: none;
+    padding: 16px 24px;
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-default);
+}

@@ -1,0 +1,27 @@
+@import "../../properties.css";
+
+.root {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+
+.imageBlock {
+    width: 50%;
+}
+
+.imageBlock img {
+    margin-bottom: 0;
+}
+
+.descriptionBlock {
+    width: 50%;
+}
