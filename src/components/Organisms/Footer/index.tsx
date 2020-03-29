@@ -14,21 +14,21 @@ const Footer = () => (
 						<div className={style.menuBlock}>
 
 								<ul className={style.menuContainer}>
-												<li><strong>progate</strong></li>
+												<li><strong>サービス</strong></li>
 												<li>progate</li>
 												<li>progate</li>
 											 <li>progate</li>
 								</ul>
 
 								<ul className={style.menuContainer}>
-										<li><strong>progate</strong></li>
+										<li><strong>サポート</strong></li>
 										<li>progate</li>
 										<li>progate</li>
 										<li>progate</li>
 								</ul>
 
 								<ul className={style.menuContainer}>
-										<li><strong>progate</strong></li>
+										<li><strong>ビジネス</strong></li>
 										<li>progate</li>
 										<li>progate</li>
 										<li>progate</li>

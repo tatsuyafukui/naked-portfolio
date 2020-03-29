@@ -42,3 +42,36 @@
 .menuItem {
 
 }
+
+
+@media (max-width: 768px) {
+    .root {
+    }
+
+    .container {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .menuBlock {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .logoBlock {
+        margin-right: 0;
+    }
+
+    .menuContainer {
+        margin: 20px 0;
+    }
+
+    .menuContainer li {
+        margin-bottom: 8px;
+    }
+    .menuContainer li strong{
+        font-weight: var(--font-weight-bold);
+    }
+}
