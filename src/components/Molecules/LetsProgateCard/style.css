@@ -1,0 +1,32 @@
+.root {
+    display: flex;
+    align-items: center;
+}
+
+.descriptionBlock {
+    width: 50%;
+}
+
+.imageBlock {
+    width: 50%;
+}
+
+
+@media (max-width: 768px) {
+    .root {
+        text-align: center;
+        flex-direction: column-reverse;
+        padding: 20px 40px!important;
+    }
+
+    .descriptionBlock {
+        width: 100%;
+    }
+    .descriptionBlock button{
+        width: 100%;
+    }
+
+    .imageBlock {
+        width:70%;
+    }
+}

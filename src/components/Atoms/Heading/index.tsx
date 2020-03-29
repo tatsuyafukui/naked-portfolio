@@ -16,7 +16,6 @@ const Heading: React.FC<IHeading> = props => {
 
 Heading.defaultProps = {
   level: Level.h2,
-  visualLevel: Level.h2,
 };
 
 export default Heading;
@@ -24,10 +23,11 @@ export default Heading;
 const HeadingPresenter: React.FC<IHeading> = ({
   level: Tag,
   visualLevel,
+  className,
   ...props
 }) => (
   <Tag
-    className={[style.h, style[visualLevel], props.className].join(' ')}
+    className={[style.h, style[visualLevel], className].join(' ')}
     {...props}
   />
 );
@@ -38,5 +38,6 @@ const HeadingContainer: React.FC<IHeading> = ({
   presenter,
   ...props
 }) => {
+  visualLevel = visualLevel || level;
   return presenter({ level, visualLevel, ...props });
 };

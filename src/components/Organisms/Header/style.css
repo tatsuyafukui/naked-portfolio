@@ -1,15 +1,11 @@
+@import "../../properties.css";
+
 .header {
-    background-color: #FFF;
+    background-color: var(--color-white);
     height: 48px;
-    border-bottom: 1px solid #333;
     display: flex;
     justify-content: space-between;
-}
-
-.headerLogoContainer {
-    height: 48px;
-    width: 48px;
-    background-color: #2b546a;
+    box-shadow: 0 1px 3px var(--color-shadow);
 }
 
 .headerMenuContainer {
@@ -17,12 +13,18 @@
 }
 
 .headerMenu {
-    padding: 0 8px;
+    padding: 0 16px;
     display: flex;
     align-items: center;
+    transition: border-bottom var(--hover-animation);
+}
+
+.headerMenu:hover {
+    border-bottom: var(--border);
 }
 
 .headerMenu a {
     color: #2b546a;
     text-decoration: none;
+    font-size: var(--font-size-s);
 }

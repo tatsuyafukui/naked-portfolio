@@ -21,8 +21,8 @@ module.exports = {
         name: `Progate Road Map`,
         short_name: `Road map`,
         start_url: `/`,
-        background_color: `#30C8D6`,
-        theme_color: `#30C8D6`,
+        background_color: `#fff`,
+        theme_color: `#fff`,
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: `standalone`,

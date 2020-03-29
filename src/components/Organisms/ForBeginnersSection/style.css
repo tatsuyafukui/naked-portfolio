@@ -1,0 +1,47 @@
+.root {
+    margin: 40px 0;
+    margin-bottom: 80px;
+}
+
+.recommendBlock {
+    margin-bottom: 40px;
+}
+
+
+.recommendBlock ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recommendBlock li {
+    margin-bottom: 16px;
+    text-align: center;
+    padding: 8px;
+}
+
+.recommendBlock p {
+}
+
+
+.recommendBlock img {
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .root {
+        text-align: center;
+    }
+    .recommendBlock {
+        margin-bottom: 40px;
+    }
+
+    .recommendBlock ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .recommendBlock img {
+        margin-right: 0;
+    }
+}

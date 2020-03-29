@@ -9,4 +9,10 @@
     padding: 16px 24px;
     font-size: var(--font-size-m);
     font-weight: var(--font-weight-default);
+    border-radius: var(--radius);
+    transition: background-color var(--hover-animation);
+}
+
+.root:hover {
+    background-color: var(--color-primary-hover);
 }

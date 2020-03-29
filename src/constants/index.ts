@@ -20,7 +20,7 @@ export enum FontSize {
   xxxxl = 'xxxxl',
 }
 
-export enum Tag {
+export enum TagType {
   p = 'p',
   span = 'span',
   div = 'div',
@@ -39,4 +39,20 @@ export enum ImageName {
   rocketImage = 'rocketImage',
   successImage = 'successImage',
   milestoneImage = 'milestoneImage',
+  goalImage = 'goalImage',
+  selectMilestoneImage = 'selectMilestoneImage',
+  aroundImage = 'aroundImage',
+  deepLearnImage = 'deepLearnImage',
+  outputImage = 'outputImage',
+  whyImage = 'whyImage',
+  pathNodeImage = 'pathNodeImage',
+}
+
+export enum IconName {
+  goal = 'goal',
+  light = 'light',
+  stairs = 'stairs',
+  test = 'test',
+  leftTriangle = 'leftTriangle',
+  rightTriangle = 'rightTriangle',
 }

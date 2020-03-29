@@ -16,7 +16,7 @@ import Img from 'gatsby-image';
 const Logo = () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "symbol-white.png" }) {
+      file(relativePath: { eq: "logo/symbol-white.png" }) {
         childImageSharp {
           # Specify a fixed image and fragment.
           # The default width is 400 pixels

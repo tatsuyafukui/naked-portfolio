@@ -28,13 +28,39 @@ const Image: React.FC<IProps> = props => {
       }
     }
     query {
-      rocketImage: file(relativePath: { eq: "rocket.png" }) {
+      # top page image
+      rocketImage: file(relativePath: { eq: "top/rocket.png" }) {
         ...servicesImage
       }
-      successImage: file(relativePath: { eq: "success.png" }) {
+      successImage: file(relativePath: { eq: "top/success.png" }) {
         ...servicesImage
       }
-      milestoneImage: file(relativePath: { eq: "milestone-dummy.png" }) {
+      milestoneImage: file(relativePath: { eq: "top/milestone-dummy.png" }) {
+        ...servicesImage
+      }
+      pathNodeImage: file(relativePath: { eq: "top/path-nodejs.png" }) {
+        ...servicesImage
+      }
+
+      # about page image
+      goalImage: file(relativePath: { eq: "about/goal-image.png" }) {
+        ...servicesImage
+      }
+      selectMilestoneImage: file(
+        relativePath: { eq: "about/select-milestone.png" }
+      ) {
+        ...servicesImage
+      }
+      aroundImage: file(relativePath: { eq: "about/around.png" }) {
+        ...servicesImage
+      }
+      deepLearnImage: file(relativePath: { eq: "about/deep-learn.png" }) {
+        ...servicesImage
+      }
+      outputImage: file(relativePath: { eq: "about/output.png" }) {
+        ...servicesImage
+      }
+      whyImage: file(relativePath: { eq: "about/why.png" }) {
         ...servicesImage
       }
     }

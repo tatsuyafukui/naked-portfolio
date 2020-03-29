@@ -33,7 +33,8 @@
     --color-secondary: none;
     --color-accent: none;
     --color-selected: var(--color-light-aqua);
-
+    --color-shadow: rgba(160,166,179,0.3);
+    --color-shadow-hover: rgba(160,166,179,0.4);
 
     /* **** メディア層 **** */
     /* 色：媒体固有で使用する色 */
@@ -66,9 +67,15 @@
     --font-weight-default: 500;
     --font-weight-bold: 700;
 
+    /* 文字：太さ（媒体に最適化した文字の太さ） */
+    --line-height-heading: 1.1;
+    --line-height-default: 1.2;
+    --line-height-paragraph: 2;
+
 
     /* 余白（媒体に最適化した余白単位） */
     --space: .5rem;
+    --letter-space: 1rem;
 
     /* 枠に関する要素（媒体に最適化した枠デザイン要素） */
     --line-width: 1px;

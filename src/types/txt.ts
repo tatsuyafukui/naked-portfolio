@@ -1,7 +1,8 @@
 import React from 'react';
-import { FontSize, Tag } from '../constants';
+import { FontSize, TagType } from '../constants';
 
-export interface ITxt extends React.AllHTMLAttributes<HTMLElement> {
+export interface ITxt extends React.HTMLAttributes<HTMLElement> {
   fontSize?: FontSize;
-  tag?: Tag;
+  tag?: TagType;
 }
+//IntrinsicAttribute

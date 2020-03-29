@@ -1,17 +1,18 @@
 import React from 'react';
 import style from './style.css';
-import { Role, FontSize, Tag } from '../../../constants';
+import { Role, FontSize, TagType } from '../../../constants';
 import { ITxt } from '../../../types/txt';
 
 const txtFactory = (role: Role): React.FC<ITxt> => ({
-  tag: Tag = 'p',
+  tag: Tag = TagType.p,
   fontSize = FontSize.m,
+  className,
   ...props
 }) => {
   return (
     <Tag
-      className={[style[role], style[fontSize], props.className].join(' ')}
       {...props}
+      className={[style[role], style[fontSize], className].join(' ')}
     />
   );
 };

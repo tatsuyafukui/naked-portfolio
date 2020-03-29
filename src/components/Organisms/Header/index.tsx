@@ -19,7 +19,7 @@ const Header = () => (
         <Link to={'/'}>登録</Link>
       </li>
       <li className={style.headerMenu}>
-        <Link to={'/'}>使い方</Link>
+        <Link to={'/about'}>使い方</Link>
       </li>
       <li className={style.headerMenu}>
         <Link to={'/'}>目標確認</Link>
