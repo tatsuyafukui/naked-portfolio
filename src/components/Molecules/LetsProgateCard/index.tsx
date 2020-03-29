@@ -1,4 +1,4 @@
-import React, {HTMLAttributes} from 'react';
+import React from 'react';
 import style from './style.css';
 import Card from "../../Atoms/Card";
 import Heading from "../../Atoms/Heading";
@@ -9,7 +9,7 @@ import {ISection} from "../../../types/section";
 
 const LetsProgateCard: React.FC<ISection> = props => {
 		return (
-				<Card {...props} className={[style.root, props.className].join(' ')}>
+				<Card className={[style.root].join(' ')}>
 						<div className={style.descriptionBlock}>
 								<Heading>{props.heading}</Heading>
 								<Txt>

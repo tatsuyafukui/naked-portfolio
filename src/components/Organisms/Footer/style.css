@@ -1,0 +1,44 @@
+@import "../../properties.css";
+
+.root {
+    width: 100%;
+    color: var(--color-navy);
+    background-color: var(--color-white);
+    margin: 0;
+    padding: 50px 0;
+    border-top: var(--border);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 1.0875rem 1.45rem;
+    display: flex;
+}
+
+.logoBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 96px;
+    margin-right: 50px;
+}
+
+.menuBlock {
+    display: flex;
+}
+
+.menuContainer {
+    margin: 0 40px;
+}
+
+.menuContainer li {
+    margin-bottom: 8px;
+}
+.menuContainer li strong{
+    font-weight: var(--font-weight-bold);
+}
+
+.menuItem {
+
+}

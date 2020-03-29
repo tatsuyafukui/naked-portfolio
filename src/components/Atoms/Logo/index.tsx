@@ -1,6 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
+import {LogoName} from "../../../constants";
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -13,23 +14,34 @@ import Img from 'gatsby-image';
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-const Logo = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      file(relativePath: { eq: "logo/symbol-white.png" }) {
-        childImageSharp {
-          # Specify a fixed image and fragment.
-          # The default width is 400 pixels
-          fixed(height: 48) {
-            ...GatsbyImageSharpFixed
-          }
+interface IProps {
+  logoName: LogoName;
+}
+
+const Logo: React.FC<IProps> = (props) => {
+  const data = useStaticQuery(graphql`    
+    fragment servicesLogo on File {
+      childImageSharp {
+        fixed(height: 48) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
+    query {
+      headerLogo: file(relativePath: { eq: "logo/symbol-white.png" }) {
+        ...servicesLogo
+      }
+      inlineLogo: file(relativePath: { eq: "logo/logo-inline.png" }) {
+        ...servicesLogo
+      }
+      whiteLogo: file(relativePath: { eq: "logo/logo-white.png" }) {
+        ...servicesLogo
+      }
+    }
   `);
-
+  console.log(data)
   return (
-    <Img fixed={data.file.childImageSharp.fixed} alt={'Progate Roadmap Logo'} />
+    <Img fixed={data[props.logoName].childImageSharp.fixed} alt={'Progate Roadmap Logo'} />
   );
 };
 

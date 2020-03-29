@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from '../../Organisms/Header';
 import './layout.css';
+import Footer from "../../Organisms/Footer";
 
 const Index = ({ children }: any) => {
   const data = useStaticQuery(graphql`
@@ -27,12 +28,8 @@ const Index = ({ children }: any) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
+      <Footer/>
     </>
   );
 };

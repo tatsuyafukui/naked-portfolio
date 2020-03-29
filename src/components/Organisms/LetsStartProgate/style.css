@@ -33,24 +33,33 @@
     scroll-snap-align: start;
 }
 
+.link {
+    text-decoration: none;
+}
+
 .btn {
     position: absolute;
     width: 40px;
     height: 38px;
-    top: 50%;
+    top: 40%;
     opacity: 0.79;
     cursor: pointer;
     z-index: 1;
     color: var(--color-white);
     text-align: center;
+    transition: all var(--hover-animation);
+}
+
+.btn:hover {
+    opacity: 1;
 }
 
 .prevButton {
-    left: 16px;
+    left: 8px;
 }
 
 .nextButton {
-    right: 16px;
+    right: 8px;
 }
 
 @media (max-width: 768px) {

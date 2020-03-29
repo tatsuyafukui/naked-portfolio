@@ -29,7 +29,7 @@ const Icon: React.FC<IProps> = props => {
       test: file(relativePath: { eq: "icon/test.png" }) {
         ...servicesIcon
       }
-      leftTriangle: file(relativePath: { eq: "icon/left-triangle.png" }) {
+      left: file(relativePath: { eq: "icon/left.png" }) {
         ...servicesIcon
       }
       rightTriangle: file(relativePath: { eq: "icon/right-triangle.png" }) {

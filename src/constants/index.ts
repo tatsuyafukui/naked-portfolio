@@ -53,6 +53,12 @@ export enum IconName {
   light = 'light',
   stairs = 'stairs',
   test = 'test',
-  leftTriangle = 'leftTriangle',
+  left = 'left',
   rightTriangle = 'rightTriangle',
+}
+
+export enum LogoName {
+  headerLogo = 'headerLogo',
+  inlineLogo = 'inlineLogo',
+  whiteLogo = 'whiteLogo',
 }

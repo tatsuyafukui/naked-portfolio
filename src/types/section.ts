@@ -5,4 +5,5 @@ export interface ISection extends React.HTMLAttributes<HTMLElement> {
   heading: string;
   content: string;
   image?: ImageName;
+  link?: string;
 }

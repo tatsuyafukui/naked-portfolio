@@ -15,26 +15,25 @@ const LetsStartProgate: React.FC = props => {
 						heading: 'Ruby on Railsパス',
 						content: '初心者からRuby on RailsでWebアプリケーションを創れるようになるまでの道のり(path)をサポートします。一緒にプログラミングをはじめませんか？',
 						image: ImageName.milestoneImage,
+						link: 'https://prog-8.com/paths/rails',
 				},
 				{
 						id: 'slide1',
 						heading: 'Node.jsパス',
 						content: '初心者からRuby on RailsでWebアプリケーションを創れるようになるまでの道のり(path)をサポートします。一緒にプログラミングをはじめませんか？',
 						image: ImageName.pathNodeImage,
+						link: 'https://prog-8.com/languages/nodejs',
 				},
 				{
 						id: 'slide2',
 						heading: 'HTML&CSSコース',
 						content: '初心者からRuby on RailsでWebアプリケーションを創れるようになるまでの道のり(path)をサポートします。一緒にプログラミングをはじめませんか？',
 						image: ImageName.milestoneImage,
+						link: 'https://prog-8.com/languages/html',
 				},
-		]
+		];
 
 		const [slideValue, setSlideValue] = useState(0);
-
-		const clickHandler = (event: MouseEvent<HTMLButtonElement>) => {
-
-		};
 
 		const clickNextHandler = (event: MouseEvent<HTMLAnchorElement>) => {
 				const nextIndex = slideValue+1;
@@ -61,17 +60,17 @@ const LetsStartProgate: React.FC = props => {
 								{slideValue > 0 ? (
 										<Link
 												className={[style.btn, style.prevButton].join(' ')}
+												to={`/#slide${slideValue-1}`}
 												onClick={clickPrevHandler}
-												to={`#slide${slideValue-1}`}
 										>
-												<Icon iconName={IconName.rightTriangle} />
+												<Icon iconName={IconName.left} />
 										</Link>
 								): null}
 								{slideValue < list.length-1 ? (
 										<Link
 												className={[style.btn, style.nextButton].join(' ')}
+												to={`/#slide${slideValue+1}`}
 												onClick={clickNextHandler}
-												to={`#slide${slideValue+1}`}
 										>
 												<Icon iconName={IconName.rightTriangle} />
 										</Link>
@@ -81,14 +80,19 @@ const LetsStartProgate: React.FC = props => {
 								<div className={style.slider}>
 										{list.map(item => {
 												return (
-														<LetsProgateCard
-																key={item.id}
+														<a
 																id={item.id}
-																className={style.slide}
-																heading={item.heading}
-																content={item.content}
-																image={item.image}
-														/>
+																key={item.id}
+																href={item.link}
+																target={'_blank'}
+																className={`${style.slide} ${style.link}`}
+														>
+																<LetsProgateCard
+																		heading={item.heading}
+																		content={item.content}
+																		image={item.image}
+																/>
+														</a>
 												);
 										})}
 								</div>

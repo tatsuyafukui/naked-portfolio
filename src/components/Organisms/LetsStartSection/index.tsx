@@ -4,6 +4,7 @@ import Heading from '../../Atoms/Heading';
 import { Level } from '../../../constants';
 import Txt from '../../Atoms/Txt';
 import Button from '../../Atoms/Button';
+import {Link} from "gatsby";
 
 const LsetsStartSection: React.FC = props => {
   return (
@@ -19,7 +20,7 @@ const LsetsStartSection: React.FC = props => {
         <br />
       </Txt>
       <div className={style.buttonContainer}>
-        <Button>学習をはじめる</Button>
+        <Link to={'/'}><Button>学習をはじめる</Button></Link>
       </div>
     </section>
   );
