@@ -28,7 +28,7 @@
     flex-shrink: 0;
 }
 
-.slider > div {
+.slider > a {
     /* CURRENT way. */
     scroll-snap-align: start;
 }
