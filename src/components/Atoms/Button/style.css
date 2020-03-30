@@ -16,3 +16,9 @@
 .root:hover {
     background-color: var(--color-primary-hover);
 }
+
+@media (max-width: 768px) {
+    .root {
+        width: 100%;
+    }
+}

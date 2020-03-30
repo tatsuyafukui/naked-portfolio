@@ -1,25 +1,5 @@
 @import "../../properties.css";
 
-.root {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.imageBlock {
-    width: 50%;
-    padding: 40px;
-}
-
-.imageBlock img {
-    margin-bottom: 0;
-}
-
-.descriptionBlock {
-    width: 50%;
-    padding-top: 40px;
-}
-
 .buttonContainer {
     display: flex;
 }
@@ -29,20 +9,6 @@
 }
 
 @media (max-width: 768px) {
-    .root {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .imageBlock {
-        width: 100%;
-    }
-
-    .descriptionBlock {
-        width: 100%;
-        padding-top: 0;
-    }
-
     .buttonContainer {
         flex-direction: column;
         justify-content: center;
@@ -51,6 +17,5 @@
     .buttonContainer button {
         margin: 0;
         margin-bottom: 8px;
-        width: 100%;
     }
 }

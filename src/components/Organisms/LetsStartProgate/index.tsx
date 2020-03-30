@@ -6,6 +6,7 @@ import Txt from "../../Atoms/Txt";
 import LetsProgateCard from "../../Molecules/LetsProgateCard";
 import {Link} from "gatsby";
 import Icon from "../../Atoms/Icon";
+import Section from "../../Atoms/Section";
 
 const LetsStartProgate: React.FC = props => {
 
@@ -46,7 +47,7 @@ const LetsStartProgate: React.FC = props => {
 		};
 
 		return (
-				<section className={style.root}>
+				<Section>
 						<div>
 								<Heading level={Level.h1}>とりあえずProgateで始めてみる</Heading>
 								<Txt>
@@ -97,11 +98,7 @@ const LetsStartProgate: React.FC = props => {
 										})}
 								</div>
 						</div>
-						<br/>
-						<br/>
-
-
-				</section>
+				</Section>
 		);
 };
 

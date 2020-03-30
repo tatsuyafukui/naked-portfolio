@@ -7,14 +7,15 @@ import style from './style.css';
 import Button from '../../Atoms/Button';
 import { Link } from 'gatsby';
 import { ISection } from '../../../types/section';
+import {InlineSection} from "../../Atoms/Section";
 
 const CreativeSection: React.FC<ISection> = props => {
   return (
-    <section className={`${style.root}`}>
-      <div className={style.imageBlock}>
+    <InlineSection>
+      <div style={{padding: '40px'}}>
         <Image imageName={ImageName.successImage} />
       </div>
-      <div className={style.descriptionBlock}>
+      <div>
         <div>
           <Heading>{props.heading}</Heading>
           <Txt>{props.content}</Txt>
@@ -28,7 +29,7 @@ const CreativeSection: React.FC<ISection> = props => {
           </div>
         </div>
       </div>
-    </section>
+    </InlineSection>
   );
 };
 

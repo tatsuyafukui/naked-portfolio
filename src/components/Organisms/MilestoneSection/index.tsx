@@ -6,16 +6,17 @@ import Image from '../../Atoms/Image';
 import Button from '../../Atoms/Button';
 import style from './style.css';
 import { IMilestone } from '../../../types/milestone';
+import {InlineSection} from "../../Atoms/Section";
 
 const Milestone: React.FC<IMilestone> = props => {
   return (
-    <section
-      className={`${style.root} ${props.reverse ? style.reverse : null}`}
+    <InlineSection
+      reverse={props.reverse}
     >
-      <div className={style.imageBlock}>
+      <div>
         <Image imageName={props.image} />
       </div>
-      <div className={style.descriptionBlock}>
+      <div>
         <div>
           <Heading>{props.heading}</Heading>
           <Txt>{props.content}</Txt>
@@ -24,7 +25,7 @@ const Milestone: React.FC<IMilestone> = props => {
           </Link>
         </div>
       </div>
-    </section>
+    </InlineSection>
   );
 };
 

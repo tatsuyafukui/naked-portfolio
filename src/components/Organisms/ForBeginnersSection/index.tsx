@@ -4,10 +4,11 @@ import Heading from '../../Atoms/Heading';
 import { IconName, Level } from '../../../constants';
 import Txt from '../../Atoms/Txt';
 import Icon from '../../Atoms/Icon';
+import Section from "../../Atoms/Section";
 
 const ForBeginnersSection: React.FC = props => {
   return (
-    <section className={`${style.root}`}>
+    <Section>
       <Heading level={Level.h1}>初めての方へ</Heading>
       <Txt>
         Web開発ロードマップとは、あなたが目的に向かって迷わず学習を進めていくためのロードマップです。
@@ -35,10 +36,10 @@ const ForBeginnersSection: React.FC = props => {
           </li>
         </ul>
       </div>
-      <Txt className={style.txt}>
+      <Txt>
         ここでは、ロードマップを最大限活用していただくためのロードマップの使い方を紹介をします。
       </Txt>
-    </section>
+    </Section>
   );
 };
 

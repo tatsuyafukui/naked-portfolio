@@ -1,5 +1,5 @@
 import React from 'react';
-import Milestone from '../Milestone';
+import Milestone from '../MilestoneSection';
 import { IMilestone } from '../../../types/milestone';
 
 const MilestoneList: React.FC<{ list: IMilestone[] }> = props => {

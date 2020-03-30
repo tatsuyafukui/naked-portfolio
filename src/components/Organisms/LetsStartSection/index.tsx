@@ -5,12 +5,12 @@ import { Level } from '../../../constants';
 import Txt from '../../Atoms/Txt';
 import Button from '../../Atoms/Button';
 import {Link} from "gatsby";
+import Section from "../../Atoms/Section";
 
 const LsetsStartSection: React.FC = props => {
   return (
-    <section className={style.root}>
+    <Section>
       <Heading level={Level.h1}>さぁ、やってみよう</Heading>
-
       <Txt className={style.txt}>
         ここからは実際に使い方に沿って学んでいきましょう。
         <br />
@@ -22,7 +22,7 @@ const LsetsStartSection: React.FC = props => {
       <div className={style.buttonContainer}>
         <Link to={'/'}><Button>学習をはじめる</Button></Link>
       </div>
-    </section>
+    </Section>
   );
 };
 

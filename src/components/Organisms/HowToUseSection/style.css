@@ -1,10 +1,1 @@
-.root {
-    margin: 80px 0;
-}
 
-@media (max-width: 768px) {
-    .root {
-        margin: 40px 0;
-        text-align: center;
-    }
-}

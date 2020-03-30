@@ -1,7 +1,3 @@
-.root {
-    margin: 40px 0;
-    margin-bottom: 80px;
-}
 
 .recommendBlock {
     margin-bottom: 40px;
@@ -29,9 +25,6 @@
 }
 
 @media (max-width: 768px) {
-    .root {
-        text-align: center;
-    }
     .recommendBlock {
         margin-bottom: 40px;
     }
