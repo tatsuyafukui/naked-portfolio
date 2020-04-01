@@ -1,11 +1,11 @@
-import {graphql, Link, useStaticQuery} from 'gatsby';
+import { graphql, Link, useStaticQuery } from 'gatsby';
 import React from 'react';
 import Heading from '../../Atoms/Heading';
 import Txt from '../../Atoms/Txt';
 import Button from '../../Atoms/Button';
 import { IMilestone } from '../../../types/milestone';
 import { InlineSection } from '../../Atoms/Section';
-import Img from "gatsby-image";
+import Img from 'gatsby-image';
 
 const MilestoneIntroduction: React.FC<IMilestone> = React.memo(props => {
   const data = useStaticQuery(graphql`

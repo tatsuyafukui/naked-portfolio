@@ -6,8 +6,8 @@ import Txt from '../../Atoms/Txt';
 import Image from '../../Atoms/Img';
 import { ISection } from '../../../types/section';
 import Section from '../../Atoms/Section';
-import {graphql, useStaticQuery} from "gatsby";
-import Img from "gatsby-image";
+import { graphql, useStaticQuery } from 'gatsby';
+import Img from 'gatsby-image';
 
 const HowToUseItem: React.FC<ISection> = props => {
   const data = useStaticQuery(graphql`

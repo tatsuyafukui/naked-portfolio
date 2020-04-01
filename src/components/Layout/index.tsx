@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
-import Header from '../../Organisms/Header';
+import Header from '../Organisms/Header';
 import './layout.css';
-import Footer from '../../Organisms/Footer';
+import Footer from '../Organisms/Footer';
 
 const Index = ({ children }: any) => {
   const data = useStaticQuery(graphql`

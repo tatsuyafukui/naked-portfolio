@@ -2,7 +2,7 @@ import React from 'react';
 
 import { graphql, Link, useStaticQuery } from 'gatsby';
 
-import Layout from '../../components/Templates/Layout';
+import Layout from '../../components/Layout';
 import SEO from '../../components/seo';
 
 const DevelopTogether = () => {

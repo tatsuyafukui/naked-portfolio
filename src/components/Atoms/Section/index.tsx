@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './style.css';
-import {containPresenter} from '../../utils/HoC';
+import { containPresenter } from '../../utils/HoC';
 
 interface ISection extends React.HTMLAttributes<HTMLElement> {
   reverse?: boolean;
@@ -35,8 +35,13 @@ const SectionContainer: React.FC<ISectionContainer> = ({
   return presenter({ ...props });
 };
 
-
-const Section: React.FC<ISection> = containPresenter(SectionContainer, SectionPresenter);
+const Section: React.FC<ISection> = containPresenter(
+  SectionContainer,
+  SectionPresenter
+);
 
 export default Section;
-export const InlineSection: React.FC<ISection> = containPresenter(SectionContainer, InlineSectionPresenter);
+export const InlineSection: React.FC<ISection> = containPresenter(
+  SectionContainer,
+  InlineSectionPresenter
+);

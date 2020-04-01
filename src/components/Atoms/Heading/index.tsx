@@ -2,7 +2,7 @@ import React from 'react';
 import style from './style.css';
 import { Level } from '../../../constants';
 import { IHeading } from '../../../types/heading';
-import {containPresenter} from '../../utils/HoC';
+import { containPresenter } from '../../utils/HoC';
 
 const HeadingPresenter: React.FC<IHeading> = ({
   level: Tag,
@@ -26,7 +26,10 @@ const HeadingContainer: React.FC<IHeading> = ({
   return presenter({ level, visualLevel, ...props });
 };
 
-const Heading: React.FC<IHeading> = containPresenter(HeadingContainer, HeadingPresenter);
+const Heading: React.FC<IHeading> = containPresenter(
+  HeadingContainer,
+  HeadingPresenter
+);
 Heading.defaultProps = {
   level: Level.h2,
 };

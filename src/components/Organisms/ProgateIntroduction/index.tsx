@@ -9,7 +9,6 @@ import Icon from '../../Atoms/Icon';
 import Section from '../../Atoms/Section';
 
 const ProgateIntroduction: React.FC = () => {
-
   const [slideValue, setSlideValue] = useState(0);
 
   const clickNextHandler = (event: MouseEvent<HTMLAnchorElement>) => {

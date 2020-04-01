@@ -1,5 +1,5 @@
 import React from 'react';
-import {About, ImageName} from '../constants';
+import { About, ImageName } from '../constants';
 
 export interface ISection extends React.HTMLAttributes<HTMLElement> {
   heading: string;

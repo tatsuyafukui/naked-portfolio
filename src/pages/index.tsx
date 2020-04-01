@@ -1,16 +1,16 @@
 import React from 'react';
-import Layout from '../components/Templates/Layout';
 import SEO from '../components/seo';
 import LetsStartProgate from '../components/Organisms/ProgateIntroduction';
-import CreativeRoadMap from "../components/Organisms/CreativeRoadMap";
+import CreativeRoadMap from '../components/Organisms/CreativeRoadMap';
+import IndexTemplate from '../components/Templates/IndexTemplate';
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <IndexTemplate>
       <SEO title="Home" />
-      <CreativeRoadMap/>
+      <CreativeRoadMap />
       <LetsStartProgate />
-    </Layout>
+    </IndexTemplate>
   );
 };
 
