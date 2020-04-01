@@ -1,17 +1,17 @@
 import React from 'react';
 import style from './style.css';
-import Heading from '../../Atoms/Heading';
-import { Level } from '../../../constants';
-import Txt from '../../Atoms/Txt';
-import Button from '../../Atoms/Button';
-import {Link} from "gatsby";
-import Section from "../../Atoms/Section";
+import Heading from '../../components/Atoms/Heading';
+import { Level } from '../../constants';
+import Txt from '../../components/Atoms/Txt';
+import Button from '../../components/Atoms/Button';
+import { Link } from 'gatsby';
+import Section from '../../components/Atoms/Section';
 
-const LsetsStartSection: React.FC = props => {
+const LsetsStartSection: React.FC = () => {
   return (
     <Section>
       <Heading level={Level.h1}>さぁ、やってみよう</Heading>
-      <Txt className={style.txt}>
+      <Txt>
         ここからは実際に使い方に沿って学んでいきましょう。
         <br />
         挫折しそうなときは、感情に流されない習慣や物事をボジティブに捉える癖を身につけたり、切磋琢磨できるコミュニティを探したりと、自分に合った学習方法や環境を知ることも大切です。
@@ -20,7 +20,9 @@ const LsetsStartSection: React.FC = props => {
         <br />
       </Txt>
       <div className={style.buttonContainer}>
-        <Link to={'/'}><Button>学習をはじめる</Button></Link>
+        <Link to={'/'}>
+          <Button>学習をはじめる</Button>
+        </Link>
       </div>
     </Section>
   );

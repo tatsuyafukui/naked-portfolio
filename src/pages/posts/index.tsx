@@ -11,8 +11,7 @@ const IndexPage = () => (
     <h1>Post</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-    </div>
+    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
     <Link to="/">Go home</Link>
   </Layout>
 );

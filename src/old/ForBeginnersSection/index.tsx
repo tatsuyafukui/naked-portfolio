@@ -1,10 +1,10 @@
 import React from 'react';
 import style from './style.css';
-import Heading from '../../Atoms/Heading';
-import { IconName, Level } from '../../../constants';
-import Txt from '../../Atoms/Txt';
-import Icon from '../../Atoms/Icon';
-import Section from "../../Atoms/Section";
+import Heading from '../../components/Atoms/Heading';
+import { IconName, Level } from '../../constants';
+import Txt from '../../components/Atoms/Txt';
+import Icon from '../../components/Atoms/Icon';
+import Section from '../../components/Atoms/Section';
 
 const ForBeginnersSection: React.FC = props => {
   return (

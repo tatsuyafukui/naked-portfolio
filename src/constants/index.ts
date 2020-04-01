@@ -48,6 +48,20 @@ export enum ImageName {
   pathNodeImage = 'pathNodeImage',
 }
 
+export enum Milestones {
+  milestoneImage = 'milestoneImage',
+}
+
+export enum AboutImage {
+  goalImage = 'goalImage',
+  selectMilestoneImage = 'selectMilestoneImage',
+  aroundImage = 'aroundImage',
+  deepLearnImage = 'deepLearnImage',
+  outputImage = 'outputImage',
+  whyImage = 'whyImage',
+  pathNodeImage = 'pathNodeImage',
+}
+
 export enum IconName {
   goal = 'goal',
   light = 'light',

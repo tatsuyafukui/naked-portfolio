@@ -1,17 +1,15 @@
-import {Link} from 'gatsby';
+import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 import style from './style.css';
 import Logo from '../../Atoms/Logo';
-import {LogoName} from "../../../constants";
+import { LogoName } from '../../../constants';
 
 const Header = () => (
   <header className={style.header}>
     <Link to="/">
       <div>
-        <Logo
-          logoName={LogoName.headerLogo}
-        />
+        <Logo logoName={LogoName.headerLogo} />
       </div>
     </Link>
     <ul className={style.headerMenuContainer}>

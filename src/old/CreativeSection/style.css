@@ -1,0 +1,21 @@
+@import "../../components/properties.css";
+
+.buttonContainer {
+    display: flex;
+}
+
+.buttonContainer button {
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .buttonContainer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .buttonContainer button {
+        margin: 0;
+        margin-bottom: 8px;
+    }
+}

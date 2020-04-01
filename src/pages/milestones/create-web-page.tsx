@@ -2,10 +2,10 @@ import React from 'react';
 
 import Layout from '../../components/Templates/Layout';
 import SEO from '../../components/seo';
-import Heading from "../../components/Atoms/Heading";
-import {ImageName, Level} from "../../constants";
-import Image from "../../components/Atoms/Image";
-import Txt from "../../components/Atoms/Txt";
+import Heading from '../../components/Atoms/Heading';
+import { ImageName, Level } from '../../constants';
+import Image from '../../components/Atoms/Img';
+import Txt from '../../components/Atoms/Txt';
 
 const CreateWebPage = () => {
   return (
@@ -32,12 +32,10 @@ const CreateWebPage = () => {
 
       <main>
         <Heading level={Level.h2}>マイルストーンの説明</Heading>
-        <Image imageName={ImageName.milestoneImage}/>
+        <Image imageName={ImageName.milestoneImage} />
         <div>
           <Heading level={Level.h4}>概要</Heading>
-          <Txt>
-            Webページを作るページです
-          </Txt>
+          <Txt>Webページを作るページです</Txt>
         </div>
         <div>
           <Heading level={Level.h4}>学ぶ目的</Heading>
@@ -62,8 +60,7 @@ const CreateWebPage = () => {
           <Heading level={Level.h4}>学習の目安</Heading>
           <Txt>
             ・プログラミングが動くことを楽しいと思えたか ・プログラミングに必要なツールを自分の環境に用意できたか
-            ・実際にWebサイトを作って公開できたか
-            ・他のWebサイトを模写できたか
+            ・実際にWebサイトを作って公開できたか ・他のWebサイトを模写できたか
           </Txt>
         </div>
       </main>

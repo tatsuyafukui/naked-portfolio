@@ -1,8 +1,8 @@
 import React from 'react';
-import { ImageName } from '../constants';
+import { Milestones} from '../constants';
 
 export interface IMilestone extends React.HTMLAttributes<HTMLElement> {
-  image: ImageName;
+  image: Milestones;
   heading: string;
   reverse?: boolean;
   content: string;

@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from '../../Organisms/Header';
 import './layout.css';
-import Footer from "../../Organisms/Footer";
+import Footer from '../../Organisms/Footer';
 
 const Index = ({ children }: any) => {
   const data = useStaticQuery(graphql`
@@ -29,7 +29,7 @@ const Index = ({ children }: any) => {
       >
         <main>{children}</main>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

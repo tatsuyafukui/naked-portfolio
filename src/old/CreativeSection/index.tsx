@@ -1,18 +1,18 @@
 import React from 'react';
-import Heading from '../../Atoms/Heading';
-import Txt from '../../Atoms/Txt';
-import Image from '../../Atoms/Image';
-import { ImageName } from '../../../constants';
+import Heading from '../../components/Atoms/Heading';
+import Txt from '../../components/Atoms/Txt';
+import Image from '../../components/Atoms/Img';
+import { ImageName } from '../../constants';
 import style from './style.css';
-import Button from '../../Atoms/Button';
+import Button from '../../components/Atoms/Button';
 import { Link } from 'gatsby';
-import { ISection } from '../../../types/section';
-import {InlineSection} from "../../Atoms/Section";
+import { ISection } from '../../types/section';
+import { InlineSection } from '../../components/Atoms/Section';
 
 const CreativeSection: React.FC<ISection> = props => {
   return (
     <InlineSection>
-      <div style={{padding: '40px'}}>
+      <div style={{ padding: '40px' }}>
         <Image imageName={ImageName.successImage} />
       </div>
       <div>

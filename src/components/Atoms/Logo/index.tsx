@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
-import {LogoName} from "../../../constants";
+import { LogoName } from '../../../constants';
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -18,8 +18,8 @@ interface IProps {
   logoName: LogoName;
 }
 
-const Logo: React.FC<IProps> = (props) => {
-  const data = useStaticQuery(graphql`    
+const Logo: React.FC<IProps> = props => {
+  const data = useStaticQuery(graphql`
     fragment servicesLogo on File {
       childImageSharp {
         fixed(height: 48) {
@@ -39,9 +39,11 @@ const Logo: React.FC<IProps> = (props) => {
       }
     }
   `);
-  console.log(data)
   return (
-    <Img fixed={data[props.logoName].childImageSharp.fixed} alt={'Progate Roadmap Logo'} />
+    <Img
+      fixed={data[props.logoName].childImageSharp.fixed}
+      alt={'Progate Roadmap Logo'}
+    />
   );
 };
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import Img, {GatsbyImageProps} from 'gatsby-image';
 import { ImageName } from '../../../constants';
 
 /*
@@ -14,11 +14,11 @@ import { ImageName } from '../../../constants';
  * - `useStaticQuery`: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-interface IProps {
+interface IProps extends GatsbyImageProps{
   imageName: ImageName;
 }
 
-const Image: React.FC<IProps> = props => {
+const Image: React.FC<IProps> = ({imageName, ...props}) => {
   const data = useStaticQuery(graphql`
     fragment servicesImage on File {
       childImageSharp {
@@ -66,7 +66,7 @@ const Image: React.FC<IProps> = props => {
     }
   `);
 
-  return <Img fluid={data[props.imageName].childImageSharp.fluid} {...props} />;
+  return <Img {...props} fluid={data[imageName].childImageSharp.fluid} />;
 };
 
 export default Image;

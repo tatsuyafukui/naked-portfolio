@@ -1,6 +1,6 @@
 import React from 'react';
-import Milestone from '../MilestoneSection';
-import { IMilestone } from '../../../types/milestone';
+import Milestone from '../../components/Organisms/MilestoneIntroduction';
+import { IMilestone } from '../../types/milestone';
 
 const MilestoneList: React.FC<{ list: IMilestone[] }> = props => {
   return (
