@@ -28,12 +28,22 @@
     --color-link-hover: none;
     --color-link-active: none;
     --color-success: var(--color-green);
+    --color-success-hover: var(--color-green);
+
     --color-danger: var(--color-red);
+    --color-danger-hover: var(--color-red);
+
     --color-warning: var(--color-orange);
+    --color-warning-hover: var(--color-orange);
+
     --color-info: var(--color-gray);
+
     --color-primary: var(--color-aqua);
     --color-primary-hover: var(--color-aqua-dark);
-    --color-secondary: none;
+
+    --color-secondary: var(--color-gray);
+    --color-secondary-hover: var(--color-navy-gray);
+
     --color-accent: none;
     --color-selected: var(--color-light-aqua);
     --color-shadow: rgba(160,166,179,0.3);

@@ -1,4 +1,4 @@
-export enum Role {
+export enum TxtRole {
   base = 'base',
   white = 'white',
   info = 'info',
@@ -6,6 +6,13 @@ export enum Role {
   warning = 'warning',
   danger = 'danger',
   primary = 'primary',
+}
+
+export enum ButtonRole {
+  primary = 'primary',
+  secondary = 'secondary',
+  warning = 'warning',
+  danger = 'danger',
 }
 
 export enum FontSize {

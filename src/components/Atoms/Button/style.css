@@ -2,7 +2,6 @@
 
 .root {
     background: none;
-    background-color: var(--color-primary);
     color: var(--color-base);
     cursor: pointer;
     border: none;
@@ -13,9 +12,41 @@
     transition: background-color var(--hover-animation);
 }
 
-.root:hover {
+.default {
+    background-color: var(--color-primary);
+}
+
+.default:hover {
     background-color: var(--color-primary-hover);
 }
+
+.primary {
+    background-color: var(--color-primary);
+}
+.primary:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.secondary {
+    background-color: var(--color-secondary);
+}
+.secondary:hover {
+    background-color: var(--color-secondary);
+}
+
+.warning {
+    background-color: var(--color-warning);
+}
+.warning:hover {
+    background-color: var(--color-warning);
+}
+.danger {
+    background-color: var(--color-danger);
+}
+.danger:hover {
+    background-color: var(--color-danger);
+}
+
 
 @media (max-width: 768px) {
     .root {
