@@ -2,7 +2,7 @@ import { graphql, Link, useStaticQuery } from 'gatsby';
 import React from 'react';
 import Heading from '../../Atoms/Heading';
 import Txt from '../../Atoms/Txt';
-import Button from '../../Atoms/Button';
+import { PrimaryButton } from '../../Atoms/Button';
 import { IMilestone } from '../../../types/milestone';
 import { InlineSection } from '../../Atoms/Section';
 import Img from 'gatsby-image';
@@ -33,7 +33,7 @@ const MilestoneIntroduction: React.FC<IMilestone> = React.memo(props => {
           <Heading>{props.heading}</Heading>
           <Txt>{props.content}</Txt>
           <Link to={props.link}>
-            <Button>学習項目を確認する</Button>
+            <PrimaryButton>学習項目を確認する</PrimaryButton>
           </Link>
         </div>
       </div>

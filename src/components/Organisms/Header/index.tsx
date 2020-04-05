@@ -1,7 +1,7 @@
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
-import style from './style.css';
+import style from './style.module.scss';
 import Logo from '../../Atoms/Logo';
 import { LogoName } from '../../../constants';
 

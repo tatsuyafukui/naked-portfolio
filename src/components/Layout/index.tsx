@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from '../Organisms/Header';
-import './layout.css';
+import './layout.module.scss';
 import Footer from '../Organisms/Footer';
 
 const Index = ({ children }: any) => {

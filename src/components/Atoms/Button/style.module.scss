@@ -12,6 +12,12 @@
     transition: background-color var(--hover-animation);
 }
 
+.base {
+    color: var(--color-navy-dark);
+    background-color: var(--color-white);
+    border: var(--border);
+}
+
 .primary {
     background-color: var(--color-primary);
 }

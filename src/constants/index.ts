@@ -9,6 +9,7 @@ export enum TxtRole {
 }
 
 export enum ButtonRole {
+  base = 'base',
   primary = 'primary',
   secondary = 'secondary',
   warning = 'warning',

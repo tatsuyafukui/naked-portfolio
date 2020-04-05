@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './style.css';
+import style from './style.module.scss';
 import Heading from '../../Atoms/Heading';
 import { Level } from '../../../constants';
 import Txt from '../../Atoms/Txt';

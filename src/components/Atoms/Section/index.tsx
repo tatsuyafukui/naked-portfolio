@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './style.css';
+import style from './style.module.scss';
 import { containPresenter } from '../../utils/HoC';
 
 interface ISection extends React.HTMLAttributes<HTMLElement> {

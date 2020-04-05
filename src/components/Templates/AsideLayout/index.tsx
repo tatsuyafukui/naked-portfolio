@@ -1,8 +1,8 @@
 import React, { ReactNode } from 'react';
 
 import Header from '../../Organisms/Header';
-import '../../Layout/layout.css';
-import style from './style.css';
+import '../../Layout/layout.module.scss';
+import style from './style.module.scss';
 import Footer from '../../Organisms/Footer';
 
 interface IProps {

@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './style.css';
+import style from './style.module.scss';
 import { Level } from '../../../constants';
 import { IHeading } from '../../../types/heading';
 import { containPresenter } from '../../utils/HoC';

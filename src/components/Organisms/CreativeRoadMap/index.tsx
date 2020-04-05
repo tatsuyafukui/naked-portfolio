@@ -3,8 +3,8 @@ import Heading from '../../Atoms/Heading';
 import Txt from '../../Atoms/Txt';
 import Image from '../../Atoms/Img';
 import { Milestones } from '../../../constants';
-import style from './style.css';
-import Button from '../../Atoms/Button';
+import style from './style.module.scss';
+import { PrimaryButton } from '../../Atoms/Button';
 import { graphql, Link, useStaticQuery } from 'gatsby';
 import { InlineSection } from '../../Atoms/Section';
 import Img from 'gatsby-image';
@@ -98,10 +98,10 @@ const CreativeRoadMap: React.FC = React.memo(() => {
             </Txt>
             <div className={style.buttonContainer}>
               <Link to={'/'}>
-                <Button>みんなの成果物</Button>
+                <PrimaryButton>みんなの成果物</PrimaryButton>
               </Link>
               <Link to={'/'}>
-                <Button>目標を設定する</Button>
+                <PrimaryButton>目標を設定する</PrimaryButton>
               </Link>
             </div>
           </div>

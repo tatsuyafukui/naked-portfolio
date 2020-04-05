@@ -2,8 +2,8 @@ import React from 'react';
 import Heading from '../../Atoms/Heading';
 import Txt from '../../Atoms/Txt';
 import { AboutImage, IconName, Level } from '../../../constants';
-import style from './style.css';
-import Button from '../../Atoms/Button';
+import style from './style.module.scss';
+import { PrimaryButton } from '../../Atoms/Button';
 import { Link } from 'gatsby';
 import Section from '../../Atoms/Section';
 import Icon from '../../Atoms/Icon';
@@ -113,7 +113,7 @@ const About: React.FC = () => {
         </Txt>
         <div className={style.buttonContainer}>
           <Link to={'/'}>
-            <Button>学習をはじめる</Button>
+            <PrimaryButton>学習をはじめる</PrimaryButton>
           </Link>
         </div>
       </Section>

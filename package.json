@@ -12,6 +12,7 @@
     "gatsby-plugin-manifest": "^2.2.44",
     "gatsby-plugin-offline": "^3.0.37",
     "gatsby-plugin-react-helmet": "^3.1.21",
+    "gatsby-plugin-sass": "^2.2.1",
     "gatsby-plugin-sharp": "^2.4.3",
     "gatsby-plugin-typescript": "^2.2.1",
     "gatsby-source-filesystem": "^2.1.50",
@@ -20,6 +21,7 @@
     "gatsby-transformer-typescript-css-modules": "^1.0.14",
     "graphql": "^14.6.0",
     "isomorphic-fetch": "^2.2.1",
+    "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-apollo": "^3.1.3",
@@ -29,11 +31,22 @@
     "typescript": "^3.8.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/react": "^5.3.18",
     "@types/prop-types": "^15.7.3",
     "@types/react": "^16.9.23",
     "@types/react-dom": "^16.9.5",
     "@types/react-helmet": "^5.0.15",
-    "prettier": "^1.19.1"
+    "babel-loader": "^8.1.0",
+    "babel-preset-react-app": "^9.1.2",
+    "css-loader": "^3.4.2",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^1.19.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3"
   },
   "keywords": [
     "gatsby"
@@ -46,7 +59,9 @@
     "start": "npm run develop",
     "serve": "gatsby serve --host=0.0.0.0",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "storybook": "NODE_ENV=production start-storybook -s public -p 6006",
+    "build-storybook": "NODE_ENV=production build-storybook -s public"
   },
   "repository": {
     "type": "git",
