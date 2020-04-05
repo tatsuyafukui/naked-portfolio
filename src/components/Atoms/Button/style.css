@@ -12,14 +12,6 @@
     transition: background-color var(--hover-animation);
 }
 
-.default {
-    background-color: var(--color-primary);
-}
-
-.default:hover {
-    background-color: var(--color-primary-hover);
-}
-
 .primary {
     background-color: var(--color-primary);
 }
