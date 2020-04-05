@@ -113,12 +113,9 @@ const About: React.FC = () => {
           <br />
         </Txt>
         <div className={style.buttonContainer}>
-          <HoverTipInteraction>
-            <Link to={'/'}>
-              <PrimaryButton>学習をはじめる</PrimaryButton>
-            </Link>
-            <Tip><span>sasas</span></Tip>
-          </HoverTipInteraction>
+          <Link to={'/'}>
+            <PrimaryButton>学習をはじめる</PrimaryButton>
+          </Link>
         </div>
       </Section>
     </>
