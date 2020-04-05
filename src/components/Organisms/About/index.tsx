@@ -8,6 +8,7 @@ import { Link } from 'gatsby';
 import Section from '../../Atoms/Section';
 import Icon from '../../Atoms/Icon';
 import HowToUseItem from '../../Molecules/HowToUseItem';
+import HoverTipInteraction, {Tip} from "../../Atoms/HoverTipInteraction";
 
 const About: React.FC = () => {
   const howList = [
@@ -112,9 +113,12 @@ const About: React.FC = () => {
           <br />
         </Txt>
         <div className={style.buttonContainer}>
-          <Link to={'/'}>
-            <PrimaryButton>学習をはじめる</PrimaryButton>
-          </Link>
+          <HoverTipInteraction>
+            <Link to={'/'}>
+              <PrimaryButton>学習をはじめる</PrimaryButton>
+            </Link>
+            <Tip><span>sasas</span></Tip>
+          </HoverTipInteraction>
         </div>
       </Section>
     </>
