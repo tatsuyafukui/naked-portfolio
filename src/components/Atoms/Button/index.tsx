@@ -2,7 +2,7 @@ import React from 'react';
 import style from './style.module.scss';
 import { ButtonType } from '../../../constants';
 
-const buttonFactory = (
+export const buttonFactory = (
   type: ButtonType
 ): React.FC<React.ButtonHTMLAttributes<HTMLButtonElement>> => ({
   className,

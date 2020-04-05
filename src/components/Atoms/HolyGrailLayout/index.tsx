@@ -1,7 +1,6 @@
 import React from "react";
 import style from './style.module.scss';
 import {containPresenter} from "../../utils/HoC";
-import About from "../../Organisms/About";
 
 interface IProps extends React.HTMLAttributes<HTMLElement>{
 		tag?: 'div' | 'section';

@@ -1,11 +1,12 @@
-import React, { MouseEvent, useMemo, useState } from 'react';
+import React, {MouseEvent, useState} from 'react';
 import style from './style.module.scss';
 import Heading from '../../Atoms/Heading';
-import { IconName, ImageName, Level } from '../../../constants';
+import {ElevationLevel, IconName, ImageName, Level} from '../../../constants';
 import Txt from '../../Atoms/Txt';
 import LetsProgateCard from '../../Molecules/IntroductionCard';
-import { Link } from 'gatsby';
+import {Link} from 'gatsby';
 import Icon from '../../Atoms/Icon';
+import Paper from "../../Atoms/Paper";
 
 const ProgateIntroduction: React.FC = () => {
   const [slideValue, setSlideValue] = useState(0);
@@ -77,25 +78,27 @@ const ProgateIntroduction: React.FC = () => {
             <Icon iconName={IconName.rightTriangle} />
           </Link>
         ) : null}
-        <div className={style.slider}>
-          {list.map(item => {
-            return (
-              <a
-                id={item.id}
-                key={item.id}
-                href={item.link}
-                target={'_blank'}
-                className={`${style.slide} ${style.link}`}
-              >
-                <LetsProgateCard
-                  heading={item.heading}
-                  content={item.content}
-                  image={item.image}
-                />
-              </a>
-            );
-          })}
-        </div>
+        <Paper elevation={ElevationLevel.two}>
+          <div className={style.slider}>
+            {list.map(item => {
+              return (
+                <a
+                  id={item.id}
+                  key={item.id}
+                  href={item.link}
+                  target={'_blank'}
+                  className={`${style.slide} ${style.link}`}
+                >
+                    <LetsProgateCard
+                      heading={item.heading}
+                      content={item.content}
+                      image={item.image}
+                    />
+                </a>
+              );
+            })}
+          </div>
+        </Paper>
       </div>
     </section>
   );

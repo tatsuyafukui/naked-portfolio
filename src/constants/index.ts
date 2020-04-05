@@ -8,6 +8,20 @@ export enum TxtRole {
   primary = 'primary',
 }
 
+export enum ElevationLevel {
+  zero = 'elevation0',
+  one = 'elevation1',
+  two = 'elevation2',
+  three = 'elevation3',
+  fore = 'elevation4',
+  five = 'elevation5',
+  six = 'elevation6',
+  seven = 'elevation7',
+  eight = 'elevation8',
+  nine = 'elevation9',
+  ten = 'elevation10',
+}
+
 export enum ButtonType {
   base = 'base',
   primary = 'primary',
