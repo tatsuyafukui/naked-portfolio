@@ -2,8 +2,6 @@ import React from 'react';
 import {storiesOf} from '@storybook/react';
 import HoverTipInteraction, {Tip, Marker} from './index';
 import {withStyle} from "../../utils/decorators";
-import {Link} from "gatsby";
-import {PrimaryButton} from "../Button";
 
 storiesOf(`Atoms/HoverTipInteraction`, module)
 .add(`default`, () => withStyle({display: 'inline-block',margin: '50px'})(

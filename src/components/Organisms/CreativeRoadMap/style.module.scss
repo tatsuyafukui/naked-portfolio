@@ -1,11 +1,21 @@
 @import "../../properties.css";
 
+.container {
+   padding: 16px;
+    margin: 24px 0;
+}
+
 .buttonContainer {
     display: flex;
 }
 
 .buttonContainer button {
     margin-right: 8px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+    text-align: right;
 }
 
 @media (max-width: 768px) {
@@ -18,4 +28,14 @@
         margin: 0;
         margin-bottom: 8px;
     }
+
+    .container {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .container > div {
+        width: 100%;
+    }
+
 }

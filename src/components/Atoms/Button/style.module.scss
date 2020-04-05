@@ -1,15 +1,18 @@
 @import "../../properties.css";
 
-.root {
+.btn {
     background: none;
     color: var(--color-base);
+    display: inline-block;
+    font-weight: var(--font-weight-default);
     cursor: pointer;
     border: none;
-    padding: 16px 24px;
+    padding: .8rem;
     font-size: var(--font-size-m);
-    font-weight: var(--font-weight-default);
+    line-height: 1;
+    text-decoration: none;
     border-radius: var(--radius);
-    transition: background-color var(--hover-animation);
+    transition: all var(--hover-animation);
 }
 
 .base {
@@ -21,6 +24,7 @@
 .primary {
     background-color: var(--color-primary);
 }
+
 .primary:hover {
     background-color: var(--color-primary-hover);
 }
@@ -47,7 +51,7 @@
 
 
 @media (max-width: 768px) {
-    .root {
+    .btn {
         width: 100%;
     }
 }

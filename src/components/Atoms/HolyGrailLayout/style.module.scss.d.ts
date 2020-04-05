@@ -1,7 +1,6 @@
 declare const styles: {
   readonly "root": string;
-  readonly "inline": string;
-  readonly "reverse": string;
+  readonly "body": string;
 };
 export = styles;
 

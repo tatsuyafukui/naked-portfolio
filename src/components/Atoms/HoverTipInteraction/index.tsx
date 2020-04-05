@@ -1,5 +1,6 @@
 import React, {HTMLAttributes} from "react";
 import style from './style.module.scss';
+import { containPresenter } from '../../utils/HoC';
 
 
 const HoverTipInteractionPresenter: React.FC<HTMLAttributes<HTMLElement>> = ({children, className, ...props}) => (
@@ -30,14 +31,7 @@ const HoverTipInteractionContainer: React.FC<any> = ({presenter, children, class
 		return presenter({children, ...props})
 }
 
-const HoverTipInteraction: React.FC<HTMLAttributes<HTMLSpanElement>> = ({children, ...props}) => (
-		<HoverTipInteractionContainer
-				presenter={(presenterProps: any) => <HoverTipInteractionPresenter {...presenterProps}/>}
-				{...props}
-		>
-				{children}
-		</HoverTipInteractionContainer>
-);
+const HoverTipInteraction: React.FC<HTMLAttributes<HTMLSpanElement>> = containPresenter(HoverTipInteractionContainer, HoverTipInteractionPresenter)
 
 export default HoverTipInteraction;
 

@@ -4,10 +4,13 @@ import Heading from '../../Atoms/Heading';
 import Txt from '../../Atoms/Txt';
 import { PrimaryButton } from '../../Atoms/Button';
 import { IMilestone } from '../../../types/milestone';
-import { InlineSection } from '../../Atoms/Section';
 import Img from 'gatsby-image';
+import MediaObjectLayout from "../../Atoms/MediaObjectLayout";
 
-const MilestoneIntroduction: React.FC<IMilestone> = React.memo(props => {
+const MilestoneIntroduction: React.FC<IMilestone> = React.memo((props) => {
+
+  const {className, image, heading, content, link} = props;
+
   const data = useStaticQuery(graphql`
     fragment servicesImage on File {
       childImageSharp {
@@ -24,20 +27,20 @@ const MilestoneIntroduction: React.FC<IMilestone> = React.memo(props => {
   `);
 
   return (
-    <InlineSection reverse={props.reverse}>
+    <MediaObjectLayout className={className}>
       <div>
-        <Img fluid={data[props.image].childImageSharp.fluid} />
+        <Img fluid={data[image].childImageSharp.fluid} />
       </div>
       <div>
         <div>
-          <Heading>{props.heading}</Heading>
-          <Txt>{props.content}</Txt>
-          <Link to={props.link}>
+          <Heading>{heading}</Heading>
+          <Txt>{content}</Txt>
+          <Link to={link}>
             <PrimaryButton>学習項目を確認する</PrimaryButton>
           </Link>
         </div>
       </div>
-    </InlineSection>
+    </MediaObjectLayout>
   );
 });
 

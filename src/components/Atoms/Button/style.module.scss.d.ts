@@ -1,5 +1,5 @@
 declare const styles: {
-  readonly "root": string;
+  readonly "btn": string;
   readonly "base": string;
   readonly "primary": string;
   readonly "secondary": string;

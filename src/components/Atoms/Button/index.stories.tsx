@@ -1,9 +1,25 @@
 import {storiesOf} from "@storybook/react";
-import Button from "./index";
-import {Level} from "../../../constants";
+import Button, {
+		PrimaryButton,
+		SecondaryButton,
+		WarningButton,
+		DangerButton
+} from "./index";
 import React from "react";
 
 storiesOf(`Atoms/Button`, module)
 .add(`default`, () => (
-		<Button>見出し</Button>
+		<Button>default</Button>
+))
+.add(`primary`, () => (
+		<PrimaryButton>primary</PrimaryButton>
+))
+.add(`secondary`, () => (
+		<SecondaryButton>secondary</SecondaryButton>
+))
+.add(`warning`, () => (
+		<WarningButton>warning</WarningButton>
+))
+.add(`danger`, () => (
+		<DangerButton>danger</DangerButton>
 ))

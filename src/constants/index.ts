@@ -8,7 +8,7 @@ export enum TxtRole {
   primary = 'primary',
 }
 
-export enum ButtonRole {
+export enum ButtonType {
   base = 'base',
   primary = 'primary',
   secondary = 'secondary',

@@ -6,7 +6,6 @@ import Txt from '../../Atoms/Txt';
 import LetsProgateCard from '../../Molecules/IntroductionCard';
 import { Link } from 'gatsby';
 import Icon from '../../Atoms/Icon';
-import Section from '../../Atoms/Section';
 
 const ProgateIntroduction: React.FC = () => {
   const [slideValue, setSlideValue] = useState(0);
@@ -49,8 +48,8 @@ const ProgateIntroduction: React.FC = () => {
   ];
 
   return (
-    <Section>
-      <div>
+    <section>
+      <div className={style.messageContainer}>
         <Heading level={Level.h1}>とりあえずProgateで始めてみる</Heading>
         <Txt>
           最初から目標をもつ必要はありません。大事なのはあなたの好奇心です。
@@ -98,7 +97,7 @@ const ProgateIntroduction: React.FC = () => {
           })}
         </div>
       </div>
-    </Section>
+    </section>
   );
 };
 

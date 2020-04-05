@@ -1,7 +1,6 @@
 declare const styles: {
   readonly "container": string;
-  readonly "buttonContainer": string;
-  readonly "reverse": string;
+  readonly "body": string;
 };
 export = styles;
 

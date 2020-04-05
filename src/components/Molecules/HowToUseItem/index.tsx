@@ -4,7 +4,6 @@ import Heading from '../../Atoms/Heading';
 import { Level } from '../../../constants';
 import Txt from '../../Atoms/Txt';
 import { ISection } from '../../../types/section';
-import Section from '../../Atoms/Section';
 import { graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
 
@@ -43,7 +42,7 @@ const HowToUseItem: React.FC<ISection> = props => {
   `);
 
   return (
-    <Section>
+    <section>
       <Heading level={Level.h3}>{props.heading}</Heading>
 
       <Txt>{props.content}</Txt>
@@ -52,7 +51,7 @@ const HowToUseItem: React.FC<ISection> = props => {
           <Img fluid={data[props.image].childImageSharp.fluid} />
         </div>
       ) : null}
-    </Section>
+    </section>
   );
 };
 

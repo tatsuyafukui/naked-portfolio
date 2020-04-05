@@ -1,14 +1,13 @@
 import React from 'react';
 import Heading from '../../Atoms/Heading';
 import Txt from '../../Atoms/Txt';
-import Image from '../../Atoms/Img';
 import { Milestones } from '../../../constants';
 import style from './style.module.scss';
 import { PrimaryButton } from '../../Atoms/Button';
 import { graphql, Link, useStaticQuery } from 'gatsby';
-import { InlineSection } from '../../Atoms/Section';
 import Img from 'gatsby-image';
-import Milestone from '../MilestoneIntroduction';
+import MilestoneIntroduction from '../MilestoneIntroduction';
+import MediaObjectLayout from "../../Atoms/MediaObjectLayout";
 
 const CreativeRoadMap: React.FC = React.memo(() => {
   const data = useStaticQuery(graphql`
@@ -37,7 +36,6 @@ const CreativeRoadMap: React.FC = React.memo(() => {
     {
       id: 'milestone5',
       heading: '継続してプロダクトを届けよう',
-      reverse: false,
       link: '/milestones/keep-delivering',
       image: Milestones.milestoneImage,
       content:
@@ -47,7 +45,7 @@ const CreativeRoadMap: React.FC = React.memo(() => {
     {
       id: 'milestone4',
       heading: '公開できるプロダクトに必要なことを知ろう',
-      reverse: true,
+      className: style.reverse,
       link: '/milestones/product-release',
       image: Milestones.milestoneImage,
       content:
@@ -56,7 +54,6 @@ const CreativeRoadMap: React.FC = React.memo(() => {
     {
       id: 'milestone3',
       heading: 'みんなで開発しよう',
-      reverse: false,
       link: '/milestones/develop-together',
       image: Milestones.milestoneImage,
       content:
@@ -67,7 +64,7 @@ const CreativeRoadMap: React.FC = React.memo(() => {
       id: 'milestone2',
       heading: 'Webアプリケーションを作ってみよう',
       reverse: true,
-      link: '/milestones/create-web-application',
+      className: style.reverse,
       image: Milestones.milestoneImage,
       content:
         '仲間と開発することはプロダクトを作る面白さの１つです。チーム開発の基礎を学んで仲間を集める準備をしましょう。',
@@ -75,7 +72,6 @@ const CreativeRoadMap: React.FC = React.memo(() => {
     {
       id: 'milestone1',
       heading: 'Webページを作れるようになろう',
-      reverse: false,
       link: '/milestones/create-web-page',
       image: Milestones.milestoneImage,
       content:
@@ -85,7 +81,7 @@ const CreativeRoadMap: React.FC = React.memo(() => {
 
   return (
     <>
-      <InlineSection>
+      <MediaObjectLayout className={style.container}>
         <div style={{ padding: '40px' }}>
           <Img fluid={data.successImage.childImageSharp.fluid} />
         </div>
@@ -106,8 +102,8 @@ const CreativeRoadMap: React.FC = React.memo(() => {
             </div>
           </div>
         </div>
-      </InlineSection>
-      <InlineSection reverse>
+      </MediaObjectLayout>
+      <MediaObjectLayout className={[style.container,style.reverse].join(' ')}>
         <div>
           <Img fluid={data.rocketImage.childImageSharp.fluid} />
         </div>
@@ -120,14 +116,14 @@ const CreativeRoadMap: React.FC = React.memo(() => {
             </Txt>
           </div>
         </div>
-      </InlineSection>
+      </MediaObjectLayout>
       {milestoneList.map(item => {
         return (
-          <Milestone
+          <MilestoneIntroduction
             key={item.id}
             id={item.id}
             heading={item.heading}
-            reverse={item.reverse}
+            className={[style.container, item.className].join(' ')}
             link={item.link}
             image={item.image}
             content={item.content}

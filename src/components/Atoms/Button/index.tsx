@@ -1,9 +1,9 @@
 import React from 'react';
 import style from './style.module.scss';
-import { ButtonRole } from '../../../constants';
+import { ButtonType } from '../../../constants';
 
 const buttonFactory = (
-  role: ButtonRole
+  type: ButtonType
 ): React.FC<React.ButtonHTMLAttributes<HTMLButtonElement>> => ({
   className,
   ...props
@@ -11,14 +11,14 @@ const buttonFactory = (
   return (
     <button
       {...props}
-      className={[style.root, style[role], className].join(' ')}
+      className={[style.btn, style[type], className].join(' ')}
     />
   );
 };
-const Button = buttonFactory(ButtonRole.base);
-export const PrimaryButton = buttonFactory(ButtonRole.primary);
-export const SecondaryButton = buttonFactory(ButtonRole.secondary);
-export const WarningButton = buttonFactory(ButtonRole.warning);
-export const DangerButton = buttonFactory(ButtonRole.danger);
+const Button = buttonFactory(ButtonType.base);
+export const PrimaryButton = buttonFactory(ButtonType.primary);
+export const SecondaryButton = buttonFactory(ButtonType.secondary);
+export const WarningButton = buttonFactory(ButtonType.warning);
+export const DangerButton = buttonFactory(ButtonType.danger);
 
 export default Button;

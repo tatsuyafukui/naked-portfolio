@@ -1,14 +1,15 @@
 import React from 'react';
 import Heading from '../../Atoms/Heading';
 import Txt from '../../Atoms/Txt';
-import { AboutImage, IconName, Level } from '../../../constants';
+import {AboutImage, IconName, ImageName, Level} from '../../../constants';
 import style from './style.module.scss';
 import { PrimaryButton } from '../../Atoms/Button';
 import { Link } from 'gatsby';
-import Section from '../../Atoms/Section';
 import Icon from '../../Atoms/Icon';
 import HowToUseItem from '../../Molecules/HowToUseItem';
 import HoverTipInteraction, {Tip} from "../../Atoms/HoverTipInteraction";
+import Image from "../../Atoms/Img";
+import MediaObjectLayout from "../../Atoms/MediaObjectLayout";
 
 const About: React.FC = () => {
   const howList = [
@@ -64,7 +65,7 @@ const About: React.FC = () => {
 
   return (
     <>
-      <Section>
+      <section>
         <Heading level={Level.h1}>初めての方へ</Heading>
         <Txt>
           Web開発ロードマップとは、あなたが目的に向かって迷わず学習を進めていくためのロードマップです。
@@ -95,14 +96,14 @@ const About: React.FC = () => {
         <Txt>
           ここでは、ロードマップを最大限活用していただくためのロードマップの使い方を紹介をします。
         </Txt>
-      </Section>
-      <Section>
+      </section>
+      <section>
         <Heading level={Level.h1}>ロードマップを使った学び方</Heading>
         {howList.map(item => (
           <HowToUseItem key={item.id} {...item} />
         ))}
-      </Section>
-      <Section>
+      </section>
+      <section>
         <Heading level={Level.h1}>さぁ、やってみよう</Heading>
         <Txt>
           ここからは実際に使い方に沿って学んでいきましょう。
@@ -117,7 +118,7 @@ const About: React.FC = () => {
             <PrimaryButton>学習をはじめる</PrimaryButton>
           </Link>
         </div>
-      </Section>
+      </section>
     </>
   );
 };
