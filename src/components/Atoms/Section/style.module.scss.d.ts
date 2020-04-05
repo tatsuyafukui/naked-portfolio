@@ -1,3 +1,7 @@
-export const root: string;
-export const inline: string;
-export const reverse: string;
+declare const styles: {
+  readonly "root": string;
+  readonly "inline": string;
+  readonly "reverse": string;
+};
+export = styles;
+

@@ -1,3 +1,7 @@
-export const root: string;
-export const descriptionBlock: string;
-export const imageBlock: string;
+declare const styles: {
+  readonly "root": string;
+  readonly "descriptionBlock": string;
+  readonly "imageBlock": string;
+};
+export = styles;
+

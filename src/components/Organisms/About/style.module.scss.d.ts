@@ -1,2 +1,6 @@
-export const recommendBlock: string;
-export const buttonContainer: string;
+declare const styles: {
+  readonly "recommendBlock": string;
+  readonly "buttonContainer": string;
+};
+export = styles;
+

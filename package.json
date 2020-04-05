@@ -18,7 +18,6 @@
     "gatsby-source-filesystem": "^2.1.50",
     "gatsby-transformer-remark": "^2.6.55",
     "gatsby-transformer-sharp": "^2.3.13",
-    "gatsby-transformer-typescript-css-modules": "^1.0.14",
     "graphql": "^14.6.0",
     "isomorphic-fetch": "^2.2.1",
     "node-sass": "^4.13.1",

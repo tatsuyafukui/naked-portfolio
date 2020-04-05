@@ -49,7 +49,7 @@ const HowToUseItem: React.FC<ISection> = props => {
       <Txt>{props.content}</Txt>
       {props.image ? (
         <div className={style.imageContainer}>
-          <Img fluid={data[props.image].childImageSharp.fluid} />;
+          <Img fluid={data[props.image].childImageSharp.fluid} />
         </div>
       ) : null}
     </Section>

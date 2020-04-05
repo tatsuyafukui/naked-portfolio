@@ -1,3 +1,7 @@
-export const header: string;
-export const headerMenuContainer: string;
-export const headerMenu: string;
+declare const styles: {
+  readonly "header": string;
+  readonly "headerMenuContainer": string;
+  readonly "headerMenu": string;
+};
+export = styles;
+

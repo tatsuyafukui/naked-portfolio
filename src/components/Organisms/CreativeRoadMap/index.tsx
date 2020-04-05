@@ -87,7 +87,7 @@ const CreativeRoadMap: React.FC = React.memo(() => {
     <>
       <InlineSection>
         <div style={{ padding: '40px' }}>
-          <Img fluid={data.successImage.childImageSharp.fluid} />;
+          <Img fluid={data.successImage.childImageSharp.fluid} />
         </div>
         <div>
           <div>
@@ -109,7 +109,7 @@ const CreativeRoadMap: React.FC = React.memo(() => {
       </InlineSection>
       <InlineSection reverse>
         <div>
-          <Img fluid={data.rocketImage.childImageSharp.fluid} />;
+          <Img fluid={data.rocketImage.childImageSharp.fluid} />
         </div>
         <div>
           <div>

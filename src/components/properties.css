@@ -63,7 +63,7 @@
 
 
     /* 文字：サイズ（媒体に最適化した文字サイズ） */
-    --font-size-xxs: none;
+    --font-size-xxs: .4rem;
     --font-size-xs: .6rem;
     --font-size-s: .8rem;
     --font-size-m: 1rem;

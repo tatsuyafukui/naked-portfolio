@@ -1,2 +1,6 @@
-export const imageContainer: string;
-export const root: string;
+declare const styles: {
+  readonly "imageContainer": string;
+  readonly "root": string;
+};
+export = styles;
+

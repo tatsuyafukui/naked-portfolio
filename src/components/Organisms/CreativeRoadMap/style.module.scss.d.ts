@@ -1,1 +1,5 @@
-export const buttonContainer: string;
+declare const styles: {
+  readonly "buttonContainer": string;
+};
+export = styles;
+

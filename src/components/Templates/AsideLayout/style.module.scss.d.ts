@@ -1,2 +1,6 @@
-export const container: string;
-export const aside: string;
+declare const styles: {
+  readonly "container": string;
+  readonly "aside": string;
+};
+export = styles;
+

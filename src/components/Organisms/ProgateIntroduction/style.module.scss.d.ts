@@ -1,7 +1,11 @@
-export const root: string;
-export const slider: string;
-export const slide: string;
-export const link: string;
-export const btn: string;
-export const prevButton: string;
-export const nextButton: string;
+declare const styles: {
+  readonly "root": string;
+  readonly "slider": string;
+  readonly "slide": string;
+  readonly "link": string;
+  readonly "btn": string;
+  readonly "prevButton": string;
+  readonly "nextButton": string;
+};
+export = styles;
+

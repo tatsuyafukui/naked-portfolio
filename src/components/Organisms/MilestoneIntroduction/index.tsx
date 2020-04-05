@@ -26,7 +26,7 @@ const MilestoneIntroduction: React.FC<IMilestone> = React.memo(props => {
   return (
     <InlineSection reverse={props.reverse}>
       <div>
-        <Img fluid={data[props.image].childImageSharp.fluid} />;
+        <Img fluid={data[props.image].childImageSharp.fluid} />
       </div>
       <div>
         <div>

@@ -1,16 +1,20 @@
-export const xxs: string;
-export const xs: string;
-export const s: string;
-export const m: string;
-export const l: string;
-export const xl: string;
-export const xxl: string;
-export const xxxl: string;
-export const xxxxl: string;
-export const base: string;
-export const white: string;
-export const success: string;
-export const info: string;
-export const primary: string;
-export const warning: string;
-export const danger: string;
+declare const styles: {
+  readonly "xxs": string;
+  readonly "xs": string;
+  readonly "s": string;
+  readonly "m": string;
+  readonly "l": string;
+  readonly "xl": string;
+  readonly "xxl": string;
+  readonly "xxxl": string;
+  readonly "xxxxl": string;
+  readonly "base": string;
+  readonly "white": string;
+  readonly "success": string;
+  readonly "info": string;
+  readonly "primary": string;
+  readonly "warning": string;
+  readonly "danger": string;
+};
+export = styles;
+

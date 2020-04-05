@@ -1,6 +1,10 @@
-export const root: string;
-export const base: string;
-export const primary: string;
-export const secondary: string;
-export const warning: string;
-export const danger: string;
+declare const styles: {
+  readonly "root": string;
+  readonly "base": string;
+  readonly "primary": string;
+  readonly "secondary": string;
+  readonly "warning": string;
+  readonly "danger": string;
+};
+export = styles;
+
