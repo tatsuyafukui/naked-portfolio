@@ -29,6 +29,14 @@ docker container ls
 localhost:8000
 ```
 
+## CSSツール
+typescriptだとCSSのインポートにも型定義が必要です。
+手動で作るのが面倒な場合は[この記事のツール入れておくと便利](https://qiita.com/Quramy/items/a5d8967cdbd1b8575130)
+
+```$xslt
+tcm -p src/**/*.scss
+```
+
 ## yarn scripts
 
 Dockerのコンテナ経由でコマンド実行する
