@@ -6,11 +6,12 @@ WORKDIR $HOME
 COPY package.json $HOME
 COPY yarn.lock $HOME
 
-RUN yarn install && rm -rf .npm/
+RUN yarn install
 
 VOLUME ["/usr/src/app"]
 
 RUN rm -rf .config/
 EXPOSE 9000
 EXPOSE 8000
+EXPOSE 6006
 CMD ["npm", "run", "develop"]
