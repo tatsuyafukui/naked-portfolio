@@ -4,7 +4,8 @@
     --color-white: #fff;
     --color-background-white: #F9FBFE;
     --color-black: #0B0F15;
-    --color-gray: #BAC6D3;
+    --color-gray: #D9D9D9;
+    --color-text-gray: #666666;
     --color-gray-light: #F0F4F9;
     --color-gray-dark: #8491A5;
     --color-navy-gray: #6783a0;
@@ -40,7 +41,7 @@
     --color-warning: var(--color-orange);
     --color-warning-hover: var(--color-orange);
 
-    --color-info: var(--color-gray);
+    --color-info: var(--color-text-gray);
 
     --color-primary: var(--color-aqua);
     --color-primary-hover: var(--color-aqua-dark);

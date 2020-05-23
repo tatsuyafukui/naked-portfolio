@@ -41,7 +41,7 @@ const Image: React.FC<IProps> = ({ imageName, ...props }) => {
       pathNodeImage: file(relativePath: { eq: "top/path-nodejs.png" }) {
         ...servicesImage
       }
-
+      
       # about page image
       goalImage: file(relativePath: { eq: "about/goal-image.png" }) {
         ...servicesImage
@@ -63,6 +63,7 @@ const Image: React.FC<IProps> = ({ imageName, ...props }) => {
       whyImage: file(relativePath: { eq: "about/why.png" }) {
         ...servicesImage
       }
+      
     }
   `);
 

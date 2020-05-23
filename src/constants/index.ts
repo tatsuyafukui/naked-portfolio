@@ -68,6 +68,7 @@ export enum ImageName {
   outputImage = 'outputImage',
   whyImage = 'whyImage',
   pathNodeImage = 'pathNodeImage',
+  mainImage = 'mainImage',
 }
 
 export enum Milestones {
@@ -82,6 +83,8 @@ export enum AboutImage {
   outputImage = 'outputImage',
   whyImage = 'whyImage',
   pathNodeImage = 'pathNodeImage',
+  mainImage = 'mainImage',
+
 }
 
 export enum IconName {
@@ -97,4 +100,5 @@ export enum LogoName {
   headerLogo = 'headerLogo',
   inlineLogo = 'inlineLogo',
   whiteLogo = 'whiteLogo',
+  journeyLogo = 'journeyLogo',
 }

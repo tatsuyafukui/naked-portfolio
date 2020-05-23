@@ -9,7 +9,6 @@ const IndexPage = () => {
     <IndexTemplate>
       <SEO title="Home" />
       <CreativeRoadMap />
-      <LetsStartProgate />
     </IndexTemplate>
   );
 };

@@ -1,13 +1,11 @@
 import React from 'react';
 import Heading from '../../Atoms/Heading';
-import Txt from '../../Atoms/Txt';
-import { Milestones } from '../../../constants';
+import {Level} from '../../../constants';
 import style from './style.module.scss';
-import { PrimaryButton } from '../../Atoms/Button';
-import { graphql, Link, useStaticQuery } from 'gatsby';
+import {graphql, useStaticQuery} from 'gatsby';
 import Img from 'gatsby-image';
-import MilestoneIntroduction from '../MilestoneIntroduction';
 import MediaObjectLayout from "../../Atoms/MediaObjectLayout";
+import {InfoTxt} from "../../Atoms/Txt";
 
 const CreativeRoadMap: React.FC = React.memo(() => {
   const data = useStaticQuery(graphql`
@@ -18,118 +16,101 @@ const CreativeRoadMap: React.FC = React.memo(() => {
         }
       }
     }
+    fragment mainImage on File {
+        childImageSharp {
+            fixed(height: 500) {
+              ...GatsbyImageSharpFixed
+            }
+        }
+    }
+    fragment sceneImage on File {
+      childImageSharp {
+        fixed(width: 440) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
     query {
-      # top page image
-      rocketImage: file(relativePath: { eq: "top/rocket.png" }) {
-        ...servicesImage
+      mainImage: file(relativePath: { eq: "about/main.jpg" }) {
+        ...mainImage
       }
-      successImage: file(relativePath: { eq: "top/success.png" }) {
-        ...servicesImage
-      }
-      pathNodeImage: file(relativePath: { eq: "top/path-nodejs.png" }) {
-        ...servicesImage
+      sceneImage: file(relativePath: { eq: "about/scene.png" }) {
+        ...sceneImage
       }
     }
   `);
 
-  const milestoneList = [
-    {
-      id: 'milestone5',
-      heading: '継続してプロダクトを届けよう',
-      link: '/milestones/keep-delivering',
-      image: Milestones.milestoneImage,
-      content:
-        'Webアプリケーションは公開して終わりではありません\n' +
-        '新しい機能を追加し続けるために、継続してプロダクトを届ける準備をしましょう。',
-    },
-    {
-      id: 'milestone4',
-      heading: '公開できるプロダクトに必要なことを知ろう',
-      className: style.reverse,
-      link: '/milestones/product-release',
-      image: Milestones.milestoneImage,
-      content:
-        'プロダクトを公開するには責任が伴います。ユーザーに安心して使ってもらえるようにセキュリティの基本について学びましょう。',
-    },
-    {
-      id: 'milestone3',
-      heading: 'みんなで開発しよう',
-      link: '/milestones/develop-together',
-      image: Milestones.milestoneImage,
-      content:
-        '仲間と開発することはプロダクトを作る面白さの１つです。\n' +
-        'チーム開発の基礎を学んで仲間を集める準備をしましょう。',
-    },
-    {
-      id: 'milestone2',
-      heading: 'Webアプリケーションを作ってみよう',
-      reverse: true,
-      className: style.reverse,
-      image: Milestones.milestoneImage,
-      content:
-        '仲間と開発することはプロダクトを作る面白さの１つです。チーム開発の基礎を学んで仲間を集める準備をしましょう。',
-    },
-    {
-      id: 'milestone1',
-      heading: 'Webページを作れるようになろう',
-      link: '/milestones/create-web-page',
-      image: Milestones.milestoneImage,
-      content:
-        'プロダクトを公開するには責任が伴います。ユーザーに安心して使ってもらえるようにセキュリティの基本について学びましょう。',
-    },
-  ];
-
   return (
     <>
-      <MediaObjectLayout className={style.container}>
-        <div style={{ padding: '40px' }}>
-          <Img fluid={data.successImage.childImageSharp.fluid} />
-        </div>
-        <div>
-          <div>
-            <Heading>創れる人になろう</Heading>
-            <Txt>
-              自分や誰かのために考えたことを形にし、世の中に出そう。
-              様々な職種の人とともに価値を生み出せる人になろう。
-            </Txt>
-            <div className={style.buttonContainer}>
-              <Link to={'/'}>
-                <PrimaryButton>みんなの成果物</PrimaryButton>
-              </Link>
-              <Link to={'/'}>
-                <PrimaryButton>目標を設定する</PrimaryButton>
-              </Link>
+      <div className={style.topSection}>
+        <div className={style.container}>
+          <div className={style.flex}>
+            <div className={style.topSectionLeft}>
+              <h1>目標へ向かう学習を</h1>
+              <p>Journeyはあなたが自信をもって<br/>
+                目標へ向かうための学習ロードマップです</p>
             </div>
-          </div>
+            <div className={style.topSectionRight}>
+              <Img fixed={data.mainImage.childImageSharp.fixed} />
+            </div>
+            </div>
         </div>
-      </MediaObjectLayout>
-      <MediaObjectLayout className={[style.container,style.reverse].join(' ')}>
-        <div>
-          <Img fluid={data.rocketImage.childImageSharp.fluid} />
+      </div>
+      <div className={style.sceneSection}>
+        <div className={style.container}>
+          <MediaObjectLayout>
+            <div>
+              <Img fixed={data.sceneImage.childImageSharp.fixed} />
+            </div>
+            <div style={{padding: "32px"}}>
+              <Heading level={Level.h3}>シーン1</Heading>
+              <Heading level={Level.h2}>Webページを作れるようになろう</Heading>
+              <InfoTxt>詳細を見る</InfoTxt>
+            </div>
+          </MediaObjectLayout>
+          <MediaObjectLayout>
+            <div>
+              <Img fixed={data.sceneImage.childImageSharp.fixed} />
+            </div>
+            <div style={{padding: "32px"}}>
+              <Heading level={Level.h3}>シーン1</Heading>
+              <Heading level={Level.h2}>Webページを作れるようになろう</Heading>
+              <InfoTxt>詳細を見る</InfoTxt>
+            </div>
+          </MediaObjectLayout>
+          <MediaObjectLayout>
+            <div>
+              <Img fixed={data.sceneImage.childImageSharp.fixed} />
+            </div>
+            <div style={{padding: "32px"}}>
+              <Heading level={Level.h3}>シーン1</Heading>
+              <Heading level={Level.h2}>Webページを作れるようになろう</Heading>
+              <InfoTxt>詳細を見る</InfoTxt>
+            </div>
+          </MediaObjectLayout>
+          <MediaObjectLayout>
+            <div>
+              <Img fixed={data.sceneImage.childImageSharp.fixed} />
+            </div>
+            <div style={{padding: "32px"}}>
+              <Heading level={Level.h3}>シーン1</Heading>
+              <Heading level={Level.h2}>Webページを作れるようになろう</Heading>
+              <InfoTxt>詳細を見る</InfoTxt>
+            </div>
+          </MediaObjectLayout>
+          <MediaObjectLayout>
+            <div>
+              <Img fixed={data.sceneImage.childImageSharp.fixed} />
+            </div>
+            <div style={{padding: "32px"}}>
+              <Heading level={Level.h3}>シーン1</Heading>
+              <Heading level={Level.h2}>Webページを作れるようになろう</Heading>
+              <InfoTxt>詳細を見る</InfoTxt>
+            </div>
+          </MediaObjectLayout>
         </div>
-        <div>
-          <div>
-            <Heading>夢に向かって飛び立とう</Heading>
-            <Txt>
-              夢への道は人それぞれ。可能性を広げる道はアナタ次第。
-              これまで学んだことを自信に変えて飛び立ちましょう！
-            </Txt>
-          </div>
-        </div>
-      </MediaObjectLayout>
-      {milestoneList.map(item => {
-        return (
-          <MilestoneIntroduction
-            key={item.id}
-            id={item.id}
-            heading={item.heading}
-            className={[style.container, item.className].join(' ')}
-            link={item.link}
-            image={item.image}
-            content={item.content}
-          />
-        );
-      })}
+      </div>
+
     </>
   );
 });

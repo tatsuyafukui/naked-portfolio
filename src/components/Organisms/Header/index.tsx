@@ -9,23 +9,9 @@ const Header = () => (
   <header className={style.header}>
     <Link to="/">
       <div>
-        <Logo logoName={LogoName.headerLogo} />
+        <Logo logoName={LogoName.journeyLogo} />
       </div>
     </Link>
-    <ul className={style.headerMenuContainer}>
-      <li className={style.headerMenu}>
-        <Link to={'/'}>ログイン</Link>
-      </li>
-      <li className={style.headerMenu}>
-        <Link to={'/'}>登録</Link>
-      </li>
-      <li className={style.headerMenu}>
-        <Link to={'/about'}>使い方</Link>
-      </li>
-      <li className={style.headerMenu}>
-        <Link to={'/'}>目標確認</Link>
-      </li>
-    </ul>
   </header>
 );
 

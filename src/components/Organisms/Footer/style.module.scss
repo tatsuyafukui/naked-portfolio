@@ -2,19 +2,20 @@
 
 .root {
     width: 100%;
-    color: var(--color-navy);
-    background-color: var(--color-white);
     margin: 0;
-    padding: 50px 0;
+    padding: 72px 0;
     border-top: var(--border);
 }
 
 .container {
     margin: 0 auto;
-    max-width: 960px;
-    padding: 0 1.0875rem 1.45rem;
-    display: flex;
+    max-width: 1140px;
+    > div {
+        display: flex;
+        justify-content: space-between;
+    }
 }
+
 
 .logoBlock {
     display: flex;

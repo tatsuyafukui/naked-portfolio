@@ -38,6 +38,9 @@ const HowToUseItem: React.FC<ISection> = props => {
       whyImage: file(relativePath: { eq: "about/why.png" }) {
         ...servicesImage
       }
+      mainImage: file(relativePath: { eq: "about/main.jpg" }) {
+        ...servicesImage
+      }
     }
   `);
 

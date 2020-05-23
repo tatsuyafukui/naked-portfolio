@@ -37,6 +37,9 @@ const Logo: React.FC<IProps> = props => {
       whiteLogo: file(relativePath: { eq: "logo/logo-white.png" }) {
         ...servicesLogo
       }
+      journeyLogo: file(relativePath: { eq: "logo/journey-logo.png" }) {
+        ...servicesLogo
+      }
     }
   `);
   return (
