@@ -9,7 +9,7 @@ docker image build -t node12.16.1:gatsby .
 
 ### 起動
 ```.env
-docker container run --rm -it --name gatsby_app -v プロジェクトパス:/usr/src/app:/usr/src/app --network node_node_app_net --ip 172.25.0.10 -p 8000:8000 -p 9000:9000 -p 6006:6006 node12.16.1:gatsby
+docker container run --rm -it --name gatsby_app -v プロジェクトパス:/usr/src/app --network node_node_app_net --ip 172.25.0.10 -p 8000:8000 -p 9000:9000 -p 6006:6006 node12.16.1:gatsby
 ```
 
 dockerのネットワーク作っていない場合は下のコマンド消す

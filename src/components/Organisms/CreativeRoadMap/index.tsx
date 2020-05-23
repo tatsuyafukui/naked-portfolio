@@ -3,11 +3,12 @@ import Heading from '../../Atoms/Heading';
 import {Level} from '../../../constants';
 import style from './style.module.scss';
 import {graphql, useStaticQuery} from 'gatsby';
-import Img from 'gatsby-image';
 import MediaObjectLayout from "../../Atoms/MediaObjectLayout";
 import {InfoTxt} from "../../Atoms/Txt";
+import Img from "gatsby-image";
 
 const CreativeRoadMap: React.FC = React.memo(() => {
+
   const data = useStaticQuery(graphql`
     fragment servicesImage on File {
       childImageSharp {
@@ -17,11 +18,11 @@ const CreativeRoadMap: React.FC = React.memo(() => {
       }
     }
     fragment mainImage on File {
-        childImageSharp {
-            fixed(height: 500) {
-              ...GatsbyImageSharpFixed
-            }
+      childImageSharp {
+        fixed(height: 500) {
+          ...GatsbyImageSharpFixed
         }
+      }
     }
     fragment sceneImage on File {
       childImageSharp {
@@ -31,6 +32,7 @@ const CreativeRoadMap: React.FC = React.memo(() => {
       }
     }
     query {
+      # top page image
       mainImage: file(relativePath: { eq: "about/main.jpg" }) {
         ...mainImage
       }

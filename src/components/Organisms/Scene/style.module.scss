@@ -1,0 +1,53 @@
+.root {
+
+}
+
+.title {
+  margin: 32px 0;
+  p {
+    margin-bottom: 12px;
+  }
+}
+
+.visual {
+  max-height: 460px;
+  background-color: #F7F7F7;
+  margin-bottom: 48px;
+  > div {
+    max-width: 690px;
+    margin: 0 auto;
+  }
+}
+
+.body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description {
+  max-width: 620px;
+}
+
+.skill {
+  width: 40%;
+  max-width: 463px;
+  h5 {
+    margin-bottom: 32px;
+  }
+}
+
+.mediaObjectLayout {
+  max-height: 70px;
+  margin-bottom: 24px;
+}
+
+.skillText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 16px;
+  > * {
+    margin: 0;
+    padding-bottom: 8px;
+  }
+}

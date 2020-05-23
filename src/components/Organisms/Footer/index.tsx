@@ -22,35 +22,6 @@ const Footer = () => (
           </ul>
         </div>
       </div>
-
-
-
-
-
-      {/*<div className={style.logoBlock}>*/}
-      {/*  <Logo logoName={LogoName.inlineLogo} />*/}
-      {/*</div>*/}
-      {/*<div className={style.menuBlock}>*/}
-      {/*  <ul className={style.menuContainer}>*/}
-      {/*    <li>*/}
-      {/*      <strong>サービス</strong>*/}
-      {/*    </li>*/}
-      {/*    <li>progate</li>*/}
-      {/*    <li>progate</li>*/}
-      {/*    <li>progate</li>*/}
-      {/*  </ul>*/}
-
-
-
-      {/*  <ul className={style.menuContainer}>*/}
-      {/*    <li>*/}
-      {/*      <strong>ビジネス</strong>*/}
-      {/*    </li>*/}
-      {/*    <li>progate</li>*/}
-      {/*    <li>progate</li>*/}
-      {/*    <li>progate</li>*/}
-      {/*  </ul>*/}
-      {/*</div>*/}
     </div>
   </footer>
 );

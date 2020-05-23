@@ -27,43 +27,28 @@ const Image: React.FC<IProps> = ({ imageName, ...props }) => {
         }
       }
     }
+    fragment mainImage on File {
+      childImageSharp {
+        fixed(height: 500) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    fragment sceneImage on File {
+      childImageSharp {
+        fixed(width: 440) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
     query {
       # top page image
-      rocketImage: file(relativePath: { eq: "top/rocket.png" }) {
-        ...servicesImage
+      mainImage: file(relativePath: { eq: "about/main.jpg" }) {
+        ...mainImage
       }
-      successImage: file(relativePath: { eq: "top/success.png" }) {
-        ...servicesImage
+      sceneImage: file(relativePath: { eq: "about/scene.png" }) {
+        ...sceneImage
       }
-      milestoneImage: file(relativePath: { eq: "top/milestone-dummy.png" }) {
-        ...servicesImage
-      }
-      pathNodeImage: file(relativePath: { eq: "top/path-nodejs.png" }) {
-        ...servicesImage
-      }
-      
-      # about page image
-      goalImage: file(relativePath: { eq: "about/goal-image.png" }) {
-        ...servicesImage
-      }
-      selectMilestoneImage: file(
-        relativePath: { eq: "about/select-milestone.png" }
-      ) {
-        ...servicesImage
-      }
-      aroundImage: file(relativePath: { eq: "about/around.png" }) {
-        ...servicesImage
-      }
-      deepLearnImage: file(relativePath: { eq: "about/deep-learn.png" }) {
-        ...servicesImage
-      }
-      outputImage: file(relativePath: { eq: "about/output.png" }) {
-        ...servicesImage
-      }
-      whyImage: file(relativePath: { eq: "about/why.png" }) {
-        ...servicesImage
-      }
-      
     }
   `);
 
