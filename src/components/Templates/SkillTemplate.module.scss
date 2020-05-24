@@ -32,6 +32,7 @@
   padding-bottom: 26px;
   border-bottom: var(--border);
   margin: 0;
+
 }
 
 .recommend {
@@ -46,8 +47,9 @@
   max-width: 620px;
   margin: 0 auto;
   color: #212121;
-  font-size: 18px;
+  font-size: var(--font-size-m);
   margin-bottom: 100px;
+
   p {
     line-height: 27px;
     font-weight: 300;
