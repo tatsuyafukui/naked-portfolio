@@ -3,11 +3,11 @@ import React from "react";
 import Txt, {InfoTxt} from "../../Atoms/Txt";
 import Heading from "../../Atoms/Heading";
 import Img from "gatsby-image";
-import {graphql, useStaticQuery} from "gatsby";
+import {graphql, useStaticQuery, Link} from "gatsby";
 import style from "./style.module.scss";
 import MediaObjectLayout from "../../Atoms/MediaObjectLayout";
 
-const Scene = () => {
+const Scene: React.FC<any>  = (props) => {
 		const data = useStaticQuery(graphql`				
       query {
           sceneImage:file(relativePath: {eq: "about/scene.png"}) {
@@ -17,15 +17,10 @@ const Scene = () => {
                   }
               }
           }
-          skillImage:file(relativePath: {eq: "icon/skill.png"}) {
-              childImageSharp{
-                  fixed(width: 70, height: 70) {
-                      ...GatsbyImageSharpFixed
-                  }
-              }
-          }
       }
 		`);
+
+		console.log(props.skills)
 
 		return (
 				<div>
@@ -54,50 +49,25 @@ const Scene = () => {
 								</div>
 								<div className={style.skill}>
 										<Heading level={Level.h5}>必要なスキル</Heading>
-										<MediaObjectLayout className={style.mediaObjectLayout}>
-												<div>
-														<Img fixed={data.skillImage.childImageSharp.fixed} />
-												</div>
-												<div className={style.skillText}>
-														<Txt fontSize={FontSize.l}>
-																HTML/CSS
-														</Txt>
-														<div>></div>
-												</div>
-										</MediaObjectLayout>
-										<MediaObjectLayout className={style.mediaObjectLayout}>
-												<div>
-														<Img fixed={data.skillImage.childImageSharp.fixed} />
-												</div>
-												<div className={style.skillText}>
-														<Txt fontSize={FontSize.l}>
-																HTML/CSS
-														</Txt>
-														<div>></div>
-												</div>
-										</MediaObjectLayout>
-										<MediaObjectLayout className={style.mediaObjectLayout}>
-												<div>
-														<Img fixed={data.skillImage.childImageSharp.fixed} />
-												</div>
-												<div className={style.skillText}>
-														<Txt fontSize={FontSize.l}>
-																HTML/CSS
-														</Txt>
-														<div>></div>
-												</div>
-										</MediaObjectLayout>
-										<MediaObjectLayout className={style.mediaObjectLayout}>
-												<div>
-														<Img fixed={data.skillImage.childImageSharp.fixed} />
-												</div>
-												<div className={style.skillText}>
-														<Txt fontSize={FontSize.l}>
-																HTML/CSS
-														</Txt>
-														<div>></div>
-												</div>
-										</MediaObjectLayout>
+										{/* スキルリストのcomponent化 */}
+										{props.skills.map((skill: any) => (
+												<Link
+														key={skill.node.id}
+														to={skill.node.fields.slug}
+												>
+														<MediaObjectLayout className={style.mediaObjectLayout}>
+																<div>
+																		<Img fixed={skill.node.frontmatter.icon.childImageSharp.fixed} />
+																</div>
+																<div className={style.skillText}>
+																		<Txt fontSize={FontSize.l}>
+																				{skill.node.frontmatter.title}
+																		</Txt>
+																		<div>></div>
+																</div>
+														</MediaObjectLayout>
+												</Link>
+										))}
 								</div>
 						</div>
 				</div>

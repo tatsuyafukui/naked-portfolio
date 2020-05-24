@@ -27,10 +27,18 @@ exports.createPages = async ({ graphql, actions }) => {
       }
     }
   `);
+
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const isSkill = node.fields.slug.match("/skills/");
+    const templateFile = isSkill? "SkillTemplate": "blog-post";
     createPage({
       path: node.fields.slug,
-      component: path.resolve(`./src/components/Templates/blog-post.tsx`),
+      component: path.resolve(`./src/components/Templates/${templateFile}.tsx`),
       context: {
         // Data passed to context is available
         // in page queries as GraphQL variables.

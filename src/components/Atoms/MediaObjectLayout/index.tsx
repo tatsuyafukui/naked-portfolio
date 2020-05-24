@@ -6,10 +6,10 @@ interface IProps extends React.HTMLAttributes<HTMLElement>{
 		children: ReactElement[];
 }
 
-const MediaObjectLayout: React.FC<IProps> = ({children, className, tag: Tag='div', ...props}) => {
+const MediaObjectLayout: React.FC<IProps> = ({children, className, tag: Tag='div'}) => {
 		return (
-				<Tag className={[style.container, className].join(' ')} {...props}>
-						<div className={style.media}>{children[0]}</div>
+				<Tag className={[style.container, className].join(' ')}>
+						<div>{children[0]}</div>
 						<div className={style.body}>{children.slice(1)}</div>
 				</Tag>
 		)

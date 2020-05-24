@@ -1,11 +1,12 @@
 import React from 'react';
 import Heading from '../../Atoms/Heading';
-import {Level} from '../../../constants';
+import {ImageName, Level} from '../../../constants';
 import style from './style.module.scss';
 import {graphql, useStaticQuery} from 'gatsby';
 import MediaObjectLayout from "../../Atoms/MediaObjectLayout";
 import {InfoTxt} from "../../Atoms/Txt";
 import Img from "gatsby-image";
+import Image from "../../Atoms/Img";
 
 const CreativeRoadMap: React.FC = React.memo(() => {
 
@@ -20,14 +21,14 @@ const CreativeRoadMap: React.FC = React.memo(() => {
     fragment mainImage on File {
       childImageSharp {
         fixed(height: 500) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
         }
       }
     }
     fragment sceneImage on File {
       childImageSharp {
         fixed(width: 440) {
-          ...GatsbyImageSharpFixed
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
         }
       }
     }
@@ -53,7 +54,8 @@ const CreativeRoadMap: React.FC = React.memo(() => {
                 目標へ向かうための学習ロードマップです</p>
             </div>
             <div className={style.topSectionRight}>
-              <Img fixed={data.mainImage.childImageSharp.fixed} />
+              <Img
+                fixed={data.mainImage.childImageSharp.fixed} />
             </div>
             </div>
         </div>
@@ -62,7 +64,10 @@ const CreativeRoadMap: React.FC = React.memo(() => {
         <div className={style.container}>
           <MediaObjectLayout>
             <div>
-              <Img fixed={data.sceneImage.childImageSharp.fixed} />
+              <Img
+                fixed={data.sceneImage.childImageSharp.fixed}
+                backgroundColor
+              />
             </div>
             <div style={{padding: "32px"}}>
               <Heading level={Level.h3}>シーン1</Heading>
@@ -72,7 +77,10 @@ const CreativeRoadMap: React.FC = React.memo(() => {
           </MediaObjectLayout>
           <MediaObjectLayout>
             <div>
-              <Img fixed={data.sceneImage.childImageSharp.fixed} />
+              <Img
+                fixed={data.sceneImage.childImageSharp.fixed}
+                backgroundColor
+              />
             </div>
             <div style={{padding: "32px"}}>
               <Heading level={Level.h3}>シーン1</Heading>
@@ -82,7 +90,10 @@ const CreativeRoadMap: React.FC = React.memo(() => {
           </MediaObjectLayout>
           <MediaObjectLayout>
             <div>
-              <Img fixed={data.sceneImage.childImageSharp.fixed} />
+              <Img
+                fixed={data.sceneImage.childImageSharp.fixed}
+                backgroundColor
+              />
             </div>
             <div style={{padding: "32px"}}>
               <Heading level={Level.h3}>シーン1</Heading>
@@ -92,7 +103,10 @@ const CreativeRoadMap: React.FC = React.memo(() => {
           </MediaObjectLayout>
           <MediaObjectLayout>
             <div>
-              <Img fixed={data.sceneImage.childImageSharp.fixed} />
+              <Img
+                fixed={data.sceneImage.childImageSharp.fixed}
+                backgroundColor
+              />
             </div>
             <div style={{padding: "32px"}}>
               <Heading level={Level.h3}>シーン1</Heading>
@@ -102,7 +116,10 @@ const CreativeRoadMap: React.FC = React.memo(() => {
           </MediaObjectLayout>
           <MediaObjectLayout>
             <div>
-              <Img fixed={data.sceneImage.childImageSharp.fixed} />
+              <Img
+                fixed={data.sceneImage.childImageSharp.fixed}
+                backgroundColor
+              />
             </div>
             <div style={{padding: "32px"}}>
               <Heading level={Level.h3}>シーン1</Heading>

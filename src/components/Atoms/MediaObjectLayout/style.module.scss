@@ -9,6 +9,10 @@
   min-width: 0;
 }
 
+.container > div {
+  //width: 50%;
+}
+
 @media (max-width: 768px) {
   .container > div {
     width: 100%;

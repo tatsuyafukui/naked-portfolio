@@ -20,21 +20,21 @@ interface IProps extends GatsbyImageProps {
 
 const Image: React.FC<IProps> = ({ imageName, ...props }) => {
   const data = useStaticQuery(graphql`
-    fragment servicesImage on File {
+    fragment aa on File {
       childImageSharp {
         fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
-    fragment mainImage on File {
+    fragment sss on File {
       childImageSharp {
         fixed(height: 500) {
           ...GatsbyImageSharpFixed
         }
       }
     }
-    fragment sceneImage on File {
+    fragment ss on File {
       childImageSharp {
         fixed(width: 440) {
           ...GatsbyImageSharpFixed
@@ -44,10 +44,10 @@ const Image: React.FC<IProps> = ({ imageName, ...props }) => {
     query {
       # top page image
       mainImage: file(relativePath: { eq: "about/main.jpg" }) {
-        ...mainImage
+        ...aa
       }
       sceneImage: file(relativePath: { eq: "about/scene.png" }) {
-        ...sceneImage
+        ...aa
       }
     }
   `);

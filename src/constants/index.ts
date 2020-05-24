@@ -69,6 +69,7 @@ export enum ImageName {
   whyImage = 'whyImage',
   pathNodeImage = 'pathNodeImage',
   mainImage = 'mainImage',
+  sceneImage = 'sceneImage',
 }
 
 export enum Milestones {

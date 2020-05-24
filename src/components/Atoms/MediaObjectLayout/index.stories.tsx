@@ -1,26 +1,25 @@
 import React from 'react';
 import {storiesOf} from '@storybook/react';
 import MediaObjectLayout from './index';
-import Image from "../Img";
-import {ImageName} from "../../../constants";
 import Button from "../Button";
 import Heading from "../Heading";
 import Txt from "../Txt";
+const dammy = require("../../../mock/images/img01.png");
 
 storiesOf(`Atoms/MediaObjectLayout`, module)
 .add(`default`, () => (
 		<MediaObjectLayout>
 				<div>
-						<Image imageName={ImageName.rocketImage}/>
+						<img src={dammy} width={300} height={300} />
 				</div>
 				<p>説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト</p>
-				<p>表示されてはだめ表示されてはだめ表示されてはだめ表示されてはだめ</p>
+				<p>説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト</p>
 		</MediaObjectLayout>
 ))
 .add(`sectionタグ指定`, () => (
 		<MediaObjectLayout tag={'section'}>
 				<div>
-						<Image imageName={ImageName.rocketImage}/>
+						<img src={dammy} width={300} height={300} />
 				</div>
 				<p>説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト</p>
 		</MediaObjectLayout>
@@ -28,7 +27,7 @@ storiesOf(`Atoms/MediaObjectLayout`, module)
 .add(`タイトル、説明、ボタン`, () => (
 		<MediaObjectLayout>
 				<div>
-						<Image imageName={ImageName.rocketImage}/>
+						<img src={dammy} width={300} height={300} />
 				</div>
 				<div>
 						<Heading>タイトル</Heading>
