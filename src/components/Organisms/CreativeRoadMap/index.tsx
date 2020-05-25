@@ -7,6 +7,7 @@ import MediaObjectLayout from "../../Atoms/MediaObjectLayout";
 import {InfoTxt} from "../../Atoms/Txt";
 import Img from "gatsby-image";
 import Image from "../../Atoms/Img";
+import SceneList from "../SceneList";
 
 const CreativeRoadMap: React.FC = React.memo(() => {
 
@@ -37,11 +38,34 @@ const CreativeRoadMap: React.FC = React.memo(() => {
       mainImage: file(relativePath: { eq: "about/main.jpg" }) {
         ...mainImage
       }
-      sceneImage: file(relativePath: { eq: "about/scene.png" }) {
+      sceneImage: file(relativePath: { eq: "scenes/scene.png" }) {
         ...sceneImage
+      }
+      allMarkdownRemark(sort: { fields: [frontmatter___sceneId], order: ASC }, filter: {frontmatter: {type: {eq: "scene"}}}) {
+        edges {
+          node {
+            id
+            frontmatter {
+              title
+              sceneId
+              icon {
+                childImageSharp {
+                  fixed(width: 440) {
+                    ...GatsbyImageSharpFixed_withWebp_tracedSVG
+                  }
+                }
+              }
+            }
+            fields {
+              slug
+            }
+          }
+        }
       }
     }
   `);
+  const scenes = data.allMarkdownRemark.edges;
+  console.log(scenes)
 
   return (
     <>
@@ -62,82 +86,9 @@ const CreativeRoadMap: React.FC = React.memo(() => {
       </div>
       <div className={style.sceneSection}>
         <div className={style.container}>
-          {/* TODO: create scenesList component */}
-          <Link to={'/scenes/create-web-page/'}>
-            <MediaObjectLayout>
-              <div>
-                <Img
-                  fixed={data.sceneImage.childImageSharp.fixed}
-                  backgroundColor
-                />
-              </div>
-              <div style={{padding: "32px"}}>
-                <Heading level={Level.h3}>シーン1</Heading>
-                <Heading level={Level.h2}>Webページを作れるようになろう</Heading>
-                <InfoTxt>詳細を見る</InfoTxt>
-              </div>
-            </MediaObjectLayout>
-          </Link>
-          <Link to={'/scenes/create-web-page/'}>
-            <MediaObjectLayout>
-              <div>
-                <Img
-                  fixed={data.sceneImage.childImageSharp.fixed}
-                  backgroundColor
-                />
-              </div>
-              <div style={{padding: "32px"}}>
-                <Heading level={Level.h3}>シーン1</Heading>
-                <Heading level={Level.h2}>Webページを作れるようになろう</Heading>
-                <InfoTxt>詳細を見る</InfoTxt>
-              </div>
-            </MediaObjectLayout>
-          </Link>
-          <Link to={'/scenes/create-web-page/'}>
-            <MediaObjectLayout>
-              <div>
-                <Img
-                  fixed={data.sceneImage.childImageSharp.fixed}
-                  backgroundColor
-                />
-              </div>
-              <div style={{padding: "32px"}}>
-                <Heading level={Level.h3}>シーン1</Heading>
-                <Heading level={Level.h2}>Webページを作れるようになろう</Heading>
-                <InfoTxt>詳細を見る</InfoTxt>
-              </div>
-            </MediaObjectLayout>
-          </Link>
-          <Link to={'/scenes/create-web-page/'}>
-            <MediaObjectLayout>
-              <div>
-                <Img
-                  fixed={data.sceneImage.childImageSharp.fixed}
-                  backgroundColor
-                />
-              </div>
-              <div style={{padding: "32px"}}>
-                <Heading level={Level.h3}>シーン1</Heading>
-                <Heading level={Level.h2}>Webページを作れるようになろう</Heading>
-                <InfoTxt>詳細を見る</InfoTxt>
-              </div>
-            </MediaObjectLayout>
-          </Link>
-          <Link to={'/scenes/create-web-page/'}>
-            <MediaObjectLayout>
-              <div>
-                <Img
-                  fixed={data.sceneImage.childImageSharp.fixed}
-                  backgroundColor
-                />
-              </div>
-              <div style={{padding: "32px"}}>
-                <Heading level={Level.h3}>シーン1</Heading>
-                <Heading level={Level.h2}>Webページを作れるようになろう</Heading>
-                <InfoTxt>詳細を見る</InfoTxt>
-              </div>
-            </MediaObjectLayout>
-          </Link>
+          <SceneList
+            scenes={scenes}
+          />
         </div>
       </div>
 

@@ -1,11 +1,9 @@
 ---
+type: skill
 title: 'JavaScript'
-date: '2020-08-1'
 icon: '../../../../images/skills/icon/javascript.png'
-
-attachments:
-  - "aaa"
-  - "vvv"
+order: 2
+sceneId: 1
 ---
 
 HTML/CSSはWebページを作るために使われる言語です。

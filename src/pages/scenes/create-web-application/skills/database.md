@@ -1,11 +1,9 @@
 ---
+type: skill
 title: 'データベース'
-date: '2020-08-1'
 icon: '../../../../images/skills/icon/database.png'
-
-attachments:
-  - "aaa"
-  - "vvv"
+order: 1
+sceneId: 2
 ---
 
 HTML/CSSはWebページを作るために使われる言語です。

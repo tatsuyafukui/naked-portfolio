@@ -25,8 +25,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Progate Road Map`,
-        short_name: `Road map`,
+        name: `Progate Journey`,
+        short_name: `Journey`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#fff`,

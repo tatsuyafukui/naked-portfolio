@@ -22,6 +22,10 @@ exports.createPages = async ({ graphql, actions }) => {
             fields {
               slug
             }
+            frontmatter {
+              sceneId
+              type
+            }
           }
         }
       }
@@ -34,15 +38,23 @@ exports.createPages = async ({ graphql, actions }) => {
   }
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    const isSkill = node.fields.slug.match("/skills/");
-    const templateFile = isSkill? "SkillTemplate": "blog-post";
+
+    let template;
+
+    if(node.fields.slug.match("/skills/")) {
+      template = "SkillTemplate/index";
+    } else if(node.fields.slug.match("/scenes/")) {
+      template = "SceneTemplate/index";
+    }
+
     createPage({
       path: node.fields.slug,
-      component: path.resolve(`./src/components/Templates/${templateFile}.tsx`),
+      component: path.resolve(`./src/components/Templates/${template}.tsx`),
       context: {
         // Data passed to context is available
         // in page queries as GraphQL variables.
         slug: node.fields.slug,
+        sceneId: node.frontmatter.sceneId,
       },
     });
   });
