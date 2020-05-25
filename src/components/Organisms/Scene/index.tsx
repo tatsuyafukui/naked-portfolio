@@ -1,17 +1,24 @@
-import {FontSize, Level} from "../../../constants";
+import {Level} from "../../../constants";
 import React from "react";
-import Txt, {InfoTxt} from "../../Atoms/Txt";
+import {InfoTxt} from "../../Atoms/Txt";
 import Heading from "../../Atoms/Heading";
-import Img from "gatsby-image";
-import {graphql, useStaticQuery, Link} from "gatsby";
+import Img, {FluidObject} from "gatsby-image";
 import style from "./style.module.scss";
-import MediaObjectLayout from "../../Atoms/MediaObjectLayout";
+import SkillList from "../SkillList";
 
-const Scene: React.FC<any>  = (props) => {
+interface IProps {
+		skills: any;
+		sceneId: number;
+		title: string;
+		image: FluidObject | FluidObject[];
+  body: string;
+}
+
+const Scene: React.FC<IProps>  = (props) => {
 		return (
 				<div>
 						<div className={style.title}>
-								<InfoTxt>Home > シーン{props.order}</InfoTxt>
+								<InfoTxt>Home > シーン{props.sceneId}</InfoTxt>
 								<Heading level={Level.h1}>{props.title}</Heading>
 						</div>
 						<div className={style.visual}>
@@ -23,25 +30,9 @@ const Scene: React.FC<any>  = (props) => {
 								<div className={style.description} dangerouslySetInnerHTML={{ __html: props.body }} />
 								<div className={style.skill}>
 										<Heading level={Level.h5}>必要なスキル</Heading>
-										{/* スキルリストのcomponent化 */}
-										{props.skills.map((skill: any) => (
-												<Link
-														key={skill.node.id}
-														to={skill.node.fields.slug}
-												>
-														<MediaObjectLayout className={style.mediaObjectLayout}>
-																<div>
-																		<Img fixed={skill.node.frontmatter.icon.childImageSharp.fixed} />
-																</div>
-																<div className={style.skillText}>
-																		<Txt fontSize={FontSize.l}>
-																				{skill.node.frontmatter.title}
-																		</Txt>
-																		<div>></div>
-																</div>
-														</MediaObjectLayout>
-												</Link>
-										))}
+										<SkillList
+												skills={props.skills}
+										/>
 								</div>
 						</div>
 				</div>

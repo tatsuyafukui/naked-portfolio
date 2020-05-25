@@ -1,7 +1,7 @@
 ---
 sceneId: 2
 type: scene
-title: 'Create Web Application'
+title: 'Webアプリケーションを形にしよう'
 icon: '../../../images/scenes/scene.png'
 ---
 

@@ -7,7 +7,11 @@ import {Link} from "gatsby";
 import style from "./style.module.scss";
 import MediaObjectLayout from "../../Atoms/MediaObjectLayout";
 
-const SceneList: React.FC<any>  = (props) => {
+interface IProps {
+		scenes: any
+}
+
+const SceneList: React.FC<IProps>  = (props) => {
 		return (
 				<div className={style.root}>
 						{props.scenes.map((scene: any) => (

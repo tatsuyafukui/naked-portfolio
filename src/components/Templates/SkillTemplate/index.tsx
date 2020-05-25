@@ -26,7 +26,7 @@ const SkillTemplate = ({ data }: any) => {
 										<InfoTxt
 												className={style.menu}
 										>
-												Home > 1. Webページを作れるようになろう > {skill.frontmatter.title}
+												Home > シーン{skill.frontmatter.sceneId} > {skill.frontmatter.title}
 										</InfoTxt>
 										<div className={style.title}>
 													<span>
@@ -63,6 +63,7 @@ export const query = graphql`
                         }
                     }
                 }
+																sceneId
             }
             excerpt
         }

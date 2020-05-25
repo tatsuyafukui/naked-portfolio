@@ -1,15 +1,53 @@
 import React from 'react';
-import SEO from '../components/seo';
-import CreativeRoadMap from '../components/Organisms/CreativeRoadMap';
 import IndexTemplate from '../components/Templates/IndexTemplate';
+import {graphql, useStaticQuery} from "gatsby";
 
-const IndexPage = () => {
+interface IProps {
+  data: any
+}
+
+const IndexPage: React.FC<IProps> = ({data}) => {
   return (
-    <IndexTemplate>
-      <SEO title="Home" />
-      <CreativeRoadMap />
-    </IndexTemplate>
+    <IndexTemplate
+      title={"Home"}
+      mainVisual={data.mainImage.childImageSharp.fixed}
+      scenes={data.allMarkdownRemark.edges}
+    />
   );
 };
 
 export default IndexPage;
+
+export const query = graphql`
+  query {
+    # top page image
+    mainImage: file(relativePath: { eq: "about/main.jpg" }) {
+      childImageSharp {
+        fixed(height: 500) {
+          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+        }
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___sceneId], order: ASC }, filter: {frontmatter: {type: {eq: "scene"}}}) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            sceneId
+            icon {
+              childImageSharp {
+                fixed(width: 440) {
+                  ...GatsbyImageSharpFixed_withWebp_tracedSVG
+                }
+              }
+            }
+          }
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`;

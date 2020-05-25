@@ -1,25 +1,25 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {SceneLayout} from '../../Layout';
 import {graphql, useStaticQuery} from "gatsby";
 import SEO from "../../seo";
 import Scene from "../../Organisms/Scene";
-import Img from 'gatsby-image';
 
-const SceneTemplate: React.FC<any> = ({data}) => {
+interface IProps {
+		data: any
+}
+
+const SceneTemplate: React.FC<IProps> = ({data}) => {
 		const scene = data.markdownRemark;
 		const skills = data.allMarkdownRemark.edges;
 
-		let icon = scene.frontmatter.icon.childImageSharp.fluid;
-
 		return (
 				<SceneLayout>
-						<SEO title={scene.frontmatter.title} />
+						<SEO title={scene.frontmatter.title} description={scene.excerpt}/>
 						<Scene
 								skills={skills}
-								order={scene.frontmatter.order}
+								sceneId={scene.frontmatter.sceneId}
 								title={scene.frontmatter.title}
-								image={icon}
+								image={scene.frontmatter.icon.childImageSharp.fluid}
 								body={scene.html}
 						/>
 				</SceneLayout>
@@ -28,6 +28,10 @@ const SceneTemplate: React.FC<any> = ({data}) => {
 
 export default SceneTemplate;
 
+
+/**
+	* md file から生成するので、このTemplateファイルがPagesの役割を果たしている
+	**/
 export const query = graphql`
     query($slug: String!, $sceneId: Int!) {
         markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -41,8 +45,9 @@ export const query = graphql`
                         }
                     }
                 }
-																order
+                sceneId
             }
+            excerpt
         }
         allMarkdownRemark(
 												sort: { fields: [frontmatter___order], order: ASC },

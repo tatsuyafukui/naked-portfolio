@@ -1,5 +1,16 @@
+const fs = require("fs-extra")
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
+
+exports.onPostBuild = () => {
+  console.log("Copying locales")
+  fs.copySync(
+    path.join(__dirname, "/src/locales"),
+    path.join(__dirname, "/public/locales")
+  )
+}
+
+
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions;
   if (node.internal.type === `MarkdownRemark`) {

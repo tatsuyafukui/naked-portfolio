@@ -1,0 +1,15 @@
+.mediaObjectLayout {
+  max-height: 70px;
+  margin-top: 24px;
+}
+
+.skillText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 16px;
+  > * {
+    margin: 0;
+    padding-bottom: 8px;
+  }
+}

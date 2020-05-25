@@ -1,7 +1,7 @@
 ---
 sceneId: 1
 type: scene
-title: 'Create Web Page'
+title: 'Webページを作れるようになろう'
 icon: '../../../images/scenes/scene.png'
 ---
 

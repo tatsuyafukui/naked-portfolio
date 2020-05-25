@@ -1,0 +1,61 @@
+@import "../../properties.css";
+
+.topSection {
+  max-height: 500px;
+  background-color: #EDEAE5;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.topSectionLeft {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 40%;
+}
+
+
+.topSectionRight {
+  height: 100%;
+  width: 60%;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.sceneSection {
+  padding-top: 64px;
+  padding-bottom: 80px;
+  a {
+    display: block;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .buttonContainer {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .buttonContainer button {
+    margin: 0;
+    margin-bottom: 8px;
+  }
+
+  .container {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .container > div {
+    width: 100%;
+  }
+
+}
