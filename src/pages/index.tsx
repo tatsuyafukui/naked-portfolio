@@ -1,6 +1,6 @@
 import React from 'react';
 import IndexTemplate from '../components/Templates/IndexTemplate';
-import {graphql, useStaticQuery} from "gatsby";
+import {graphql} from "gatsby";
 
 interface IProps {
   data: any
