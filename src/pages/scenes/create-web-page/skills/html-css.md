@@ -13,7 +13,7 @@ HTML/CSSはWebページを作るために使われる言語です。
 HTMLは文字や画像など表示する対象とその構造を指定する役割があり、表示対象の特性に応じて様々な"タグ"を使用してWebページに表示する構造を記述します。
 
 CSSは色やレイアウトなど見た目を装飾する役割を担っており、HTMLで記述した"タグ"要素に対して"プロパティ"で見た目を指定します。
-![Hopper The Rabbit](../../../../images/about/skill-figure2.png)
+![Hopper The Rabbit](../../../../images/about/skill-figure.png)
 
 
 ### 学ぶ目的

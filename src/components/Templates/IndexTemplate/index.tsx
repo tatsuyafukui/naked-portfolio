@@ -13,7 +13,7 @@ interface IProps {
 }
 
 const IndexTemplate: React.FC<IProps> = (props) => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <Layout>
@@ -22,9 +22,8 @@ const IndexTemplate: React.FC<IProps> = (props) => {
         <div className={style.container}>
           <div className={style.flex}>
             <div className={style.topSectionLeft}>
-              <h1>目標へ向かう学習を</h1>
-              <p>Journeyはあなたが自信をもって<br/>
-                目標へ向かうための学習ロードマップです</p>
+              <h1>{t('TopTitle.title')}</h1>
+              <p>{t('TopTitle.description')}</p>
             </div>
             <div className={style.topSectionRight}>
               <Img fixed={props.mainVisual} />

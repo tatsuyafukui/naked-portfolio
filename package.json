@@ -15,7 +15,6 @@
     "gatsby-plugin-typescript": "^2.2.1",
     "gatsby-remark-images": "^3.3.8",
     "gatsby-source-filesystem": "^2.1.50",
-    "gatsby-transformer-json": "^2.4.3",
     "gatsby-transformer-remark": "^2.6.55",
     "gatsby-transformer-sharp": "^2.3.13",
     "i18next": "^19.4.4",
