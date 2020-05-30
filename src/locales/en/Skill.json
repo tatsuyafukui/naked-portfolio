@@ -1,0 +1,38 @@
+{
+  "skill": "Skill",
+  "requiredSkills": "Required skills",
+  "html&css": {
+    "id": "HTML&CSS",
+    "heading": "HTML&CSS",
+    "overview": {
+      "content": "HTML & CSS is the language used to create web pages.<br/><br/>Homepages and product sales pages (EC sites) published on the Internet can be published to everyone in the world by placing files created with HTML / CSS on the Web server.<br/><br/>HTML has the role of specifying the display target such as characters and images and its structure, and describes the structure to be displayed on the Web page using various tags according to the characteristics of the display target.<br/><br/>CSS plays a role of decorating the appearance such as color and layout, and the appearance is specified by the property for the tag element described in HTML."
+    },
+    "purpose": {
+      "heading": "Purpose of learning",
+      "content": "HTML and CSS are used in all web pages such as homepages and EC sites. Knowledge of HTML & CSS is essential if you want to develop web applications.<br/><br/>Once you are familiar with HTML tags, let's learn about CSS. If you can make full use of CSS properties, you will be able to create web pages that look as you want, and that can be displayed on various screen sizes.<br/><br/>Once you can use HTML & CSS all the way, let's create a portfolio site etc. to put information you want to send and information you want to share, or send your work to the world.<br/><br/>By learning HTML & CSS, you can get a way to express the thoughts in your head and works that you have never shown to anyone in a way that everyone can see."
+    },
+    "learn": {
+      "heading": "Let's learn",
+      "standard": {
+        "heading": "Standard of learning",
+        "basic": {
+          "heading": "Basic",
+          "item1": "Explain the role of HTML and CSS",
+          "item2": "Layout can be configured with a box model",
+          "item3": "You can check and use HTML tag attributes and CSS properties",
+          "item4": "Can create responsive pages",
+          "item5": "You can debug using your browser's developer tools"
+        },
+        "practical":{
+          "heading": "Practical",
+          "item1": "Explain the priority to which CSS is applied",
+          "item2": "You can create a page that supports web accessibility"
+        }
+      },
+      "overall": {
+        "heading": "To get the big picture",
+        "content": "First, let's create a simple web page using basic HTML tags. You can easily check and correct the display layout by using the developer tools of the browser. <br/> <br/> In the layout, you can create a basic web page by holding down the <strong>Box Model</strong> (vertical or horizontal). The result of CSS properties may change depending on the type of HTML tag to which the style is applied, so it is good to learn with that in mind. <br/> <br/> Once you get used to it, search for \"HTML tags,\" \"HTML attributes,\" \"CSS properties,\" etc., and use new tags and properties steadily!"
+      }
+    }
+  }
+}

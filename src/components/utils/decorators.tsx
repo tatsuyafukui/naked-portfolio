@@ -1,3 +1,4 @@
-import React, {cloneElement, CSSProperties} from 'react';
+import React, { cloneElement, CSSProperties } from 'react';
 
-export const withStyle = (style: any) => (component:any) => cloneElement(component, { style });
+export const withStyle = (style: any) => (component: any) =>
+  cloneElement(component, { style });

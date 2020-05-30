@@ -85,7 +85,6 @@ export enum AboutImage {
   whyImage = 'whyImage',
   pathNodeImage = 'pathNodeImage',
   mainImage = 'mainImage',
-
 }
 
 export enum IconName {

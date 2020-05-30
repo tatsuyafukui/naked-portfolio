@@ -1,8 +1,28 @@
 {
-  "scene": "scene",
+  "scene": "シーン",
   "scene1": {
-    "number": "scene 1",
-    "title": "Be able to make web pages",
-    "description": "Have you ever thought \"I want to create my own Web page?\" This scene describes the skills needed to make a web page.\n\nWhen you are just starting to learn, you may find it difficult because there are many unfamiliar grammars and unknown words. However, if you steadily learn from basic skills, you will surely be able to make it. First, let's become able to create a web page with a simple layout.\n\nWhen you have learned the skills of this scene, you are ready to create and publish a web page. We look forward to the day the web page is published."
+    "id": "シーン1",
+    "title": "Webページを作れるようになろう",
+    "description": "「自分だけのWebページを作ってみたい。」そう思った事はありませんか。このシーンでは、Webページを作るために必要なスキルを説明しています。\n\n学習を始めたばかりのころは、見慣れない文法や知らない単語が多く、難しいと感じることもあるかもしれません。しかし、基礎的なスキルから着実に学んでいけば、きっと作れるようになります。まずはシンプルなレイアウトのWebページを作れるようになりましょう。\n\nこのシーンのスキルを学び終えた時、あなたはWebページの作成と公開ができるようになっています。Webページが公開されるその日を、私達は楽しみにしています。\n"
+  },
+  "scene2": {
+    "id": "シーン2",
+    "title": "Webページを作れるようになろう",
+    "description": "「自分だけのWebページを作ってみたい。」そう思った事はありませんか。このシーンでは、Webページを作るために必要なスキルを説明しています。\n\n学習を始めたばかりのころは、見慣れない文法や知らない単語が多く、難しいと感じることもあるかもしれません。しかし、基礎的なスキルから着実に学んでいけば、きっと作れるようになります。まずはシンプルなレイアウトのWebページを作れるようになりましょう。\n\nこのシーンのスキルを学び終えた時、あなたはWebページの作成と公開ができるようになっています。Webページが公開されるその日を、私達は楽しみにしています。\n"
+  },
+  "scene3": {
+    "id": "シーン3",
+    "title": "Webページを作れるようになろう",
+    "description": "「自分だけのWebページを作ってみたい。」そう思った事はありませんか。このシーンでは、Webページを作るために必要なスキルを説明しています。\n\n学習を始めたばかりのころは、見慣れない文法や知らない単語が多く、難しいと感じることもあるかもしれません。しかし、基礎的なスキルから着実に学んでいけば、きっと作れるようになります。まずはシンプルなレイアウトのWebページを作れるようになりましょう。\n\nこのシーンのスキルを学び終えた時、あなたはWebページの作成と公開ができるようになっています。Webページが公開されるその日を、私達は楽しみにしています。\n"
+  },
+  "scene4": {
+    "id": "シーン4",
+    "title": "Webページを作れるようになろう",
+    "description": "「自分だけのWebページを作ってみたい。」そう思った事はありませんか。このシーンでは、Webページを作るために必要なスキルを説明しています。\n\n学習を始めたばかりのころは、見慣れない文法や知らない単語が多く、難しいと感じることもあるかもしれません。しかし、基礎的なスキルから着実に学んでいけば、きっと作れるようになります。まずはシンプルなレイアウトのWebページを作れるようになりましょう。\n\nこのシーンのスキルを学び終えた時、あなたはWebページの作成と公開ができるようになっています。Webページが公開されるその日を、私達は楽しみにしています。\n"
+  },
+  "scene5": {
+    "id": "シーン5",
+    "title": "Webページを作れるようになろう",
+    "description": "「自分だけのWebページを作ってみたい。」そう思った事はありませんか。このシーンでは、Webページを作るために必要なスキルを説明しています。\n\n学習を始めたばかりのころは、見慣れない文法や知らない単語が多く、難しいと感じることもあるかもしれません。しかし、基礎的なスキルから着実に学んでいけば、きっと作れるようになります。まずはシンプルなレイアウトのWebページを作れるようになりましょう。\n\nこのシーンのスキルを学び終えた時、あなたはWebページの作成と公開ができるようになっています。Webページが公開されるその日を、私達は楽しみにしています。\n"
   }
 }

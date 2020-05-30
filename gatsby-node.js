@@ -15,6 +15,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
+
   const result = await graphql(`
     query {
       allMarkdownRemark {
@@ -22,6 +23,7 @@ exports.createPages = async ({ graphql, actions }) => {
           node {
             fields {
               slug
+              langKey
             }
             frontmatter {
               sceneId
@@ -34,18 +36,20 @@ exports.createPages = async ({ graphql, actions }) => {
   `);
 
   if (result.errors) {
-    reporter.panicOnBuild(`Error while running GraphQL query.`)
-    return
+    reporter.panicOnBuild(`Error while running GraphQL query.`);
+    return;
   }
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const slug = node.fields.slug;
 
+    // sceneはJSXで作り直したほうが良さそう
+    // skillはi18nライブラリの中でCreateページできるかも
     let template;
-
-    if(node.fields.slug.match("/skills/")) {
-      template = "SkillTemplate/index";
-    } else if(node.fields.slug.match("/scenes/")) {
-      template = "SceneTemplate/index";
+    if (slug.match('/skills/')) {
+      template = 'SkillTemplate/index';
+    } else if (node.fields.slug.match('/scenes/')) {
+      template = 'SceneTemplate/index';
     }
 
     createPage({
@@ -54,7 +58,8 @@ exports.createPages = async ({ graphql, actions }) => {
       context: {
         // Data passed to context is available
         // in page queries as GraphQL variables.
-        slug: node.fields.slug,
+        slug: slug,
+        langKey: node.fields.langKey,
         sceneId: node.frontmatter.sceneId,
       },
     });
