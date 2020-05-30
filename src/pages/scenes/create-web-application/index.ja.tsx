@@ -3,7 +3,6 @@ import SceneTemplate from '../../../components/Templates/SceneTemplate';
 import { graphql } from 'gatsby';
 import { useTranslation } from 'react-i18next';
 import { Locale } from '../../../constants';
-import IndexTemplate from '../../../components/Templates/IndexTemplate';
 
 interface IProps {
   data: any;
@@ -20,11 +19,10 @@ const CreateWebPagePage: React.FC<IProps> = ({ data }) => {
       image: data.htmlCss.childImageSharp.fixed,
     },
   ];
-
   const scene = {
-    id: t('Scene.scene1.id'),
-    title: t('Scene.scene1.heading'),
-    content: t('Scene.scene1.description'),
+    id: t('Scene.scene2.id'),
+    title: t('Scene.scene2.heading'),
+    content: t('Scene.scene2.description'),
     image: data.sceneimage.childImageSharp.fluid,
   };
 
@@ -42,7 +40,9 @@ export default CreateWebPagePage;
 
 export const query = graphql`
   query {
-    sceneimage: file(relativePath: { eq: "scenes/create-web-page/scene.png" }) {
+    sceneimage: file(
+      relativePath: { eq: "scenes/create-web-page/scene.png" }
+    ) {
       childImageSharp {
         fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid

@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './style.module.scss';
 import { TxtRole, FontSize, TagType } from '../../../constants';
-import { ITxt } from '../../../types/txt';
+import { ITxt } from '../../../types';
 
 const txtFactory = (role: TxtRole): React.FC<ITxt> => ({
   tag: Tag = TagType.p,

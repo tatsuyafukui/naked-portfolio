@@ -2,6 +2,7 @@ import React from 'react';
 import IndexTemplate from '../components/Templates/IndexTemplate';
 import { graphql } from 'gatsby';
 import { useTranslation } from 'react-i18next';
+import { Locale } from '../constants';
 
 interface IProps {
   data: any;
@@ -9,31 +10,28 @@ interface IProps {
 
 const IndexPage: React.FC<IProps> = ({ data }) => {
   const { t, i18n } = useTranslation();
-  console.log(i18n);
 
   const scenes = [
     {
       id: t('Scene.scene1.id'),
-      title: t('Scene.scene1.title'),
+      heading: t('Scene.scene1.heading'),
       description: t('Scene.scene1.description'),
       image: data.scene1.childImageSharp.fixed,
       link: '/scenes/create-web-page',
-      linkText: t('Navigator.detail'),
     },
     {
       id: t('Scene.scene2.id'),
-      title: t('Scene.scene2.title'),
+      heading: t('Scene.scene2.heading'),
       description: t('Scene.scene2.description'),
       image: data.scene1.childImageSharp.fixed,
-      link: '/scenes/create-web-page',
-      linkText: t('Navigator.detail'),
+      link: '/scenes/create-web-application',
     },
   ];
 
   return (
     <IndexTemplate
-      title={t('TopTitle.title')}
-      description={t('TopTitle.description')}
+      lang={i18n.language}
+      locale={Locale.ja}
       mainVisual={data.mainImage.childImageSharp.fixed}
       scenes={scenes}
     />
@@ -45,7 +43,7 @@ export default IndexPage;
 export const query = graphql`
   query {
     # top page image
-    mainImage: file(relativePath: { eq: "about/main.jpg" }) {
+    mainImage: file(relativePath: { eq: "main.jpg" }) {
       childImageSharp {
         fixed(height: 500) {
           ...GatsbyImageSharpFixed_withWebp_tracedSVG
@@ -53,7 +51,7 @@ export const query = graphql`
       }
     }
 
-    scene1: file(relativePath: { eq: "scenes/scene.png" }) {
+    scene1: file(relativePath: { eq: "scenes/create-web-page/scene.png" }) {
       childImageSharp {
         fixed(width: 440) {
           ...GatsbyImageSharpFixed_withWebp_tracedSVG

@@ -1,23 +1,27 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Header from '../Organisms/Header';
 import './layout.module.scss';
 import '../../locales/i18n';
 import Footer from '../Organisms/Footer';
+import { Locale } from '../../constants';
 
-const Index = ({ children }: any) => {
+interface IProps {
+  locale?: Locale;
+}
+
+const Index: React.FC<IProps> = ({ children, locale }: any) => {
   return (
     <>
       <Header />
       <div>
         <main>{children}</main>
       </div>
-      <Footer />
+      <Footer locale={locale} />
     </>
   );
 };
 
-export const SceneLayout = ({ children }: any) => {
+export const SceneLayout: React.FC<IProps> = ({ children, locale }: any) => {
   return (
     <>
       <Header />
@@ -29,13 +33,9 @@ export const SceneLayout = ({ children }: any) => {
       >
         <main>{children}</main>
       </div>
-      <Footer />
+      <Footer locale={locale} />
     </>
   );
-};
-
-Index.propTypes = {
-  children: PropTypes.node.isRequired,
 };
 
 export default Index;

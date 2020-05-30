@@ -5,36 +5,36 @@ import Heading from '../../Atoms/Heading';
 import Img, { FluidObject } from 'gatsby-image';
 import style from './style.module.scss';
 import SkillList from '../SkillList';
+import { useTranslation } from 'react-i18next';
+import { IScene } from '../../../types/scene';
 
 interface IProps {
   skills: any;
-  id: string;
-  title: string;
-  image: FluidObject | FluidObject[];
-  body: string;
-  skillsHeading: string;
+  scene: IScene;
 }
 
-const Scene: React.FC<IProps> = props => {
+const Scene: React.FC<IProps> = ({ skills, scene }) => {
+  const { t } = useTranslation();
+
   return (
     <div>
       <div className={style.title}>
-        <InfoTxt>Home > {props.id}</InfoTxt>
-        <Heading level={Level.h1}>{props.title}</Heading>
+        <InfoTxt>Home > {scene.id}</InfoTxt>
+        <Heading level={Level.h1}>{scene.title}</Heading>
       </div>
       <div className={style.visual}>
         <div>
-          <Img fluid={props.image} />
+          <Img fluid={scene.image} />
         </div>
       </div>
       <div className={style.body}>
-        <div
-          className={style.description}
-          dangerouslySetInnerHTML={{ __html: props.body }}
-        />
+        <div className={style.description}>
+          <p dangerouslySetInnerHTML={{ __html: scene.content }} />
+        </div>
+
         <div className={style.skill}>
-          <Heading level={Level.h5}>{props.skillsHeading}</Heading>
-          <SkillList skills={props.skills} />
+          <Heading level={Level.h5}>{t('Skill.requiredSkills')}</Heading>
+          <SkillList skills={skills} />
         </div>
       </div>
     </div>

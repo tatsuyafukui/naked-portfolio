@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './style.module.scss';
 import { Level } from '../../../constants';
-import { IHeading } from '../../../types/heading';
+import { IHeading } from '../../../types';
 import { containPresenter } from '../../utils/HoC';
 
 const HeadingPresenter: React.FC<IHeading> = ({

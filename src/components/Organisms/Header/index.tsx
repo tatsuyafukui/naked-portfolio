@@ -7,6 +7,7 @@ import { LogoName } from '../../../constants';
 
 const Header = () => (
   <header className={style.header}>
+    {/*TODO: locale URL 判定*/}
     <Link to="/">
       <div>
         <Logo logoName={LogoName.journeyLogo} />

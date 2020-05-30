@@ -1,3 +1,5 @@
+// TODO: HeaderとFooterでロゴのQuery作ったら消してよさそう
+
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
@@ -20,25 +22,13 @@ interface IProps {
 
 const Logo: React.FC<IProps> = props => {
   const data = useStaticQuery(graphql`
-    fragment servicesLogo on File {
-      childImageSharp {
-        fixed(height: 48) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
     query {
-      headerLogo: file(relativePath: { eq: "logo/symbol-white.png" }) {
-        ...servicesLogo
-      }
-      inlineLogo: file(relativePath: { eq: "logo/logo-inline.png" }) {
-        ...servicesLogo
-      }
-      whiteLogo: file(relativePath: { eq: "logo/logo-white.png" }) {
-        ...servicesLogo
-      }
       journeyLogo: file(relativePath: { eq: "logo/journey-logo.png" }) {
-        ...servicesLogo
+        childImageSharp {
+          fixed(height: 39) {
+            ...GatsbyImageSharpFixed
+          }
+        }
       }
     }
   `);

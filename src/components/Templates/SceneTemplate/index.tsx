@@ -4,30 +4,21 @@ import { graphql, useStaticQuery } from 'gatsby';
 import SEO from '../../seo';
 import Scene from '../../Organisms/Scene';
 import { FluidObject } from 'gatsby-image';
+import { Locale } from '../../../constants';
+import { IScene } from '../../../types';
 
 interface IProps {
-  title: string;
   skills: any[];
-  id: string;
-  image: FluidObject | FluidObject[];
-  content: string;
-  skillsHeading: string;
+  scene: IScene;
+  locale: Locale;
+  lang: string;
 }
 
-const SceneTemplate: React.FC<IProps> = props => {
-  const { title, skills, id, image, content } = props;
-
+const SceneTemplate: React.FC<IProps> = ({ scene, lang, locale, skills }) => {
   return (
-    <SceneLayout>
-      <SEO title={title} description={title} />
-      <Scene
-        skills={skills}
-        id={id}
-        title={title}
-        image={image}
-        body={content}
-        skillsHeading={props.skillsHeading}
-      />
+    <SceneLayout locale={locale}>
+      <SEO title={scene.title} description={scene.title} lang={lang} />
+      <Scene skills={skills} scene={scene} />
     </SceneLayout>
   );
 };

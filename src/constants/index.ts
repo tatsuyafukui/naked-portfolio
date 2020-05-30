@@ -57,48 +57,12 @@ export enum Level {
   h6 = 'h6',
 }
 
-export enum ImageName {
-  rocketImage = 'rocketImage',
-  successImage = 'successImage',
-  milestoneImage = 'milestoneImage',
-  goalImage = 'goalImage',
-  selectMilestoneImage = 'selectMilestoneImage',
-  aroundImage = 'aroundImage',
-  deepLearnImage = 'deepLearnImage',
-  outputImage = 'outputImage',
-  whyImage = 'whyImage',
-  pathNodeImage = 'pathNodeImage',
-  mainImage = 'mainImage',
-  sceneImage = 'sceneImage',
-}
-
-export enum Milestones {
-  milestoneImage = 'milestoneImage',
-}
-
-export enum AboutImage {
-  goalImage = 'goalImage',
-  selectMilestoneImage = 'selectMilestoneImage',
-  aroundImage = 'aroundImage',
-  deepLearnImage = 'deepLearnImage',
-  outputImage = 'outputImage',
-  whyImage = 'whyImage',
-  pathNodeImage = 'pathNodeImage',
-  mainImage = 'mainImage',
-}
-
-export enum IconName {
-  goal = 'goal',
-  light = 'light',
-  stairs = 'stairs',
-  test = 'test',
-  left = 'left',
-  rightTriangle = 'rightTriangle',
-}
-
 export enum LogoName {
-  headerLogo = 'headerLogo',
-  inlineLogo = 'inlineLogo',
-  whiteLogo = 'whiteLogo',
   journeyLogo = 'journeyLogo',
+}
+
+export enum Locale {
+  ja = 'ja',
+  en = 'en',
+  id = 'id',
 }

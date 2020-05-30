@@ -1,5 +1,5 @@
 import React from 'react';
-import SkillTemplate from '../../../../components/Templates/SkillTemplate';
+import SkillTemplate from '../../../../../components/Templates/SkillTemplate';
 import { graphql } from 'gatsby';
 import { useTranslation } from 'react-i18next';
 
@@ -57,14 +57,18 @@ export default HtmlCssPage;
 
 export const query = graphql`
   query {
-    skillImage: file(relativePath: { eq: "skills/icon/html-css.png" }) {
+    skillImage: file(
+      relativePath: { eq: "scenes/create-web-page/skills/html-css/icon.png" }
+    ) {
       childImageSharp {
         fixed(width: 100) {
           ...GatsbyImageSharpFixed_withWebp_tracedSVG
         }
       }
     }
-    figure: file(relativePath: { eq: "about/skill-figure.png" }) {
+    figure: file(
+      relativePath: { eq: "scenes/create-web-page/skills/html-css/figure.png" }
+    ) {
       childImageSharp {
         fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid_withWebp_tracedSVG

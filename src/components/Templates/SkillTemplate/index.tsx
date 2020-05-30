@@ -6,18 +6,19 @@ import Img from 'gatsby-image';
 import style from './style.module.scss';
 import { InfoTxt } from '../../Atoms/Txt';
 import Heading from '../../Atoms/Heading';
-import { Level } from '../../../constants';
+import { Level, Locale } from '../../../constants';
 import MediaObjectLayout from '../../Atoms/MediaObjectLayout';
 
-/**
- * マークダウンを読み込んでPageを作成するテンプレート
- * @param data
- * @constructor
- */
-const SkillTemplate = ({ skill }: any) => {
+interface IProps {
+  skill: any;
+  locale: Locale;
+  lang: string;
+}
+
+const SkillTemplate: React.FC<IProps> = ({ skill, lang, locale }) => {
   return (
-    <Layout>
-      <SEO title={skill.title} description={skill.description} />
+    <Layout locale={locale}>
+      <SEO lang={lang} title={skill.title} description={skill.description} />
       <div className={style.container}>
         <div className={style.titleHeader}>
           <InfoTxt className={style.menu}>
@@ -45,7 +46,7 @@ const SkillTemplate = ({ skill }: any) => {
             </Heading>
             <ul>
               {skill.learn.standard.basic.list.map((item: string) => (
-                <li>{item}</li>
+                <li key={item}>{item}</li>
               ))}
             </ul>
             <Heading level={Level.h4}>
@@ -53,7 +54,7 @@ const SkillTemplate = ({ skill }: any) => {
             </Heading>
             <ul>
               {skill.learn.standard.practical.list.map((item: string) => (
-                <li>{item}</li>
+                <li key={item}>{item}</li>
               ))}
             </ul>
 
@@ -74,24 +75,4 @@ const SkillTemplate = ({ skill }: any) => {
     </Layout>
   );
 };
-export const query = graphql`
-  query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      frontmatter {
-        title
-        icon {
-          childImageSharp {
-            fluid(maxWidth: 800) {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-        sceneId
-      }
-      excerpt
-    }
-  }
-`;
-
 export default SkillTemplate;
