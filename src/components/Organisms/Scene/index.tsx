@@ -6,7 +6,7 @@ import Img, { FluidObject } from 'gatsby-image';
 import style from './style.module.scss';
 import SkillList from '../SkillList';
 import { useTranslation } from 'react-i18next';
-import { IScene } from '../../../types/scene';
+import { IScene } from '../../../types';
 
 interface IProps {
   skills: any;
@@ -20,7 +20,7 @@ const Scene: React.FC<IProps> = ({ skills, scene }) => {
     <div>
       <div className={style.title}>
         <InfoTxt>Home > {scene.id}</InfoTxt>
-        <Heading level={Level.h1}>{scene.title}</Heading>
+        <Heading level={Level.h1}>{scene.heading}</Heading>
       </div>
       <div className={style.visual}>
         <div>
@@ -29,7 +29,7 @@ const Scene: React.FC<IProps> = ({ skills, scene }) => {
       </div>
       <div className={style.body}>
         <div className={style.description}>
-          <p dangerouslySetInnerHTML={{ __html: scene.content }} />
+          <p dangerouslySetInnerHTML={{ __html: scene.description }} />
         </div>
 
         <div className={style.skill}>

@@ -20,3 +20,7 @@ export interface IScene {
   image: any;
   link?: string;
 }
+
+export interface Presenter<T> {
+  presenter: (presenter: T) => JSX.Element;
+}

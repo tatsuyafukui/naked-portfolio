@@ -17,7 +17,7 @@ interface IProps {
 const SceneTemplate: React.FC<IProps> = ({ scene, lang, locale, skills }) => {
   return (
     <SceneLayout locale={locale}>
-      <SEO title={scene.title} description={scene.title} lang={lang} />
+      <SEO title={scene.heading} description={scene.description} lang={lang} />
       <Scene skills={skills} scene={scene} />
     </SceneLayout>
   );

@@ -1,30 +1,37 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Layout from '../../Layout';
 import SEO from '../../seo';
 import Img from 'gatsby-image';
 import style from './style.module.scss';
-import { InfoTxt } from '../../Atoms/Txt';
+import Txt from '../../Atoms/Txt';
 import Heading from '../../Atoms/Heading';
 import { Level, Locale } from '../../../constants';
 import MediaObjectLayout from '../../Atoms/MediaObjectLayout';
+import Breadcrumb from '../../Atoms/Breadcrumb';
 
 interface IProps {
   skill: any;
   locale: Locale;
   lang: string;
+  breadcrumbList: {
+    label: string;
+    link: string;
+  }[]
 }
 
-const SkillTemplate: React.FC<IProps> = ({ skill, lang, locale }) => {
+const SkillTemplate: React.FC<IProps> = ({ skill, lang, locale ,breadcrumbList}) => {
   return (
     <Layout locale={locale}>
       <SEO lang={lang} title={skill.title} description={skill.description} />
       <div className={style.container}>
         <div className={style.titleHeader}>
-          <InfoTxt className={style.menu}>
-            {/* list で　props で渡す */}
-            Home > シーン1 > {skill.title}
-          </InfoTxt>
+          <Breadcrumb>
+            {breadcrumbList.map(item => (
+              <Link key={item.label} to={item.link}>{item.label}</Link>
+            ))}
+            <Txt>{skill.title}</Txt>
+          </Breadcrumb>
           <div className={style.title}>
             <span>
               <Img fixed={skill.image} />
@@ -35,10 +42,10 @@ const SkillTemplate: React.FC<IProps> = ({ skill, lang, locale }) => {
         <div className={style.body}>
           {/* create component  */}
           <div>
-            <p dangerouslySetInnerHTML={{ __html: skill.overview }} />
+            <Txt dangerouslySetInnerHTML={{ __html: skill.overview }} />
             <Img fluid={skill.figure} />
             <Heading level={Level.h3}>{skill.purpose.heading}</Heading>
-            <p dangerouslySetInnerHTML={{ __html: skill.purpose.content }} />
+            <Txt dangerouslySetInnerHTML={{ __html: skill.purpose.content }} />
             <Heading level={Level.h2}>{skill.learn.heading}</Heading>
             <Heading level={Level.h3}>{skill.learn.standard.heading}</Heading>
             <Heading level={Level.h4}>
@@ -59,7 +66,7 @@ const SkillTemplate: React.FC<IProps> = ({ skill, lang, locale }) => {
             </ul>
 
             <Heading level={Level.h3}>{skill.learn.overall.heading}</Heading>
-            <p
+            <Txt
               dangerouslySetInnerHTML={{ __html: skill.learn.overall.content }}
             />
           </div>

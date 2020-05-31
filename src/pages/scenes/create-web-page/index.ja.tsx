@@ -23,8 +23,8 @@ const CreateWebPagePage: React.FC<IProps> = ({ data }) => {
 
   const scene = {
     id: t('Scene.scene1.id'),
-    title: t('Scene.scene1.heading'),
-    content: t('Scene.scene1.description'),
+    heading: t('Scene.scene1.heading'),
+    description: t('Scene.scene1.description'),
     image: data.sceneimage.childImageSharp.fluid,
   };
 

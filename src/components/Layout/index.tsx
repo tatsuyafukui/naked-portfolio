@@ -12,7 +12,7 @@ interface IProps {
 const Index: React.FC<IProps> = ({ children, locale }: any) => {
   return (
     <>
-      <Header />
+      <Header locale={locale} />
       <div>
         <main>{children}</main>
       </div>
@@ -24,7 +24,7 @@ const Index: React.FC<IProps> = ({ children, locale }: any) => {
 export const SceneLayout: React.FC<IProps> = ({ children, locale }: any) => {
   return (
     <>
-      <Header />
+      <Header locale={locale} />
       <div
         style={{
           margin: `0 auto`,

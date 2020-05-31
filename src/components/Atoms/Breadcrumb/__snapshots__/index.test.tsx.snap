@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumb renders correctly 1`] = `
+<nav
+  className="root "
+>
+  <ol
+    className="ol"
+  >
+    <li>
+      <a>
+        list
+      </a>
+    </li>
+    <li
+      aria-hidden={true}
+      className="separator"
+    >
+      /
+    </li>
+    <li>
+      <a>
+        list
+      </a>
+    </li>
+    <li
+      aria-hidden={true}
+      className="separator"
+    >
+      /
+    </li>
+    <li>
+      <a>
+        list
+      </a>
+    </li>
+  </ol>
+</nav>
+`;

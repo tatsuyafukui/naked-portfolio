@@ -40,9 +40,7 @@ export default CreateWebPagePage;
 
 export const query = graphql`
   query {
-    sceneimage: file(
-      relativePath: { eq: "scenes/create-web-page/scene.png" }
-    ) {
+    sceneimage: file(relativePath: { eq: "scenes/create-web-page/scene.png" }) {
       childImageSharp {
         fluid(maxWidth: 800) {
           ...GatsbyImageSharpFluid

@@ -1,3 +1,16 @@
+const JA_ROOT = '/';
+const EN_ROOT = '/en/';
+const SCENE_CREATE_WEB_PAGE = 'scenes/create-web-page/';
+const SCENE_CREATE_WEB_APPLICATION = 'scenes/create-web-application/';
+const SKILL_HTML_CSS = 'skills/html-css/';
+export const ROUTE = {
+  JA_ROOT,
+  EN_ROOT,
+  SCENE_CREATE_WEB_PAGE,
+  SCENE_CREATE_WEB_APPLICATION,
+  SKILL_HTML_CSS,
+};
+
 export enum TxtRole {
   base = 'base',
   white = 'white',
