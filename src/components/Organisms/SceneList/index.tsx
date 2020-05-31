@@ -21,7 +21,7 @@ const SceneList: React.FC<IProps> = props => {
         <Link key={scene.id} to={scene.link}>
           <MediaObjectLayout>
             <div>
-              <Img fixed={scene.image} backgroundColor />
+              <Img fixed={scene.image} />
             </div>
             <div style={{ padding: '32px' }}>
               <Heading level={Level.h3}>{scene.id}</Heading>

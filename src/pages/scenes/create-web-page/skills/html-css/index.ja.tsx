@@ -60,9 +60,9 @@ const HtmlCssPage: React.FC<IProps> = ({ data }) => {
       return results
     }
 
-    // getMetaProps('https://prog-8.com/languages/html')
-    // getMetaProps('https://www.amazon.co.jp/dp/4822283119')
-    // getMetaProps('https://ja.reactjs.org/docs/typechecking-with-proptypes.html')
+    getMetaProps('https://prog-8.com/languages/html')
+    getMetaProps('https://www.amazon.co.jp/dp/4822283119')
+    getMetaProps('https://ja.reactjs.org/docs/typechecking-with-proptypes.html')
 
   }, [])
 

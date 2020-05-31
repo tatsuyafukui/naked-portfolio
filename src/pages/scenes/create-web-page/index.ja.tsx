@@ -3,7 +3,6 @@ import SceneTemplate from '../../../components/Templates/SceneTemplate';
 import { graphql } from 'gatsby';
 import { useTranslation } from 'react-i18next';
 import { Locale } from '../../../constants';
-import IndexTemplate from '../../../components/Templates/IndexTemplate';
 
 interface IProps {
   data: any;

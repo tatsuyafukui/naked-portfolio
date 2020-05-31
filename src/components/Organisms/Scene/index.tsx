@@ -31,7 +31,6 @@ const Scene: React.FC<IProps> = ({ skills, scene }) => {
         <div className={style.description}>
           <p dangerouslySetInnerHTML={{ __html: scene.description }} />
         </div>
-
         <div className={style.skill}>
           <Heading level={Level.h5}>{t('Skill.requiredSkills')}</Heading>
           <SkillList skills={skills} />
