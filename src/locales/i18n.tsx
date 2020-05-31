@@ -19,7 +19,6 @@ i18n
     ns: ['translations'],
     defaultNS: 'translations',
 
-    debug: true,
     interpolation: {
       escapeValue: false, // react already safes from xss
     },

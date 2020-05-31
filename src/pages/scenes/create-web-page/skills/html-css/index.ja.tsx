@@ -27,8 +27,8 @@ const HtmlCssPage: React.FC<IProps> = ({ data }) => {
 
     async function getMetaProps(url: string) {
       const result = await fetch(url, {
+        mode: 'cors',
         cache: "no-cache",
-        credentials: "same-origin",
       }).then(res => {
         if (res.ok) { return res.text() }
       }).then(html => {
