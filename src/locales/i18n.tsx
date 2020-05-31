@@ -24,9 +24,7 @@ i18n
     },
 
     react: {
-      wait: true,
-      transSupportBasicHtmlNodes: true,
-      // transKeepBasicHtmlNodesFor: ['br', 'strong', 'i'],
+      wait: true
     },
   });
 
