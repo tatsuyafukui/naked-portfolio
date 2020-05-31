@@ -46,7 +46,7 @@ export const query = graphql`
     mainImage: file(relativePath: { eq: "main.jpg" }) {
       childImageSharp {
         fixed(height: 500) {
-          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+          ...GatsbyImageSharpFixed
         }
       }
     }
@@ -54,7 +54,7 @@ export const query = graphql`
     scene1: file(relativePath: { eq: "scenes/create-web-page/scene.png" }) {
       childImageSharp {
         fixed(width: 440) {
-          ...GatsbyImageSharpFixed_withWebp_tracedSVG
+          ...GatsbyImageSharpFixed
         }
       }
     }
