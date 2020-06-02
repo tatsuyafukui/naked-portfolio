@@ -1,36 +1,31 @@
 import React from 'react';
 import SceneTemplate from '../../../components/Templates/SceneTemplate';
 import { graphql } from 'gatsby';
-import { useTranslation } from 'react-i18next';
-import { Locale } from '../../../constants';
 
 interface IProps {
   data: any;
 }
 
 const CreateWebPagePage: React.FC<IProps> = ({ data }) => {
-  const { t, i18n } = useTranslation();
 
   const skills = [
     {
-      id: t('Skill.HTML&CSS.id'),
-      title: t('Skill.HTML&CSS.heading'),
+      id: 'HTML&CSS',
+      title: '',
       link: '/scenes/create-web-page/skills/html-css',
       image: data.htmlCss.childImageSharp.fixed,
     },
   ];
 
   const scene = {
-    id: t('Scene.scene1.id'),
-    heading: t('Scene.scene1.heading'),
-    description: t('Scene.scene1.description'),
+    id: '',
+    heading: '',
+    description: '',
     image: data.sceneimage.childImageSharp.fluid,
   };
 
   return (
     <SceneTemplate
-      lang={i18n.language}
-      locale={Locale.ja}
       scene={scene}
       skills={skills}
     />

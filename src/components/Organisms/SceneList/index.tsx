@@ -6,14 +6,12 @@ import Img from 'gatsby-image';
 import { Link } from 'gatsby';
 import style from './style.module.scss';
 import MediaObjectLayout from '../../Atoms/MediaObjectLayout';
-import { useTranslation } from 'react-i18next';
 
 interface IProps {
   scenes: any;
 }
 
 const SceneList: React.FC<IProps> = props => {
-  const { t } = useTranslation();
 
   return (
     <div className={style.root}>
@@ -26,7 +24,7 @@ const SceneList: React.FC<IProps> = props => {
             <div style={{ padding: '32px' }}>
               <Heading level={Level.h3}>{scene.id}</Heading>
               <Heading level={Level.h2}>{scene.heading}</Heading>
-              <InfoTxt>{t('Navigator.detail')}</InfoTxt>
+              <InfoTxt>詳細を見る</InfoTxt>
             </div>
           </MediaObjectLayout>
         </Link>

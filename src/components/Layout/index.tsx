@@ -1,30 +1,24 @@
 import React from 'react';
 import Header from '../Organisms/Header';
 import './layout.module.scss';
-import '../../locales/i18n';
 import Footer from '../Organisms/Footer';
-import { Locale } from '../../constants';
 
-interface IProps {
-  locale?: Locale;
-}
-
-const Index: React.FC<IProps> = ({ children, locale }: any) => {
+const Index: React.FC = ({ children }: any) => {
   return (
     <>
-      <Header locale={locale} />
+      <Header/>
       <div>
         <main>{children}</main>
       </div>
-      <Footer locale={locale} />
+      <Footer/>
     </>
   );
 };
 
-export const SceneLayout: React.FC<IProps> = ({ children, locale }: any) => {
+export const SceneLayout: React.FC = ({ children }: any) => {
   return (
     <>
-      <Header locale={locale} />
+      <Header />
       <div
         style={{
           margin: `0 auto`,
@@ -33,7 +27,7 @@ export const SceneLayout: React.FC<IProps> = ({ children, locale }: any) => {
       >
         <main>{children}</main>
       </div>
-      <Footer locale={locale} />
+      <Footer />
     </>
   );
 };

@@ -16,13 +16,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `src`,
-        path: `${__dirname}/src/`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Progate Journey`,
@@ -37,15 +30,26 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 800,
+            },
+          },
+        ],
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-i18n`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        langKeyDefault: 'ja',
-        langKeyForNull: 'ja',
-        useLangKeyLayout: false,
-        prefixDefault: false,
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

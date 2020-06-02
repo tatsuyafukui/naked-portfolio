@@ -4,34 +4,26 @@ import SEO from '../../seo';
 import style from './style.module.scss';
 import SceneList from '../../Organisms/SceneList';
 import Img, { FixedObject } from 'gatsby-image';
-import { Locale } from '../../../constants';
-import { IScene } from '../../../types';
-
-import { useTranslation } from 'react-i18next';
 
 interface IProps {
   mainVisual: FixedObject | FixedObject[];
   scenes: any[];
-  locale: Locale;
-  lang: string;
 }
 
 const IndexTemplate: React.FC<IProps> = props => {
-  const { t } = useTranslation();
 
   return (
-    <Layout locale={props.locale}>
+    <Layout>
       <SEO
-        title={t('TopTitle.title')}
-        description={t('TopTitle.description')}
-        lang={props.lang}
+        title={''}
+        description={''}
       />
       <div className={style.topSection}>
         <div className={style.container}>
           <div className={style.flex}>
             <div className={style.topSectionLeft}>
-              <h1>{t('TopTitle.title')}</h1>
-              <p>{t('TopTitle.description')}</p>
+              <h1>目標へ向かう学習を</h1>
+              <p>s</p>
             </div>
             <div className={style.topSectionRight}>
               <Img fixed={props.mainVisual} />

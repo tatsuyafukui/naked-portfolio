@@ -1,7 +1,6 @@
 import React, { useState, ReactNodeArray } from 'react';
 import style from './style.module.scss';
 import { containPresenter } from '../../utils/HoC';
-import Button from "../Button";
 
 interface IProps {
   maxItems?: number;
@@ -75,7 +74,7 @@ const BreadcrumbContainer: React.FC<ContainerProps> = ({
 
     return [
       ...allItems.slice(0, itemsBeforeCollapse),
-      <li key={'ellipsis'} className={style.ellipsis} onClick={handleClickExpand}>...</li>,
+      <li key={'ellipsis'} className={style.ellipsis}><button onClick={handleClickExpand}>...</button></li>,
       ...allItems.slice(allItems.length - itemsAfterCollapse, allItems.length),
     ];
   };

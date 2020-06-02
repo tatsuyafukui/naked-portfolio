@@ -2,10 +2,9 @@ import { Level } from '../../../constants';
 import React from 'react';
 import { InfoTxt } from '../../Atoms/Txt';
 import Heading from '../../Atoms/Heading';
-import Img, { FluidObject } from 'gatsby-image';
+import Img from 'gatsby-image';
 import style from './style.module.scss';
 import SkillList from '../SkillList';
-import { useTranslation } from 'react-i18next';
 import { IScene } from '../../../types';
 
 interface IProps {
@@ -14,7 +13,6 @@ interface IProps {
 }
 
 const Scene: React.FC<IProps> = ({ skills, scene }) => {
-  const { t } = useTranslation();
 
   return (
     <div>
@@ -32,7 +30,7 @@ const Scene: React.FC<IProps> = ({ skills, scene }) => {
           <p dangerouslySetInnerHTML={{ __html: scene.description }} />
         </div>
         <div className={style.skill}>
-          <Heading level={Level.h5}>{t('Skill.requiredSkills')}</Heading>
+          <Heading level={Level.h5}>必要なスキル</Heading>
           <SkillList skills={skills} />
         </div>
       </div>
