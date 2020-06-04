@@ -6,12 +6,7 @@ WORKDIR $HOME
 COPY package.json $HOME
 COPY yarn.lock $HOME
 
-RUN yarn install
-
 VOLUME ["/usr/src/app"]
 
 EXPOSE 8000
-CMD ["npm", "run", "develop"]
-
-
-
+CMD ["sh"]
