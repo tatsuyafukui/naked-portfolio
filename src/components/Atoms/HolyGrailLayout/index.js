@@ -26,7 +26,7 @@ const partTypes = ["HolyGrailTop", "HolyGrailRight", "HolyGrailMain", "HolyGrail
 
 const mapParts = elems => {
   const parts = [];
-  elems.map(elem => {
+  elems.forEach(elem => {
     const idx = elem.type.displayName ? partTypes.indexOf(elem.type.displayName) : partTypes.indexOf(elem.type.name);
     if (!~idx) return;
     parts[idx] = elem.props.children;
