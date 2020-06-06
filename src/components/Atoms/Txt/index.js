@@ -1,20 +1,15 @@
-import React from 'react';
-import styles from './styles.module.scss';
-import PropTypes from "prop-types";
+import React from "react"
+import styles from "./styles.module.scss"
+import PropTypes from "prop-types"
 
-const txtFactory = role => ({
-  tag: Tag,
-  fontSize ,
-  className,
-  ...props
-}) => (
-    <Tag
-      {...props}
-      className={[styles[role], styles[fontSize], className].join(' ')}
-    />
-);
+const txtFactory = role => ({ tag: Tag, fontSize, className, ...props }) => (
+  <Tag
+    {...props}
+    className={[styles[role], styles[fontSize], className].join(" ")}
+  />
+)
 
-const Txt = txtFactory('base');
+const Txt = txtFactory("base")
 
 Txt.propTypes = {
   children: PropTypes.node.isRequired,
@@ -24,8 +19,8 @@ Txt.propTypes = {
 }
 
 Txt.defaultProps = {
-  tag: 'p',
-  fontSize: 'm',
+  tag: "p",
+  fontSize: "m",
 }
 
-export default Txt;
+export default Txt
