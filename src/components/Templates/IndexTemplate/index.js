@@ -6,9 +6,10 @@ import HolyGrailLayout, {
   HolyGrailMain,
 } from "../../Atoms/HolyGrailLayout";
 import Header from "../../Organisms/Header";
+import Top from "../../Organisms/Top";
 
 
-const IndexTemplate = () => {
+const IndexTemplate = ({topImage}) => {
 
   return (
     <HolyGrailLayout>
@@ -18,6 +19,7 @@ const IndexTemplate = () => {
           description={''}
         />
         <Header/>
+        <Top topImage={topImage}/>
       </HolyGrailTop>
       <HolyGrailMain>
         <main style={{ minHeight: '300px', backgroundColor: 'yellow' }}>
