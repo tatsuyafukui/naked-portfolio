@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 import Img from "gatsby-image";
 import Heading from "../../Atoms/Heading";
+import Txt from "../../Atoms/Txt";
 import MediaObjectLayout from "../../Atoms/MediaObjectLayout";
 
 const SceneList = ({ scenes }) => (
@@ -14,7 +15,7 @@ const SceneList = ({ scenes }) => (
         <div className={styles.right}>
           <Heading level={3}>{scene.id}</Heading>
           <Heading level={2}>{scene.heading}</Heading>
-          <p>詳細を見る</p>
+          <Txt>詳細を見る</Txt>
         </div>
       </MediaObjectLayout>
     ))}
