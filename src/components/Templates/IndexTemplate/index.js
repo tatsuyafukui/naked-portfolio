@@ -1,39 +1,35 @@
 import React from 'react';
-import Layout from '../../Layout';
 import SEO from '../../seo';
-import style from './style.module.scss';
-import SceneList from '../../Organisms/SceneList';
-import Img from 'gatsby-image';
-import Heading from "../../Atoms/Heading";
+import HolyGrailLayout, {
+  HolyGrailTop,
+  HolyGrailBottom,
+  HolyGrailMain,
+} from "../../Atoms/HolyGrailLayout";
+import Header from "../../Organisms/Header";
 
 
-const IndexTemplate = props => {
+const IndexTemplate = () => {
 
   return (
-    <Layout>
-      <SEO
-        title={''}
-        description={''}
-      />
-      <div className={style.topSection}>
-        <div className={style.container}>
-          <div className={style.flex}>
-            <div className={style.topSectionLeft}>
-              <Heading level={Level.h1}>目標へ向かう学習を</Heading>
-              <Txt>Journeyはあなたが自信をもって目標へ向かうための学習ロードマップです</Txt>
-            </div>
-            <div className={style.topSectionRight}>
-              <Img fixed={props.mainVisual} />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className={style.sceneSection}>
-        <div className={style.container}>
-          <SceneList scenes={props.scenes} />
-        </div>
-      </div>
-    </Layout>
+    <HolyGrailLayout>
+      <HolyGrailTop>
+        <SEO
+          title={''}
+          description={''}
+        />
+        <Header/>
+      </HolyGrailTop>
+      <HolyGrailMain>
+        <main style={{ minHeight: '300px', backgroundColor: 'yellow' }}>
+          main
+        </main>
+      </HolyGrailMain>
+      <HolyGrailBottom>
+        <footer style={{ minHeight: '50px', backgroundColor: 'blue' }}>
+          footer
+        </footer>
+      </HolyGrailBottom>
+    </HolyGrailLayout>
   );
 };
 

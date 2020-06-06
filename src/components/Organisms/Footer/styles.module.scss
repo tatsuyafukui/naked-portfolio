@@ -1,0 +1,24 @@
+@import "../../properties.css";
+
+.root {
+    width: 100%;
+    margin: 0;
+    padding: 72px 0;
+    border-top: var(--border);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
+    > div {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.menuContainer {
+    margin: 0 40px;
+    li {
+        margin-bottom: 16px;
+    }
+}

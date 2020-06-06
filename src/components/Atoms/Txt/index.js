@@ -1,0 +1,32 @@
+import React from 'react';
+import styles from './styles.module.scss';
+import PropTypes from "prop-types";
+
+const txtFactory = role => ({
+  tag: Tag,
+  fontSize ,
+  className,
+  ...props
+}) => (
+    <Tag
+      {...props}
+      className={[styles[role], styles[fontSize], className].join(' ')}
+    />
+);
+
+const Txt = txtFactory(TxtRole.base);
+export const InfoTxt = txtFactory(TxtRole.info);
+
+Txt.propTypes = {
+  children: PropTypes.node.isRequired,
+  tag: PropTypes.string,
+  fontSize: PropTypes.string,
+  className: PropTypes.string,
+}
+
+Txt.defaultProps = {
+  tag: 'p',
+  fontSize: 'm',
+}
+
+export default Txt;
