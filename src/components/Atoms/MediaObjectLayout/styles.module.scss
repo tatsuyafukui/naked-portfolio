@@ -1,0 +1,10 @@
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body {
+  flex: 1;
+  min-width: 0;
+}

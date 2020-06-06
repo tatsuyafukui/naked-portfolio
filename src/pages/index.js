@@ -12,10 +12,23 @@ const IndexPage = () => {
           }
         }
       }
+      allScenesJson {
+        nodes {
+          id
+          heading
+          image {
+            childImageSharp {
+              fixed(height: 294) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+        }
+      }
     }
   `);
 
-  return <IndexTemplate topImage={data.mainImage.childImageSharp.fixed} />;
+  return <IndexTemplate topImage={data.mainImage.childImageSharp.fixed} scenes={data.allScenesJson.nodes} />;
 };
 
 export default IndexPage;

@@ -12,7 +12,6 @@ Txt.propTypes = {
   children: PropTypes.node.isRequired,
   tag: PropTypes.string,
   fontSize: PropTypes.string,
-  className: PropTypes.string,
 };
 
 Txt.defaultProps = {

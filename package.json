@@ -13,6 +13,7 @@
     "gatsby-plugin-sass": "^2.3.3",
     "gatsby-plugin-sharp": "^2.6.9",
     "gatsby-source-filesystem": "^2.3.8",
+    "gatsby-transformer-json": "^2.4.4",
     "gatsby-transformer-sharp": "^2.5.3",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
@@ -37,18 +38,6 @@
     "react-test-renderer": "^16.13.1",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn format",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx}": [
-      "eslint --fix",
-      "git add"
-    ]
   },
   "keywords": [
     "gatsby"

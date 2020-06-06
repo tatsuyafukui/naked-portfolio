@@ -1,0 +1,32 @@
+[
+  {
+    "id": "シーン１",
+    "heading": "Webページを作れるようになろう",
+    "image": "../images/main.jpg",
+    "description": ""
+  },
+  {
+    "id": "シーン２",
+    "heading": "Webアプリケーションを形にしよう",
+    "image": "../images/main.jpg",
+    "description": ""
+  },
+  {
+    "id": "シーン３",
+    "heading": "みんなでアプリケーションを開発しよう",
+    "image": "../images/main.jpg",
+    "description": ""
+  },
+  {
+    "id": "シーン４",
+    "heading": "公開できるプロダクトに必要なことを知ろう",
+    "image": "../images/main.jpg",
+    "description": ""
+  },
+  {
+    "id": "シーン５",
+    "heading": "プロダクトを継続して届けよう",
+    "image": "../images/main.jpg",
+    "description": ""
+  }
+]
