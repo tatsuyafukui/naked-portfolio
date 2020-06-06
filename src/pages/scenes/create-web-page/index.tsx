@@ -1,12 +1,34 @@
 import React from 'react';
 import SceneTemplate from '../../../components/Templates/SceneTemplate';
-import { graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 
 interface IProps {
   data: any;
 }
 
-const CreateWebPagePage: React.FC<IProps> = ({ data }) => {
+const CreateWebPagePage: React.FC<IProps> = () => {
+
+  const data = useStaticQuery(graphql`
+    query {
+      sceneimage: file(relativePath: { eq: "scenes/create-web-page/scene.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 800) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+
+      htmlCss: file(
+        relativePath: { eq: "scenes/create-web-page/skills/html-css/icon.png" }
+      ) {
+        childImageSharp {
+          fixed(width: 70) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `);
 
   const skills = [
     {
@@ -34,24 +56,4 @@ const CreateWebPagePage: React.FC<IProps> = ({ data }) => {
 
 export default CreateWebPagePage;
 
-export const query = graphql`
-  query {
-    sceneimage: file(relativePath: { eq: "scenes/create-web-page/scene.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 800) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
 
-    htmlCss: file(
-      relativePath: { eq: "scenes/create-web-page/skills/html-css/icon.png" }
-    ) {
-      childImageSharp {
-        fixed(width: 70) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-  }
-`;

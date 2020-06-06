@@ -1,12 +1,33 @@
 import React from 'react';
 import IndexTemplate from '../components/Templates/IndexTemplate';
-import { graphql } from 'gatsby';
+import { graphql, useStaticQuery } from 'gatsby';
 
 interface IProps {
   data: any;
 }
 
-const IndexPage: React.FC<IProps> = ({ data }) => {
+const IndexPage: React.FC<IProps> = () => {
+
+  const data = useStaticQuery(graphql`
+    query {
+      # top page image
+      mainImage: file(relativePath: { eq: "main.jpg" }) {
+        childImageSharp {
+          fixed(height: 500) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+
+      scene1: file(relativePath: { eq: "scenes/create-web-page/scene.png" }) {
+        childImageSharp {
+          fixed(width: 440) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `);
 
   const scenes = [
     {
@@ -28,23 +49,4 @@ const IndexPage: React.FC<IProps> = ({ data }) => {
 
 export default IndexPage;
 
-export const query = graphql`
-  query {
-    # top page image
-    mainImage: file(relativePath: { eq: "main.jpg" }) {
-      childImageSharp {
-        fixed(height: 500) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
 
-    scene1: file(relativePath: { eq: "scenes/create-web-page/scene.png" }) {
-      childImageSharp {
-        fixed(width: 440) {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-  }
-`;
