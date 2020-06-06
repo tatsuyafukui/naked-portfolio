@@ -46,11 +46,12 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "yarn format",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "lint-staged": {
-    "*.{js,jsx}": ["yarn format", "git add"]
+    "*.{js,jsx}": ["eslint --fix", "git add"]
   },
   "keywords": [
     "gatsby"
