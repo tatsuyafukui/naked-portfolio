@@ -1,5 +1,255 @@
 @import "../properties.css";
 
+
+
+/* Dark mode styles */
+.dark-switcher {
+  color: #fff;
+  margin-top: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+@media (min-width: 992px) {
+  .dark-switcher {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+  }
+}
+.dark {
+  background-color: #2a2b2d;
+  color: #fff;
+  transition: all 0.6s ease;
+    /* **** バリュー（値）層 **** */
+    /* 色：色相名とカラーコードの紐付け */
+
+    /* **** ブランディング層 **** */
+    /* 色：色相名とカラーコードの紐付け */
+    --color-base: var(--color-black);
+    --color-base-background: var(--color-black);
+    --color-title-background: var(--color-black);
+    --color-link: var(--color-blue);
+    --color-link-visited: none;
+    --color-link-hover: none;
+    --color-link-active: none;
+    --color-success: var(--color-green);
+    --color-success-hover: var(--color-green);
+
+    --color-danger: var(--color-red);
+    --color-danger-hover: var(--color-red);
+
+    --color-warning: var(--color-orange);
+    --color-warning-hover: var(--color-orange);
+
+    --color-info: var(--color-text-gray);
+
+    --color-primary: var(--color-aqua);
+    --color-primary-hover: var(--color-aqua-dark);
+
+    --color-secondary: var(--color-gray);
+    --color-secondary-hover: var(--color-navy-gray);
+
+    --color-accent: none;
+    --color-selected: var(--color-light-aqua);
+    --color-shadow: rgba(160,166,179,0.3);
+    --color-shadow-hover: rgba(160,166,179,0.4);
+
+    /* 色：色相名とカラーコードの紐付け */
+
+
+    /* **** メディア層 **** */
+    /* 色：媒体固有で使用する色 */
+    --color-text: var(--color-white);
+    --color-text-out: var(--color-white);
+    --color-tip: var(--color-gray);
+    --color-line: var(--color-gray);
+    --color-info-layer1: var(--color-gray);
+    --color-info-layer2: var(--color-white);
+    --color-header: var(--color-white);
+    --color-card: var(--color-white);
+    --color-card-header: var(--color-white);
+
+
+    /* 文字：サイズ（媒体に最適化した文字サイズ） */
+    --font-size-xxs: .4rem;
+    --font-size-xs: .6rem;
+    --font-size-s: .8rem;
+    --font-size-m: 1rem;
+    --font-size-l: 1.2rem;
+    --font-size-xl: 1.4rem;
+    --font-size-xxl: 1.6rem;
+    --font-size-xxxl: 1.8rem;
+    --font-size-xxxxl: 2.0rem;
+
+
+
+
+    /* 文字：太さ（媒体に最適化した文字の太さ） */
+    --font-weight-default: 500;
+    --font-weight-bold: 700;
+
+    /* 文字：太さ（媒体に最適化した文字の太さ） */
+    --line-height-heading: 1.1;
+    --line-height-default: 1.2;
+    --line-height-paragraph: 2;
+
+
+    /* 余白（媒体に最適化した余白単位） */
+    --space: .5rem;
+    --letter-space: 1rem;
+
+    /* 枠に関する要素（媒体に最適化した枠デザイン要素） */
+    --line-width: 1px;
+    --line-style: solid;
+    --radius: 8px;
+    --border: var(--line-width) var(--line-style) var(--color-line);
+
+
+    /* フィードバックの定義（媒体に最適化したフィードバック・デザイン要素） */
+    --hover-feedback-opacity: .7;
+
+    /* アニメーションの定義（媒体に最適化したアニメーション・デザイン要素） */
+    --hover-animation-duration: .2s;
+    --hover-animation-timing: ease-out;
+    --hover-animation: var(--hover-animation-duration) var(--hover-animation-timing);
+    --feed-animation-duration: .2s;
+    --feed-animation-timing: linear;
+    --feed-animation: var(--feed-animation-duration) var(--feed-animation-timing);
+
+
+    /* Z 座標の管理（Web媒体/CSSではZ座標を管理する） */
+    --z-header: 10;
+
+
+    /* レスポンシブ・デザイン用のカスタム・メディア（Webブラウザ用） */
+}
+
+@media (prefers-color-scheme: dark) {
+  .dark {
+    background-color: blue!important;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .light {
+    background-color: yellow!important;
+  }
+}
+
+.light {
+  transition: all 0.6s ease;
+  background-color: #fefefe;
+
+    /* **** ブランディング層 **** */
+    /* 色：色相名とカラーコードの紐付け */
+    --color-base: var(--color-black);
+    --color-base-background: var(--color-white);
+    --color-title-background: var(--color-black);
+    --color-link: var(--color-blue);
+    --color-link-visited: none;
+    --color-link-hover: none;
+    --color-link-active: none;
+    --color-success: var(--color-green);
+    --color-success-hover: var(--color-green);
+
+    --color-danger: var(--color-red);
+    --color-danger-hover: var(--color-red);
+
+    --color-warning: var(--color-orange);
+    --color-warning-hover: var(--color-orange);
+
+    --color-info: var(--color-text-gray);
+
+    --color-primary: var(--color-aqua);
+    --color-primary-hover: var(--color-aqua-dark);
+
+    --color-secondary: var(--color-gray);
+    --color-secondary-hover: var(--color-navy-gray);
+
+    --color-accent: none;
+    --color-selected: var(--color-light-aqua);
+    --color-shadow: rgba(160,166,179,0.3);
+    --color-shadow-hover: rgba(160,166,179,0.4);
+
+    /* 色：色相名とカラーコードの紐付け */
+
+
+    /* **** メディア層 **** */
+    /* 色：媒体固有で使用する色 */
+    --color-text: var(--color-black);
+    --color-text-out: var(--color-white);
+    --color-tip: var(--color-gray);
+    --color-line: var(--color-gray);
+    --color-info-layer1: var(--color-gray);
+    --color-info-layer2: var(--color-white);
+    --color-header: var(--color-white);
+    --color-card: var(--color-white);
+    --color-card-header: var(--color-white);
+
+
+    /* 文字：サイズ（媒体に最適化した文字サイズ） */
+    --font-size-xxs: .4rem;
+    --font-size-xs: .6rem;
+    --font-size-s: .8rem;
+    --font-size-m: 1rem;
+    --font-size-l: 1.2rem;
+    --font-size-xl: 1.4rem;
+    --font-size-xxl: 1.6rem;
+    --font-size-xxxl: 1.8rem;
+    --font-size-xxxxl: 2.0rem;
+
+
+
+
+    /* 文字：太さ（媒体に最適化した文字の太さ） */
+    --font-weight-default: 500;
+    --font-weight-bold: 700;
+
+    /* 文字：太さ（媒体に最適化した文字の太さ） */
+    --line-height-heading: 1.1;
+    --line-height-default: 1.2;
+    --line-height-paragraph: 2;
+
+
+    /* 余白（媒体に最適化した余白単位） */
+    --space: .5rem;
+    --letter-space: 1rem;
+
+    /* 枠に関する要素（媒体に最適化した枠デザイン要素） */
+    --line-width: 1px;
+    --line-style: solid;
+    --radius: 8px;
+    --border: var(--line-width) var(--line-style) var(--color-line);
+
+
+    /* フィードバックの定義（媒体に最適化したフィードバック・デザイン要素） */
+    --hover-feedback-opacity: .7;
+
+    /* アニメーションの定義（媒体に最適化したアニメーション・デザイン要素） */
+    --hover-animation-duration: .2s;
+    --hover-animation-timing: ease-out;
+    --hover-animation: var(--hover-animation-duration) var(--hover-animation-timing);
+    --feed-animation-duration: .2s;
+    --feed-animation-timing: linear;
+    --feed-animation: var(--feed-animation-duration) var(--feed-animation-timing);
+
+
+    /* Z 座標の管理（Web媒体/CSSではZ座標を管理する） */
+    --z-header: 10;
+
+
+    /* レスポンシブ・デザイン用のカスタム・メディア（Webブラウザ用） */
+
+
+}
+.dark a,
+.dark a:visited {
+  color: #fff;
+}
+
+
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;

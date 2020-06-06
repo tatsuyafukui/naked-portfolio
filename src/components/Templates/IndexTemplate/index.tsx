@@ -3,7 +3,10 @@ import Layout from '../../Layout';
 import SEO from '../../seo';
 import style from './style.module.scss';
 import SceneList from '../../Organisms/SceneList';
-import Img, { FixedObject } from 'gatsby-image';
+import Img, {FixedObject} from 'gatsby-image';
+import Heading from "../../Atoms/Heading";
+import {Level} from "../../../constants";
+import Txt from "../../Atoms/Txt";
 
 interface IProps {
   mainVisual: FixedObject | FixedObject[];
@@ -22,8 +25,8 @@ const IndexTemplate: React.FC<IProps> = props => {
         <div className={style.container}>
           <div className={style.flex}>
             <div className={style.topSectionLeft}>
-              <h1>目標へ向かう学習を</h1>
-              <p>s</p>
+              <Heading level={Level.h1}>目標へ向かう学習を</Heading>
+              <Txt>Journeyはあなたが自信をもって目標へ向かうための学習ロードマップです</Txt>
             </div>
             <div className={style.topSectionRight}>
               <Img fixed={props.mainVisual} />
@@ -41,3 +44,19 @@ const IndexTemplate: React.FC<IProps> = props => {
 };
 
 export default IndexTemplate;
+
+export const Top = ({image}: any) => (
+  <div className={style.topSection}>
+    <div className={style.container}>
+      <div className={style.flex}>
+        <div className={style.topSectionLeft}>
+          <Heading level={Level.h1}>目標へ向かう学習を</Heading>
+          <Txt>Journeyはあなたが自信をもって目標へ向かうための学習ロードマップです</Txt>
+        </div>
+        <div className={style.topSectionRight}>
+          <img src={image} />
+        </div>
+      </div>
+    </div>
+  </div>
+)

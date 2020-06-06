@@ -2,7 +2,6 @@
     /* **** バリュー（値）層 **** */
     /* 色：色相名とカラーコードの紐付け */
     --color-white: #fff;
-    --color-background-white: #F9FBFE;
     --color-black: #212121;
     --color-gray: #D9D9D9;
     --color-text-gray: #666666;
@@ -26,7 +25,7 @@
     /* **** ブランディング層 **** */
     /* 色：色相名とカラーコードの紐付け */
     --color-base: var(--color-black);
-    --color-base-background: var(--color-background-white);
+    --color-base-background: var(--color-white);
     --color-title-background: var(--color-black);
     --color-link: var(--color-blue);
     --color-link-visited: none;
@@ -122,6 +121,5 @@
 
 
     /* レスポンシブ・デザイン用のカスタム・メディア（Webブラウザ用） */
-
 
 }
