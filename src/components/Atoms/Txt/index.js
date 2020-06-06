@@ -14,8 +14,7 @@ const txtFactory = role => ({
     />
 );
 
-const Txt = txtFactory(TxtRole.base);
-export const InfoTxt = txtFactory(TxtRole.info);
+const Txt = txtFactory('base');
 
 Txt.propTypes = {
   children: PropTypes.node.isRequired,

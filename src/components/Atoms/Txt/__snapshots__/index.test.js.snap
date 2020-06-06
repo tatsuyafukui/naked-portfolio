@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Txt Renders correctly 1`] = `
+<p
+  className="base m "
+>
+  Txt
+</p>
+`;
