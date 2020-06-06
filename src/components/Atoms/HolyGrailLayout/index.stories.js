@@ -2,7 +2,7 @@ import React from "react";
 import HolyGrailLayout, { HolyGrailTop, HolyGrailRight, HolyGrailLeft, HolyGrailBottom, HolyGrailMain } from "./index";
 import { storiesOf } from "@storybook/react";
 
-storiesOf(`Atoms/HolyGrailLayout`, module).add(`default`, () => (
+storiesOf(`Atoms/HolyGrailLayout`, module).add(`デフォルト`, () => (
   <HolyGrailLayout>
     <HolyGrailTop>
       <header style={{ minHeight: "50px", backgroundColor: "red" }}>header</header>
