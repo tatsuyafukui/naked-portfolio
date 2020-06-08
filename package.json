@@ -53,8 +53,8 @@
     "test": "jest",
     "test-watch": "yarn test -- --watch",
     "test-update": "yarn test -- --u",
-    "storybook": "NODE_ENV=production start-storybook -s public -p 6006",
-    "build-storybook": "NODE_ENV=production build-storybook -s public"
+    "storybook": "start-storybook -s public -p 6006",
+    "build-storybook": "build-storybook -s public"
   },
   "repository": {
     "type": "git",
