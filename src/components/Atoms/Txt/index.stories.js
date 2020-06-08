@@ -1,6 +1,6 @@
-import { storiesOf } from "@storybook/react";
-import Txt from "./index";
 import React from "react";
+import { storiesOf } from "@storybook/react";
+import Txt, { InfoTxt } from "./index";
 
 storiesOf(`Atoms/Txt`, module)
   .add(`テキスト - XXS`, () => <Txt fontSize={"xxs"}>テキストを表示</Txt>)
@@ -11,4 +11,4 @@ storiesOf(`Atoms/Txt`, module)
   .add(`テキスト - XL`, () => <Txt fontSize={"xl"}>テキストを表示</Txt>)
   .add(`テキスト - XXL`, () => <Txt fontSize={"xxl"}>テキストを表示</Txt>)
   .add(`テキスト - XXXL`, () => <Txt fontSize={"xxxl"}>テキストを表示</Txt>)
-  .add(`テキスト - XXXXL`, () => <Txt fontSize={"xxxxl"}>テキストを表示</Txt>);
+  .add(`Infoテキスト`, () => <InfoTxt>テキストを表示</InfoTxt>);
