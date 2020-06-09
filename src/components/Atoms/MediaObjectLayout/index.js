@@ -2,7 +2,6 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./styles.module.scss";
 import { containPresenter } from "../../utils/HoC";
-import Heading from "../Heading";
 
 const MediaObjectLayoutPresenter = ({ tag: Tag, summary, children, className }) => (
   <Tag className={[styles.root, styles[summary], className].join(" ")}>
