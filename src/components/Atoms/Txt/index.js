@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "./styles.module.scss";
 import PropTypes from "prop-types";
+import styles from "./styles.module.scss";
 
 const txtFactory = role => ({ tag: Tag = "p", fontSize = "m", className, ...props }) => (
   <Tag {...props} className={[styles[role], styles[fontSize], className].join(" ")} />
