@@ -15,6 +15,18 @@ describe("LinkContainer", () => {
     expect(tag).toBe(GatsbyLink);
   });
 
+  it("内部リンクのときはGatsbyLink特有のPropsをそのまま返す", () => {
+    const {to, activeClassName, partiallyActive} = LinkContainer({
+      presenter,
+      to: InternalLink,
+      activeClassName: "active",
+      partiallyActive: {color: "red"},
+    });
+    expect(to).toBe(InternalLink);
+    expect(activeClassName).toBe("active");
+    expect(partiallyActive).toEqual({color: "red"});
+  });
+
   it("外部リンクのときはaタグを使い、toをhrefに変換", () => {
     const {tag, href} = LinkContainer({
       presenter,
@@ -31,8 +43,8 @@ describe("LinkContainer", () => {
       activeClassName: "active",
       partiallyActive: {color: "red"},
     });
-    expect(to).toBe(undefined);
-    expect(activeClassName).toBe(undefined);
-    expect(partiallyActive).toBe(undefined);
+    expect(to).toBeUndefined();
+    expect(activeClassName).toBeUndefined();
+    expect(partiallyActive).toBeUndefined();
   });
 });
