@@ -61,9 +61,18 @@
 
     /* Z 座標の管理（Web媒体/CSSではZ座標を管理する） */
     --z-header: none;
+}
 
+/* media query */
+$breakpoints: (
+    'sm': 'screen and (max-width: 544px)',
+    'md': 'screen and (max-width: 767px)',
+    'lg': 'screen and (max-width: 991px)',
+    'xl': 'screen and (max-width: 1199px)',
+) !default;
 
-    /* レスポンシブ・デザイン用のカスタム・メディア（Webブラウザ用） */
-
-
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
 }
