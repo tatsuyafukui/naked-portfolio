@@ -10,22 +10,22 @@ const LinkPresenter = ({ tag: Tag, ...props }) => (
 /**
 	* 内部リンクか外部リンクかでタグを出しわける
 	* 内部ならGatsbyのLinkタグ、外部ならaタグ
-	* 外部リンクの場合はGatsbyのLinkタグ特有のPropsをaタグに渡さない
+	* 外部リンクの場合はGatsbyのLinkタグ特有のPropsを削除
 	*/
-export const LinkContainer = ({ to, activeClassName, partiallyActive, presenter, ...props }) => {
+export const LinkContainer = ({ presenter, ...props }) => {
 
 		// 内部リンクかの判定: スラッシュが1つだけで始まれば内部リンク、それ以外はすべて外部リンク
-		const internal = /^\/(?!\/)/.test(to);
+		const internal = /^\/(?!\/)/.test(props.to);
 		let tag;
 
 		if (internal) {
 				tag = GatsbyLink;
-				props.to = to;
-				props.activeClassName = activeClassName;
-				props.partiallyActive = partiallyActive;
 		} else {
 				tag = "a";
-				props.href = to;
+				props.href = props.to;
+				delete props.to;
+				delete props.activeClassName;
+				delete props.partiallyActive;
 		}
 
 		return presenter({ tag, ...props });
