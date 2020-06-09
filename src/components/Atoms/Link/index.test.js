@@ -24,7 +24,7 @@ describe("LinkContainer", () => {
     expect(href).toBe(ExternalLink);
   });
 
-  it("外部リンクのときはGatsbyLink特有のPropsをundefinedにする", () => {
+  it("外部リンクのときはGatsbyLink特有のPropsを削除する", () => {
     const {to, activeClassName, partiallyActive} = LinkContainer({
       presenter,
       to: ExternalLink,
