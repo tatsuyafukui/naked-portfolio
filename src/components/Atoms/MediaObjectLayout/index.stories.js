@@ -24,7 +24,7 @@ storiesOf(`Atoms/MediaObjectLayout`, module)
       <p>Explanatory text. Explanatory text.Explanatory text. Explanatory text.</p>
     </MediaObjectLayout>
   ))
-  .add(`Specify left as role`, () => (
+  .add(`Specify left as summary`, () => (
     <MediaObjectLayout summary={'left'}>
       <div>
         <img src={sceneSize} />
@@ -32,7 +32,7 @@ storiesOf(`Atoms/MediaObjectLayout`, module)
       <p>Explanatory text. Explanatory text.Explanatory text. Explanatory text.</p>
     </MediaObjectLayout>
   ))
-  .add(`Specify right as role`, () => (
+  .add(`Specify right as summary`, () => (
   <MediaObjectLayout summary={'right'}>
     <div>
       <img src={ogpBook} />
@@ -41,7 +41,7 @@ storiesOf(`Atoms/MediaObjectLayout`, module)
     <p>Explanatory text. Explanatory text.Explanatory text. Explanatory text.</p>
   </MediaObjectLayout>
   ))
-  .add(`Specify top as role`, () => (
+  .add(`Specify top as summary`, () => (
     <MediaObjectLayout summary={'top'}>
       <div>
         <img src={ogpLarge} />
@@ -51,7 +51,7 @@ storiesOf(`Atoms/MediaObjectLayout`, module)
       <p>URL</p>
     </MediaObjectLayout>
   ))
-  .add(`Image size is square and role is top`, () => (
+  .add(`Image size is square and summary is top`, () => (
     <MediaObjectLayout summary={'top'}>
       <div>
         <img src={ogpSquare} />
@@ -60,4 +60,15 @@ storiesOf(`Atoms/MediaObjectLayout`, module)
       <p>Explanatory text. Explanatory text.Explanatory text. Explanatory text.</p>
       <p>URL</p>
     </MediaObjectLayout>
+  ))
+  .add(`Incorrect summary specification`, () => (
+    <MediaObjectLayout summary={'incorrect'}>
+      <div>
+        <img src={ogpSquare} />
+      </div>
+      <h2>Reference site title</h2>
+      <p>Explanatory text. Explanatory text.Explanatory text. Explanatory text.</p>
+      <p>URL</p>
+    </MediaObjectLayout>
   ));
+
