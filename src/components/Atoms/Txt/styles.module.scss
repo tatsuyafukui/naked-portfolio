@@ -1,4 +1,4 @@
-@import url("../../properties.scss");
+@import "../../properties.scss";
 
 .xxs {
     font-size: var(--font-size-xxs);
@@ -43,4 +43,3 @@
 .info {
     color: var(--color-text-info);
 }
-
