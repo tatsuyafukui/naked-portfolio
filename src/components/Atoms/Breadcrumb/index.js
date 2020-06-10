@@ -2,8 +2,8 @@ import React from "react";
 import styles from "./styles.module.scss";
 import { containPresenter } from "../../utils/HoC";
 
-const BreadcrumbPresenter = ({ tag: Tag, children, className }) => (
-  <Tag className={[styles.root, className].join(" ")}>
+const BreadcrumbPresenter = ({ tag: Tag, children, ...props }) => (
+  <Tag {...props}>
     <ol className={styles.ol}>{children}</ol>
   </Tag>
 );
@@ -14,10 +14,10 @@ const BreadcrumbPresenter = ({ tag: Tag, children, className }) => (
  */
 export const BreadcrumbContainer = ({
   children,
-  className,
   tag,
   separator,
   presenter,
+  ...props
 }) => {
 
   const items = React.Children.toArray(children)
@@ -30,16 +30,13 @@ export const BreadcrumbContainer = ({
       items,
       separator
     ),
-    className,
+    ...props
   });
 };
 
 const Breadcrumb = containPresenter(BreadcrumbContainer, BreadcrumbPresenter);
 
 Breadcrumb.defaultProps = {
-  maxItems: 8,
-  itemsAfterCollapse: 1,
-  itemsBeforeCollapse: 1,
   separator: "/",
   tag: "nav",
 };
