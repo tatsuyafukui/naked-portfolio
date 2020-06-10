@@ -1,23 +1,74 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import MediaObjectLayout from "./index";
-const dammy = require("../../../mock/images/img01.png");
+import ogpSquare from "../../../mock/images/ogp-square.png";
+import ogpBook from "../../../mock/images/ogp-book.png";
+import ogpLarge from "../../../mock/images/ogp-large.png";
+import sceneSize from "../../../mock/images/scene-size.png";
 
 storiesOf(`Atoms/MediaObjectLayout`, module)
-  .add(`デフォルト`, () => (
+  .add(`Default`, () => (
     <MediaObjectLayout>
       <div>
-        <img src={dammy} width={300} height={300} />
+        <img src={ogpSquare} width={100} height={100} />
       </div>
-      <p>説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト</p>
-      <p>説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト</p>
+      <p>Explanatory text. Explanatory text.Explanatory text. Explanatory text.</p>
+      <p>Explanatory text. Explanatory text.Explanatory text. Explanatory text.Explanatory text. Explanatory text.</p>
     </MediaObjectLayout>
   ))
-  .add(`sectionタグ指定`, () => (
+  .add(`Specify section tag`, () => (
     <MediaObjectLayout tag={"section"}>
       <div>
-        <img src={dammy} width={300} height={300} />
+        <img src={ogpSquare} width={100} height={100} />
       </div>
-      <p>説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト</p>
+      <p>Explanatory text. Explanatory text.Explanatory text. Explanatory text.</p>
+    </MediaObjectLayout>
+  ))
+  .add(`Specify left as summary`, () => (
+    <MediaObjectLayout summary={'left'}>
+      <div>
+        <img src={sceneSize} />
+      </div>
+      <p>Explanatory text. Explanatory text.Explanatory text. Explanatory text.</p>
+    </MediaObjectLayout>
+  ))
+  .add(`Specify right as summary`, () => (
+  <MediaObjectLayout summary={'right'}>
+    <div>
+      <img src={ogpBook} />
+    </div>
+    <h2>Reference site title</h2>
+    <p>Explanatory text. Explanatory text.Explanatory text. Explanatory text.</p>
+  </MediaObjectLayout>
+  ))
+  .add(`Specify top as summary`, () => (
+    <MediaObjectLayout summary={'top'}>
+      <div>
+        <img src={ogpLarge} />
+      </div>
+      <h2>Reference site title</h2>
+      <p>Explanatory text. Explanatory text.Explanatory text. Explanatory text.</p>
+      <p>URL</p>
+    </MediaObjectLayout>
+  ))
+  .add(`Image size is square and summary is top`, () => (
+    <MediaObjectLayout summary={'top'}>
+      <div>
+        <img src={ogpSquare} />
+      </div>
+      <h2>Reference site title</h2>
+      <p>Explanatory text. Explanatory text.Explanatory text. Explanatory text.</p>
+      <p>URL</p>
+    </MediaObjectLayout>
+  ))
+  .add(`Incorrect summary specification`, () => (
+    <MediaObjectLayout summary={'incorrect'}>
+      <div>
+        <img src={ogpSquare} />
+      </div>
+      <h2>Reference site title</h2>
+      <p>Explanatory text. Explanatory text.Explanatory text. Explanatory text.</p>
+      <p>URL</p>
     </MediaObjectLayout>
   ));
+
