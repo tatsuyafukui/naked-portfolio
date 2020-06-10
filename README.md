@@ -46,3 +46,29 @@ yarn start
 ```
 
 `http://localhost:8000/` にアクセスして画面が表示されたら成功
+
+## Storybook 起動
+
+上記のdockerで構築している場合はDocker内でコマンド実行
+```shell script
+docker container exec -it gatsby_app yarn storybook
+```
+
+`http://localhost:6006/` にアクセスして画面が表示されたら成功
+
+## Jest 起動
+
+上記のdockerで構築している場合はDocker内でコマンド実行
+`*test.js`ファイルのテストが実行される
+
+```shell script
+docker container exec -it gatsby_app yarn test
+```
+
+コードの変更のたびに自動テスト実行するwatchは
+
+```shell script
+docker container exec -it gatsby_app yarn test-watch
+```
+
+
