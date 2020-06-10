@@ -10,7 +10,7 @@ const BreadcrumbPresenter = ({ tag: Tag, children, className }) => (
 
 /**
  * コンテナー
- * メニューに応じてリストを生成してpresenterを呼び出す
+ * childrenの要素数に応じてリストを生成してpresenterに渡す
  */
 export const BreadcrumbContainer = ({
   children,
