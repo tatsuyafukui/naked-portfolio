@@ -1,6 +1,6 @@
-import React from "react";
-import NotFoundTemplate from "../components/Templates/404Template";
+import React from 'react'
+import NotFoundTemplate from '../components/Templates/404Template'
 
-const NotFoundPage = () => <NotFoundTemplate />;
+const NotFoundPage = () => <NotFoundTemplate />
 
-export default NotFoundPage;
+export default NotFoundPage

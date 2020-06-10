@@ -1,10 +1,10 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import MediaObjectLayout from "./index";
-import ogpSquare from "../../../mock/images/ogp-square.png";
-import ogpBook from "../../../mock/images/ogp-book.png";
-import ogpLarge from "../../../mock/images/ogp-large.png";
-import sceneSize from "../../../mock/images/scene-size.png";
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import MediaObjectLayout from './index'
+import ogpSquare from '../../../mock/images/ogp-square.png'
+import ogpBook from '../../../mock/images/ogp-book.png'
+import ogpLarge from '../../../mock/images/ogp-large.png'
+import sceneSize from '../../../mock/images/scene-size.png'
 
 storiesOf(`Atoms/MediaObjectLayout`, module)
   .add(`Default`, () => (
@@ -17,7 +17,7 @@ storiesOf(`Atoms/MediaObjectLayout`, module)
     </MediaObjectLayout>
   ))
   .add(`Specify section tag`, () => (
-    <MediaObjectLayout tag={"section"}>
+    <MediaObjectLayout tag={'section'}>
       <div>
         <img src={ogpSquare} width={100} height={100} />
       </div>
@@ -33,13 +33,13 @@ storiesOf(`Atoms/MediaObjectLayout`, module)
     </MediaObjectLayout>
   ))
   .add(`Specify right as summary`, () => (
-  <MediaObjectLayout summary={'right'}>
-    <div>
-      <img src={ogpBook} />
-    </div>
-    <h2>Reference site title</h2>
-    <p>Explanatory text. Explanatory text.Explanatory text. Explanatory text.</p>
-  </MediaObjectLayout>
+    <MediaObjectLayout summary={'right'}>
+      <div>
+        <img src={ogpBook} />
+      </div>
+      <h2>Reference site title</h2>
+      <p>Explanatory text. Explanatory text.Explanatory text. Explanatory text.</p>
+    </MediaObjectLayout>
   ))
   .add(`Specify top as summary`, () => (
     <MediaObjectLayout summary={'top'}>
@@ -70,5 +70,4 @@ storiesOf(`Atoms/MediaObjectLayout`, module)
       <p>Explanatory text. Explanatory text.Explanatory text. Explanatory text.</p>
       <p>URL</p>
     </MediaObjectLayout>
-  ));
-
+  ))

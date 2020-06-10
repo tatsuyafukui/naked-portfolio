@@ -1,6 +1,6 @@
-import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
-import IndexTemplate from "../components/Templates/IndexTemplate";
+import React from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
+import IndexTemplate from '../components/Templates/IndexTemplate'
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -26,9 +26,9 @@ const IndexPage = () => {
         }
       }
     }
-  `);
+  `)
 
-  return <IndexTemplate topImage={data.mainImage.childImageSharp.fixed} scenes={data.allScenesJson.nodes} />;
-};
+  return <IndexTemplate topImage={data.mainImage.childImageSharp.fixed} scenes={data.allScenesJson.nodes} />
+}
 
-export default IndexPage;
+export default IndexPage
