@@ -51,9 +51,15 @@ HeadingOverlay.propTypes = {
 
 export default HeadingOverlay;
 
-export const Back = () => (
+const Back = () => (
 		<span>これはレンダリングされないもの</span>
 );
+
+Back.propTypes = {
+		heading: PropTypes.element.isRequired
+};
+
+export { Back }
 
 export const Front = () => (
 		<span>これはレンダリングされないもの</span>

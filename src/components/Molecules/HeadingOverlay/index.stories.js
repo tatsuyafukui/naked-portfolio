@@ -40,7 +40,7 @@ storiesOf(`Molecules/HeadingOverlay`, module)
   .add(`Background is color only`, () => (
     <HeadingOverlay style={{width: "300px", height: "200px"}}>
       <Back>
-        <div style={{backgroundColor: "red"}}/>
+        <h1>dsdsada</h1>
       </Back>
       <Front>
         <div>
