@@ -8,7 +8,7 @@ const listItemFactory = role => ({ children, className, ...props }) => (
   </li>
 );
 
-export const ListItem = listItemFactory("base");
+export const ListItem = listItemFactory();
 export const ListItemBordered = listItemFactory("underlined");
 
 const listFactory = role => ({ tag: Tag, children, className, ...props }) => (
@@ -17,7 +17,7 @@ const listFactory = role => ({ tag: Tag, children, className, ...props }) => (
   </Tag>
 );
 
-const List = listFactory("base");
+const List = listFactory();
 export const ListBordered = listFactory("bordered");
 
 ListItem.propTypes = {
