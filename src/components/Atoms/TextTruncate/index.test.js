@@ -5,7 +5,7 @@ describe('Overwrap', () => {
   const presenter = props => props
   const TEST_TEXT = 'Test text. Test text. Test text. Test text. Test text. ' // 55 characters
 
-  it('maxCharsを超えてい場合、maxCharsに指定した文字数のあとを省略：境界値（下限）', () => {
+  it('maxCharsを超えていた場合、maxCharsに指定した文字数のあとを省略：境界値（下限）', () => {
     const {children} = TextTruncateContainer({
       presenter,
       maxChars: 0,
