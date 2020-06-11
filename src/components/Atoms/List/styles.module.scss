@@ -5,17 +5,26 @@
 }
 
 .ol {
-  padding-left: 24px;
+  list-style-position: inside;
 }
 
 .ul, .ol {
   margin: 0;
-  li {
-    margin-bottom: 0;
-  }
 }
 
 .bordered {
   border: var(--border);
   border-radius: var(--radius);
+
+  :last-child {
+    border-bottom: none;
+  }
+}
+
+.li {
+  margin-bottom: 0;
+}
+
+.underlined {
+  border-bottom: var(--border);
 }

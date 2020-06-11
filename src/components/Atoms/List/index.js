@@ -3,39 +3,51 @@ import PropTypes from "prop-types";
 import styles from "./styles.module.scss";
 import { containPresenter } from "../../utils/HoC";
 
+// ListItem
+const listItemFactory = role => ({ children, className, ...props }) => (
+  <li {...props} className={[styles.li, styles[role], className].join(" ")}>
+    {children}
+  </li>
+);
+
+export const ListItem = listItemFactory("base");
+export const ListItemBordered = listItemFactory("underlined");
+
+
+// List
 const listFactory = role => ({ tag: Tag, children, className, ...props }) => (
   <Tag className={[styles[`${Tag}`], styles[role], className].join(" ")} {...props} >
     {children}
   </Tag>
 );
 
-const ListPresenter = listFactory("base");
-const ListBorderedPresenter = listFactory("bordered");
+const List = listFactory("base");
+export const ListBordered = listFactory("bordered");
 
-const ListContainer = ({ elementType, presenter, ...props }) => {
-  const tag = elementType;
-  return presenter({ tag, ...props });
+ListItem.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
-const List = containPresenter(ListContainer, ListPresenter);
-export const ListBordered = containPresenter(ListContainer, ListBorderedPresenter);
+ListItemBordered.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 List.propTypes = {
   children: PropTypes.node.isRequired,
-  elementType: PropTypes.string,
+  tag: PropTypes.string,
 };
 
 List.defaultProps = {
-  elementType: 'ul',
+  tag: 'ul',
 };
 
 ListBordered.propTypes = {
   children: PropTypes.node.isRequired,
-  elementType: PropTypes.string,
+  tag: PropTypes.string,
 };
 
 ListBordered.defaultProps = {
-  elementType: 'ul',
+  tag: 'ul',
 };
 
 export default List;
