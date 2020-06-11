@@ -1,6 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import List from "./index";
+import List, { ListBordered } from "./index";
+// import List from "./index";
 import ListItem from "../ListItem";
 
 storiesOf(`Atoms/List`, module)
@@ -19,4 +20,12 @@ storiesOf(`Atoms/List`, module)
       <ListItem>Item</ListItem>
       <ListItem>Item</ListItem>
     </List>
+  ))
+  .add(`Bordered list`, () => (
+    <ListBordered>
+      <ListItem>Item</ListItem>
+      <ListItem>Item</ListItem>
+      <ListItem>Item</ListItem>
+      <ListItem>Item</ListItem>
+    </ListBordered>
   ))

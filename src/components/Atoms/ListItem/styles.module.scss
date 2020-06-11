@@ -1,8 +1,12 @@
 @import "../../properties.scss";
 
-.listItem {
+.li {
+    margin-bottom: 0;
 }
 
 .underlined {
     border-bottom: var(--border);
+    :last-child {
+        border: none;
+    }
 }
