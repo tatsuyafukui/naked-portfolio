@@ -9,7 +9,7 @@ const OverlayPresenter = ({children, className, ...props}) => (
   </div>
 )
 
-const OverlayContainer = ({presenter, children, ...props}) => {
+const OverlayContainer = ({overlayStyle, presenter, children, ...props}) => {
   children = React.Children.map(children, child => {
     if (typeof child === 'string') return null
 
@@ -23,7 +23,11 @@ const OverlayContainer = ({presenter, children, ...props}) => {
 
     if (child.type.name === 'Front') {
       const grandChild = child.props.children
-      return <div className={styles.overlay}>{grandChild}</div>
+      return (
+        <div className={styles.overlay} style={{...overlayStyle}}>
+          {grandChild}
+        </div>
+      )
     }
 
     return child

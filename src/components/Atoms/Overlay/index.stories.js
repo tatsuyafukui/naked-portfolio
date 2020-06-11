@@ -50,3 +50,19 @@ storiesOf(`Atoms/Overlay`, module)
       </Front>
     </Overlay>
   ))
+  .add(`Ovarlay colors can be overridden`, () => (
+    <Overlay
+      overlayStyle={{backgroundColor: 'rgba(3, 0, 39, 0.39)'}}
+      style={{width: '300px', height: '200px'}}
+    >
+      <Back>
+        <img src={sceneSize} />
+      </Back>
+      <Front>
+        <div>
+          <h1 style={{color: 'white'}}>Title</h1>
+          <p style={{color: 'white'}}>description</p>
+        </div>
+      </Front>
+    </Overlay>
+  ))
