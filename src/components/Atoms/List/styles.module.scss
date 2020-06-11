@@ -1,15 +1,15 @@
 @import "../../properties.scss";
 
 .ul {
-  margin: 0;
   list-style-type: none;
 }
 
 .ol {
-  margin-bottom: 0;
+  padding-left: 24px;
 }
 
 .ul, .ol {
+  margin: 0;
   li {
     margin-bottom: 0;
   }

@@ -29,3 +29,11 @@ storiesOf(`Atoms/List`, module)
       <ListItem>Item</ListItem>
     </ListBordered>
   ))
+  .add(`Bordered, ordered list`, () => (
+    <ListBordered elementType='ol'>
+      <ListItem>Item</ListItem>
+      <ListItem>Item</ListItem>
+      <ListItem>Item</ListItem>
+      <ListItem>Item</ListItem>
+    </ListBordered>
+  ))
