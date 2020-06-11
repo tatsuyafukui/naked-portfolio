@@ -1,6 +1,6 @@
 import React from 'react'
 
-const IndexTemplate = ({ topImage, scenes }) => {
+const IndexTemplate = ({topImage, scenes}) => {
   return (
     <div>
       <h1>Hello World</h1>

@@ -1,12 +1,12 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import { HeadingContainer } from './index'
+import {HeadingContainer} from './index'
 
 describe('HeadingContainer', () => {
   const presenter = props => props
 
   it('見た目レベルが設定されていないとき見出しレベルに合わせる', () => {
-    const { visualLevel } = HeadingContainer({
+    const {visualLevel} = HeadingContainer({
       presenter,
       level: 1,
     })
@@ -14,7 +14,7 @@ describe('HeadingContainer', () => {
   })
 
   it('見た目レベルが設定されているときは見出しレベルに合わせない', () => {
-    const { visualLevel } = HeadingContainer({
+    const {visualLevel} = HeadingContainer({
       presenter,
       level: 1,
       visualLevel: 2,
@@ -23,7 +23,7 @@ describe('HeadingContainer', () => {
   })
 
   it('１未満のレベルは１とする', () => {
-    const { tag, visualLevel } = HeadingContainer({
+    const {tag, visualLevel} = HeadingContainer({
       presenter,
       level: 0,
       visualLevel: 0,
@@ -33,7 +33,7 @@ describe('HeadingContainer', () => {
   })
 
   it('７以上のレベルは６とする', () => {
-    const { tag, visualLevel } = HeadingContainer({
+    const {tag, visualLevel} = HeadingContainer({
       presenter,
       level: 7,
       visualLevel: 7,

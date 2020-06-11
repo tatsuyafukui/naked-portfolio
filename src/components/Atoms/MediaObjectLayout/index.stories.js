@@ -1,5 +1,5 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
+import {storiesOf} from '@storybook/react'
 import MediaObjectLayout from './index'
 import ogpSquare from '../../../mock/images/ogp-square.png'
 import ogpBook from '../../../mock/images/ogp-book.png'
@@ -12,8 +12,13 @@ storiesOf(`Atoms/MediaObjectLayout`, module)
       <div>
         <img src={ogpSquare} width={100} height={100} />
       </div>
-      <p>Explanatory text. Explanatory text.Explanatory text. Explanatory text.</p>
-      <p>Explanatory text. Explanatory text.Explanatory text. Explanatory text.Explanatory text. Explanatory text.</p>
+      <p>
+        Explanatory text. Explanatory text.Explanatory text. Explanatory text.
+      </p>
+      <p>
+        Explanatory text. Explanatory text.Explanatory text. Explanatory
+        text.Explanatory text. Explanatory text.
+      </p>
     </MediaObjectLayout>
   ))
   .add(`Specify section tag`, () => (
@@ -21,7 +26,9 @@ storiesOf(`Atoms/MediaObjectLayout`, module)
       <div>
         <img src={ogpSquare} width={100} height={100} />
       </div>
-      <p>Explanatory text. Explanatory text.Explanatory text. Explanatory text.</p>
+      <p>
+        Explanatory text. Explanatory text.Explanatory text. Explanatory text.
+      </p>
     </MediaObjectLayout>
   ))
   .add(`Specify left as summary`, () => (
@@ -29,7 +36,9 @@ storiesOf(`Atoms/MediaObjectLayout`, module)
       <div>
         <img src={sceneSize} />
       </div>
-      <p>Explanatory text. Explanatory text.Explanatory text. Explanatory text.</p>
+      <p>
+        Explanatory text. Explanatory text.Explanatory text. Explanatory text.
+      </p>
     </MediaObjectLayout>
   ))
   .add(`Specify right as summary`, () => (
@@ -38,7 +47,9 @@ storiesOf(`Atoms/MediaObjectLayout`, module)
         <img src={ogpBook} />
       </div>
       <h2>Reference site title</h2>
-      <p>Explanatory text. Explanatory text.Explanatory text. Explanatory text.</p>
+      <p>
+        Explanatory text. Explanatory text.Explanatory text. Explanatory text.
+      </p>
     </MediaObjectLayout>
   ))
   .add(`Specify top as summary`, () => (
@@ -47,7 +58,9 @@ storiesOf(`Atoms/MediaObjectLayout`, module)
         <img src={ogpLarge} />
       </div>
       <h2>Reference site title</h2>
-      <p>Explanatory text. Explanatory text.Explanatory text. Explanatory text.</p>
+      <p>
+        Explanatory text. Explanatory text.Explanatory text. Explanatory text.
+      </p>
       <p>URL</p>
     </MediaObjectLayout>
   ))
@@ -57,7 +70,9 @@ storiesOf(`Atoms/MediaObjectLayout`, module)
         <img src={ogpSquare} />
       </div>
       <h2>Reference site title</h2>
-      <p>Explanatory text. Explanatory text.Explanatory text. Explanatory text.</p>
+      <p>
+        Explanatory text. Explanatory text.Explanatory text. Explanatory text.
+      </p>
       <p>URL</p>
     </MediaObjectLayout>
   ))
@@ -67,7 +82,9 @@ storiesOf(`Atoms/MediaObjectLayout`, module)
         <img src={ogpSquare} />
       </div>
       <h2>Reference site title</h2>
-      <p>Explanatory text. Explanatory text.Explanatory text. Explanatory text.</p>
+      <p>
+        Explanatory text. Explanatory text.Explanatory text. Explanatory text.
+      </p>
       <p>URL</p>
     </MediaObjectLayout>
   ))

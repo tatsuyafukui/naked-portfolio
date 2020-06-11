@@ -1,11 +1,11 @@
 import React from 'react'
-import { MediaObjectLayoutContainer } from './index'
+import {MediaObjectLayoutContainer} from './index'
 
 describe('MediaObjectLayoutContainer', () => {
   const presenter = props => props
 
   it('不適切なsummaryを渡した場合はsummaryにleftを代入', () => {
-    const { summary } = MediaObjectLayoutContainer({
+    const {summary} = MediaObjectLayoutContainer({
       presenter,
       summary: 'incorrect',
     })

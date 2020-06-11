@@ -51,7 +51,8 @@
   /* アニメーションの定義（媒体に最適化したアニメーション・デザイン要素） */
   --hover-animation-duration: 0.1s;
   --hover-animation-timing: ease-out;
-  --hover-animation: var(--hover-animation-duration) var(--hover-animation-timing);
+  --hover-animation: var(--hover-animation-duration)
+    var(--hover-animation-timing);
   --feed-animation-duration: 0.2s;
   --feed-animation-timing: linear;
   --feed-animation: var(--feed-animation-duration) var(--feed-animation-timing);

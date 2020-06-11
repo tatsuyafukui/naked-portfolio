@@ -1,5 +1,5 @@
-import { configure } from '@storybook/react'
-import { action } from '@storybook/addon-actions'
+import {configure} from '@storybook/react'
+import {action} from '@storybook/addon-actions'
 import '../src/styles/global.css'
 // automatically import all files ending in *.stories.js
 configure(require.context('../src', true, /\.stories\.js$/), module)

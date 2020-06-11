@@ -1,16 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './styles.module.scss'
-import { containPresenter } from '../../utils/HoC'
+import {containPresenter} from '../../utils/HoC'
 
-const MediaObjectLayoutPresenter = ({ tag: Tag, summary, children, className }) => (
+const MediaObjectLayoutPresenter = ({
+  tag: Tag,
+  summary,
+  children,
+  className,
+}) => (
   <Tag className={[styles.root, styles[summary], className].join(' ')}>
     <div>{children[0]}</div>
     <div className={styles.body}>{children.slice(1)}</div>
   </Tag>
 )
 
-export const MediaObjectLayoutContainer = ({ tag, summary, children, className, presenter }) => {
+export const MediaObjectLayoutContainer = ({
+  tag,
+  summary,
+  children,
+  className,
+  presenter,
+}) => {
   const SummaryTypes = ['left', 'right', 'top']
 
   // 不適切なsummaryタイプの場合はデフォルトのleftを指定
@@ -18,10 +29,13 @@ export const MediaObjectLayoutContainer = ({ tag, summary, children, className, 
     summary = 'left'
   }
 
-  return presenter({ tag, summary, children, className })
+  return presenter({tag, summary, children, className})
 }
 
-const MediaObjectLayout = containPresenter(MediaObjectLayoutContainer, MediaObjectLayoutPresenter)
+const MediaObjectLayout = containPresenter(
+  MediaObjectLayoutContainer,
+  MediaObjectLayoutPresenter
+)
 
 MediaObjectLayout.propTypes = {
   children: PropTypes.node.isRequired,

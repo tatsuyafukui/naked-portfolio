@@ -2,8 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './styles.module.scss'
 
-const txtFactory = role => ({ tag: Tag = 'p', fontSize = 'm', className, ...props }) => (
-  <Tag {...props} className={[styles[role], styles[fontSize], className].join(' ')} />
+const txtFactory = role => ({
+  tag: Tag = 'p',
+  fontSize = 'm',
+  className,
+  ...props
+}) => (
+  <Tag
+    {...props}
+    className={[styles[role], styles[fontSize], className].join(' ')}
+  />
 )
 
 const Txt = txtFactory('base')

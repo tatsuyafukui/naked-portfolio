@@ -1,5 +1,5 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
+import {storiesOf} from '@storybook/react'
 import Link from './index'
 
 storiesOf(`Atoms/Link`, module)

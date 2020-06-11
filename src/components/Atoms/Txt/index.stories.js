@@ -1,6 +1,6 @@
 import React from 'react'
-import { storiesOf } from '@storybook/react'
-import Txt, { InfoTxt } from './index'
+import {storiesOf} from '@storybook/react'
+import Txt, {InfoTxt} from './index'
 
 storiesOf(`Atoms/Txt`, module)
   .add(`Text - XXS`, () => <Txt fontSize={'xxs'}>Show text</Txt>)
