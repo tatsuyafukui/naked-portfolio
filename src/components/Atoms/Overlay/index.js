@@ -40,12 +40,6 @@ const Overlay = containPresenter(OverlayContainer, OverlayPresenter)
 
 export default Overlay
 
-const Back = () => <span>これはレンダリングされないもの</span>
-
-Back.propTypes = {
-  children: PropTypes.element.isRequired,
-}
-
-export {Back}
+export const Back = () => <span>これはレンダリングされないもの</span>
 
 export const Front = () => <span>これはレンダリングされないもの</span>
