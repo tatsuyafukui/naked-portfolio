@@ -1,78 +1,76 @@
 :root {
-    /* **** バリュー（値）層 **** */
-    /* 色：色相名とカラーコードの紐付け */
-    --color-white: #FFF;
-    --color-opacity87-black: #212121;
-    --color-opacity60-black: #666666;
-    --color-opacity38-black: #9E9E9E;
-    --color-opacity15-black: #D9D9D9;
-    --color-opacity2-black: #FAFAFA;
+  /* **** バリュー（値）層 **** */
+  /* 色：色相名とカラーコードの紐付け */
+  --color-white: #fff;
+  --color-opacity87-black: #212121;
+  --color-opacity60-black: #666666;
+  --color-opacity38-black: #9e9e9e;
+  --color-opacity15-black: #d9d9d9;
+  --color-opacity2-black: #fafafa;
 
-    /* **** ブランディング層 **** */
-    /* 色：色相名とカラーコードの紐付け */
-    --color-base: var(--color-opacity2-black);
-    --color-primary: var(--color-opacity87-black);
-    --color-secondary: var(--color-opacity60-black);
+  /* **** ブランディング層 **** */
+  /* 色：色相名とカラーコードの紐付け */
+  --color-base: var(--color-opacity2-black);
+  --color-primary: var(--color-opacity87-black);
+  --color-secondary: var(--color-opacity60-black);
 
-    /* **** メディア層 **** */
-    /* 色：媒体固有で使用する色 */
-    --color-text: var(--color-primary);
-    --color-text-info: var(--color-secondary);
-    --color-text-disable: var(--color-opacity38-black);
-    --color-line: var(--color-opacity15-black);
-    --color-backgound: var(--color-base);
+  /* **** メディア層 **** */
+  /* 色：媒体固有で使用する色 */
+  --color-text: var(--color-primary);
+  --color-text-info: var(--color-secondary);
+  --color-text-disable: var(--color-opacity38-black);
+  --color-line: var(--color-opacity15-black);
+  --color-backgound: var(--color-base);
 
-    /* 文字：サイズ（媒体に最適化した文字サイズ） */
-    --font-size-xxs: 12px;
-    --font-size-xs: 14px;
-    --font-size-s: 16px;
-    --font-size-m: 18px;
-    --font-size-l: 20px;
-    --font-size-xl: 24px;
-    --font-size-xxl: 32px;
-    --font-size-xxxl: 40px;
+  /* 文字：サイズ（媒体に最適化した文字サイズ） */
+  --font-size-xxs: 12px;
+  --font-size-xs: 14px;
+  --font-size-s: 16px;
+  --font-size-m: 18px;
+  --font-size-l: 20px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 32px;
+  --font-size-xxxl: 40px;
 
-    /* 文字：太さ（媒体に最適化した文字の太さ） */
-    --font-weight-default: 400;
-    --font-weight-bold: 700;
+  /* 文字：太さ（媒体に最適化した文字の太さ） */
+  --font-weight-default: 400;
+  --font-weight-bold: 700;
 
+  /* 余白（媒体に最適化した余白単位） */
+  --space: 4px;
 
-    /* 余白（媒体に最適化した余白単位） */
-    --space: 4px;
+  /* 枠に関する要素（媒体に最適化した枠デザイン要素） */
+  --line-width: 1px;
+  --line-style: solid;
+  --radius: 10px;
+  --border: var(--line-width) var(--line-style) var(--color-line);
 
-    /* 枠に関する要素（媒体に最適化した枠デザイン要素） */
-    --line-width: 1px;
-    --line-style: solid;
-    --radius: 10px;
-    --border: var(--line-width) var(--line-style) var(--color-line);
+  /* フィードバックの定義（媒体に最適化したフィードバック・デザイン要素） */
+  --hover-feedback-opacity: 0.7;
 
+  /* アニメーションの定義（媒体に最適化したアニメーション・デザイン要素） */
+  --hover-animation-duration: 0.1s;
+  --hover-animation-timing: ease-out;
+  --hover-animation: var(--hover-animation-duration)
+    var(--hover-animation-timing);
+  --feed-animation-duration: 0.2s;
+  --feed-animation-timing: linear;
+  --feed-animation: var(--feed-animation-duration) var(--feed-animation-timing);
 
-    /* フィードバックの定義（媒体に最適化したフィードバック・デザイン要素） */
-    --hover-feedback-opacity: .7;
-
-    /* アニメーションの定義（媒体に最適化したアニメーション・デザイン要素） */
-    --hover-animation-duration: .1s;
-    --hover-animation-timing: ease-out;
-    --hover-animation: var(--hover-animation-duration) var(--hover-animation-timing);
-    --feed-animation-duration: .2s;
-    --feed-animation-timing: linear;
-    --feed-animation: var(--feed-animation-duration) var(--feed-animation-timing);
-
-
-    /* Z 座標の管理（Web媒体/CSSではZ座標を管理する） */
-    --z-header: none;
+  /* Z 座標の管理（Web媒体/CSSではZ座標を管理する） */
+  --z-header: none;
 }
 
 /* media query */
 $breakpoints: (
-    'sm': 'screen and (max-width: 544px)',
-    'md': 'screen and (max-width: 767px)',
-    'lg': 'screen and (max-width: 991px)',
-    'xl': 'screen and (max-width: 1199px)',
+  'sm': 'screen and (max-width: 544px)',
+  'md': 'screen and (max-width: 767px)',
+  'lg': 'screen and (max-width: 991px)',
+  'xl': 'screen and (max-width: 1199px)',
 ) !default;
 
 @mixin mq($breakpoint: md) {
-    @media #{map-get($breakpoints, $breakpoint)} {
-        @content;
-    }
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
 }
