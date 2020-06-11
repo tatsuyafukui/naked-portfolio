@@ -49,7 +49,8 @@ yarn start
 
 ## Storybook 起動
 
-上記のdockerで構築している場合はDocker内でコマンド実行
+上記の docker で構築している場合は Docker 内でコマンド実行
+
 ```shell script
 docker container exec -it gatsby_app yarn storybook
 ```
@@ -58,17 +59,15 @@ docker container exec -it gatsby_app yarn storybook
 
 ## Jest 起動
 
-上記のdockerで構築している場合はDocker内でコマンド実行
+上記の docker で構築している場合は Docker 内でコマンド実行
 `*test.js`ファイルのテストが実行される
 
 ```shell script
 docker container exec -it gatsby_app yarn test
 ```
 
-コードの変更のたびに自動テスト実行するwatchは
+コードの変更のたびに自動テスト実行する watch は
 
 ```shell script
 docker container exec -it gatsby_app yarn test-watch
 ```
-
-

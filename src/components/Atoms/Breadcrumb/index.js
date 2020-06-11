@@ -1,12 +1,12 @@
-import React from "react";
-import styles from "./styles.module.scss";
-import { containPresenter } from "../../utils/HoC";
+import React from 'react'
+import styles from './styles.module.scss'
+import {containPresenter} from '../../utils/HoC'
 
-const BreadcrumbPresenter = ({ tag: Tag, children, ...props }) => (
+const BreadcrumbPresenter = ({tag: Tag, children, ...props}) => (
   <Tag {...props}>
     <ol className={styles.ol}>{children}</ol>
   </Tag>
-);
+)
 
 /**
  * コンテナー
@@ -19,29 +19,25 @@ export const BreadcrumbContainer = ({
   presenter,
   ...props
 }) => {
-
   const items = React.Children.toArray(children)
     .filter(child => React.isValidElement(child))
-    .map((child, index) => <li key={`child-${index}`}>{child}</li>);
+    .map((child, index) => <li key={`child-${index}`}>{child}</li>)
 
   return presenter({
     tag,
-    children: insertSeparators(
-      items,
-      separator
-    ),
-    ...props
-  });
-};
+    children: insertSeparators(items, separator),
+    ...props,
+  })
+}
 
-const Breadcrumb = containPresenter(BreadcrumbContainer, BreadcrumbPresenter);
+const Breadcrumb = containPresenter(BreadcrumbContainer, BreadcrumbPresenter)
 
 Breadcrumb.defaultProps = {
-  separator: "/",
-  tag: "nav",
-};
+  separator: '/',
+  tag: 'nav',
+}
 
-export default Breadcrumb;
+export default Breadcrumb
 
 /**
  * ヘルパー関数
@@ -57,11 +53,11 @@ export const insertSeparators = (items, separator) => {
         <li aria-hidden key={`separator-${index}`} className={styles.separator}>
           {separator}
         </li>
-      );
+      )
     } else {
-      acc.push(current);
+      acc.push(current)
     }
 
-    return acc;
-  }, []);
-};
+    return acc
+  }, [])
+}
