@@ -1,6 +1,6 @@
-import React from "react";
-import { storiesOf } from "@storybook/react";
-import List, { ListBordered, ListItem, ListItemBordered } from "./index";
+import React from 'react'
+import {storiesOf} from '@storybook/react'
+import List, {ListBordered, ListItem, ListItemBordered} from './index'
 
 storiesOf(`Atoms/List`, module)
   .add(`Unordered list`, () => (
