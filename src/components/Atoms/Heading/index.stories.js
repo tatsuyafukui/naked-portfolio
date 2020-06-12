@@ -2,8 +2,8 @@ import React from 'react'
 import {storiesOf} from '@storybook/react'
 import Heading from './index'
 
-storiesOf(`Atoms/Heading`, module)
-  .add(`Default`, () => <Heading>Heading</Heading>)
+storiesOf('Atoms/Heading', module)
+  .add('Default', () => <Heading>Heading</Heading>)
   .add('Level:1', () => <Heading level={1}>HeadingLevel:1</Heading>)
   .add('Level:2', () => <Heading level={2}>HeadingLevel:2</Heading>)
   .add('Level:3', () => <Heading level={3}>HeadingLevel:3</Heading>)
