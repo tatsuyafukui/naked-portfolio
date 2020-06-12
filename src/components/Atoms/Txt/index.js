@@ -10,7 +10,7 @@ const txtFactory = role => ({
 }) => (
   <Tag
     {...props}
-    className={[styles[role], styles[fontSize], className].join(' ')}
+    className={[styles.txt, styles[role], styles[fontSize], className].join(' ')}
   />
 )
 

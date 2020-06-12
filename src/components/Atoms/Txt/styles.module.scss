@@ -1,5 +1,10 @@
 @import '../../properties.scss';
 
+.txt {
+  line-height: var(--line-height-m);
+  margin: 0;
+}
+
 .xxs {
   font-size: var(--font-size-xxs);
 }
