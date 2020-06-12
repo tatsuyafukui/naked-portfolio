@@ -10,12 +10,13 @@ const txtFactory = role => ({
 }) => (
   <Tag
     {...props}
-    className={[styles[role], styles[fontSize], className].join(' ')}
+    className={[styles.txt, styles[role], styles[fontSize], className].join(' ')}
   />
 )
 
 const Txt = txtFactory('base')
 export const InfoTxt = txtFactory('info')
+export const DisableTxt = txtFactory('disable')
 
 Txt.propTypes = {
   children: PropTypes.node.isRequired,
@@ -24,6 +25,12 @@ Txt.propTypes = {
 }
 
 InfoTxt.propTypes = {
+  children: PropTypes.node.isRequired,
+  tag: PropTypes.string,
+  fontSize: PropTypes.string,
+}
+
+DisableTxt.propTypes = {
   children: PropTypes.node.isRequired,
   tag: PropTypes.string,
   fontSize: PropTypes.string,

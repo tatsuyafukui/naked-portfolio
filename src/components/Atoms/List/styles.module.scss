@@ -4,15 +4,6 @@
   list-style-type: none;
 }
 
-.ol {
-  list-style-position: inside;
-}
-
-.ul,
-.ol {
-  margin: 0;
-}
-
 .bordered {
   border: var(--border);
   border-radius: var(--radius);
