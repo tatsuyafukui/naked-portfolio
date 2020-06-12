@@ -1,15 +1,7 @@
-@import "../../properties.scss";
+@import '../../properties.scss';
 
 .ul {
   list-style-type: none;
-}
-
-.ol {
-  list-style-position: inside;
-}
-
-.ul, .ol {
-  margin: 0;
 }
 
 .bordered {

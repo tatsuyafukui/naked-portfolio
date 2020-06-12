@@ -4,24 +4,23 @@
   font-weight: var(--font-weight-bold);
   color: var(--color-text);
   line-height: var(--line-height-s);
-  margin: 0;
 }
 
 .h1 {
-  font-size: var(--font-size-xxxxl);
-}
-.h2 {
   font-size: var(--font-size-xxxl);
 }
-.h3 {
+.h2 {
   font-size: var(--font-size-xxl);
 }
-.h4 {
+.h3 {
   font-size: var(--font-size-xl);
 }
-.h5 {
+.h4 {
   font-size: var(--font-size-l);
 }
-.h6 {
+.h5 {
   font-size: var(--font-size-m);
+}
+.h6 {
+  font-size: var(--font-size-s);
 }
