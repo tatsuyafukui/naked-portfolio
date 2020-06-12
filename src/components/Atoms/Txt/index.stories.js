@@ -1,6 +1,6 @@
 import React from 'react'
 import {storiesOf} from '@storybook/react'
-import Txt, {InfoTxt} from './index'
+import Txt, {InfoTxt, DisableTxt} from './index'
 
 storiesOf(`Atoms/Txt`, module)
   .add(`Text - XXS`, () => <Txt fontSize={'xxs'}>Show text</Txt>)
@@ -12,3 +12,4 @@ storiesOf(`Atoms/Txt`, module)
   .add(`Text - XXL`, () => <Txt fontSize={'xxl'}>Show text</Txt>)
   .add(`Text - XXXL`, () => <Txt fontSize={'xxxl'}>Show text</Txt>)
   .add(`Info Text`, () => <InfoTxt>Show text</InfoTxt>)
+  .add(`Disable Text`, () => <DisableTxt>Show text</DisableTxt>)
