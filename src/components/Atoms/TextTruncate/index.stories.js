@@ -2,8 +2,8 @@ import React from 'react'
 import {storiesOf} from '@storybook/react'
 import TextTruncate from './index'
 
-storiesOf(`Atoms/TextTruncate`, module)
-  .add(`Default`, () => (
+storiesOf('Atoms/TextTruncate', module)
+  .add('Default', () => (
     <div style={{width: '300px', height: '100px'}}>
       <p>
         <TextTruncate>
@@ -14,7 +14,7 @@ storiesOf(`Atoms/TextTruncate`, module)
       </p>
     </div>
   ))
-  .add(`Open is true`, () => (
+  .add('Open is true', () => (
     <div style={{width: '300px', height: '100px'}}>
       <TextTruncate open>
         「自分だけのWebページを作ってみたい。」そう思ったことはありませんか。このシーンでは、Webページを作るために必要なスキルを説明しています。
@@ -23,7 +23,7 @@ storiesOf(`Atoms/TextTruncate`, module)
       </TextTruncate>
     </div>
   ))
-  .add(`truncateText is "read more"`, () => (
+  .add('truncateText is "read more"', () => (
     <div style={{width: '300px', height: '100px'}}>
       <TextTruncate truncateText={'... 続きを読む'}>
         「自分だけのWebページを作ってみたい。」そう思ったことはありませんか。このシーンでは、Webページを作るために必要なスキルを説明しています。
@@ -32,7 +32,7 @@ storiesOf(`Atoms/TextTruncate`, module)
       </TextTruncate>
     </div>
   ))
-  .add(`truncateText is JSX`, () => (
+  .add('truncateText is JSX', () => (
     <div style={{width: '300px', height: '100px'}}>
       <TextTruncate truncateText={<button>... 続きを読む</button>}>
         「自分だけのWebページを作ってみたい。」そう思ったことはありませんか。このシーンでは、Webページを作るために必要なスキルを説明しています。

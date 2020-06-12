@@ -2,8 +2,8 @@ import React from 'react'
 import {storiesOf} from '@storybook/react'
 import List, {ListBordered, ListItem, ListItemBordered} from './index'
 
-storiesOf(`Atoms/List`, module)
-  .add(`Unordered list`, () => (
+storiesOf('Atoms/List', module)
+  .add('Unordered list', () => (
     <List>
       <ListItem>Item</ListItem>
       <ListItem>Item</ListItem>
@@ -11,7 +11,7 @@ storiesOf(`Atoms/List`, module)
       <ListItem>Item</ListItem>
     </List>
   ))
-  .add(`Ordered list`, () => (
+  .add('Ordered list', () => (
     <List tag='ol'>
       <ListItem>Item</ListItem>
       <ListItem>Item</ListItem>
@@ -19,7 +19,7 @@ storiesOf(`Atoms/List`, module)
       <ListItem>Item</ListItem>
     </List>
   ))
-  .add(`Bordered list`, () => (
+  .add('Bordered list', () => (
     <ListBordered>
       <ListItemBordered>Item</ListItemBordered>
       <ListItemBordered>Item</ListItemBordered>
@@ -27,7 +27,7 @@ storiesOf(`Atoms/List`, module)
       <ListItemBordered>Item</ListItemBordered>
     </ListBordered>
   ))
-  .add(`Bordered, ordered list`, () => (
+  .add('Bordered, ordered list', () => (
     <ListBordered tag='ol'>
       <ListItemBordered>Item</ListItemBordered>
       <ListItemBordered>Item</ListItemBordered>

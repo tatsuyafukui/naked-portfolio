@@ -1,12 +1,12 @@
 :root {
   /* **** バリュー（値）層 **** */
   /* 色：色相名とカラーコードの紐付け */
-  --color-white: #FFF;
+  --color-white: #fff;
   --color-opacity87-black: #212121;
   --color-opacity60-black: #666666;
-  --color-opacity38-black: #9E9E9E;
-  --color-opacity15-black: #D9D9D9;
-  --color-opacity2-black: #FAFAFA;
+  --color-opacity38-black: #9e9e9e;
+  --color-opacity15-black: #d9d9d9;
+  --color-opacity2-black: #fafafa;
 
   /* **** ブランディング層 **** */
   /* 色：色相名とカラーコードの紐付け */
@@ -37,9 +37,9 @@
   --font-weight-default: 400;
   --font-weight-bold: 700;
 
-    /* 文字：行間 */
-    --line-height-s: 1.3;
-    --line-height-m: 1.5;
+  /* 文字：行間 */
+  --line-height-s: 1.3;
+  --line-height-m: 1.5;
 
   /* 余白（媒体に最適化した余白単位） */
   --space: 4px;
