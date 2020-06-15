@@ -6,8 +6,8 @@ import ogpBook from '../../../mock/images/ogp-book.png'
 import ogpLarge from '../../../mock/images/ogp-large.png'
 import sceneSize from '../../../mock/images/scene-size.png'
 
-storiesOf(`Atoms/MediaObjectLayout`, module)
-  .add(`Default`, () => (
+storiesOf('Atoms/MediaObjectLayout', module)
+  .add('Default', () => (
     <MediaObjectLayout>
       <div>
         <img src={ogpSquare} width={100} height={100} />
@@ -21,7 +21,7 @@ storiesOf(`Atoms/MediaObjectLayout`, module)
       </p>
     </MediaObjectLayout>
   ))
-  .add(`Specify section tag`, () => (
+  .add('Specify section tag', () => (
     <MediaObjectLayout tag={'section'}>
       <div>
         <img src={ogpSquare} width={100} height={100} />
@@ -31,7 +31,7 @@ storiesOf(`Atoms/MediaObjectLayout`, module)
       </p>
     </MediaObjectLayout>
   ))
-  .add(`Specify left as summary`, () => (
+  .add('Specify left as summary', () => (
     <MediaObjectLayout summary={'left'}>
       <div>
         <img src={sceneSize} />
@@ -41,7 +41,7 @@ storiesOf(`Atoms/MediaObjectLayout`, module)
       </p>
     </MediaObjectLayout>
   ))
-  .add(`Specify right as summary`, () => (
+  .add('Specify right as summary', () => (
     <MediaObjectLayout summary={'right'}>
       <div>
         <img src={ogpBook} />
@@ -52,7 +52,7 @@ storiesOf(`Atoms/MediaObjectLayout`, module)
       </p>
     </MediaObjectLayout>
   ))
-  .add(`Specify top as summary`, () => (
+  .add('Specify top as summary', () => (
     <MediaObjectLayout summary={'top'}>
       <div>
         <img src={ogpLarge} />
@@ -64,7 +64,7 @@ storiesOf(`Atoms/MediaObjectLayout`, module)
       <p>URL</p>
     </MediaObjectLayout>
   ))
-  .add(`Image size is square and summary is top`, () => (
+  .add('Image size is square and summary is top', () => (
     <MediaObjectLayout summary={'top'}>
       <div>
         <img src={ogpSquare} />
@@ -76,7 +76,7 @@ storiesOf(`Atoms/MediaObjectLayout`, module)
       <p>URL</p>
     </MediaObjectLayout>
   ))
-  .add(`Incorrect summary specification`, () => (
+  .add('Incorrect summary specification', () => (
     <MediaObjectLayout summary={'incorrect'}>
       <div>
         <img src={ogpSquare} />
