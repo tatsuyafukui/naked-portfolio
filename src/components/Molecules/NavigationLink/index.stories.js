@@ -3,4 +3,4 @@ import {storiesOf} from '@storybook/react'
 import NavigationLink from './index'
 
 storiesOf('Molecules/NavigationLink', module)
-  .add('Navigation link', () => <NavigationLink to='#'>Navigation link</NavigationLink>)
+  .add('Navigation link', () => <NavigationLink to='/'>Navigation link</NavigationLink>)
