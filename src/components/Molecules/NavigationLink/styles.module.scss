@@ -1,14 +1,14 @@
-@import "../../properties.scss";
+@import '../../properties';
 
 .navigationLink {
-  text-decoration: none;
-  line-height: var(--line-height-s);
+    line-height: var(--line-height-s);
+    text-decoration: none;
 
-  span {
-    padding-right: var(--space);
-  }
+    span {
+        padding-right: var(--space);
+    }
 }
 
 .navigationLink:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }

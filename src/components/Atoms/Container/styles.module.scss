@@ -1,11 +1,11 @@
-@import '../../properties.scss';
+@import '../../properties';
 
 .root {
-  width: 100%;
-  max-width: calc(1140px + var(--space) * 12);
-  margin: auto;
-  padding-left: calc(var(--space) * 6);
-  padding-right: calc(var(--space) * 6);
+    margin: auto;
+    max-width: calc(1140px + var(--space) * 12);
+    padding-left: calc(var(--space) * 6);
+    padding-right: calc(var(--space) * 6);
+    width: 100%;
 
   @include mediaQuery(md) {
     padding-left: 6.4%;

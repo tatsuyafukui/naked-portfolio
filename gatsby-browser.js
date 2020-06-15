@@ -6,7 +6,7 @@
 
 // You can delete this file if you're not using it
 import './src/styles/global.css'
-import { config } from '@fortawesome/fontawesome-svg-core'
+import {config} from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
 
 export const onClientEntry = () => {
