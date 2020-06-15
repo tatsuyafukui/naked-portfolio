@@ -1,5 +1,9 @@
 {
-  "extends": ["stylelint-config-standard","stylelint-config-sass-guidelines","stylelint-order"],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-sass-guidelines",
+    "stylelint-order"
+  ],
   "rules": {
     "indentation": 4,
     "number-leading-zero": null,
