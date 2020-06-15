@@ -1,0 +1,13 @@
+@import '../../properties.scss';
+
+.root {
+  max-width: calc(1140px + var(--space) * 12);
+  margin: auto;
+  padding-left: calc(var(--space) * 6);
+  padding-right: calc(var(--space) * 6);
+
+  @include mq(md) {
+    padding-left: 6.4%;
+    padding-right: 6.4%;
+  }
+}
