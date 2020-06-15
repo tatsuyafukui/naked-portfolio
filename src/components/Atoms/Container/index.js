@@ -2,20 +2,20 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './styles.module.scss'
 
-const Wrapper = ({tag: Tag, className, children, ...props}) => (
+const Container = ({tag: Tag, className, children, ...props}) => (
   <Tag className={[styles.root, className].join(' ')}>
     {children}
   </Tag>
 )
 
-export default Wrapper
+export default Container
 
-Wrapper.propTypes = {
+Container.propTypes = {
   children: PropTypes.node.isRequired,
   tag: PropTypes.string,
   className: PropTypes.string,
 }
 
-Wrapper.defaultProps = {
+Container.defaultProps = {
   tag: 'div',
 }
