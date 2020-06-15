@@ -1,6 +1,7 @@
 @import '../../properties.scss';
 
 .root {
+  width: 100%;
   max-width: calc(1140px + var(--space) * 12);
   margin: auto;
   padding-left: calc(var(--space) * 6);

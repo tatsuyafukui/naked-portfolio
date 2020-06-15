@@ -1,17 +1,21 @@
 @import '../../properties.scss';
 
 .header {
-  height: 75px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  height: 70px;
   border-bottom: var(--border);
-  a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    img {
-      margin: 0;
-    }
+  background-color: var(--color-white);
+
+  @include mq(sm) {
+    height: 60px;
+  }
+}
+
+.logo {
+  margin-top: var(--space);
+
+  @include mq(sm) {
+    width: 180px;
   }
 }

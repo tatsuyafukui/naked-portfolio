@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styles from './styles.module.scss'
 
 const Container = ({tag: Tag, className, children, ...props}) => (
-  <Tag className={[styles.root, className].join(' ')}>
+  <Tag className={[styles.root, className].join(' ')} {...props}>
     {children}
   </Tag>
 )
