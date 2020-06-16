@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Journey`,
-    description: `Journeyはあなたが自信をもって目標へ向かうための学習ロードマップです`,
+    description: `あなたが自信をもって目標へ向かうための学習ロードマップ`,
     author: `Progate, Inc.`,
   },
   plugins: [
@@ -28,14 +28,14 @@ module.exports = {
       options: {
         name: `Progate Journey`,
         short_name: `Journey`,
-        description: `Journeyはあなたが自信をもって目標へ向かうための学習ロードマップです`,
+        description: `あなたが自信をもって目標へ向かうための学習ロードマップ`,
         lang: `ja`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#fff`,
         categories: `education`,
         display: `standalone`,
-        icon: `src/images/icon/touch_icon.png`,
+        icon: `src/images/icon/mobile.png`,
         include_favicon: false,
       },
     },
