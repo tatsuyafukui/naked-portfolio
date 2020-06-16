@@ -35,7 +35,7 @@ module.exports = {
         theme_color: `#fff`,
         categories: `education`,
         display: `standalone`,
-        icon: `src/images/icon/touch_icon.png`,
+        icon: `src/images/icon/logo.png`,
         include_favicon: false,
       },
     },
