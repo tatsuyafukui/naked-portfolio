@@ -42,6 +42,12 @@ module.exports = {
         include_favicon: false,
       },
     },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: `./src/images/icon/mobile.png`,
+      },
+    },
     `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
   ],
