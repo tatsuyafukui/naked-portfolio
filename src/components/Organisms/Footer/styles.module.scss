@@ -1,11 +1,17 @@
-@import '../../properties.scss';
+@import '../../properties';
 
 .footer {
   border-top: var(--border);
   padding: 56px 0 32px;
+  margin-top: 80px;
+
+  @include mq(md) {
+    margin-top: 10.41%;
+  }
 
   @include mq(sm) {
-    margin-top: 40px;
+    padding-top: 40px;
+    margin-top: 64px;
   }
 }
 

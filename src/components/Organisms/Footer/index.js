@@ -10,46 +10,48 @@ import {DisableTxt} from '../../Atoms/Txt'
 const FooterList = () => {
   const links = [
     {
-      'title': 'Progate',
+      'label': 'Progate',
       'url': 'https://prog-8.com/'
     },
     {
-      'title': '運営会社',
+      'label': '運営会社',
       'url': 'https://prog-8.com/about'
     },
     {
-      'title': '利用規約',
+      'label': '利用規約',
       'url': 'https://prog-8.com/policy'
     },
     {
-      'title': 'プライバシーポリシー',
+      'label': 'プライバシーポリシー',
       'url': 'https://prog-8.com/privacy_policy'
     },
     {
-      'title': 'Twitter',
+      'label': 'Twitter',
       'url': 'https://twitter.com/progateJP'
     },
     {
-      'title': 'Facebook',
+      'label': 'Facebook',
       'url': 'https://www.facebook.com/ProgateOfficial/'
     }
   ]
 
-  const listItems = links.map((link) => (
-    <ListItem className={styles.item} key={link.title}>
-      <Link
-        to={link.url}
-        target='_blank'
-        rel="noopener noreferrer"
-        className={styles.link}
-      >
-        {link.title}
-      </Link>
-    </ListItem>
-  ))
-
   return (
-    <List>{listItems}</List>
+    <List>
+      {
+        links.map((link) => (
+          <ListItem className={styles.item} key={link.label}>
+            <Link
+              to={link.url}
+              target='_blank'
+              rel="noopener noreferrer"
+              className={styles.link}
+            >
+              {link.label}
+            </Link>
+          </ListItem>
+        ))
+      }
+    </List>
   )
 }
 
