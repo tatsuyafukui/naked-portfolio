@@ -33,7 +33,6 @@ module.exports = {
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#fff`,
-        categories: `education`,
         display: `standalone`,
         icon: `src/images/icon/mobile.png`,
         icon_options: {
