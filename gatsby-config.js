@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Journey`,
+    description: `Journeyはあなたが自信をもって目標へ向かうための学習ロードマップです`,
+    author: `Progate, Inc.`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -26,21 +26,20 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Journey`,
+        name: `Progate Journey`,
         short_name: `Journey`,
         description: `Journeyはあなたが自信をもって目標へ向かうための学習ロードマップです`,
         lang: `ja`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#fff`,
+        categories: `education`,
         display: `standalone`,
-        icon: `src/images/icon/touch_icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon/touch_icon.png`,
+        include_favicon: false,
       },
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }
