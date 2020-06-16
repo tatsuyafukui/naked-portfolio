@@ -14,7 +14,6 @@ module.exports = {
       },
     },
     {
-      // Standard plugin with options example
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/data/`,
@@ -27,15 +26,18 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Journey`,
+        short_name: `Journey`,
+        description: `Journeyはあなたが自信をもって目標へ向かうための学習ロードマップです`,
+        lang: `ja`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        background_color: `#fff`,
+        theme_color: `#fff`,
+        display: `standalone`,
+        icon: `src/images/icon/touch_icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
