@@ -36,7 +36,7 @@ const FooterList = () => {
   ]
 
   const listItems = links.map((link) => (
-    <ListItem className={styles.item}>
+    <ListItem className={styles.item} key={link.title}>
       <Link
         to={link.url}
         target='_blank'
