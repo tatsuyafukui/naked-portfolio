@@ -24,6 +24,12 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-plugin-sharp`,
     {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: `./src/images/icon/mobile.png`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Progate Journey`,
@@ -36,6 +42,9 @@ module.exports = {
         categories: `education`,
         display: `standalone`,
         icon: `src/images/icon/mobile.png`,
+        icon_options: {
+          purpose: `maskable`,
+        },
         include_favicon: false,
       },
     },
