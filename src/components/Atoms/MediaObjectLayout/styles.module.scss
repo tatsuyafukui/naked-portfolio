@@ -1,22 +1,22 @@
 .root {
-    align-items: center;
-    display: flex;
-    justify-content: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .body {
-    flex: 1;
-    min-width: 0;
+  flex: 1;
+  min-width: 0;
 }
 
 .left {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 .right {
-    flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .top {
-    flex-direction: column;
+  flex-direction: column;
 }

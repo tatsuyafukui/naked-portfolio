@@ -1,11 +1,11 @@
 @import '../../properties';
 
 .header {
-    align-items: center;
-    background-color: var(--color-white);
-    border-bottom: var(--border);
-    display: flex;
-    height: 70px;
+  align-items: center;
+  background-color: var(--color-white);
+  border-bottom: var(--border);
+  display: flex;
+  height: 70px;
 
   @include mediaQuery(sm) {
     height: 60px;
@@ -13,7 +13,7 @@
 }
 
 .logo {
-    margin-top: var(--space);
+  margin-top: var(--space);
 
   @include mediaQuery(sm) {
     width: 180px;
