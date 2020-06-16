@@ -2,16 +2,16 @@
 
 .footer {
   border-top: var(--border);
-  padding: 56px 0 32px;
   margin-top: 80px;
+  padding: 56px 0 32px;
 
   @include mediaQuery(md) {
     margin-top: 10.41%;
   }
 
   @include mediaQuery(sm) {
-    padding-top: 40px;
     margin-top: 64px;
+    padding-top: 40px;
   }
 }
 
@@ -22,8 +22,8 @@
 }
 
 .inner {
-  display: flex;
   align-items: flex-end;
+  display: flex;
   justify-content: space-between;
   margin-top: 48px;
 
@@ -42,8 +42,8 @@
 }
 
 .link {
-  font-size: var(--font-size-s);
   color: var(--color-text);
+  font-size: var(--font-size-s);
   line-height: var(--line-height-s);
   text-decoration: none;
 

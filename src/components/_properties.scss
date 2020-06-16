@@ -1,20 +1,23 @@
 :root {
   /* **** バリュー（値）層 **** */
+
   /* 色：色相名とカラーコードの紐付け */
   --color-white: #fff;
   --color-opacity87-black: rgba(0, 0, 0, 0.87);
-  --color-opacity60-black: rgba(0, 0, 0, 0.60);
+  --color-opacity60-black: rgba(0, 0, 0, 0.6);
   --color-opacity38-black: rgba(0, 0, 0, 0.38);
   --color-opacity15-black: rgba(0, 0, 0, 0.15);
   --color-opacity2-black: rgba(0, 0, 0, 0.02);
 
   /* **** ブランディング層 **** */
+
   /* 色：色相名とカラーコードの紐付け */
   --color-base: var(--color-opacity2-black);
   --color-primary: var(--color-opacity87-black);
   --color-secondary: var(--color-opacity60-black);
 
   /* **** メディア層 **** */
+
   /* 色：媒体固有で使用する色 */
   --color-text: var(--color-primary);
   --color-text-info: var(--color-secondary);
@@ -56,7 +59,8 @@
   /* アニメーションの定義（媒体に最適化したアニメーション・デザイン要素） */
   --hover-animation-duration: 0.1s;
   --hover-animation-timing: ease-out;
-  --hover-animation: var(--hover-animation-duration)
+  --hover-animation:
+    var(--hover-animation-duration)
     var(--hover-animation-timing);
   --feed-animation-duration: 0.2s;
   --feed-animation-timing: linear;

@@ -1,11 +1,11 @@
-@import '../../properties.scss';
+@import '../../properties';
 
 .header {
-  display: flex;
   align-items: center;
-  height: 70px;
-  border-bottom: var(--border);
   background-color: var(--color-white);
+  border-bottom: var(--border);
+  display: flex;
+  height: 70px;
 
   @include mediaQuery(sm) {
     height: 60px;

@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-sass-guidelines",
+    "stylelint-order"
+  ],
+  "rules": {
+    "indentation": 2,
+    "number-leading-zero": null,
+    "selector-class-pattern": null,
+    "declaration-property-value-blacklist": null,
+    "property-no-vendor-prefix": null,
+    "selector-no-qualifying-type": null,
+    "selector-no-vendor-prefix": null,
+    "scss/at-mixin-pattern": null,
+    "order/order": [
+      "custom-properties",
+      "declarations"
+    ],
+    "order/properties-alphabetical-order": true
+  }
+}
