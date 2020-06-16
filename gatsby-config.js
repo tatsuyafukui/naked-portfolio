@@ -24,12 +24,6 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-favicon`,
-      options: {
-        logo: `./src/images/icon/mobile.png`,
-      },
-    },
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Progate Journey`,
