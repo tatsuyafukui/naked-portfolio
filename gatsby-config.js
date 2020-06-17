@@ -34,17 +34,11 @@ module.exports = {
         background_color: `#fff`,
         theme_color: `#fff`,
         display: `standalone`,
-        icon: `src/images/icon/mobile.png`,
+        icon: `src/images/icon.png`,
         icon_options: {
           purpose: `maskable`,
         },
         include_favicon: false,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-favicon`,
-      options: {
-        logo: `./src/images/favicon.png`,
       },
     },
     `gatsby-plugin-offline`,
