@@ -38,7 +38,6 @@ module.exports = {
         icon_options: {
           purpose: `maskable`,
         },
-        include_favicon: false,
       },
     },
     `gatsby-plugin-offline`,
