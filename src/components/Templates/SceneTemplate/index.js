@@ -1,4 +1,6 @@
 import React from 'react'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faAngleRight} from '@fortawesome/free-solid-svg-icons'
 import styles from './styles.module.scss'
 import SEO from '../../seo'
 import Breadcrumb from '../../Atoms/Breadcrumb'
@@ -13,17 +15,16 @@ import SkillList from '../../Organisms/SkillList'
 const SceneTemplate = ({scene, skills}) => {
   return (
     <div>
-      <SEO
-        title={scene.title}
-        description={scene.description}
-        lang={'ja'}
-      />
+      <SEO title={scene.title} description={scene.description} lang={'ja'} />
       <Header />
       <main className={styles.main}>
         <Container>
           <div>
             <div>
-              <Breadcrumb className={styles.breadcrumb}>
+              <Breadcrumb
+                className={styles.breadcrumb}
+                separator={<FontAwesomeIcon icon={faAngleRight} />}
+              >
                 <Link to='/'>
                   <Txt>Home</Txt>
                 </Link>
@@ -39,13 +40,13 @@ const SceneTemplate = ({scene, skills}) => {
           </div>
           <div className={styles.body}>
             <div>
-              <p dangerouslySetInnerHTML={{__html: scene.description}} />
+              <Txt>{scene.description}</Txt>
             </div>
             <div>
               <Heading level={4} className={styles.requireLabel}>
                 必要なスキル
               </Heading>
-              <SkillList skills={skills}/>
+              <SkillList skills={skills} />
             </div>
           </div>
         </Container>

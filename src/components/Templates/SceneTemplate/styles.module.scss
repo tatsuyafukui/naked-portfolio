@@ -37,6 +37,8 @@
     font-size: var(--font-size-m);
     margin-right: calc(var(--space) * 10);
     max-width: 620px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
   }
 
   > :last-child {
@@ -45,5 +47,6 @@
 }
 
 .requireLabel {
-  margin: 0;
+  margin-bottom: calc(var(--space) * 6);
+  margin-top: 0;
 }
