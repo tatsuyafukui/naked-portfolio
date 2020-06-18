@@ -7,9 +7,12 @@
   align-items: center;
   padding: 40px 0;
 
+  @include mediaQuery(md) {
+    display: block;
+  }
+
   @include mediaQuery(sm) {
     height: 420px;
-    display: block;
   }
 }
 
