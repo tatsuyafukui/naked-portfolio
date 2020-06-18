@@ -2,8 +2,15 @@
 
 .h {
   color: var(--color-text);
-  font-weight: var(--font-weight-bold);
   line-height: var(--line-height-s);
+}
+
+.normal {
+  font-weight: var(--font-weight-normal);
+}
+
+.bold {
+  font-weight: var(--font-weight-bold);
 }
 
 .h1 {
