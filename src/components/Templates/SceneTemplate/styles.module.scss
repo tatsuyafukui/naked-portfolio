@@ -1,0 +1,50 @@
+@import '../../properties';
+
+.main {
+  padding-bottom: calc(var(--space) * 20);
+  padding-top: calc(var(--space) * 8);
+}
+
+.breadcrumb {
+  margin-bottom: calc(var(--space) * 3);
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.title {
+  font-weight: var(--font-weight-default);
+  margin-bottom: calc(var(--space) * 8);
+}
+
+.visualContainer {
+  max-height: 460px;
+  max-width: 100%;
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+}
+
+.body {
+  display: flex;
+  justify-content: space-between;
+  margin-top: calc(var(--space) * 11);
+
+  > :first-child {
+    color: var(--color-text);
+    font-size: var(--font-size-m);
+    margin-right: calc(var(--space) * 10);
+    max-width: 620px;
+  }
+
+  > :last-child {
+    width: 480px;
+  }
+}
+
+.requireLabel {
+  margin: 0;
+}
