@@ -5,23 +5,25 @@
   height: 500px;
   display: flex;
   align-items: center;
-}
+  padding: 40px 0;
 
-.container {
-}
-
-.titleWrapper {
-
+  @include mediaQuery(sm) {
+    height: 420px;
+    display: block;
+  }
 }
 
 .title {
   margin-bottom: 12px;
+
+  @include mediaQuery(sm) {
+    margin-bottom: 6px;
+    font-size: var(--font-size-xxl);
+  }
 }
 
 .subTitle {
-
-}
-
-.frontImage {
-
+  @include mediaQuery(sm) {
+    font-size: var(--font-size-s);
+  }
 }
