@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faAngleRight} from '@fortawesome/free-solid-svg-icons'
@@ -81,5 +82,12 @@ const SceneTemplate = ({scene, skills, open, onClick}) => (
     <Footer />
   </div>
 )
+
+SceneTemplate.propTypes = {
+  scene: PropTypes.object.isRequired,
+  skills: PropTypes.array.isRequired,
+  open: PropTypes.bool.isRequired,
+  onClick: PropTypes.func.isRequired,
+}
 
 export default SceneTemplate
