@@ -1,0 +1,19 @@
+@import '../../properties';
+
+.navigationLink {
+  align-items: center;
+  color: var(--color-secondary);
+  display: flex;
+  font-size: var(--font-size-l);
+  justify-content: space-between;
+  padding: calc(var(--space) * 6) calc(var(--space) * 8);
+
+  svg {
+    color: var(--color-text-info);
+  }
+
+  @include mediaQuery(sm) {
+    font-size: var(--font-size-s);
+    padding: calc(var(--space) * 6) calc(var(--space) * 4);
+  }
+}
