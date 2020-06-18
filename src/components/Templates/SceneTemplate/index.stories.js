@@ -6,27 +6,11 @@ import skillsData from '../../../mock/data/skills'
 import data from '../../../mock/data/scene'
 
 storiesOf('Template/SceneTemplate', module)
-  .add('Default - PC', () => (
+  .add('Default', () => (
     <SceneTemplate
       scene={data.scenesJson}
       skills={skillsData}
       open={false}
-      onClick={action('Read more was clicked')}
-    />
-  ))
-  .add('SP - open is false', () => (
-    <SceneTemplate
-      scene={data.scenesJson}
-      skills={skillsData}
-      open={false}
-      onClick={action('Read more was clicked')}
-    />
-  ))
-  .add('SP - open is true', () => (
-    <SceneTemplate
-      scene={data.scenesJson}
-      skills={skillsData}
-      open={true}
       onClick={action('Read more was clicked')}
     />
   ))
