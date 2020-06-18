@@ -28,7 +28,12 @@ const IndexPage = () => {
   //   }
   // `)
   //
-
+  // return (
+  //   <IndexTemplate
+  //     topImage={data.mainImage.childImageSharp.fixed}
+  //     scenes={data.allScenesJson.nodes}
+  //   />
+  // )
   return <div></div>
 }
 

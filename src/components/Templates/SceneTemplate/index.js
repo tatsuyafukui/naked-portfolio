@@ -9,7 +9,7 @@ import Container from '../../Atoms/Container'
 import Link from '../../Atoms/Link'
 import Txt, {InfoTxt} from '../../Atoms/Txt'
 import TextTruncate from '../../Atoms/TextTruncate'
-import Heading from '../../Atoms/Heading'
+import Heading, {BoldHeading} from '../../Atoms/Heading'
 import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
 import SkillList from '../../Organisms/SkillList'
@@ -19,8 +19,8 @@ const SceneTemplate = ({scene, skills, open, onClick}) => (
     <SEO title={scene.title} description={scene.description} lang={'ja'} />
     <Header />
     <main className={styles.main}>
-      <Container>
-        <div>
+      <div>
+        <Container>
           <div>
             <Breadcrumb
               className={styles.breadcrumb}
@@ -35,6 +35,8 @@ const SceneTemplate = ({scene, skills, open, onClick}) => (
               {scene.title}
             </Heading>
           </div>
+        </Container>
+        <Container className={styles.container}>
           <div>
             <Img
               className={styles.visual}
@@ -42,7 +44,9 @@ const SceneTemplate = ({scene, skills, open, onClick}) => (
               alt={scene.title}
             />
           </div>
-        </div>
+        </Container>
+      </div>
+      <Container>
         <div className={styles.body}>
           <div>
             {/* PC */}
@@ -52,7 +56,11 @@ const SceneTemplate = ({scene, skills, open, onClick}) => (
               <TextTruncate
                 open={open}
                 truncateText={
-                  <button className={styles.button} onClick={onClick}>
+                  <button
+                    key={'truncateText'}
+                    className={styles.button}
+                    onClick={onClick}
+                  >
                     <InfoTxt>...続きを読む</InfoTxt>
                   </button>
                 }
@@ -62,9 +70,9 @@ const SceneTemplate = ({scene, skills, open, onClick}) => (
             </Txt>
           </div>
           <div>
-            <Heading level={4} className={styles.requireLabel}>
+            <BoldHeading level={4} className={styles.requireLabel}>
               必要なスキル
-            </Heading>
+            </BoldHeading>
             <SkillList skills={skills} />
           </div>
         </div>

@@ -5,6 +5,13 @@
   padding-top: calc(var(--space) * 8);
 }
 
+.container {
+  @include mediaQuery(md) {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+}
+
 .breadcrumb {
   margin-bottom: calc(var(--space) * 3);
 
