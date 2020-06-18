@@ -1,6 +1,6 @@
 import React from 'react'
 import {storiesOf} from '@storybook/react'
-import Heading from './index'
+import Heading, {BoldHeading} from './index'
 
 storiesOf('Atoms/Heading', module)
   .add('Default', () => <Heading>Heading</Heading>)
@@ -15,3 +15,4 @@ storiesOf('Atoms/Heading', module)
       HeadingLevel:1, VisualLevel:2
     </Heading>
   ))
+  .add('Bold Heading', () => <BoldHeading>BoldHeading</BoldHeading>)
