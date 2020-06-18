@@ -51,6 +51,10 @@
     max-width: 620px;
     white-space: pre-wrap;
     word-wrap: break-word;
+
+    @include mediaQuery(md) {
+      margin-right: 0;
+    }
   }
 
   > :last-child {
