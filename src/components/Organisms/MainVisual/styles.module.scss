@@ -1,0 +1,32 @@
+@import '../../properties';
+
+.mainVisual {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  padding: 40px 0;
+
+  @include mediaQuery(md) {
+    display: block;
+  }
+
+  @include mediaQuery(sm) {
+    height: 420px;
+  }
+}
+
+.title {
+  margin-bottom: 12px;
+
+  @include mediaQuery(sm) {
+    margin-bottom: 6px;
+    font-size: var(--font-size-xxl);
+  }
+}
+
+.subTitle {
+  @include mediaQuery(sm) {
+    font-size: var(--font-size-s);
+  }
+}
