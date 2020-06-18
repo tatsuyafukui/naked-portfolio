@@ -1,22 +1,23 @@
 import React from 'react'
 import styles from './styles.module.scss'
-import Header from '../../Organisms/Header'
-import Footer from '../../Organisms/Footer'
 import SEO from '../../seo'
 import Breadcrumb from '../../Atoms/Breadcrumb'
 import Container from '../../Atoms/Container'
 import Link from '../../Atoms/Link'
 import Txt from '../../Atoms/Txt'
 import Heading from '../../Atoms/Heading'
+import Header from '../../Organisms/Header'
+import Footer from '../../Organisms/Footer'
+import SkillList from '../../Organisms/SkillList'
 
-const SceneTemplate = ({scene}) => {
+const SceneTemplate = ({scene, skills}) => {
   return (
     <div>
-      {/*<SEO*/}
-      {/*  title={scene.title}*/}
-      {/*  description={scene.description}*/}
-      {/*  lang={'ja'}*/}
-      {/*/>*/}
+      <SEO
+        title={scene.title}
+        description={scene.description}
+        lang={'ja'}
+      />
       <Header />
       <main className={styles.main}>
         <Container>
@@ -44,7 +45,7 @@ const SceneTemplate = ({scene}) => {
               <Heading level={4} className={styles.requireLabel}>
                 必要なスキル
               </Heading>
-              {/* SkillList */}
+              <SkillList skills={skills}/>
             </div>
           </div>
         </Container>
