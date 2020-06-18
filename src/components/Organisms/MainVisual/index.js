@@ -5,7 +5,7 @@ import Heading from '../../Atoms/Heading'
 import Txt from '../../Atoms/Txt'
 import Container from '../../Atoms/Container'
 import {useStaticQuery, graphql} from 'gatsby'
-import Img from 'gatsby-image'
+import BackgroundImage from 'gatsby-background-image'
 
 const MainVisual = className => {
   const data = useStaticQuery(graphql`
@@ -21,18 +21,15 @@ const MainVisual = className => {
   `)
 
   return (
-  <div className={styles.mainVisual}>
+  <BackgroundImage
+    fluid={data.file.childImageSharp.fluid}
+    className={styles.mainVisual}
+  >
     <Container className={styles.container}>
-      <div className={styles.titleWrapper}>
-        <Heading level={1} className={styles.title}>目標へ向かう学習を</Heading>
-        <Txt className={styles.subTitle}>あなたが自信をもって目標へ向かうための学習ロードマップ</Txt>
-      </div>
-      <div className={styles.frontImage}>
-        <img src="https://placehold.jp/440x293.png" alt="placeholder"/>
-      </div>
+      <Heading level={1} className={styles.title}>目標へ向かう学習を</Heading>
+      <Txt className={styles.subTitle}>あなたが自信をもって目標へ向かうための学習ロードマップ</Txt>
     </Container>
-    <Img fluid={data.file.childImageSharp.fluid} alt='' />
-  </div>
+  </BackgroundImage>
 )}
 
 
