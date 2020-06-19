@@ -10,8 +10,7 @@ const MediaObjectLayoutPresenter = ({
   className,
 }) => (
   <Tag className={[styles.root, styles[summary], className].join(' ')}>
-    <div>{children[0]}</div>
-    <div className={styles.body}>{children.slice(1)}</div>
+    {children}
   </Tag>
 )
 
