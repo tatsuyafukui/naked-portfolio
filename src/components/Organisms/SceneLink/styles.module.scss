@@ -16,6 +16,7 @@
 .image {
   width: 440px;
   height: 293px;
+  flex-shrink: 0;
 
   @include mediaQuery(md) {
     width: 300px;
@@ -25,6 +26,7 @@
   @include mediaQuery(sm) {
     width: 100vw;
     height: 66.66vw;
+    align-self: center;
   }
 }
 

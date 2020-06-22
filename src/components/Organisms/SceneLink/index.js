@@ -8,7 +8,7 @@ import {InfoTxt} from '../../Atoms/Txt'
 import Img from 'gatsby-image'
 import {useStaticQuery, graphql} from 'gatsby'
 
-const SceneLink = ({scenes, className, ...props}) => {
+const SceneLink = ({scene, className, ...props}) => {
 
   const data = useStaticQuery(graphql`
     query {
@@ -25,10 +25,10 @@ const SceneLink = ({scenes, className, ...props}) => {
   return (
     <Link to='/' className={styles.scene}>
       <MediaObjectLayout className={styles.layout}>
-        <Img className={styles.image} fluid={data.file.childImageSharp.fluid} alt='' />
+        <Img className={styles.image} fluid={data.file.childImageSharp.fluid} alt={scene.heading} />
         <div className={styles.textWrap}>
-          <InfoTxt fontSize='xl' className={styles.number}>シーン1</InfoTxt>
-          <Heading level={2} className={styles.title}>Webページを作れるようになろう</Heading>
+          <InfoTxt fontSize='xl' className={styles.number}>{scene.heading}</InfoTxt>
+          <Heading level={2} className={styles.title}>{scene.heading}</Heading>
         </div>
       </MediaObjectLayout>
     </Link>
