@@ -42,5 +42,11 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "journey.staging.prog-8.com",
+      },
+    },
   ],
 }
