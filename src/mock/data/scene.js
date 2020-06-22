@@ -4,7 +4,7 @@ const data = useStaticQuery(graphql`
   query {
     scenesJson {
       id
-      title
+      heading
       description
       image {
         childImageSharp {
