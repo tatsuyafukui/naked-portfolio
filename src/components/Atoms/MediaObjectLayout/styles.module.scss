@@ -1,12 +1,6 @@
 .root {
   align-items: center;
   display: flex;
-  justify-content: center;
-}
-
-.body {
-  flex: 1;
-  min-width: 0;
 }
 
 .left {
@@ -18,5 +12,6 @@
 }
 
 .top {
+  align-items: flex-start;
   flex-direction: column;
 }
