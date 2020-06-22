@@ -10,7 +10,7 @@ const WebApplicationDevelopmentPage = () => {
     query {
       scenesJson(id: {eq: "シーン２"}) {
         id
-        title
+        heading
         description
         image {
           childImageSharp {

@@ -17,7 +17,7 @@ import SkillList from '../../Organisms/SkillList'
 
 const SceneTemplate = ({scene, skills, open, onClick}) => (
   <div>
-    <SEO title={scene.title} description={scene.description} lang={'ja'} />
+    <SEO title={scene.heading} description={scene.description} lang={'ja'} />
     <Header />
     <main className={styles.main}>
       <div>
@@ -33,7 +33,7 @@ const SceneTemplate = ({scene, skills, open, onClick}) => (
               <Txt>{scene.id}</Txt>
             </Breadcrumb>
             <Heading level={1} className={styles.title}>
-              {scene.title}
+              {scene.heading}
             </Heading>
           </div>
         </Container>
@@ -42,7 +42,7 @@ const SceneTemplate = ({scene, skills, open, onClick}) => (
             <Img
               className={styles.visual}
               fluid={scene.image.childImageSharp.fluid}
-              alt={scene.title}
+              alt={scene.heading}
             />
           </div>
         </Container>

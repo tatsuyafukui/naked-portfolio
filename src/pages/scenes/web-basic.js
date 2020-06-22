@@ -10,7 +10,7 @@ const WebBasicPage = () => {
     query {
       scenesJson(id: {eq: "シーン１"}) {
         id
-        title
+        heading
         description
         image {
           childImageSharp {

@@ -10,7 +10,7 @@ const ReleasingYourApplicationPage = () => {
     query {
       scenesJson(id: {eq: "シーン４"}) {
         id
-        title
+        heading
         description
         image {
           childImageSharp {
