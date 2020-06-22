@@ -6,6 +6,7 @@ const data = useStaticQuery(graphql`
       id
       heading
       description
+      slug
       image {
         childImageSharp {
           fluid(maxWidth: 1140) {
