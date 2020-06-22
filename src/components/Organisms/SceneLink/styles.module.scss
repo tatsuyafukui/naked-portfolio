@@ -5,28 +5,29 @@
 }
 
 .layout {
-  display: flex;
   align-items: center;
+  display: flex;
+
   @include mediaQuery(sm) {
-    flex-direction: column;
     align-items: flex-start;
+    flex-direction: column;
   }
 }
 
 .image {
-  width: 440px;
-  height: 293px;
   flex-shrink: 0;
+  height: 293px;
+  width: 440px;
 
   @include mediaQuery(md) {
-    width: 300px;
     height: 200px;
+    width: 300px;
   }
 
   @include mediaQuery(sm) {
-    width: 100vw;
-    height: 66.66vw;
     align-self: center;
+    height: 66.66vw;
+    width: 100vw;
   }
 }
 
@@ -38,8 +39,8 @@
   }
 
   @include mediaQuery(sm) {
-    margin-top: 12px;
     margin-left: 0;
+    margin-top: 12px;
   }
 }
 
