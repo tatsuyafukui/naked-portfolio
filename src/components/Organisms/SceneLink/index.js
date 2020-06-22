@@ -9,7 +9,7 @@ import Img from 'gatsby-image'
 
 const SceneLink = ({scene, className, ...props}) => (
   <Link
-    to={'/scenes/' + scene.slug}
+    to={scene.slug}
     className={[styles.scene, className].join(' ')}
     {...props}
   >
