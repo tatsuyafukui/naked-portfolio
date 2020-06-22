@@ -12,13 +12,15 @@ storiesOf('Atoms/MediaObjectLayout', module)
       <div>
         <img src={ogpSquare} width={100} height={100} />
       </div>
-      <p>
-        Explanatory text. Explanatory text.Explanatory text. Explanatory text.
-      </p>
-      <p>
-        Explanatory text. Explanatory text.Explanatory text. Explanatory
-        text.Explanatory text. Explanatory text.
-      </p>
+      <div>
+        <p>
+          Explanatory text. Explanatory text.Explanatory text. Explanatory text.
+        </p>
+        <p>
+          Explanatory text. Explanatory text.Explanatory text. Explanatory
+          text.Explanatory text. Explanatory text.
+        </p>
+      </div>
     </MediaObjectLayout>
   ))
   .add('Specify section tag', () => (
@@ -46,10 +48,12 @@ storiesOf('Atoms/MediaObjectLayout', module)
       <div>
         <img src={ogpBook} />
       </div>
-      <h2>Reference site title</h2>
-      <p>
-        Explanatory text. Explanatory text.Explanatory text. Explanatory text.
-      </p>
+      <div>
+        <h2>Reference site title</h2>
+        <p>
+          Explanatory text. Explanatory text.Explanatory text. Explanatory text.
+        </p>
+      </div>
     </MediaObjectLayout>
   ))
   .add('Specify top as summary', () => (
@@ -57,11 +61,13 @@ storiesOf('Atoms/MediaObjectLayout', module)
       <div>
         <img src={ogpLarge} />
       </div>
-      <h2>Reference site title</h2>
-      <p>
-        Explanatory text. Explanatory text.Explanatory text. Explanatory text.
-      </p>
-      <p>URL</p>
+      <div>
+        <h2>Reference site title</h2>
+        <p>
+          Explanatory text. Explanatory text.Explanatory text. Explanatory text.
+        </p>
+        <p>URL</p>
+      </div>
     </MediaObjectLayout>
   ))
   .add('Image size is square and summary is top', () => (
@@ -69,11 +75,13 @@ storiesOf('Atoms/MediaObjectLayout', module)
       <div>
         <img src={ogpSquare} />
       </div>
-      <h2>Reference site title</h2>
-      <p>
-        Explanatory text. Explanatory text.Explanatory text. Explanatory text.
-      </p>
-      <p>URL</p>
+      <div>
+        <h2>Reference site title</h2>
+        <p>
+          Explanatory text. Explanatory text.Explanatory text. Explanatory text.
+        </p>
+        <p>URL</p>
+      </div>
     </MediaObjectLayout>
   ))
   .add('Incorrect summary specification', () => (
@@ -81,10 +89,12 @@ storiesOf('Atoms/MediaObjectLayout', module)
       <div>
         <img src={ogpSquare} />
       </div>
-      <h2>Reference site title</h2>
-      <p>
-        Explanatory text. Explanatory text.Explanatory text. Explanatory text.
-      </p>
-      <p>URL</p>
+      <div>
+        <h2>Reference site title</h2>
+        <p>
+          Explanatory text. Explanatory text.Explanatory text. Explanatory text.
+        </p>
+        <p>URL</p>
+      </div>
     </MediaObjectLayout>
   ))
