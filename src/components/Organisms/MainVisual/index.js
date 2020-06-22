@@ -7,7 +7,7 @@ import Container from '../../Atoms/Container'
 import {useStaticQuery, graphql} from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
 
-const MainVisual = className => {
+const MainVisual = () => {
   const data = useStaticQuery(graphql`
     query {
       file(relativePath: {eq: "mainvisual.jpg"}) {
@@ -21,18 +21,21 @@ const MainVisual = className => {
   `)
 
   return (
-  <BackgroundImage
-    fluid={data.file.childImageSharp.fluid}
-    className={styles.mainVisual}
-  >
-    <Container className={styles.container}>
-      <Heading level={1} className={styles.title}>目標へ向かう学習を</Heading>
-      <Txt className={styles.subTitle}>あなたが自信をもって目標へ向かうための学習ロードマップ</Txt>
-    </Container>
-  </BackgroundImage>
-)}
-
-
+    <BackgroundImage
+      fluid={data.file.childImageSharp.fluid}
+      className={styles.mainVisual}
+    >
+      <Container className={styles.container}>
+        <Heading level={1} className={styles.title}>
+          目標へ向かう学習を
+        </Heading>
+        <Txt className={styles.subTitle}>
+          あなたが自信をもって目標へ向かうための学習ロードマップ
+        </Txt>
+      </Container>
+    </BackgroundImage>
+  )
+}
 
 export default MainVisual
 
