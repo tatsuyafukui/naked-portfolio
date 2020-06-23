@@ -92,7 +92,7 @@ workflows:
           filters:
             branches:
               only:
-                - staging
+                - refresh-content
       - deploy_staging:
           context: journey-staging
           requires:
