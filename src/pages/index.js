@@ -5,21 +5,15 @@ import IndexTemplate from '../components/Templates/IndexTemplate'
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      mainImage: file(relativePath: {eq: "main.jpg"}) {
-        childImageSharp {
-          fixed(height: 500) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
       allScenesJson {
         nodes {
           id
           heading
+          slug
           image {
             childImageSharp {
-              fixed(height: 294) {
-                ...GatsbyImageSharpFixed
+              fluid(maxWidth: 1140) {
+                ...GatsbyImageSharpFluid_withWebp
               }
             }
           }
@@ -30,7 +24,6 @@ const IndexPage = () => {
 
   return (
     <IndexTemplate
-      topImage={data.mainImage.childImageSharp.fixed}
       scenes={data.allScenesJson.nodes}
     />
   )

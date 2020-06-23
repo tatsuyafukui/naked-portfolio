@@ -16,7 +16,7 @@ const IndexTemplate = ({scenes}) => {
         <Container className={styles.container}>
           <List>
             {scenes.map(scene => (
-              <ListItem className={styles.item}>
+              <ListItem className={styles.item} key={scene.id}>
                 <SceneLink scene={scene} />
               </ListItem>
             ))}
