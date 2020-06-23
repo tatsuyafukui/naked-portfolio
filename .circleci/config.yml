@@ -31,7 +31,17 @@ commands:
           paths:
             - public/*
             - node_modules/*
-
+  s3_sync:
+    parameters:
+      s3_url:
+        type: string
+    steps:
+      - attach_workspace:
+          at: .
+      - aws-s3/sync:
+          from: public
+          to: << parameters.s3_url >>
+          overwrite: true
 jobs:
   build_staging:
     executor: journey_builder
@@ -45,15 +55,17 @@ jobs:
   #     - build_public_assets:
   #         environment: production
 
-  deploy:
+  deploy_staging:
     executor: s3_syncer
     steps:
-      - attach_workspace:
-          at: .
-      - aws-s3/sync:
-          from: public
-          to: $S3_BUCKET
-          overwrite: true
+      - s3_sync:
+          s3_url: "s3://journey.staging.prog-8.com"
+
+  # deploy_production:
+  #   executor: s3_syncer
+  #   steps:
+  #     - s3_sync:
+  #         s3_url: "s3://journey.production.prog-8.com"
 
 workflows:
   version: 2
@@ -64,7 +76,7 @@ workflows:
             branches:
               only:
                 - fix-deploy
-      - deploy:
+      - deploy_staging:
           context: journey-staging
           requires:
             - build_staging
@@ -75,7 +87,7 @@ workflows:
       #       branches:
       #         only:
       #           - master
-      # - deploy:
+      # - deploy_production:
       #     context: journey-production
       #     requires:
       #       - build_production
