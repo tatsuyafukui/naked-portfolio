@@ -4,7 +4,7 @@ const data = useStaticQuery(graphql`
   query {
     scenesJson {
       id
-      heading
+      title
       description
       slug
       image {
@@ -18,7 +18,7 @@ const data = useStaticQuery(graphql`
     allScenesJson {
       nodes {
         id
-        heading
+        title
         description
         slug
         image {

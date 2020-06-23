@@ -8,7 +8,7 @@ const IndexPage = () => {
       allScenesJson {
         nodes {
           id
-          heading
+          title
           slug
           image {
             childImageSharp {
