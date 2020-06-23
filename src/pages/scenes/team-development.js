@@ -10,7 +10,7 @@ const TeamDevelopmentPage = () => {
     query {
       scenesJson(id: {eq: "シーン３"}) {
         id
-        heading
+        title
         description
         image {
           childImageSharp {

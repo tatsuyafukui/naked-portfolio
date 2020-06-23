@@ -10,7 +10,7 @@ const ContinuousDeliveryPage = () => {
     query {
       scenesJson(id: {eq: "シーン５"}) {
         id
-        heading
+        title
         description
         image {
           childImageSharp {

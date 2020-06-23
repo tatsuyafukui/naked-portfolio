@@ -17,14 +17,14 @@ const SceneLink = ({scene, className, ...props}) => (
       <Img
         className={styles.image}
         fluid={scene.image.childImageSharp.fluid}
-        alt={scene.heading}
+        alt={scene.title}
       />
       <div className={styles.textWrap}>
         <InfoTxt fontSize='xl' className={styles.number}>
           {scene.id}
         </InfoTxt>
         <Heading level={2} className={styles.title}>
-          {scene.heading}
+          {scene.title}
         </Heading>
       </div>
     </MediaObjectLayout>
