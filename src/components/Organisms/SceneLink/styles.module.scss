@@ -1,0 +1,65 @@
+@import '../../properties';
+
+.scene {
+  display: block;
+}
+
+.layout {
+  align-items: center;
+  display: flex;
+
+  @include mediaQuery(sm) {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+.image {
+  flex-shrink: 0;
+  height: 293px;
+  width: 440px;
+
+  @include mediaQuery(md) {
+    height: 200px;
+    width: 300px;
+  }
+
+  @include mediaQuery(sm) {
+    align-self: center;
+    height: 66.66vw;
+    width: 100vw;
+  }
+}
+
+.textWrap {
+  margin-left: 32px;
+
+  @include mediaQuery(md) {
+    margin-left: 4.44%;
+  }
+
+  @include mediaQuery(sm) {
+    margin-left: 0;
+    margin-top: 12px;
+  }
+}
+
+.number {
+  @include mediaQuery(md) {
+    font-size: var(--font-size-l);
+  }
+
+  @include mediaQuery(sm) {
+    font-size: var(--font-size-m);
+  }
+}
+
+.title {
+  @include mediaQuery(md) {
+    font-size: var(--font-size-xl);
+  }
+
+  @include mediaQuery(sm) {
+    font-size: var(--font-size-l);
+  }
+}

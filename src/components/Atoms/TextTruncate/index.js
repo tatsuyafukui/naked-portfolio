@@ -30,7 +30,7 @@ const TextTruncate = containPresenter(
 )
 
 TextTruncate.propTypes = {
-  children: PropTypes.element.isRequired,
+  children: PropTypes.string,
   maxChars: PropTypes.number,
   open: PropTypes.bool,
 }

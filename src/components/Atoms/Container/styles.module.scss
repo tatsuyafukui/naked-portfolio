@@ -8,6 +8,11 @@
   width: 100%;
 
   @include mediaQuery(md) {
+    padding-left: 3.125%;
+    padding-right: 3.125%;
+  }
+
+  @include mediaQuery(sm) {
     padding-left: 6.4%;
     padding-right: 6.4%;
   }
