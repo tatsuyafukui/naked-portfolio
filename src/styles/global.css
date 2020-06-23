@@ -69,7 +69,6 @@ a {
   background-color: transparent;
   text-decoration: none;
   -webkit-text-decoration-skip: objects;
-  text-decoration: none;
 }
 
 a:active,

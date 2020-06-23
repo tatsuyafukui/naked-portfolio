@@ -22,11 +22,7 @@ const IndexPage = () => {
     }
   `)
 
-  return (
-    <IndexTemplate
-      scenes={data.allScenesJson.nodes}
-    />
-  )
+  return <IndexTemplate scenes={data.allScenesJson.nodes} />
 }
 
 export default IndexPage
