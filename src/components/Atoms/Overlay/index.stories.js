@@ -1,7 +1,9 @@
 import React from 'react'
-import {storiesOf} from '@storybook/react/dist/client/index'
+import {storiesOf} from '@storybook/react/dist/client'
+import Img from 'gatsby-image'
 import Overlay, {Front, Back} from './index'
 import sceneSize from '../../../mock/images/scene-size.png'
+import data from '../../../mock/data/scene'
 
 storiesOf('Atoms/Overlay', module)
   .add(`Default`, () => (
@@ -57,6 +59,22 @@ storiesOf('Atoms/Overlay', module)
     >
       <Back>
         <img src={sceneSize} />
+      </Back>
+      <Front>
+        <div>
+          <h1 style={{color: 'white'}}>Title</h1>
+          <p style={{color: 'white'}}>description</p>
+        </div>
+      </Front>
+    </Overlay>
+  ))
+  .add('Background is gatsby-img', () => (
+    <Overlay
+      overlayStyle={{backgroundColor: 'rgba(3, 0, 39, 0.39)'}}
+      style={{width: '300px', height: '200px'}}
+    >
+      <Back>
+        <Img fluid={data.scenesJson.image.childImageSharp.fluid} />
       </Back>
       <Front>
         <div>
