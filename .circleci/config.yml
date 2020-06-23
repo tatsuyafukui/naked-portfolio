@@ -1,17 +1,93 @@
 version: 2.1
 orbs:
-  node: circleci/node@1.1.6
-jobs:
-  build-and-test:
-    executor:
-      name: node/default
+  aws-s3: circleci/aws-s3@1.0.15
+executors:
+  journey_builder:
+    docker:
+      - image: circleci/node:12.18.0
+  s3_syncer:
+    docker:
+      - image: circleci/python:3.6
+
+commands:
+  build_public_assets:
+    parameters:
+      environment:
+        default: "staging"
+        type: enum
+        enum: ["staging", "production"]
     steps:
       - checkout
-      - node/with-cache:
-          steps:
-            - run: npm install
-            - run: npm test
+      - restore_cache:
+          key: node-dependencies-<< parameters.environment >>-{{ checksum "package.json" }}
+      - run: yarn install
+      - save_cache:
+          paths:
+            - node_modules
+          key: node-dependencies-<< parameters.environment >>-{{ checksum "package.json" }}
+      - run: yarn build
+      - persist_to_workspace:
+          root: .
+          paths:
+            - public/*
+            - node_modules/*
+  s3_sync:
+    parameters:
+      s3_url:
+        type: string
+    steps:
+      - attach_workspace:
+          at: .
+      - aws-s3/sync:
+          from: public
+          to: << parameters.s3_url >>
+          overwrite: true
+jobs:
+  build_staging:
+    executor: journey_builder
+    steps:
+      - build_public_assets:
+          environment: staging
+  # TODO: uncomment
+  # build_production:
+  #   executor: journey_builder
+  #   steps:
+  #     - build_public_assets:
+  #         environment: production
+
+  deploy_staging:
+    executor: s3_syncer
+    steps:
+      - s3_sync:
+          s3_url: "s3://journey.staging.prog-8.com"
+
+  # deploy_production:
+  #   executor: s3_syncer
+  #   steps:
+  #     - s3_sync:
+  #         s3_url: "s3://journey.production.prog-8.com"
+
 workflows:
-    build-and-test:
-      jobs:
-        - build-and-test
+  version: 2
+  build_and_deploy_staging:
+    jobs:
+      - build_staging:
+          filters:
+            branches:
+              only:
+                - staging
+      - deploy_staging:
+          context: journey-staging
+          requires:
+            - build_staging
+
+      # TODO: productionのdeployを追加
+      # - build_production:
+      #     filters:
+      #       branches:
+      #         only:
+      #           - master
+      # - deploy_production:
+      #     context: journey-production
+      #     requires:
+      #       - build_production
