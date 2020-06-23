@@ -1,17 +1,50 @@
-version: 2.1
+version: 2
 orbs:
-  node: circleci/node@1.1.6
+  aws-s3: circleci/aws-s3@1.0.0
+
 jobs:
-  build-and-test:
-    executor:
-      name: node/default
+  build:
+    docker:
+      - image: circleci/node:12.18.0
     steps:
       - checkout
-      - node/with-cache:
-          steps:
-            - run: npm install
-            - run: npm test
+      - restore_cache:
+          keys:
+          - node-dependencies-{{ checksum "package.json" }}
+      - run: yarn install
+      - save_cache:
+          paths:
+            - node_modules
+          key: node-dependencies-{{ checksum "package.json" }}
+      - run: yarn build
+      - persist_to_workspace:
+          root: .
+          paths:
+            - public/*
+            - node_modules/*
+
+  deploy:
+    docker:
+      - image: circleci/python:2.7
+    steps:
+      - attach_workspace:
+          at: .
+      - aws-s3/sync:
+          from: public
+          to: 's3://journey.staging.prog-8.com'
+          overwrite: true
+
 workflows:
-    build-and-test:
-      jobs:
-        - build-and-test
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only: fix-deploy
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: dummy
