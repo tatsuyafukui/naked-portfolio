@@ -38,11 +38,11 @@ workflows:
   version: 2
   build-and-deploy-staging:
     jobs:
-      - build:
+      - build_staging:
           filters:
             branches:
               only: fix-deploy
-      - deploy:
+      - deploy_staging:
           requires:
             - build_staging
           filters:
