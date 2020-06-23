@@ -36,7 +36,7 @@ const SkillTemplate = ({skill}) => (
         </Container>
       </div>
       <div>
-        <Container className={styles.container}>
+        <Container className={styles.imageContainer}>
           <div>
             <Overlay
               className={styles.visual}
@@ -53,17 +53,17 @@ const SkillTemplate = ({skill}) => (
             </Overlay>
           </div>
         </Container>
-        <Container>
+        <Container className={styles.articleContainer}>
           <div className={styles.overview}>
             <Txt dangerouslySetInnerHTML={{__html: skill.overview}} />
           </div>
         </Container>
-        <Container className={styles.container}>
+        <Container className={styles.imageContainer}>
           <div className={styles.image}>
             <Img fluid={skill.image.childImageSharp.fluid} />
           </div>
         </Container>
-        <Container>
+        <Container className={styles.articleContainer}>
           <div className={styles.purpose}>
             <BoldHeading level={3}>学ぶ目的</BoldHeading>
             <Txt dangerouslySetInnerHTML={{__html: skill.purpose}} />

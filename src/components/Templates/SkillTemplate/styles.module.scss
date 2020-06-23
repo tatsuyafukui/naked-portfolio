@@ -4,9 +4,24 @@
   padding-top: 32px;
 }
 
-.container {
+.imageContainer {
   max-width: 620px !important;
   padding: 0 !important;
+}
+
+.articleContainer {
+  max-width: 620px !important;
+  padding: 0 !important;
+
+  @include mediaQuery(md) {
+    padding-left: 4.16% !important;
+    padding-right: 4.16% !important;
+  }
+
+  @include mediaQuery(sm) {
+    padding-left: 6.4% !important;
+    padding-right: 6.4% !important;
+  }
 }
 
 .breadcrumb {
