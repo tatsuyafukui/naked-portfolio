@@ -43,6 +43,7 @@ workflows:
             branches:
               only: fix-deploy
       - deploy_staging:
+          context: journey-staging
           requires:
             - build_staging
           filters:
