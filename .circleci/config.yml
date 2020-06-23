@@ -31,7 +31,7 @@ jobs:
           at: .
       - aws-s3/sync:
           from: public
-          to: 's3://journey.staging.prog-8.com'
+          to: $S3_BUCKET
           overwrite: true
 
 workflows:
