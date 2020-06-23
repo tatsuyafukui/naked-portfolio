@@ -1,13 +1,13 @@
 version: 2.1
 orbs:
-  aws-s3: circleci/aws-s3@1.0.0
+  aws-s3: circleci/aws-s3@1.0.15
 executors:
   journey_builder:
     docker:
       - image: circleci/node:12.18.0
   s3_syncer:
     docker:
-      - image: circleci/python:2.7
+      - image: circleci/python:3.6
 
 commands:
   build_public_assets:
