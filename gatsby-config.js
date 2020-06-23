@@ -1,3 +1,10 @@
+const activeEnv = process.env.GATSBY_ACTIVE_ENV || process.env.NODE_ENV || "staging"
+console.log(`Using environment config: '${activeEnv}'`)
+
+require("dotenv").config({
+  path: `.env.${activeEnv}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: `Journey`,
@@ -45,7 +52,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-        bucketName: "journey.staging.prog-8.com",
+        bucketName: process.env.S3_BUCKET_NAME,
       },
     },
   ],
