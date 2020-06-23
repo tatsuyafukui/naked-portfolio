@@ -20,7 +20,7 @@
   margin-bottom: 12px;
 
   @include mediaQuery(sm) {
-    font-size: var(--font-size-xxl);
+    font-size: var(--font-size-xxl) !important;
     margin-bottom: 6px;
   }
 }
