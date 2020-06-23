@@ -57,6 +57,7 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\" && stylelint --fix \"**/*.{css,scss}\"",
     "start": "yarn run develop",
     "serve": "gatsby serve",
+    "deploy": "npx -n \"-r dotenv/config\" gatsby-plugin-s3 deploy",
     "clean": "gatsby clean",
     "test": "jest",
     "test-watch": "yarn test -- --watch",

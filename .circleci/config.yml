@@ -1,0 +1,110 @@
+version: 2.1
+orbs:
+  aws-s3: circleci/aws-s3@1.0.15
+executors:
+  journey_builder:
+    docker:
+      - image: circleci/node:12.18.0
+  s3_syncer:
+    docker:
+      - image: circleci/python:3.6
+  aws_cli:
+    docker:
+      - image: amazon/aws-cli
+
+commands:
+  build_public_assets:
+    parameters:
+      environment:
+        default: "staging"
+        type: enum
+        enum: ["staging", "production"]
+    steps:
+      - checkout
+      - restore_cache:
+          key: node-dependencies-<< parameters.environment >>-{{ checksum "package.json" }}
+      - run: yarn install
+      - save_cache:
+          paths:
+            - node_modules
+          key: node-dependencies-<< parameters.environment >>-{{ checksum "package.json" }}
+      - run: yarn build
+      - persist_to_workspace:
+          root: .
+          paths:
+            - public/*
+            - node_modules/*
+  s3_sync:
+    parameters:
+      s3_url:
+        type: string
+    steps:
+      - attach_workspace:
+          at: .
+      - aws-s3/sync:
+          from: public
+          to: << parameters.s3_url >>
+          overwrite: true
+  refresh_edge_content:
+    parameters:
+      distribution_id:
+        type: string
+    steps:
+      - run:
+          name: refresh old contents from edge servers
+          command: |
+            aws cloudfront create-invalidation --distribution-id << parameters.distribution_id >> --paths "/*"
+
+jobs:
+  build_staging:
+    executor: journey_builder
+    steps:
+      - build_public_assets:
+          environment: staging
+  # TODO: uncomment
+  # build_production:
+  #   executor: journey_builder
+  #   steps:
+  #     - build_public_assets:
+  #         environment: production
+
+  deploy_staging:
+    executor: s3_syncer
+    steps:
+      - s3_sync:
+          s3_url: "s3://journey.staging.prog-8.com"
+      - refresh_edge_content:
+          distribution_id: "E10DXFC8FH56AZ"
+
+  # deploy_production:
+  #   executor: s3_syncer
+  #   steps:
+  #     - s3_sync:
+  #         s3_url: "s3://journey.production.prog-8.com"
+  #     - refresh_edge_content:
+  #         distribution_id: "E10DXFC8FH56AZ"
+
+workflows:
+  version: 2
+  build_and_deploy_staging:
+    jobs:
+      - build_staging:
+          filters:
+            branches:
+              only:
+                - staging
+      - deploy_staging:
+          context: journey-staging
+          requires:
+            - build_staging
+
+      # TODO: productionのdeployを追加
+      # - build_production:
+      #     filters:
+      #       branches:
+      #         only:
+      #           - master
+      # - deploy_production:
+      #     context: journey-production
+      #     requires:
+      #       - build_production
