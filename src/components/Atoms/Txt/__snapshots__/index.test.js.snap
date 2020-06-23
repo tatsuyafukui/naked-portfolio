@@ -2,7 +2,7 @@
 
 exports[`Txt Renders correctly 1`] = `
 <p
-  className="base m "
+  className="txt base m "
 >
   Txt
 </p>
