@@ -15,6 +15,21 @@ const data = useStaticQuery(graphql`
         }
       }
     }
+    allScenesJson {
+      nodes {
+        id
+        heading
+        description
+        slug
+        image {
+          childImageSharp {
+            fluid(maxWidth: 1140) {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+      }
+    }
   }
 `)
 

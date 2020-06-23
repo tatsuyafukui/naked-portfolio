@@ -1,9 +1,25 @@
-.main {
-  padding-bottom: 40px;
-  padding-top: 64px;
-}
+@import '../../properties';
 
 .container {
-  margin: 0 auto;
-  max-width: 1140px;
+  margin-top: 64px;
+
+  @include mediaQuery(md) {
+    margin-top: 8.33%;
+  }
+
+  @include mediaQuery(sm) {
+    margin-top: 12.8%;
+  }
+}
+
+.item {
+  margin-bottom: 40px;
+
+  @include mediaQuery(md) {
+    margin-bottom: 5.55%;
+  }
+
+  @include mediaQuery(sm) {
+    margin-bottom: 14.678%;
+  }
 }
