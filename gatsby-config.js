@@ -52,7 +52,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
+        protocol: "https",
+        hostname: process.env.HOSTNAME,
         bucketName: process.env.S3_BUCKET_NAME,
+        region: process.env.REGION,
+        acl: null,
+        enableS3StaticWebsiteHosting: false,
       },
     },
   ],
