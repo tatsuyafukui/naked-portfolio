@@ -19,7 +19,7 @@ commands:
     steps:
       - checkout
       - restore_cache:
-          key: node-dependencies-<< parameters.environment >>-{{{ checksum "package.json" }}
+          key: node-dependencies-<< parameters.environment >>-{{ checksum "package.json" }}
       - run: yarn install
       - save_cache:
           paths:
