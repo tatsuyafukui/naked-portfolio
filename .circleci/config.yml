@@ -1,21 +1,30 @@
 version: 2.1
 orbs:
   aws-s3: circleci/aws-s3@1.0.0
-
-jobs:
-  build_staging:
+executors:
+  journey_builder:
     docker:
       - image: circleci/node:12.18.0
+  s3_syncer:
+    docker:
+      - image: circleci/python:2.7
+
+commands:
+  build_public_assets:
+    parameters:
+      environment:
+        default: "staging"
+        type: enum
+        enum: ["staging", "production"]
     steps:
       - checkout
       - restore_cache:
-          keys:
-          - node-dependencies-{{ checksum "package.json" }}
+          key: node-dependencies-<< parameters.environment >>-{{{ checksum "package.json" }}
       - run: yarn install
       - save_cache:
           paths:
             - node_modules
-          key: node-dependencies-{{ checksum "package.json" }}
+          key: node-dependencies-<< parameters.environment >>-{{ checksum "package.json" }}
       - run: yarn build
       - persist_to_workspace:
           root: .
@@ -23,9 +32,21 @@ jobs:
             - public/*
             - node_modules/*
 
-  deploy_staging:
-    docker:
-      - image: circleci/python:2.7
+jobs:
+  build_staging:
+    executor: journey_builder
+    steps:
+      - build_public_assets:
+          environment: staging
+  # TODO: uncomment
+  # build_production:
+  #   executor: journey_builder
+  #   steps:
+  #     - build_public_assets:
+  #         environment: production
+
+  deploy:
+    executor: s3_syncer
     steps:
       - attach_workspace:
           at: .
@@ -36,16 +57,25 @@ jobs:
 
 workflows:
   version: 2
-  build-and-deploy-staging:
+  build_and_deploy_staging:
     jobs:
       - build_staging:
           filters:
             branches:
-              only: fix-deploy
-      - deploy_staging:
+              only:
+                - fix-deploy
+      - deploy:
           context: journey-staging
           requires:
             - build_staging
-          filters:
-            branches:
-              only: fix-deploy
+
+      # TODO: productionのdeployを追加
+      # - build_production:
+      #     filters:
+      #       branches:
+      #         only:
+      #           - master
+      # - deploy:
+      #     context: journey-production
+      #     requires:
+      #       - build_production
