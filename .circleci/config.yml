@@ -81,7 +81,7 @@ jobs:
       - s3_sync:
           s3_url: "s3://journey.production.prog-8.com"
       - refresh_edge_content:
-          distribution_id: "E10DXFC8FH56AZ"
+          distribution_id: "ERF41D476DAXN"
 
 workflows:
   version: 2
