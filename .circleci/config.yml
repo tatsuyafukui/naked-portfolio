@@ -61,12 +61,11 @@ jobs:
     steps:
       - build_public_assets:
           environment: staging
-  # TODO: uncomment
-  # build_production:
-  #   executor: journey_builder
-  #   steps:
-  #     - build_public_assets:
-  #         environment: production
+  build_production:
+    executor: journey_builder
+    steps:
+      - build_public_assets:
+          environment: production
 
   deploy_staging:
     executor: s3_syncer
@@ -76,13 +75,13 @@ jobs:
       - refresh_edge_content:
           distribution_id: "E10DXFC8FH56AZ"
 
-  # deploy_production:
-  #   executor: s3_syncer
-  #   steps:
-  #     - s3_sync:
-  #         s3_url: "s3://journey.production.prog-8.com"
-  #     - refresh_edge_content:
-  #         distribution_id: "E10DXFC8FH56AZ"
+  deploy_production:
+    executor: s3_syncer
+    steps:
+      - s3_sync:
+          s3_url: "s3://journey.production.prog-8.com"
+      - refresh_edge_content:
+          distribution_id: "E10DXFC8FH56AZ"
 
 workflows:
   version: 2
@@ -98,13 +97,12 @@ workflows:
           requires:
             - build_staging
 
-      # TODO: productionのdeployを追加
-      # - build_production:
-      #     filters:
-      #       branches:
-      #         only:
-      #           - master
-      # - deploy_production:
-      #     context: journey-production
-      #     requires:
-      #       - build_production
+      - build_production:
+          filters:
+            branches:
+              only:
+                - add-journey-prd
+      - deploy_production:
+          context: journey-production
+          requires:
+            - build_production
