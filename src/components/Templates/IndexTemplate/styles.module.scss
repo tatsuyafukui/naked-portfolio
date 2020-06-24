@@ -1,7 +1,7 @@
 @import '../../properties';
 
 .container {
-  margin-top: 64px;
+  margin-top: 64px !important;
 
   @include mediaQuery(md) {
     margin-top: 8.33%;
