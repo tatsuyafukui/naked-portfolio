@@ -101,7 +101,7 @@ workflows:
           filters:
             branches:
               only:
-                - add-journey-prd
+                - master
       - deploy_production:
           context: journey-production
           requires:
