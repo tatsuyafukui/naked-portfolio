@@ -2,11 +2,15 @@
 
 .navigationLink {
   align-items: center;
-  color: var(--color-primary);
+  color: var(--color-text);
   display: flex;
   font-size: var(--font-size-l);
   justify-content: space-between;
   padding: 24px 32px;
+
+  > :first-child {
+    padding-right: 24px !important;
+  }
 
   svg {
     color: var(--color-text-info);
