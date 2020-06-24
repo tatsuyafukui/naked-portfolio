@@ -24,7 +24,7 @@
   --color-text-disable: var(--color-opacity38-black);
   --color-line: var(--color-opacity15-black);
   --color-backgound: var(--color-base);
-  --color-overlay: --color-opacity60-black;
+  --color-overlay: var(--color-opacity60-black);
 
   /* 文字：サイズ（媒体に最適化した文字サイズ） */
   --font-size-xxs: 12px;
@@ -68,6 +68,7 @@
 
   /* Z 座標の管理（Web媒体/CSSではZ座標を管理する） */
   --z-header: none;
+  --z-overlay: 10;
 }
 
 /* media query */
