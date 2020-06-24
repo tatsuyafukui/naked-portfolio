@@ -11,9 +11,12 @@ const txtFactory = role => ({
 }) => (
   <Tag
     {...props}
-    className={[styles.txt, styles[role], styles[`visualLevel${visualLevel}`], className].join(
-      ' '
-    )}
+    className={[
+      styles.txt,
+      styles[role],
+      styles[`visualLevel${visualLevel}`],
+      className,
+    ].join(' ')}
   />
 )
 

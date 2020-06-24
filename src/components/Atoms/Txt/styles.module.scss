@@ -7,7 +7,7 @@
 .visualLevel1 {
   font-size: var(--font-size-m);
 
-  @include mediaQuery(sm) {
+  @include mediaQuery(md) {
     font-size: var(--font-size-s);
   }
 }
@@ -15,7 +15,7 @@
 .visualLevel2 {
   font-size: var(--font-size-s);
 
-  @include mediaQuery(sm) {
+  @include mediaQuery(md) {
     font-size: var(--font-size-xs);
   }
 }
@@ -23,7 +23,7 @@
 .visualLevel3 {
   font-size: var(--font-size-xs);
 
-  @include mediaQuery(sm) {
+  @include mediaQuery(md) {
     font-size: var(--font-size-xxs);
   }
 }
