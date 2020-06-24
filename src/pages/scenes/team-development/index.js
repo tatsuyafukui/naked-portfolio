@@ -1,14 +1,14 @@
 import React, {useState} from 'react'
 import {graphql, useStaticQuery} from 'gatsby'
-import SceneTemplate from '../../components/Templates/SceneTemplate'
-import skillsData from '../../mock/data/skills'
+import SceneTemplate from '../../../components/Templates/SceneTemplate'
+import skillsData from '../../../mock/data/skills.json'
 
-const ContinuousDeliveryPage = () => {
+const TeamDevelopmentPage = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   const data = useStaticQuery(graphql`
     query {
-      scenesJson(id: {eq: "シーン５"}) {
+      scenesJson(id: {eq: "シーン３"}) {
         id
         title
         description
@@ -33,4 +33,4 @@ const ContinuousDeliveryPage = () => {
   )
 }
 
-export default ContinuousDeliveryPage
+export default TeamDevelopmentPage
