@@ -6,7 +6,7 @@
   display: flex;
   font-size: var(--font-size-l);
   justify-content: space-between;
-  padding: calc(var(--space) * 6) calc(var(--space) * 8);
+  padding: 24px 32px;
 
   svg {
     color: var(--color-text-info);
@@ -14,6 +14,6 @@
 
   @include mediaQuery(sm) {
     font-size: var(--font-size-s);
-    padding: calc(var(--space) * 6) calc(var(--space) * 4);
+    padding: 24px 16px;
   }
 }
