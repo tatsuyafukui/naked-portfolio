@@ -80,8 +80,8 @@
     word-wrap: break-word;
 
     @include mediaQuery(md) {
-      margin-right: 0;
       margin-bottom: 6.25%;
+      margin-right: 0;
     }
 
     @include mediaQuery(sm) {

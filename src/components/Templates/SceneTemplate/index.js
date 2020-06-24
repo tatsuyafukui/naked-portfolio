@@ -24,16 +24,16 @@ const SceneTemplate = ({scene, skills, open, onClick}) => (
         <div className={styles.titleWrap}>
           <Breadcrumb
             className={styles.breadcrumb}
-            separator={<FontAwesomeIcon className={styles.icon} icon={faAngleRight} />}
+            separator={
+              <FontAwesomeIcon className={styles.icon} icon={faAngleRight} />
+            }
           >
             <Link to='/'>
               <Txt>Home</Txt>
             </Link>
             <Txt>{scene.id}</Txt>
           </Breadcrumb>
-          <Heading level={1}>
-            {scene.title}
-          </Heading>
+          <Heading level={1}>{scene.title}</Heading>
         </div>
       </Container>
       <Container className={styles.imageContainer}>
@@ -67,7 +67,11 @@ const SceneTemplate = ({scene, skills, open, onClick}) => (
             </Txt>
           </div>
           <div>
-            <BoldHeading level={2} visualLevel={4} className={styles.requireLabel}>
+            <BoldHeading
+              level={2}
+              visualLevel={4}
+              className={styles.requireLabel}
+            >
               必要なスキル
             </BoldHeading>
             <SkillList skills={skills} />
