@@ -61,7 +61,7 @@ const Footer = className => (
       </Link>
       <div className={styles.inner}>
         <FooterList />
-        <DisableTxt fontSize='xxs' className={styles.copyright}>
+        <DisableTxt visualLevel={4} className={styles.copyright}>
           © 2020 Progate, Inc.
         </DisableTxt>
       </div>

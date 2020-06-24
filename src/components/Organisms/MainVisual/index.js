@@ -29,9 +29,7 @@ const MainVisual = () => {
         <Heading level={1} className={styles.title}>
           目標へ向かう学習を
         </Heading>
-        <Txt className={styles.subTitle}>
-          あなたが自信をもって目標へ向かうための学習ロードマップ
-        </Txt>
+        <Txt>あなたが自信をもって目標へ向かうための学習ロードマップ</Txt>
       </Container>
     </BackgroundImage>
   )
