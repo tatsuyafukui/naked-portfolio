@@ -33,7 +33,9 @@ const SceneTemplate = ({scene, skills, open, onClick}) => (
             </Link>
             <Txt>{scene.id}</Txt>
           </Breadcrumb>
-          <Heading level={1}>{scene.title}</Heading>
+          <Heading level={1} className={styles.title}>
+            {scene.title}
+          </Heading>
         </div>
       </Container>
       <Container className={styles.imageContainer}>

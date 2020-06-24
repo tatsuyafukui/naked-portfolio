@@ -40,6 +40,12 @@
   }
 }
 
+.title {
+  @include mediaQuery(sm) {
+    font-size: var(--font-size-xl) !important;
+  }
+}
+
 .imageContainer {
   @include mediaQuery(lg) {
     padding: 0 !important;
