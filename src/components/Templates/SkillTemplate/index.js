@@ -13,8 +13,9 @@ import Heading, {BoldHeading} from '../../Atoms/Heading'
 import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
 import List, {ListItem} from '../../Atoms/List'
+import MediaObjectLayout from '../../Atoms/MediaObjectLayout'
 
-const SkillTemplate = ({skill}) => (
+const SkillTemplate = ({skill, recommended}) => (
   <div>
     <SEO title={skill.title} description={skill.overview} lang={'ja'} />
     <Header />
@@ -97,6 +98,16 @@ const SkillTemplate = ({skill}) => (
           <div className={styles.overall}>
             <BoldHeading level={3}>全体像をつかむには</BoldHeading>
             <Txt dangerouslySetInnerHTML={{__html: skill.overall}} />
+          </div>
+          <div>
+            {recommended.map(item => {
+              ;<div key={item.id} className={styles.ogp}>
+                <MediaObjectLayout className={styles.mediaObjectLayout}>
+                  <div></div>
+                  <div></div>
+                </MediaObjectLayout>
+              </div>
+            })}
           </div>
         </Container>
       </div>

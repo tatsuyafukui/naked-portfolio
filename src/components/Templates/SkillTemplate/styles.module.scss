@@ -1,6 +1,7 @@
 @import '../../properties';
 
 .main {
+  padding-bottom: 130px;
   padding-top: 32px;
 }
 
@@ -149,4 +150,8 @@
       margin-top: 24px;
     }
   }
+}
+
+.ogp {
+  padding: 32px;
 }
