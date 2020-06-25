@@ -1,16 +1,16 @@
 [
   {
-    "skill": "HTML&CSS",
+    "skill": "インターネット",
     "url": "https://www.amazon.co.jp/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%AF%E3%81%AA%E3%81%9C%E3%81%A4%E3%81%AA%E3%81%8C%E3%82%8B%E3%81%AE%E3%81%8B-%E2%80%95-%E7%9F%A5%E3%81%A3%E3%81%A6%E3%81%8A%E3%81%8D%E3%81%9F%E3%81%84TCP-IP%E3%80%81LAN%E3%80%81ADSL%E3%81%AE%E5%9F%BA%E7%A4%8E%E7%9F%A5%E8%AD%98-%E6%88%B8%E6%A0%B9/dp/4822281515/ref=sr_1_3",
     "isBook": true,
     "ISBN": "4822281515"
   },
   {
     "skill": "HTML&CSS",
-    "url": "https://code.visualstudio.com/"
+    "url": "https://prog-8.com/languages/html"
   },
   {
-    "skill": "HTML&CSS",
-    "url": "https://prog-8.com/languages/html"
+    "skill": "エディタ",
+    "url": "https://code.visualstudio.com/"
   }
 ]
