@@ -3,15 +3,15 @@
 .footer {
   border-top: var(--border);
   margin-top: 80px;
-  padding: 56px 0 32px;
+  padding: 56px 0;
 
   @include mediaQuery(md) {
     margin-top: 10.41%;
   }
 
   @include mediaQuery(sm) {
-    margin-top: 64px;
-    padding-top: 40px;
+    margin-top: 17.06%;
+    padding: 40px 0;
   }
 }
 

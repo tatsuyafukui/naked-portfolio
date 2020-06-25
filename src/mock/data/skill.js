@@ -2,25 +2,25 @@ import {graphql, useStaticQuery} from 'gatsby'
 
 const data = useStaticQuery(graphql`
   query {
-    scenesJson {
-      id
+    skillsJson(id: {eq: "HTML&CSS"}) {
       title
-      description
-      slug
       image {
         childImageSharp {
-          fluid(maxWidth: 1140) {
+          fluid {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
-    }
-    allScenesJson {
-      nodes {
+      overall
+      overview
+      purpose
+      standard {
+        basic
+        practical
+      }
+      slug
+      scene {
         id
-        title
-        description
-        slug
         image {
           childImageSharp {
             fluid(maxWidth: 1140) {
@@ -28,6 +28,7 @@ const data = useStaticQuery(graphql`
             }
           }
         }
+        slug
       }
     }
   }

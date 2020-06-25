@@ -16,37 +16,35 @@ import Footer from '../../Organisms/Footer'
 import SkillList from '../../Organisms/SkillList'
 
 const SceneTemplate = ({scene, skills, open, onClick}) => (
-  <div>
-    <SEO title={scene.heading} description={scene.description} lang={'ja'} />
+  <>
+    <SEO title={scene.title} description={scene.description} lang={'ja'} />
     <Header />
     <main className={styles.main}>
-      <div>
-        <Container>
-          <div>
-            <Breadcrumb
-              className={styles.breadcrumb}
-              separator={<FontAwesomeIcon icon={faAngleRight} />}
-            >
-              <Link to='/'>
-                <Txt>Home</Txt>
-              </Link>
-              <Txt>{scene.id}</Txt>
-            </Breadcrumb>
-            <Heading level={1} className={styles.title}>
-              {scene.heading}
-            </Heading>
-          </div>
-        </Container>
-        <Container className={styles.container}>
-          <div>
-            <Img
-              className={styles.visual}
-              fluid={scene.image.childImageSharp.fluid}
-              alt={scene.heading}
-            />
-          </div>
-        </Container>
-      </div>
+      <Container>
+        <div className={styles.titleWrap}>
+          <Breadcrumb
+            className={styles.breadcrumb}
+            separator={
+              <FontAwesomeIcon className={styles.icon} icon={faAngleRight} />
+            }
+          >
+            <Link to='/'>
+              <Txt>Home</Txt>
+            </Link>
+            <Txt>{scene.id}</Txt>
+          </Breadcrumb>
+          <Heading level={1} className={styles.title}>
+            {scene.title}
+          </Heading>
+        </div>
+      </Container>
+      <Container className={styles.imageContainer}>
+        <Img
+          className={styles.visual}
+          fluid={scene.image.childImageSharp.fluid}
+          alt={scene.title}
+        />
+      </Container>
       <Container>
         <div className={styles.body}>
           <div>
@@ -71,7 +69,11 @@ const SceneTemplate = ({scene, skills, open, onClick}) => (
             </Txt>
           </div>
           <div>
-            <BoldHeading level={4} className={styles.requireLabel}>
+            <BoldHeading
+              level={2}
+              visualLevel={4}
+              className={styles.requireLabel}
+            >
               必要なスキル
             </BoldHeading>
             <SkillList skills={skills} />
@@ -80,7 +82,7 @@ const SceneTemplate = ({scene, skills, open, onClick}) => (
       </Container>
     </main>
     <Footer />
-  </div>
+  </>
 )
 
 SceneTemplate.propTypes = {

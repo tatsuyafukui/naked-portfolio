@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {graphql, useStaticQuery} from 'gatsby'
-import SceneTemplate from '../../components/Templates/SceneTemplate'
-import skillsData from '../../mock/data/skills'
+import SceneTemplate from '../../../components/Templates/SceneTemplate'
+import skillsData from '../../../mock/data/skills.json'
 
 const WebBasicPage = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -10,7 +10,7 @@ const WebBasicPage = () => {
     query {
       scenesJson(id: {eq: "シーン１"}) {
         id
-        heading
+        title
         description
         image {
           childImageSharp {

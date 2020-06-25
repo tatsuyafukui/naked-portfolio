@@ -4,7 +4,6 @@ import styles from './styles.module.scss'
 import Link from '../../Atoms/Link'
 import MediaObjectLayout from '../../Atoms/MediaObjectLayout'
 import Heading from '../../Atoms/Heading'
-import {InfoTxt} from '../../Atoms/Txt'
 import Img from 'gatsby-image'
 
 const SceneLink = ({scene, className, ...props}) => (
@@ -17,14 +16,14 @@ const SceneLink = ({scene, className, ...props}) => (
       <Img
         className={styles.image}
         fluid={scene.image.childImageSharp.fluid}
-        alt={scene.heading}
+        alt={scene.title}
       />
       <div className={styles.textWrap}>
-        <InfoTxt fontSize='xl' className={styles.number}>
+        <Heading level={2} visualLevel={3} className={styles.number}>
           {scene.id}
-        </InfoTxt>
-        <Heading level={2} className={styles.title}>
-          {scene.heading}
+        </Heading>
+        <Heading level={3} visualLevel={2} className={styles.title}>
+          {scene.title}
         </Heading>
       </div>
     </MediaObjectLayout>
