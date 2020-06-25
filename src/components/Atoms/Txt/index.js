@@ -34,7 +34,7 @@ export const InfoTxt = containPresenter(TxtContainer, InfoTxtPresenter)
 export const DisableTxt = containPresenter(TxtContainer, DisableTxtPresenter)
 
 Txt.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   tag: PropTypes.string,
   visualLevel: PropTypes.number,
 }
@@ -44,7 +44,7 @@ Txt.defaultProps = {
 }
 
 InfoTxt.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   tag: PropTypes.string,
   visualLevel: PropTypes.number,
 }
@@ -54,7 +54,7 @@ InfoTxt.defaultProps = {
 }
 
 DisableTxt.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   tag: PropTypes.string,
   visualLevel: PropTypes.number,
 }
