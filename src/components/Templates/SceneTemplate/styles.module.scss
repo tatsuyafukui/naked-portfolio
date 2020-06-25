@@ -1,64 +1,103 @@
 @import '../../properties';
 
 .main {
-  padding-bottom: calc(var(--space) * 20);
-  padding-top: calc(var(--space) * 8);
-}
+  margin-top: 32px;
 
-.container {
   @include mediaQuery(md) {
-    max-width: 100% !important;
-    padding: 0 !important;
+    margin-bottom: 4.16%;
+  }
+
+  @include mediaQuery(sm) {
+    margin-bottom: 8.53%;
   }
 }
 
 .breadcrumb {
-  margin-bottom: calc(var(--space) * 3);
+  margin-bottom: 12px;
 
-  a {
-    text-decoration: none;
+  @include mediaQuery(md) {
+    margin-bottom: 1.56%;
+  }
+
+  @include mediaQuery(sm) {
+    margin-bottom: 2.13%;
+  }
+}
+
+.icon {
+  color: var(--color-text-info);
+}
+
+.titleWrap {
+  margin-bottom: 32px;
+
+  @include mediaQuery(md) {
+    margin-bottom: 4.16%;
+  }
+
+  @include mediaQuery(sm) {
+    margin-bottom: 6.4%;
   }
 }
 
 .title {
-  margin-bottom: calc(var(--space) * 8);
+  @include mediaQuery(sm) {
+    font-size: var(--font-size-xl) !important;
+  }
+}
+
+.imageContainer {
+  @include mediaQuery(lg) {
+    padding: 0 !important;
+  }
 }
 
 .visual {
-  min-height: 250px;
+  height: 460px;
 
-  img {
-    @include mediaQuery(md) {
-      width: 690px !important;
-    }
+  @include mediaQuery(md) {
+    height: 360px;
+  }
+
+  @include mediaQuery(sm) {
+    height: 250px;
   }
 }
 
 .body {
   display: flex;
   justify-content: space-between;
-  margin-top: calc(var(--space) * 11);
+  margin-top: 48px;
 
   @include mediaQuery(md) {
-    align-items: center;
-    flex-direction: column;
+    display: block;
+    margin-top: 5.2%;
+  }
+
+  @include mediaQuery(sm) {
+    display: block;
+    margin-top: 8.53%;
   }
 
   > :first-child {
-    color: var(--color-text);
-    font-size: var(--font-size-m);
-    margin-right: calc(var(--space) * 10);
+    margin-right: 3.5%;
     max-width: 620px;
     white-space: pre-wrap;
     word-wrap: break-word;
 
     @include mediaQuery(md) {
+      margin-bottom: 6.25%;
       margin-right: 0;
+    }
+
+    @include mediaQuery(sm) {
+      margin-bottom: 8.53%;
     }
   }
 
   > :last-child {
-    width: 480px;
+    flex: 1;
+    min-width: 300px;
 
     @include mediaQuery(md) {
       width: 100%;
@@ -67,11 +106,14 @@
 }
 
 .requireLabel {
-  margin-bottom: calc(var(--space) * 6);
-  margin-top: 0;
+  margin-bottom: 24px;
 
   @include mediaQuery(md) {
-    margin-top: calc(var(--space) * 8);
+    margin-bottom: 3.125%;
+  }
+
+  @include mediaQuery(sm) {
+    margin-bottom: 4.26%;
   }
 }
 
@@ -89,7 +131,6 @@
     border: none;
     cursor: pointer;
     outline: none;
-    text-decoration: underline;
   }
 }
 
