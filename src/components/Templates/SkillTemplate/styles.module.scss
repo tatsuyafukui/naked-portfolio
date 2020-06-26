@@ -1,7 +1,7 @@
 @import '../../properties';
 
 .main {
-  padding-bottom: 130px;
+  padding-bottom: 35px;
   padding-top: 32px;
 }
 
@@ -153,5 +153,48 @@
 }
 
 .ogp {
-  padding: 32px;
+  border: var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 40px;
+}
+
+.top {
+  > :first-child {
+    width: 100%;
+  }
+
+  > :last-child {
+    margin: 24px;
+  }
+}
+
+.right {
+  > :first-child {
+    margin: 16px 24px 16px 0;
+    max-width: 100px;
+    width: 50%;
+  }
+
+  > :last-child {
+    margin: 32px;
+  }
+}
+
+.left {
+  > :first-child {
+    max-width: 140px;
+    width: 50%;
+  }
+
+  > :last-child {
+    margin: 24px;
+  }
+}
+
+.ogTitle {
+  margin-bottom: 4px;
+}
+
+.ogUrl {
+  margin-top: 12px;
 }

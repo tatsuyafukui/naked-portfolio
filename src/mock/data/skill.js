@@ -31,6 +31,32 @@ const data = useStaticQuery(graphql`
         slug
       }
     }
+    allRecommendedJson {
+      nodes {
+        id
+        skill
+        url
+        isBook
+        image {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
+        fields {
+          ogp {
+            ogSiteName
+            ogTitle
+            ogDescription
+            ogImage {
+              url
+            }
+            twitterCard
+          }
+        }
+      }
+    }
   }
 `)
 

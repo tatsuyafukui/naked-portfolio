@@ -7,10 +7,14 @@
   },
   {
     "skill": "HTML&CSS",
-    "url": "https://prog-8.com/languages/html"
+    "url": "https://prog-8.com/lessons/html/study/1"
   },
   {
     "skill": "エディタ",
     "url": "https://code.visualstudio.com/"
+  },
+  {
+    "skill": "test",
+    "url": "https://www.jiji.com/jc/article?k=2020062501009&g=pol"
   }
 ]

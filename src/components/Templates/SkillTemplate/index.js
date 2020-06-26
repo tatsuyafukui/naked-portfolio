@@ -7,13 +7,15 @@ import SEO from '../../seo'
 import Breadcrumb from '../../Atoms/Breadcrumb'
 import Container from '../../Atoms/Container'
 import Link from '../../Atoms/Link'
-import Txt from '../../Atoms/Txt'
+import Txt, {DisableTxt, InfoTxt} from '../../Atoms/Txt'
 import Overlay, {Front, Back} from '../../Atoms/Overlay'
 import Heading, {BoldHeading} from '../../Atoms/Heading'
 import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
 import List, {ListItem} from '../../Atoms/List'
 import MediaObjectLayout from '../../Atoms/MediaObjectLayout'
+import TextTruncate from '../../Atoms/TextTruncate'
+import NavigationLink from '../../Molecules/NavigationLink'
 
 const SkillTemplate = ({skill, recommended}) => (
   <div>
@@ -101,12 +103,45 @@ const SkillTemplate = ({skill, recommended}) => (
           </div>
           <div>
             {recommended.map(item => {
-              ;<div key={item.id} className={styles.ogp}>
-                <MediaObjectLayout className={styles.mediaObjectLayout}>
-                  <div></div>
-                  <div></div>
-                </MediaObjectLayout>
-              </div>
+              const summary = getSummary(item.fields.ogp.twitterCard)
+              return (
+                <div key={item.id} className={styles.ogp}>
+                  <Link to={item.url} target='_blank' rel='noopener noreferrer'>
+                    <MediaObjectLayout
+                      summary={summary}
+                      className={styles[summary]}
+                    >
+                      <div>
+                        <Img
+                          fluid={item.image.childImageSharp.fluid}
+                          alt={item.fields.ogp.ogTitle}
+                        />
+                      </div>
+                      <div>
+                        <Heading level={5} className={styles.ogTitle}>
+                          {item.fields.ogp.ogTitle}
+                        </Heading>
+                        <InfoTxt visualLevel={2}>
+                          <TextTruncate maxChars={20}>
+                            {item.isBook ? (
+                              <NavigationLink>
+                                Amazonで詳細をみる
+                              </NavigationLink>
+                            ) : (
+                              item.fields.ogp.ogDescription
+                            )}
+                          </TextTruncate>
+                        </InfoTxt>
+                        {item.isBook ? null : (
+                          <DisableTxt className={styles.ogUrl} visualLevel={2}>
+                            {item.url}
+                          </DisableTxt>
+                        )}
+                      </div>
+                    </MediaObjectLayout>
+                  </Link>
+                </div>
+              )
             })}
           </div>
         </Container>
@@ -117,3 +152,9 @@ const SkillTemplate = ({skill, recommended}) => (
 )
 
 export default SkillTemplate
+
+const getSummary = twitterCard => {
+  if (twitterCard === 'summary_large_image') return 'top'
+  if (twitterCard === 'summary') return 'left'
+  return 'right'
+}
