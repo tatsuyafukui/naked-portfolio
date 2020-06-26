@@ -121,7 +121,7 @@ const SkillTemplate = ({skill, recommended}) => (
               const summary = getSummary(item.fields.ogp.twitterCard)
 
               const ogContent = (
-                <div>
+                <div className={styles.ogContent}>
                   <Heading level={5} className={styles.ogTitle}>
                     {item.fields.ogp.ogTitle}
                   </Heading>

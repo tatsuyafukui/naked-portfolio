@@ -161,13 +161,13 @@
   border-radius: var(--radius);
 }
 
+.ogContent {
+  padding: 24px;
+}
+
 .top {
   > :first-child {
     width: 100%;
-  }
-
-  > :last-child {
-    margin: 24px;
   }
 }
 
@@ -178,7 +178,7 @@
     width: 50%;
   }
 
-  > :last-child {
+  .ogContent {
     padding: 32px;
   }
 }
@@ -188,14 +188,6 @@
     max-width: 140px;
     width: 50%;
   }
-
-  > :last-child {
-    padding: 24px;
-  }
-}
-
-.ogContent {
-  padding: 24px;
 }
 
 .ogTitle {
