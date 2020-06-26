@@ -212,7 +212,7 @@
 }
 
 .truncateText {
-  overflow: hidden; /* はみ出る部分を非表示に */
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 100%;
