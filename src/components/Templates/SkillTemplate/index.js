@@ -1,7 +1,7 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faAngleRight} from '@fortawesome/free-solid-svg-icons'
+import {faAngleRight, faLink} from '@fortawesome/free-solid-svg-icons'
 import styles from './styles.module.scss'
 import SEO from '../../seo'
 import Breadcrumb from '../../Atoms/Breadcrumb'
@@ -122,7 +122,7 @@ const SkillTemplate = ({skill, recommended}) => (
                           {item.fields.ogp.ogTitle}
                         </Heading>
                         <InfoTxt visualLevel={2}>
-                          <TextTruncate maxChars={20}>
+                          <TextTruncate>
                             {item.isBook ? (
                               <NavigationLink>
                                 Amazonで詳細をみる
@@ -134,6 +134,10 @@ const SkillTemplate = ({skill, recommended}) => (
                         </InfoTxt>
                         {item.isBook ? null : (
                           <DisableTxt className={styles.ogUrl} visualLevel={2}>
+                            <FontAwesomeIcon
+                              className={styles.linkIcon}
+                              icon={faLink}
+                            />
                             {item.url}
                           </DisableTxt>
                         )}
