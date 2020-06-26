@@ -125,14 +125,14 @@ const SkillTemplate = ({skill, recommended}) => (
                   <Heading level={5} className={styles.ogTitle}>
                     {item.fields.ogp.ogTitle}
                   </Heading>
-                  <InfoTxt visualLevel={2}>
-                    <TextTruncate maxChars={25}>
-                      {item.isBook ? (
-                        <NavigationLink>Amazonで詳細をみる</NavigationLink>
-                      ) : (
-                        item.fields.ogp.ogDescription
-                      )}
-                    </TextTruncate>
+                  <InfoTxt visualLevel={2} className={styles.truncateText}>
+                    {/*<TextTruncate maxChars={25}>*/}
+                    {item.isBook ? (
+                      <NavigationLink>Amazonで詳細をみる</NavigationLink>
+                    ) : (
+                      item.fields.ogp.ogDescription
+                    )}
+                    {/*</TextTruncate>*/}
                   </InfoTxt>
                   {item.isBook ? null : (
                     <DisableTxt className={styles.ogUrl} visualLevel={2}>
