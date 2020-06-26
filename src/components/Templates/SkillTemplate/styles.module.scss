@@ -152,10 +152,13 @@
   }
 }
 
+.marginBottom {
+  margin-bottom: 40px;
+}
+
 .ogp {
   border: var(--border);
   border-radius: var(--radius);
-  margin-bottom: 40px;
 }
 
 .top {
@@ -176,7 +179,7 @@
   }
 
   > :last-child {
-    margin: 32px;
+    padding: 32px;
   }
 }
 
@@ -187,8 +190,12 @@
   }
 
   > :last-child {
-    margin: 24px;
+    padding: 24px;
   }
+}
+
+.ogContent {
+  padding: 24px;
 }
 
 .ogTitle {

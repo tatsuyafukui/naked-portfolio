@@ -103,21 +103,72 @@ const SkillTemplate = ({skill, recommended}) => (
           </div>
           <div>
             {recommended.map(item => {
-              const summary = getSummary(item.fields.ogp.twitterCard)
-              return (
-                <div key={item.id} className={styles.ogp}>
-                  <Link to={item.url} target='_blank' rel='noopener noreferrer'>
-                    <MediaObjectLayout
-                      summary={summary}
-                      className={styles[summary]}
+              // ogpがないサイトはリンクのみ
+              if (!item.fields) {
+                return (
+                  <div className={styles.marginBottom}>
+                    <Link
+                      to={item.url}
+                      target='_blank'
+                      rel='noopener noreferrer'
                     >
-                      <div>
-                        <Img
-                          fluid={item.image.childImageSharp.fluid}
-                          alt={item.fields.ogp.ogTitle}
-                        />
-                      </div>
-                      <div>
+                      {item.url}
+                    </Link>
+                  </div>
+                )
+              }
+
+              const summary = getSummary(item.fields.ogp.twitterCard)
+
+              return (
+                <div
+                  key={item.id}
+                  className={[styles.ogp, styles.marginBottom].join(' ')}
+                >
+                  <Link to={item.url} target='_blank' rel='noopener noreferrer'>
+                    {/*　ogpImageがある・なしでコンポーネントを出し分ける　*/}
+                    {!item.image ? (
+                      <MediaObjectLayout
+                        summary={summary}
+                        className={styles[summary]}
+                      >
+                        <div>
+                          <Img
+                            fluid={item.image.childImageSharp.fluid}
+                            alt={item.fields.ogp.ogTitle}
+                          />
+                        </div>
+                        <div>
+                          <Heading level={5} className={styles.ogTitle}>
+                            {item.fields.ogp.ogTitle}
+                          </Heading>
+                          <InfoTxt visualLevel={2}>
+                            <TextTruncate>
+                              {item.isBook ? (
+                                <NavigationLink>
+                                  Amazonで詳細をみる
+                                </NavigationLink>
+                              ) : (
+                                item.fields.ogp.ogDescription
+                              )}
+                            </TextTruncate>
+                          </InfoTxt>
+                          {item.isBook ? null : (
+                            <DisableTxt
+                              className={styles.ogUrl}
+                              visualLevel={2}
+                            >
+                              <FontAwesomeIcon
+                                className={styles.linkIcon}
+                                icon={faLink}
+                              />
+                              {item.url}
+                            </DisableTxt>
+                          )}
+                        </div>
+                      </MediaObjectLayout>
+                    ) : (
+                      <div className={styles.ogContent}>
                         <Heading level={5} className={styles.ogTitle}>
                           {item.fields.ogp.ogTitle}
                         </Heading>
@@ -142,7 +193,7 @@ const SkillTemplate = ({skill, recommended}) => (
                           </DisableTxt>
                         )}
                       </div>
-                    </MediaObjectLayout>
+                    )}
                   </Link>
                 </div>
               )

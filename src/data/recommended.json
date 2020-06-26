@@ -16,5 +16,9 @@
   {
     "skill": "test",
     "url": "https://www.jiji.com/jc/article?k=2020062501009&g=pol"
+  },
+  {
+    "skill": "test",
+    "url": "https://progate.docbase.io/posts/1386804"
   }
 ]
