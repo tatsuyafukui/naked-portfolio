@@ -120,6 +120,32 @@ const SkillTemplate = ({skill, recommended}) => (
 
               const summary = getSummary(item.fields.ogp.twitterCard)
 
+              const ogContent = (
+                <div>
+                  <Heading level={5} className={styles.ogTitle}>
+                    {item.fields.ogp.ogTitle}
+                  </Heading>
+                  <InfoTxt visualLevel={2}>
+                    <TextTruncate maxChars={25}>
+                      {item.isBook ? (
+                        <NavigationLink>Amazonで詳細をみる</NavigationLink>
+                      ) : (
+                        item.fields.ogp.ogDescription
+                      )}
+                    </TextTruncate>
+                  </InfoTxt>
+                  {item.isBook ? null : (
+                    <DisableTxt className={styles.ogUrl} visualLevel={2}>
+                      <FontAwesomeIcon
+                        className={styles.linkIcon}
+                        icon={faLink}
+                      />
+                      {item.url}
+                    </DisableTxt>
+                  )}
+                </div>
+              )
+
               return (
                 <div
                   key={item.id}
@@ -127,7 +153,7 @@ const SkillTemplate = ({skill, recommended}) => (
                 >
                   <Link to={item.url} target='_blank' rel='noopener noreferrer'>
                     {/*　ogpImageがある・なしでコンポーネントを出し分ける　*/}
-                    {!item.image ? (
+                    {item.image ? (
                       <MediaObjectLayout
                         summary={summary}
                         className={styles[summary]}
@@ -138,61 +164,10 @@ const SkillTemplate = ({skill, recommended}) => (
                             alt={item.fields.ogp.ogTitle}
                           />
                         </div>
-                        <div>
-                          <Heading level={5} className={styles.ogTitle}>
-                            {item.fields.ogp.ogTitle}
-                          </Heading>
-                          <InfoTxt visualLevel={2}>
-                            <TextTruncate>
-                              {item.isBook ? (
-                                <NavigationLink>
-                                  Amazonで詳細をみる
-                                </NavigationLink>
-                              ) : (
-                                item.fields.ogp.ogDescription
-                              )}
-                            </TextTruncate>
-                          </InfoTxt>
-                          {item.isBook ? null : (
-                            <DisableTxt
-                              className={styles.ogUrl}
-                              visualLevel={2}
-                            >
-                              <FontAwesomeIcon
-                                className={styles.linkIcon}
-                                icon={faLink}
-                              />
-                              {item.url}
-                            </DisableTxt>
-                          )}
-                        </div>
+                        {ogContent}
                       </MediaObjectLayout>
                     ) : (
-                      <div className={styles.ogContent}>
-                        <Heading level={5} className={styles.ogTitle}>
-                          {item.fields.ogp.ogTitle}
-                        </Heading>
-                        <InfoTxt visualLevel={2}>
-                          <TextTruncate>
-                            {item.isBook ? (
-                              <NavigationLink>
-                                Amazonで詳細をみる
-                              </NavigationLink>
-                            ) : (
-                              item.fields.ogp.ogDescription
-                            )}
-                          </TextTruncate>
-                        </InfoTxt>
-                        {item.isBook ? null : (
-                          <DisableTxt className={styles.ogUrl} visualLevel={2}>
-                            <FontAwesomeIcon
-                              className={styles.linkIcon}
-                              icon={faLink}
-                            />
-                            {item.url}
-                          </DisableTxt>
-                        )}
-                      </div>
+                      ogContent
                     )}
                   </Link>
                 </div>
