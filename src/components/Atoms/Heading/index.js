@@ -23,14 +23,14 @@ const headingFactory = role => ({
 const HeadingPresenter = headingFactory('normal')
 const BoldHeadingPresenter = headingFactory('bold')
 
-export const HeadingContainer = ({visualLevel, level, presenter, ...props}) => {
+export const HeadingContainer = ({visualLevel, level, className, presenter, ...props}) => {
   level = Math.max(1, Math.min(6, level))
   visualLevel = Math.max(
     1,
     Math.min(6, typeof visualLevel !== 'undefined' ? visualLevel : level)
   )
   const tag = `h${level}`
-  return presenter({tag, visualLevel, ...props})
+  return presenter({tag, visualLevel, className, ...props})
 }
 
 const Heading = containPresenter(HeadingContainer, HeadingPresenter)
