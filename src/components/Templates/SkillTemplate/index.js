@@ -125,13 +125,13 @@ const SkillTemplate = ({skill, recommended}) => (
                       {/*</TextTruncate>*/}
                     </InfoTxt>
                     {item.isBook ? null : (
-                      <DisableTxt className={styles.ogUrl} visualLevel={2}>
+                      <div className={styles.ogUrl} visualLevel={2}>
                         <FontAwesomeIcon
                           className={styles.linkIcon}
                           icon={faLink}
                         />
-                        {item.url}
-                      </DisableTxt>
+                        <DisableTxt className={styles.truncateText}>{item.url}</DisableTxt>
+                      </div>
                     )}
                   </div>
                 )
@@ -152,6 +152,7 @@ const SkillTemplate = ({skill, recommended}) => (
                             <Img
                               fluid={item.image.childImageSharp.fluid}
                               alt={item.fields.ogp.ogTitle}
+                              className={styles.ogImage}
                             />
                           </div>
                           {ogContent}
