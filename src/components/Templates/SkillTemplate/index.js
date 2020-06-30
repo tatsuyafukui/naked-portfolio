@@ -52,21 +52,42 @@ const SkillTemplate = ({skill, recommended}) => (
         <section>
           <section className={styles.section}>
             <section className={styles.block}>
-              <Txt className={styles.content} dangerouslySetInnerHTML={{__html: skill.overview}} />
-              <Img className={[styles.image, styles.content].join(' ')} fluid={skill.image.childImageSharp.fluid} />
+              <Txt
+                className={styles.content}
+                dangerouslySetInnerHTML={{__html: skill.overview}}
+              />
+              <Img
+                className={[styles.image, styles.content].join(' ')}
+                fluid={skill.image.childImageSharp.fluid}
+              />
             </section>
             <section className={styles.block}>
-              <BoldHeading level={2} visualLevel={3} className={styles.heading3}>学ぶ目的</BoldHeading>
-              <Txt dangerouslySetInnerHTML={{__html: skill.purpose}} className={styles.content} />
+              <BoldHeading
+                level={2}
+                visualLevel={3}
+                className={styles.heading3}
+              >
+                学ぶ目的
+              </BoldHeading>
+              <Txt
+                dangerouslySetInnerHTML={{__html: skill.purpose}}
+                className={styles.content}
+              />
             </section>
           </section>
           <section className={styles.section}>
-            <Heading level={2} className={styles.heading2}>学んでみよう</Heading>
+            <Heading level={2} className={styles.heading2}>
+              学んでみよう
+            </Heading>
             <section className={styles.block}>
-              <BoldHeading level={3} className={styles.heading3}>学習の目安</BoldHeading>
+              <BoldHeading level={3} className={styles.heading3}>
+                学習の目安
+              </BoldHeading>
               <List className={styles.guidelines}>
                 <ListItem className={styles.guidelinesItem}>
-                  <BoldHeading level={4} className={styles.heading4}>基礎</BoldHeading>
+                  <BoldHeading level={4} className={styles.heading4}>
+                    基礎
+                  </BoldHeading>
                   <List>
                     {skill.standard.basic.map(item => (
                       <ListItem key={item} className={styles.listItem}>
@@ -76,7 +97,9 @@ const SkillTemplate = ({skill, recommended}) => (
                   </List>
                 </ListItem>
                 <ListItem className={styles.guidelinesItem}>
-                  <BoldHeading level={4} className={styles.heading4}>応用</BoldHeading>
+                  <BoldHeading level={4} className={styles.heading4}>
+                    応用
+                  </BoldHeading>
                   <List>
                     {skill.standard.practical.map(item => (
                       <ListItem key={item} className={styles.listItem}>
@@ -88,8 +111,13 @@ const SkillTemplate = ({skill, recommended}) => (
               </List>
             </section>
             <section className={styles.section}>
-              <BoldHeading level={3} className={styles.heading3}>全体像をつかむには</BoldHeading>
-              <Txt dangerouslySetInnerHTML={{__html: skill.overall}} className={styles.content} />
+              <BoldHeading level={3} className={styles.heading3}>
+                全体像をつかむには
+              </BoldHeading>
+              <Txt
+                dangerouslySetInnerHTML={{__html: skill.overall}}
+                className={styles.content}
+              />
             </section>
             <div>
               {recommended.map(item => {
@@ -130,7 +158,9 @@ const SkillTemplate = ({skill, recommended}) => (
                           className={styles.linkIcon}
                           icon={faLink}
                         />
-                        <DisableTxt className={styles.truncateText}>{item.url}</DisableTxt>
+                        <DisableTxt className={styles.truncateText}>
+                          {item.url}
+                        </DisableTxt>
                       </div>
                     )}
                   </div>
@@ -141,7 +171,11 @@ const SkillTemplate = ({skill, recommended}) => (
                     key={item.id}
                     className={[styles.ogp, styles.marginBottom].join(' ')}
                   >
-                    <Link to={item.url} target='_blank' rel='noopener noreferrer'>
+                    <Link
+                      to={item.url}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
                       {/*　ogpImageがある・なしでコンポーネントを出し分ける　*/}
                       {item.image ? (
                         <MediaObjectLayout
