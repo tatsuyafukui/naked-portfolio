@@ -49,7 +49,7 @@ const SkillTemplate = ({skill, recommended}) => (
             <Img fluid={skill.scene.image.childImageSharp.fluid} />
           </Back>
         </Overlay>
-        <section>
+        <section className={styles.mainSection}>
           <section className={styles.section}>
             <section className={styles.block}>
               <Txt

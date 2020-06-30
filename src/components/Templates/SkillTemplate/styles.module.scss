@@ -36,6 +36,12 @@
   }
 }
 
+.mainSection {
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
 .section,
 .block {
   display: flex;
