@@ -50,14 +50,39 @@
   border-bottom: var(--border);
   margin-bottom: 32px;
   padding-bottom: 16px;
+
+  @include mediaQuery(md) {
+    margin-bottom: 4.16%;
+  }
+
+  @include mediaQuery(sm) {
+    margin-bottom: 8.53%;
+    padding-bottom: 12px;
+  }
 }
 
 .heading3 {
   margin-bottom: 24px;
+
+  @include mediaQuery(md) {
+    margin-bottom: 3.125%;
+  }
+
+  @include mediaQuery(sm) {
+    margin-bottom: 6.4%;
+  }
 }
 
 .heading4 {
   margin-bottom: 16px;
+
+  @include mediaQuery(md) {
+    margin-bottom: 2.08%;
+  }
+
+  @include mediaQuery(sm) {
+    margin-bottom: 4.26%;
+  }
 }
 
 .section {
