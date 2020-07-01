@@ -2,7 +2,6 @@
 
 .navigationLink {
   line-height: var(--line-height-s);
-  text-decoration: none;
 
   span {
     padding-right: var(--space);
@@ -10,5 +9,5 @@
 }
 
 .navigationLink:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }

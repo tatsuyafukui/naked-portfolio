@@ -68,7 +68,12 @@ template {
 a {
   background-color: transparent;
   text-decoration: none;
+  color: #0366D6;
   -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 a:active,
