@@ -5,20 +5,10 @@ import Ogp from '../../Organisms/Ogp'
 
 const OgpList = ({ogpList}) => (
   <div>
-    {ogpList.map(item => {
-      // ogpがないサイトはリンクのみ
-      if (!item.fields) {
-        return (
-          <div className={styles.marginBottom}>
-            <Link to={item.url} target='_blank' rel='noopener noreferrer'>
-              {item.url}
-            </Link>
-          </div>
-        )
-      }
-
-      return (
-        <div key={item.id} className={styles.marginBottom}>
+    {ogpList.map(item => (
+      <div key={item.id} className={styles.marginBottom}>
+        {/* ogpがないサイトはリンクのみ */}
+        {item.fields ? (
           <Ogp
             title={item.fields.ogp.ogTitle}
             description={item.fields.ogp.ogDescription}
@@ -27,9 +17,13 @@ const OgpList = ({ogpList}) => (
             image={item.image.childImageSharp.fluid}
             twitterCard={item.fields.ogp.twitterCard}
           />
-        </div>
-      )
-    })}
+        ) : (
+          <Link to={item.url} target='_blank' rel='noopener noreferrer'>
+            {item.url}
+          </Link>
+        )}
+      </div>
+    ))}
   </div>
 )
 export default OgpList
