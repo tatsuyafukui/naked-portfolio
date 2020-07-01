@@ -28,7 +28,7 @@ const SceneTemplate = ({scene, skills, open, onClick}) => (
               <FontAwesomeIcon className={styles.icon} icon={faAngleRight} />
             }
           >
-            <Link to='/'>
+            <Link className={styles.link} to='/'>
               <Txt>Home</Txt>
             </Link>
             <Txt>{scene.id}</Txt>

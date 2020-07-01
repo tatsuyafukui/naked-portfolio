@@ -2,6 +2,10 @@
 
 .scene {
   display: block;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .layout {
