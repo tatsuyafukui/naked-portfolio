@@ -38,8 +38,6 @@ export const OgpContentContainer = ({
   ...props
 }) => {
   let ogUrlClass = styles.ogUrl
-
-  // TODO: add test
   if (isBook) {
     description = (
       <NavigationLink className={styles.navigationLink} to={url}>
@@ -60,6 +58,7 @@ OgpContent.propTypes = {
   title: PropTypes.node,
   description: PropTypes.node,
   url: PropTypes.node,
+  isBook: PropTypes.bool,
 }
 
 OgpContent.defaultProps = {

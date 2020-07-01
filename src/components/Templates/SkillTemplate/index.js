@@ -7,15 +7,13 @@ import SEO from '../../seo'
 import Breadcrumb from '../../Atoms/Breadcrumb'
 import Container from '../../Atoms/Container'
 import Link from '../../Atoms/Link'
-import Txt, {DisableTxt, InfoTxt} from '../../Atoms/Txt'
+import Txt from '../../Atoms/Txt'
 import Overlay, {Front, Back} from '../../Atoms/Overlay'
 import Heading, {BoldHeading} from '../../Atoms/Heading'
 import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
 import List, {ListItem} from '../../Atoms/List'
-import MediaObjectLayout from '../../Atoms/MediaObjectLayout'
-import NavigationLink from '../../Molecules/NavigationLink'
-import OgpContent from '../../Molecules/OgpContent'
+import OgpList from '../../Organisms/OgpList'
 
 const SkillTemplate = ({skill, recommended}) => (
   <>
@@ -120,67 +118,7 @@ const SkillTemplate = ({skill, recommended}) => (
                 className={styles.content}
               />
             </section>
-            <div>
-              {recommended.map(item => {
-                // ogpがないサイトはリンクのみ
-                if (!item.fields) {
-                  return (
-                    <div className={styles.marginBottom}>
-                      <Link
-                        to={item.url}
-                        target='_blank'
-                        rel='noopener noreferrer'
-                      >
-                        {item.url}
-                      </Link>
-                    </div>
-                  )
-                }
-
-                const summary = getSummary(item.fields.ogp.twitterCard)
-
-                const ogContent = (
-                  <OgpContent
-                    title={item.fields.ogp.ogTitle}
-                    description={item.fields.ogp.ogDescription}
-                    url={item.url}
-                    isBook={item.isBook}
-                  />
-                )
-
-                return (
-                  <div
-                    key={item.id}
-                    className={[styles.ogp, styles.marginBottom].join(' ')}
-                  >
-                    <Link
-                      to={item.url}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      {/*　ogpImageがある・なしでコンポーネントを出し分ける　*/}
-                      {item.image ? (
-                        <MediaObjectLayout
-                          summary={summary}
-                          className={styles[summary]}
-                        >
-                          <div>
-                            <Img
-                              fluid={item.image.childImageSharp.fluid}
-                              alt={item.fields.ogp.ogTitle}
-                              className={styles.ogImage}
-                            />
-                          </div>
-                          {ogContent}
-                        </MediaObjectLayout>
-                      ) : (
-                        ogContent
-                      )}
-                    </Link>
-                  </div>
-                )
-              })}
-            </div>
+            <OgpList ogpList={recommended} />
           </section>
         </section>
       </Container>
@@ -190,14 +128,3 @@ const SkillTemplate = ({skill, recommended}) => (
 )
 
 export default SkillTemplate
-
-const getSummary = twitterCard => {
-  switch (twitterCard) {
-    case 'summary_large_image':
-      return 'top'
-    case 'summary':
-      return 'left'
-    default:
-      return 'right'
-  }
-}
