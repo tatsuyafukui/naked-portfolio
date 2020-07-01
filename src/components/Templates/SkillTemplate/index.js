@@ -15,6 +15,7 @@ import Footer from '../../Organisms/Footer'
 import List, {ListItem} from '../../Atoms/List'
 import MediaObjectLayout from '../../Atoms/MediaObjectLayout'
 import NavigationLink from '../../Molecules/NavigationLink'
+import OgpContent from '../../Molecules/OgpContent'
 
 const SkillTemplate = ({skill, recommended}) => (
   <>
@@ -139,31 +140,12 @@ const SkillTemplate = ({skill, recommended}) => (
                 const summary = getSummary(item.fields.ogp.twitterCard)
 
                 const ogContent = (
-                  <div className={styles.ogContent}>
-                    <Heading level={5} className={styles.ogTitle}>
-                      {item.fields.ogp.ogTitle}
-                    </Heading>
-                    <InfoTxt visualLevel={2} className={styles.truncateText}>
-                      {/*<TextTruncate maxChars={25}>*/}
-                      {item.isBook ? (
-                        <NavigationLink>Amazonで詳細をみる</NavigationLink>
-                      ) : (
-                        item.fields.ogp.ogDescription
-                      )}
-                      {/*</TextTruncate>*/}
-                    </InfoTxt>
-                    {item.isBook ? null : (
-                      <div className={styles.ogUrl} visualLevel={2}>
-                        <FontAwesomeIcon
-                          className={styles.linkIcon}
-                          icon={faLink}
-                        />
-                        <DisableTxt className={styles.truncateText}>
-                          {item.url}
-                        </DisableTxt>
-                      </div>
-                    )}
-                  </div>
+                  <OgpContent
+                    title={item.fields.ogp.ogTitle}
+                    description={item.fields.ogp.ogDescription}
+                    url={item.url}
+                    isBook={item.isBook}
+                  />
                 )
 
                 return (
@@ -210,7 +192,12 @@ const SkillTemplate = ({skill, recommended}) => (
 export default SkillTemplate
 
 const getSummary = twitterCard => {
-  if (twitterCard === 'summary_large_image') return 'top'
-  if (twitterCard === 'summary') return 'left'
-  return 'right'
+  switch (twitterCard) {
+    case 'summary_large_image':
+      return 'top'
+    case 'summary':
+      return 'left'
+    default:
+      return 'right'
+  }
 }

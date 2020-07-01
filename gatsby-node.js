@@ -36,7 +36,7 @@ exports.onCreateNode = async ({node, actions, store, cache, createNodeId}) => {
 
     createNodeField({
       node,
-      name: `ogp`,
+      name: 'ogp',
       value: results,
     })
   }
