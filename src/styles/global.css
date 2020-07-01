@@ -67,8 +67,8 @@ template {
 
 a {
   background-color: transparent;
+  color: #0366d6;
   text-decoration: none;
-  color: #0366D6;
   -webkit-text-decoration-skip: objects;
 }
 
