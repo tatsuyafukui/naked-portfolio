@@ -12,7 +12,6 @@ const OgpContentPresenter = ({
   title,
   description,
   url,
-  ogUrlClass,
   className,
   ...props
 }) => (
@@ -23,10 +22,7 @@ const OgpContentPresenter = ({
     <InfoTxt visualLevel={2} className={styles.truncateText}>
       {description}
     </InfoTxt>
-    <div className={ogUrlClass}>
-      <FontAwesomeIcon className={styles.linkIcon} icon={faLink} />
-      <DisableTxt className={styles.truncateText}>{url}</DisableTxt>
-    </div>
+    {url}
   </div>
 )
 
@@ -37,17 +33,23 @@ export const OgpContentContainer = ({
   presenter,
   ...props
 }) => {
-  let ogUrlClass = styles.ogUrl
   if (isBook) {
     description = (
       <NavigationLink className={styles.navigationLink} to={url}>
         Amazonで詳細をみる
       </NavigationLink>
     )
-    ogUrlClass = styles.hidden
+    url = null
+  } else {
+    url = (
+      <div className={styles.ogUrl}>
+        <FontAwesomeIcon className={styles.linkIcon} icon={faLink} />
+        <DisableTxt className={styles.truncateText}>{url}</DisableTxt>
+      </div>
+    )
   }
 
-  return presenter({description, url, ogUrlClass, ...props})
+  return presenter({description, url, ...props})
 }
 
 const OgpContent = containPresenter(OgpContentContainer, OgpContentPresenter)

@@ -50,7 +50,7 @@ export const OgpContainer = ({
     )
   }
 
-  return presenter({ogContent, ...props})
+  return presenter({url, ogContent, ...props})
 }
 
 const Ogp = containPresenter(OgpContainer, OgpPresenter)
@@ -68,7 +68,6 @@ Ogp.propTypes = {
 
 Ogp.defaultProps = {
   isBook: false,
-  twitterCard: 'right',
 }
 
 export const getSummary = twitterCard => {

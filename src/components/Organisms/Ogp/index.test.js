@@ -1,6 +1,10 @@
 import React from 'react'
 import Ogp, {getSummary} from './index'
-import renderer from 'react-test-renderer'
+import data from '../../../mock/data/gatsby-img.json'
+import styles from './styles.module.scss'
+import Enzyme, {mount} from 'enzyme'
+import Adapter from 'enzyme-adapter-react-16'
+Enzyme.configure({adapter: new Adapter()})
 
 describe('関数getSummary', () => {
   it('デフォルトの返り値はright', () => {
@@ -21,9 +25,21 @@ describe('関数getSummary', () => {
 
 describe('Ogp', () => {
   it('imageが無い場合はMediaObjectLayoutをレンダリングしない', () => {
-    const tree = renderer
-      .create(<Ogp title={'Title'} description={'description'} url={'url'} />)
-      .toJSON()
-    expect(tree).toMatchSnapshot()
+    const wrapper = mount(
+      <Ogp title={'Title'} description={'description'} url={'url'} />
+    )
+    expect(wrapper.find(`div.${styles.right}`)).toHaveLength(0)
+  })
+
+  it('imageがある場合はMediaObjectLayoutをレンダリングする', () => {
+    const wrapper = mount(
+      <Ogp
+        title={'Title'}
+        description={'description'}
+        url={'url'}
+        image={data.square.fluid}
+      />
+    )
+    expect(wrapper.find(`div.${styles.right}`)).toHaveLength(1)
   })
 })
