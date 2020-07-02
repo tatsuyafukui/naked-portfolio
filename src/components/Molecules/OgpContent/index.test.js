@@ -28,6 +28,7 @@ describe('OgpContent', () => {
     expect(wrapper.find(`div.${styles.ogUrl}`)).toHaveLength(1)
   })
 
+  // TODO test
   it('書籍のときはdescriptionを「Amazonで詳細を見る」に上書き', () => {
     const {description} = OgpContentContainer({
       presenter,

@@ -1,0 +1,11 @@
+{
+  "square": {
+    "fluid": {
+      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsSAAALEgHS3X78AAABw0lEQVQ4y8WU3StDYRjA9z/4K9wjN0IoKTeSsrmh+WhEhhpZDMVq5GLKWs2Nz9QiwgWSXJhIJBeEyGwnduzobOd933Pe83p2aDHZRsnp6Zzn9D6/83wfHZbVX4vub+EokqOSjAhNC5aQAtZwl7BCFFVlsQsURNKA380Zgyc4HO30TPTNiiJWVJbgPxGWKdta8i26NraWfTcXD0RhJ77LbsNoc1k/xAKvH/lEGI4rMk1dVfaOyhFDtlkIR9+isBgcrqEFUCCjb2BIDNP6wh6eC0sR1FDUywXCCCvA7K0fmSuGmZYIJt/BhNbmWW6vudCT2FRifeQEEmOZb/sUYMoYmKEkcF2eJeDnBUFqKO4N3PMYysDYWNeUvdWdKmxCjfk9gfsQHxIbS6wCLwIwPb6iz2rngmHKkhRMg/VZZs7PIwmDZyi7qbSvpcx2dxWEr0g4SauU2ITY29znxzdO60xBhr61fHBn9ZBSFeTrkH2CJa2wBztn4G3SNm8s6H5+eok5RDIcpRhPKAaYeuxeQ45507tfk9sR9D9r5aVpLIbWA2j12tyupdoxUO8UIyRhqlLMNuxAfLZB//FKvq1UPJZ/+hkkkVenQEzECwtLWgAAAABJRU5ErkJggg==",
+      "aspectRatio": 1,
+      "src": "/static/818dfdccdc5eada6fdebbbb091e72959/bc59e/icon.png",
+      "srcSet": "/static/818dfdccdc5eada6fdebbbb091e72959/69585/icon.png 200w,\n/static/818dfdccdc5eada6fdebbbb091e72959/497c6/icon.png 400w,\n/static/818dfdccdc5eada6fdebbbb091e72959/bc59e/icon.png 512w",
+      "sizes": "(max-width: 512px) 100vw, 512px"
+    }
+  }
+}

@@ -7,7 +7,7 @@ import Link from '../../Atoms/Link'
 import MediaObjectLayout from '../../Atoms/MediaObjectLayout'
 import Img from 'gatsby-image'
 
-const OgpPresenter = ({url, ogContent, className, ...props}) => (
+const OgpPresenter = ({url, ogpContent, className, ...props}) => (
   <Link
     className={[styles.ogp, className].join(' ')}
     to={url}
@@ -15,7 +15,7 @@ const OgpPresenter = ({url, ogContent, className, ...props}) => (
     rel='noopener noreferrer'
     {...props}
   >
-    {ogContent}
+    {ogpContent}
   </Link>
 )
 
@@ -31,7 +31,7 @@ export const OgpContainer = ({
 }) => {
   const summary = getSummary(twitterCard)
 
-  let ogContent = (
+  let ogpContent = (
     <OgpContent
       title={title}
       description={description}
@@ -42,15 +42,15 @@ export const OgpContainer = ({
 
   // ogpImageがある場合はMediaObjectLayoutで画像を表示
   if (image) {
-    ogContent = (
+    ogpContent = (
       <MediaObjectLayout summary={summary} className={styles[summary]}>
         <Img fluid={image} alt={title} />
-        {ogContent}
+        {ogpContent}
       </MediaObjectLayout>
     )
   }
 
-  return presenter({url, ogContent, ...props})
+  return presenter({url, ogpContent, ...props})
 }
 
 const Ogp = containPresenter(OgpContainer, OgpPresenter)

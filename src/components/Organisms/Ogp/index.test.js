@@ -1,10 +1,11 @@
 import React from 'react'
-import Ogp, {getSummary} from './index'
+import Ogp, {getSummary, OgpContainer} from './index'
 import data from '../../../mock/data/gatsby-img.json'
-import styles from './styles.module.scss'
 import Enzyme, {mount} from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
+
 Enzyme.configure({adapter: new Adapter()})
+const presenter = props => props
 
 describe('関数getSummary', () => {
   it('デフォルトの返り値はright', () => {
@@ -25,21 +26,25 @@ describe('関数getSummary', () => {
 
 describe('Ogp', () => {
   it('imageが無い場合はMediaObjectLayoutをレンダリングしない', () => {
-    const wrapper = mount(
-      <Ogp title={'Title'} description={'description'} url={'url'} />
-    )
-    expect(wrapper.find(`div.${styles.right}`)).toHaveLength(0)
+    const {ogpContent} = OgpContainer({
+      presenter,
+      title: 'Title',
+      description: 'description',
+      url: 'url',
+    })
+    const wrapper = mount(ogpContent)
+    expect(wrapper.find(`div.right`)).toHaveLength(0)
   })
 
   it('imageがある場合はMediaObjectLayoutをレンダリングする', () => {
-    const wrapper = mount(
-      <Ogp
-        title={'Title'}
-        description={'description'}
-        url={'url'}
-        image={data.square.fluid}
-      />
-    )
-    expect(wrapper.find(`div.${styles.right}`)).toHaveLength(1)
+    const {ogpContent} = OgpContainer({
+      presenter,
+      title: 'Title',
+      description: 'description',
+      url: 'url',
+      image: data.square.fluid,
+    })
+    const wrapper = mount(ogpContent)
+    expect(wrapper.find(`div.right`)).toHaveLength(1)
   })
 })
