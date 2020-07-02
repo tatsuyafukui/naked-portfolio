@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styles from './styles.module.scss'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faLink} from '@fortawesome/free-solid-svg-icons'
-import Heading, {BoldHeading} from '../../Atoms/Heading'
+import Heading from '../../Atoms/Heading'
 import {DisableTxt, InfoTxt} from '../../Atoms/Txt'
 import {containPresenter} from '../../utils/HoC'
 import NavigationLink from '../NavigationLink'
@@ -35,8 +35,8 @@ export const OgpContentContainer = ({
 }) => {
   if (isBook) {
     description = (
-      <NavigationLink className={styles.navigationLink} to={url}>
-        Amazonで詳細をみる
+      <NavigationLink tag={'span'} className={styles.navigationLink} to={url}>
+        Amazonで詳細を見る
       </NavigationLink>
     )
     url = null

@@ -5,7 +5,6 @@ import Enzyme, {mount} from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 
 Enzyme.configure({adapter: new Adapter()})
-const presenter = props => props
 
 describe('関数getSummary', () => {
   it('デフォルトの返り値はright', () => {
@@ -25,6 +24,7 @@ describe('関数getSummary', () => {
 })
 
 describe('Ogp', () => {
+  const presenter = props => props
   it('imageが無い場合はMediaObjectLayoutをレンダリングしない', () => {
     const {ogpContent} = OgpContainer({
       presenter,

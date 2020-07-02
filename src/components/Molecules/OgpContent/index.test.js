@@ -1,8 +1,7 @@
 import React from 'react'
 import {OgpContentContainer} from './index'
 import styles from './styles.module.scss'
-import NavigationLink from '../NavigationLink'
-import Enzyme, {shallow} from 'enzyme'
+import Enzyme, {shallow, mount} from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 Enzyme.configure({adapter: new Adapter()})
 
@@ -28,7 +27,6 @@ describe('OgpContent', () => {
     expect(wrapper.find(`div.${styles.ogUrl}`)).toHaveLength(1)
   })
 
-  // TODO test
   it('書籍のときはdescriptionを「Amazonで詳細を見る」に上書き', () => {
     const {description} = OgpContentContainer({
       presenter,
@@ -36,10 +34,9 @@ describe('OgpContent', () => {
       url: 'url',
       description: 'description',
     })
-    expect(description).toEqual(
-      <NavigationLink className={styles.navigationLink} to={'url'}>
-        Amazonで詳細をみる
-      </NavigationLink>
+    const wrapper = mount(description)
+    expect(wrapper.find('.navigationLink').first().text()).toEqual(
+      'Amazonで詳細を見る'
     )
   })
 })
