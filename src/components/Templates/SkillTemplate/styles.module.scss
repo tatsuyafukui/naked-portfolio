@@ -154,21 +154,18 @@
 span {
   &[data-type] {
     border-radius: 5px;
-    white-space: nowrap;
     margin: 0 2px;
+    padding: 1px 6px;
+    white-space: nowrap;
   }
 
   &[data-type='term'] {
-    padding: 1px 6px;
-    color: #b85600;
     background: #fffaf0;
+    color: #b85600;
   }
 
   &[data-type='search'] {
-    padding: 1px 6px 1px 24px;
-    background: url(/static/search-solid.svg) var(--color-background) no-repeat;
-    background-size: 12px;
-    background-position: 8px center;
+    background: var(--color-background);
     border: var(--border);
   }
 }
