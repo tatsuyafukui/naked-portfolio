@@ -24,7 +24,7 @@ describe('OgpContent', () => {
       url: 'url',
     })
     const wrapper = shallow(url)
-    expect(wrapper.find(`div.${styles.ogUrl}`)).toHaveLength(1)
+    expect(wrapper.find('div.ogUrl')).toHaveLength(1)
   })
 
   it('書籍のときはdescriptionを「Amazonで詳細を見る」に上書き', () => {
