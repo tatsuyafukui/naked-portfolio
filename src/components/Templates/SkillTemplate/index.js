@@ -1,7 +1,7 @@
 import React from 'react'
 import Img from 'gatsby-image'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faAngleRight, faLink} from '@fortawesome/free-solid-svg-icons'
+import {faAngleRight} from '@fortawesome/free-solid-svg-icons'
 import styles from './styles.module.scss'
 import SEO from '../../seo'
 import Breadcrumb from '../../Atoms/Breadcrumb'
