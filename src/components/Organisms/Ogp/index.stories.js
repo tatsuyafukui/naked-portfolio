@@ -1,7 +1,7 @@
 import React from 'react'
 import {storiesOf} from '@storybook/react'
 import Ogp from './index'
-import data from '../../../mock/data/image'
+import data from '../../../mock/data/gatsby-img.json'
 
 storiesOf('Organisms/Ogp', module)
   .add('Default', () => (
@@ -11,7 +11,7 @@ storiesOf('Organisms/Ogp', module)
       url={'https://prog-8.com'}
       isBook={false}
       twitterCard={'summary'}
-      image={data.imageSharp.fluid}
+      image={data.square.fluid}
     />
   ))
   .add('Book', () => (
@@ -20,16 +20,17 @@ storiesOf('Organisms/Ogp', module)
       description={'description'}
       url={'https://prog-8.com'}
       isBook={true}
-      image={data.imageSharp.fluid}
+      image={data.book.fluid}
     />
   ))
   .add('twitterCard is summary_large_image', () => (
     <Ogp
+      style={{maxWidth: '800px'}}
       title={'Title'}
       description={'description'}
       url={'https://prog-8.com'}
       twitterCard={'summary_large_image'}
-      image={data.imageSharp.fluid}
+      image={data.summaryLarge.fluid}
     />
   ))
   .add('twitterCard is summary', () => (
@@ -38,6 +39,6 @@ storiesOf('Organisms/Ogp', module)
       description={'description'}
       url={'https://prog-8.com'}
       twitterCard={'summary'}
-      image={data.imageSharp.fluid}
+      image={data.square.fluid}
     />
   ))

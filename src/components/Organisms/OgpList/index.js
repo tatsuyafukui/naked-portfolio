@@ -3,8 +3,8 @@ import styles from './styles.module.scss'
 import Link from '../../Atoms/Link'
 import Ogp from '../../Organisms/Ogp'
 
-const OgpList = ({ogpList}) => (
-  <div>
+const OgpList = ({ogpList, ...props}) => (
+  <div {...props}>
     {ogpList.map(item => (
       <div key={item.id} className={styles.marginBottom}>
         {/* ogpがないサイトはリンクのみ */}
