@@ -150,3 +150,22 @@
     }
   }
 }
+
+span {
+  &[data-type] {
+    border-radius: 5px;
+    margin: 0 2px;
+    padding: 1px 6px;
+    white-space: nowrap;
+  }
+
+  &[data-type='term'] {
+    background: #fffaf0;
+    color: #b85600;
+  }
+
+  &[data-type='search'] {
+    background: var(--color-background);
+    border: var(--border);
+  }
+}
