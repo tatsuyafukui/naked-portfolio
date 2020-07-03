@@ -18,8 +18,7 @@ export const TextTruncateContainer = ({
     children.length > maxChars
   ) {
     children = children.slice(0, maxChars) + ' ... '
-    children = React.Children.toArray(children)
-    children.push(truncateText)
+    children = React.Children.toArray(children).push(truncateText)
   }
 
   return presenter({children})
