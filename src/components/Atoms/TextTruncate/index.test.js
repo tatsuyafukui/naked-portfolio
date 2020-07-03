@@ -10,9 +10,9 @@ describe('Overwrap', () => {
       presenter,
       maxChars: 0,
       children: TEST_TEXT,
-      truncateText: '...',
+      truncateText: '続きを見る',
     })
-    expect(children).toEqual(['', '...'])
+    expect(children).toEqual([' ... ', '続きを見る'])
   })
 
   it('maxCharsを超えていた場合、maxCharsに指定した文字数のあとを省略：境界値（上限）', () => {
@@ -20,11 +20,11 @@ describe('Overwrap', () => {
       presenter,
       maxChars: 54,
       children: TEST_TEXT,
-      truncateText: '...',
+      truncateText: '続きを見る',
     })
     expect(children).toEqual([
-      'Test text. Test text. Test text. Test text. Test text.',
-      '...',
+      'Test text. Test text. Test text. Test text. Test text. ... ',
+      '続きを見る',
     ])
   })
 
@@ -33,7 +33,7 @@ describe('Overwrap', () => {
       presenter,
       maxChars: 55,
       children: TEST_TEXT,
-      truncateText: '...',
+      truncateText: '続きを見る',
     })
     expect(children).toBe(
       'Test text. Test text. Test text. Test text. Test text. '
@@ -45,7 +45,7 @@ describe('Overwrap', () => {
       presenter,
       maxChars: -1,
       children: TEST_TEXT,
-      truncateText: '...',
+      truncateText: '続きを見る',
     })
     expect(children).toBe(
       'Test text. Test text. Test text. Test text. Test text. '

@@ -60,7 +60,7 @@ const SceneTemplate = ({scene, skills, open, onClick}) => (
                     className={styles.button}
                     onClick={onClick}
                   >
-                    <InfoTxt>...続きを読む</InfoTxt>
+                    <InfoTxt>続きを読む</InfoTxt>
                   </button>
                 }
               >
