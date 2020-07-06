@@ -13,8 +13,11 @@ const OgpList = ({ogpList, ...props}) => (
             title={item.fields.ogp.ogTitle}
             description={item.fields.ogp.ogDescription}
             url={item.url}
-            isBook={item.isBook}
-            image={item.image.childImageSharp.fluid}
+            isbn={item.isbn}
+            image={
+              item.fields.ogp.ogImage &&
+              item.fields.ogp.ogImage.childImageSharp.fluid
+            }
             twitterCard={item.fields.ogp.twitterCard}
           />
         ) : (

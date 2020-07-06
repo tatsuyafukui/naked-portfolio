@@ -9,13 +9,13 @@ Enzyme.configure({adapter: new Adapter()})
 describe('OgpList', () => {
   it('ogpがないサイトはリンクのみ表示する', () => {
     const wrapper = mount(<OgpList ogpList={[data.notOgp]} />)
-    expect(wrapper.find(`div.ogContent`)).toHaveLength(0)
+    expect(wrapper.find(`div.ogBody`)).toHaveLength(0)
   })
 
   it('ogpがあるサイトはOGPコンポーネントを表示する', () => {
     const ogpList = [data.bookOgp, data.progateOgp, data.summaryOgp]
 
     const wrapper = mount(<OgpList ogpList={ogpList} />)
-    expect(wrapper.find(`div.ogContent`)).toHaveLength(3)
+    expect(wrapper.find(`div.ogBody`)).toHaveLength(3)
   })
 })

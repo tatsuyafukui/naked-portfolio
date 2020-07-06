@@ -13,10 +13,10 @@ exports.onCreateNode = async ({node, actions, store, cache, createNodeId}) => {
     })
 
     // Amazonはogp画像が正常に設定されていないので、ISBNから画像URLを指定
-    if (node.isBook) {
+    if (node.isbn) {
       results.ogImage = {
         type: 'jpg',
-        url: `https://images-na.ssl-images-amazon.com/images/P/${node.ISBN}._SL500_.jpg`,
+        url: `https://images-na.ssl-images-amazon.com/images/P/${node.isbn}._SL500_.jpg`,
       }
     }
 
@@ -31,7 +31,7 @@ exports.onCreateNode = async ({node, actions, store, cache, createNodeId}) => {
     })
 
     if (fileNode) {
-      node.image___NODE = fileNode.id
+      results.ogImage___NODE = fileNode.id
     }
 
     createNodeField({

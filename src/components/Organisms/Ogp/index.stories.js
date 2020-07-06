@@ -9,17 +9,16 @@ storiesOf('Organisms/Ogp', module)
       title={'Title'}
       description={'description'}
       url={'https://prog-8.com'}
-      isBook={false}
       twitterCard={'summary'}
       image={data.square.fluid}
     />
   ))
-  .add('Book', () => (
+  .add('AmazonOgp', () => (
     <Ogp
       title={'Title'}
       description={'description'}
       url={'https://prog-8.com'}
-      isBook={true}
+      isbn={'4822281515'}
       image={data.book.fluid}
     />
   ))
@@ -33,12 +32,20 @@ storiesOf('Organisms/Ogp', module)
       image={data.summaryLarge.fluid}
     />
   ))
-  .add('twitterCard is summary', () => (
+  .add('OGP without images', () => (
+    <Ogp
+      style={{maxWidth: '800px'}}
+      title={'Title'}
+      description={'description'}
+      url={'https://prog-8.com'}
+      twitterCard={'summary_large_image'}
+    />
+  ))
+  .add('Amazon OGP without images', () => (
     <Ogp
       title={'Title'}
       description={'description'}
       url={'https://prog-8.com'}
-      twitterCard={'summary'}
-      image={data.square.fluid}
+      isbn={'4822281515'}
     />
   ))
