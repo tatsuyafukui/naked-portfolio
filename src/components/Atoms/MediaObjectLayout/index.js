@@ -6,10 +6,11 @@ import {containPresenter} from '../../utils/HoC'
 const MediaObjectLayoutPresenter = ({
   tag: Tag,
   summary,
+  role,
   children,
   className,
 }) => (
-  <Tag className={[styles.root, styles[summary], className].join(' ')}>
+  <Tag className={[styles[role], styles[summary], className].join(' ')}>
     {children}
   </Tag>
 )
@@ -20,6 +21,7 @@ export const MediaObjectLayoutContainer = ({
   children,
   className,
   presenter,
+  hasImage,
 }) => {
   const SummaryTypes = ['left', 'right', 'top']
 
@@ -28,7 +30,13 @@ export const MediaObjectLayoutContainer = ({
     summary = 'left'
   }
 
-  return presenter({tag, summary, children, className})
+  let role = 'mediaObjectLayout'
+  if (!hasImage) {
+    children = React.Children.toArray(children).slice(1)
+    role = 'noImage'
+  }
+
+  return presenter({tag, summary, role, children, className})
 }
 
 const MediaObjectLayout = containPresenter(
@@ -41,11 +49,13 @@ MediaObjectLayout.propTypes = {
   summary: PropTypes.string,
   tag: PropTypes.string,
   className: PropTypes.string,
+  hasImage: PropTypes.bool,
 }
 
 MediaObjectLayout.defaultProps = {
   tag: 'div',
   summary: 'left',
+  hasImage: true,
 }
 
 export default MediaObjectLayout

@@ -1,10 +1,7 @@
 import React from 'react'
 import OgpList from './index'
 import data from '../../../mock/data/recommended.json'
-import Enzyme, {mount} from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
-
-Enzyme.configure({adapter: new Adapter()})
+import {mount} from 'enzyme'
 
 describe('OgpList', () => {
   it('ogpがないサイトはリンクのみ表示する', () => {

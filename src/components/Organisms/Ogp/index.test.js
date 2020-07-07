@@ -1,10 +1,7 @@
 import React from 'react'
-import Ogp, {getSummaryPosition, OgpContainer} from './index'
+import Ogp, {getSummaryPosition} from './index'
 import data from '../../../mock/data/gatsby-img.json'
-import Enzyme, {mount} from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
-
-Enzyme.configure({adapter: new Adapter()})
+import {mount} from 'enzyme'
 
 describe('関数getSummaryPosition', () => {
   it('デフォルトの返り値はright', () => {
@@ -24,43 +21,32 @@ describe('関数getSummaryPosition', () => {
 })
 
 describe('Ogp', () => {
-  const presenter = props => props
-
-  it('ISBNがない場合はSummaryOgpをレンダリングする', () => {
-    const {ogp} = OgpContainer({
-      presenter,
-      title: 'Title',
-      description: 'description',
-      url: 'url',
-      image: data.square.fluid,
-    })
-    const wrapper = mount(ogp)
-    expect(wrapper.find(`div.right`)).toHaveLength(1)
-    expect(wrapper.find(`div.amazonOgp`)).toHaveLength(0)
+  it('ISBNがない場合はOgpDescriptionをレンダリングする', () => {
+    const wrapper = mount(
+      <Ogp
+        title={'Title'}
+        description={'description'}
+        url={'url'}
+        image={data.square.fluid}
+      />
+    )
+    expect(wrapper.find('p.truncateText')).toHaveLength(2)
+    expect(wrapper.find('div.ogUrl')).toHaveLength(1)
   })
 
-  it('SummaryOgpのimageがない場合はMediaObjectLayoutをレンダリングしない', () => {
-    const {ogp} = OgpContainer({
-      presenter,
-      title: 'Title',
-      description: 'description',
-      url: 'url',
-    })
-    const wrapper = mount(ogp)
-    expect(wrapper.find(`div.right`)).toHaveLength(0)
-    expect(wrapper.find(`div.ogBody`)).toHaveLength(1)
-  })
-
-  it('ISBNがあるときはAmazonOgpをレンダリングする', () => {
-    const {ogp} = OgpContainer({
-      presenter,
-      title: 'Title',
-      description: 'description',
-      url: 'url',
-      image: data.square.fluid,
-      isbn: '4822281515',
-    })
-    const wrapper = mount(ogp)
-    expect(wrapper.find(`div.amazonOgp`)).toHaveLength(1)
+  it('ISBNがあるときはAmazonOgpDescriptionをレンダリングする', () => {
+    const wrapper = mount(
+      <Ogp
+        title={'Title'}
+        description={'description'}
+        url={'url'}
+        image={data.square.fluid}
+        isbn={'4822281515'}
+      />
+    )
+    expect(wrapper.find('p.amazonOgpDescription')).toHaveLength(1)
+    expect(wrapper.find('p.amazonOgpDescription').text()).toEqual(
+      'Amazonで詳細を見る'
+    )
   })
 })

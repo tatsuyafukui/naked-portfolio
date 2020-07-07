@@ -6,12 +6,19 @@ import Link from '../../Atoms/Link'
 import MediaObjectLayout from '../../Atoms/MediaObjectLayout'
 import Img from 'gatsby-image'
 import Heading from '../../Atoms/Heading'
-import {DisableTxt, InfoTxt} from '../../Atoms/Txt'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faLink} from '@fortawesome/free-solid-svg-icons'
-import NavigationLink from '../../Molecules/NavigationLink'
+import OgpDescription, {
+  AmazonOgpDescription,
+} from '../../Molecules/OgpDescription'
 
-const OgpPresenter = ({url, ogp, className, ...props}) => (
+const OgpPresenter = ({
+  title,
+  url,
+  image,
+  summaryPosition,
+  ogpDescription,
+  className,
+  ...props
+}) => (
   <Link
     className={[styles.ogp, className].join(' ')}
     to={url}
@@ -19,12 +26,23 @@ const OgpPresenter = ({url, ogp, className, ...props}) => (
     rel='noopener noreferrer'
     {...props}
   >
-    {ogp}
+    <MediaObjectLayout
+      summary={summaryPosition}
+      className={styles[summaryPosition]}
+      hasImage={!!image}
+    >
+      <Img fluid={image} alt={title} />
+      <div className={[styles.ogBody].join(' ')}>
+        <Heading level={5} className={styles.ogTitle}>
+          {title}
+        </Heading>
+        {ogpDescription}
+      </div>
+    </MediaObjectLayout>
   </Link>
 )
 
 export const OgpContainer = ({
-  title,
   description,
   url,
   isbn,
@@ -33,25 +51,21 @@ export const OgpContainer = ({
   presenter,
   ...props
 }) => {
-  let ogp
-
-  // ISBNがある場合はAmazon用のOGPを表示
+  const summaryPosition = image ? getSummaryPosition(twitterCard) : null
+  let ogpDescription
   if (isbn) {
-    ogp = <AmazonOgp title={title} image={image} url={url} />
+    ogpDescription = <AmazonOgpDescription url={url} />
   } else {
-    const summaryPosition = getSummaryPosition(twitterCard)
-    ogp = (
-      <SummaryOgp
-        title={title}
-        description={description}
-        url={url}
-        image={image}
-        summaryPosition={summaryPosition}
-      />
-    )
+    ogpDescription = <OgpDescription description={description} url={url} />
   }
 
-  return presenter({url, ogp, ...props})
+  return presenter({
+    url,
+    image,
+    summaryPosition,
+    ogpDescription,
+    ...props,
+  })
 }
 
 const Ogp = containPresenter(OgpContainer, OgpPresenter)
@@ -59,9 +73,9 @@ const Ogp = containPresenter(OgpContainer, OgpPresenter)
 export default Ogp
 
 Ogp.propTypes = {
-  title: PropTypes.node,
-  description: PropTypes.node,
-  url: PropTypes.node,
+  title: PropTypes.node.isRequired,
+  description: PropTypes.node.isRequired,
+  url: PropTypes.node.isRequired,
   isbn: PropTypes.string,
   twitterCard: PropTypes.string,
   image: PropTypes.object,
@@ -76,67 +90,4 @@ export const getSummaryPosition = twitterCard => {
     default:
       return 'right'
   }
-}
-
-const SummaryOgp = ({title, description, url, image, summaryPosition}) => {
-  const ogpBody = (
-    <div className={[styles.ogBody].join(' ')}>
-      <Heading level={5} className={styles.ogTitle}>
-        {title}
-      </Heading>
-      <InfoTxt visualLevel={2} className={styles.truncateText}>
-        {description}
-      </InfoTxt>
-      <div className={styles.ogUrl}>
-        <FontAwesomeIcon className={styles.linkIcon} icon={faLink} />
-        <DisableTxt className={styles.truncateText}>{url}</DisableTxt>
-      </div>
-    </div>
-  )
-
-  return (
-    <>
-      {/* OGPの画像がない場合はBodyのみ表示 */}
-      {image ? (
-        <MediaObjectLayout
-          summary={summaryPosition}
-          className={styles[summaryPosition]}
-        >
-          <Img fluid={image} alt={title} />
-          {ogpBody}
-        </MediaObjectLayout>
-      ) : (
-        ogpBody
-      )}
-    </>
-  )
-}
-
-const AmazonOgp = ({title, url, image}) => {
-  const ogpBody = (
-    <div className={[styles.ogBody].join(' ')}>
-      <Heading level={5} className={styles.ogTitle}>
-        {title}
-      </Heading>
-      <InfoTxt visualLevel={2}>
-        <NavigationLink tag={'span'} className={styles.navigationLink} to={url}>
-          Amazonで詳細を見る
-        </NavigationLink>
-      </InfoTxt>
-    </div>
-  )
-
-  return (
-    <>
-      {/* OGPの画像がない場合はBodyのみ表示 */}
-      {image ? (
-        <MediaObjectLayout summary={'right'} className={styles.amazonOgp}>
-          <Img fluid={image} alt={title} />
-          {ogpBody}
-        </MediaObjectLayout>
-      ) : (
-        ogpBody
-      )}
-    </>
-  )
 }

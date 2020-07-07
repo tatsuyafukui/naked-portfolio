@@ -1,4 +1,4 @@
-.root {
+.mediaObjectLayout {
   align-items: center;
   display: flex;
 }
@@ -14,4 +14,8 @@
 .top {
   align-items: flex-start;
   flex-direction: column;
+}
+
+.noImage {
+  display: block;
 }
