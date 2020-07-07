@@ -1,5 +1,5 @@
 import React from 'react'
-import Ogp, {getSummaryPosition} from './index'
+import Ogp, {getSummaryPosition, OgpContainer} from './index'
 import data from '../../../mock/data/gatsby-img.json'
 import {mount} from 'enzyme'
 
@@ -21,32 +21,29 @@ describe('関数getSummaryPosition', () => {
 })
 
 describe('Ogp', () => {
+  const presenter = props => props
   it('ISBNがない場合はOgpDescriptionをレンダリングする', () => {
-    const wrapper = mount(
-      <Ogp
-        title={'Title'}
-        description={'description'}
-        url={'url'}
-        image={data.square.fluid}
-      />
-    )
-    expect(wrapper.find('p.truncateText')).toHaveLength(2)
-    expect(wrapper.find('div.ogUrl')).toHaveLength(1)
+    const {ogpDescription} = OgpContainer({
+      title: 'Title',
+      description: 'description',
+      url: 'url',
+      image: data.square.fluid,
+      presenter,
+    })
+    const wrapper = mount(ogpDescription)
+    expect(wrapper.name()).toEqual('OgpDescription')
   })
 
   it('ISBNがあるときはAmazonOgpDescriptionをレンダリングする', () => {
-    const wrapper = mount(
-      <Ogp
-        title={'Title'}
-        description={'description'}
-        url={'url'}
-        image={data.square.fluid}
-        isbn={'4822281515'}
-      />
-    )
-    expect(wrapper.find('p.amazonOgpDescription')).toHaveLength(1)
-    expect(wrapper.find('p.amazonOgpDescription').text()).toEqual(
-      'Amazonで詳細を見る'
-    )
+    const {ogpDescription} = OgpContainer({
+      title: 'Title',
+      description: 'description',
+      url: 'url',
+      image: data.square.fluid,
+      isbn: '4822281515',
+      presenter,
+    })
+    const wrapper = mount(ogpDescription)
+    expect(wrapper.name()).toEqual('AmazonOgpDescription')
   })
 })
