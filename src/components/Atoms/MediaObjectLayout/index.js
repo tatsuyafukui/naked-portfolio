@@ -6,11 +6,12 @@ import {containPresenter} from '../../utils/HoC'
 const MediaObjectLayoutPresenter = ({
   tag: Tag,
   summary,
-  role,
   children,
   className,
 }) => (
-  <Tag className={[styles[role], styles[summary], className].join(' ')}>
+  <Tag
+    className={[styles.mediaObjectLayout, styles[summary], className].join(' ')}
+  >
     {children}
   </Tag>
 )
@@ -30,13 +31,11 @@ export const MediaObjectLayoutContainer = ({
     summary = 'left'
   }
 
-  let role = 'mediaObjectLayout'
   if (!hasImage) {
     children = React.Children.toArray(children).slice(1)
-    role = 'noImage'
   }
 
-  return presenter({tag, summary, role, children, className})
+  return presenter({tag, summary, children, className})
 }
 
 const MediaObjectLayout = containPresenter(

@@ -14,13 +14,12 @@ describe('MediaObjectLayoutContainer', () => {
   })
 
   it('hasImageがfalseなら画像を表示しない', () => {
-    const {children, role} = MediaObjectLayoutContainer({
+    const {children} = MediaObjectLayoutContainer({
       presenter,
       summary: 'incorrect',
       hasImage: false,
       children: [<div>image</div>, <div>body</div>],
     })
-    expect(role).toBe('noImage')
     expect(children.length).toBe(1)
     expect(shallow(children[0]).text()).toEqual('body')
   })
