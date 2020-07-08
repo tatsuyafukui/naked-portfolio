@@ -20,18 +20,23 @@ exports.onCreateNode = async ({node, actions, store, cache, createNodeId}) => {
       }
     }
 
-    // ogp画像をgatsby-imgで使えるように設定
-    const fileNode = await createRemoteFileNode({
-      url: results.ogImage.url,
-      parentNodeId: node.id,
-      createNode,
-      createNodeId,
-      cache,
-      store,
-    })
+    try {
+      // ogp画像をgatsby-imgで使えるように設定
+      const fileNode = await createRemoteFileNode({
+        url: results.ogImage.url,
+        parentNodeId: node.id,
+        createNode,
+        createNodeId,
+        cache,
+        store,
+      })
 
-    if (fileNode) {
-      results.ogImage___NODE = fileNode.id
+      if (fileNode) {
+        results.ogImage___NODE = fileNode.id
+      }
+    } catch (error) {
+      // 適切な画像以外は空にする
+      results.ogImage = null
     }
 
     createNodeField({
