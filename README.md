@@ -24,7 +24,7 @@ docker image build -t node12.18.0:gatsby .
 ### docker container 起動
 
 ```shell script
-docker container run --rm -it --name gatsby_app -v $PWD:/usr/src/app -p 8000:8000 -p 6006:6006 node12.18.0:gatsby
+docker container run --rm -it --name gatsby_app -v $PWD:/usr/src/app -p 8000:8000 -p 6006:6006 -p 9000:9000 node12.18.0:gatsby
 ```
 
 `#`で始まるターミナルになっていたら成功
