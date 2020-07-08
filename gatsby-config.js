@@ -43,10 +43,9 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-        trackingId: "UA-XXXXXXXXX-X",
+        trackingId: 'UA-52935465-1',
       },
     },
   ],
