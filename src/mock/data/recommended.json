@@ -1,0 +1,189 @@
+{
+  "allRecommendedJson": {
+    "nodes": [
+      {
+        "id": "d9abe430-216c-5693-a1a0-c705ea044b0e",
+        "skill": "インターネット",
+        "isbn": "4822281515",
+        "url": "https://www.amazon.co.jp/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%AF%E3%81%AA%E3%81%9C%E3%81%A4%E3%81%AA%E3%81%8C%E3%82%8B%E3%81%AE%E3%81%8B-%E2%80%95-%E7%9F%A5%E3%81%A3%E3%81%A6%E3%81%8A%E3%81%8D%E3%81%9F%E3%81%84TCP-IP%E3%80%81LAN%E3%80%81ADSL%E3%81%AE%E5%9F%BA%E7%A4%8E%E7%9F%A5%E8%AD%98-%E6%88%B8%E6%A0%B9/dp/4822281515/ref=sr_1_3",
+        "fields": {
+          "ogp": {
+            "ogSiteName": null,
+            "ogTitle": "ネットワークはなぜつながるのか ― 知っておきたいTCP/IP、LAN、ADSLの基礎知識 | 戸根 勤 |本 | 通販 | Amazon",
+            "ogDescription": "Amazonで戸根 勤のネットワークはなぜつながるのか ― 知っておきたいTCP/IP、LAN、ADSLの基礎知識。アマゾンならポイント還元本が多数。戸根 勤作品ほか、お急ぎ便対象商品は当日お届けも可能。またネットワークはなぜつながるのか ― 知っておきたいTCP/IP、LAN、ADSLの基礎知識もアマゾン配送商品なら通常配送無料。",
+            "ogImage": {
+              "childImageSharp": {
+                "fluid": {
+                  "base64": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAcABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMBAgQF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQD/2gAMAwEAAhADEAAAAenTUsbDCIToBgCv/8QAHhAAAgEDBQAAAAAAAAAAAAAAAQIhAAMREhMgIjL/2gAIAQEAAQUCa523oRwykDC+hFGVAbXw/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAHBAAAgICAwAAAAAAAAAAAAAAAREAAhAgITFB/9oACAEBAAY/AlXmeYcRrgwPoa//xAAbEAEAAgMBAQAAAAAAAAAAAAABABEhMUEQUf/aAAgBAQABPyGtAUG97jwu3jcILh6ZlgglHAfH7MFAEFCJWpY474Qd+f/aAAwDAQACAAMAAAAQ4BEN/8QAGBEAAgMAAAAAAAAAAAAAAAAAABEBECH/2gAIAQMBAT8QUmjr/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAEREEH/2gAIAQIBAT8QqKiduf/EABsQAQACAwEBAAAAAAAAAAAAAAEAESExQVHR/9oACAEBAAE/EKdTIIoJfNUwRKQBYlfcPyB0jgig+RthG3ssq5tZxFKkeBKhFU5uCSgCG1SZ87Hb2bhyIl3TRAxP/9k=",
+                  "aspectRatio": 0.704225352112676,
+                  "src": "/static/0b33ef26ee52d5e04b6f1783bdf64156/34031/4822281515._SL500_.jpg",
+                  "srcSet": "/static/0b33ef26ee52d5e04b6f1783bdf64156/f836f/4822281515._SL500_.jpg 200w,\n/static/0b33ef26ee52d5e04b6f1783bdf64156/34031/4822281515._SL500_.jpg 335w",
+                  "sizes": "(max-width: 335px) 100vw, 335px"
+                }
+              }
+            },
+            "twitterCard": null
+          }
+        }
+      },
+      {
+        "id": "6e64feb9-d119-54e8-84c2-f5681cb4c652",
+        "skill": "HTML&CSS",
+        "url": "https://prog-8.com/lessons/html/study/1",
+        "fields": {
+          "ogp": {
+            "ogSiteName": "Progate",
+            "ogTitle": "HTML & CSS 学習コース 初級編 | Progate",
+            "ogDescription": "Progateはオンラインでプログラミングを学べるサービスです。プログラミングを学んでWEBアプリケーションを作ろう。",
+            "ogImage": {
+              "childImageSharp": {
+                "fluid": {
+                  "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsSAAALEgHS3X78AAABs0lEQVQoz4WSTW8TMRCG++s4cSk/gQMHeuAKUhAXDgUOlRBnLojvlapsEaCSiEZAWwSU0AKhgUJotptd76fX9u7aXu8wIY3UCjWMX1mvRnr8jkaeo0IHTD4nke2Hthes+GETDd5eYLn+ZkiZqBKh038Ucz03hrlc8VxrdLBMvMeuc9f5fc/Zt4hnRcFGnDChT4RjpnINn7vdF7b9dq3TefqsbdutZtMf7gOAkjrhKj0JnjiWZpFHgpAM3QOSZTHLqxrw5LNhHImLqkf996lLGZQRh58O0D3gA0wuZsMhl1DClR+vTm0+WF1L+vdfQ2PJtC7A1+t/YTU7WQlRfUzcl8GvkS/pgMD2NzP6ALT3/+R0vEylRWmkgmnVU3MUTrjG7aImnenCuCpKKbWqazDG1FVVm7HwkaI8hJHMikrWUBrICnMMzouS5YWqDByvSTKKy7o/IFZzo9XZGfo0yysc4RCOKfOiBD8ETnBU2MBMhDFz/V3/6uKtG0u3e3tEKIgQZqVxCD176dr8QuPMwuX5842J0J8+d/HmnWVpwCHp1pfv7TefHj1ZfWi317e2u7s7WQF/AJcXjKdkcMMsAAAAAElFTkSuQmCC",
+                  "aspectRatio": 1.639344262295082,
+                  "src": "/static/b6f52ff8e397643881b45baa34bf59e7/ee604/1485928388770.png",
+                  "srcSet": "/static/b6f52ff8e397643881b45baa34bf59e7/69585/1485928388770.png 200w,\n/static/b6f52ff8e397643881b45baa34bf59e7/497c6/1485928388770.png 400w,\n/static/b6f52ff8e397643881b45baa34bf59e7/ee604/1485928388770.png 800w,\n/static/b6f52ff8e397643881b45baa34bf59e7/ccef1/1485928388770.png 980w",
+                  "sizes": "(max-width: 800px) 100vw, 800px"
+                }
+              }
+            },
+            "twitterCard": "summary_large_image"
+          }
+        }
+      },
+      {
+        "id": "c1f13dbc-b110-5985-94f7-29438c7cb3ea",
+        "skill": "エディタ",
+        "url": "https://code.visualstudio.com/",
+        "fields": {
+          "ogp": {
+            "ogSiteName": null,
+            "ogTitle": "Visual Studio Code - Code Editing. Redefined",
+            "ogDescription": "Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.  Visual Studio Code is free and available on your favorite platform - Linux, macOS, and Windows.",
+            "ogImage": {
+              "childImageSharp": {
+                "fluid": {
+                  "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB8UlEQVQoz11STW/UMBDtD6h6BHY3Thx/xI7jxPnY3ey2FQgJiQNiW3pFHAsXDpz4DXDhjrggceGfwL96zDq7perhaexM5nnevDnxvkdF8FU3xf2dzk3To+0GOocI7wPadkBHCGGgextxzFdVG2tPjkR3qIeJMCyxGrfou32Rh9YarnSo6wa+tChNASEEUsaglIJzzUQ4dUdFfkBd1qgLi6qkZDOgX43YjGu0oYNUGoIrFLaG1AYJyzBLGOYsRZJyuKji0KELI4IuwF68Q/r5F/z6OVqSvFpvYIyFlAqc58iyDK4dYboNEmEjUlWCEbSpJsLaeshnNzj9+BNnb79AfPsDd/UBFXVUN/u5tSTJRFKWMlTU+bBcQ0kJnnHk9BCnh7S2B0KSKbavcPr+B85uv4N//Yvy9UToKkdzs9QZj0VZlsLQOAKZpSifC4k8FzGvdXlPcrNCoB/Yy1ssPv2Okp2t0A891uMGRWGQSx1lWWujCYUx0aicjMn4PcL/K0OmkPy6oISbVsGRk44IRJqA7yXSCKTIwNgMi9ljLJ48QnKIShbwtCEP1ma4W5t6P/zhEontkLol5mWPWTUgobhwPeZFwFw3mB0g7dHlB4t9XCPXnkNf3kBfXEOeXyMdd8gO4JsdfbuKENsd1MUb2O5prPsH8Ksxy/JVNUQAAAAASUVORK5CYII=",
+                  "aspectRatio": 2,
+                  "src": "/static/beaba009c542a9f6fe1d2034a7ed568b/ee604/opengraph-home.png",
+                  "srcSet": "/static/beaba009c542a9f6fe1d2034a7ed568b/69585/opengraph-home.png 200w,\n/static/beaba009c542a9f6fe1d2034a7ed568b/497c6/opengraph-home.png 400w,\n/static/beaba009c542a9f6fe1d2034a7ed568b/ee604/opengraph-home.png 800w,\n/static/beaba009c542a9f6fe1d2034a7ed568b/dd255/opengraph-home.png 1012w",
+                  "sizes": "(max-width: 800px) 100vw, 800px"
+                }
+              }
+            },
+            "twitterCard": "summary_large_image"
+          }
+        }
+      },
+      {
+        "id": "466afc67-11ee-5520-99ee-26f5ec0d37e9",
+        "skill": "test",
+        "url": "https://www.jiji.com/jc/article?k=2020062501009&g=pol",
+        "fields": {
+          "ogp": {
+            "ogSiteName": "時事ドットコム",
+            "ogTitle": "はんこ制度継続を　自民議連：時事ドットコム",
+            "ogDescription": "自民党の「日本の印章制度・文化を守る議員連盟」（はんこ議連）が、はんこ制度の継続を訴える動きを強めている。要望書を１９日付で岸田文雄政調会長に提出。新型コロナウイルス対策として広がったリモートワークの推進をはんこが阻んでいるとの声が出ていることについて「いわれないバッシング」と反論している。",
+            "ogImage": {
+              "childImageSharp": {
+                "fluid": {
+                  "base64": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQD/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQD/2gAMAwEAAhADEAAAAWketVJyS3A1Av/EABoQAQEAAwEBAAAAAAAAAAAAAAECAAMSESH/2gAIAQEAAQUCu9gqwAuVsq0ps68yvjog4mRn/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFhEAAwAAAAAAAAAAAAAAAAAAABAh/9oACAECAQE/ASP/xAAcEAACAgIDAAAAAAAAAAAAAAAAAQIRIUFRwdH/2gAIAQEABj8CQui4yMsrg8GOWxH/xAAcEAEBAQACAwEAAAAAAAAAAAABEQAhMUFRYXH/2gAIAQEAAT8hNHi/MRKRvOB0x9YouzrNlFF6xGJPxhEeHN8FTKj63//aAAwDAQACAAMAAAAQwyAD/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQAQEf/aAAgBAwEBPxBlc63/xAAXEQEBAQEAAAAAAAAAAAAAAAABABEQ/9oACAECAQE/ECDHML//xAAeEAEAAwACAgMAAAAAAAAAAAABABEhQVExkWFxsf/aAAgBAQABPxCzIKw1b1sbgQKVXx+7KNuzwutjBjXAPqZV6XpDv3DINtMRPcHwpAjKHJbyqg/t4xqf/9k=",
+                  "aspectRatio": 1,
+                  "src": "/static/b4a5e730d7e6d030c9a5367c2d52c5e5/aabdf/pol1-1.jpg",
+                  "srcSet": "/static/b4a5e730d7e6d030c9a5367c2d52c5e5/aabdf/pol1-1.jpg 150w",
+                  "sizes": "(max-width: 150px) 100vw, 150px"
+                }
+              }
+            },
+            "twitterCard": "summary"
+          }
+        }
+      },
+      {
+        "id": "78663927-5495-5ea2-8cb7-1a05ae6edec6",
+        "skill": "test",
+        "url": "https://progate.docbase.io/posts/1386804",
+        "image": null,
+        "fields": null
+      }
+    ]
+  },
+  "bookOgp": {
+    "id": "d9abe430-216c-5693-a1a0-c705ea044b0e",
+    "skill": "インターネット",
+    "url": "https://www.amazon.co.jp/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%AF%E3%81%AA%E3%81%9C%E3%81%A4%E3%81%AA%E3%81%8C%E3%82%8B%E3%81%AE%E3%81%8B-%E2%80%95-%E7%9F%A5%E3%81%A3%E3%81%A6%E3%81%8A%E3%81%8D%E3%81%9F%E3%81%84TCP-IP%E3%80%81LAN%E3%80%81ADSL%E3%81%AE%E5%9F%BA%E7%A4%8E%E7%9F%A5%E8%AD%98-%E6%88%B8%E6%A0%B9/dp/4822281515/ref=sr_1_3",
+    "isbn": "4822281515",
+    "fields": {
+      "ogp": {
+        "ogSiteName": null,
+        "ogTitle": "ネットワークはなぜつながるのか ― 知っておきたいTCP/IP、LAN、ADSLの基礎知識 | 戸根 勤 |本 | 通販 | Amazon",
+        "ogDescription": "Amazonで戸根 勤のネットワークはなぜつながるのか ― 知っておきたいTCP/IP、LAN、ADSLの基礎知識。アマゾンならポイント還元本が多数。戸根 勤作品ほか、お急ぎ便対象商品は当日お届けも可能。またネットワークはなぜつながるのか ― 知っておきたいTCP/IP、LAN、ADSLの基礎知識もアマゾン配送商品なら通常配送無料。",
+        "ogImage": {
+          "childImageSharp": {
+            "fluid": {
+              "base64": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAcABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMBAgQF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQD/2gAMAwEAAhADEAAAAenTUsbDCIToBgCv/8QAHhAAAgEDBQAAAAAAAAAAAAAAAQIhAAMREhMgIjL/2gAIAQEAAQUCa523oRwykDC+hFGVAbXw/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAHBAAAgICAwAAAAAAAAAAAAAAAREAAhAgITFB/9oACAEBAAY/AlXmeYcRrgwPoa//xAAbEAEAAgMBAQAAAAAAAAAAAAABABEhMUEQUf/aAAgBAQABPyGtAUG97jwu3jcILh6ZlgglHAfH7MFAEFCJWpY474Qd+f/aAAwDAQACAAMAAAAQ4BEN/8QAGBEAAgMAAAAAAAAAAAAAAAAAABEBECH/2gAIAQMBAT8QUmjr/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAEREEH/2gAIAQIBAT8QqKiduf/EABsQAQACAwEBAAAAAAAAAAAAAAEAESExQVHR/9oACAEBAAE/EKdTIIoJfNUwRKQBYlfcPyB0jgig+RthG3ssq5tZxFKkeBKhFU5uCSgCG1SZ87Hb2bhyIl3TRAxP/9k=",
+              "aspectRatio": 0.704225352112676,
+              "src": "/static/0b33ef26ee52d5e04b6f1783bdf64156/34031/4822281515._SL500_.jpg",
+              "srcSet": "/static/0b33ef26ee52d5e04b6f1783bdf64156/f836f/4822281515._SL500_.jpg 200w,\n/static/0b33ef26ee52d5e04b6f1783bdf64156/34031/4822281515._SL500_.jpg 335w",
+              "sizes": "(max-width: 335px) 100vw, 335px"
+            }
+          }
+        },
+        "twitterCard": null
+      }
+    }
+  },
+  "progateOgp": {
+    "id": "6e64feb9-d119-54e8-84c2-f5681cb4c652",
+    "skill": "HTML&CSS",
+    "url": "https://prog-8.com/lessons/html/study/1",
+    "fields": {
+      "ogp": {
+        "ogSiteName": "Progate",
+        "ogTitle": "HTML & CSS 学習コース 初級編 | Progate",
+        "ogDescription": "Progateはオンラインでプログラミングを学べるサービスです。プログラミングを学んでWEBアプリケーションを作ろう。",
+        "ogImage": {
+          "childImageSharp": {
+            "fluid": {
+              "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAIAAADtbgqsAAAACXBIWXMAAAsSAAALEgHS3X78AAABs0lEQVQoz4WSTW8TMRCG++s4cSk/gQMHeuAKUhAXDgUOlRBnLojvlapsEaCSiEZAWwSU0AKhgUJotptd76fX9u7aXu8wIY3UCjWMX1mvRnr8jkaeo0IHTD4nke2Hthes+GETDd5eYLn+ZkiZqBKh038Ucz03hrlc8VxrdLBMvMeuc9f5fc/Zt4hnRcFGnDChT4RjpnINn7vdF7b9dq3TefqsbdutZtMf7gOAkjrhKj0JnjiWZpFHgpAM3QOSZTHLqxrw5LNhHImLqkf996lLGZQRh58O0D3gA0wuZsMhl1DClR+vTm0+WF1L+vdfQ2PJtC7A1+t/YTU7WQlRfUzcl8GvkS/pgMD2NzP6ALT3/+R0vEylRWmkgmnVU3MUTrjG7aImnenCuCpKKbWqazDG1FVVm7HwkaI8hJHMikrWUBrICnMMzouS5YWqDByvSTKKy7o/IFZzo9XZGfo0yysc4RCOKfOiBD8ETnBU2MBMhDFz/V3/6uKtG0u3e3tEKIgQZqVxCD176dr8QuPMwuX5842J0J8+d/HmnWVpwCHp1pfv7TefHj1ZfWi317e2u7s7WQF/AJcXjKdkcMMsAAAAAElFTkSuQmCC",
+              "aspectRatio": 1.639344262295082,
+              "src": "/static/b6f52ff8e397643881b45baa34bf59e7/ee604/1485928388770.png",
+              "srcSet": "/static/b6f52ff8e397643881b45baa34bf59e7/69585/1485928388770.png 200w,\n/static/b6f52ff8e397643881b45baa34bf59e7/497c6/1485928388770.png 400w,\n/static/b6f52ff8e397643881b45baa34bf59e7/ee604/1485928388770.png 800w,\n/static/b6f52ff8e397643881b45baa34bf59e7/ccef1/1485928388770.png 980w",
+              "sizes": "(max-width: 800px) 100vw, 800px"
+            }
+          }
+        },
+        "twitterCard": "summary_large_image"
+      }
+    }
+  },
+  "summaryOgp": {
+    "id": "466afc67-11ee-5520-99ee-26f5ec0d37e9",
+    "skill": "test",
+    "url": "https://www.jiji.com/jc/article?k=2020062501009&g=pol",
+    "fields": {
+      "ogp": {
+        "ogSiteName": "時事ドットコム",
+        "ogTitle": "はんこ制度継続を　自民議連：時事ドットコム",
+        "ogDescription": "自民党の「日本の印章制度・文化を守る議員連盟」（はんこ議連）が、はんこ制度の継続を訴える動きを強めている。要望書を１９日付で岸田文雄政調会長に提出。新型コロナウイルス対策として広がったリモートワークの推進をはんこが阻んでいるとの声が出ていることについて「いわれないバッシング」と反論している。",
+        "ogImage": {
+          "childImageSharp": {
+            "fluid": {
+              "base64": "data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAQD/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQD/2gAMAwEAAhADEAAAAWketVJyS3A1Av/EABoQAQEAAwEBAAAAAAAAAAAAAAECAAMSESH/2gAIAQEAAQUCu9gqwAuVsq0ps68yvjog4mRn/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFhEAAwAAAAAAAAAAAAAAAAAAABAh/9oACAECAQE/ASP/xAAcEAACAgIDAAAAAAAAAAAAAAAAAQIRIUFRwdH/2gAIAQEABj8CQui4yMsrg8GOWxH/xAAcEAEBAQACAwEAAAAAAAAAAAABEQAhMUFRYXH/2gAIAQEAAT8hNHi/MRKRvOB0x9YouzrNlFF6xGJPxhEeHN8FTKj63//aAAwDAQACAAMAAAAQwyAD/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQAQEf/aAAgBAwEBPxBlc63/xAAXEQEBAQEAAAAAAAAAAAAAAAABABEQ/9oACAECAQE/ECDHML//xAAeEAEAAwACAgMAAAAAAAAAAAABABEhQVExkWFxsf/aAAgBAQABPxCzIKw1b1sbgQKVXx+7KNuzwutjBjXAPqZV6XpDv3DINtMRPcHwpAjKHJbyqg/t4xqf/9k=",
+              "aspectRatio": 1,
+              "src": "/static/b4a5e730d7e6d030c9a5367c2d52c5e5/aabdf/pol1-1.jpg",
+              "srcSet": "/static/b4a5e730d7e6d030c9a5367c2d52c5e5/aabdf/pol1-1.jpg 150w",
+              "sizes": "(max-width: 150px) 100vw, 150px"
+            }
+          }
+        },
+        "twitterCard": "summary"
+      }
+    }
+  },
+  "notOgp": {
+    "id": "78663927-5495-5ea2-8cb7-1a05ae6edec6",
+    "skill": "test",
+    "url": "https://progate.docbase.io/posts/1386804",
+    "fields": null
+  }
+}

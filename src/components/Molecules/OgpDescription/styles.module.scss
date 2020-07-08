@@ -1,0 +1,26 @@
+@import '../../properties';
+
+.truncateText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.ogUrl {
+  align-items: baseline;
+  display: flex;
+  margin-top: 6px;
+}
+
+.linkIcon {
+  color: var(--color-text-disable);
+  font-size: 12px;
+  margin-right: 6px;
+}
+
+.amazonOgpDescription {
+  > :first-child {
+    color: var(--color-text-info);
+  }
+}

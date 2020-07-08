@@ -1,0 +1,59 @@
+@import '../../properties';
+
+.ogp {
+  border: var(--border);
+  border-radius: var(--radius);
+  display: block;
+  overflow: hidden;
+}
+
+.top {
+  > :first-child {
+    border-bottom: var(--border);
+    width: 100%;
+  }
+}
+
+.right {
+  > :first-child {
+    margin: 16px 24px 16px 0;
+    max-width: 100px;
+    width: 50%;
+
+    @include mediaQuery(sm) {
+      margin: 16px 16px 16px 0;
+    }
+  }
+
+  > :last-child {
+    padding: 32px;
+
+    @include mediaQuery(sm) {
+      padding: 16px;
+    }
+  }
+}
+
+.left {
+  > :first-child {
+    max-width: 140px;
+    width: 50%;
+  }
+
+  > :last-child {
+    width: calc(100% - 140px);
+  }
+}
+
+.ogBody {
+  padding: 24px;
+  width: 100%;
+
+  @include mediaQuery(sm) {
+    padding: 16px;
+  }
+}
+
+.ogTitle {
+  margin-bottom: 4px;
+}
