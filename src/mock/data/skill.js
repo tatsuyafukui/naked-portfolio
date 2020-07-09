@@ -4,6 +4,7 @@ const data = useStaticQuery(graphql`
   query {
     skillsJson(id: {eq: "HTML&CSS"}) {
       title
+      description
       image {
         childImageSharp {
           fluid {
