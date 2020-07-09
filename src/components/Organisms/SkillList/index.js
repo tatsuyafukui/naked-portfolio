@@ -7,8 +7,8 @@ import NavigationLink from '../../Molecules/NavigationLink'
 const SkillList = ({skills, ...props}) => (
   <ListBordered {...props}>
     {skills.map(skill => (
-      <ListItemBordered key={skill.title}>
-        <NavigationLink to={skill.link} className={styles.navigationLink}>
+      <ListItemBordered key={skill.id}>
+        <NavigationLink to={skill.slug} className={styles.navigationLink}>
           {skill.title}
         </NavigationLink>
       </ListItemBordered>

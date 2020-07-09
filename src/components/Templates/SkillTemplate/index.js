@@ -15,7 +15,7 @@ import Footer from '../../Organisms/Footer'
 import List, {ListItem} from '../../Atoms/List'
 import OgpList from '../../Organisms/OgpList'
 
-const SkillTemplate = ({skill, recommended}) => (
+const SkillTemplate = ({scene, skill, recommended}) => (
   <>
     <SEO title={skill.title} description={skill.overview} lang={'ja'} />
     <Header />
@@ -28,8 +28,8 @@ const SkillTemplate = ({skill, recommended}) => (
           <Link to='/'>
             <Txt>Home</Txt>
           </Link>
-          <Link to={skill.scene.slug}>
-            <Txt>{skill.scene.id}</Txt>
+          <Link to={scene.slug}>
+            <Txt>{scene.id}</Txt>
           </Link>
           <Txt>{skill.title}</Txt>
         </Breadcrumb>
@@ -45,7 +45,7 @@ const SkillTemplate = ({skill, recommended}) => (
             </BoldHeading>
           </Front>
           <Back>
-            <Img fluid={skill.scene.image.childImageSharp.fluid} />
+            <Img fluid={scene.image.childImageSharp.fluid} />
           </Back>
         </Overlay>
         <section className={styles.mainSection}>

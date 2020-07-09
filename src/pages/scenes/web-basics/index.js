@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import {graphql, useStaticQuery} from 'gatsby'
 import SceneTemplate from '../../../components/Templates/SceneTemplate'
-import skillsData from '../../../mock/data/skills.json'
 
 const WebBasicPage = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -20,13 +19,20 @@ const WebBasicPage = () => {
           }
         }
       }
+      allSkillsJson(filter: {sceneId: {eq: "シーン１"}}) {
+        nodes {
+          slug
+          title
+          id
+        }
+      }
     }
   `)
 
   return (
     <SceneTemplate
       scene={data.scenesJson}
-      skills={skillsData}
+      skills={data.allSkillsJson.nodes}
       open={isOpen}
       onClick={() => setIsOpen(true)}
     />
