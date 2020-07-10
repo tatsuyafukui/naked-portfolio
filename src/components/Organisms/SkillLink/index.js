@@ -18,7 +18,7 @@ const SkillLink = ({skill, className, ...props}) => (
     <MediaObjectLayout className={styles.layout}>
       <Img
         className={styles.image}
-        fluid={skill.image.childImageSharp.fluid}
+        fluid={skill.thumbnail.childImageSharp.fluid}
         alt={skill.title}
       />
       <div className={styles.textWrap}>
@@ -28,9 +28,7 @@ const SkillLink = ({skill, className, ...props}) => (
             {skill.title}
           </BoldHeading>
         </div>
-        <Txt visualLevel={2} className={styles.description}>
-          {skill.description}
-        </Txt>
+        <Txt className={styles.description}>{skill.description}</Txt>
       </div>
     </MediaObjectLayout>
   </Link>

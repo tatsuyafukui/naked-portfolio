@@ -14,6 +14,6 @@ storiesOf('Organisms/SkillLink', module).add('Default', () => (
 
 const style = {
   height: '100vh',
-  background: "#F2F4F7",
-  padding: "32px 0"
+  background: '#F2F4F7',
+  padding: '32px 0',
 }

@@ -1,50 +1,63 @@
 @import '../../properties';
 
 .skill {
-  display: block;
-  border-radius: var(--radius);
   background: var(--color-white);
-  padding: 48px;
+  border-radius: var(--radius);
+  display: block;
+  padding: 4.21%;
+
+  @include mediaQuery(sm) {
+    padding: 4.89%;
+  }
+}
+
+.skill:hover {
+  text-decoration: none;
+
+  h3 {
+    color: var(--color-blue) !important;
+  }
+
+  p {
+    text-decoration: underline;
+  }
 }
 
 .layout {
   @include mediaQuery(sm) {
-    align-items: flex-start !important;
     flex-direction: column !important;
   }
 }
 
 .image {
+  align-self: flex-start;
   flex-shrink: 0;
   width: 28.73%;
 
-  @include mediaQuery(md) {
-  }
-
   @include mediaQuery(sm) {
+    width: 100%;
   }
 }
 
 .textWrap {
-  margin: 24px 24px 24px 32px;
+  margin-left: 3.83%;
 
   @include mediaQuery(md) {
-    margin-left: 4.44%;
+    margin-left: 4.9%;
   }
 
   @include mediaQuery(sm) {
     margin-left: 0;
-    margin-top: 12px;
+    margin-top: 16px;
   }
 }
 
 .title {
-  display: flex;
   align-items: center;
-  margin-bottom: 16px;
   color: var(--color-opacity15-black);
-  @include mediaQuery(sm) {
-  }
+  display: flex;
+  font-size: 20px;
+  margin-bottom: 8px;
 }
 
 .titleText {
@@ -52,4 +65,5 @@
 }
 
 .description {
+  line-height: var(--line-height-l) !important;
 }
