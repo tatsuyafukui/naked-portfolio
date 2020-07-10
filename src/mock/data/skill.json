@@ -1,6 +1,8 @@
 {
   "skillsJson": {
     "title": "HTML&CSS",
+    "description": "ホームページやECサイトなど、全てのWebページでHTML&CSSは使われています。HTML&CSSを学べば、これまであなたの頭の中にあった考えを、形にして表現する手段を手に入れることができるのです。",
+    "thumbnail": "/images/thumbnails/html.png",
     "image": {
       "childImageSharp": {
         "fluid": {
