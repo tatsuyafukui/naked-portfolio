@@ -20,12 +20,17 @@ export const MediaObjectLayoutContainer = ({
   children,
   className,
   presenter,
+  hasImage,
 }) => {
   const SummaryTypes = ['left', 'right', 'top']
 
   // 不適切なsummaryタイプの場合はデフォルトのleftを指定
   if (SummaryTypes.indexOf(summary) === -1) {
     summary = 'left'
+  }
+
+  if (!hasImage) {
+    children = React.Children.toArray(children).slice(1)
   }
 
   return presenter({tag, summary, children, className})
@@ -41,11 +46,13 @@ MediaObjectLayout.propTypes = {
   summary: PropTypes.string,
   tag: PropTypes.string,
   className: PropTypes.string,
+  hasImage: PropTypes.bool,
 }
 
 MediaObjectLayout.defaultProps = {
   tag: 'div',
   summary: 'left',
+  hasImage: true,
 }
 
 export default MediaObjectLayout

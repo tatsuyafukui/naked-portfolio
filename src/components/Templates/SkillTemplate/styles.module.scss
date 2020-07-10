@@ -1,38 +1,24 @@
 @import '../../properties';
 
 .main {
-  padding-top: 32px;
+  margin-top: 32px;
 }
 
-.imageContainer {
-  max-width: 620px !important;
-  padding: 0 !important;
-}
-
-.articleContainer {
-  max-width: 620px !important;
-  padding: 0 !important;
-
-  @include mediaQuery(md) {
-    padding-left: 4.16% !important;
-    padding-right: 4.16% !important;
-  }
-
-  @include mediaQuery(sm) {
-    padding-left: 6.4% !important;
-    padding-right: 6.4% !important;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: calc(620px + 10%) !important;
 }
 
 .breadcrumb {
-  margin-bottom: 50px;
+  margin-bottom: 56px;
 
-  @include mediaQuery(sm) {
-    margin-bottom: 24px;
+  @include mediaQuery(md) {
+    margin-bottom: 7.29%;
   }
 
-  a {
-    text-decoration: none;
+  @include mediaQuery(sm) {
+    margin-bottom: 6.4%;
   }
 }
 
@@ -43,111 +29,161 @@
 .visual {
   height: 300px;
 
-  @include mediaQuery(md) {
-    height: 250px;
+  @include mediaQuery(sm) {
+    align-self: center;
+    height: 66.66vw;
+    width: 100vw;
   }
 }
 
-.overview {
-  margin: 40px 0;
+.mainSection {
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.section,
+.block {
+  display: flex;
+  flex-direction: column;
+
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.heading2 {
+  border-bottom: var(--border);
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+
+  @include mediaQuery(md) {
+    margin-bottom: 4.16%;
+  }
 
   @include mediaQuery(sm) {
-    margin: 32px 0;
+    margin-bottom: 8.53%;
+    padding-bottom: 12px;
+  }
+}
+
+.heading3 {
+  margin-bottom: 24px;
+
+  @include mediaQuery(md) {
+    margin-bottom: 3.125%;
+  }
+
+  @include mediaQuery(sm) {
+    margin-bottom: 6.4%;
+  }
+}
+
+.heading4 {
+  margin-bottom: 16px;
+
+  @include mediaQuery(md) {
+    margin-bottom: 2.08%;
+  }
+
+  @include mediaQuery(sm) {
+    margin-bottom: 4.26%;
+  }
+}
+
+.section {
+  margin-bottom: 64px;
+
+  @include mediaQuery(md) {
+    margin-bottom: 8.33%;
+  }
+
+  @include mediaQuery(sm) {
+    margin-bottom: 14.93%;
+  }
+}
+
+.block {
+  margin-bottom: 56px;
+
+  @include mediaQuery(md) {
+    margin-bottom: 7.29%;
+  }
+
+  @include mediaQuery(sm) {
+    margin-bottom: 14.93%;
+  }
+}
+
+.content {
+  margin-bottom: 40px;
+
+  @include mediaQuery(md) {
+    margin-bottom: 5.2%;
+  }
+
+  @include mediaQuery(sm) {
+    margin-bottom: 8.53%;
   }
 }
 
 .image {
-  margin-bottom: 80px;
+  @include mediaQuery(sm) {
+    align-self: center;
+    width: 100vw;
+  }
+}
+
+.guidelines {
+  @include mediaQuery(sm) {
+    align-self: center;
+    width: 100vw;
+  }
+}
+
+.guidelinesItem {
+  background-color: var(--color-background);
+  border-radius: var(--radius);
+  margin-bottom: 24px;
+  padding: 32px;
+
+  @include mediaQuery(md) {
+    margin-bottom: 3.125%;
+    padding: 4.16%;
+  }
 
   @include mediaQuery(sm) {
-    margin-bottom: 40px;
+    border-radius: unset;
+    margin-bottom: 2.13%;
+    padding: 6.4%;
   }
 }
 
-.purpose {
-  h3 {
-    margin-bottom: 24px;
+.listItem {
+  margin-bottom: 16px;
+  padding-left: 16px;
+  position: relative;
 
-    @include mediaQuery(sm) {
-      margin-bottom: 16px;
-    }
+  ::after {
+    background-color: var(--color-line);
+    border-radius: 50%;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 6px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    width: 6px;
   }
 
-  p {
-    margin-bottom: 64px;
-
-    @include mediaQuery(sm) {
-      margin-bottom: 56px;
-    }
+  @include mediaQuery(md) {
+    margin-bottom: 2%;
   }
-}
-
-.learning {
-  h2 {
-    border-bottom: var(--border);
-    margin-bottom: 32px;
-    padding-bottom: 16px;
-
-    @include mediaQuery(sm) {
-      margin-bottom: 24px;
-      padding-bottom: 12px;
-    }
-  }
-}
-
-.standard {
-  h3 {
-    margin-bottom: 24px;
-  }
-
-  h4 {
-    margin-bottom: 16px;
-    margin-top: 0;
-  }
-
-  li {
-    margin-top: 16px;
-  }
-
-  p {
-    align-items: center;
-    display: flex;
-  }
-
-  p::before {
-    color: #d9d9d9;
-    content: '•';
-    margin-right: 16px;
-  }
-
-  > div {
-    margin-bottom: 24px;
-    padding: 32px;
-
-    @include mediaQuery(sm) {
-      margin-bottom: 8px;
-      padding: 24px 0;
-    }
-  }
-}
-
-.overall {
-  margin-top: 32px;
 
   @include mediaQuery(sm) {
-    margin-top: 16px;
-  }
-
-  h3 {
-    margin-bottom: 24px;
-  }
-
-  p {
-    margin-bottom: 40px;
-
-    @include mediaQuery(sm) {
-      margin-top: 24px;
-    }
+    margin-bottom: 4.26%;
   }
 }
 

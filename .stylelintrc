@@ -18,5 +18,6 @@
       "declarations"
     ],
     "order/properties-alphabetical-order": true
-  }
+  },
+  "ignoreFiles": ["public/**"]
 }
