@@ -1,6 +1,19 @@
 {
   "skillsJson": {
     "title": "HTML&CSS",
+    "subTitle": "レイアウトを作れるようになろう",
+    "description": "ホームページやECサイトなど、全てのWebページでHTML&CSSは使われています。HTML&CSSを学べば、これまであなたの頭の中にあった考えを、形にして表現する手段を手に入れることができるのです。",
+    "thumbnail": {
+      "childImageSharp": {
+        "fluid": {
+          "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAABnklEQVQ4y6WTSy8DURTH+7Vs8A0kHiEesfJKJDQSsUUsLCQiIvoBEBGqkZBuuiBWEgvxbJWpdnTaooK25t7O+Tt3ZrSCNhU3+c+ZOfec3z2Zc67HNE0IIQAiVF5URSqVSDGYRR73BbcxHVdhDZfhG5xdRGydnkcQvtYQicYqSu1rdzq5hZGnKCVe3nKYGJ9BZ98AJud82A0eYMMfxNTsMtp7x9DcNYKW7tEfau3xoqljGEPeaXrL5SClZCBX+JwvYDAUQtveDkaOj+CNXqL/4gSth/toDARQv+1nbbu2rAb21W1toj0YpNdCAVJVyA/k3k2sZwysPaSwauhYiEUxz1pMaFg2EvBV0ZIRx0o6SXlm2EBTmPwPBf65SDGEsJti2k2RlgWLO23xbrFWcbwS57pN+QK0LMs9SoBSGVAsAbpPgZ6yoEQSdKc7Vos7e0YaVCzaOcz7DUhlYPYZpBug+D0o/eAcEGdgMuX4FfwxWwuQqo5whbH+AVQfpJylOJ78muTGfwM6N8UUkh3Stn9RKecTyO1W99Cu8j9yGII+AA7kw9i0XnmOAAAAAElFTkSuQmCC",
+          "aspectRatio": 1.5037593984962405,
+          "src": "/static/b9739f8cd757788a0b3eb8f11d088808/2a4de/html.png",
+          "srcSet": "/static/b9739f8cd757788a0b3eb8f11d088808/69585/html.png 200w,\n/static/b9739f8cd757788a0b3eb8f11d088808/497c6/html.png 400w,\n/static/b9739f8cd757788a0b3eb8f11d088808/2a4de/html.png 600w",
+          "sizes": "(max-width: 600px) 100vw, 600px"
+        }
+      }
+    },
     "image": {
       "childImageSharp": {
         "fluid": {
