@@ -1,0 +1,69 @@
+@import '../../properties';
+
+.skill {
+  background: var(--color-white);
+  border-radius: var(--radius);
+  display: block;
+  padding: 4.21%;
+
+  @include mediaQuery(sm) {
+    padding: 4.89%;
+  }
+}
+
+.skill:hover {
+  text-decoration: none;
+
+  h3 {
+    color: var(--color-blue) !important;
+  }
+
+  p {
+    text-decoration: underline;
+  }
+}
+
+.layout {
+  @include mediaQuery(sm) {
+    flex-direction: column !important;
+  }
+}
+
+.image {
+  align-self: flex-start;
+  flex-shrink: 0;
+  width: 28.73%;
+
+  @include mediaQuery(sm) {
+    width: 100%;
+  }
+}
+
+.textWrap {
+  margin-left: 3.83%;
+
+  @include mediaQuery(md) {
+    margin-left: 4.9%;
+  }
+
+  @include mediaQuery(sm) {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+}
+
+.title {
+  align-items: center;
+  color: var(--color-opacity15-black);
+  display: flex;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.titleText {
+  margin-left: 12px;
+}
+
+.description {
+  line-height: var(--line-height-l) !important;
+}
