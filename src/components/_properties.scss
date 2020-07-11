@@ -9,11 +9,12 @@
   --color-opacity15-black: rgba(0, 0, 0, 0.15);
   --color-opacity2-black: rgba(0, 0, 0, 0.02);
   --color-blue: #0366d6;
+  --color-athens-gray: #F2F4F7;
 
   /* **** ブランディング層 **** */
 
   /* 色：色相名とカラーコードの紐付け */
-  --color-base: var(--color-opacity2-black);
+  --color-base: var(--color-athens-gray);
   --color-primary: var(--color-opacity87-black);
   --color-secondary: var(--color-opacity60-black);
 
@@ -27,6 +28,7 @@
   --color-background: var(--color-base);
   --color-overlay: var(--color-opacity60-black);
   --color-link: var(--color-blue);
+  --color-block: var(--color-opacity2-black);
 
   /* 文字：サイズ（媒体に最適化した文字サイズ） */
   --font-size-xxs: 12px;
