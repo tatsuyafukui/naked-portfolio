@@ -8,7 +8,10 @@ const SkillList = ({skills, ...props}) => (
   <ListBordered {...props}>
     {skills.map(skill => (
       <ListItemBordered key={skill.id}>
-        <NavigationLink to={skill.slug} className={styles.navigationLink}>
+        <NavigationLink
+          to={skill.fields.slug}
+          className={styles.navigationLink}
+        >
           {skill.title}
         </NavigationLink>
       </ListItemBordered>

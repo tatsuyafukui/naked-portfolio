@@ -8,8 +8,11 @@ const IndexPage = () => {
       allScenesJson {
         nodes {
           id
+          numberTitle
           title
-          slug
+          fields {
+            slug
+          }
           image {
             childImageSharp {
               fluid(maxWidth: 1140) {

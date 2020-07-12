@@ -1,5 +1,6 @@
 {
   "skillsJson": {
+    "id": "html-and-css",
     "title": "HTML&CSS",
     "subTitle": "レイアウトを作れるようになろう",
     "description": "ホームページやECサイトなど、全てのWebページでHTML&CSSは使われています。HTML&CSSを学べば、これまであなたの頭の中にあった考えを、形にして表現する手段を手に入れることができるのです。",
@@ -41,21 +42,125 @@
         "Webアクセシビリティに対応したページを作れる"
       ]
     },
-    "slug": "/scenes/web-basics/skills/html-css",
     "scene": {
-      "id": "シーン１",
+      "id": "web-basics",
+      "numberTitle": "シーン1",
+      "fields": {
+        "slug": "/scenes/web-basics"
+      },
       "image": {
         "childImageSharp": {
           "fluid": {
-            "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB1ElEQVQozz2Ry3ISURBA+WJ/wx9w7cbSlFn4qCx0kSJCeIgkKZMYhAF5ZIYJhBkY5snce2eODViuurrr9unTfSt5rlAqR2tNkiQ0m02arQb1ywYf3l8wbtuw3OEvY/wgZO15dDpdavU67XabMIwOvXmeHziVZLfDCROMFOM4kUctvn6pc3pyzUX9ie04RtkpUzdn8rRhFUSMhn2q1aoMbxBF4X/gXq6idjl+LInaG6ZctjqcfezQtzS3v8CZabahZu66DMdzFl7E5/MVtZbF7V2fzSYRM41W/wxlWZTeCX13MKw1Gvxo9bEdmNkFzrJkHRi8tSJOSpxFwYuXIa/eJTz7x9xdGlZrTZqKYdRdkC9DVFkQBAGt9nc6jYFMg220hxWHGIQlSVry+4/m7VlKtZPx6Joj8LlgviywnwwV6/UQ5oF4lgfgw+CRwYMn6xsiMUqyIygICzwxGs0zztszutc+vZHGGmsmthGgkXMUVPwwIxJVrZX8WCbqKb17F3ehWW8FsinwJfZGiuFEAHPF6advnLypM5zB/UBhSX3qGDEVwyDO8MIUY/afktG9+snVzVD0kYmGx4XBchT3ljROldwLLGvLze2KsV1yJ8CBWE4PlgV/ATeoT8/mBY3TAAAAAElFTkSuQmCC",
             "aspectRatio": 2.4782608695652173,
             "src": "/static/9e39242b1adc0efeebfb66826bfbeb00/a8101/scene.png",
             "srcSet": "/static/9e39242b1adc0efeebfb66826bfbeb00/8b6a1/scene.png 285w,\n/static/9e39242b1adc0efeebfb66826bfbeb00/0fd62/scene.png 570w,\n/static/9e39242b1adc0efeebfb66826bfbeb00/a8101/scene.png 1140w",
             "sizes": "(max-width: 1140px) 100vw, 1140px"
           }
         }
+      }
+    },
+    "recommended": [
+      {
+        "fields": {
+          "ogp": {
+            "ogTitle": "HTML & CSS 学習コース 初級編 | Progate",
+            "twitterCard": "summary_large_image",
+            "ogDescription": "Progateはオンラインでプログラミングを学べるサービスです。プログラミングを学んでWEBアプリケーションを作ろう。",
+            "ogImage": {
+              "childImageSharp": {
+                "fluid": {
+                  "aspectRatio": 1.639344262295082,
+                  "src": "/static/b6f52ff8e397643881b45baa34bf59e7/ee604/1485928388770.png",
+                  "srcSet": "/static/b6f52ff8e397643881b45baa34bf59e7/69585/1485928388770.png 200w,\n/static/b6f52ff8e397643881b45baa34bf59e7/497c6/1485928388770.png 400w,\n/static/b6f52ff8e397643881b45baa34bf59e7/ee604/1485928388770.png 800w,\n/static/b6f52ff8e397643881b45baa34bf59e7/ccef1/1485928388770.png 980w",
+                  "sizes": "(max-width: 800px) 100vw, 800px"
+                }
+              }
+            }
+          }
+        },
+        "id": "d9abe430-216c-5693-a1a0-c705ea044b0e",
+        "isbn": null,
+        "url": "https://prog-8.com/lessons/html/study/1"
       },
-      "slug": "/scenes/web-basics/"
-    }
+      {
+        "fields": {
+          "ogp": {
+            "ogTitle": "いちばんよくわかるHTML5&CSS3デザインきちんと入門 (Design&IDEA) | 狩野 祐東 |本 | 通販 | Amazon",
+            "twitterCard": null,
+            "ogDescription": "Amazonで狩野 祐東のいちばんよくわかるHTML5&CSS3デザインきちんと入門 (Design&IDEA)。アマゾンならポイント還元本が多数。狩野 祐東作品ほか、お急ぎ便対象商品は当日お届けも可能。またいちばんよくわかるHTML5&CSS3デザインきちんと入門 (Design&IDEA)もアマゾン配送商品なら通常配送無料。",
+            "ogImage": {
+              "childImageSharp": {
+                "fluid": {
+                  "aspectRatio": 0.7092198581560284,
+                  "src": "/static/d9df30bad4ac176446d9dfdcc635ed40/041b5/4797388544._SL500_.jpg",
+                  "srcSet": "/static/d9df30bad4ac176446d9dfdcc635ed40/f836f/4797388544._SL500_.jpg 200w,\n/static/d9df30bad4ac176446d9dfdcc635ed40/041b5/4797388544._SL500_.jpg 355w",
+                  "sizes": "(max-width: 355px) 100vw, 355px"
+                }
+              }
+            }
+          }
+        },
+        "id": "6e64feb9-d119-54e8-84c2-f5681cb4c652",
+        "isbn": "4797388544",
+        "url": "https://www.amazon.co.jp/dp/4797388544"
+      },
+      {
+        "fields": {
+          "ogp": {
+            "ogTitle": "HTML Tutorial",
+            "twitterCard": null,
+            "ogDescription": null,
+            "ogImage": {
+              "childImageSharp": {
+                "fluid": {
+                  "aspectRatio": 2.9411764705882355,
+                  "src": "/static/73b418e581663d65e309640f31bf1eb9/e1953/w3certified_logo_250.png",
+                  "srcSet": "/static/73b418e581663d65e309640f31bf1eb9/69585/w3certified_logo_250.png 200w,\n/static/73b418e581663d65e309640f31bf1eb9/e1953/w3certified_logo_250.png 250w",
+                  "sizes": "(max-width: 250px) 100vw, 250px"
+                }
+              }
+            }
+          }
+        },
+        "id": "c1f13dbc-b110-5985-94f7-29438c7cb3ea",
+        "isbn": null,
+        "url": "https://www.w3schools.com/html/"
+      },
+      {
+        "fields": {
+          "ogp": {
+            "ogTitle": "CSS Tutorial",
+            "twitterCard": null,
+            "ogDescription": null,
+            "ogImage": {
+              "childImageSharp": {
+                "fluid": {
+                  "aspectRatio": 2.9411764705882355,
+                  "src": "/static/73b418e581663d65e309640f31bf1eb9/e1953/w3certified_logo_250.png",
+                  "srcSet": "/static/73b418e581663d65e309640f31bf1eb9/69585/w3certified_logo_250.png 200w,\n/static/73b418e581663d65e309640f31bf1eb9/e1953/w3certified_logo_250.png 250w",
+                  "sizes": "(max-width: 250px) 100vw, 250px"
+                }
+              }
+            }
+          }
+        },
+        "id": "466afc67-11ee-5520-99ee-26f5ec0d37e9",
+        "isbn": null,
+        "url": "https://www.w3schools.com/css/"
+      },
+      {
+        "fields": {
+          "ogp": {
+            "ogTitle": "Web Content Accessibility Guidelines (WCAG) Overview",
+            "twitterCard": "summary_large_image",
+            "ogDescription": "Introduces the Web Content Accessibility Guidelines (WCAG) international standard, including WCAG 2.0 and WCAG 2.1. WCAG documents explain how to make web content more accessible to people with disabilities.",
+            "ogImage": null
+          }
+        },
+        "id": "78663927-5495-5ea2-8cb7-1a05ae6edec6",
+        "isbn": null,
+        "url": "https://www.w3.org/WAI/standards-guidelines/wcag/"
+      }
+    ]
   }
 }

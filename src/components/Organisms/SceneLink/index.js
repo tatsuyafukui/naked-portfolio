@@ -8,7 +8,7 @@ import Img from 'gatsby-image'
 
 const SceneLink = ({scene, className, ...props}) => (
   <Link
-    to={scene.slug}
+    to={scene.fields.slug}
     className={[styles.scene, className].join(' ')}
     {...props}
   >
@@ -20,7 +20,7 @@ const SceneLink = ({scene, className, ...props}) => (
       />
       <div className={styles.textWrap}>
         <Heading level={2} visualLevel={3} className={styles.number}>
-          {scene.id}
+          {scene.numberTitle}
         </Heading>
         <Heading level={3} visualLevel={2} className={styles.title}>
           {scene.title}
