@@ -1,0 +1,96 @@
+{
+  "allScenesJson": {
+    "nodes": [
+      {
+        "id": "web-basics",
+        "numberTitle": "シーン1",
+        "title": "Webページを作れるようになろう",
+        "fields": {
+          "slug": "/scenes/web-basics"
+        },
+        "image": {
+          "childImageSharp": {
+            "fluid": {
+              "aspectRatio": 2.4782608695652173,
+              "src": "/static/9e39242b1adc0efeebfb66826bfbeb00/a8101/scene.png",
+              "srcSet": "/static/9e39242b1adc0efeebfb66826bfbeb00/8b6a1/scene.png 285w,\n/static/9e39242b1adc0efeebfb66826bfbeb00/0fd62/scene.png 570w,\n/static/9e39242b1adc0efeebfb66826bfbeb00/a8101/scene.png 1140w",
+              "sizes": "(max-width: 1140px) 100vw, 1140px"
+            }
+          }
+        }
+      },
+      {
+        "id": "web-application-development",
+        "numberTitle": "シーン2",
+        "title": "Webアプリケーションを形にしよう",
+        "fields": {
+          "slug": "/scenes/web-application-development"
+        },
+        "image": {
+          "childImageSharp": {
+            "fluid": {
+              "aspectRatio": 2.4782608695652173,
+              "src": "/static/9e39242b1adc0efeebfb66826bfbeb00/a8101/scene.png",
+              "srcSet": "/static/9e39242b1adc0efeebfb66826bfbeb00/8b6a1/scene.png 285w,\n/static/9e39242b1adc0efeebfb66826bfbeb00/0fd62/scene.png 570w,\n/static/9e39242b1adc0efeebfb66826bfbeb00/a8101/scene.png 1140w",
+              "sizes": "(max-width: 1140px) 100vw, 1140px"
+            }
+          }
+        }
+      },
+      {
+        "id": "team-development",
+        "numberTitle": "シーン3",
+        "title": "みんなでアプリケーションを開発しよう",
+        "fields": {
+          "slug": "/scenes/team-development"
+        },
+        "image": {
+          "childImageSharp": {
+            "fluid": {
+              "aspectRatio": 2.4782608695652173,
+              "src": "/static/9e39242b1adc0efeebfb66826bfbeb00/a8101/scene.png",
+              "srcSet": "/static/9e39242b1adc0efeebfb66826bfbeb00/8b6a1/scene.png 285w,\n/static/9e39242b1adc0efeebfb66826bfbeb00/0fd62/scene.png 570w,\n/static/9e39242b1adc0efeebfb66826bfbeb00/a8101/scene.png 1140w",
+              "sizes": "(max-width: 1140px) 100vw, 1140px"
+            }
+          }
+        }
+      },
+      {
+        "id": "releasing-your-application",
+        "numberTitle": "シーン4",
+        "title": "公開できるプロダクトに必要なことを知ろう",
+        "fields": {
+          "slug": "/scenes/releasing-your-application"
+        },
+        "image": {
+          "childImageSharp": {
+            "fluid": {
+              "aspectRatio": 2.4782608695652173,
+              "src": "/static/9e39242b1adc0efeebfb66826bfbeb00/a8101/scene.png",
+              "srcSet": "/static/9e39242b1adc0efeebfb66826bfbeb00/8b6a1/scene.png 285w,\n/static/9e39242b1adc0efeebfb66826bfbeb00/0fd62/scene.png 570w,\n/static/9e39242b1adc0efeebfb66826bfbeb00/a8101/scene.png 1140w",
+              "sizes": "(max-width: 1140px) 100vw, 1140px"
+            }
+          }
+        }
+      },
+      {
+        "id": "continuous-delivery",
+        "numberTitle": "シーン5",
+        "title": "プロダクトを継続して届けよう",
+        "fields": {
+          "slug": "/scenes/continuous-delivery"
+        },
+        "image": {
+          "childImageSharp": {
+            "fluid": {
+              "aspectRatio": 2.4782608695652173,
+              "src": "/static/9e39242b1adc0efeebfb66826bfbeb00/a8101/scene.png",
+              "srcSet": "/static/9e39242b1adc0efeebfb66826bfbeb00/8b6a1/scene.png 285w,\n/static/9e39242b1adc0efeebfb66826bfbeb00/0fd62/scene.png 570w,\n/static/9e39242b1adc0efeebfb66826bfbeb00/a8101/scene.png 1140w",
+              "sizes": "(max-width: 1140px) 100vw, 1140px"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

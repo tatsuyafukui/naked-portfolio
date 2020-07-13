@@ -1,12 +1,8 @@
 import React from 'react'
 import {storiesOf} from '@storybook/react'
 import SkillTemplate from './index'
-import skill from '../../../mock/data/skill.json'
-import recommended from '../../../mock/data/recommended.json'
+import skillData from '../../../mock/data/skill.json'
 
 storiesOf('Template/SkillTemplate', module).add('Default', () => (
-  <SkillTemplate
-    skill={skill.skillsJson}
-    recommended={recommended.allRecommendedJson.nodes}
-  />
+  <SkillTemplate data={skillData} />
 ))

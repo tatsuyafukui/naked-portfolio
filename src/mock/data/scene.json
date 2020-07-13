@@ -1,0 +1,58 @@
+{
+  "scenesJson": {
+    "id": "web-basics",
+    "numberTitle": "シーン1",
+    "title": "Webページを作れるようになろう",
+    "description": "「自分だけのWebページを作ってみたい。」そう思ったことはありませんか。このシーンでは、Webページを作るために必要なスキルを説明しています。\n\n学習を始めたばかりのころは、見慣れない文法や知らない単語が多く、難しいと感じることもあるかもしれません。しかし、基礎的なスキルから着実に学んでいけば、きっと作れるようになります。まずはシンプルなレイアウトのWebページを作れるようになりましょう。\n\nこのシーンのスキルを学び終えたとき、あなたはWebページの作成と公開ができるようになっています。Webページが公開されるその日を、私たちは楽しみにしています。",
+    "image": {
+      "childImageSharp": {
+        "fluid": {
+          "aspectRatio": 2.4782608695652173,
+          "src": "/static/9e39242b1adc0efeebfb66826bfbeb00/a8101/scene.png",
+          "srcSet": "/static/9e39242b1adc0efeebfb66826bfbeb00/8b6a1/scene.png 285w,\n/static/9e39242b1adc0efeebfb66826bfbeb00/0fd62/scene.png 570w,\n/static/9e39242b1adc0efeebfb66826bfbeb00/a8101/scene.png 1140w",
+          "sizes": "(max-width: 1140px) 100vw, 1140px"
+        }
+      }
+    },
+    "fields": {
+      "slug": "/scenes/web-basics"
+    },
+    "skills": [
+      {
+        "id": "html-and-css",
+        "fields": {
+          "slug": "/scenes/web-basics/skills/html-and-css"
+        },
+        "title": "HTML&CSS"
+      },
+      {
+        "id": "editors",
+        "fields": {
+          "slug": "/scenes/web-basics/skills/editors"
+        },
+        "title": "エディタ"
+      },
+      {
+        "id": "internet",
+        "fields": {
+          "slug": "/scenes/web-basics/skills/internet"
+        },
+        "title": "インターネット"
+      },
+      {
+        "id": "javascript",
+        "fields": {
+          "slug": "/scenes/web-basics/skills/javascript"
+        },
+        "title": "JavaScript"
+      },
+      {
+        "id": "developer-tools",
+        "fields": {
+          "slug": "/scenes/web-basics/skills/developer-tools"
+        },
+        "title": "開発者ツール"
+      }
+    ]
+  }
+}
