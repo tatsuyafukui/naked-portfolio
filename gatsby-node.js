@@ -86,20 +86,18 @@ exports.onCreateNode = async ({
   }
 
   if (node.internal.type === NODE_TYPE_SCENES) {
-    const value = createFilePath({node, getNode})
     createNodeField({
       node,
       name: SLUG,
-      value: `${value}${node.id}`,
+      value: `/${SCENES}/${node.id}`,
     })
   }
 
   if (node.internal.type === NODE_TYPE_SKILLS) {
-    const value = createFilePath({node, getNode})
     createNodeField({
       node,
       name: SLUG,
-      value: `/${SCENES}/${node.sceneId}${value}${node.id}`,
+      value: `/${SCENES}/${node.sceneId}/${SKILLS}/${node.id}`,
     })
   }
 }
