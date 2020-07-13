@@ -74,7 +74,7 @@ export default Ogp
 
 Ogp.propTypes = {
   title: PropTypes.node.isRequired,
-  description: PropTypes.node.isRequired,
+  description: PropTypes.node,
   url: PropTypes.node.isRequired,
   isbn: PropTypes.string,
   twitterCard: PropTypes.string,
