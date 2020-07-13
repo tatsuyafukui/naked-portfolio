@@ -17,10 +17,10 @@
 }
 
 .breadcrumb {
-  margin-bottom: 12px;
+  margin-bottom: 24px;
 
   @include mediaQuery(md) {
-    margin-bottom: 1.56%;
+    margin-bottom: 3.125%;
   }
 
   @include mediaQuery(sm) {
@@ -70,6 +70,26 @@
   }
 }
 
+.background {
+  background: var(--color-background);
+  padding: 96px 0 80px;
+}
+
+.listItem {
+  margin-bottom: 56px;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+
+  @include mediaQuery(md) {
+    font-size: var(--font-size-l);
+  }
+}
+
+.skillLink {
+  margin-top: 24px;
+  font-weight: var(--font-weight-default);
+}
+
 .descriptionSp {
   display: none;
 
@@ -95,4 +115,8 @@
   @include mediaQuery(md) {
     display: none;
   }
+}
+
+.footer {
+  margin-top: 0 !important;
 }

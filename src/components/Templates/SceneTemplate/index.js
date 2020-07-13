@@ -43,7 +43,7 @@ const SceneTemplate = ({data}) => {
               <Link className={styles.link} to='/'>
                 <Txt>Home</Txt>
               </Link>
-              <Txt>{scene.id}</Txt>
+              <Txt>{scene.numberTitle}</Txt>
             </Breadcrumb>
             <div className={styles.titleWrap}>
               <BoldHeading level={1} className={styles.title}>
@@ -54,12 +54,12 @@ const SceneTemplate = ({data}) => {
               {/* SP */}
               <Txt className={styles.descriptionSp}>
                 <TextTruncate
-                  open={open}
+                  open={isOpen}
                   truncateText={
                     <button
                       key={'truncateText'}
                       className={styles.button}
-                      onClick={onClick}
+                      onClick={() => setIsOpen(true)}
                     >
                       <InfoTxt>続きを読む</InfoTxt>
                     </button>
@@ -75,16 +75,16 @@ const SceneTemplate = ({data}) => {
           <Container>
             <List tag='ol'>
               {skills.map(skill => (
-                <ListItem>
-                  <BoldHeading level={2} visualLevel={3}>{skill.description}</BoldHeading>
-                  <SkillLink skill={skill} />
+                <ListItem className={styles.listItem}>
+                  <BoldHeading tag='span' level={2} visualLevel={3}>{skill.subTitle}</BoldHeading>
+                  <SkillLink skill={skill} className={styles.skillLink} />
                 </ListItem>
               ))}
             </List>
           </Container>
         </section>
       </main>
-      <Footer />
+      <Footer className={styles.footer} />
     </>
   )
 }

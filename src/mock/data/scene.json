@@ -24,7 +24,7 @@
           "slug": "/scenes/web-basics/skills/html-and-css"
         },
         "title": "HTML&CSS",
-        "subTitle": "1. レイアウトを作れるようになろう",
+        "subTitle": "レイアウトを作れるようになろう",
         "description": "ホームページやECサイトなど、全てのWebページでHTML&CSSは使われています。HTML&CSSを学べば、これまであなたの頭の中にあった考えを、形にして表現する手段を手に入れることができるのです。",
         "thumbnail": {
           "childImageSharp": {
@@ -43,7 +43,7 @@
           "slug": "/scenes/web-basics/skills/editors"
         },
         "title": "エディタ",
-        "subTitle": "2. エディタを使ってコーディングを快適にしよう",
+        "subTitle": "エディタを使ってコーディングを快適にしよう",
         "description": "Webページ開発をはじめるためにエディタを用意しましょう。エディタを使うことで、入力補完や文法のチェックを行ってくれるため、快適にプログラミングができます。お気に入りのエディタを見つけて、楽しくプログラミングできる環境を整えましょう。",
         "thumbnail": {
           "childImageSharp": {
@@ -62,7 +62,7 @@
           "slug": "/scenes/web-basics/skills/internet"
         },
         "title": "インターネット",
-        "subTitle": "3. Webの仕組みを知ろう",
+        "subTitle": "Webの仕組みを知ろう",
         "description": "すべてのWebページはインターネットの仕組みの上に成り立っているので、Webページの公開にはインターネットの基本的な知識が必要です。HTML&CSSでWebページを作成したらぜひ世界に公開してみましょう。",
         "thumbnail": {
           "childImageSharp": {
@@ -81,7 +81,7 @@
           "slug": "/scenes/web-basics/skills/javascript"
         },
         "title": "JavaScript",
-        "subTitle": "4. Webページに動きをつけてみよう",
+        "subTitle": "Webページに動きをつけてみよう",
         "description": "HTML&CSSだけでは少し退屈なWebページに感じたかもしれません。WebページにJavaScript取り入れることで、クリックやスクロールなどのユーザーの操作に応じた動的な表現が可能になります。このような仕掛けを用意して「楽しく・心地よい」Webページを作れるようになりましょう。",
         "thumbnail": {
           "childImageSharp": {
@@ -100,7 +100,7 @@
           "slug": "/scenes/web-basics/skills/developer-tools"
         },
         "title": "開発者ツール",
-        "subTitle": "5. デバッグでWebページ開発をスムーズに",
+        "subTitle": "デバッグでWebページ開発をスムーズに",
         "description": "開発を行っているとレイアウト崩れやJavaScriptが思うように動かない状況に直面することもあるでしょう。そんなときは開発者ツールを使うことで原因を調査することができます。自分で原因を見つけて解決できれば、あなたはどんなWebページも作ることができます！開発を行っているとレイアウト崩れやJavaScriptが思うように動かない状況に直面することもあるでしょう。そんなときは開発者ツールを使うことで原因を調査することができます。",
         "thumbnail": {
           "childImageSharp": {

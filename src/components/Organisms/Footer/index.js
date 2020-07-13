@@ -53,8 +53,8 @@ const FooterList = () => {
   )
 }
 
-const Footer = className => (
-  <footer className={[styles.footer, className].join(' ')}>
+const Footer = ({className, ...props}) => (
+  <footer className={[styles.footer, className].join(' ')} {...props}>
     <Container>
       <Link to='/'>
         <Logo className={styles.logo} />
