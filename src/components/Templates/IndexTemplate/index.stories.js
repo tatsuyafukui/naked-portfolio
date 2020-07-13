@@ -1,8 +1,8 @@
 import React from 'react'
 import {storiesOf} from '@storybook/react'
 import IndexTemplate from './index'
-import data from '../../../mock/data/scene'
+import sceneData from '../../../mock/data/scenes.json'
 
 storiesOf('Template/IndexTemplate', module).add('Default', () => (
-  <IndexTemplate scenes={data.allScenesJson.nodes} />
+  <IndexTemplate scenes={sceneData.allScenesJson.nodes} />
 ))

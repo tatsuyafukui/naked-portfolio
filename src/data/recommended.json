@@ -1,23 +1,89 @@
 [
   {
-    "skill": "インターネット",
-    "url": "https://www.amazon.co.jp/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%AF%E3%81%AA%E3%81%9C%E3%81%A4%E3%81%AA%E3%81%8C%E3%82%8B%E3%81%AE%E3%81%8B-%E2%80%95-%E7%9F%A5%E3%81%A3%E3%81%A6%E3%81%8A%E3%81%8D%E3%81%9F%E3%81%84TCP-IP%E3%80%81LAN%E3%80%81ADSL%E3%81%AE%E5%9F%BA%E7%A4%8E%E7%9F%A5%E8%AD%98-%E6%88%B8%E6%A0%B9/dp/4822281515/ref=sr_1_3",
-    "isbn": "4822281515"
-  },
-  {
-    "skill": "HTML&CSS",
+    "skillId": "html-and-css",
     "url": "https://prog-8.com/lessons/html/study/1"
   },
   {
-    "skill": "エディタ",
-    "url": "https://code.visualstudio.com/"
+    "skillId": "html-and-css",
+    "url": "https://www.amazon.co.jp/dp/4797388544",
+    "isbn": "4797388544"
   },
   {
-    "skill": "test",
-    "url": "https://www.jiji.com/jc/article?k=2020062501009&g=pol"
+    "skillId": "html-and-css",
+    "url": "https://www.w3schools.com/html/"
   },
   {
-    "skill": "test",
-    "url": "https://progate.docbase.io/posts/1386804"
+    "skillId": "html-and-css",
+    "url": "https://www.w3schools.com/css/"
+  },
+  {
+    "skillId": "html-and-css",
+    "url": "https://www.w3.org/WAI/standards-guidelines/wcag/"
+  },
+  {
+    "skillId": "editors",
+    "url": "https://code.visualstudio.com/docs"
+  },
+  {
+    "skillId": "editors",
+    "url": "https://atom.io/"
+  },
+  {
+    "skillId": "editors",
+    "url": "http://brackets.io/"
+  },
+  {
+    "skillId": "editors",
+    "url": "https://www.tutorialspoint.com/vim/index.htm"
+  },
+  {
+    "skillId": "editors",
+    "url": "https://www.jetbrains.com/ja-jp/idea/documentation/"
+  },
+  {
+    "skillId": "editors",
+    "url": "https://www.eclipse.org/documentation/"
+  },
+  {
+    "skillId": "internet",
+    "url": "https://prog-8.com/docs/web"
+  },
+  {
+    "skillId": "internet",
+    "url": "https://www.amazon.co.jp/dp/4797388811",
+    "isbn": "4797388811"
+  },
+  {
+    "skillId": "internet",
+    "url": "https://ja.wikipedia.org/wiki/internet"
+  },
+  {
+    "skillId": "javascript",
+    "url": "https://prog-8.com/lessons/es6/study/1"
+  },
+  {
+    "skillId": "javascript",
+    "url": "https://www.amazon.co.jp/dp/4815601577",
+    "isbn": "4815601577"
+  },
+  {
+    "skillId": "javascript",
+    "url": "https://www.w3schools.com/js/"
+  },
+  {
+    "skillId": "javascript",
+    "url": "https://jsprimer.net/"
+  },
+  {
+    "skillId": "developer-tools",
+    "url": "https://prog-8.com/docs/html-dev"
+  },
+  {
+    "skillId": "developer-tools",
+    "url": "https://developer.mozilla.org/ja/docs/Tools"
+  },
+  {
+    "skillId": "developer-tools",
+    "url": "https://developers.google.com/web/tools/chrome-devtools?hl=ja"
   }
 ]
