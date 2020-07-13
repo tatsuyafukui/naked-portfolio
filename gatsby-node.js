@@ -1,8 +1,5 @@
 const path = require(`path`)
-const {
-  createRemoteFileNode,
-  createFilePath,
-} = require('gatsby-source-filesystem')
+const {createRemoteFileNode} = require('gatsby-source-filesystem')
 const ogs = require('open-graph-scraper')
 
 const SCENES = 'scenes'
@@ -17,7 +14,6 @@ const NODE_TYPE_SKILLS = 'SkillsJson'
 
 exports.onCreateNode = async ({
   node,
-  getNode,
   actions,
   store,
   cache,
