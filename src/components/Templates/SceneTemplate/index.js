@@ -13,74 +13,6 @@ import TextTruncate from '../../Atoms/TextTruncate'
 import {BoldHeading} from '../../Atoms/Heading'
 import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
-<<<<<<< HEAD
-import List, {ListItem} from '../../Atoms/List'
-import SkillLink from '../../Organisms/SkillLink'
-
-const SceneTemplate = ({scene, skills, open, onClick}) => (
-  <>
-    <SEO title={scene.title} description={scene.description} lang={'ja'} />
-    <Header />
-    <main className={styles.main}>
-      <Img
-        className={styles.visual}
-        fluid={scene.image.childImageSharp.fluid}
-        alt={scene.title}
-      />
-      <Container>
-        <div className={styles.firstview}>
-          <Breadcrumb
-            className={styles.breadcrumb}
-            separator={
-              <FontAwesomeIcon className={styles.icon} icon={faAngleRight} />
-            }
-          >
-            <Link className={styles.link} to='/'>
-              <Txt>Home</Txt>
-            </Link>
-            <Txt>{scene.id}</Txt>
-          </Breadcrumb>
-          <div className={styles.titleWrap}>
-            <BoldHeading level={1} className={styles.title}>
-              {scene.title}
-            </BoldHeading>
-            {/* PC */}
-            <Txt className={styles.descriptionPc}>{scene.description}</Txt>
-            {/* SP */}
-            <Txt className={styles.descriptionSp}>
-              <TextTruncate
-                open={open}
-                truncateText={
-                  <button
-                    key={'truncateText'}
-                    className={styles.button}
-                    onClick={onClick}
-                  >
-                    <InfoTxt>続きを読む</InfoTxt>
-                  </button>
-                }
-              >
-                {scene.description}
-              </TextTruncate>
-            </Txt>
-          </div>
-        </div>
-      </Container>
-      <section className={styles.background}>
-        <Container>
-          <List tag='ol'>
-            <ListItem>
-              <BoldHeading level={2} visualLevel={3}>1. レイアウトを作れるようになろう</BoldHeading>
-              <SkillLink />
-            </ListItem>
-          </List>
-        </Container>
-      </section>
-    </main>
-    <Footer />
-  </>
-)
-=======
 import SkillList from '../../Organisms/SkillList'
 import {graphql} from 'gatsby'
 
@@ -160,7 +92,6 @@ const SceneTemplate = ({data}) => {
     </>
   )
 }
->>>>>>> 67312d011c79234d8200829bd02c0499e87beee3
 
 SceneTemplate.propTypes = {
   data: PropTypes.object.isRequired,
