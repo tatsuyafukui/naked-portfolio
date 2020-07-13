@@ -1,14 +1,18 @@
 @import '../../properties';
 
 .main {
-  margin-top: 32px;
+
+}
+
+.visual {
+  height: 460px;
 
   @include mediaQuery(md) {
-    margin-bottom: 4.16%;
+    height: 360px;
   }
 
   @include mediaQuery(sm) {
-    margin-bottom: 8.53%;
+    height: 250px;
   }
 }
 
@@ -32,81 +36,26 @@
   color: var(--color-text-info);
 }
 
-.titleWrap {
-  margin-bottom: 32px;
+.firstview {
+  margin-top: 32px;
+  margin-bottom: 96px;
 
   @include mediaQuery(md) {
-    margin-bottom: 4.16%;
   }
 
   @include mediaQuery(sm) {
-    margin-bottom: 6.4%;
   }
 }
 
 .title {
-  @include mediaQuery(sm) {
-    font-size: var(--font-size-xl) !important;
-  }
+  max-width: 430px;
+  margin-right: 5.61%;
+  font-size: var(--font-size-xxxxl);
 }
 
-.imageContainer {
-  @include mediaQuery(lg) {
-    padding: 0 !important;
-  }
-}
-
-.visual {
-  height: 460px;
-
-  @include mediaQuery(md) {
-    height: 360px;
-  }
-
-  @include mediaQuery(sm) {
-    height: 250px;
-  }
-}
-
-.body {
+.titleWrap {
   display: flex;
   justify-content: space-between;
-  margin-top: 48px;
-
-  @include mediaQuery(md) {
-    display: block;
-    margin-top: 5.2%;
-  }
-
-  @include mediaQuery(sm) {
-    display: block;
-    margin-top: 8.53%;
-  }
-
-  > :first-child {
-    margin-right: 3.5%;
-    max-width: 620px;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-
-    @include mediaQuery(md) {
-      margin-bottom: 6.25%;
-      margin-right: 0;
-    }
-
-    @include mediaQuery(sm) {
-      margin-bottom: 8.53%;
-    }
-  }
-
-  > :last-child {
-    flex: 1;
-    min-width: 300px;
-
-    @include mediaQuery(md) {
-      width: 100%;
-    }
-  }
 }
 
 .requireLabel {
@@ -140,7 +89,8 @@
 }
 
 .descriptionPc {
-  display: block;
+  max-width: 580px;
+  line-height: var(--line-height-l);
 
   @include mediaQuery(md) {
     display: none;
