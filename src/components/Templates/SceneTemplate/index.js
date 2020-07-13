@@ -26,7 +26,7 @@ const SceneTemplate = ({data}) => {
     <>
       <SEO title={scene.title} description={scene.description} lang={'ja'} />
       <Header />
-      <main className={styles.main}>
+      <main>
         <Img
           className={styles.visual}
           fluid={scene.image.childImageSharp.fluid}
@@ -104,7 +104,7 @@ export const query = graphql`
       description
       image {
         childImageSharp {
-          fluid(maxWidth: 1140) {
+          fluid(maxWidth: 2000) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }

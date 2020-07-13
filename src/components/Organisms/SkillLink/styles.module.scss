@@ -66,4 +66,8 @@
 
 .description {
   line-height: var(--line-height-l) !important;
+
+  @include mediaQuery(lg) {
+    font-size: var(--font-size-s) !important;
+  }
 }

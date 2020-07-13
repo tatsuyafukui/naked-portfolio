@@ -1,11 +1,13 @@
 @import '../../properties';
 
-.main {
-
-}
-
 .visual {
-  height: 460px;
+  max-width: 2000px;
+  margin: auto;
+  height: 33.67vw;
+
+  @include mediaQuery(xl) {
+    height: 460px;
+  }
 
   @include mediaQuery(md) {
     height: 360px;
@@ -19,8 +21,12 @@
 .breadcrumb {
   margin-bottom: 24px;
 
+  @include mediaQuery(lg) {
+    margin-bottom: 2.41%;
+  }
+
   @include mediaQuery(md) {
-    margin-bottom: 3.125%;
+    margin-bottom: 1.04%;
   }
 
   @include mediaQuery(sm) {
@@ -37,61 +43,62 @@
 }
 
 .firstview {
-  margin-top: 32px;
+  margin-top: 40px;
   margin-bottom: 96px;
 
+  @include mediaQuery(lg) {
+    margin-top: 4.03%;
+    margin-bottom: 9.67%;
+  }
+
   @include mediaQuery(md) {
+    margin-top: 4.16%;
+    margin-bottom: 8.33%;
   }
 
   @include mediaQuery(sm) {
+    margin-top: 6.4%;
+    margin-bottom: 12.8%;
+  }
+}
+
+.titleWrap {
+  display: flex;
+  justify-content: space-between;
+
+  @include mediaQuery(md) {
+    display: block;
   }
 }
 
 .title {
   max-width: 430px;
   margin-right: 5.61%;
-  font-size: var(--font-size-xxxxl);
-}
+  font-size: var(--font-size-xxxxl) !important;
 
-.titleWrap {
-  display: flex;
-  justify-content: space-between;
-}
-
-.requireLabel {
-  margin-bottom: 24px;
+  @include mediaQuery(lg) {
+    font-size: var(--font-size-xxxl) !important;
+  }
 
   @include mediaQuery(md) {
+    max-width: 620px;
+    margin-right: 0;
     margin-bottom: 3.125%;
+    font-size: var(--font-size-xxl) !important;
   }
 
   @include mediaQuery(sm) {
-    margin-bottom: 4.26%;
+    font-size: var(--font-size-xl) !important;
   }
 }
 
-.background {
-  background: var(--color-background);
-  padding: 96px 0 80px;
-}
-
-.listItem {
-  margin-bottom: 56px;
-  font-size: var(--font-size-xl);
-  font-weight: var(--font-weight-bold);
-
-  @include mediaQuery(md) {
-    font-size: var(--font-size-l);
-  }
-}
-
-.skillLink {
-  margin-top: 24px;
-  font-weight: var(--font-weight-default);
+.descriptionSp, .descriptionPc {
+  line-height: var(--line-height-l);
 }
 
 .descriptionSp {
   display: none;
+  max-width: 620px;
 
   @include mediaQuery(md) {
     display: block;
@@ -110,12 +117,54 @@
 
 .descriptionPc {
   max-width: 580px;
-  line-height: var(--line-height-l);
 
   @include mediaQuery(md) {
     display: none;
   }
 }
+
+.background {
+  background: var(--color-background);
+  padding: 96px 0 80px;
+
+  @include mediaQuery(md) {
+    padding: 8.33% 0 10.41%;
+  }
+
+  @include mediaQuery(sm) {
+    padding: 12.8% 0 17.06%;
+  }
+}
+
+.listItem {
+  margin-bottom: 56px;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+
+  @include mediaQuery(md) {
+    font-size: var(--font-size-l);
+    margin-bottom: 7.29%;
+  }
+
+  @include mediaQuery(sm) {
+    margin-bottom: 12.8%;
+  }
+}
+
+.skillLink {
+  margin-top: 24px;
+  font-weight: var(--font-weight-default);
+
+  @include mediaQuery(md) {
+    margin-top: 3.125%;
+  }
+
+  @include mediaQuery(sm) {
+    margin-top: 5.33%;
+  }
+}
+
+
 
 .footer {
   margin-top: 0 !important;
