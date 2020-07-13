@@ -1,4 +1,4 @@
-const path = require(`path`)
+const path = require('path')
 const {createRemoteFileNode} = require('gatsby-source-filesystem')
 const ogs = require('open-graph-scraper')
 
@@ -24,7 +24,6 @@ exports.onCreateNode = async ({
     // URLからOGP情報を取得
     const results = await ogs({url: node.url}, (error, results) => {
       if (error) {
-        console.log(node.url)
         throw Error('OGP取得のURLが不適切です')
       }
       return results
