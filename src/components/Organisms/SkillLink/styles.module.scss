@@ -7,7 +7,7 @@
   padding: 4.21%;
 
   @include mediaQuery(sm) {
-    padding: 4.89%;
+    padding: 6%;
   }
 }
 
@@ -65,5 +65,10 @@
 }
 
 .description {
+  font-weight: var(--font-weight-default) !important;
   line-height: var(--line-height-l) !important;
+
+  @include mediaQuery(lg) {
+    font-size: var(--font-size-s) !important;
+  }
 }

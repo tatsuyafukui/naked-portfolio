@@ -11,7 +11,7 @@ import {faBook} from '@fortawesome/free-solid-svg-icons'
 
 const SkillLink = ({skill, className, ...props}) => (
   <Link
-    to={skill.slug}
+    to={skill.fields.slug}
     className={[styles.skill, className].join(' ')}
     {...props}
   >
