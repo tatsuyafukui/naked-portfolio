@@ -14,7 +14,6 @@ const OverlayContainer = ({overlayStyle, presenter, children, ...props}) => {
 
     if (child.type === Back) {
       const grandChild = React.Children.only(child.props.children)
-
       return React.cloneElement(grandChild, {
         className: [styles.back].join(' '),
       })
