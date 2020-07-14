@@ -4,11 +4,11 @@ import TextTruncate from '../../Atoms/TextTruncate'
 import styles from './styles.module.scss'
 import PropTypes from 'prop-types'
 import {useMediaQuery} from 'react-responsive'
-import {MD_QUERY} from '../../constants'
+import {MEDIA_QUERY_MD} from '../../../constants'
 
 const LongDescription = ({maxChars, truncateText, children}) => {
   const [open, setOpen] = useState(false)
-  const isMobile = useMediaQuery({query: MD_QUERY})
+  const isMobile = useMediaQuery({query: MEDIA_QUERY_MD})
 
   const clickOpenHandler = () => {
     setOpen(true)
@@ -21,7 +21,7 @@ const LongDescription = ({maxChars, truncateText, children}) => {
         maxChars={maxChars}
         truncateText={
           <button
-            key={'truncateText'}
+            key={'read-more'}
             className={styles.button}
             onClick={clickOpenHandler}
           >

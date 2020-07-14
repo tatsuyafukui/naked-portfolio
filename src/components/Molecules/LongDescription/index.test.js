@@ -4,9 +4,7 @@ import LongDescription from './index'
 import {mount} from 'enzyme'
 
 describe('LongDescriptionContainer', () => {
-  const TEST_DESCRIPTION =
-    'TEST_DESCRIPTION_TEST_DESCRIPTION_TEST_DESCRIPTION_TEST_DESCRIPTION_TEST_DESCRIPTION_TEST_DESCRIPTION_TEST_DESCRIPTION_TEST_DESCRIPTION_TEST_DESCRIPTION_TEST_DESCRIPTION_TEST_DESCRIPTION'
-
+  const TEST_DESCRIPTION = 'x'.repeat(100)
   it('PCの場合はopenは常にtrue', () => {
     const wrapper = mount(
       <ResponsiveContext.Provider value={{type: 'screen', width: 768}}>
