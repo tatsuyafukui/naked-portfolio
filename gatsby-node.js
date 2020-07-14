@@ -15,13 +15,7 @@ const NODE_TYPE_SKILLS = 'SkillsJson'
 exports.onCreateNode = async ({node, actions, store, cache, createNodeId}) => {
   const {createNodeField, createNode} = actions
   if (node.internal.type === NODE_TYPE_RECOMMENDED) {
-    // URLからOGP情報を取得
-    const results = await ogs({url: node.url}, (error, results) => {
-      if (error) {
-        throw Error('OGP取得のURLが不適切です')
-      }
-      return results
-    })
+    const results = await fetchOgp(node.url)
 
     // Amazonはogp画像が正常に設定されていないので、ISBNから画像URLを指定
     if (node.isbn) {
@@ -158,5 +152,15 @@ exports.createPages = async ({graphql, actions}) => {
         slug: node.fields.slug,
       },
     })
+  })
+}
+
+
+const fetchOgp = async (url) => {
+  return await ogs({url}, (error, results) => {
+    if (error) {
+      throw Error('OGP取得のURLが不適切です')
+    }
+    return results
   })
 }
