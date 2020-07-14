@@ -370,6 +370,11 @@ ol {
   padding-top: 0;
 }
 
+ul,
+ol > :last-child {
+  margin-bottom: 0;
+}
+
 dl {
   margin-bottom: 0;
   margin-left: 0;

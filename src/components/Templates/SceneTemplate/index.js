@@ -10,11 +10,12 @@ import Container from '../../Atoms/Container'
 import Link from '../../Atoms/Link'
 import Txt, {InfoTxt} from '../../Atoms/Txt'
 import TextTruncate from '../../Atoms/TextTruncate'
-import Heading, {BoldHeading} from '../../Atoms/Heading'
+import {BoldHeading} from '../../Atoms/Heading'
 import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
-import SkillList from '../../Organisms/SkillList'
 import {graphql} from 'gatsby'
+import List, {ListItem} from '../../Atoms/List'
+import SkillLink from '../../Organisms/SkillLink'
 
 const SceneTemplate = ({data}) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -25,9 +26,14 @@ const SceneTemplate = ({data}) => {
     <>
       <SEO title={scene.title} description={scene.description} lang={'ja'} />
       <Header />
-      <main className={styles.main}>
+      <main>
+        <Img
+          className={styles.visual}
+          fluid={scene.image.childImageSharp.fluid}
+          alt={scene.title}
+        />
         <Container>
-          <div className={styles.titleWrap}>
+          <div className={styles.firstview}>
             <Breadcrumb
               className={styles.breadcrumb}
               separator={
@@ -39,22 +45,10 @@ const SceneTemplate = ({data}) => {
               </Link>
               <Txt>{scene.numberTitle}</Txt>
             </Breadcrumb>
-            <Heading level={1} className={styles.title}>
-              {scene.title}
-            </Heading>
-          </div>
-        </Container>
-        <Container className={styles.imageContainer}>
-          <Img
-            className={styles.visual}
-            fluid={scene.image.childImageSharp.fluid}
-            alt={scene.title}
-          />
-        </Container>
-        <Container>
-          <div className={styles.body}>
-            {/* TODO: コンポーネント化する */}
-            <div>
+            <div className={styles.titleWrap}>
+              <BoldHeading level={1} className={styles.title}>
+                {scene.title}
+              </BoldHeading>
               {/* PC */}
               <Txt className={styles.descriptionPc}>{scene.description}</Txt>
               {/* SP */}
@@ -75,20 +69,24 @@ const SceneTemplate = ({data}) => {
                 </TextTruncate>
               </Txt>
             </div>
-            <div>
-              <BoldHeading
-                level={2}
-                visualLevel={4}
-                className={styles.requireLabel}
-              >
-                必要なスキル
-              </BoldHeading>
-              <SkillList skills={skills} />
-            </div>
           </div>
         </Container>
+        <section className={styles.background}>
+          <Container>
+            <List tag='ol'>
+              {skills.map(skill => (
+                <ListItem className={styles.listItem} key={skill.id}>
+                  <BoldHeading tag='span' level={2} visualLevel={3}>
+                    {skill.subTitle}
+                  </BoldHeading>
+                  <SkillLink skill={skill} className={styles.skillLink} />
+                </ListItem>
+              ))}
+            </List>
+          </Container>
+        </section>
       </main>
-      <Footer />
+      <Footer className={styles.footer} />
     </>
   )
 }
@@ -108,17 +106,26 @@ export const query = graphql`
       description
       image {
         childImageSharp {
-          fluid(maxWidth: 1140) {
+          fluid(maxWidth: 2000) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
       }
       skills {
         id
+        title
+        subTitle
+        description
+        thumbnail {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
         fields {
           slug
         }
-        title
       }
     }
   }

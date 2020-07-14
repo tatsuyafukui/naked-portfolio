@@ -12,13 +12,7 @@ const NODE_TYPE_RECOMMENDED = 'RecommendedJson'
 const NODE_TYPE_SCENES = 'ScenesJson'
 const NODE_TYPE_SKILLS = 'SkillsJson'
 
-exports.onCreateNode = async ({
-  node,
-  actions,
-  store,
-  cache,
-  createNodeId,
-}) => {
+exports.onCreateNode = async ({node, actions, store, cache, createNodeId}) => {
   const {createNodeField, createNode} = actions
   if (node.internal.type === NODE_TYPE_RECOMMENDED) {
     // URLからOGP情報を取得
