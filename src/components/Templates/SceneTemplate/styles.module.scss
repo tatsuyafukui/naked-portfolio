@@ -1,9 +1,9 @@
 @import '../../properties';
 
 .visual {
-  max-width: 2000px;
-  margin: auto;
   height: 33.67vw;
+  margin: auto;
+  max-width: 2000px;
 
   @include mediaQuery(xl) {
     height: 460px;
@@ -43,22 +43,22 @@
 }
 
 .firstview {
-  margin-top: 40px;
   margin-bottom: 96px;
+  margin-top: 40px;
 
   @include mediaQuery(lg) {
-    margin-top: 4.03%;
     margin-bottom: 9.67%;
+    margin-top: 4.03%;
   }
 
   @include mediaQuery(md) {
-    margin-top: 4.16%;
     margin-bottom: 8.33%;
+    margin-top: 4.16%;
   }
 
   @include mediaQuery(sm) {
-    margin-top: 6.4%;
     margin-bottom: 12.8%;
+    margin-top: 6.4%;
   }
 }
 
@@ -72,19 +72,19 @@
 }
 
 .title {
-  max-width: 430px;
-  margin-right: 5.61%;
   font-size: var(--font-size-xxxxl) !important;
+  margin-right: 5.61%;
+  max-width: 430px;
 
   @include mediaQuery(lg) {
     font-size: var(--font-size-xxxl) !important;
   }
 
   @include mediaQuery(md) {
-    max-width: 620px;
-    margin-right: 0;
-    margin-bottom: 3.125%;
     font-size: var(--font-size-xxl) !important;
+    margin-bottom: 3.125%;
+    margin-right: 0;
+    max-width: 620px;
   }
 
   @include mediaQuery(sm) {
@@ -92,7 +92,8 @@
   }
 }
 
-.descriptionSp, .descriptionPc {
+.descriptionSp,
+.descriptionPc {
   line-height: var(--line-height-l);
 }
 
@@ -137,9 +138,9 @@
 }
 
 .listItem {
-  margin-bottom: 56px;
   font-size: var(--font-size-xl);
   font-weight: var(--font-weight-bold);
+  margin-bottom: 56px;
 
   @include mediaQuery(md) {
     font-size: var(--font-size-l);
@@ -152,8 +153,8 @@
 }
 
 .skillLink {
-  margin-top: 24px;
   font-weight: var(--font-weight-default);
+  margin-top: 24px;
 
   @include mediaQuery(md) {
     margin-top: 3.125%;
@@ -163,8 +164,6 @@
     margin-top: 5.33%;
   }
 }
-
-
 
 .footer {
   margin-top: 0 !important;

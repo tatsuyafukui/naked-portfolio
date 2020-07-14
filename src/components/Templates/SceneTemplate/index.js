@@ -76,7 +76,9 @@ const SceneTemplate = ({data}) => {
             <List tag='ol'>
               {skills.map(skill => (
                 <ListItem className={styles.listItem}>
-                  <BoldHeading tag='span' level={2} visualLevel={3}>{skill.subTitle}</BoldHeading>
+                  <BoldHeading tag='span' level={2} visualLevel={3}>
+                    {skill.subTitle}
+                  </BoldHeading>
                   <SkillLink skill={skill} className={styles.skillLink} />
                 </ListItem>
               ))}
