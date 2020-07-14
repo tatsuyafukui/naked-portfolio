@@ -117,6 +117,7 @@
 
 .content {
   margin-bottom: 40px;
+  line-height: var(--line-height-l) !important;
 
   @include mediaQuery(md) {
     margin-bottom: 5.2%;
