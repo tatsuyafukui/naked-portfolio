@@ -2,12 +2,13 @@ import React from 'react'
 import styles from './styles.module.scss'
 import Link from '../../Atoms/Link'
 import Ogp from '../../Organisms/Ogp'
+import List, {ListItem} from '../../Atoms/List'
 
 const OgpList = ({ogpList, ...props}) => (
-  <div {...props}>
+  <List {...props}>
     {ogpList &&
       ogpList.map(item => (
-        <div key={item.id} className={styles.marginBottom}>
+        <ListItem key={item.id} className={styles.marginBottom}>
           {/* ogpがないサイトはリンクのみ */}
           {item.fields ? (
             <Ogp
@@ -26,8 +27,8 @@ const OgpList = ({ogpList, ...props}) => (
               {item.url}
             </Link>
           )}
-        </div>
+        </ListItem>
       ))}
-  </div>
+  </List>
 )
 export default OgpList
