@@ -75,7 +75,7 @@ const SceneTemplate = ({data}) => {
           <Container>
             <List tag='ol'>
               {skills.map(skill => (
-                <ListItem className={styles.listItem}>
+                <ListItem className={styles.listItem} key={skill.id}>
                   <BoldHeading tag='span' level={2} visualLevel={3}>
                     {skill.subTitle}
                   </BoldHeading>

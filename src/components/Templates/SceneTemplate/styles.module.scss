@@ -99,9 +99,8 @@
 
 .descriptionSp {
   display: none;
-  max-width: 620px;
 
-  @include mediaQuery(md) {
+  @include mediaQuery(sm) {
     display: block;
   }
 
@@ -120,6 +119,10 @@
   max-width: 580px;
 
   @include mediaQuery(md) {
+    max-width: 620px;
+  }
+
+  @include mediaQuery(sm) {
     display: none;
   }
 }
