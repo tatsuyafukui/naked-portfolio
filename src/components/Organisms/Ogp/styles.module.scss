@@ -5,6 +5,12 @@
   border-radius: var(--radius);
   display: block;
   overflow: hidden;
+  transition: var(--hover-animation);
+
+  &:hover {
+    text-decoration: none;
+    background-color: var(--color-block);
+  }
 }
 
 .top {
