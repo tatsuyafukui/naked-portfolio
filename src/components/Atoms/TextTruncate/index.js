@@ -19,6 +19,9 @@ export const TextTruncateContainer = ({
   ) {
     children = children.slice(0, maxChars) + ' ... '
     children = React.Children.toArray(children)
+    if (React.isValidElement(truncateText)) {
+      truncateText.props.key = 'read-more'
+    }
     children.push(truncateText)
   }
 
