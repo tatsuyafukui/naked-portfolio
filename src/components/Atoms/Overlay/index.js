@@ -12,15 +12,14 @@ const OverlayContainer = ({overlayStyle, presenter, children, ...props}) => {
   children = React.Children.map(children, child => {
     if (typeof child === 'string') return null
 
-    if (child.type.name === 'Back') {
+    if (child.type === Back) {
       const grandChild = React.Children.only(child.props.children)
-
       return React.cloneElement(grandChild, {
         className: [styles.back].join(' '),
       })
     }
 
-    if (child.type.name === 'Front') {
+    if (child.type === Front) {
       const grandChild = child.props.children
       return (
         <div className={styles.overlay} style={{...overlayStyle}}>
