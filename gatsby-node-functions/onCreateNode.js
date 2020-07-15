@@ -97,7 +97,7 @@ const generateOgpImage = (node, ogImage) => {
 
   const internal = checkInternalLink(ogImage.url)
   if (internal) {
-    ogImage.url = combiningDomainAndPath(node.url, ogImage.url)
+    ogImage.url = combineDomainAndPath(node.url, ogImage.url)
   }
 
   return ogImage
@@ -156,7 +156,7 @@ const checkInternalLink = url => /^\/(?!\/)/.test(url)
  * @param path /images/example.png
  * @returns {string} https://examplecom/images/example.png
  */
-const combiningDomainAndPath = (url, path) => {
+const combineDomainAndPath = (url, path) => {
   const domainUrl = url
     .match(/^https?:\/{2,}(.*?)(?:\/|\?|#|$)/)[0]
     .slice(0, -1)
