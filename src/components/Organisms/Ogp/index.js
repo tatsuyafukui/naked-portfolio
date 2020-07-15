@@ -34,7 +34,7 @@ const OgpPresenter = ({
       className={styles[summaryPosition]}
       hasImage={!!image}
     >
-      <Img fluid={image} alt={title} />
+      <Img fluid={image} alt={title} className={styles.image} />
       <div className={[styles.ogBody].join(' ')}>
         <Heading level={5} className={[styles.ogTitle, truncate].join(' ')}>
           {title}
@@ -55,13 +55,17 @@ export const OgpContainer = ({
   ...props
 }) => {
   const isMobile = useMediaQuery({query: MEDIA_QUERY_MD})
-  const truncate = !isMobile ? styles.textTruncate : styles.multilineTextTruncate
   const summaryPosition = image ? getSummaryPosition(twitterCard) : null
   let ogpDescription
+  let truncate
   if (isbn) {
     ogpDescription = <AmazonOgpDescription url={url} />
+    truncate = styles.multilineTextTruncate
   } else {
-    ogpDescription = <OgpDescription description={description} url={url} />
+    ogpDescription = (
+      <OgpDescription description={!isMobile ? description : null} url={url} />
+    )
+    truncate = !isMobile ? styles.textTruncate : styles.multilineTextTruncate
   }
 
   return presenter({
