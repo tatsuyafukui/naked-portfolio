@@ -26,7 +26,7 @@ const onCreateNode = async ({node, actions, createNodeId, cache, store}) => {
 
   if (node.internal.type === NODE_TYPE_RECOMMENDED) {
     const results = await fetchOgp(node.url)
-    results.ogImage = generateOgpImage(node, results.ogImage)
+    results.ogImage = formatOgpImage(node, results.ogImage)
 
     createGatsbyImg(results, {
       url: results.ogImage.url,
@@ -84,7 +84,7 @@ const fetchOgp = async url => {
  * @param ogImage
  * @returns {{type: string, url: string}}
  */
-const generateOgpImage = (node, ogImage) => {
+const formatOgpImage = (node, ogImage) => {
   if (!ogImage) return
 
   if (node.isbn) {
