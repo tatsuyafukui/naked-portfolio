@@ -4,12 +4,19 @@ import NavigationLink from '../NavigationLink'
 import styles from '../../Molecules/OgpDescription/styles.module.scss'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faLink} from '@fortawesome/free-solid-svg-icons'
+import {useMediaQuery} from 'react-responsive'
+import {MEDIA_QUERY_MD} from '../../../constants'
 
-const OgpDescription = ({url, description}) => (
+const OgpDescription = ({url, description}) => {
+  const isMobile = useMediaQuery({query: MEDIA_QUERY_MD})
+
+  return (
   <>
-    <InfoTxt visualLevel={2} className={styles.truncateText}>
-      {description}
-    </InfoTxt>
+    { isMobile ||
+      <InfoTxt visualLevel={2} className={styles.truncateText}>
+        {description}
+      </InfoTxt>
+    }
     <div className={styles.ogUrl}>
       <FontAwesomeIcon className={styles.linkIcon} icon={faLink} />
       <DisableTxt visualLevel={2} className={styles.truncateText}>
@@ -17,7 +24,7 @@ const OgpDescription = ({url, description}) => (
       </DisableTxt>
     </div>
   </>
-)
+)}
 
 export default OgpDescription
 

@@ -1,16 +1,23 @@
 @import '../../properties';
 
 .truncateText {
+  display: -webkit-box;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 100%;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 
 .ogUrl {
   align-items: baseline;
   display: flex;
   margin-top: 6px;
+}
+
+.ogUrlText {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
 }
 
 .linkIcon {

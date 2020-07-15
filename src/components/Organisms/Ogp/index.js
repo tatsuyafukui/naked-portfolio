@@ -9,8 +9,11 @@ import Heading from '../../Atoms/Heading'
 import OgpDescription, {
   AmazonOgpDescription,
 } from '../../Molecules/OgpDescription'
+import {useMediaQuery} from 'react-responsive'
+import {MEDIA_QUERY_MD} from '../../../constants'
 
 const OgpPresenter = ({
+  truncate,
   title,
   url,
   image,
@@ -33,7 +36,7 @@ const OgpPresenter = ({
     >
       <Img fluid={image} alt={title} />
       <div className={[styles.ogBody].join(' ')}>
-        <Heading level={5} className={styles.ogTitle}>
+        <Heading level={5} className={[styles.ogTitle, truncate].join(' ')}>
           {title}
         </Heading>
         {ogpDescription}
@@ -51,6 +54,8 @@ export const OgpContainer = ({
   presenter,
   ...props
 }) => {
+  const isMobile = useMediaQuery({query: MEDIA_QUERY_MD})
+  const truncate = !isMobile ? styles.textTruncate : styles.multilineTextTruncate
   const summaryPosition = image ? getSummaryPosition(twitterCard) : null
   let ogpDescription
   if (isbn) {
@@ -60,6 +65,7 @@ export const OgpContainer = ({
   }
 
   return presenter({
+    truncate,
     url,
     image,
     summaryPosition,

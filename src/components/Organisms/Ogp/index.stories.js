@@ -6,8 +6,8 @@ import data from '../../../mock/data/gatsby-img.json'
 storiesOf('Organisms/Ogp', module)
   .add('Default', () => (
     <Ogp
-      title={'Title'}
-      description={'description'}
+      title={'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s'}
+      description={'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s'}
       url={'https://prog-8.com'}
       twitterCard={'summary'}
       image={data.square.fluid}
@@ -15,8 +15,8 @@ storiesOf('Organisms/Ogp', module)
   ))
   .add('AmazonOgp', () => (
     <Ogp
-      title={'Title'}
-      description={'description'}
+      title={'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s'}
+      description={'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s'}
       url={'https://prog-8.com'}
       isbn={'4822281515'}
       image={data.book.fluid}
