@@ -151,7 +151,6 @@ const checkInternalLink = url => /^\/(?!\/)/.test(url)
 
 /**
  * 画像pathをドメインと結合して完全な画像URLに変換
- *
  * @param url https://examplecom/doc
  * @param path /images/example.png
  * @returns {string} https://examplecom/images/example.png
