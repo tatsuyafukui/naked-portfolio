@@ -65,7 +65,7 @@ export const OgpContainer = ({
     ogpDescription = (
       <OgpDescription description={!isMobile && description} url={url} />
     )
-    truncate = !isMobile ? styles.textTruncate : styles.multilineTextTruncate
+    truncate = isMobile ? styles.multilineTextTruncate : styles.textTruncate
   }
 
   return presenter({
