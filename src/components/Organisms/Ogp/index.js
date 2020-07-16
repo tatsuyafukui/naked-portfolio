@@ -48,7 +48,7 @@ const OgpPresenter = ({
 export const OgpContainer = ({
   description,
   url,
-  isbn,
+  isbn: isAmazon,
   image,
   twitterCard,
   presenter,
@@ -56,17 +56,15 @@ export const OgpContainer = ({
 }) => {
   const isMobile = useMediaQuery({query: MEDIA_QUERY_MD})
   const summaryPosition = image ? getSummaryPosition(twitterCard) : null
-  let ogpDescription
-  let truncate
-  if (isbn) {
-    ogpDescription = <AmazonOgpDescription url={url} />
-    truncate = styles.multilineTextTruncate
-  } else {
-    ogpDescription = (
-      <OgpDescription description={!isMobile && description} url={url} />
-    )
-    truncate = isMobile ? styles.multilineTextTruncate : styles.textTruncate
-  }
+  const truncate =
+    isMobile || isAmazon
+      ? styles.multilineTextTruncate
+      : styles.textTruncate
+  const ogpDescription = isAmazon ? (
+    <AmazonOgpDescription url={url} />
+  ) : (
+    <OgpDescription description={!isMobile && description} url={url} />
+  )
 
   return presenter({
     truncate,
