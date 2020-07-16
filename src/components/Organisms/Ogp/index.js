@@ -9,8 +9,6 @@ import Heading from '../../Atoms/Heading'
 import OgpDescription, {
   AmazonOgpDescription,
 } from '../../Molecules/OgpDescription'
-import {useMediaQuery} from 'react-responsive'
-import {MEDIA_QUERY_MD} from '../../../constants'
 
 const OgpPresenter = ({
   truncate,
@@ -46,6 +44,7 @@ const OgpPresenter = ({
 )
 
 export const OgpContainer = ({
+  isMobile,
   description,
   url,
   isbn: isAmazon,
@@ -54,7 +53,6 @@ export const OgpContainer = ({
   presenter,
   ...props
 }) => {
-  const isMobile = useMediaQuery({query: MEDIA_QUERY_MD})
   const summaryPosition = image ? getSummaryPosition(twitterCard) : null
   const truncate =
     isMobile || isAmazon ? styles.multilineTextTruncate : styles.textTruncate
