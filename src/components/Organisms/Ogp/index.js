@@ -57,9 +57,7 @@ export const OgpContainer = ({
   const isMobile = useMediaQuery({query: MEDIA_QUERY_MD})
   const summaryPosition = image ? getSummaryPosition(twitterCard) : null
   const truncate =
-    isMobile || isAmazon
-      ? styles.multilineTextTruncate
-      : styles.textTruncate
+    isMobile || isAmazon ? styles.multilineTextTruncate : styles.textTruncate
   const ogpDescription = isAmazon ? (
     <AmazonOgpDescription url={url} />
   ) : (
