@@ -25,11 +25,11 @@
 
 .linkIcon {
   color: var(--color-text-disable);
-  font-size: 12px;
+  font-size: var(--font-size-xxs);
   margin-right: 6px;
 
   @include mediaQuery(md) {
-    font-size: 10px;
+    font-size: var(--font-size-xxxs);
   }
 }
 
