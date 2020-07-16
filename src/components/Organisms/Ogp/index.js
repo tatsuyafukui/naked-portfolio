@@ -63,7 +63,7 @@ export const OgpContainer = ({
     truncate = styles.multilineTextTruncate
   } else {
     ogpDescription = (
-      <OgpDescription description={!isMobile ? description : null} url={url} />
+      <OgpDescription description={!isMobile && description} url={url} />
     )
     truncate = !isMobile ? styles.textTruncate : styles.multilineTextTruncate
   }
