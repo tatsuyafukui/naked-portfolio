@@ -92,38 +92,11 @@
   }
 }
 
-.descriptionSp,
-.descriptionPc {
-  line-height: var(--line-height-l) !important;
-}
-
-.descriptionSp {
-  display: none;
-
-  @include mediaQuery(sm) {
-    display: block;
-  }
-
-  .button {
-    appearance: none;
-    background: none;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    padding: 0;
-  }
-}
-
-.descriptionPc {
+.description {
   max-width: 580px;
 
   @include mediaQuery(md) {
     max-width: 620px;
-  }
-
-  @include mediaQuery(sm) {
-    display: none;
   }
 }
 

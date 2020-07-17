@@ -21,6 +21,7 @@ const txtFactory = role => ({
 )
 
 const TxtPresenter = txtFactory('base')
+const LongTxtPresenter = txtFactory('long')
 const InfoTxtPresenter = txtFactory('info')
 const DisableTxtPresenter = txtFactory('disable')
 
@@ -32,6 +33,7 @@ export const TxtContainer = ({visualLevel, presenter, ...props}) => {
 const Txt = containPresenter(TxtContainer, TxtPresenter)
 export const InfoTxt = containPresenter(TxtContainer, InfoTxtPresenter)
 export const DisableTxt = containPresenter(TxtContainer, DisableTxtPresenter)
+export const LongTxt = containPresenter(TxtContainer, LongTxtPresenter)
 
 Txt.propTypes = {
   children: PropTypes.node,
@@ -60,6 +62,16 @@ DisableTxt.propTypes = {
 }
 
 DisableTxt.defaultProps = {
+  visualLevel: 1,
+}
+
+LongTxt.propTypes = {
+  children: PropTypes.node,
+  tag: PropTypes.string,
+  visualLevel: PropTypes.number,
+}
+
+LongTxt.defaultProps = {
   visualLevel: 1,
 }
 

@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Txt, {InfoTxt} from '../../Atoms/Txt'
+import {LongTxt, InfoTxt} from '../../Atoms/Txt'
 import TextTruncate from '../../Atoms/TextTruncate'
 import styles from './styles.module.scss'
 import PropTypes from 'prop-types'
@@ -15,7 +15,7 @@ const LongDescription = ({maxChars, truncateText, children}) => {
   }
 
   return (
-    <Txt>
+    <LongTxt>
       <TextTruncate
         open={!isMobile || open}
         maxChars={maxChars}
@@ -27,7 +27,7 @@ const LongDescription = ({maxChars, truncateText, children}) => {
       >
         {children}
       </TextTruncate>
-    </Txt>
+    </LongTxt>
   )
 }
 

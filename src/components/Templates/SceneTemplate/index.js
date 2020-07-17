@@ -9,13 +9,13 @@ import Breadcrumb from '../../Atoms/Breadcrumb'
 import Container from '../../Atoms/Container'
 import Link from '../../Atoms/Link'
 import Txt, {InfoTxt} from '../../Atoms/Txt'
-import TextTruncate from '../../Atoms/TextTruncate'
 import {BoldHeading} from '../../Atoms/Heading'
 import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
 import {graphql} from 'gatsby'
 import List, {ListItem} from '../../Atoms/List'
 import SkillLink from '../../Organisms/SkillLink'
+import LongDescription from '../../Molecules/LongDescription'
 
 const SceneTemplate = ({data}) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -49,25 +49,11 @@ const SceneTemplate = ({data}) => {
               <BoldHeading level={1} className={styles.title}>
                 {scene.title}
               </BoldHeading>
-              {/* PC */}
-              <Txt className={styles.descriptionPc}>{scene.description}</Txt>
-              {/* SP */}
-              <Txt className={styles.descriptionSp}>
-                <TextTruncate
-                  open={isOpen}
-                  truncateText={
-                    <button
-                      key={'truncateText'}
-                      className={styles.button}
-                      onClick={() => setIsOpen(true)}
-                    >
-                      <InfoTxt>続きを読む</InfoTxt>
-                    </button>
-                  }
-                >
+              <div className={styles.description}>
+                <LongDescription>
                   {scene.description}
-                </TextTruncate>
-              </Txt>
+                </LongDescription>
+              </div>
             </div>
           </div>
         </Container>
