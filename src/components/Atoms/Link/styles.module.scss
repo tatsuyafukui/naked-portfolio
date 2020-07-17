@@ -1,0 +1,9 @@
+@import '../../properties';
+
+.color {
+  color: var(--color-link);
+
+  &:hover {
+    text-decoration: var(--color-link) underline;
+  }
+}

@@ -2,8 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {Link as GatsbyLink} from 'gatsby'
 import {containPresenter} from '../../utils/HoC'
+import styles from './styles.module.scss'
 
-const LinkPresenter = ({tag: Tag, ...props}) => <Tag {...props} />
+const LinkFactory = role => ({tag: Tag, className, ...props}) => (
+  <Tag
+    className={role ? [styles[role], className].join(' ') : className}
+    {...props}
+  />
+)
+
+const LinkPresenter = LinkFactory()
+const LinkColoredPresenter = LinkFactory('color')
 
 /**
  * 内部リンクか外部リンクかでタグを出しわける
@@ -29,8 +38,16 @@ export const LinkContainer = ({presenter, ...props}) => {
 }
 
 const Link = containPresenter(LinkContainer, LinkPresenter)
+export const LinkColored = containPresenter(LinkContainer, LinkColoredPresenter)
 
 Link.propTypes = {
+  children: PropTypes.node.isRequired,
+  to: PropTypes.string,
+  activeClassName: PropTypes.string,
+  partiallyActive: PropTypes.object,
+}
+
+LinkColored.propTypes = {
   children: PropTypes.node.isRequired,
   to: PropTypes.string,
   activeClassName: PropTypes.string,
