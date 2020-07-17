@@ -25,9 +25,7 @@ const SkillTemplate = ({data}) => {
       <Header />
       <main className={styles.main}>
         <Container>
-          <Breadcrumb
-            className={styles.breadcrumb}
-          >
+          <Breadcrumb className={styles.breadcrumb}>
             <Link to='/'>
               <Txt>Home</Txt>
             </Link>

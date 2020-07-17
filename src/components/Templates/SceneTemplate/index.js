@@ -32,9 +32,7 @@ const SceneTemplate = ({data}) => {
         />
         <Container>
           <div className={styles.firstview}>
-            <Breadcrumb
-              className={styles.breadcrumb}
-            >
+            <Breadcrumb className={styles.breadcrumb}>
               <Link className={styles.link} to='/'>
                 <Txt>Home</Txt>
               </Link>
