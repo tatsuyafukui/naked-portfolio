@@ -1,7 +1,5 @@
 import React from 'react'
 import Img from 'gatsby-image'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faAngleRight} from '@fortawesome/free-solid-svg-icons'
 import styles from './styles.module.scss'
 import SEO from '../../seo'
 import Breadcrumb from '../../Atoms/Breadcrumb'
@@ -27,10 +25,7 @@ const SkillTemplate = ({data}) => {
       <Header />
       <main className={styles.main}>
         <Container>
-          <Breadcrumb
-            className={styles.breadcrumb}
-            separator={<FontAwesomeIcon icon={faAngleRight} />}
-          >
+          <Breadcrumb className={styles.breadcrumb}>
             <Link to='/'>
               <Txt>Home</Txt>
             </Link>
