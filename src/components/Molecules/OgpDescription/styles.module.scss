@@ -1,22 +1,36 @@
 @import '../../properties';
 
 .truncateText {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.description {
+  margin-bottom: 6px;
+}
+
+.ogUrl {
+  align-items: baseline;
+  display: flex;
+}
+
+.ogUrlText {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 100%;
 }
 
-.ogUrl {
-  align-items: baseline;
-  display: flex;
-  margin-top: 6px;
-}
-
 .linkIcon {
   color: var(--color-text-disable);
-  font-size: 12px;
+  font-size: var(--font-size-xxs);
   margin-right: 6px;
+
+  @include mediaQuery(md) {
+    font-size: var(--font-size-xxxs);
+  }
 }
 
 .amazonOgpDescription {

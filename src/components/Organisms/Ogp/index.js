@@ -11,6 +11,7 @@ import OgpDescription, {
 } from '../../Molecules/OgpDescription'
 
 const OgpPresenter = ({
+  truncate,
   title,
   url,
   image,
@@ -31,9 +32,9 @@ const OgpPresenter = ({
       className={styles[summaryPosition]}
       hasImage={!!image}
     >
-      <Img fluid={image} alt={title} />
+      <Img fluid={image} alt={title} className={styles.image} />
       <div className={[styles.ogBody].join(' ')}>
-        <Heading level={5} className={styles.ogTitle}>
+        <Heading level={5} className={[styles.ogTitle, truncate].join(' ')}>
           {title}
         </Heading>
         {ogpDescription}
@@ -43,23 +44,26 @@ const OgpPresenter = ({
 )
 
 export const OgpContainer = ({
+  isMobile,
   description,
   url,
-  isbn,
+  isbn: isAmazon,
   image,
   twitterCard,
   presenter,
   ...props
 }) => {
   const summaryPosition = image ? getSummaryPosition(twitterCard) : null
-  let ogpDescription
-  if (isbn) {
-    ogpDescription = <AmazonOgpDescription url={url} />
-  } else {
-    ogpDescription = <OgpDescription description={description} url={url} />
-  }
+  const truncate =
+    isMobile || isAmazon ? styles.multilineTextTruncate : styles.textTruncate
+  const ogpDescription = isAmazon ? (
+    <AmazonOgpDescription url={url} />
+  ) : (
+    <OgpDescription description={!isMobile && description} url={url} />
+  )
 
   return presenter({
+    truncate,
     url,
     image,
     summaryPosition,
