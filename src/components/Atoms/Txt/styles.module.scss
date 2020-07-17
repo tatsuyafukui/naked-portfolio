@@ -1,6 +1,7 @@
 @import '../../properties';
 
 .txt {
+  color: var(--color-text);
   line-height: var(--line-height-m);
 }
 
@@ -32,8 +33,8 @@
   font-size: var(--font-size-xxs);
 }
 
-.base {
-  color: var(--color-text);
+.long {
+  line-height: var(--line-height-l);
 }
 
 .info {
