@@ -50,9 +50,7 @@ const SceneTemplate = ({data}) => {
                 {scene.title}
               </BoldHeading>
               <div className={styles.description}>
-                <LongDescription>
-                  {scene.description}
-                </LongDescription>
+                <LongDescription>{scene.description}</LongDescription>
               </div>
             </div>
           </div>
