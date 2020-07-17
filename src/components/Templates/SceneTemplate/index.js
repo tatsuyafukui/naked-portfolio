@@ -1,8 +1,6 @@
 import React, {useState} from 'react'
 import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faAngleRight} from '@fortawesome/free-solid-svg-icons'
 import styles from './styles.module.scss'
 import SEO from '../../seo'
 import Breadcrumb from '../../Atoms/Breadcrumb'
@@ -36,9 +34,6 @@ const SceneTemplate = ({data}) => {
           <div className={styles.firstview}>
             <Breadcrumb
               className={styles.breadcrumb}
-              separator={
-                <FontAwesomeIcon className={styles.icon} icon={faAngleRight} />
-              }
             >
               <Link className={styles.link} to='/'>
                 <Txt>Home</Txt>
