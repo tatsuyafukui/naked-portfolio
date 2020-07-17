@@ -7,12 +7,17 @@ import {faLink} from '@fortawesome/free-solid-svg-icons'
 
 const OgpDescription = ({url, description}) => (
   <>
-    <InfoTxt visualLevel={2} className={styles.truncateText}>
-      {description}
-    </InfoTxt>
+    {description && (
+      <InfoTxt
+        visualLevel={2}
+        className={[styles.description, styles.truncateText].join(' ')}
+      >
+        {description}
+      </InfoTxt>
+    )}
     <div className={styles.ogUrl}>
       <FontAwesomeIcon className={styles.linkIcon} icon={faLink} />
-      <DisableTxt visualLevel={2} className={styles.truncateText}>
+      <DisableTxt visualLevel={2} className={styles.ogUrlText}>
         {url}
       </DisableTxt>
     </div>

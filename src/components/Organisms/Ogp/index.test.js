@@ -46,4 +46,56 @@ describe('Ogp', () => {
     const wrapper = mount(ogpDescription)
     expect(wrapper.name()).toEqual('AmazonOgpDescription')
   })
+
+  it('isMobile = trueかつisbn = trueの場合は、styles.multilineTextTruncateを返す', () => {
+    const {truncate} = OgpContainer({
+      title: 'Title',
+      description: 'description',
+      url: 'url',
+      image: data.square.fluid,
+      isbn: '4822281515',
+      isMobile: true,
+      presenter,
+    })
+    expect(truncate).toEqual('multilineTextTruncate')
+  })
+
+  it('isMobile = falseかつisbn = trueの場合は、styles.multilineTextTruncateを返す', () => {
+    const {truncate} = OgpContainer({
+      title: 'Title',
+      description: 'description',
+      url: 'url',
+      image: data.square.fluid,
+      isbn: '4822281515',
+      isMobile: false,
+      presenter,
+    })
+    expect(truncate).toEqual('multilineTextTruncate')
+  })
+
+  it('isMobile = falseかつisbn = falseの場合は、styles.textTruncateを返す', () => {
+    const {truncate} = OgpContainer({
+      title: 'Title',
+      description: 'description',
+      url: 'url',
+      image: data.square.fluid,
+      isbn: false,
+      isMobile: false,
+      presenter,
+    })
+    expect(truncate).toEqual('textTruncate')
+  })
+
+  it('isMobile = trueかつisbn = falseの場合は、styles.multilineTextTruncateを返す', () => {
+    const {truncate} = OgpContainer({
+      title: 'Title',
+      description: 'description',
+      url: 'url',
+      image: data.square.fluid,
+      isbn: false,
+      isMobile: true,
+      presenter,
+    })
+    expect(truncate).toEqual('multilineTextTruncate')
+  })
 })
