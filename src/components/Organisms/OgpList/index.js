@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './styles.module.scss'
-import Link from '../../Atoms/Link'
+import {ColoredLink} from '../../Atoms/Link'
 import Ogp from '../../Organisms/Ogp'
 import List, {ListItem} from '../../Atoms/List'
 import {useMediaQuery} from 'react-responsive'
@@ -29,9 +29,13 @@ const OgpList = ({ogpList, ...props}) => {
                 twitterCard={item.fields.ogp.twitterCard}
               />
             ) : (
-              <Link to={item.url} target='_blank' rel='noopener noreferrer'>
+              <ColoredLink
+                to={item.url}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 {item.url}
-              </Link>
+              </ColoredLink>
             )}
           </ListItem>
         ))}
