@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 import styles from './styles.module.scss'
@@ -6,7 +6,7 @@ import SEO from '../../seo'
 import Breadcrumb from '../../Atoms/Breadcrumb'
 import Container from '../../Atoms/Container'
 import Link from '../../Atoms/Link'
-import Txt, {InfoTxt} from '../../Atoms/Txt'
+import Txt from '../../Atoms/Txt'
 import {BoldHeading} from '../../Atoms/Heading'
 import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
@@ -16,7 +16,6 @@ import SkillLink from '../../Organisms/SkillLink'
 import LongDescription from '../../Molecules/LongDescription'
 
 const SceneTemplate = ({data}) => {
-  const [isOpen, setIsOpen] = useState(false)
   const scene = data.scenesJson
   const skills = data.scenesJson.skills
 
