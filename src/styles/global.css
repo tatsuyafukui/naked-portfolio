@@ -1,5 +1,4 @@
 html {
-  /* font: 112.5%/1.45em georgia, serif; */
   box-sizing: border-box;
   font-family:
     -apple-system,
@@ -7,8 +6,8 @@ html {
     Segoe UI,
     Helvetica Neue,
     Arial,
-    'Hiragino Kaku Gothic ProN',
     'Hiragino Sans',
+    'Hiragino Kaku Gothic ProN',
     Meiryo,
     sans-serif;
   overflow-y: scroll;
