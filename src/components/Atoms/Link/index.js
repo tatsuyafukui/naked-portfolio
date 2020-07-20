@@ -5,14 +5,11 @@ import {containPresenter} from '../../utils/HoC'
 import styles from './styles.module.scss'
 
 const LinkFactory = role => ({tag: Tag, className, ...props}) => (
-  <Tag
-    className={role ? [styles[role], className].join(' ') : className}
-    {...props}
-  />
+  <Tag className={[styles[role], className].join(' ')} {...props} />
 )
 
 const LinkPresenter = LinkFactory()
-const LinkColoredPresenter = LinkFactory('color')
+const ColoredLinkPresenter = LinkFactory('color')
 
 /**
  * 内部リンクか外部リンクかでタグを出しわける
@@ -38,7 +35,7 @@ export const LinkContainer = ({presenter, ...props}) => {
 }
 
 const Link = containPresenter(LinkContainer, LinkPresenter)
-export const LinkColored = containPresenter(LinkContainer, LinkColoredPresenter)
+export const ColoredLink = containPresenter(LinkContainer, ColoredLinkPresenter)
 
 Link.propTypes = {
   children: PropTypes.node.isRequired,
@@ -47,7 +44,7 @@ Link.propTypes = {
   partiallyActive: PropTypes.object,
 }
 
-LinkColored.propTypes = {
+ColoredLink.propTypes = {
   children: PropTypes.node.isRequired,
   to: PropTypes.string,
   activeClassName: PropTypes.string,
