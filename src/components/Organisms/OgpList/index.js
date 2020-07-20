@@ -4,10 +4,10 @@ import Link from '../../Atoms/Link'
 import Ogp from '../../Organisms/Ogp'
 import List, {ListItem} from '../../Atoms/List'
 import {useMediaQuery} from 'react-responsive'
-import {MEDIA_QUERY_MD} from '../../../constants'
+import {MEDIA_QUERY_SM} from '../../../constants'
 
 const OgpList = ({ogpList, ...props}) => {
-  const isMobile = useMediaQuery({query: MEDIA_QUERY_MD})
+  const isMobile = useMediaQuery({query: MEDIA_QUERY_SM})
 
   return (
     <List {...props}>

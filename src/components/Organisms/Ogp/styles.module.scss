@@ -88,7 +88,7 @@
     height: 140px;
     width: 140px;
 
-    @include mediaQuery(md) {
+    @include mediaQuery(sm) {
       height: 84px;
       width: 84px;
     }
