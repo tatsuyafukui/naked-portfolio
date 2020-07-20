@@ -12,11 +12,6 @@
 }
 
 .domainName {
-  align-items: baseline;
-  display: flex;
-}
-
-.domainNameText {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -25,16 +20,6 @@
 
 .linkIcon {
   color: var(--color-text-disable);
-  font-size: var(--font-size-xxs);
+  font-size: 0.75em;
   margin-right: 6px;
-
-  @include mediaQuery(md) {
-    font-size: var(--font-size-xxxs);
-  }
-}
-
-.amazonOgpDescription {
-  > :first-child {
-    color: var(--color-text-info);
-  }
 }

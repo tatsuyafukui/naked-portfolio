@@ -15,19 +15,17 @@ const OgpDescription = ({domainName, description}) => (
         {description}
       </InfoTxt>
     )}
-    <div className={styles.domainName}>
+    <DisableTxt visualLevel={2} className={styles.domainName}>
       <FontAwesomeIcon className={styles.linkIcon} icon={faLink} />
-      <DisableTxt visualLevel={2} className={styles.domainNameText}>
-        {domainName}
-      </DisableTxt>
-    </div>
+      <span>{domainName}</span>
+    </DisableTxt>
   </>
 )
 
 export default OgpDescription
 
 export const AmazonOgpDescription = () => (
-  <InfoTxt visualLevel={2} className={styles.amazonOgpDescription}>
-    <NavigationLink tag={'span'}>Amazonで詳細を見る</NavigationLink>
-  </InfoTxt>
+  <NavigationLink tag={InfoTxt} visualLevel={2}>
+    Amazonで詳細を見る
+  </NavigationLink>
 )
