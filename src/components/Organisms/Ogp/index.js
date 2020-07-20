@@ -60,7 +60,10 @@ export const OgpContainer = ({
   const ogpDescription = isAmazon ? (
     <AmazonOgpDescription />
   ) : (
-    <OgpDescription description={!isMobile && description} domainName={domainName} />
+    <OgpDescription
+      description={!isMobile && description}
+      domainName={domainName}
+    />
   )
 
   return presenter({

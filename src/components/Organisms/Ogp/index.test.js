@@ -1,5 +1,5 @@
 import React from 'react'
-import Ogp, {getSummaryPosition, OgpContainer} from './index'
+import Ogp, {getSummaryPosition, getDomainName, OgpContainer} from './index'
 import data from '../../../mock/data/gatsby-img.json'
 import {mount} from 'enzyme'
 
@@ -17,6 +17,13 @@ describe('関数getSummaryPosition', () => {
   it('twitterCardがsummaryならleftを返す', () => {
     const result = getSummaryPosition('summary')
     expect(result).toBe('left')
+  })
+})
+
+describe('関数getDomainName', () => {
+  it('urlからドメイン名だけを返す', () => {
+    const result = getDomainName('https://prog-8.com/dashboard')
+    expect(result).toBe('prog-8.com')
   })
 })
 

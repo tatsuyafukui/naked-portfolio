@@ -28,8 +28,6 @@ export default OgpDescription
 
 export const AmazonOgpDescription = () => (
   <InfoTxt visualLevel={2} className={styles.amazonOgpDescription}>
-    <NavigationLink tag={'span'}>
-      Amazonで詳細を見る
-    </NavigationLink>
+    <NavigationLink tag={'span'}>Amazonで詳細を見る</NavigationLink>
   </InfoTxt>
 )
