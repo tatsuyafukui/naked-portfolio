@@ -53,13 +53,14 @@ export const OgpContainer = ({
   presenter,
   ...props
 }) => {
+  const domainName = getDomainName(url)
   const summaryPosition = image ? getSummaryPosition(twitterCard) : null
   const truncate =
     isMobile || isAmazon ? styles.multilineTextTruncate : styles.textTruncate
   const ogpDescription = isAmazon ? (
-    <AmazonOgpDescription url={url} />
+    <AmazonOgpDescription />
   ) : (
-    <OgpDescription description={!isMobile && description} url={url} />
+    <OgpDescription description={!isMobile && description} domainName={domainName} />
   )
 
   return presenter({
@@ -83,6 +84,10 @@ Ogp.propTypes = {
   isbn: PropTypes.string,
   twitterCard: PropTypes.string,
   image: PropTypes.object,
+}
+
+export const getDomainName = url => {
+  return url.match(/^https?:\/{2,}(.*?)(?:\/|\?|#|$)/)[1]
 }
 
 export const getSummaryPosition = twitterCard => {

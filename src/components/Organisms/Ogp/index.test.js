@@ -26,7 +26,7 @@ describe('Ogp', () => {
     const {ogpDescription} = OgpContainer({
       title: 'Title',
       description: 'description',
-      url: 'url',
+      url: 'https://prog-8.com/',
       image: data.square.fluid,
       presenter,
     })
@@ -38,7 +38,7 @@ describe('Ogp', () => {
     const {ogpDescription} = OgpContainer({
       title: 'Title',
       description: 'description',
-      url: 'url',
+      url: 'https://prog-8.com/',
       image: data.square.fluid,
       isbn: '4822281515',
       presenter,
@@ -51,7 +51,7 @@ describe('Ogp', () => {
     const {truncate} = OgpContainer({
       title: 'Title',
       description: 'description',
-      url: 'url',
+      url: 'https://prog-8.com/',
       image: data.square.fluid,
       isbn: '4822281515',
       isMobile: true,
@@ -64,7 +64,7 @@ describe('Ogp', () => {
     const {truncate} = OgpContainer({
       title: 'Title',
       description: 'description',
-      url: 'url',
+      url: 'https://prog-8.com/',
       image: data.square.fluid,
       isbn: '4822281515',
       isMobile: false,
@@ -77,7 +77,7 @@ describe('Ogp', () => {
     const {truncate} = OgpContainer({
       title: 'Title',
       description: 'description',
-      url: 'url',
+      url: 'https://prog-8.com/',
       image: data.square.fluid,
       isbn: false,
       isMobile: false,
@@ -90,7 +90,7 @@ describe('Ogp', () => {
     const {truncate} = OgpContainer({
       title: 'Title',
       description: 'description',
-      url: 'url',
+      url: 'https://prog-8.com/',
       image: data.square.fluid,
       isbn: false,
       isMobile: true,
