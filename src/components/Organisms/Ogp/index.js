@@ -53,13 +53,17 @@ export const OgpContainer = ({
   presenter,
   ...props
 }) => {
+  const domainName = new URL(url).hostname
   const summaryPosition = image ? getSummaryPosition(twitterCard) : null
   const truncate =
     isMobile || isAmazon ? styles.multilineTextTruncate : styles.textTruncate
   const ogpDescription = isAmazon ? (
-    <AmazonOgpDescription url={url} />
+    <AmazonOgpDescription />
   ) : (
-    <OgpDescription description={!isMobile && description} url={url} />
+    <OgpDescription
+      description={!isMobile && description}
+      domainName={domainName}
+    />
   )
 
   return presenter({

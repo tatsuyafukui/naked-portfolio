@@ -1,13 +1,13 @@
 import React from 'react'
 import styles from './styles.module.scss'
-import Link from '../../Atoms/Link'
+import {ColoredLink} from '../../Atoms/Link'
 import Ogp from '../../Organisms/Ogp'
 import List, {ListItem} from '../../Atoms/List'
 import {useMediaQuery} from 'react-responsive'
-import {MEDIA_QUERY_MD} from '../../../constants'
+import {MEDIA_QUERY_SM} from '../../../constants'
 
 const OgpList = ({ogpList, ...props}) => {
-  const isMobile = useMediaQuery({query: MEDIA_QUERY_MD})
+  const isMobile = useMediaQuery({query: MEDIA_QUERY_SM})
 
   return (
     <List {...props}>
@@ -29,9 +29,13 @@ const OgpList = ({ogpList, ...props}) => {
                 twitterCard={item.fields.ogp.twitterCard}
               />
             ) : (
-              <Link to={item.url} target='_blank' rel='noopener noreferrer'>
+              <ColoredLink
+                to={item.url}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
                 {item.url}
-              </Link>
+              </ColoredLink>
             )}
           </ListItem>
         ))}

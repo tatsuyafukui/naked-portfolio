@@ -5,7 +5,7 @@ import styles from '../../Molecules/OgpDescription/styles.module.scss'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faLink} from '@fortawesome/free-solid-svg-icons'
 
-const OgpDescription = ({url, description}) => (
+const OgpDescription = ({domainName, description}) => (
   <>
     {description && (
       <InfoTxt
@@ -15,21 +15,17 @@ const OgpDescription = ({url, description}) => (
         {description}
       </InfoTxt>
     )}
-    <div className={styles.ogUrl}>
+    <DisableTxt visualLevel={2} className={styles.domainName}>
       <FontAwesomeIcon className={styles.linkIcon} icon={faLink} />
-      <DisableTxt visualLevel={2} className={styles.ogUrlText}>
-        {url}
-      </DisableTxt>
-    </div>
+      <span>{domainName}</span>
+    </DisableTxt>
   </>
 )
 
 export default OgpDescription
 
-export const AmazonOgpDescription = ({url}) => (
-  <InfoTxt visualLevel={2} className={styles.amazonOgpDescription}>
-    <NavigationLink tag={'span'} to={url}>
-      Amazonで詳細を見る
-    </NavigationLink>
-  </InfoTxt>
+export const AmazonOgpDescription = () => (
+  <NavigationLink tag={InfoTxt} visualLevel={2}>
+    Amazonで詳細を見る
+  </NavigationLink>
 )
