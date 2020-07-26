@@ -56,6 +56,10 @@ commands:
             aws cloudfront create-invalidation --distribution-id << parameters.distribution_id >> --paths "/*"
 
 jobs:
+  test:
+    executor: journey_builder
+    steps:
+      - run: yarn test
   build_staging:
     executor: journey_builder
     steps:
@@ -87,6 +91,7 @@ workflows:
   version: 2
   build_and_deploy_staging:
     jobs:
+      - test
       - build_staging:
           filters:
             branches:
