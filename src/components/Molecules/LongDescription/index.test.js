@@ -11,7 +11,7 @@ describe('LongDescriptionContainer', () => {
         <LongDescription>{TEST_DESCRIPTION}</LongDescription>
       </ResponsiveContext.Provider>
     )
-    expect(wrapper.find('p.long').children().props().open).toBeTruthy()
+    expect(wrapper.find('p.base').children().props().open).toBeTruthy()
   })
 
   it('SPの場合はopenはデフォルトはfalse. ボタンをClickしたらtrue', () => {
@@ -20,8 +20,8 @@ describe('LongDescriptionContainer', () => {
         <LongDescription>{TEST_DESCRIPTION}</LongDescription>
       </ResponsiveContext.Provider>
     )
-    expect(wrapper.find('p.long').children().props().open).toBeFalsy()
+    expect(wrapper.find('p.base').children().props().open).toBeFalsy()
     wrapper.find('button').simulate('click')
-    expect(wrapper.find('p.long').children().props().open).toBeTruthy()
+    expect(wrapper.find('p.base').children().props().open).toBeTruthy()
   })
 })
