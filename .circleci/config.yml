@@ -59,6 +59,8 @@ jobs:
   test:
     executor: journey_builder
     steps:
+      - build_public_assets:
+          environment: staging
       - run: yarn test
   build_staging:
     executor: journey_builder
