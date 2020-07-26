@@ -59,8 +59,14 @@ jobs:
   test:
     executor: journey_builder
     steps:
-      - build_public_assets:
-          environment: staging
+      - checkout
+      - restore_cache:
+      key: node-dependencies-{{ checksum "package.json" }}
+        - run: yarn install
+        - save_cache:
+            paths:
+              - node_modules
+            key: node-dependencies-{{ checksum "package.json" }}
       - run: yarn test
   build_staging:
     executor: journey_builder
