@@ -13,6 +13,17 @@ executors:
       - image: amazon/aws-cli
 
 commands:
+  run_test:
+    steps:
+      - checkout
+      - restore_cache:
+          key: node-dependencies-{{ checksum "package.json" }}
+      - run: yarn install
+      - save_cache:
+         paths:
+           - node_modules
+         key: node-dependencies-{{ checksum "package.json" }}
+      - run: yarn test
   build_public_assets:
     parameters:
       environment:
@@ -59,15 +70,7 @@ jobs:
   test:
     executor: journey_builder
     steps:
-      - checkout
-      - restore_cache:
-      key: node-dependencies-{{ checksum "package.json" }}
-        - run: yarn install
-        - save_cache:
-            paths:
-              - node_modules
-            key: node-dependencies-{{ checksum "package.json" }}
-      - run: yarn test
+      - run_test
   build_staging:
     executor: journey_builder
     steps:
