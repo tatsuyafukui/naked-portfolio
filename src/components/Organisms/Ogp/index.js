@@ -54,7 +54,7 @@ export const OgpContainer = ({
   ...props
 }) => {
   const domainName = new URL(url).hostname
-  const summaryPosition = image ? getSummaryPosition(twitterCard) : null
+  const summaryPosition = isAmazon ? 'right' : getSummaryPosition(twitterCard)
   const truncate =
     isMobile || isAmazon ? styles.multilineTextTruncate : styles.textTruncate
   const ogpDescription = isAmazon ? (
@@ -96,6 +96,6 @@ export const getSummaryPosition = twitterCard => {
     case 'summary_large_image':
       return 'top'
     default:
-      return 'right'
+      return 'left'
   }
 }
