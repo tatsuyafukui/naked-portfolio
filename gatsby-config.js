@@ -5,6 +5,13 @@ module.exports = {
     author: `Progate, Inc.`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-52935465-1',
+        cookieFlags: "SameSite=None; Secure",
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -42,12 +49,6 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-sass`,
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: 'UA-52935465-1',
-      },
-    },
     'gatsby-plugin-eslint',
   ],
 }
