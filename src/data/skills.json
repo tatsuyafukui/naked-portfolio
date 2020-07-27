@@ -22,7 +22,6 @@
       ]
     },
     "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
-    "slug": "/scenes/web-basics/skills/html-and-css/",
     "sceneId": "web-basics"
   },
   {
@@ -48,7 +47,6 @@
       ]
     },
     "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
-    "slug": "/scenes/web-basics/skills/editors/",
     "sceneId": "web-basics"
   },
   {
@@ -74,7 +72,6 @@
       ]
     },
     "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
-    "slug": "/scenes/web-basics/skills/internet/",
     "sceneId": "web-basics"
   },
   {
@@ -100,7 +97,6 @@
       ]
     },
     "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
-    "slug": "/scenes/web-basics/skills/javascript/",
     "sceneId": "web-basics"
   },
   {
@@ -126,7 +122,6 @@
       ]
     },
     "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
-    "slug": "/scenes/web-basics/skills/developer-tools/",
     "sceneId": "web-basics"
   },
   {
@@ -152,7 +147,6 @@
       ]
     },
     "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
-    "slug": "/scenes/web-basics/skills/server-side-languages/",
     "sceneId": "web-application-development"
   },
   {
@@ -178,7 +172,6 @@
       ]
     },
     "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
-    "slug": "/scenes/web-application-development/skills/object-oriented-programming/",
     "sceneId": "web-application-development"
   },
   {
@@ -204,7 +197,6 @@
       ]
     },
     "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
-    "slug": "/scenes/web-application-development/skills/terminal-operations/",
     "sceneId": "web-application-development"
   },
   {
@@ -230,7 +222,6 @@
       ]
     },
     "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
-    "slug": "/scenes/web-application-development/skills/databases",
     "sceneId": "web-application-development"
   },
   {
@@ -256,7 +247,6 @@
       ]
     },
     "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
-    "slug": "/scenes/web-application-development/skills/web-application-frameworks",
     "sceneId": "web-application-development"
   },
   {
@@ -282,7 +272,6 @@
       ]
     },
     "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
-    "slug": "/scenes/web-application-development/skills/html-css",
     "sceneId": "web-application-development"
   },
   {
@@ -308,7 +297,6 @@
       ]
     },
     "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
-    "slug": "/scenes/team-development/skills/html-css",
     "sceneId": "team-development"
   },
   {
@@ -334,7 +322,6 @@
       ]
     },
     "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
-    "slug": "/scenes/team-development/skills/html-css",
     "sceneId": "team-development"
   },
   {
@@ -360,7 +347,6 @@
       ]
     },
     "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
-    "slug": "/scenes/team-development/skills/html-css",
     "sceneId": "team-development"
   },
   {
@@ -386,7 +372,6 @@
       ]
     },
     "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
-    "slug": "/scenes/team-development/skills/html-css",
     "sceneId": "team-development"
   },
   {
@@ -412,7 +397,6 @@
       ]
     },
     "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
-    "slug": "/scenes/team-development/skills/html-css",
     "sceneId": "team-development"
   },
   {
@@ -438,7 +422,6 @@
       ]
     },
     "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
-    "slug": "/scenes/releasing-your-application/skills/html-css",
     "sceneId": "releasing-your-application"
   },
   {
@@ -464,7 +447,6 @@
       ]
     },
     "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
-    "slug": "/scenes/releasing-your-application/skills/html-css",
     "sceneId": "releasing-your-application"
   },
   {
@@ -490,7 +472,6 @@
       ]
     },
     "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
-    "slug": "/scenes/releasing-your-application/skills/html-css",
     "sceneId": "releasing-your-application"
   },
   {
@@ -516,7 +497,6 @@
       ]
     },
     "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
-    "slug": "/scenes/releasing-your-application/skills/html-css",
     "sceneId": "releasing-your-application"
   },
   {
@@ -542,7 +522,6 @@
       ]
     },
     "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
-    "slug": "/scenes/continuous-delivery/skills/html-css",
     "sceneId": "continuous-delivery"
   },
   {
@@ -568,7 +547,6 @@
       ]
     },
     "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
-    "slug": "/scenes/continuous-delivery/skills/html-css",
     "sceneId": "continuous-delivery"
   },
   {
@@ -594,7 +572,6 @@
       ]
     },
     "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
-    "slug": "/scenes/continuous-delivery/skills/html-css",
     "sceneId": "continuous-delivery"
   },
   {
@@ -620,7 +597,6 @@
       ]
     },
     "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
-    "slug": "/scenes/continuous-delivery/skills/html-css",
     "sceneId": "continuous-delivery"
   }
 ]
