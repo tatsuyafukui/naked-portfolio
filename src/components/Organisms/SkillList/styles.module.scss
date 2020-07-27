@@ -1,23 +1,28 @@
 @import '../../properties';
 
-.navigationLink {
-  align-items: center;
-  color: var(--color-text);
-  display: flex;
-  font-size: var(--font-size-l);
-  justify-content: space-between;
-  padding: 24px 32px;
+.skillLink {
+  margin-top: 24px;
 
-  > :first-child {
-    padding-right: 24px !important;
-  }
-
-  svg {
-    color: var(--color-text-info);
+  @include mediaQuery(md) {
+    margin-top: 3.125%;
   }
 
   @include mediaQuery(sm) {
-    font-size: var(--font-size-s);
-    padding: 24px 16px;
+    margin-top: 5.33%;
+  }
+}
+
+.listItem {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 56px;
+
+  @include mediaQuery(md) {
+    font-size: var(--font-size-l);
+    margin-bottom: 7.29%;
+  }
+
+  @include mediaQuery(sm) {
+    margin-bottom: 12.8%;
   }
 }

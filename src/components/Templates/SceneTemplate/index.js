@@ -11,8 +11,6 @@ import {BoldHeading} from '../../Atoms/Heading'
 import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
 import {graphql} from 'gatsby'
-import List, {ListItem} from '../../Atoms/List'
-import SkillLink from '../../Organisms/SkillLink'
 import LongDescription from '../../Molecules/LongDescription'
 
 const SceneTemplate = ({data}) => {
@@ -49,16 +47,7 @@ const SceneTemplate = ({data}) => {
         </Container>
         <section className={styles.background}>
           <Container>
-            <List tag='ol'>
-              {skills.map(skill => (
-                <ListItem className={styles.listItem} key={skill.id}>
-                  <BoldHeading tag='span' level={2} visualLevel={3}>
-                    {skill.subTitle}
-                  </BoldHeading>
-                  <SkillLink skill={skill} className={styles.skillLink} />
-                </ListItem>
-              ))}
-            </List>
+            <SkillList skills={skills} />
           </Container>
         </section>
       </main>
