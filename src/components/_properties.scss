@@ -64,18 +64,13 @@
   --hover-feedback-opacity: 0.7;
 
   /* アニメーションの定義（媒体に最適化したアニメーション・デザイン要素） */
-  --hover-animation-duration: 0.1s;
-  --hover-animation-timing: ease-out;
-  --hover-animation:
-    var(--hover-animation-duration)
-    var(--hover-animation-timing);
-  --feed-animation-duration: 0.2s;
-  --feed-animation-timing: linear;
-  --feed-animation: var(--feed-animation-duration) var(--feed-animation-timing);
+  --hover-animation-s: 0.1s ease-out;
+  --hover-animation-m: 0.3s ease-out;
 
   /* Z 座標の管理（Web媒体/CSSではZ座標を管理する） */
   --z-header: none;
   --z-overlay: 10;
+  --z-content-on-the-overlay: 20;
 }
 
 /* media query */

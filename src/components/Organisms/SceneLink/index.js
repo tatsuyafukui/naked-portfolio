@@ -5,6 +5,7 @@ import Link from '../../Atoms/Link'
 import MediaObjectLayout from '../../Atoms/MediaObjectLayout'
 import Heading from '../../Atoms/Heading'
 import Img from 'gatsby-image'
+import Txt from '../../Atoms/Txt'
 
 const SceneLink = ({scene, className, ...props}) => (
   <Link
@@ -12,19 +13,22 @@ const SceneLink = ({scene, className, ...props}) => (
     className={[styles.scene, className].join(' ')}
     {...props}
   >
-    <MediaObjectLayout className={styles.layout}>
-      <Img
-        className={styles.image}
-        fluid={scene.image.childImageSharp.fluid}
-        alt={scene.title}
-      />
-      <div className={styles.textWrap}>
+    <MediaObjectLayout summary='top'>
+      <div className={styles.imageWrap}>
+        <Img
+          className={styles.image}
+          fluid={scene.image.childImageSharp.fluid}
+          alt={scene.title}
+        />
         <Heading level={2} visualLevel={3} className={styles.number}>
           {scene.numberTitle}
         </Heading>
+      </div>
+      <div className={styles.textWrap}>
         <Heading level={3} visualLevel={2} className={styles.title}>
           {scene.title}
         </Heading>
+        <Txt className={styles.readMore}>続きを読む</Txt>
       </div>
     </MediaObjectLayout>
   </Link>
