@@ -20,7 +20,11 @@ const LongDescription = ({maxChars, truncateText, children}) => {
         open={!isMobile || open}
         maxChars={maxChars}
         truncateText={
-          <button className={styles.button} onClick={clickOpenHandler}>
+          <button
+            key={'read-more'}
+            className={styles.button}
+            onClick={clickOpenHandler}
+          >
             <InfoTxt>{truncateText}</InfoTxt>
           </button>
         }
