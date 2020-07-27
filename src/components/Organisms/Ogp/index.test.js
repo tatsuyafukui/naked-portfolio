@@ -4,9 +4,9 @@ import data from '../../../mock/data/gatsby-img.json'
 import {mount} from 'enzyme'
 
 describe('関数getSummaryPosition', () => {
-  it('デフォルトの返り値はright', () => {
+  it('デフォルトの返り値はleft', () => {
     const result = getSummaryPosition('other')
-    expect(result).toBe('right')
+    expect(result).toBe('left')
   })
 
   it('twitterCardがsummary_large_imageならtopを返す', () => {
