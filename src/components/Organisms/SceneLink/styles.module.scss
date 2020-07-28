@@ -1,62 +1,107 @@
 @import '../../properties';
 
 .scene {
+  border-radius: var(--radius);
   display: block;
-
-  &:hover {
-    text-decoration: none;
-  }
+  overflow: hidden;
 }
 
-.layout {
+.imageWrap::before,
+.image {
+  transition: var(--hover-overlay-animation);
+}
+
+.imageWrap {
+  height: 550px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+
+  &::before {
+    background: var(--color-opacity15-black);
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: var(--z-overlay);
+  }
+
+  @include mediaQuery(md) {
+    height: 400px;
+  }
+
   @include mediaQuery(sm) {
-    align-items: flex-start !important;
-    flex-direction: column !important;
+    height: 218px;
   }
 }
 
 .image {
-  flex-shrink: 0;
-  height: 293px;
-  width: 440px;
-
-  @include mediaQuery(md) {
-    height: 200px;
-    width: 300px;
-  }
-
-  @include mediaQuery(sm) {
-    align-self: center;
-    height: 66.66vw;
-    width: 100vw;
-  }
+  height: 100%;
+  width: 100%;
 }
 
-.textWrap {
-  margin-left: 32px;
+.scene:hover {
+  text-decoration: none;
 
-  @include mediaQuery(md) {
-    margin-left: 4.44%;
+  .image {
+    transform: scale3d(1.01, 1.01, 1);
   }
 
-  @include mediaQuery(sm) {
-    margin-left: 0;
-    margin-top: 12px;
+  .imageWrap::before {
+    opacity: 1;
   }
 }
 
 .number {
-  color: var(--color-text-info);
-  margin-bottom: 8px;
+  background: var(--color-white);
+  border-radius: 100px;
+  bottom: 32px;
+  left: 32px;
+  padding: 0.41em 1em;
+  position: absolute;
+  z-index: var(--z-overlay-content);
 
   @include mediaQuery(sm) {
-    font-size: var(--font-size-m) !important;
-    margin-bottom: 4px;
+    bottom: 16px;
+    font-size: var(--font-size-xxs);
+    left: 16px;
+  }
+}
+
+.textWrap {
+  align-items: center;
+  background: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  padding: 32px;
+  width: 100%;
+
+  @include mediaQuery(sm) {
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 16px 16px 20px;
   }
 }
 
 .title {
+  width: 75%;
+
   @include mediaQuery(sm) {
     font-size: var(--font-size-l) !important;
+    margin-bottom: 12px;
+    width: 100%;
+  }
+}
+
+.readMore {
+  color: var(--color-link);
+
+  @include mediaQuery(sm) {
+    align-self: flex-end;
+    font-size: var(--font-size-xxs) !important;
   }
 }
