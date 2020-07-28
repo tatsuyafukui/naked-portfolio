@@ -36,13 +36,6 @@
       2,
       {"propTypeNames": ["boolean"], "validateNested": true}
     ],
-    "react/function-component-definition": [
-      0,
-      {
-        "namedComponents": "arrow-function",
-        "unnamedComponents": "arrow-function"
-      }
-    ],
     "react/jsx-boolean-value": [2, "always"],
     "react/jsx-filename-extension": [2, {"extensions": [".js"]}],
     "react/jsx-handler-names": 2,
@@ -57,7 +50,6 @@
     "react/jsx-uses-vars": 2,
     "react/jsx-wrap-multilines": 2,
     "react/no-adjacent-inline-elements": 2,
-    "react/no-array-index-key": 0,
     "react/no-did-update-set-state": 2,
     "react/no-is-mounted": 2,
     "react/no-multi-comp": [2, {"ignoreStateless": true}],
