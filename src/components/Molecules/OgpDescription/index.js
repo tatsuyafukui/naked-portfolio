@@ -27,7 +27,7 @@ export default OgpDescription
 
 OgpDescription.propTypes = {
   domainName: PropTypes.string,
-  description: PropTypes.string,
+  description: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
 }
 
 export const AmazonOgpDescription = () => (

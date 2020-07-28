@@ -47,5 +47,5 @@ const OgpList = ({ogpList, ...props}) => {
 export default OgpList
 
 OgpList.propTypes = {
-  ogpList: PropTypes.object,
+  ogpList: PropTypes.array,
 }
