@@ -71,7 +71,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop --host=0.0.0.0",
-    "format": "eslint \"**/*.{js,jsx}\" --fix && stylelint --fix \"**/*.{css,scss}\"",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\" && eslint \"**/*.{js,jsx}\" --fix && stylelint --fix \"**/*.{css,scss}\"",
     "lint": "eslint \"**/*.{js,jsx}\" && stylelint \"**/*.{css,scss}\"",
     "start": "yarn run develop",
     "serve": "gatsby serve --host=0.0.0.0",
