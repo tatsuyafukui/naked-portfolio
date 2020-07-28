@@ -49,7 +49,3 @@ export default OgpList
 OgpList.propTypes = {
   ogpList: PropTypes.array,
 }
-
-
-
-
