@@ -63,7 +63,7 @@
   left: 32px;
   padding: 0.41em 1em;
   position: absolute;
-  z-index: var(--z-content-on-the-overlay);
+  z-index: var(--z-overlay-content);
 
   @include mediaQuery(sm) {
     bottom: 16px;
