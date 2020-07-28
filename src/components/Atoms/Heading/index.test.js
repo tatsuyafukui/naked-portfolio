@@ -1,4 +1,3 @@
-import React from 'react'
 import {HeadingContainer} from './index'
 
 describe('HeadingContainer', () => {

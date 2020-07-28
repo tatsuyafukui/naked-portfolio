@@ -48,5 +48,6 @@ module.exports = {
         trackingId: 'UA-52935465-1',
       },
     },
+    'gatsby-plugin-eslint',
   ],
 }

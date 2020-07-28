@@ -1,7 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 import styles from './styles.module.scss'
-import SEO from '../../seo'
+import Seo from '../../seo'
 import Breadcrumb from '../../Atoms/Breadcrumb'
 import Container from '../../Atoms/Container'
 import Link from '../../Atoms/Link'
@@ -21,7 +22,7 @@ const SkillTemplate = ({data}) => {
 
   return (
     <>
-      <SEO title={skill.title} description={skill.overview} lang={'ja'} />
+      <Seo title={skill.title} description={skill.overview} lang={'ja'} />
       <Header />
       <main className={styles.main}>
         <Container>
@@ -127,6 +128,10 @@ const SkillTemplate = ({data}) => {
       <Footer />
     </>
   )
+}
+
+SkillTemplate.propTypes = {
+  data: PropTypes.object,
 }
 
 export default SkillTemplate

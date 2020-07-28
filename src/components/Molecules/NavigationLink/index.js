@@ -16,4 +16,6 @@ export default NavigationLink
 
 NavigationLink.propTypes = {
   children: PropTypes.node.isRequired,
+  tag: PropTypes.string,
+  className: PropTypes.string,
 }

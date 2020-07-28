@@ -4,6 +4,10 @@ import {containPresenter} from '../../utils/HoC'
 
 const TextTruncatePresenter = ({children}) => <>{children}</>
 
+TextTruncatePresenter.propTypes = {
+  children: PropTypes.node.isRequired,
+}
+
 export const TextTruncateContainer = ({
   maxChars,
   truncateText,

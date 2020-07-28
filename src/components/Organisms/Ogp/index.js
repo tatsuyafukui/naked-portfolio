@@ -43,6 +43,16 @@ const OgpPresenter = ({
   </Link>
 )
 
+OgpPresenter.propTypes = {
+  truncate: PropTypes.string,
+  title: PropTypes.node.isRequired,
+  url: PropTypes.node.isRequired,
+  image: PropTypes.object,
+  summaryPosition: PropTypes.string,
+  ogpDescription: PropTypes.node,
+  className: PropTypes.string,
+}
+
 export const OgpContainer = ({
   isMobile,
   description,

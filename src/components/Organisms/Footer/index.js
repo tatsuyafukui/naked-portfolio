@@ -71,6 +71,10 @@ const Footer = ({className, ...props}) => (
 
 export default Footer
 
+Footer.propTypes = {
+  className: PropTypes.string,
+}
+
 Container.propTypes = {
   className: PropTypes.string,
 }

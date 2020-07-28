@@ -37,5 +37,6 @@ const SceneLink = ({scene, className, ...props}) => (
 export default SceneLink
 
 SceneLink.propTypes = {
+  scene: PropTypes.object,
   className: PropTypes.string,
 }

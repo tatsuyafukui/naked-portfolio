@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import {DisableTxt, InfoTxt} from '../../Atoms/Txt'
 import NavigationLink from '../NavigationLink'
 import styles from '../../Molecules/OgpDescription/styles.module.scss'
@@ -23,6 +24,11 @@ const OgpDescription = ({domainName, description}) => (
 )
 
 export default OgpDescription
+
+OgpDescription.propTypes = {
+  domainName: PropTypes.string,
+  description: PropTypes.string,
+}
 
 export const AmazonOgpDescription = () => (
   <NavigationLink tag={InfoTxt} visualLevel={2}>

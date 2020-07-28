@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styles from './styles.module.scss'
 import {ColoredLink} from '../../Atoms/Link'
 import Ogp from '../../Organisms/Ogp'
@@ -42,4 +43,9 @@ const OgpList = ({ogpList, ...props}) => {
     </List>
   )
 }
+
 export default OgpList
+
+OgpList.propTypes = {
+  ogpList: PropTypes.object,
+}
