@@ -8,7 +8,7 @@
 
 .imageWrap::before,
 .image {
-  transition: var(--hover-animation-m);
+  transition: var(--hover-overlay-animation);
 }
 
 .imageWrap {
