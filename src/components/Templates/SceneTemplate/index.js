@@ -10,6 +10,7 @@ import Txt from '../../Atoms/Txt'
 import {BoldHeading} from '../../Atoms/Heading'
 import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
+import SkillList from '../../Organisms/SkillList'
 import {graphql} from 'gatsby'
 import LongDescription from '../../Molecules/LongDescription'
 
