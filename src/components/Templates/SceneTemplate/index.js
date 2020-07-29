@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 import styles from './styles.module.scss'
-import SEO from '../../seo'
+import Seo from '../../seo'
 import Breadcrumb from '../../Atoms/Breadcrumb'
 import Container from '../../Atoms/Container'
 import Link from '../../Atoms/Link'
@@ -20,7 +20,7 @@ const SceneTemplate = ({data}) => {
 
   return (
     <>
-      <SEO title={scene.title} description={scene.description} lang={'ja'} />
+      <Seo title={scene.title} description={scene.description} lang={'ja'} />
       <Header />
       <main>
         <Img

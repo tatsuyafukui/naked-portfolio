@@ -18,7 +18,7 @@ describe('MediaObjectLayoutContainer', () => {
       presenter,
       summary: 'incorrect',
       hasImage: false,
-      children: [<div>image</div>, <div>body</div>],
+      children: [<div key={1}>image</div>, <div key={2}>body</div>],
     })
     expect(children.length).toBe(1)
     expect(shallow(children[0]).text()).toEqual('body')

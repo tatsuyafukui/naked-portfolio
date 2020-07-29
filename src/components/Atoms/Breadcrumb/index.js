@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styles from './styles.module.scss'
 import {containPresenter} from '../../utils/HoC'
 
@@ -7,6 +8,11 @@ const BreadcrumbPresenter = ({tag: Tag, children, ...props}) => (
     <ol className={styles.ol}>{children}</ol>
   </Tag>
 )
+
+BreadcrumbPresenter.propTypes = {
+  tag: PropTypes.string,
+  children: PropTypes.node.isRequired,
+}
 
 /**
  * コンテナー
@@ -50,7 +56,11 @@ export const insertSeparators = (items, separator) => {
     if (index < items.length - 1) {
       acc = acc.concat(
         current,
-        <li aria-hidden key={`separator-${index}`} className={styles.separator}>
+        <li
+          aria-hidden={true}
+          key={`separator-${index}`}
+          className={styles.separator}
+        >
           {separator}
         </li>
       )

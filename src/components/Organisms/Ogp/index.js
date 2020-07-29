@@ -43,6 +43,16 @@ const OgpPresenter = ({
   </Link>
 )
 
+OgpPresenter.propTypes = {
+  truncate: PropTypes.string,
+  title: PropTypes.node.isRequired,
+  url: PropTypes.node.isRequired,
+  image: PropTypes.object,
+  summaryPosition: PropTypes.string,
+  ogpDescription: PropTypes.node,
+  className: PropTypes.string,
+}
+
 export const OgpContainer = ({
   isMobile,
   description,
@@ -82,7 +92,7 @@ export default Ogp
 
 Ogp.propTypes = {
   title: PropTypes.node.isRequired,
-  description: PropTypes.node,
+  description: PropTypes.string,
   url: PropTypes.node.isRequired,
   isbn: PropTypes.string,
   twitterCard: PropTypes.string,

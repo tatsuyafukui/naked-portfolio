@@ -24,6 +24,7 @@ commands:
             - node_modules
           key: node-dependencies-{{ checksum "package.json" }}
       - run: yarn test
+      - run: yarn lint
   build_public_assets:
     parameters:
       environment:

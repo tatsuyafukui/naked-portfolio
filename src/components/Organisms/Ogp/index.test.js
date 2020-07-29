@@ -1,5 +1,4 @@
-import React from 'react'
-import Ogp, {getSummaryPosition, OgpContainer} from './index'
+import {getSummaryPosition, OgpContainer} from './index'
 import data from '../../../mock/data/gatsby-img.json'
 import {mount} from 'enzyme'
 
