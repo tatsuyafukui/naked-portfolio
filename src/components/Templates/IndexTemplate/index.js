@@ -15,9 +15,14 @@ const IndexTemplate = ({scenes}) => {
       <main>
         <Container className={styles.container}>
           <div className={styles.titleWrap}>
-            <BoldHeading level={1} className={styles.title}>目標へ向かうためのWeb開発ロードマップ</BoldHeading>
-            <LongTxt>学んでいるものが何に活かせるのかわからない。どこまで学べば良いのかわからない。<br />
-そんなあなたの不安を自信に変える、学習ロードマップです。</LongTxt>
+            <BoldHeading level={1} className={styles.title}>
+              目標へ向かうためのWeb開発ロードマップ
+            </BoldHeading>
+            <LongTxt>
+              学んでいるものが何に活かせるのかわからない。どこまで学べば良いのかわからない。
+              <br />
+              そんなあなたの不安を自信に変える、学習ロードマップです。
+            </LongTxt>
           </div>
           <List>
             {scenes.map(scene => (

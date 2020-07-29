@@ -5,12 +5,17 @@
 }
 
 .titleWrap {
-  text-align: center;
   margin: 72px 0 80px;
+  text-align: center;
 
   @include mediaQuery(md) {
+    margin: 8.33% 0;
     text-align: left;
+  }
+
+  @include mediaQuery(sm) {
     margin: 14.67% 0;
+    text-align: left;
   }
 }
 
@@ -30,6 +35,6 @@
   }
 
   @include mediaQuery(sm) {
-    margin-bottom: 8.53%;
+    margin-bottom: 10.66%;
   }
 }

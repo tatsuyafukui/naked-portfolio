@@ -1,10 +1,10 @@
 @import '../../properties';
 
 .footer {
+  background: var(--color-white);
   border-top: var(--border);
   margin-top: 80px;
   padding: 56px 0;
-  background: var(--color-white);
 
   @include mediaQuery(md) {
     margin-top: 10.41%;
