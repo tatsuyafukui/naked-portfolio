@@ -16,4 +16,6 @@ export default NavigationLink
 
 NavigationLink.propTypes = {
   children: PropTypes.node.isRequired,
+  tag: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
+  className: PropTypes.string,
 }

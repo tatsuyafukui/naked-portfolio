@@ -1,11 +1,11 @@
 import React from 'react'
-import SEO from '../../seo'
+import Seo from '../../seo'
 import Header from '../../Organisms/Header'
 
 const NotFoundTemplate = () => {
   return (
     <div>
-      <SEO title='404: Not found' />
+      <Seo title='404: Not found' />
       <Header />
       <main>
         <h1>NOT FOUND</h1>

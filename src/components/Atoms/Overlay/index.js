@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styles from './styles.module.scss'
 import {containPresenter} from '../../utils/HoC'
 
@@ -7,6 +8,11 @@ const OverlayPresenter = ({children, className, ...props}) => (
     {children}
   </div>
 )
+
+OverlayPresenter.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.node.isRequired,
+}
 
 const OverlayContainer = ({overlayStyle, presenter, children, ...props}) => {
   children = React.Children.map(children, child => {

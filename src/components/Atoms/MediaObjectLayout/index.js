@@ -14,6 +14,13 @@ const MediaObjectLayoutPresenter = ({
   </Tag>
 )
 
+MediaObjectLayoutPresenter.propTypes = {
+  children: PropTypes.node.isRequired,
+  summary: PropTypes.string,
+  tag: PropTypes.string,
+  className: PropTypes.string,
+}
+
 export const MediaObjectLayoutContainer = ({
   tag,
   summary,

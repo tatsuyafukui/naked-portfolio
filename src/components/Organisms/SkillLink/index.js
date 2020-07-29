@@ -37,5 +37,6 @@ const SkillLink = ({skill, className, ...props}) => (
 export default SkillLink
 
 SkillLink.propTypes = {
+  skill: PropTypes.object,
   className: PropTypes.string,
 }

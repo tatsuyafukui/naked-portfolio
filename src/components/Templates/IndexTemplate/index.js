@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styles from './styles.module.scss'
 import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
@@ -39,3 +40,7 @@ const IndexTemplate = ({scenes}) => {
 }
 
 export default IndexTemplate
+
+IndexTemplate.propTypes = {
+  scenes: PropTypes.array,
+}

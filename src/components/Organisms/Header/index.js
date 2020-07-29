@@ -17,6 +17,10 @@ const Header = ({className, ...props}) => (
 
 export default Header
 
+Header.propTypes = {
+  className: PropTypes.string,
+}
+
 Container.propTypes = {
   className: PropTypes.string,
 }

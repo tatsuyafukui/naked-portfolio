@@ -4,7 +4,7 @@ import {mount} from 'enzyme'
 
 describe('OgpDescription', () => {
   it('descriptionが無いとき、InfoTxtを表示しない', () => {
-    const wrapper = mount(<OgpDescription description={undefined} />)
+    const wrapper = mount(<OgpDescription />)
     expect(wrapper.find('p.description')).toHaveLength(0)
   })
 

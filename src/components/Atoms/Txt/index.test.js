@@ -1,7 +1,6 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import Txt from './index'
-import {TxtContainer} from './index'
+import Txt, {TxtContainer} from './index'
 
 describe('Txt', () => {
   it('Renders correctly', () => {
