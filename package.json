@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "journey",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "目標へ向かうためのWeb開発ロードマップ",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Progate, Inc.",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
@@ -85,7 +85,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/Progate/journey"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
