@@ -31,8 +31,8 @@ module.exports = {
         description: `あなたが自信をもって目標へ向かうための学習ロードマップ`,
         lang: `ja`,
         start_url: `/`,
-        background_color: `#fff`,
-        theme_color: `#fff`,
+        background_color: `#f9fbfe`,
+        theme_color: `#f9fbfe`,
         display: `standalone`,
         icon: `src/images/icon.png`,
         icon_options: {
