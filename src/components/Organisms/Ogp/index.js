@@ -2,13 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './styles.module.scss'
 import {containPresenter} from '../../utils/HoC'
-import Link from '../../Atoms/Link'
 import MediaObjectLayout from '../../Atoms/MediaObjectLayout'
 import Img from 'gatsby-image'
 import Heading from '../../Atoms/Heading'
 import OgpDescription, {
   AmazonOgpDescription,
 } from '../../Molecules/OgpDescription'
+import {OutboundLink} from 'gatsby-plugin-google-analytics'
 
 const OgpPresenter = ({
   truncate,
@@ -20,11 +20,14 @@ const OgpPresenter = ({
   className,
   ...props
 }) => (
-  <Link
+  <OutboundLink
     className={[styles.ogp, className].join(' ')}
-    to={url}
+    href={url}
     target='_blank'
     rel='noopener noreferrer'
+    eventAction={`${title} - おすすめ教材リンク`}
+    eventCategory={'スキル詳細ページ'}
+    eventLabel={title}
     {...props}
   >
     <MediaObjectLayout
@@ -40,7 +43,7 @@ const OgpPresenter = ({
         {ogpDescription}
       </div>
     </MediaObjectLayout>
-  </Link>
+  </OutboundLink>
 )
 
 OgpPresenter.propTypes = {
