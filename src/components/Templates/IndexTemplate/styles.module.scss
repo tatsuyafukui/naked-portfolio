@@ -1,25 +1,40 @@
 @import '../../properties';
 
-.container {
-  margin-top: 64px !important;
+.background {
+  background: var(--color-background);
+}
+
+.titleWrap {
+  margin: 72px 0 80px;
+  text-align: center;
 
   @include mediaQuery(md) {
-    margin-top: 8.33%;
+    margin: 8.33% 0;
+    text-align: left;
   }
 
   @include mediaQuery(sm) {
-    margin-top: 12.8%;
+    margin: 14.67% 0;
+    text-align: left;
   }
 }
 
+.title {
+  margin-bottom: 0.4em;
+}
+
 .item {
-  margin-bottom: 40px;
+  margin-bottom: 112px;
+
+  @include mediaQuery(lg) {
+    margin-bottom: 8.96%;
+  }
 
   @include mediaQuery(md) {
-    margin-bottom: 5.55%;
+    margin-bottom: 11.45%;
   }
 
   @include mediaQuery(sm) {
-    margin-bottom: 14.678%;
+    margin-bottom: 10.66%;
   }
 }
