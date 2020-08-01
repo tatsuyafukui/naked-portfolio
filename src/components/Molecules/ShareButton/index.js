@@ -10,13 +10,19 @@ import {
 import {OutboundLink} from 'gatsby-plugin-google-analytics'
 import {containPresenter} from '../../utils/HoC'
 
-const ShareButtonPresenter = ({icon, mediaUrl, className, ...props}) => (
+const ShareButtonPresenter = ({
+  icon,
+  mediaUrl,
+  eventAction = 'SNSシェア',
+  className,
+  ...props
+}) => (
   <OutboundLink
     href={mediaUrl}
     target='_blank'
     rel='noopener noreferrer'
-    eventAction={`スキルシェア`}
-    eventCategory={'SNSシェアボタン'}
+    eventAction={eventAction}
+    eventCategory={`${icon.iconName}シェアボタン`}
     eventLabel={'SNSシェアボタン'}
     {...props}
   >
@@ -32,6 +38,7 @@ ShareButtonPresenter.propTypes = {
   icon: PropTypes.object,
   mediaUrl: PropTypes.string,
   className: PropTypes.string,
+  eventAction: PropTypes.string,
 }
 
 const ShareButtonFactory = icon => ({
@@ -60,14 +67,17 @@ export const LinkedinShareButton = containPresenter(
 TwitterShareButton.propTypes = {
   defaultText: PropTypes.string,
   url: PropTypes.string.isRequired,
+  eventAction: PropTypes.string,
 }
 
 FacebookShareButton.propTypes = {
   url: PropTypes.string.isRequired,
+  eventAction: PropTypes.string,
 }
 
 LinkedinShareButton.propTypes = {
   url: PropTypes.string.isRequired,
+  eventAction: PropTypes.string,
 }
 
 export const getShareUrl = (media, url, defaultText = '') => {
