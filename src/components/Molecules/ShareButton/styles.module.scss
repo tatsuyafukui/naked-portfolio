@@ -1,0 +1,25 @@
+@import '../../properties';
+
+.circle {
+  align-items: center;
+  border-radius: 50%;
+  color: var(--color-white);
+  display: flex;
+  font-size: 20px;
+  height: 64px;
+  justify-content: center;
+  padding: 22px;
+  width: 64px;
+}
+
+.twitter {
+  background-color: var(--color-twitter);
+}
+
+.facebook {
+  background-color: var(--color-facebook);
+}
+
+.linkedin {
+  background-color: var(--color-linkedin);
+}
