@@ -8,61 +8,37 @@ import {
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons'
 import {OutboundLink} from 'gatsby-plugin-google-analytics'
-import {containPresenter} from '../../utils/HoC'
-
-const ShareButtonPresenter = ({
-  icon,
-  mediaUrl,
-  eventAction = 'SNSシェア',
-  className,
-  ...props
-}) => (
-  <OutboundLink
-    href={mediaUrl}
-    target='_blank'
-    rel='noopener noreferrer'
-    eventAction={eventAction}
-    eventCategory={`${icon.iconName}シェアボタン`}
-    eventLabel={'SNSシェアボタン'}
-    {...props}
-  >
-    <div
-      className={[styles.circle, styles[icon.iconName], className].join(' ')}
-    >
-      <FontAwesomeIcon icon={icon} />
-    </div>
-  </OutboundLink>
-)
-
-ShareButtonPresenter.propTypes = {
-  icon: PropTypes.object,
-  mediaUrl: PropTypes.string,
-  className: PropTypes.string,
-  eventAction: PropTypes.string,
-}
 
 const ShareButtonFactory = icon => ({
   defaultText = '',
-  url = '',
-  presenter,
+  url,
+  eventAction = 'SNSシェア',
+  className,
   ...props
 }) => {
   const mediaUrl = getShareUrl(icon.iconName, defaultText, url)
-  return presenter({icon, mediaUrl, ...props})
+  return (
+    <OutboundLink
+      href={mediaUrl}
+      target='_blank'
+      rel='noopener noreferrer'
+      eventAction={eventAction}
+      eventCategory={`${icon.iconName}シェアボタン`}
+      eventLabel={'SNSシェアボタン'}
+      {...props}
+    >
+      <div
+        className={[styles.circle, styles[icon.iconName], className].join(' ')}
+      >
+        <FontAwesomeIcon icon={icon} />
+      </div>
+    </OutboundLink>
+  )
 }
 
-export const TwitterShareButton = containPresenter(
-  ShareButtonFactory(faTwitter),
-  ShareButtonPresenter
-)
-export const FacebookShareButton = containPresenter(
-  ShareButtonFactory(faFacebook),
-  ShareButtonPresenter
-)
-export const LinkedinShareButton = containPresenter(
-  ShareButtonFactory(faLinkedin),
-  ShareButtonPresenter
-)
+export const TwitterShareButton = ShareButtonFactory(faTwitter)
+export const FacebookShareButton = ShareButtonFactory(faFacebook)
+export const LinkedinShareButton = ShareButtonFactory(faLinkedin)
 
 TwitterShareButton.propTypes = {
   defaultText: PropTypes.string,
@@ -80,7 +56,7 @@ LinkedinShareButton.propTypes = {
   eventAction: PropTypes.string,
 }
 
-export const getShareUrl = (media, url, defaultText = '') => {
+export const getShareUrl = (media, url, defaultText) => {
   switch (media) {
     case faTwitter.iconName:
       return `https://twitter.com/intent/tweet?url=${url}&hashtags=Progate&text=${defaultText}`
