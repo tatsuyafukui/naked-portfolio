@@ -24,7 +24,7 @@ const ShareButtonFactory = icon => ({
       rel='noopener noreferrer'
       eventAction={eventAction}
       eventCategory={`${icon.iconName}シェアボタン`}
-      eventLabel={'SNSシェアボタン'}
+      eventLabel='SNSシェアボタン'
       {...props}
     >
       <div
