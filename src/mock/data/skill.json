@@ -52,14 +52,7 @@
         "slug": "/scenes/web-basics"
       },
       "image": {
-        "childImageSharp": {
-          "fluid": {
-            "aspectRatio": 2.4782608695652173,
-            "src": "/static/9e39242b1adc0efeebfb66826bfbeb00/a8101/scene.png",
-            "srcSet": "/static/9e39242b1adc0efeebfb66826bfbeb00/8b6a1/scene.png 285w,\n/static/9e39242b1adc0efeebfb66826bfbeb00/0fd62/scene.png 570w,\n/static/9e39242b1adc0efeebfb66826bfbeb00/a8101/scene.png 1140w",
-            "sizes": "(max-width: 1140px) 100vw, 1140px"
-          }
-        }
+        "publicURL": "/static/04582033037991281f57d537d78b3aab/scene1.svg"
       }
     },
     "recommended": [

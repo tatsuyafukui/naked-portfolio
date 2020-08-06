@@ -47,7 +47,7 @@ const SkillTemplate = ({data}) => {
               </BoldHeading>
             </Front>
             <Back>
-              <Img fluid={scene.image.childImageSharp.fluid} />
+              <img src={scene.image.publicURL} />
             </Back>
           </Overlay>
           <section className={styles.mainSection}>
@@ -162,11 +162,7 @@ export const query = graphql`
           slug
         }
         image {
-          childImageSharp {
-            fluid(maxWidth: 1140) {
-              ...GatsbyImageSharpFluid_withWebp
-            }
-          }
+          publicURL
         }
       }
       recommended {

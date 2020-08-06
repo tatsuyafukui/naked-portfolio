@@ -8,6 +8,7 @@
 
 .imageWrap::before,
 .image {
+  object-fit: cover;
   transition: var(--hover-overlay-animation);
 }
 

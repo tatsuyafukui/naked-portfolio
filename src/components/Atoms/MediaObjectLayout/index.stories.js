@@ -1,16 +1,14 @@
 import React from 'react'
 import {storiesOf} from '@storybook/react'
 import MediaObjectLayout from './index'
-import ogpSquare from '../../../mock/images/ogp-square.png'
-import ogpBook from '../../../mock/images/ogp-book.png'
-import ogpLarge from '../../../mock/images/ogp-large.png'
-import sceneSize from '../../../mock/images/scene-size.png'
+import imgData from '../../../mock/data/gatsby-img.json'
+import Img from 'gatsby-image'
 
 storiesOf('Atoms/MediaObjectLayout', module)
-  .add('Default', () => (
+  .add('Specify left as summary', () => (
     <MediaObjectLayout>
-      <div>
-        <img src={ogpSquare} width={100} height={100} />
+      <div style={{height: '100px', width: '100px'}}>
+        <Img fluid={imgData.square.fluid} />
       </div>
       <div>
         <p>
@@ -23,30 +21,10 @@ storiesOf('Atoms/MediaObjectLayout', module)
       </div>
     </MediaObjectLayout>
   ))
-  .add('Specify section tag', () => (
-    <MediaObjectLayout tag={'section'}>
-      <div>
-        <img src={ogpSquare} width={100} height={100} />
-      </div>
-      <p>
-        Explanatory text. Explanatory text.Explanatory text. Explanatory text.
-      </p>
-    </MediaObjectLayout>
-  ))
-  .add('Specify left as summary', () => (
-    <MediaObjectLayout summary={'left'}>
-      <div>
-        <img src={sceneSize} />
-      </div>
-      <p>
-        Explanatory text. Explanatory text.Explanatory text. Explanatory text.
-      </p>
-    </MediaObjectLayout>
-  ))
   .add('Specify right as summary', () => (
     <MediaObjectLayout summary={'right'}>
-      <div>
-        <img src={ogpBook} />
+      <div style={{height: '100px', width: '100px'}}>
+        <Img fluid={imgData.book.fluid} />
       </div>
       <div>
         <h2>Reference site title</h2>
@@ -58,36 +36,8 @@ storiesOf('Atoms/MediaObjectLayout', module)
   ))
   .add('Specify top as summary', () => (
     <MediaObjectLayout summary={'top'}>
-      <div>
-        <img src={ogpLarge} />
-      </div>
-      <div>
-        <h2>Reference site title</h2>
-        <p>
-          Explanatory text. Explanatory text.Explanatory text. Explanatory text.
-        </p>
-        <p>URL</p>
-      </div>
-    </MediaObjectLayout>
-  ))
-  .add('Image size is square and summary is top', () => (
-    <MediaObjectLayout summary={'top'}>
-      <div>
-        <img src={ogpSquare} />
-      </div>
-      <div>
-        <h2>Reference site title</h2>
-        <p>
-          Explanatory text. Explanatory text.Explanatory text. Explanatory text.
-        </p>
-        <p>URL</p>
-      </div>
-    </MediaObjectLayout>
-  ))
-  .add('Incorrect summary specification', () => (
-    <MediaObjectLayout summary={'incorrect'}>
-      <div>
-        <img src={ogpSquare} />
+      <div style={{width: '500px'}}>
+        <Img fluid={imgData.summaryLarge.fluid} />
       </div>
       <div>
         <h2>Reference site title</h2>

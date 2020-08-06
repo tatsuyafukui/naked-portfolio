@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Img from 'gatsby-image'
 import styles from './styles.module.scss'
 import Seo from '../../seo'
 import Breadcrumb from '../../Atoms/Breadcrumb'
@@ -23,11 +22,13 @@ const SceneTemplate = ({data}) => {
       <Seo title={scene.title} description={scene.description} lang={'ja'} />
       <Header />
       <main>
-        <Img
-          className={styles.visual}
-          fluid={scene.image.childImageSharp.fluid}
-          alt={scene.title}
-        />
+        <div className={styles.visualContainer}>
+          <img
+            className={styles.visual}
+            src={scene.image.publicURL}
+            alt={scene.title}
+          />
+        </div>
         <Container>
           <div className={styles.firstview}>
             <Breadcrumb className={styles.breadcrumb}>
@@ -71,11 +72,7 @@ export const query = graphql`
       title
       description
       image {
-        childImageSharp {
-          fluid(maxWidth: 2000) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
+        publicURL
       }
       skills {
         id
