@@ -22,13 +22,11 @@ const SceneTemplate = ({data}) => {
       <Seo title={scene.title} description={scene.description} lang={'ja'} />
       <Header />
       <main>
-        <div className={styles.visualContainer}>
-          <img
-            className={styles.visual}
-            src={scene.image.publicURL}
-            alt={scene.title}
-          />
-        </div>
+        <img
+          className={styles.visual}
+          src={scene.image.publicURL}
+          alt={scene.title}
+        />
         <Container>
           <div className={styles.firstview}>
             <Breadcrumb className={styles.breadcrumb}>
