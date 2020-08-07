@@ -14,6 +14,14 @@
 }
 
 .h1 {
+  font-size: var(--font-size-xxxxl);
+
+  @include mediaQuery(md) {
+    font-size: var(--font-size-xxxl);
+  }
+}
+
+.h2 {
   font-size: var(--font-size-xxxl);
 
   @include mediaQuery(md) {
@@ -21,7 +29,7 @@
   }
 }
 
-.h2 {
+.h3 {
   font-size: var(--font-size-xxl);
 
   @include mediaQuery(md) {
@@ -29,7 +37,7 @@
   }
 }
 
-.h3 {
+.h4 {
   font-size: var(--font-size-xl);
 
   @include mediaQuery(md) {
@@ -37,7 +45,7 @@
   }
 }
 
-.h4 {
+.h5 {
   font-size: var(--font-size-l);
 
   @include mediaQuery(md) {
@@ -45,18 +53,10 @@
   }
 }
 
-.h5 {
+.h6 {
   font-size: var(--font-size-m);
 
   @include mediaQuery(md) {
     font-size: var(--font-size-s);
-  }
-}
-
-.h6 {
-  font-size: var(--font-size-s);
-
-  @include mediaQuery(md) {
-    font-size: var(--font-size-xs);
   }
 }

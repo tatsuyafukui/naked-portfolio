@@ -24,7 +24,7 @@ const SkillLink = ({skill, className, ...props}) => (
       <div className={styles.textWrap}>
         <div className={styles.title}>
           <FontAwesomeIcon icon={faBook} />
-          <BoldHeading level={3} className={styles.titleText}>
+          <BoldHeading level={3} visualLevel={4} className={styles.titleText}>
             {skill.title}
           </BoldHeading>
         </div>

@@ -37,7 +37,7 @@ const OgpPresenter = ({
     >
       <Img fluid={image} alt={title} className={styles.image} />
       <div className={[styles.ogBody].join(' ')}>
-        <Heading level={5} className={[styles.ogTitle, truncate].join(' ')}>
+        <Heading level={6} className={[styles.ogTitle, truncate].join(' ')}>
           {title}
         </Heading>
         {ogpDescription}

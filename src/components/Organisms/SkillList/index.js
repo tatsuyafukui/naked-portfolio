@@ -9,7 +9,7 @@ const SkillList = ({skills}) => (
   <List tag='ol'>
     {skills.map(skill => (
       <ListItem className={styles.listItem} key={skill.id}>
-        <BoldHeading tag='span' level={2} visualLevel={3}>
+        <BoldHeading tag='span' level={2} visualLevel={4}>
           {skill.subTitle}
         </BoldHeading>
         <SkillLink skill={skill} className={styles.skillLink} />
