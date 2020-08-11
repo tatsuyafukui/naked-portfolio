@@ -13,6 +13,14 @@
   font-weight: var(--font-weight-bold);
 }
 
+.decorated {
+  background: var(--color-block);
+  border-left: 4px solid var(--color-accent);
+  display: inline-block;
+  font-weight: var(--font-weight-bold);
+  padding: 0.33em 0.66em;
+}
+
 .h1 {
   font-size: var(--font-size-xxxxl);
 
