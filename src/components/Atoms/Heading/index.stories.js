@@ -16,4 +16,6 @@ storiesOf('Atoms/Heading', module)
     </Heading>
   ))
   .add('Bold Heading', () => <BoldHeading>BoldHeading</BoldHeading>)
-  .add('Decorated Heading', () => <DecoratedHeading>DecoratedHeading</DecoratedHeading>)
+  .add('Decorated Heading', () => (
+    <DecoratedHeading>DecoratedHeading</DecoratedHeading>
+  ))
