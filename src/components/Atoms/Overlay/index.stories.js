@@ -1,15 +1,13 @@
 import React from 'react'
 import {storiesOf} from '@storybook/react/dist/client'
-import Img from 'gatsby-image'
 import Overlay, {Front, Back} from './index'
-import sceneSize from '../../../mock/images/scene-size.png'
 import data from '../../../mock/data/scene'
 
 storiesOf('Atoms/Overlay', module)
   .add(`Default`, () => (
     <Overlay style={{width: '300px', height: '200px'}}>
       <Back>
-        <img src={sceneSize} />
+        <img src={data.scenesJson.image.publicURL} />
       </Back>
       <Front>
         <h1 style={{color: 'white'}}>Title</h1>
@@ -19,7 +17,7 @@ storiesOf('Atoms/Overlay', module)
   .add('Background image reduction', () => (
     <Overlay style={{width: '300px', height: '300px'}}>
       <Back>
-        <img src={sceneSize} />
+        <img src={data.scenesJson.image.publicURL} />
       </Back>
       <Front>
         <h1 style={{color: 'white'}}>Title</h1>
@@ -29,7 +27,7 @@ storiesOf('Atoms/Overlay', module)
   .add('Multiple foreground text', () => (
     <Overlay style={{width: '300px', height: '200px'}}>
       <Back>
-        <img src={sceneSize} />
+        <img src={data.scenesJson.image.publicURL} />
       </Back>
       <Front>
         <div>
@@ -58,23 +56,7 @@ storiesOf('Atoms/Overlay', module)
       style={{width: '300px', height: '200px'}}
     >
       <Back>
-        <img src={sceneSize} />
-      </Back>
-      <Front>
-        <div>
-          <h1 style={{color: 'white'}}>Title</h1>
-          <p style={{color: 'white'}}>description</p>
-        </div>
-      </Front>
-    </Overlay>
-  ))
-  .add('Background is gatsby-img', () => (
-    <Overlay
-      overlayStyle={{backgroundColor: 'rgba(3, 0, 39, 0.39)'}}
-      style={{width: '300px', height: '200px'}}
-    >
-      <Back>
-        <Img fluid={data.scenesJson.image.childImageSharp.fluid} />
+        <img src={data.scenesJson.image.publicURL} />
       </Back>
       <Front>
         <div>

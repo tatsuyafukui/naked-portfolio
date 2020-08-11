@@ -14,11 +14,7 @@ const IndexPage = () => {
             slug
           }
           image {
-            childImageSharp {
-              fluid(maxWidth: 1140) {
-                ...GatsbyImageSharpFluid_withWebp
-              }
-            }
+            publicURL
           }
         }
       }

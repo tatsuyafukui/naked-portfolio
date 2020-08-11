@@ -4,7 +4,6 @@ import styles from './styles.module.scss'
 import Link from '../../Atoms/Link'
 import MediaObjectLayout from '../../Atoms/MediaObjectLayout'
 import Heading from '../../Atoms/Heading'
-import Img from 'gatsby-image'
 import Txt from '../../Atoms/Txt'
 
 const SceneLink = ({scene, className, ...props}) => (
@@ -15,10 +14,11 @@ const SceneLink = ({scene, className, ...props}) => (
   >
     <MediaObjectLayout summary='top'>
       <div className={styles.imageWrap}>
-        <Img
+        <img
           className={styles.image}
-          fluid={scene.image.childImageSharp.fluid}
+          src={scene.image.publicURL}
           alt={scene.title}
+          loading='lazy'
         />
         <Heading level={2} visualLevel={3} className={styles.number}>
           {scene.numberTitle}
