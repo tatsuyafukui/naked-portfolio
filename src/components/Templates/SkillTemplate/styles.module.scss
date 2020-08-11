@@ -206,3 +206,9 @@ span {
     border: var(--border);
   }
 }
+
+a {
+  &[data-type='link'] {
+    color: var(--color-link);
+  }
+}

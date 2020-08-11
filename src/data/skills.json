@@ -21,7 +21,7 @@
         "Webアクセシビリティに対応したページを作れる"
       ]
     },
-    "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
+    "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの<a href='/scenes/web-basics/skills/developer-tools' target='_blank' rel='noopener noreferrer' data-type='link'>開発者ツール</a>を使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら<span data-type='search'>HTML タグ</span><span data-type='search'>HTML 属性</span><span data-type='search'>CSS プロパティ</span>などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
     "sceneId": "web-basics"
   },
   {
