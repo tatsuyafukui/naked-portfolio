@@ -18,6 +18,7 @@ const SceneLink = ({scene, className, ...props}) => (
           className={styles.image}
           src={scene.image.publicURL}
           alt={scene.title}
+          loading='lazy'
         />
         <Heading level={2} visualLevel={3} className={styles.number}>
           {scene.numberTitle}
