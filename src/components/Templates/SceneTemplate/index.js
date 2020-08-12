@@ -12,7 +12,7 @@ import Footer from '../../Organisms/Footer'
 import SkillList from '../../Organisms/SkillList'
 import {graphql} from 'gatsby'
 import LongDescription from '../../Molecules/LongDescription'
-import HeroImage from '../../Atoms/HeaderImage'
+import HeroImage from '../../Molecules/HeroImage'
 
 const SceneTemplate = ({data}) => {
   const scene = data.scenesJson

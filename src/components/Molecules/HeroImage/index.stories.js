@@ -2,12 +2,12 @@ import React from 'react'
 import {storiesOf} from '@storybook/react'
 import HeroImage from './index'
 import Img from 'gatsby-image'
-import scene from '../../../mock/data/scene'
+import scene from '../../../mock/data/scene.json'
 import skill from '../../../mock/data/skill.json'
 import BackgroundImage from 'gatsby-background-image'
 import Heading from '../../Atoms/Heading'
 
-storiesOf('Atoms/HeroImage', module)
+storiesOf('Molecules/HeroImage', module)
   .add('Default', () => (
     <HeroImage>
       <img
