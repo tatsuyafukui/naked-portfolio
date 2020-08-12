@@ -4,6 +4,8 @@ import HeroImage from './index'
 import Img from 'gatsby-image'
 import scene from '../../../mock/data/scene'
 import skill from '../../../mock/data/skill.json'
+import BackgroundImage from 'gatsby-background-image'
+import Heading from '../../Atoms/Heading'
 
 storiesOf('Atoms/HeroImage', module)
   .add('Default', () => (
@@ -22,3 +24,27 @@ storiesOf('Atoms/HeroImage', module)
       />
     </HeroImage>
   ))
+  .add('with background-image', () => (
+    <HeroImage>
+      <div style={style}>
+        <Heading>HeroImage</Heading>
+      </div>
+    </HeroImage>
+  ))
+  .add('with gastby-background-image', () => (
+    <HeroImage>
+      <BackgroundImage
+        style={style}
+        fluid={skill.skillsJson.thumbnail.childImageSharp.fluid}
+      >
+        <Heading>HeroImage</Heading>
+      </BackgroundImage>
+    </HeroImage>
+  ))
+
+const style = {
+  backgroundImage: `url(${scene.scenesJson.image.publicURL})`,
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+}

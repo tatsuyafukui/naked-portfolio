@@ -15,13 +15,18 @@
     height: 250px;
   }
 
-  > img {
-    object-fit: cover;
-    width: 100%;
-  }
-
   > img,
   div {
     height: 100%;
+    width: 100%;
+  }
+
+  > img {
+    object-fit: cover;
+  }
+
+  > div {
+    background-position: center;
+    background-size: cover;
   }
 }
