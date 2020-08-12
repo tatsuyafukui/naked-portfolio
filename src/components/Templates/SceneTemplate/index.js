@@ -12,6 +12,7 @@ import Footer from '../../Organisms/Footer'
 import SkillList from '../../Organisms/SkillList'
 import {graphql} from 'gatsby'
 import LongDescription from '../../Molecules/LongDescription'
+import HeroImage from '../../Molecules/HeroImage'
 
 const SceneTemplate = ({data}) => {
   const scene = data.scenesJson
@@ -22,11 +23,9 @@ const SceneTemplate = ({data}) => {
       <Seo title={scene.title} description={scene.description} lang={'ja'} />
       <Header />
       <main>
-        <img
-          className={styles.visual}
-          src={scene.image.publicURL}
-          alt={scene.title}
-        />
+        <HeroImage>
+          <img src={scene.image.publicURL} alt={scene.title} />
+        </HeroImage>
         <Container>
           <div className={styles.firstview}>
             <Breadcrumb className={styles.breadcrumb}>
