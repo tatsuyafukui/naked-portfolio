@@ -208,7 +208,5 @@ span {
 }
 
 a {
-  &[data-type='link'] {
-    color: var(--color-link);
-  }
+  color: var(--color-link);
 }
