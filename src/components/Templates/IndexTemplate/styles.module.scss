@@ -5,36 +5,30 @@
 }
 
 .titleWrap {
-  margin: 72px 0 80px;
+  margin: var(--space-72) 0 var(--space-80);
   text-align: center;
 
   @include mediaQuery(md) {
-    margin: 8.33% 0;
     text-align: left;
   }
 
   @include mediaQuery(sm) {
-    margin: 14.67% 0;
     text-align: left;
   }
 }
 
 .title {
-  margin-bottom: 0.4em;
+  margin-bottom: var(--space-16);
 }
 
 .item {
-  margin-bottom: 112px;
-
-  @include mediaQuery(lg) {
-    margin-bottom: 8.96%;
-  }
+  margin-bottom: var(--space-112);
 
   @include mediaQuery(md) {
-    margin-bottom: 11.45%;
+    margin-bottom: var(--space-64-fixed);
   }
 
   @include mediaQuery(sm) {
-    margin-bottom: 10.66%;
+    margin-bottom: var(--space-32-fixed);
   }
 }

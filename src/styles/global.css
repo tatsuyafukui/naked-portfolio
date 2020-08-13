@@ -56,8 +56,53 @@
   --line-height-m: 1.5;
   --line-height-l: 1.7;
 
-  /* 余白（媒体に最適化した余白単位） */
-  --space: 4px;
+  /* spacing values */
+  --space-unit: 8px;
+  --space-2: calc(0.25 * var(--space-unit));
+  --space-4: calc(0.5 * var(--space-unit));
+  --space-6: calc(0.75 * var(--space-unit));
+  --space-8: var(--space-unit);
+  --space-12: calc(1.5 * var(--space-unit));
+  --space-14: calc(1.75 * var(--space-unit));
+  --space-16: calc(2 * var(--space-unit));
+  --space-20: calc(2.5 * var(--space-unit));
+  --space-24: calc(3 * var(--space-unit));
+  --space-32: calc(4 * var(--space-unit));
+  --space-40: calc(5 * var(--space-unit));
+  --space-48: calc(6 * var(--space-unit));
+  --space-56: calc(7 * var(--space-unit));
+  --space-64: calc(8 * var(--space-unit));
+  --space-72: calc(9 * var(--space-unit));
+  --space-80: calc(10 * var(--space-unit));
+  --space-88: calc(11 * var(--space-unit));
+  --space-96: calc(12 * var(--space-unit));
+  --space-104: calc(13 * var(--space-unit));
+  --space-112: calc(14 * var(--space-unit));
+  --space-120: calc(15 * var(--space-unit));
+
+  /* fixed values - not affected by --space-unit or --text-base-size */
+  --space-unit-fixed: 8px;
+  --space-2-fixed: calc(0.25 * var(--space-unit-fixed));
+  --space-4-fixed: calc(0.5 * var(--space-unit-fixed));
+  --space-6-fixed: calc(0.75 * var(--space-unit-fixed));
+  --space-8-fixed: var(--space-unit-fixed);
+  --space-12-fixed: calc(1.5 * var(--space-unit-fixed));
+  --space-14-fixed: calc(1.75 * var(--space-unit-fixed));
+  --space-16-fixed: calc(2 * var(--space-unit-fixed));
+  --space-20-fixed: calc(2.5 * var(--space-unit-fixed));
+  --space-24-fixed: calc(3 * var(--space-unit-fixed));
+  --space-32-fixed: calc(4 * var(--space-unit-fixed));
+  --space-40-fixed: calc(5 * var(--space-unit-fixed));
+  --space-48-fixed: calc(6 * var(--space-unit-fixed));
+  --space-56-fixed: calc(7 * var(--space-unit-fixed));
+  --space-64-fixed: calc(8 * var(--space-unit-fixed));
+  --space-72-fixed: calc(9 * var(--space-unit-fixed));
+  --space-80-fixed: calc(10 * var(--space-unit-fixed));
+  --space-88-fixed: calc(11 * var(--space-unit-fixed));
+  --space-96-fixed: calc(12 * var(--space-unit-fixed));
+  --space-104-fixed: calc(13 * var(--space-unit-fixed));
+  --space-112-fixed: calc(14 * var(--space-unit-fixed));
+  --space-120-fixed: calc(15 * var(--space-unit-fixed));
 
   /* 枠に関する要素（媒体に最適化した枠デザイン要素） */
   --line-width: 1px;
@@ -699,5 +744,23 @@ pre tt::after {
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  :root {
+    --space-unit: 6px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    --space-unit: 5px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  :root {
+    --space-unit: 4px;
   }
 }
