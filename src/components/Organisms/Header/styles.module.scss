@@ -13,7 +13,7 @@
 }
 
 .logo {
-  margin-top: var(--space);
+  margin-top: var(--space-4-fixed);
 
   @include mediaQuery(sm) {
     width: 180px;

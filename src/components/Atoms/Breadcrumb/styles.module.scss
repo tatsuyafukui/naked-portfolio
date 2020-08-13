@@ -9,7 +9,7 @@
 
 .separator {
   display: flex;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: var(--space-12);
+  margin-right: var(--space-12);
   user-select: none;
 }
