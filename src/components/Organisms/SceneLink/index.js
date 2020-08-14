@@ -5,6 +5,7 @@ import Link from '../../Atoms/Link'
 import MediaObjectLayout from '../../Atoms/MediaObjectLayout'
 import Heading from '../../Atoms/Heading'
 import Txt from '../../Atoms/Txt'
+import LazyImage from '../../Atoms/LazyImage'
 
 const SceneLink = ({scene, className, ...props}) => (
   <Link
@@ -14,7 +15,7 @@ const SceneLink = ({scene, className, ...props}) => (
   >
     <MediaObjectLayout summary='top'>
       <div className={styles.imageWrap}>
-        <img
+        <LazyImage
           className={styles.image}
           src={scene.image.publicURL}
           alt={scene.title}
