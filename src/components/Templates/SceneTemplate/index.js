@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './styles.module.scss'
 import Seo from '../../seo'
-import Breadcrumb from '../../Atoms/Breadcrumb'
+import NavigationBreadcrumb from '../../Molecules/NavigationBreadcrumb'
 import Container from '../../Atoms/Container'
 import Link from '../../Atoms/Link'
 import Txt from '../../Atoms/Txt'
@@ -19,21 +19,21 @@ const SceneTemplate = ({data}) => {
   const skills = data.scenesJson.skills
 
   return (
-    <>
+    <div className={styles.background}>
       <Seo title={scene.title} description={scene.description} lang={'ja'} />
       <Header />
       <main>
-        <HeroImage>
-          <img src={scene.image.publicURL} alt={scene.title} />
-        </HeroImage>
-        <Container>
-          <div className={styles.firstview}>
-            <Breadcrumb className={styles.breadcrumb}>
-              <Link className={styles.link} to='/'>
+        <section className={styles.firstview}>
+          <HeroImage>
+            <img src={scene.image.publicURL} alt={scene.title} />
+          </HeroImage>
+          <Container>
+            <NavigationBreadcrumb>
+              <Link to='/'>
                 <Txt>Home</Txt>
               </Link>
               <Txt>{scene.numberTitle}</Txt>
-            </Breadcrumb>
+            </NavigationBreadcrumb>
             <div className={styles.titleWrap}>
               <BoldHeading level={1} className={styles.title}>
                 {scene.title}
@@ -42,16 +42,14 @@ const SceneTemplate = ({data}) => {
                 <LongDescription>{scene.description}</LongDescription>
               </div>
             </div>
-          </div>
-        </Container>
-        <section className={styles.background}>
-          <Container>
-            <SkillList skills={skills} />
           </Container>
         </section>
+        <Container>
+          <SkillList skills={skills} />
+        </Container>
       </main>
       <Footer className={styles.footer} />
-    </>
+    </div>
   )
 }
 

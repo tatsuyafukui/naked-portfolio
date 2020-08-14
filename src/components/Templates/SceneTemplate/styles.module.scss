@@ -1,48 +1,15 @@
 @import '../../properties';
 
-.breadcrumb {
-  margin-bottom: 24px;
-
-  @include mediaQuery(lg) {
-    margin-bottom: 2.41%;
-  }
-
-  @include mediaQuery(md) {
-    margin-bottom: 1.04%;
-  }
-
-  @include mediaQuery(sm) {
-    margin-bottom: 2.13%;
-  }
-}
-
-.link {
-  color: var(--color-text);
-}
-
 .firstview {
-  margin-bottom: 96px;
-  margin-top: 40px;
-
-  @include mediaQuery(lg) {
-    margin-bottom: 9.67%;
-    margin-top: 4.03%;
-  }
-
-  @include mediaQuery(md) {
-    margin-bottom: 8.33%;
-    margin-top: 4.16%;
-  }
-
-  @include mediaQuery(sm) {
-    margin-bottom: 12.8%;
-    margin-top: 6.4%;
-  }
+  background-color: var(--color-white);
+  margin-bottom: var(--space-96);
+  padding-bottom: var(--space-96);
 }
 
 .titleWrap {
   display: flex;
   justify-content: space-between;
+  margin-top: var(--space-24);
 
   @include mediaQuery(md) {
     display: block;
@@ -50,7 +17,7 @@
 }
 
 .title {
-  margin-right: 5.61%;
+  margin-right: var(--space-64);
   max-width: 430px;
 
   @include mediaQuery(lg) {
@@ -59,7 +26,7 @@
 
   @include mediaQuery(md) {
     font-size: var(--font-size-xxl) !important;
-    margin-bottom: 3.125%;
+    margin-bottom: var(--space-24);
     margin-right: 0;
     max-width: 620px;
   }
@@ -79,17 +46,4 @@
 
 .background {
   background: var(--color-background);
-  padding: 96px 0 80px;
-
-  @include mediaQuery(md) {
-    padding: 8.33% 0 10.41%;
-  }
-
-  @include mediaQuery(sm) {
-    padding: 12.8% 0 17.06%;
-  }
-}
-
-.footer {
-  margin-top: 0 !important;
 }

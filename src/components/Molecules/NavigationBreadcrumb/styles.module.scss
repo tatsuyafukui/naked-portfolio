@@ -1,0 +1,9 @@
+@import '../../properties';
+
+.breadcrumb {
+  margin-top: var(--space-32);
+
+  @include mediaQuery(sm) {
+    margin-top: var(--space-24-fixed);
+  }
+}
