@@ -25,13 +25,10 @@ const ShareButtonFactory = icon => ({
       eventAction={eventAction}
       eventCategory={`${icon.iconName}シェアボタン`}
       eventLabel='SNSシェアボタン'
+      className={[styles.circle, styles[icon.iconName], className].join(' ')}
       {...props}
     >
-      <div
-        className={[styles.circle, styles[icon.iconName], className].join(' ')}
-      >
-        <FontAwesomeIcon icon={icon} />
-      </div>
+      <FontAwesomeIcon icon={icon} />
     </OutboundLink>
   )
 }

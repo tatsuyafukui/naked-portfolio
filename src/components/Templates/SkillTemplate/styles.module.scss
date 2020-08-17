@@ -31,6 +31,7 @@
   }
 
   @include mediaQuery(sm) {
+    margin-bottom: var(--space-20-fixed);
     margin-top: var(--space-64-fixed);
   }
 }
@@ -54,8 +55,8 @@
 .guidelinesItem {
   background-color: var(--color-block);
   border-radius: var(--radius);
-  padding: var(--space-32);
   margin-bottom: var(--space-24);
+  padding: var(--space-32);
 
   @include mediaQuery(md) {
     padding: 4.16%;
