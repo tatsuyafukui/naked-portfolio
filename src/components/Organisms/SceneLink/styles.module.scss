@@ -60,16 +60,16 @@
 .number {
   background: var(--color-white);
   border-radius: 100px;
-  bottom: 32px;
-  left: 32px;
+  bottom: var(--space-32);
+  left: var(--space-32);
   padding: 0.41em 1em;
   position: absolute;
   z-index: var(--z-overlay-content);
 
   @include mediaQuery(sm) {
-    bottom: 16px;
+    bottom: var(--space-16-fixed);
     font-size: var(--font-size-xxs);
-    left: 16px;
+    left: var(--space-16-fixed);
   }
 }
 
