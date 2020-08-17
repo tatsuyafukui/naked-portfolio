@@ -477,7 +477,7 @@ ol {
   padding-top: 0;
 }
 
-ul,
+ul > :last-child,
 ol > :last-child {
   margin-bottom: 0;
 }

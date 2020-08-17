@@ -57,10 +57,7 @@ const SkillTemplate = ({data}) => {
           >
             概要
           </HighlightedHeading>
-          <LongTxt
-            className={styles.content}
-            dangerouslySetInnerHTML={{__html: skill.overview}}
-          />
+          <LongTxt dangerouslySetInnerHTML={{__html: skill.overview}} />
           <Img
             className={styles.image}
             fluid={skill.image.childImageSharp.fluid}
@@ -72,26 +69,17 @@ const SkillTemplate = ({data}) => {
           >
             学ぶ目的
           </HighlightedHeading>
-          <LongTxt
-            dangerouslySetInnerHTML={{__html: skill.purpose}}
-            className={styles.content}
-          />
+          <LongTxt dangerouslySetInnerHTML={{__html: skill.purpose}} />
           <HighlightedHeading
-            level={3}
+            level={2}
             visualLevel={4}
             className={styles.highlightedHeading}
           >
             学習の目安
           </HighlightedHeading>
           <List className={styles.guidelines}>
-            <ListItem
-              className={[styles.guidelinesItem, styles.content].join(' ')}
-            >
-              <BoldHeading
-                level={4}
-                visualLevel={5}
-                className={styles.heading4}
-              >
+            <ListItem className={styles.guidelinesItem}>
+              <BoldHeading level={3} visualLevel={5}>
                 基礎
               </BoldHeading>
               <List>
@@ -102,14 +90,8 @@ const SkillTemplate = ({data}) => {
                 ))}
               </List>
             </ListItem>
-            <ListItem
-              className={[styles.guidelinesItem, styles.content].join(' ')}
-            >
-              <BoldHeading
-                level={4}
-                visualLevel={5}
-                className={styles.heading4}
-              >
+            <ListItem className={styles.guidelinesItem}>
+              <BoldHeading level={3} visualLevel={5}>
                 応用
               </BoldHeading>
               <List>
@@ -122,16 +104,20 @@ const SkillTemplate = ({data}) => {
             </ListItem>
           </List>
           <HighlightedHeading
-            level={3}
+            level={2}
             visualLevel={4}
             className={styles.highlightedHeading}
           >
             全体像をつかむには
           </HighlightedHeading>
-          <LongTxt
-            dangerouslySetInnerHTML={{__html: skill.overall}}
-            className={styles.content}
-          />
+          <LongTxt dangerouslySetInnerHTML={{__html: skill.overall}} />
+          <HighlightedHeading
+            level={2}
+            visualLevel={4}
+            className={styles.highlightedHeading}
+          >
+            おすすめの教材
+          </HighlightedHeading>
           <OgpList ogpList={recommended} />
         </Container>
       </main>
@@ -195,6 +181,8 @@ export const query = graphql`
           }
         }
         id
+        title
+        description
         isbn
         url
       }
