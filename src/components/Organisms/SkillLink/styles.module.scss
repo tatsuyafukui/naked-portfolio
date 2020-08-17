@@ -48,7 +48,7 @@
 
   @include mediaQuery(sm) {
     margin-left: 0;
-    margin-top: 16px;
+    margin-top: var(--space-16-fixed);
   }
 }
 
@@ -57,11 +57,11 @@
   color: var(--color-opacity15-black);
   display: flex;
   font-size: 20px;
-  margin-bottom: 8px;
+  margin-bottom: var(--space-8-fixed);
 }
 
 .titleText {
-  margin-left: 12px;
+  margin-left: var(--space-12-fixed);
 }
 
 .description {

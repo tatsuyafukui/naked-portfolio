@@ -14,16 +14,12 @@
 }
 
 .ogBody {
-  padding: 24px;
+  padding: var(--space-24);
   width: 100%;
-
-  @include mediaQuery(md) {
-    padding: 16px;
-  }
 }
 
 .ogTitle {
-  margin-bottom: 4px;
+  margin-bottom: var(--space-4-fixed);
 }
 
 .textTruncate {
@@ -56,28 +52,28 @@
 .right {
   .image {
     flex-shrink: 0;
-    margin: 16px 24px 16px 0;
+    margin: var(--space-16-fixed) var(--space-24-fixed) var(--space-16-fixed) 0;
     width: 100px;
 
     @include mediaQuery(md) {
-      margin: 16px 16px 16px 0;
+      margin: var(--space-16-fixed) var(--space-16-fixed) var(--space-16-fixed) 0;
       width: 84px;
     }
   }
 
   .ogBody {
     flex: 1;
-    padding: 24px 16px 24px 24px;
+    padding: var(--space-24-fixed) var(--space-16-fixed) var(--space-24-fixed) var(--space-24-fixed);
     width: calc(100% - 100px);
 
     @include mediaQuery(md) {
-      padding: 16px;
+      padding: var(--space-16-fixed);
       width: calc(100% - 116px);
     }
   }
 
   .ogTitle {
-    margin-bottom: 8px;
+    margin-bottom: var(--space-8-fixed);
   }
 }
 

@@ -57,52 +57,45 @@
   --line-height-l: 1.7;
 
   /* spacing values */
-  --space-unit: 8px;
-  --space-2: calc(0.25 * var(--space-unit));
-  --space-4: calc(0.5 * var(--space-unit));
-  --space-6: calc(0.75 * var(--space-unit));
-  --space-8: var(--space-unit);
-  --space-12: calc(1.5 * var(--space-unit));
-  --space-14: calc(1.75 * var(--space-unit));
-  --space-16: calc(2 * var(--space-unit));
-  --space-20: calc(2.5 * var(--space-unit));
-  --space-24: calc(3 * var(--space-unit));
-  --space-32: calc(4 * var(--space-unit));
-  --space-40: calc(5 * var(--space-unit));
-  --space-48: calc(6 * var(--space-unit));
-  --space-56: calc(7 * var(--space-unit));
-  --space-64: calc(8 * var(--space-unit));
-  --space-72: calc(9 * var(--space-unit));
-  --space-80: calc(10 * var(--space-unit));
-  --space-88: calc(11 * var(--space-unit));
-  --space-96: calc(12 * var(--space-unit));
-  --space-104: calc(13 * var(--space-unit));
-  --space-112: calc(14 * var(--space-unit));
-  --space-120: calc(15 * var(--space-unit));
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-56: 56px;
+  --space-64: 64px;
+  --space-72: 72px;
+  --space-80: 80px;
+  --space-88: 88px;
+  --space-96: 96px;
+  --space-104: 104px;
+  --space-112: 112px;
+  --space-120: 120px;
 
-  /* fixed values - not affected by --space-unit or --text-base-size */
-  --space-unit-fixed: 8px;
-  --space-2-fixed: calc(0.25 * var(--space-unit-fixed));
-  --space-4-fixed: calc(0.5 * var(--space-unit-fixed));
-  --space-6-fixed: calc(0.75 * var(--space-unit-fixed));
-  --space-8-fixed: var(--space-unit-fixed);
-  --space-12-fixed: calc(1.5 * var(--space-unit-fixed));
-  --space-14-fixed: calc(1.75 * var(--space-unit-fixed));
-  --space-16-fixed: calc(2 * var(--space-unit-fixed));
-  --space-20-fixed: calc(2.5 * var(--space-unit-fixed));
-  --space-24-fixed: calc(3 * var(--space-unit-fixed));
-  --space-32-fixed: calc(4 * var(--space-unit-fixed));
-  --space-40-fixed: calc(5 * var(--space-unit-fixed));
-  --space-48-fixed: calc(6 * var(--space-unit-fixed));
-  --space-56-fixed: calc(7 * var(--space-unit-fixed));
-  --space-64-fixed: calc(8 * var(--space-unit-fixed));
-  --space-72-fixed: calc(9 * var(--space-unit-fixed));
-  --space-80-fixed: calc(10 * var(--space-unit-fixed));
-  --space-88-fixed: calc(11 * var(--space-unit-fixed));
-  --space-96-fixed: calc(12 * var(--space-unit-fixed));
-  --space-104-fixed: calc(13 * var(--space-unit-fixed));
-  --space-112-fixed: calc(14 * var(--space-unit-fixed));
-  --space-120-fixed: calc(15 * var(--space-unit-fixed));
+  /* fixed spacing values */
+  --space-2-fixed: 2px;
+  --space-4-fixed: 4px;
+  --space-6-fixed: 6px;
+  --space-8-fixed: 8px;
+  --space-12-fixed: 12px;
+  --space-16-fixed: 16px;
+  --space-20-fixed: 20px;
+  --space-24-fixed: 24px;
+  --space-32-fixed: 32px;
+  --space-40-fixed: 40px;
+  --space-48-fixed: 48px;
+  --space-56-fixed: 56px;
+  --space-64-fixed: 64px;
+  --space-72-fixed: 72px;
+  --space-80-fixed: 80px;
+  --space-88-fixed: 88px;
+  --space-96-fixed: 96px;
+  --space-104-fixed: 104px;
+  --space-112-fixed: 112px;
+  --space-120-fixed: 120px;
 
   /* 枠に関する要素（媒体に最適化した枠デザイン要素） */
   --line-width: 1px;
@@ -749,18 +742,49 @@ pre tt::after {
 
 @media screen and (max-width: 991px) {
   :root {
-    --space-unit: 6px;
+    --space-80: 72px;
+    --space-88: 80px;
+    --space-96: 88px;
+    --space-104: 96px;
+    --space-112: 104px;
+    --space-120: 112px;
   }
 }
 
 @media screen and (max-width: 767px) {
   :root {
-    --space-unit: 5px;
+    --space-8: 6px;
+    --space-12: 10px;
+    --space-16: 12px;
+    --space-20: 16px;
+    --space-24: 20px;
+    --space-32: 24px;
+    --space-40: 32px;
+    --space-48: 40px;
+    --space-56: 48px;
+    --space-64: 56px;
+    --space-72: 64px;
   }
 }
 
 @media screen and (max-width: 544px) {
   :root {
-    --space-unit: 4px;
+    --space-8: 4px;
+    --space-12: 6px;
+    --space-16: 8px;
+    --space-20: 12px;
+    --space-24: 16px;
+    --space-32: 20px;
+    --space-40: 24px;
+    --space-48: 32px;
+    --space-56: 40px;
+    --space-64: 48px;
+    --space-72: 56px;
+    --space-80: 64px;
+    --space-88: 72px;
+    --space-96: 80px;
+    --space-104: 88px;
+    --space-112: 96px;
+    --space-120: 104px;
   }
 }
