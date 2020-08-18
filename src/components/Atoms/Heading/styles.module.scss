@@ -14,6 +14,7 @@
 }
 
 .highlight {
+  align-self: flex-start;
   background: var(--color-block);
   border-left: 3px solid var(--color-accent);
   display: inline-block;

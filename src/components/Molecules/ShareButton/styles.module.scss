@@ -6,10 +6,9 @@
   color: var(--color-white);
   display: flex;
   font-size: var(--font-size-l);
-  height: 64px;
+  height: var(--space-56-fixed);
   justify-content: center;
-  padding: 22px;
-  width: 64px;
+  width: var(--space-56-fixed);
 }
 
 .twitter {

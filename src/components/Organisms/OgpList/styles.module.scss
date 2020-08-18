@@ -1,13 +1,24 @@
 @import '../../properties';
 
-.marginBottom {
-  margin-bottom: 32px;
+.listItem {
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-56);
 
   @include mediaQuery(md) {
-    margin-bottom: 4.16%;
+    font-size: var(--font-size-m);
   }
+}
 
-  @include mediaQuery(sm) {
-    margin-bottom: 6.4%;
-  }
+.title {
+  display: inline-block;
+  margin-bottom: var(--space-12);
+}
+
+.description {
+  margin-bottom: var(--space-16-fixed);
+}
+
+.ogpWrap {
+  font-weight: var(--font-weight-default);
 }

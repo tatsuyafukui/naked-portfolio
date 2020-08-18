@@ -1,0 +1,20 @@
+@import '../../properties';
+
+.root {
+  margin-top: var(--space-80);
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-32);
+}
+
+.listItem {
+  margin-right: var(--space-24);
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

@@ -3,16 +3,17 @@ import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 import styles from './styles.module.scss'
 import Seo from '../../seo'
-import Breadcrumb from '../../Atoms/Breadcrumb'
+import NavigationBreadcrumb from '../../Molecules/NavigationBreadcrumb'
 import Container from '../../Atoms/Container'
 import Link from '../../Atoms/Link'
-import Txt from '../../Atoms/Txt'
-import Overlay, {Front, Back} from '../../Atoms/Overlay'
-import Heading, {BoldHeading} from '../../Atoms/Heading'
+import Txt, {LongTxt} from '../../Atoms/Txt'
+import {BoldHeading, HighlightedHeading} from '../../Atoms/Heading'
 import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
 import List, {ListItem} from '../../Atoms/List'
 import OgpList from '../../Organisms/OgpList'
+import HeroImage from '../../Molecules/HeroImage'
+import SkillShareSection from '../../Organisms/SkillShareSection'
 import {graphql} from 'gatsby'
 
 const SkillTemplate = ({data}) => {
@@ -24,9 +25,22 @@ const SkillTemplate = ({data}) => {
     <>
       <Seo title={skill.title} description={skill.overview} lang={'ja'} />
       <Header />
-      <main className={styles.main}>
+      <main>
+        <HeroImage>
+          <div
+            className={styles.keyVisual}
+            style={{backgroundImage: `url(${skill.keyVisual.publicURL})`}}
+          >
+            <Container>
+              <BoldHeading level={1} className={styles.title}>
+                {skill.title}
+              </BoldHeading>
+              <Txt>{skill.subTitle}</Txt>
+            </Container>
+          </div>
+        </HeroImage>
         <Container>
-          <Breadcrumb className={styles.breadcrumb}>
+          <NavigationBreadcrumb className={styles.breadcrumb}>
             <Link to='/'>
               <Txt>Home</Txt>
             </Link>
@@ -34,95 +48,79 @@ const SkillTemplate = ({data}) => {
               <Txt>{scene.numberTitle}</Txt>
             </Link>
             <Txt>{skill.title}</Txt>
-          </Breadcrumb>
+          </NavigationBreadcrumb>
         </Container>
         <Container tag='article' className={styles.container}>
-          <Overlay
-            className={[styles.visual, styles.content].join(' ')}
-            overlayStyle={{backgroundColor: 'rgba(3, 0, 39, 0.39)'}}
+          <HighlightedHeading
+            level={2}
+            visualLevel={4}
+            className={styles.highlightedHeading}
           >
-            <Front>
-              <BoldHeading level={1} className={styles.title}>
-                {skill.title}
+            概要
+          </HighlightedHeading>
+          <LongTxt dangerouslySetInnerHTML={{__html: skill.overview}} />
+          <Img
+            className={styles.image}
+            fluid={skill.image.childImageSharp.fluid}
+          />
+          <HighlightedHeading
+            level={2}
+            visualLevel={4}
+            className={styles.highlightedHeading}
+          >
+            学ぶ目的
+          </HighlightedHeading>
+          <LongTxt dangerouslySetInnerHTML={{__html: skill.purpose}} />
+          <HighlightedHeading
+            level={2}
+            visualLevel={4}
+            className={styles.highlightedHeading}
+          >
+            学習の目安
+          </HighlightedHeading>
+          <List className={styles.guidelines}>
+            <ListItem className={styles.guidelinesItem}>
+              <BoldHeading level={3} visualLevel={5}>
+                基礎
               </BoldHeading>
-            </Front>
-            <Back>
-              <img src={scene.image.publicURL} />
-            </Back>
-          </Overlay>
-          <section className={styles.mainSection}>
-            <section className={styles.section}>
-              <section className={styles.block}>
-                <Txt
-                  className={styles.content}
-                  dangerouslySetInnerHTML={{__html: skill.overview}}
-                />
-                <Img
-                  className={[styles.image, styles.content].join(' ')}
-                  fluid={skill.image.childImageSharp.fluid}
-                />
-              </section>
-              <section className={styles.block}>
-                <BoldHeading
-                  level={2}
-                  visualLevel={3}
-                  className={styles.heading3}
-                >
-                  学ぶ目的
-                </BoldHeading>
-                <Txt
-                  dangerouslySetInnerHTML={{__html: skill.purpose}}
-                  className={styles.content}
-                />
-              </section>
-            </section>
-            <section className={styles.section}>
-              <Heading level={2} className={styles.heading2}>
-                学んでみよう
-              </Heading>
-              <section className={styles.block}>
-                <BoldHeading level={3} className={styles.heading3}>
-                  学習の目安
-                </BoldHeading>
-                <List className={styles.guidelines}>
-                  <ListItem className={styles.guidelinesItem}>
-                    <BoldHeading level={4} className={styles.heading4}>
-                      基礎
-                    </BoldHeading>
-                    <List>
-                      {skill.standard.basic.map(item => (
-                        <ListItem key={item} className={styles.listItem}>
-                          <Txt tag='span'>{item}</Txt>
-                        </ListItem>
-                      ))}
-                    </List>
+              <List>
+                {skill.standard.basic.map(item => (
+                  <ListItem key={item} className={styles.listItem}>
+                    <Txt tag='span'>{item}</Txt>
                   </ListItem>
-                  <ListItem className={styles.guidelinesItem}>
-                    <BoldHeading level={4} className={styles.heading4}>
-                      応用
-                    </BoldHeading>
-                    <List>
-                      {skill.standard.practical.map(item => (
-                        <ListItem key={item} className={styles.listItem}>
-                          <Txt tag='span'>{item}</Txt>
-                        </ListItem>
-                      ))}
-                    </List>
+                ))}
+              </List>
+            </ListItem>
+            <ListItem className={styles.guidelinesItem}>
+              <BoldHeading level={3} visualLevel={5}>
+                応用
+              </BoldHeading>
+              <List>
+                {skill.standard.practical.map(item => (
+                  <ListItem key={item} className={styles.listItem}>
+                    <Txt tag='span'>{item}</Txt>
                   </ListItem>
-                </List>
-              </section>
-              <section className={styles.section}>
-                <BoldHeading level={3} className={styles.heading3}>
-                  全体像をつかむには
-                </BoldHeading>
-                <Txt
-                  dangerouslySetInnerHTML={{__html: skill.overall}}
-                  className={styles.content}
-                />
-              </section>
-              <OgpList ogpList={recommended} />
-            </section>
-          </section>
+                ))}
+              </List>
+            </ListItem>
+          </List>
+          <HighlightedHeading
+            level={2}
+            visualLevel={4}
+            className={styles.highlightedHeading}
+          >
+            ここから学ぼう
+          </HighlightedHeading>
+          <LongTxt dangerouslySetInnerHTML={{__html: skill.overall}} />
+          <HighlightedHeading
+            level={2}
+            visualLevel={4}
+            className={styles.highlightedHeading}
+          >
+            おすすめの教材
+          </HighlightedHeading>
+          <OgpList ogpList={recommended} />
+          <SkillShareSection />
         </Container>
       </main>
       <Footer />
@@ -144,6 +142,10 @@ export const query = graphql`
       overview
       purpose
       title
+      subTitle
+      keyVisual {
+        publicURL
+      }
       standard {
         basic
         practical
@@ -181,6 +183,8 @@ export const query = graphql`
           }
         }
         id
+        title
+        description
         isbn
         url
       }
