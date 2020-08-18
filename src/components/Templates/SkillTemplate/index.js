@@ -10,10 +10,10 @@ import Txt, {LongTxt} from '../../Atoms/Txt'
 import {BoldHeading, HighlightedHeading} from '../../Atoms/Heading'
 import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
-import List, {ListItem} from '../../Atoms/List'
 import OgpList from '../../Organisms/OgpList'
 import HeroImage from '../../Molecules/HeroImage'
 import SkillShareSection from '../../Organisms/SkillShareSection'
+import SkillGuidelines from '../../Organisms/SkillGuidelines'
 import {graphql} from 'gatsby'
 
 const SkillTemplate = ({data}) => {
@@ -78,32 +78,7 @@ const SkillTemplate = ({data}) => {
           >
             学習の目安
           </HighlightedHeading>
-          <List className={styles.guidelines}>
-            <ListItem className={styles.guidelinesItem}>
-              <BoldHeading level={3} visualLevel={5}>
-                基礎
-              </BoldHeading>
-              <List>
-                {skill.standard.basic.map(item => (
-                  <ListItem key={item} className={styles.listItem}>
-                    <Txt tag='span'>{item}</Txt>
-                  </ListItem>
-                ))}
-              </List>
-            </ListItem>
-            <ListItem className={styles.guidelinesItem}>
-              <BoldHeading level={3} visualLevel={5}>
-                応用
-              </BoldHeading>
-              <List>
-                {skill.standard.practical.map(item => (
-                  <ListItem key={item} className={styles.listItem}>
-                    <Txt tag='span'>{item}</Txt>
-                  </ListItem>
-                ))}
-              </List>
-            </ListItem>
-          </List>
+          <SkillGuidelines skill={skill} />
           <HighlightedHeading
             level={2}
             visualLevel={4}
