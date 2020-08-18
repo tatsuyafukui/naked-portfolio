@@ -13,7 +13,7 @@ import Footer from '../../Organisms/Footer'
 import List, {ListItem} from '../../Atoms/List'
 import OgpList from '../../Organisms/OgpList'
 import HeroImage from '../../Molecules/HeroImage'
-import ShareButtonList from '../../Organisms/ShareButtonList'
+import SkillShareSection from '../../Organisms/SkillShareSection'
 import {graphql} from 'gatsby'
 
 const SkillTemplate = ({data}) => {
@@ -120,7 +120,7 @@ const SkillTemplate = ({data}) => {
             おすすめの教材
           </HighlightedHeading>
           <OgpList ogpList={recommended} />
-          <ShareButtonList />
+          <SkillShareSection />
         </Container>
       </main>
       <Footer />

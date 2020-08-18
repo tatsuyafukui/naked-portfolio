@@ -8,7 +8,7 @@ import {
   FacebookShareButton,
 } from '../../Molecules/ShareButton'
 
-const ShareButtonList = ({className, ...props}) => (
+const SkillShareSection = ({className, ...props}) => (
   <div className={[styles.root, className].join(' ')} {...props}>
     <BoldHeading level={2} visualLevel={5}>
       今日学ぶことをシェアしよう
@@ -24,8 +24,8 @@ const ShareButtonList = ({className, ...props}) => (
   </div>
 )
 
-export default ShareButtonList
+export default SkillShareSection
 
-ShareButtonList.propTypes = {
+SkillShareSection.propTypes = {
   className: PropTypes.string,
 }
