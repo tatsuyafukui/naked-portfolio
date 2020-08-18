@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
 import styles from './styles.module.scss'
 import Seo from '../../seo'
-import NAvigationBreadcrumb from '../../Molecules/NavigationBreadcrumb'
+import NavigationBreadcrumb from '../../Molecules/NavigationBreadcrumb'
 import Container from '../../Atoms/Container'
 import Link from '../../Atoms/Link'
 import Txt, {LongTxt} from '../../Atoms/Txt'
@@ -40,7 +40,7 @@ const SkillTemplate = ({data}) => {
           </div>
         </HeroImage>
         <Container>
-          <NAvigationBreadcrumb className={styles.breadcrumb}>
+          <NavigationBreadcrumb className={styles.breadcrumb}>
             <Link to='/'>
               <Txt>Home</Txt>
             </Link>
@@ -48,7 +48,7 @@ const SkillTemplate = ({data}) => {
               <Txt>{scene.numberTitle}</Txt>
             </Link>
             <Txt>{skill.title}</Txt>
-          </NAvigationBreadcrumb>
+          </NavigationBreadcrumb>
         </Container>
         <Container tag='article' className={styles.container}>
           <HighlightedHeading
@@ -109,7 +109,7 @@ const SkillTemplate = ({data}) => {
             visualLevel={4}
             className={styles.highlightedHeading}
           >
-            全体像をつかむには
+            ここから学ぼう
           </HighlightedHeading>
           <LongTxt dangerouslySetInnerHTML={{__html: skill.overall}} />
           <HighlightedHeading
