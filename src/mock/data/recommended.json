@@ -5,6 +5,8 @@
         "id": "d9abe430-216c-5693-a1a0-c705ea044b0e",
         "skill": "インターネット",
         "isbn": "4822281515",
+        "title": "Progate HTML & CSS 初級編",
+        "description": "初心者にもわかりやすくスライド形式で学習できるので自分のペースで学ぶことができます。環境構築が不要なのも学びやすいです。",
         "url": "https://www.amazon.co.jp/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%AF%E3%81%AA%E3%81%9C%E3%81%A4%E3%81%AA%E3%81%8C%E3%82%8B%E3%81%AE%E3%81%8B-%E2%80%95-%E7%9F%A5%E3%81%A3%E3%81%A6%E3%81%8A%E3%81%8D%E3%81%9F%E3%81%84TCP-IP%E3%80%81LAN%E3%80%81ADSL%E3%81%AE%E5%9F%BA%E7%A4%8E%E7%9F%A5%E8%AD%98-%E6%88%B8%E6%A0%B9/dp/4822281515/ref=sr_1_3",
         "fields": {
           "ogp": {
@@ -29,6 +31,8 @@
       {
         "id": "6e64feb9-d119-54e8-84c2-f5681cb4c652",
         "skill": "HTML&CSS",
+        "title": "Progate HTML & CSS 初級編",
+        "description": "初心者にもわかりやすくスライド形式で学習できるので自分のペースで学ぶことができます。環境構築が不要なのも学びやすいです。",
         "url": "https://prog-8.com/lessons/html/study/1",
         "fields": {
           "ogp": {
@@ -53,6 +57,8 @@
       {
         "id": "c1f13dbc-b110-5985-94f7-29438c7cb3ea",
         "skill": "エディタ",
+        "title": "Progate HTML & CSS 初級編",
+        "description": "初心者にもわかりやすくスライド形式で学習できるので自分のペースで学ぶことができます。環境構築が不要なのも学びやすいです。",
         "url": "https://code.visualstudio.com/",
         "fields": {
           "ogp": {
@@ -77,6 +83,8 @@
       {
         "id": "466afc67-11ee-5520-99ee-26f5ec0d37e9",
         "skill": "test",
+        "title": "Progate HTML & CSS 初級編",
+        "description": "初心者にもわかりやすくスライド形式で学習できるので自分のペースで学ぶことができます。環境構築が不要なのも学びやすいです。",
         "url": "https://www.jiji.com/jc/article?k=2020062501009&g=pol",
         "fields": {
           "ogp": {
@@ -101,6 +109,8 @@
       {
         "id": "78663927-5495-5ea2-8cb7-1a05ae6edec6",
         "skill": "test",
+        "title": "Progate HTML & CSS 初級編",
+        "description": "初心者にもわかりやすくスライド形式で学習できるので自分のペースで学ぶことができます。環境構築が不要なのも学びやすいです。",
         "url": "https://progate.docbase.io/posts/1386804",
         "image": null,
         "fields": null

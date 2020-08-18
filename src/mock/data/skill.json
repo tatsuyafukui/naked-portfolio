@@ -3,6 +3,9 @@
     "id": "html-and-css",
     "title": "HTML&CSS",
     "subTitle": "レイアウトを作れるようになろう",
+    "keyVisual": {
+      "publicURL": "/static/dc94819692b5bee4f0ee6a8eebc12996/skill_kv.svg"
+    },
     "description": "ホームページやECサイトなど、全てのWebページでHTML&CSSは使われています。HTML&CSSを学べば、これまであなたの頭の中にあった考えを、形にして表現する手段を手に入れることができるのです。",
     "thumbnail": {
       "childImageSharp": {
@@ -57,6 +60,8 @@
     },
     "recommended": [
       {
+        "title": "Progate HTML & CSS 初級編",
+        "description": "初心者にもわかりやすくスライド形式で学習できるので自分のペースで学ぶことができます。環境構築が不要なのも学びやすいです。",
         "fields": {
           "ogp": {
             "ogTitle": "HTML & CSS 学習コース 初級編 | Progate",
@@ -79,6 +84,8 @@
         "url": "https://prog-8.com/lessons/html/study/1"
       },
       {
+        "title": "Progate HTML & CSS 初級編",
+        "description": "初心者にもわかりやすくスライド形式で学習できるので自分のペースで学ぶことができます。環境構築が不要なのも学びやすいです。",
         "fields": {
           "ogp": {
             "ogTitle": "いちばんよくわかるHTML5&CSS3デザインきちんと入門 (Design&IDEA) | 狩野 祐東 |本 | 通販 | Amazon",
@@ -101,6 +108,8 @@
         "url": "https://www.amazon.co.jp/dp/4797388544"
       },
       {
+        "title": "Progate HTML & CSS 初級編",
+        "description": "初心者にもわかりやすくスライド形式で学習できるので自分のペースで学ぶことができます。環境構築が不要なのも学びやすいです。",
         "fields": {
           "ogp": {
             "ogTitle": "HTML Tutorial",
@@ -123,6 +132,8 @@
         "url": "https://www.w3schools.com/html/"
       },
       {
+        "title": "Progate HTML & CSS 初級編",
+        "description": "初心者にもわかりやすくスライド形式で学習できるので自分のペースで学ぶことができます。環境構築が不要なのも学びやすいです。",
         "fields": {
           "ogp": {
             "ogTitle": "CSS Tutorial",
@@ -145,6 +156,8 @@
         "url": "https://www.w3schools.com/css/"
       },
       {
+        "title": "Progate HTML & CSS 初級編",
+        "description": "初心者にもわかりやすくスライド形式で学習できるので自分のペースで学ぶことができます。環境構築が不要なのも学びやすいです。",
         "fields": {
           "ogp": {
             "ogTitle": "Web Content Accessibility Guidelines (WCAG) Overview",
