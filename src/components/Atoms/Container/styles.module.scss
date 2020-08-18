@@ -2,7 +2,6 @@
 
 .root {
   margin: auto;
-  max-width: calc(1140px + 10%);
   padding-left: 5%;
   padding-right: 5%;
   width: 100%;
@@ -16,4 +15,12 @@
     padding-left: 6.4%;
     padding-right: 6.4%;
   }
+}
+
+.base {
+  max-width: calc(1140px + 10%);
+}
+
+.narrow {
+  max-width: calc(620px + 10%);
 }

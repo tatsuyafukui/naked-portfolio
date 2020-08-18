@@ -2,13 +2,19 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './styles.module.scss'
 
-const Container = ({tag: Tag, className, children, ...props}) => (
-  <Tag className={[styles.root, className].join(' ')} {...props}>
+const containerFactory = role => ({
+  tag: Tag,
+  className,
+  children,
+  ...props
+}) => (
+  <Tag className={[styles.root, styles[role], className].join(' ')} {...props}>
     {children}
   </Tag>
 )
 
-export default Container
+const Container = containerFactory('base')
+export const NarrowedContainer = containerFactory('narrow')
 
 Container.propTypes = {
   children: PropTypes.node.isRequired,
@@ -19,3 +25,15 @@ Container.propTypes = {
 Container.defaultProps = {
   tag: 'div',
 }
+
+NarrowedContainer.propTypes = {
+  children: PropTypes.node.isRequired,
+  tag: PropTypes.string,
+  className: PropTypes.string,
+}
+
+NarrowedContainer.defaultProps = {
+  tag: 'div',
+}
+
+export default Container
