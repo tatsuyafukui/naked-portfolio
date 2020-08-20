@@ -3,7 +3,7 @@
 .circle {
   align-items: center;
   border-radius: 50%;
-  color: var(--color-white);
+  color: var(--color-white) !important;
   display: flex;
   font-size: var(--font-size-l);
   height: var(--space-56-fixed);
