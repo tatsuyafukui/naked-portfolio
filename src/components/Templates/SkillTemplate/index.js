@@ -13,7 +13,7 @@ import Footer from '../../Organisms/Footer'
 import OgpList from '../../Organisms/OgpList'
 import HeroImage from '../../Molecules/HeroImage'
 import SkillShareSection from '../../Organisms/SkillShareSection'
-import SkillGuidelines from '../../Organisms/SkillGuidelines'
+import SkillStandard from '../../Organisms/SkillStandard'
 import {graphql} from 'gatsby'
 
 const SkillTemplate = ({data}) => {
@@ -78,7 +78,7 @@ const SkillTemplate = ({data}) => {
           >
             学習の目安
           </HighlightedHeading>
-          <SkillGuidelines skill={skill} />
+          <SkillStandard standard={skill.standard} />
           <HighlightedHeading
             level={2}
             visualLevel={4}

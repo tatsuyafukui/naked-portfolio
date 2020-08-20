@@ -5,26 +5,26 @@ import List, {ListItem} from '../../Atoms/List'
 import {BoldHeading} from '../../Atoms/Heading'
 import Txt from '../../Atoms/Txt'
 
-const SkillGuidelines = ({skill}) => (
-  <List className={styles.guidelines}>
-    <ListItem className={styles.guidelinesItem}>
+const SkillStandard = ({standard}) => (
+  <List className={styles.standard}>
+    <ListItem className={styles.standardItem}>
       <BoldHeading level={3} visualLevel={5}>
         基礎
       </BoldHeading>
       <List>
-        {skill.standard.basic.map(item => (
+        {standard.basic.map(item => (
           <ListItem key={item} className={styles.listItem}>
             <Txt tag='span'>{item}</Txt>
           </ListItem>
         ))}
       </List>
     </ListItem>
-    <ListItem className={styles.guidelinesItem}>
+    <ListItem className={styles.standardItem}>
       <BoldHeading level={3} visualLevel={5}>
         応用
       </BoldHeading>
       <List>
-        {skill.standard.practical.map(item => (
+        {standard.practical.map(item => (
           <ListItem key={item} className={styles.listItem}>
             <Txt tag='span'>{item}</Txt>
           </ListItem>
@@ -34,12 +34,12 @@ const SkillGuidelines = ({skill}) => (
   </List>
 )
 
-export default SkillGuidelines
+export default SkillStandard
 
-SkillGuidelines.propTypes = {
-  skill: PropTypes.array,
+SkillStandard.propTypes = {
+  standard: PropTypes.array,
 }
 
-SkillGuidelines.defaultProps = {
-  skill: [],
+SkillStandard.defaultProps = {
+  standard: [],
 }

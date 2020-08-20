@@ -1,13 +1,13 @@
 @import '../../properties';
 
-.guidelines {
+.standard {
   @include mediaQuery(sm) {
     align-self: center;
     width: 100vw;
   }
 }
 
-.guidelinesItem {
+.standardItem {
   background-color: var(--color-block);
   border-radius: var(--radius);
   margin-bottom: var(--space-24);
