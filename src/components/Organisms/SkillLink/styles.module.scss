@@ -11,18 +11,6 @@
   }
 }
 
-.skill:hover {
-  text-decoration: none;
-
-  h3 {
-    color: var(--color-blue) !important;
-  }
-
-  p {
-    text-decoration: underline;
-  }
-}
-
 .layout {
   @include mediaQuery(sm) {
     flex-direction: column !important;
@@ -52,6 +40,11 @@
   }
 }
 
+.title,
+.titleText {
+  transition: var(--hover-link-animation);
+}
+
 .title {
   align-items: center;
   color: var(--color-opacity15-black);
@@ -62,6 +55,15 @@
 
 .titleText {
   margin-left: var(--space-12-fixed);
+}
+
+.skill:hover {
+  text-decoration: none;
+
+  .title,
+  .titleText {
+    color: var(--color-blue) !important;
+  }
 }
 
 .description {
