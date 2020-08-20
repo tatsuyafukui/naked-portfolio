@@ -6,30 +6,11 @@
   overflow: hidden;
 }
 
-.imageWrap::before,
-.image {
-  object-fit: cover;
-  transition: var(--hover-overlay-animation);
-}
-
 .imageWrap {
   height: 550px;
   overflow: hidden;
   position: relative;
   width: 100%;
-
-  &::before {
-    background: var(--color-opacity15-black);
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: var(--z-overlay);
-  }
 
   @include mediaQuery(md) {
     height: 400px;
@@ -42,18 +23,18 @@
 
 .image {
   height: 100%;
+  object-fit: cover;
+  transition: var(--hover-overlay-animation);
   width: 100%;
 }
 
-.scene:hover {
-  text-decoration: none;
+.title {
+  width: 75%;
 
-  .image {
-    transform: scale3d(1.01, 1.01, 1);
-  }
-
-  .imageWrap::before {
-    opacity: 1;
+  @include mediaQuery(sm) {
+    font-size: var(--font-size-l) !important;
+    margin-bottom: var(--space-12-fixed);
+    width: 100%;
   }
 }
 
@@ -88,21 +69,19 @@
   }
 }
 
-.title {
-  width: 75%;
-
-  @include mediaQuery(sm) {
-    font-size: var(--font-size-l) !important;
-    margin-bottom: var(--space-12-fixed);
-    width: 100%;
-  }
-}
-
 .readMore {
   color: var(--color-link);
 
   @include mediaQuery(sm) {
     align-self: flex-end;
     font-size: var(--font-size-xxs) !important;
+  }
+}
+
+.scene:hover {
+  text-decoration: none;
+
+  .image {
+    transform: scale3d(1.03, 1.03, 1);
   }
 }

@@ -108,7 +108,7 @@
 
   /* アニメーションの定義（媒体に最適化したアニメーション・デザイン要素） */
   --hover-link-animation: 0.1s ease-out;
-  --hover-overlay-animation: 0.3s ease-out;
+  --hover-overlay-animation: 2s ease-out;
 
   /* Z 座標の管理（Web媒体/CSSではZ座標を管理する） */
   --z-header: none;
