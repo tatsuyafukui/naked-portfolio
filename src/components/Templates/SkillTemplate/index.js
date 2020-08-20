@@ -4,7 +4,7 @@ import Img from 'gatsby-image'
 import styles from './styles.module.scss'
 import Seo from '../../seo'
 import NavigationBreadcrumb from '../../Molecules/NavigationBreadcrumb'
-import Container from '../../Atoms/Container'
+import Container, {NarrowedContainer} from '../../Atoms/Container'
 import Link from '../../Atoms/Link'
 import Txt, {LongTxt} from '../../Atoms/Txt'
 import {BoldHeading, HighlightedHeading} from '../../Atoms/Heading'
@@ -50,7 +50,7 @@ const SkillTemplate = ({data}) => {
             <Txt>{skill.title}</Txt>
           </NavigationBreadcrumb>
         </Container>
-        <Container tag='article' className={styles.container}>
+        <NarrowedContainer tag='article' className={styles.container}>
           <HighlightedHeading
             level={2}
             visualLevel={4}
@@ -96,7 +96,7 @@ const SkillTemplate = ({data}) => {
           </HighlightedHeading>
           <OgpList ogpList={recommended} />
           <SkillShareSection />
-        </Container>
+        </NarrowedContainer>
       </main>
       <Footer />
     </>

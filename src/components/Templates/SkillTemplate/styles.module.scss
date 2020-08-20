@@ -19,7 +19,10 @@
   display: flex;
   flex-direction: column;
   margin-top: var(--space-64);
-  max-width: calc(620px + 10%) !important;
+
+  a {
+    color: var(--color-link);
+  }
 }
 
 .highlightedHeading {
@@ -45,7 +48,7 @@
   }
 }
 
-span {
+.container span {
   &[data-type] {
     border-radius: 5px;
     margin: 0 var(--space-2-fixed);
@@ -62,8 +65,4 @@ span {
     background: var(--color-block);
     border: var(--border);
   }
-}
-
-a {
-  color: var(--color-link);
 }
