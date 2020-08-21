@@ -37,9 +37,12 @@ const SkillStandard = ({standard}) => (
 export default SkillStandard
 
 SkillStandard.propTypes = {
-  standard: PropTypes.array,
+  standard: PropTypes.object,
 }
 
 SkillStandard.defaultProps = {
-  standard: [],
+  standard: {
+    basic: [],
+    practical: [],
+  },
 }
