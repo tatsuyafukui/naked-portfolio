@@ -21,9 +21,16 @@ const SceneLink = ({scene, className, ...props}) => (
           alt={scene.title}
           loading='lazy'
         />
-        <Heading level={2} visualLevel={4} className={styles.number}>
-          {scene.numberTitle}
-        </Heading>
+        <div className={styles.number}>
+          <Heading
+            level={2}
+            visualLevel={4}
+            className={styles.numberText}
+            data-number={scene.numberTitle}
+          >
+            {scene.numberTitle}
+          </Heading>
+        </div>
       </div>
       <div className={styles.textWrap}>
         <Heading level={3} visualLevel={3} className={styles.title}>
