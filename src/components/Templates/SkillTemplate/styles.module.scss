@@ -11,7 +11,7 @@
   margin-bottom: var(--space-8);
 
   @include mediaQuery(sm) {
-    font-size: var(--font-size-xl) !important;
+    font-size: var(--font-size-xl-fixed) !important;
   }
 }
 

@@ -70,6 +70,6 @@
   font-weight: var(--font-weight-default) !important;
 
   @include mediaQuery(lg) {
-    font-size: var(--font-size-s) !important;
+    font-size: var(--font-size-s-fixed) !important;
   }
 }
