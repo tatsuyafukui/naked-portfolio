@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import {LongTxt, InfoTxt} from '../../Atoms/Txt'
 import TextTruncate from '../../Atoms/TextTruncate'
-import styles from './styles.module.scss'
 import PropTypes from 'prop-types'
 import {useMediaQuery} from 'react-responsive'
 import {MEDIA_QUERY_MD} from '../../../constants'
@@ -20,11 +19,7 @@ const LongDescription = ({maxChars, truncateText, children}) => {
         open={!isMobile || open}
         maxChars={maxChars}
         truncateText={
-          <button
-            key={'read-more'}
-            className={styles.button}
-            onClick={clickOpenHandler}
-          >
+          <button key={'read-more'} onClick={clickOpenHandler}>
             <InfoTxt>{truncateText}</InfoTxt>
           </button>
         }

@@ -1,27 +1,29 @@
 @import '../../properties';
 
-.root {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 5%;
-  padding-right: 5%;
-  width: 100%;
+.button {
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: var(--font-size-s);
+  line-height: 45px;
+  min-width: 140px;
+  padding: 0 var(--space-16);
+  text-align: center;
+  transition: var(--hover-overlay-animation);
 
   @include mediaQuery(md) {
-    padding-left: 4.16%;
-    padding-right: 4.16%;
-  }
-
-  @include mediaQuery(sm) {
-    padding-left: 6.4%;
-    padding-right: 6.4%;
+    line-height: 40px;
+    min-width: 110px;
   }
 }
 
-.base {
-  max-width: calc(1140px + 10%);
-}
+.primary {
+  --color-button-primary-hover: #23a4b0;
 
-.narrow {
-  max-width: calc(620px + 10%);
+  background-color: var(--color-button-primary);
+  color: var(--color-white);
+
+  &:hover {
+    background-color: var(--color-button-primary-hover);
+  }
 }
