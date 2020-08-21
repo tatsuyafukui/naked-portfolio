@@ -1,6 +1,8 @@
 import React from 'react'
 import Seo from '../../seo'
 import Header from '../../Organisms/Header'
+import Error404 from '../../Organisms/Error404'
+import Footer from '../../Organisms/Footer'
 
 const NotFoundTemplate = () => {
   return (
@@ -8,12 +10,9 @@ const NotFoundTemplate = () => {
       <Seo title='404: Not found' />
       <Header />
       <main>
-        <h1>NOT FOUND</h1>
-        <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+        <Error404 />
       </main>
-      <footer style={{minHeight: '50px', backgroundColor: 'blue'}}>
-        footer
-      </footer>
+      <Footer />
     </div>
   )
 }

@@ -49,7 +49,7 @@
 
   @include mediaQuery(sm) {
     bottom: var(--space-16-fixed);
-    font-size: var(--font-size-xxs);
+    font-size: var(--font-size-xxs-fixed);
     left: var(--space-16-fixed);
   }
 }
@@ -74,7 +74,7 @@
 
   @include mediaQuery(sm) {
     align-self: flex-end;
-    font-size: var(--font-size-xxs) !important;
+    font-size: var(--font-size-xxs-fixed) !important;
   }
 }
 
