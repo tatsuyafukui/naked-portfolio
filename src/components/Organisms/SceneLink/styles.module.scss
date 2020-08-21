@@ -31,7 +31,7 @@
   width: 75%;
 
   @include mediaQuery(sm) {
-    font-size: var(--font-size-l) !important;
+    font-size: var(--font-size-l-fixed) !important;
     margin-bottom: var(--space-12-fixed);
     width: 100%;
   }
