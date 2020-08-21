@@ -68,7 +68,7 @@
 
   @include mediaQuery(sm) {
     bottom: var(--space-16-fixed);
-    font-size: var(--font-size-xxs);
+    font-size: var(--font-size-xxs-fixed);
     left: var(--space-16-fixed);
   }
 }
@@ -92,7 +92,7 @@
   width: 75%;
 
   @include mediaQuery(sm) {
-    font-size: var(--font-size-l) !important;
+    font-size: var(--font-size-l-fixed) !important;
     margin-bottom: var(--space-12-fixed);
     width: 100%;
   }
@@ -103,6 +103,6 @@
 
   @include mediaQuery(sm) {
     align-self: flex-end;
-    font-size: var(--font-size-xxs) !important;
+    font-size: var(--font-size-xxs-fixed) !important;
   }
 }

@@ -4,10 +4,6 @@
   font-size: var(--font-size-l);
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--space-56);
-
-  @include mediaQuery(md) {
-    font-size: var(--font-size-m);
-  }
 }
 
 .title {
