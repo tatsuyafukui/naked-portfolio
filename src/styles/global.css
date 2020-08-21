@@ -11,6 +11,7 @@
   --color-blue: #0366d6;
   --color-athens-gray: #f2f4f7;
   --color-turquoise: #32ddc9;
+  --color-aqua: #30c8d6;
 
   /* **** ブランディング層 **** */
 
@@ -34,6 +35,8 @@
   --color-twitter: #1da1f2;
   --color-facebook: #1877f2;
   --color-linkedin: #2867b2;
+  --color-button-primary: var(--color-aqua);
+  --color-button-primary-hover: #23a4b0;
 
   /* 文字：サイズ（レスポンシブ） */
   --font-size-xs: 14px;
@@ -300,6 +303,16 @@ hr {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
+}
+
+button {
+  appearance: none;
+  background: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
 }
 
 button,
