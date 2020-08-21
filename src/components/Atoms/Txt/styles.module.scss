@@ -7,30 +7,18 @@
 
 .visualLevel1 {
   font-size: var(--font-size-m);
-
-  @include mediaQuery(md) {
-    font-size: var(--font-size-s);
-  }
 }
 
 .visualLevel2 {
   font-size: var(--font-size-s);
-
-  @include mediaQuery(md) {
-    font-size: var(--font-size-xs);
-  }
 }
 
 .visualLevel3 {
   font-size: var(--font-size-xs);
-
-  @include mediaQuery(md) {
-    font-size: var(--font-size-xxs);
-  }
 }
 
 .visualLevel4 {
-  font-size: var(--font-size-xxs);
+  font-size: var(--font-size-xxs-fixed);
 }
 
 .long {

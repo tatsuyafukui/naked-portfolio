@@ -35,9 +35,7 @@
   --color-facebook: #1877f2;
   --color-linkedin: #2867b2;
 
-  /* 文字：サイズ（媒体に最適化した文字サイズ） */
-  --font-size-xxxs: 10px;
-  --font-size-xxs: 12px;
+  /* 文字：サイズ（レスポンシブ） */
   --font-size-xs: 14px;
   --font-size-s: 16px;
   --font-size-m: 18px;
@@ -46,6 +44,18 @@
   --font-size-xxl: 32px;
   --font-size-xxxl: 40px;
   --font-size-xxxxl: 48px;
+
+  /* 文字：サイズ（固定値） */
+  --font-size-xxxs-fixed: 10px;
+  --font-size-xxs-fixed: 12px;
+  --font-size-xs-fixed: 14px;
+  --font-size-s-fixed: 16px;
+  --font-size-m-fixed: 18px;
+  --font-size-l-fixed: 20px;
+  --font-size-xl-fixed: 24px;
+  --font-size-xxl-fixed: 32px;
+  --font-size-xxxl-fixed: 40px;
+  --font-size-xxxxl-fixed: 48px;
 
   /* 文字：太さ（媒体に最適化した文字の太さ） */
   --font-weight-default: 400;
@@ -753,6 +763,14 @@ pre tt::after {
 
 @media screen and (max-width: 767px) {
   :root {
+    --font-size-xs: 12px;
+    --font-size-s: 14px;
+    --font-size-m: 16px;
+    --font-size-l: 18px;
+    --font-size-xl: 20px;
+    --font-size-xxl: 24px;
+    --font-size-xxxl: 32px;
+    --font-size-xxxxl: 40px;
     --space-8: 6px;
     --space-12: 10px;
     --space-16: 12px;

@@ -17,11 +17,6 @@
   font-weight: var(--font-weight-bold);
   margin-bottom: 56px;
 
-  @include mediaQuery(md) {
-    font-size: var(--font-size-l);
-    margin-bottom: 7.29%;
-  }
-
   @include mediaQuery(sm) {
     margin-bottom: 12.8%;
   }
