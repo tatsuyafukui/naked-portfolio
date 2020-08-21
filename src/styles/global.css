@@ -36,6 +36,7 @@
   --color-facebook: #1877f2;
   --color-linkedin: #2867b2;
   --color-button-primary: var(--color-aqua);
+  --color-button-primary-hover: #23a4b0;
 
   /* 文字：サイズ（レスポンシブ） */
   --font-size-xs: 14px;
