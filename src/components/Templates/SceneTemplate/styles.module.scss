@@ -4,6 +4,16 @@
   background-color: var(--color-white);
   margin-bottom: var(--space-96);
   padding-bottom: var(--space-96);
+
+  @include mediaQuery(md) {
+    margin-bottom: var(--space-56-fixed);
+    padding-bottom: var(--space-56-fixed);
+  }
+
+  @include mediaQuery(sm) {
+    margin-bottom: var(--space-48-fixed);
+    padding-bottom: var(--space-48-fixed);
+  }
 }
 
 .titleWrap {
@@ -13,6 +23,7 @@
 
   @include mediaQuery(md) {
     display: block;
+    margin-top: var(--space-8-fixed);
   }
 }
 
