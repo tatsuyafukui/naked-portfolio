@@ -6,30 +6,11 @@
   overflow: hidden;
 }
 
-.imageWrap::before,
-.image {
-  object-fit: cover;
-  transition: var(--hover-overlay-animation);
-}
-
 .imageWrap {
   height: 550px;
   overflow: hidden;
   position: relative;
   width: 100%;
-
-  &::before {
-    background: var(--color-opacity15-black);
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: var(--z-overlay);
-  }
 
   @include mediaQuery(md) {
     height: 400px;
@@ -42,18 +23,17 @@
 
 .image {
   height: 100%;
+  object-fit: cover;
   width: 100%;
 }
 
-.scene:hover {
-  text-decoration: none;
+.title {
+  width: 75%;
 
-  .image {
-    transform: scale3d(1.01, 1.01, 1);
-  }
-
-  .imageWrap::before {
-    opacity: 1;
+  @include mediaQuery(sm) {
+    font-size: var(--font-size-l-fixed) !important;
+    margin-bottom: var(--space-12-fixed);
+    width: 100%;
   }
 }
 
@@ -62,14 +42,29 @@
   border-radius: 100px;
   bottom: var(--space-32);
   left: var(--space-32);
-  padding: 0.41em 1em;
+  overflow: hidden;
+  padding: var(--space-12) var(--space-24);
   position: absolute;
   z-index: var(--z-overlay-content);
 
   @include mediaQuery(sm) {
     bottom: var(--space-16-fixed);
-    font-size: var(--font-size-xxs-fixed);
     left: var(--space-16-fixed);
+  }
+}
+
+.numberText {
+  position: relative;
+
+  &::before {
+    bottom: -60px;
+    content: attr(data-number);
+    left: 0;
+    position: absolute;
+  }
+
+  @include mediaQuery(sm) {
+    font-size: var(--font-size-xxs-fixed) !important;
   }
 }
 
@@ -88,21 +83,28 @@
   }
 }
 
-.title {
-  width: 75%;
-
-  @include mediaQuery(sm) {
-    font-size: var(--font-size-l-fixed) !important;
-    margin-bottom: var(--space-12-fixed);
-    width: 100%;
-  }
-}
-
 .readMore {
   color: var(--color-link);
 
   @include mediaQuery(sm) {
     align-self: flex-end;
     font-size: var(--font-size-xxs-fixed) !important;
+  }
+}
+
+.image,
+.numberText {
+  transition: 0.4s ease-in-out;
+}
+
+.scene:hover {
+  text-decoration: none;
+
+  .image {
+    transform: scale3d(1.02, 1.02, 1);
+  }
+
+  .numberText {
+    transform: translate3d(0, -60px, 0);
   }
 }
