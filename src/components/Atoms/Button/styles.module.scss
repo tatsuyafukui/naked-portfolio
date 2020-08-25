@@ -9,7 +9,7 @@
   min-width: 140px;
   padding: 0 var(--space-16);
   text-align: center;
-  transition: var(--hover-overlay-animation);
+  transition: var(--hover-animation-default);
 
   @include mediaQuery(md) {
     line-height: 40px;
