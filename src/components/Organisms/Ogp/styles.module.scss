@@ -81,19 +81,17 @@
   .image {
     border-right: var(--border);
     flex-shrink: 0;
-    height: 140px;
-    width: 140px;
+    height: 160px;
+    width: 160px;
 
     @include mediaQuery(sm) {
-      height: 84px;
-      width: 84px;
+      height: 100px;
+      width: 100px;
     }
   }
 
   .ogBody {
     flex: 1;
-    padding-bottom: 0;
-    padding-top: 0;
-    width: calc(100% - 140px);
+    width: calc(100% - 160px);
   }
 }

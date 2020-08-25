@@ -13,8 +13,8 @@ const IndexTemplate = ({scenes}) => {
   return (
     <div className={styles.background}>
       <Header />
-      <main>
-        <Container className={styles.container}>
+      <main className={styles.main}>
+        <Container>
           <div className={styles.titleWrap}>
             <BoldHeading level={1} visualLevel={2} className={styles.title}>
               目標へ向かうためのWeb開発ロードマップ

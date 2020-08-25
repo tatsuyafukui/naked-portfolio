@@ -4,6 +4,14 @@
   background: var(--color-background);
 }
 
+.main {
+  padding-bottom: var(--space-32);
+
+  @include mediaQuery(md) {
+    padding-bottom: 0;
+  }
+}
+
 .titleWrap {
   margin: var(--space-72) 0;
   text-align: center;
