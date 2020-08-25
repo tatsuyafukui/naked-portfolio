@@ -6,7 +6,7 @@
 
 .bordered {
   border: var(--border);
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
 
   :last-child {
     border-bottom: none;

@@ -1,7 +1,7 @@
 @import '../../properties';
 
 .scene {
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
   display: block;
   overflow: hidden;
 }
@@ -39,7 +39,7 @@
 
 .number {
   background: var(--color-white);
-  border-radius: 100px;
+  border-radius: var(--radius-round);
   bottom: var(--space-32);
   left: var(--space-32);
   overflow: hidden;
@@ -94,7 +94,7 @@
 
 .image,
 .numberText {
-  transition: 0.4s ease-in-out;
+  transition: var(--hover-animation-slow);
 }
 
 .scene:hover {

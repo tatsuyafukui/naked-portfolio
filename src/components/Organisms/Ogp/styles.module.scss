@@ -2,10 +2,10 @@
 
 .ogp {
   border: var(--border);
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
   display: block;
   overflow: hidden;
-  transition: var(--hover-link-animation);
+  transition: var(--hover-animation-fast);
 
   &:hover {
     background-color: var(--color-block);
