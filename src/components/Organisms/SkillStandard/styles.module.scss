@@ -1,0 +1,44 @@
+@import '../../properties';
+
+.standard {
+  @include mediaQuery(sm) {
+    align-self: center;
+    width: 100vw;
+  }
+}
+
+.standardItem {
+  background-color: var(--color-block);
+  border-radius: var(--radius);
+  margin-bottom: var(--space-24);
+  padding: var(--space-32);
+
+  @include mediaQuery(md) {
+    padding: 4.16%;
+  }
+
+  @include mediaQuery(sm) {
+    border-radius: unset;
+    padding: 6.4%;
+  }
+}
+
+.listItem {
+  margin-top: var(--space-16);
+  padding-left: var(--space-16-fixed);
+  position: relative;
+
+  ::after {
+    background-color: var(--color-line);
+    border-radius: 50%;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 6px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    width: 6px;
+  }
+}
