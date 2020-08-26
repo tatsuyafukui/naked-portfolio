@@ -113,15 +113,22 @@
   /* 枠に関する要素（媒体に最適化した枠デザイン要素） */
   --line-width: 1px;
   --line-style: solid;
-  --radius: 10px;
   --border: var(--line-width) var(--line-style) var(--color-line);
+
+  /* radius */
+  --radius-xs: 3px;
+  --radius-s: 5px;
+  --radius-m: 10px;
+  --radius-round: 100px;
+  --radius-circle: 50%;
 
   /* フィードバックの定義（媒体に最適化したフィードバック・デザイン要素） */
   --hover-feedback-opacity: 0.7;
 
   /* アニメーションの定義（媒体に最適化したアニメーション・デザイン要素） */
-  --hover-link-animation: 0.1s ease-out;
-  --hover-overlay-animation: 0.3s ease-out;
+  --hover-animation-fast: 0.1s ease-out;
+  --hover-animation-default: 0.3s ease-out;
+  --hover-animation-slow: 0.4s ease-in-out;
 
   /* Z 座標の管理（Web媒体/CSSではZ座標を管理する） */
   --z-header: none;

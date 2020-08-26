@@ -2,7 +2,7 @@
 
 .skill {
   background: var(--color-white);
-  border-radius: var(--radius);
+  border-radius: var(--radius-m);
   display: block;
   padding: 4.21%;
 
@@ -42,7 +42,7 @@
 
 .title,
 .titleText {
-  transition: var(--hover-link-animation);
+  transition: var(--hover-animation-fast);
 }
 
 .title {
