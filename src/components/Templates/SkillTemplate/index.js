@@ -41,12 +41,8 @@ const SkillTemplate = ({data}) => {
         </HeroImage>
         <Container>
           <NavigationBreadcrumb className={styles.breadcrumb}>
-            <Link to='/'>
-              <Txt>Home</Txt>
-            </Link>
-            <Link to={scene.fields.slug}>
-              <Txt>{scene.numberTitle}</Txt>
-            </Link>
+            <Link to='/'>Home</Link>
+            <Link to={scene.fields.slug}>{scene.numberTitle}</Link>
             <Txt>{skill.title}</Txt>
           </NavigationBreadcrumb>
         </Container>

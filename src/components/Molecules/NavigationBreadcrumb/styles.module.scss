@@ -1,6 +1,7 @@
 @import '../../properties';
 
 .breadcrumb {
+  font-size: var(--font-size-m) !important;
   margin-top: var(--space-32);
 
   @include mediaQuery(sm) {

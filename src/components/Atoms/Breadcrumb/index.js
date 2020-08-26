@@ -27,7 +27,11 @@ export const BreadcrumbContainer = ({
 }) => {
   const items = React.Children.toArray(children)
     .filter(child => React.isValidElement(child))
-    .map((child, index) => <li key={`child-${index}`}>{child}</li>)
+    .map((child, index) => (
+      <li className={styles.li} key={`child-${index}`}>
+        {child}
+      </li>
+    ))
 
   return presenter({
     tag,
