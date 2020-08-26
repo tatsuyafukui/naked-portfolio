@@ -29,9 +29,7 @@ const SceneTemplate = ({data}) => {
           </HeroImage>
           <Container>
             <NavigationBreadcrumb>
-              <Link to='/'>
-                <Txt>Home</Txt>
-              </Link>
+              <Link to='/'>Home</Link>
               <Txt>{scene.numberTitle}</Txt>
             </NavigationBreadcrumb>
             <div className={styles.titleWrap}>
