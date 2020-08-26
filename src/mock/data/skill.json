@@ -3,9 +3,6 @@
     "id": "html-and-css",
     "title": "HTML&CSS",
     "subTitle": "レイアウトを作れるようになろう",
-    "keyVisual": {
-      "publicURL": "/static/dc94819692b5bee4f0ee6a8eebc12996/skill_kv.svg"
-    },
     "description": "ホームページやECサイトなど、全てのWebページでHTML&CSSは使われています。HTML&CSSを学べば、これまであなたの頭の中にあった考えを、形にして表現する手段を手に入れることができるのです。",
     "thumbnail": {
       "childImageSharp": {
@@ -171,5 +168,8 @@
         "url": "https://www.w3.org/WAI/standards-guidelines/wcag/"
       }
     ]
+  },
+  "file": {
+    "publicURL": "/static/b81133fabd98f7bdc9e7dfa74543f515/skill_kv.svg"
   }
 }
