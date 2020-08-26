@@ -20,6 +20,7 @@ const SkillTemplate = ({data}) => {
   const skill = data.skillsJson
   const scene = data.skillsJson.scene
   const recommended = data.skillsJson.recommended
+  const keyVisual = data.file.publicURL
 
   return (
     <>
@@ -29,7 +30,7 @@ const SkillTemplate = ({data}) => {
         <HeroImage>
           <div
             className={styles.keyVisual}
-            style={{backgroundImage: `url(${skill.keyVisual.publicURL})`}}
+            style={{backgroundImage: `url(${keyVisual})`}}
           >
             <Container>
               <BoldHeading level={1} className={styles.title}>
@@ -114,9 +115,6 @@ export const query = graphql`
       purpose
       title
       subTitle
-      keyVisual {
-        publicURL
-      }
       standard {
         basic
         practical
@@ -159,6 +157,9 @@ export const query = graphql`
         isbn
         url
       }
+    }
+    file(relativePath: {eq: "skills/skill_kv.svg"}) {
+      publicURL
     }
   }
 `
