@@ -50,6 +50,10 @@
 .description {
   max-width: 580px;
 
+  a {
+    color: var(--color-link);
+  }
+
   @include mediaQuery(md) {
     max-width: 620px;
   }

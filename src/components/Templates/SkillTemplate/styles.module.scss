@@ -41,6 +41,7 @@
 
 .image {
   margin-top: var(--space-40);
+  width: 100%;
 
   @include mediaQuery(sm) {
     align-self: center;
