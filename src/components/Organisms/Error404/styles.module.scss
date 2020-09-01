@@ -176,15 +176,15 @@
 
 @media screen and (max-width: 991px) {
   .notfound404 {
-    padding-top: 96px;
+    padding-top: var(--space-96-fixed);
   }
 
   .cloudleft {
-    left: 10px;
+    left: 1em;
   }
 
   .cloudright {
-    right: -60px;
+    right: -5em;
   }
 
   .ballooning {
@@ -220,34 +220,34 @@
 
 @media screen and (max-width: 544px) {
   .root {
-    min-height: 80vh;
-  }
+    min-height: 90vh;
 
-  .notfound404 {
-    padding-top: var(--space-32-fixed);
-  }
+    .notfound404 {
+      padding-top: var(--space-32-fixed);
+    }
 
-  .sabheading {
-    font-size: 90%;
-  }
+    .sabheading {
+      font-size: 90%;
+    }
 
-  .wavefront,
-  .waveback,
-  .ship {
-    height: 50vh;
-  }
+    .wavefront,
+    .waveback,
+    .ship {
+      height: 50vh;
+    }
 
-  .cloudleft {
-    height: 76px;
-    left: 1em;
-    top: 40%;
-    width: 100px;
-  }
+    .cloudleft {
+      height: 76px;
+      left: 1em;
+      top: 13em;
+      width: 100px;
+    }
 
-  .ballooning {
-    height: 57px;
-    right: 2em;
-    top: 35%;
-    width: 40px;
+    .ballooning {
+      height: 57px;
+      right: 2em;
+      top: 15em;
+      width: 40px;
+    }
   }
 }
