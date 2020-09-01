@@ -16,11 +16,11 @@ const Error404 = () => (
     <div className={styles.notfound404}>
       <Heading className={styles.heading}>Page not found 404</Heading>
       <LongTxt className={styles.sabheading}>
-        Oh, Looks likes you’re lost at sea. <br />
-        Try going back to the previous page.
+        わぁ！海で迷子になってしまったみたい <br />
+        前のページに戻ってみてください
       </LongTxt>
       <Button className={styles.home} onClick={() => navigate('/')}>
-        GO TO HOMEgit
+        HOMEに戻る
       </Button>
     </div>
     <img className={styles.ballooning} src={Ballooning} />
