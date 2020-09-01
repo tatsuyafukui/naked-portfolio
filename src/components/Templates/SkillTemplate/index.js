@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Img from 'gatsby-image'
 import styles from './styles.module.scss'
 import Seo from '../../seo'
 import NavigationBreadcrumb from '../../Molecules/NavigationBreadcrumb'
@@ -15,6 +14,7 @@ import HeroImage from '../../Molecules/HeroImage'
 import SkillShareSection from '../../Organisms/SkillShareSection'
 import SkillStandard from '../../Organisms/SkillStandard'
 import {graphql} from 'gatsby'
+import LazyImage from '../../Atoms/LazyImage'
 
 const SkillTemplate = ({data}) => {
   const skill = data.skillsJson
@@ -56,9 +56,10 @@ const SkillTemplate = ({data}) => {
             概要
           </HighlightedHeading>
           <LongTxt dangerouslySetInnerHTML={{__html: skill.overview}} />
-          <Img
+          <LazyImage
             className={styles.image}
-            fluid={skill.image.childImageSharp.fluid}
+            src={skill.image.publicURL}
+            alt={skill.title}
           />
           <HighlightedHeading
             level={2}
@@ -120,11 +121,7 @@ export const query = graphql`
         practical
       }
       image {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
+        publicURL
       }
       scene {
         id
