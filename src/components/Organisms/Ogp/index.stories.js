@@ -14,7 +14,7 @@ storiesOf('Organisms/Ogp', module)
       }
       url={'https://prog-8.com'}
       twitterCard={'summary'}
-      image={data.square.fluid}
+      image={data.square}
     />
   ))
   .add('AmazonOgp', () => (
@@ -27,7 +27,7 @@ storiesOf('Organisms/Ogp', module)
       }
       url={'https://prog-8.com'}
       isbn={'4822281515'}
-      image={data.book.fluid}
+      image={data.book}
     />
   ))
   .add('twitterCard is summary_large_image', () => (
@@ -41,7 +41,7 @@ storiesOf('Organisms/Ogp', module)
       }
       url={'https://prog-8.com'}
       twitterCard={'summary_large_image'}
-      image={data.summaryLarge.fluid}
+      image={data.summaryLarge}
     />
   ))
   .add('OGP without images', () => (

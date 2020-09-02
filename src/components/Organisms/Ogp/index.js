@@ -5,6 +5,8 @@ import {containPresenter} from '../../utils/HoC'
 import MediaObjectLayout from '../../Atoms/MediaObjectLayout'
 import Img from 'gatsby-image'
 import Heading from '../../Atoms/Heading'
+import LazyImage from '../../Atoms/LazyImage'
+
 import OgpDescription, {
   AmazonOgpDescription,
 } from '../../Molecules/OgpDescription'
@@ -33,9 +35,8 @@ const OgpPresenter = ({
     <MediaObjectLayout
       summary={summaryPosition}
       className={styles[summaryPosition]}
-      hasImage={!!image}
     >
-      <Img fluid={image} alt={title} className={styles.image} />
+      {image}
       <div className={[styles.ogBody].join(' ')}>
         <Heading level={6} className={[styles.ogTitle, truncate].join(' ')}>
           {title}
@@ -60,6 +61,7 @@ export const OgpContainer = ({
   isMobile,
   description,
   url,
+  title,
   isbn: isAmazon,
   image,
   twitterCard,
@@ -79,9 +81,26 @@ export const OgpContainer = ({
     />
   )
 
+  if (image) {
+    if (image.extension === 'svg' || image.extension === 'gif') {
+      image = (
+        <LazyImage src={image.publicURL} alt={title} className={styles.image} />
+      )
+    } else {
+      image = (
+        <Img
+          fluid={image.childImageSharp.fluid}
+          alt={title}
+          className={styles.image}
+        />
+      )
+    }
+  }
+
   return presenter({
     truncate,
     url,
+    title,
     image,
     summaryPosition,
     ogpDescription,

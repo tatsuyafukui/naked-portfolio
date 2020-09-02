@@ -82,6 +82,7 @@
     border-right: var(--border);
     flex-shrink: 0;
     height: 160px;
+    object-fit: contain;
     width: 160px;
 
     @include mediaQuery(sm) {
