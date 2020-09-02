@@ -40,6 +40,7 @@ const Error404 = () => {
           <img src={illust.publicURL} />
         </div>
       ))}
+      <div className={styles.sun} />
     </div>
   )
 }
