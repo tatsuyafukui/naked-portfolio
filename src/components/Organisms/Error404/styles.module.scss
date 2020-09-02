@@ -21,16 +21,16 @@
   animation-fill-mode: both;
 }
 
-@include keyframes(animationWaveFront, 0, 0.3vw);
-@include keyframes(animationWaveMiddle, 0, 0.15vw);
-@include keyframes(animationShip, 0, 0.35vw);
-@include keyframes(animationCloud, 0.5vw, 0);
-@include keyframes(animationBallooning, 0.3vw, 0);
+@include keyframes(animationWaveFront, 0, 6px);
+@include keyframes(animationWaveMiddle, 0, 4px);
+@include keyframes(animationShip, 0, 6px);
+@include keyframes(animationCloud, 5px, 0);
+@include keyframes(animationBallooning, 10px, 0);
 
 .root {
   background-color: var(--color-404background);
   height: calc(100vh - 70px);
-  min-height: 750px;
+  min-height: 590px;
   overflow: hidden;
   position: relative;
   vertical-align: bottom;
@@ -39,16 +39,13 @@
   @include mediaQuery(md) {
     height: calc(100vh - 60px);
   }
-
-  @include mediaQuery(sm) {
-    min-height: 90vh;
-  }
 }
 
 .notfound404 {
-  padding-top: var(--space-80);
+  padding-top: var(--space-112);
   position: relative;
   text-align: center;
+  z-index: 10;
 }
 
 .heading {
@@ -63,7 +60,7 @@
   position: absolute;
 
   img {
-    height: auto;
+    height: 100%;
     object-fit: cover;
     width: 100%;
   }
@@ -72,30 +69,35 @@
 .waveFront,
 .waveMiddle,
 .waveBack {
-  bottom: -2%;
   width: 100%;
 }
 
 .waveFront {
+  bottom: -45px;
+  height: 76px;
   z-index: 10;
 
   @include animation(animationWaveFront 7.5s ease-in-out infinite);
 }
 
 .waveMiddle {
+  bottom: -22px;
+  height: 76px;
   z-index: 9;
 
   @include animation(animationWaveMiddle 6.5s ease-in-out infinite);
 }
 
 .waveBack {
+  bottom: 0;
+  height: 81px;
   z-index: 7;
 
   @include animation(animationWaveBack 7s ease-in-out infinite);
 }
 
 .ship {
-  bottom: 5%;
+  bottom: 30px;
   left: 0;
   margin: auto;
   right: 0;
@@ -103,16 +105,50 @@
   z-index: 8;
 
   @include animation(animationShip 7s ease-in-out infinite);
+
+  @include mediaQuery(sm) {
+    width: 250px;
+  }
 }
 
 .sun {
   background-color: var(--color-white);
+  border-radius: 50%;
+  bottom: -60px;
+  height: 400px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  width: 400px;
+  z-index: 6;
+
+  @include mediaQuery(sm) {
+    bottom: -20px;
+    height: 300px;
+    width: 300px;
+  }
+}
+
+.cloudLeft,
+.cloudRight,
+.ballooning {
+  z-index: 7;
 }
 
 .ballooning {
-  right: 5em;
-  top: 10em;
+  bottom: 470px;
+  right: 50px;
   width: 70px;
+
+  @include mediaQuery(md) {
+    width: 40px;
+  }
+
+  @include mediaQuery(sm) {
+    bottom: 400px;
+    right: 10px;
+  }
 
   @include animation(animationBallooning 7s ease-in-out infinite);
 }
@@ -123,13 +159,25 @@
 }
 
 .cloudLeft {
-  left: 2.5em;
-  top: 20em;
+  bottom: 300px;
+  left: 0;
   width: 180px;
+
+  @include mediaQuery(md) {
+    width: 100px;
+  }
 }
 
 .cloudRight {
-  right: 2.5em;
-  top: 20em;
+  bottom: 300px;
+  right: 0;
   width: 300px;
+
+  @include mediaQuery(md) {
+    width: 200px;
+  }
+
+  @include mediaQuery(sm) {
+    right: -70px;
+  }
 }
