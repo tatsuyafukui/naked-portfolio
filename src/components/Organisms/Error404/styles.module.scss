@@ -1,8 +1,18 @@
 @import '../../properties';
 
-@mixin keyframes($animation-name: animaton) {
+@mixin keyframes($animation-name: animaton, $x: 0, $y: 0) {
   @keyframes #{$animation-name} {
-    @content;
+    0% {
+      transform: translate3d($x, $y, 0);
+    }
+
+    50% {
+      transform: translate3d(-$x, -$y, 0);
+    }
+
+    100% {
+      transform: translate3d($x, $y, 0);
+    }
   }
 }
 
@@ -11,116 +21,59 @@
   animation-fill-mode: both;
 }
 
-@include keyframes(animationWavefront) {
-  0% {
-    transform: translate3d(0, 0.3vw, 0);
-  }
-
-  50% {
-    transform: translate3d(0, -0.3vw, 0);
-  }
-
-  100% {
-    transform: translate3d(0, 0.3vw, 0);
-  }
-}
-
-@include keyframes(animationWaveback) {
-  0% {
-    transform: translate3d(0, 0.15vw, 0);
-  }
-
-  50% {
-    transform: translate3d(0, -0.15vw, 0);
-  }
-
-  100% {
-    transform: translate3d(0, 0.15vw, 0);
-  }
-}
-
-@include keyframes(animationShip) {
-  0% {
-    transform: translate3d(0, 0.35vw, 0);
-  }
-
-  50% {
-    transform: translate3d(0, -0.35vw, 0);
-  }
-
-  100% {
-    transform: translate3d(0, 0.35vw, 0);
-  }
-}
-
-@include keyframes(animationCloud) {
-  0% {
-    transform: translate3d(0.5vw, 0, 0);
-  }
-
-  50% {
-    transform: translate3d(-0.5vw, 0, 0);
-  }
-
-  100% {
-    transform: translate3d(0.5vw, 0, 0);
-  }
-}
-
-@include keyframes(animationBallooning) {
-  0% {
-    transform: translate3d(0.3vw, 0, 0);
-  }
-
-  50% {
-    transform: translate3d(-0.3vw, 0, 0);
-  }
-
-  100% {
-    transform: translate3d(0.3vw, 0, 0);
-  }
-}
+@include keyframes(animationWavefront, 0, 0.3vw);
+@include keyframes(animationWaveback, 0, 0.15vw);
+@include keyframes(animationShip, 0, 0.35vw);
+@include keyframes(animationCloud, 0.5vw, 0);
+@include keyframes(animationBallooning, 0.3vw, 0);
 
 .root {
   background-color: var(--color-404background);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: calc(100vh - 70px);
-  margin-bottom: 0;
   min-height: 750px;
   overflow: hidden;
   position: relative;
   vertical-align: bottom;
-  width: 100vw;
+  width: 100%;
+
+  @include mediaQuery(md) {
+    height: calc(100vh - 60px);
+  }
+
+  @include mediaQuery(sm) {
+    min-height: 90vh;
+  }
 }
 
 .notfound404 {
-  padding-top: var(--space-72-fixed);
+  padding-top: var(--space-80);
   position: relative;
   text-align: center;
 }
 
-.heading,
-.sabheading {
-  margin-bottom: var(--space-16-fixed);
-  margin-top: var(--space-16-fixed);
+.heading {
+  margin-bottom: var(--space-12);
 }
 
-.home {
-  align-items: center;
-  background-color: var(--color-white);
-  border-bottom: var(--border);
-  display: flex;
+.subheading {
+  margin-bottom: var(--space-24);
+}
+
+.image {
+  position: absolute;
+
+  img {
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+  }
 }
 
 .wavefront,
 .waveback,
 .ship {
-  bottom: -2em;
-  height: 446px;
-  object-fit: cover;
-  position: absolute;
+  bottom: -2%;
+  width: 100%;
 }
 
 .wavefront {
@@ -142,8 +95,6 @@
 }
 
 .ballooning {
-  height: 100px;
-  position: absolute;
   right: 5em;
   top: 10em;
   width: 70px;
@@ -157,95 +108,13 @@
 }
 
 .cloudleft {
-  height: 137px;
   left: 2.5em;
-  position: absolute;
   top: 20em;
   width: 180px;
 }
 
 .cloudright {
-  height: 155px;
-  position: absolute;
   right: 2.5em;
   top: 20em;
   width: 300px;
-}
-
-@media screen and (max-width: 991px) {
-  .notfound404 {
-    padding-top: var(--space-96-fixed);
-  }
-
-  .cloudleft {
-    left: 1em;
-  }
-
-  .cloudright {
-    right: -5em;
-  }
-
-  .ballooning {
-    height: 99px;
-    right: 5em;
-    top: 10em;
-    width: 70px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .wavefront,
-  .waveback,
-  .ship {
-    height: 50vh;
-  }
-
-  .notfound404 {
-    padding-top: var(--space-88-fixed);
-  }
-
-  .cloudright {
-    display: none;
-  }
-
-  .ballooning {
-    height: 113px;
-    right: 4em;
-    top: 10em;
-    width: 80px;
-  }
-}
-
-@media screen and (max-width: 544px) {
-  .root {
-    min-height: 90vh;
-
-    .notfound404 {
-      padding-top: var(--space-32-fixed);
-    }
-
-    .sabheading {
-      font-size: 90%;
-    }
-
-    .wavefront,
-    .waveback,
-    .ship {
-      height: 50vh;
-    }
-
-    .cloudleft {
-      height: 76px;
-      left: 1em;
-      top: 13em;
-      width: 100px;
-    }
-
-    .ballooning {
-      height: 57px;
-      right: 2em;
-      top: 15em;
-      width: 40px;
-    }
-  }
 }
