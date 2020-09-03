@@ -24,9 +24,9 @@ const Error404 = () => {
   return (
     <div className={styles.root}>
       <Container className={styles.notfound404}>
-        <Heading className={styles.heading}>Page not found 404</Heading>
+        <Heading className={styles.heading}>404 Not Found</Heading>
         <LongTxt className={styles.subheading}>
-          わぁ！海で迷子になってしまったみたい <br />
+          お探しのページは見つかりませんでした <br />
           下のボタンから再出発しましょう
         </LongTxt>
         <Button onClick={() => navigate('/')}>HOMEに戻る</Button>
