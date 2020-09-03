@@ -36,7 +36,7 @@ const Error404 = () => {
           className={[styles.image, styles[illust.name]].join(' ')}
           key={illust.id}
         >
-          <img src={illust.publicURL} />
+          <img src={illust.publicURL} alt='' />
         </div>
       ))}
       <div className={styles.sun} />
