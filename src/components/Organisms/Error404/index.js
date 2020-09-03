@@ -27,7 +27,7 @@ const Error404 = () => {
         <Heading className={styles.heading}>Page not found 404</Heading>
         <LongTxt className={styles.subheading}>
           わぁ！海で迷子になってしまったみたい <br />
-          ブラウザバックで前のページに戻ってください
+          下のボタンから再出発しましょう
         </LongTxt>
         <Button onClick={() => navigate('/')}>HOMEに戻る</Button>
       </Container>
