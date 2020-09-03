@@ -5,13 +5,12 @@ import Seo from '../../seo'
 import NavigationBreadcrumb from '../../Molecules/NavigationBreadcrumb'
 import Container from '../../Atoms/Container'
 import Link from '../../Atoms/Link'
-import Txt from '../../Atoms/Txt'
+import Txt, {LongTxt} from '../../Atoms/Txt'
 import {BoldHeading} from '../../Atoms/Heading'
 import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
 import SkillList from '../../Organisms/SkillList'
 import {graphql} from 'gatsby'
-import LongDescription from '../../Molecules/LongDescription'
 import HeroImage from '../../Molecules/HeroImage'
 
 const SceneTemplate = ({data}) => {
@@ -37,7 +36,9 @@ const SceneTemplate = ({data}) => {
                 {scene.title}
               </BoldHeading>
               <div className={styles.description}>
-                <LongDescription>{scene.description}</LongDescription>
+                <LongTxt
+                  dangerouslySetInnerHTML={{__html: scene.description}}
+                />
               </div>
             </div>
           </Container>
