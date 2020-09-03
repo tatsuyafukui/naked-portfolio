@@ -31,11 +31,6 @@
 @include keyframes(animationBallooning, 10px, 0);
 
 .root {
-  --z-front: 9;
-  --z-middle: 8;
-  --z-back: 7;
-  --z-background: 6;
-
   background-color: var(--color-404background);
   height: calc(100vh - 70px);
   min-height: 700px;
@@ -57,7 +52,7 @@
   padding-top: var(--space-112);
   position: relative;
   text-align: center;
-  z-index: var(--z-overlay);
+  z-index: var(--z-404);
 
   @include mediaQuery(lg) {
     padding-top: var(--space-80);
@@ -91,7 +86,7 @@
 .waveFront {
   bottom: -45px;
   height: 76px;
-  z-index: var(--z-overlay);
+  z-index: var(--z-404);
 
   @include animation(animationWaveFront 7.5s);
 }
@@ -99,7 +94,7 @@
 .waveMiddle {
   bottom: -22px;
   height: 76px;
-  z-index: var(--z-front);
+  z-index: calc(var(--z-404) - 1);
 
   @include animation(animationWaveMiddle 6.5s);
 }
@@ -107,7 +102,7 @@
 .waveBack {
   bottom: 0;
   height: 81px;
-  z-index: var(--z-back);
+  z-index: calc(var(--z-404) - 3);
 
   @include animation(animationWaveBack 7s);
 }
@@ -118,7 +113,7 @@
   margin: auto;
   right: 0;
   width: 400px;
-  z-index: var(--z-middle);
+  z-index: calc(var(--z-404) - 2);
 
   img {
     transform: translate3d(-15%, 0, 0);
@@ -145,7 +140,7 @@
   position: absolute;
   right: 0;
   width: 500px;
-  z-index: var(--z-background);
+  z-index: calc(var(--z-404) - 4);
 
   @include mediaQuery(sm) {
     bottom: -20px;
@@ -157,7 +152,7 @@
 .cloudLeft,
 .cloudRight,
 .ballooning {
-  z-index: var(--z-back);
+  z-index: calc(var(--z-404) - 3);
 }
 
 .ballooning {
