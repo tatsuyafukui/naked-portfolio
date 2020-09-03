@@ -16,7 +16,7 @@ import SkillStandard from '../../Organisms/SkillStandard'
 import {graphql} from 'gatsby'
 import LazyImage from '../../Atoms/LazyImage'
 
-const SkillTemplate = ({data}) => {
+const SkillTemplate = ({data, location}) => {
   const skill = data.skillsJson
   const scene = data.skillsJson.scene
   const recommended = data.skillsJson.recommended
@@ -93,7 +93,7 @@ const SkillTemplate = ({data}) => {
             おすすめの教材
           </HighlightedHeading>
           <OgpList ogpList={recommended} />
-          <SkillShareSection title={skill.title} url={window.location} />
+          <SkillShareSection title={skill.title} url={location.href} />
         </NarrowedContainer>
       </main>
       <Footer />
@@ -103,6 +103,7 @@ const SkillTemplate = ({data}) => {
 
 SkillTemplate.propTypes = {
   data: PropTypes.object,
+  location: PropTypes.object,
 }
 
 export default SkillTemplate
