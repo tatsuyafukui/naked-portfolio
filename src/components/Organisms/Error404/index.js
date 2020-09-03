@@ -5,7 +5,6 @@ import Button from '../../Atoms/Button'
 import {LongTxt} from '../../Atoms/Txt'
 import Container from '../../Atoms/Container'
 import {navigate, graphql, useStaticQuery} from 'gatsby'
-// import Img from 'gatsby-image'
 
 const Error404 = () => {
   const illusts = useStaticQuery(
