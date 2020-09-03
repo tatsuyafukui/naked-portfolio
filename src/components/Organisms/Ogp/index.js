@@ -16,7 +16,7 @@ const OgpPresenter = ({
   truncate,
   title,
   url,
-  image,
+  imageComponent,
   summaryPosition,
   ogpDescription,
   className,
@@ -36,7 +36,7 @@ const OgpPresenter = ({
       summary={summaryPosition}
       className={styles[summaryPosition]}
     >
-      {image}
+      {imageComponent}
       <div className={[styles.ogBody].join(' ')}>
         <Heading level={6} className={[styles.ogTitle, truncate].join(' ')}>
           {title}
@@ -51,7 +51,7 @@ OgpPresenter.propTypes = {
   truncate: PropTypes.string,
   title: PropTypes.node.isRequired,
   url: PropTypes.node.isRequired,
-  image: PropTypes.object,
+  imageComponent: PropTypes.node,
   summaryPosition: PropTypes.string,
   ogpDescription: PropTypes.node,
   className: PropTypes.string,
@@ -63,7 +63,7 @@ export const OgpContainer = ({
   url,
   title,
   isbn: isAmazon,
-  image,
+  ogImage,
   twitterCard,
   presenter,
   ...props
@@ -81,15 +81,20 @@ export const OgpContainer = ({
     />
   )
 
-  if (image) {
-    if (image.extension === 'svg' || image.extension === 'gif') {
-      image = (
-        <LazyImage src={image.publicURL} alt={title} className={styles.image} />
+  let imageComponent
+  if (ogImage) {
+    if (ogImage.extension === 'svg' || ogImage.extension === 'gif') {
+      imageComponent = (
+        <LazyImage
+          src={ogImage.publicURL}
+          alt={title}
+          className={styles.image}
+        />
       )
     } else {
-      image = (
+      imageComponent = (
         <Img
-          fluid={image.childImageSharp.fluid}
+          fluid={ogImage.childImageSharp.fluid}
           alt={title}
           className={styles.image}
         />
@@ -101,7 +106,7 @@ export const OgpContainer = ({
     truncate,
     url,
     title,
-    image,
+    imageComponent,
     summaryPosition,
     ogpDescription,
     ...props,
@@ -118,7 +123,7 @@ Ogp.propTypes = {
   url: PropTypes.node.isRequired,
   isbn: PropTypes.string,
   twitterCard: PropTypes.string,
-  image: PropTypes.object,
+  ogImage: PropTypes.object,
 }
 
 export const getSummaryPosition = twitterCard => {

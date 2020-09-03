@@ -32,7 +32,7 @@ const OgpList = ({ogpList, ...props}) => {
                   description={item.fields.ogp.ogDescription}
                   url={item.url}
                   isbn={item.isbn}
-                  image={item.fields.ogp.ogImage}
+                  ogImage={item.fields.ogp.ogImage}
                   twitterCard={item.fields.ogp.twitterCard}
                 />
               ) : (
