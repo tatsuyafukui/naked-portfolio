@@ -8,17 +8,20 @@ import {
   FacebookShareButton,
 } from '../../Molecules/ShareButton'
 
-const SkillShareSection = ({className, ...props}) => (
+const SkillShareSection = ({title, url, className, ...props}) => (
   <div className={[styles.root, className].join(' ')} {...props}>
     <BoldHeading level={2} visualLevel={5}>
       今日学ぶことをシェアしよう
     </BoldHeading>
     <List className={styles.list}>
       <ListItem className={styles.listItem}>
-        <TwitterShareButton />
+        <TwitterShareButton url={url} eventAction={`${title}-Twitterシェア`} />
       </ListItem>
       <ListItem className={styles.listItem}>
-        <FacebookShareButton />
+        <FacebookShareButton
+          url={url}
+          eventAction={`${title}-Facebookシェア`}
+        />
       </ListItem>
     </List>
   </div>
@@ -28,4 +31,6 @@ export default SkillShareSection
 
 SkillShareSection.propTypes = {
   className: PropTypes.string,
+  title: PropTypes.string,
+  url: PropTypes.string,
 }
