@@ -1,251 +1,202 @@
 @import '../../properties';
 
-@mixin keyframes($animation-name: animaton) {
+@mixin keyframes($animation-name: animaton, $x: 0, $y: 0) {
   @keyframes #{$animation-name} {
-    @content;
+    0% {
+      transform: translate3d($x, $y, 0);
+    }
+
+    50% {
+      transform: translate3d(-$x, -$y, 0);
+    }
+
+    100% {
+      transform: translate3d($x, $y, 0);
+    }
   }
 }
 
 @mixin animation($animation-name) {
   animation: $animation-name;
   animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
-@include keyframes(animationWavefront) {
-  0% {
-    transform: translate3d(0, 0.3vw, 0);
-  }
-
-  50% {
-    transform: translate3d(0, -0.3vw, 0);
-  }
-
-  100% {
-    transform: translate3d(0, 0.3vw, 0);
-  }
-}
-
-@include keyframes(animationWaveback) {
-  0% {
-    transform: translate3d(0, 0.15vw, 0);
-  }
-
-  50% {
-    transform: translate3d(0, -0.15vw, 0);
-  }
-
-  100% {
-    transform: translate3d(0, 0.15vw, 0);
-  }
-}
-
-@include keyframes(animationShip) {
-  0% {
-    transform: translate3d(0, 0.35vw, 0);
-  }
-
-  50% {
-    transform: translate3d(0, -0.35vw, 0);
-  }
-
-  100% {
-    transform: translate3d(0, 0.35vw, 0);
-  }
-}
-
-@include keyframes(animationCloud) {
-  0% {
-    transform: translate3d(0.5vw, 0, 0);
-  }
-
-  50% {
-    transform: translate3d(-0.5vw, 0, 0);
-  }
-
-  100% {
-    transform: translate3d(0.5vw, 0, 0);
-  }
-}
-
-@include keyframes(animationBallooning) {
-  0% {
-    transform: translate3d(0.3vw, 0, 0);
-  }
-
-  50% {
-    transform: translate3d(-0.3vw, 0, 0);
-  }
-
-  100% {
-    transform: translate3d(0.3vw, 0, 0);
-  }
-}
+@include keyframes(animationWaveFront, 0, 6px);
+@include keyframes(animationWaveMiddle, 0, 4px);
+@include keyframes(animationWaveBack, 0, 6px);
+@include keyframes(animationShip, 0, 6px);
+@include keyframes(animationCloud, 5px, 0);
+@include keyframes(animationBallooning, 10px, 0);
 
 .root {
   background-color: var(--color-404background);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
   height: calc(100vh - 70px);
-  margin-bottom: 0;
-  min-height: 750px;
+  min-height: 700px;
   overflow: hidden;
   position: relative;
   vertical-align: bottom;
-  width: 100vw;
+  width: 100%;
+
+  @include mediaQuery(md) {
+    height: calc(100vh - 60px);
+  }
+
+  @include mediaQuery(sm) {
+    min-height: 560px;
+  }
 }
 
 .notfound404 {
-  padding-top: var(--space-72-fixed);
+  padding-top: var(--space-112);
   position: relative;
   text-align: center;
+  z-index: var(--z-404);
+
+  @include mediaQuery(lg) {
+    padding-top: var(--space-80);
+  }
 }
 
-.heading,
-.sabheading {
-  margin-bottom: var(--space-16-fixed);
-  margin-top: var(--space-16-fixed);
+.heading {
+  margin-bottom: var(--space-12);
 }
 
-.home {
-  align-items: center;
-  background-color: var(--color-white);
-  border-bottom: var(--border);
-  display: flex;
+.subheading {
+  margin-bottom: var(--space-24);
 }
 
-.wavefront,
-.waveback,
-.ship {
-  bottom: -2em;
-  height: 446px;
-  object-fit: cover;
+.image {
   position: absolute;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
 }
 
-.wavefront {
-  z-index: 10;
-
-  @include animation(animationWavefront 7.5s ease-in-out infinite);
+.waveFront,
+.waveMiddle,
+.waveBack {
+  width: 100%;
 }
 
-.waveback {
-  z-index: 9;
+.waveFront {
+  bottom: -45px;
+  height: 76px;
+  z-index: var(--z-404);
 
-  @include animation(animationWaveback 6.5s ease-in-out infinite);
+  @include animation(animationWaveFront 7.5s);
+}
+
+.waveMiddle {
+  bottom: -22px;
+  height: 76px;
+  z-index: calc(var(--z-404) - 1);
+
+  @include animation(animationWaveMiddle 6.5s);
+}
+
+.waveBack {
+  bottom: 0;
+  height: 81px;
+  z-index: calc(var(--z-404) - 3);
+
+  @include animation(animationWaveBack 7s);
 }
 
 .ship {
-  z-index: 8;
+  bottom: 30px;
+  left: 0;
+  margin: auto;
+  right: 0;
+  width: 400px;
+  z-index: calc(var(--z-404) - 2);
 
-  @include animation(animationShip 7s ease-in-out infinite);
+  img {
+    transform: translate3d(-15%, 0, 0);
+  }
+
+  @include animation(animationShip 7s);
+
+  @include mediaQuery(md) {
+    width: 300px;
+  }
+
+  @include mediaQuery(sm) {
+    width: 250px;
+  }
+}
+
+.sun {
+  background-color: var(--color-white);
+  border-radius: 50%;
+  bottom: -60px;
+  height: 500px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  width: 500px;
+  z-index: calc(var(--z-404) - 4);
+
+  @include mediaQuery(sm) {
+    bottom: -20px;
+    height: 300px;
+    width: 300px;
+  }
+}
+
+.cloudLeft,
+.cloudRight,
+.ballooning {
+  z-index: calc(var(--z-404) - 3);
 }
 
 .ballooning {
-  height: 100px;
-  position: absolute;
-  right: 5em;
-  top: 10em;
+  right: 50px;
+  top: 170px;
   width: 70px;
 
-  @include animation(animationBallooning 7s ease-in-out infinite);
+  @include mediaQuery(md) {
+    width: 40px;
+  }
+
+  @include mediaQuery(sm) {
+    right: 10px;
+    top: 250px;
+  }
+
+  @include animation(animationBallooning 7s);
 }
 
-.cloudleft,
-.cloudright {
-  @include animation(animationCloud 12s ease-in-out infinite);
+.cloudLeft,
+.cloudRight {
+  @include animation(animationCloud 12s);
 }
 
-.cloudleft {
-  height: 137px;
-  left: 2.5em;
-  position: absolute;
-  top: 20em;
+.cloudLeft {
+  left: 0;
+  top: 300px;
   width: 180px;
+
+  @include mediaQuery(md) {
+    width: 100px;
+  }
 }
 
-.cloudright {
-  height: 155px;
-  position: absolute;
-  right: 2.5em;
-  top: 20em;
+.cloudRight {
+  right: 0;
+  top: 300px;
   width: 300px;
-}
 
-@media screen and (max-width: 991px) {
-  .notfound404 {
-    padding-top: var(--space-96-fixed);
+  @include mediaQuery(md) {
+    width: 200px;
   }
 
-  .cloudleft {
-    left: 1em;
-  }
-
-  .cloudright {
-    right: -5em;
-  }
-
-  .ballooning {
-    height: 99px;
-    right: 5em;
-    top: 10em;
-    width: 70px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .wavefront,
-  .waveback,
-  .ship {
-    height: 50vh;
-  }
-
-  .notfound404 {
-    padding-top: var(--space-88-fixed);
-  }
-
-  .cloudright {
-    display: none;
-  }
-
-  .ballooning {
-    height: 113px;
-    right: 4em;
-    top: 10em;
-    width: 80px;
-  }
-}
-
-@media screen and (max-width: 544px) {
-  .root {
-    min-height: 90vh;
-
-    .notfound404 {
-      padding-top: var(--space-32-fixed);
-    }
-
-    .sabheading {
-      font-size: 90%;
-    }
-
-    .wavefront,
-    .waveback,
-    .ship {
-      height: 50vh;
-    }
-
-    .cloudleft {
-      height: 76px;
-      left: 1em;
-      top: 13em;
-      width: 100px;
-    }
-
-    .ballooning {
-      height: 57px;
-      right: 2em;
-      top: 15em;
-      width: 40px;
-    }
+  @include mediaQuery(sm) {
+    right: -70px;
   }
 }
