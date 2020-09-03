@@ -1,5 +1,202 @@
 @import '../../properties';
 
+@mixin keyframes($animation-name: animaton, $x: 0, $y: 0) {
+  @keyframes #{$animation-name} {
+    0% {
+      transform: translate3d($x, $y, 0);
+    }
+
+    50% {
+      transform: translate3d(-$x, -$y, 0);
+    }
+
+    100% {
+      transform: translate3d($x, $y, 0);
+    }
+  }
+}
+
+@mixin animation($animation-name) {
+  animation: $animation-name;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@include keyframes(animationWaveFront, 0, 4px);
+@include keyframes(animationWaveMiddle, 0, 4px);
+@include keyframes(animationWaveBack, 0, 6px);
+@include keyframes(animationShip, 0, 5px);
+@include keyframes(animationCloud, 4px, 0);
+@include keyframes(animationBallooning, 10px, 0);
+
 .root {
-  color: #ff253a;
+  background-color: var(--color-404background);
+  height: calc(100vh - 70px);
+  min-height: 700px;
+  overflow: hidden;
+  position: relative;
+  vertical-align: bottom;
+  width: 100%;
+
+  @include mediaQuery(md) {
+    height: calc(100vh - 60px);
+  }
+
+  @include mediaQuery(sm) {
+    min-height: 560px;
+  }
+}
+
+.notfound404 {
+  padding-top: var(--space-112);
+  position: relative;
+  text-align: center;
+  z-index: var(--z-404);
+
+  @include mediaQuery(lg) {
+    padding-top: var(--space-80);
+  }
+}
+
+.heading {
+  margin-bottom: var(--space-12);
+}
+
+.subheading {
+  margin-bottom: var(--space-24);
+}
+
+.image {
+  position: absolute;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.waveFront,
+.waveMiddle,
+.waveBack {
+  width: 100%;
+}
+
+.waveFront {
+  bottom: -45px;
+  height: 76px;
+  z-index: var(--z-404);
+
+  @include animation(animationWaveFront 10.5s);
+}
+
+.waveMiddle {
+  bottom: -22px;
+  height: 76px;
+  z-index: calc(var(--z-404) - 1);
+
+  @include animation(animationWaveMiddle 10.5s);
+}
+
+.waveBack {
+  bottom: 0;
+  height: 81px;
+  z-index: calc(var(--z-404) - 3);
+
+  @include animation(animationWaveBack 10s);
+}
+
+.ship {
+  bottom: 30px;
+  left: 0;
+  margin: auto;
+  right: 0;
+  width: 300px;
+  z-index: calc(var(--z-404) - 2);
+
+  img {
+    transform: translate3d(-15%, 0, 0);
+  }
+
+  @include animation(animationShip 7s);
+
+  @include mediaQuery(md) {
+    width: 280px;
+  }
+
+  @include mediaQuery(sm) {
+    width: 250px;
+  }
+}
+
+.sun {
+  background-color: var(--color-white);
+  border-radius: 50%;
+  bottom: -50px;
+  height: 450px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  width: 450px;
+  z-index: calc(var(--z-404) - 4);
+
+  @include mediaQuery(sm) {
+    bottom: -20px;
+    height: 300px;
+    width: 300px;
+  }
+}
+
+.cloudLeft,
+.cloudRight,
+.ballooning {
+  z-index: calc(var(--z-404) - 3);
+}
+
+.ballooning {
+  right: 50px;
+  top: 170px;
+  width: 70px;
+
+  @include mediaQuery(md) {
+    width: 40px;
+  }
+
+  @include mediaQuery(sm) {
+    right: 10px;
+    top: 250px;
+  }
+
+  @include animation(animationBallooning 7s);
+}
+
+.cloudLeft,
+.cloudRight {
+  @include animation(animationCloud 12s);
+}
+
+.cloudLeft {
+  left: 0;
+  top: 300px;
+  width: 180px;
+
+  @include mediaQuery(md) {
+    width: 100px;
+  }
+}
+
+.cloudRight {
+  right: 0;
+  top: 300px;
+  width: 300px;
+
+  @include mediaQuery(md) {
+    width: 200px;
+  }
+
+  @include mediaQuery(sm) {
+    right: -70px;
+  }
 }
