@@ -5,6 +5,8 @@ import {containPresenter} from '../../utils/HoC'
 import MediaObjectLayout from '../../Atoms/MediaObjectLayout'
 import Img from 'gatsby-image'
 import Heading from '../../Atoms/Heading'
+import LazyImage from '../../Atoms/LazyImage'
+
 import OgpDescription, {
   AmazonOgpDescription,
 } from '../../Molecules/OgpDescription'
@@ -14,7 +16,7 @@ const OgpPresenter = ({
   truncate,
   title,
   url,
-  image,
+  imageComponent,
   summaryPosition,
   ogpDescription,
   className,
@@ -33,9 +35,8 @@ const OgpPresenter = ({
     <MediaObjectLayout
       summary={summaryPosition}
       className={styles[summaryPosition]}
-      hasImage={!!image}
     >
-      <Img fluid={image} alt={title} className={styles.image} />
+      {imageComponent}
       <div className={[styles.ogBody].join(' ')}>
         <Heading level={6} className={[styles.ogTitle, truncate].join(' ')}>
           {title}
@@ -50,7 +51,7 @@ OgpPresenter.propTypes = {
   truncate: PropTypes.string,
   title: PropTypes.node.isRequired,
   url: PropTypes.node.isRequired,
-  image: PropTypes.object,
+  imageComponent: PropTypes.node,
   summaryPosition: PropTypes.string,
   ogpDescription: PropTypes.node,
   className: PropTypes.string,
@@ -60,8 +61,9 @@ export const OgpContainer = ({
   isMobile,
   description,
   url,
+  title,
   isbn: isAmazon,
-  image,
+  ogImage,
   twitterCard,
   presenter,
   ...props
@@ -79,10 +81,32 @@ export const OgpContainer = ({
     />
   )
 
+  let imageComponent
+  if (ogImage) {
+    if (ogImage.extension === 'svg' || ogImage.extension === 'gif') {
+      imageComponent = (
+        <LazyImage
+          src={ogImage.publicURL}
+          alt={title}
+          className={styles.image}
+        />
+      )
+    } else {
+      imageComponent = (
+        <Img
+          fluid={ogImage.childImageSharp.fluid}
+          alt={title}
+          className={styles.image}
+        />
+      )
+    }
+  }
+
   return presenter({
     truncate,
     url,
-    image,
+    title,
+    imageComponent,
     summaryPosition,
     ogpDescription,
     ...props,
@@ -99,7 +123,7 @@ Ogp.propTypes = {
   url: PropTypes.node.isRequired,
   isbn: PropTypes.string,
   twitterCard: PropTypes.string,
-  image: PropTypes.object,
+  ogImage: PropTypes.object,
 }
 
 export const getSummaryPosition = twitterCard => {

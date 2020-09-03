@@ -9,7 +9,6 @@ const NODE_TYPE_RECOMMENDED = 'RecommendedJson'
 const NODE_TYPE_SCENES = 'ScenesJson'
 const NODE_TYPE_SKILLS = 'SkillsJson'
 const IMAGE_TYPE_JPG = 'jpg'
-const IMAGE_TYPE_GIF = 'gif'
 
 /**
  * GraphQLの生成時に呼び出される
@@ -28,14 +27,22 @@ const onCreateNode = async ({node, actions, createNodeId, cache, store}) => {
     const results = await fetchOgp(node.url)
     results.ogImage = formatOgpImage(node, results.ogImage)
 
-    createGatsbyImg(results, {
-      url: results.ogImage.url,
-      parentNodeId: node.id,
-      createNode,
-      createNodeId,
-      cache,
-      store,
-    })
+    try {
+      const fileNode = await createRemoteFileNode({
+        url: results.ogImage.url,
+        parentNodeId: node.id,
+        createNode,
+        createNodeId,
+        cache,
+        store,
+      })
+      if (fileNode) {
+        results.ogImage___NODE = fileNode.id
+      }
+    } catch (e) {
+      results.ogImage = null
+    }
+
     createNodeField({
       node,
       name: OGP,
@@ -85,15 +92,15 @@ const fetchOgp = async url => {
  * @returns {{type: string, url: string}}
  */
 const formatOgpImage = (node, ogImage) => {
-  if (!ogImage) return
-
   if (node.isbn) {
     ogImage = getAmazonImg(node.isbn)
   }
 
   if (Array.isArray(ogImage)) {
-    ogImage = extractImgFromArray(ogImage)
+    ogImage = ogImage.shift()
   }
+
+  if (!ogImage) return
 
   const internal = checkInternalLink(ogImage.url)
   if (internal) {
@@ -101,24 +108,6 @@ const formatOgpImage = (node, ogImage) => {
   }
 
   return ogImage
-}
-
-/**
- * ogp画像をgatsby-imgで使えるように設定
- * @param ogp
- * @param args
- * @returns {Promise<void>}
- */
-const createGatsbyImg = async (ogp, args) => {
-  try {
-    const fileNode = await createRemoteFileNode(args)
-
-    if (fileNode) {
-      ogp.ogImage___NODE = fileNode.id
-    }
-  } catch (error) {
-    ogp.ogImage = null
-  }
 }
 
 /**
@@ -131,15 +120,6 @@ const getAmazonImg = isbn => {
     type: IMAGE_TYPE_JPG,
     url: `https://images-na.ssl-images-amazon.com/images/P/${isbn}._SL500_.jpg`,
   }
-}
-
-/**
- * ogImage配列からGIFを除くogImageを取得
- * @param array
- * @returns {any}
- */
-const extractImgFromArray = array => {
-  return array.filter(item => item.type !== IMAGE_TYPE_GIF).shift()
 }
 
 /**

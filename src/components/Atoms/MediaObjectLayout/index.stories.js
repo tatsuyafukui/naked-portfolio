@@ -8,7 +8,7 @@ storiesOf('Atoms/MediaObjectLayout', module)
   .add('Specify left as summary', () => (
     <MediaObjectLayout>
       <div style={{height: '100px', width: '100px'}}>
-        <Img fluid={imgData.square.fluid} />
+        <Img fluid={imgData.square.childImageSharp.fluid} />
       </div>
       <div>
         <p>
@@ -24,7 +24,7 @@ storiesOf('Atoms/MediaObjectLayout', module)
   .add('Specify right as summary', () => (
     <MediaObjectLayout summary={'right'}>
       <div style={{height: '100px', width: '100px'}}>
-        <Img fluid={imgData.book.fluid} />
+        <Img fluid={imgData.book.childImageSharp.fluid} />
       </div>
       <div>
         <h2>Reference site title</h2>
@@ -37,7 +37,7 @@ storiesOf('Atoms/MediaObjectLayout', module)
   .add('Specify top as summary', () => (
     <MediaObjectLayout summary={'top'}>
       <div style={{width: '500px'}}>
-        <Img fluid={imgData.summaryLarge.fluid} />
+        <Img fluid={imgData.summaryLarge.childImageSharp.fluid} />
       </div>
       <div>
         <h2>Reference site title</h2>

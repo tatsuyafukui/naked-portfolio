@@ -140,6 +140,8 @@ export const query = graphql`
             twitterCard
             ogDescription
             ogImage {
+              extension
+              publicURL
               childImageSharp {
                 fluid {
                   ...GatsbyImageSharpFluid_withWebp
