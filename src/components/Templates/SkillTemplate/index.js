@@ -93,7 +93,7 @@ const SkillTemplate = ({data}) => {
             おすすめの教材
           </HighlightedHeading>
           <OgpList ogpList={recommended} />
-          <SkillShareSection />
+          <SkillShareSection title={skill.title} url={window.location} />
         </NarrowedContainer>
       </main>
       <Footer />
