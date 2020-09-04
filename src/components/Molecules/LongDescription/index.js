@@ -19,7 +19,7 @@ const LongDescription = ({maxChars, truncateText, children}) => {
         open={!isMobile || open}
         maxChars={maxChars}
         truncateText={
-          <button key={'read-more'} onClick={clickOpenHandler}>
+          <button key='read-more' onClick={clickOpenHandler}>
             <InfoTxt>{truncateText}</InfoTxt>
           </button>
         }

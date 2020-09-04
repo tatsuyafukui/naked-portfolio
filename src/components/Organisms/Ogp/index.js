@@ -28,7 +28,7 @@ const OgpPresenter = ({
     target='_blank'
     rel='noopener noreferrer'
     eventAction={`${title} - おすすめ教材リンク`}
-    eventCategory={'スキル詳細ページ'}
+    eventCategory='スキル詳細ページ'
     eventLabel={title}
     {...props}
   >

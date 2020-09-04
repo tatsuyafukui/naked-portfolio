@@ -22,7 +22,7 @@ storiesOf('Atoms/MediaObjectLayout', module)
     </MediaObjectLayout>
   ))
   .add('Specify right as summary', () => (
-    <MediaObjectLayout summary={'right'}>
+    <MediaObjectLayout summary='right'>
       <div style={{height: '100px', width: '100px'}}>
         <Img fluid={imgData.book.childImageSharp.fluid} />
       </div>
@@ -35,7 +35,7 @@ storiesOf('Atoms/MediaObjectLayout', module)
     </MediaObjectLayout>
   ))
   .add('Specify top as summary', () => (
-    <MediaObjectLayout summary={'top'}>
+    <MediaObjectLayout summary='top'>
       <div style={{width: '500px'}}>
         <Img fluid={imgData.summaryLarge.childImageSharp.fluid} />
       </div>
