@@ -489,5 +489,53 @@
     "title": "OWASP Top 10 Security Vulerabilities 2020 | Sucuri（英語）",
     "description": "Webアプリケーションセキュリティの分野のオンラインコミュニティであるOWASPのサイトです。流行の脆弱性などを発表しているので、目を通しておくといいでしょう。",
     "url": "https://sucuri.net/guides/owasp-top-10-security-vulnerabilities-2020/"
+  },
+  {
+    "skillId": "ci-cd",
+    "title": "circleci - Getting Started Introduction",
+    "description": "CI/CDの代表的なツールです。概要から実際に動かすチュートリアルまであるので、自分で構築してどんなものか感覚を掴んでみるといいでしょう。",
+    "url": "https://circleci.com/docs/2.0/getting-started/#section=getting-started"
+  },
+  {
+    "skillId": "ci-cd",
+    "title": "The DevOps ハンドブック 理論・原則・実践のすべて",
+    "description": "高い品質を確保しつつ、開発から運用に移るまでの時間を短縮することを目的とした一連のプラクティスを「DevOps」いいます。CI/CDのような仕組みがなぜ必要なのかを知りたい人は読んでみましょう。",
+    "url": "https://www.amazon.co.jp/dp/4822285480",
+    "isbn": "4822285480"
+  },
+  {
+    "skillId": "data-analysis-platform",
+    "title": "データ分析基盤構築入門[Fluentd、Elasticsearch、Kibanaによるログ収集と可視化]",
+    "description": "ツールの収集方法の説明だけでなく、データ分析基盤を構築するうえの考え方や具体例が説明されています。",
+    "url": "https://www.amazon.co.jp/dp/477419218X",
+    "isbn": "477419218X"
+  },
+  {
+    "skillId": "performance",
+    "title": "Webフロントエンド ハイパフォーマンス チューニング",
+    "description": "フロントエンドのパフォーマンスチューニングについて学べます。ブラウザの仕組みや開発者ツールでの計測方法も説明されているので、イメージを掴みたい読んでみるといいでしょう。",
+    "url": "https://www.amazon.co.jp/dp/4774189677",
+    "isbn": "4774189677"
+  },
+  {
+    "skillId": "performance",
+    "title": "SQL実践入門──高速でわかりやすいクエリの書き方",
+    "description": "SQLのパフォーマンスについて学べる書籍です。本格的にSQLのチューニングについて学びたい人は読んでみましょう。",
+    "url": "https://www.amazon.co.jp/dp/4774173010",
+    "isbn": "4774173010"
+  },
+  {
+    "skillId": "scalability",
+    "title": "[Web開発者のための]大規模サービス技術入門 ―データ構造、メモリ、OS、DB、サーバ/インフラ",
+    "description": "大規模なサービスを運用していくための具体的なノウハウが説明されています。スケーラビリティの考え方を学ぶのにおすすめです。",
+    "url": "https://www.amazon.co.jp/dp/4774143073",
+    "isbn": "4774143073"
+  },
+  {
+    "skillId": "fault-tolerance",
+    "title": "[24時間365日] サーバ/インフラを支える技術 ‾スケーラビリティ、ハイパフォーマンス、省力運用",
+    "description": "大規模なサービスを止めずに運用方法について説明されています。さまざまなサーバーの障害対応について学べます。",
+    "url": "https://www.amazon.co.jp/dp/4774135666",
+    "isbn": "4774135666"
   }
 ]
