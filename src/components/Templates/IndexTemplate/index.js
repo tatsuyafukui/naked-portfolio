@@ -13,7 +13,7 @@ import Seo from '../../seo'
 const IndexTemplate = ({scenes}) => {
   return (
     <div className={styles.background}>
-      <Seo title={'HOME'} />
+      <Seo title='HOME' />
       <Header />
       <main className={styles.main}>
         <Container>
