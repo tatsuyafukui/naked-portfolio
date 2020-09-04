@@ -11,7 +11,7 @@ import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
 import OgpList from '../../Organisms/OgpList'
 import HeroImage from '../../Molecules/HeroImage'
-import SkillShareSection from '../../Organisms/SkillShareSection'
+// import SkillShareSection from '../../Organisms/SkillShareSection'
 import SkillStandard from '../../Organisms/SkillStandard'
 import {graphql} from 'gatsby'
 import LazyImage from '../../Atoms/LazyImage'
@@ -93,7 +93,7 @@ const SkillTemplate = ({data, location}) => {
             おすすめの教材
           </HighlightedHeading>
           <OgpList ogpList={recommended} />
-          <SkillShareSection title={skill.title} url={location.href} />
+          {/* <SkillShareSection title={skill.title} url={location.href} /> */}
         </NarrowedContainer>
       </main>
       <Footer />
