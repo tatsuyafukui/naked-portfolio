@@ -19,7 +19,7 @@ const SceneTemplate = ({data}) => {
 
   return (
     <div className={styles.background}>
-      <Seo title={scene.title} description={scene.description} lang={'ja'} />
+      <Seo title={scene.title} description={scene.description} lang='ja' />
       <Header />
       <main>
         <section className={styles.firstview}>
