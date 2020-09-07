@@ -7,14 +7,10 @@
 }
 
 .imageWrap {
-  height: 550px;
+  height: 50vh;
   overflow: hidden;
   position: relative;
   width: 100%;
-
-  @include mediaQuery(md) {
-    height: 400px;
-  }
 
   @include mediaQuery(sm) {
     height: 218px;
@@ -49,22 +45,8 @@
 
   @include mediaQuery(sm) {
     bottom: var(--space-16-fixed);
-    left: var(--space-16-fixed);
-  }
-}
-
-.numberText {
-  position: relative;
-
-  &::before {
-    bottom: -60px;
-    content: attr(data-number);
-    left: 0;
-    position: absolute;
-  }
-
-  @include mediaQuery(sm) {
     font-size: var(--font-size-xxs-fixed) !important;
+    left: var(--space-16-fixed);
   }
 }
 
@@ -92,19 +74,22 @@
   }
 }
 
-.image,
-.numberText {
-  transition: var(--hover-animation-slow);
+.title,
+.number {
+  transition: var(--hover-animation-fast);
 }
 
-.scene:hover {
-  text-decoration: none;
+@media (hover: hover) {
+  .scene:hover {
+    text-decoration: none;
 
-  .image {
-    transform: scale3d(1.02, 1.02, 1);
-  }
+    .number {
+      background-color: var(--color-link);
+      color: var(--color-white);
+    }
 
-  .numberText {
-    transform: translate3d(0, -60px, 0);
+    .title {
+      color: var(--color-link);
+    }
   }
 }
