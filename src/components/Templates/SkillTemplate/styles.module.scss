@@ -1,9 +1,23 @@
 @import '../../properties';
 
+.keyVisual,
+.heroTxtwrap {
+  position: absolute;
+}
+
 .keyVisual {
+  left: 0;
+  top: 0;
+  z-index: var(--z-background);
+}
+
+.heroContainer {
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+.heroTxtWrap {
   text-align: center;
 }
 
@@ -45,6 +59,7 @@
 
   @include mediaQuery(sm) {
     align-self: center;
+    max-width: unset;
     width: 100vw;
   }
 }

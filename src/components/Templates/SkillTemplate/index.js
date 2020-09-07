@@ -28,17 +28,19 @@ const SkillTemplate = ({data, location}) => {
       <Header />
       <main>
         <HeroImage>
-          <div
-            className={styles.keyVisual}
-            style={{backgroundImage: `url(${keyVisual})`}}
-          >
-            <Container>
+          <Container className={styles.heroContainer}>
+            <div className={styles.heroTxtWrap}>
               <BoldHeading level={1} className={styles.title}>
                 {skill.title}
               </BoldHeading>
               <Txt>{skill.subTitle}</Txt>
-            </Container>
-          </div>
+            </div>
+          </Container>
+          <LazyImage
+            className={styles.keyVisual}
+            src={keyVisual}
+            alt={skill.title}
+          />
         </HeroImage>
         <Container>
           <NavigationBreadcrumb className={styles.breadcrumb}>
