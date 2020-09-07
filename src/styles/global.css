@@ -136,6 +136,7 @@
   --z-overlay: 10;
   --z-overlay-content: 20;
   --z-404: 10;
+  --z-background: -10;
 }
 
 html {
