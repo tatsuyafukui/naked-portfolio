@@ -37,7 +37,7 @@
     left: 0;
     margin: auto;
     position: absolute;
-    top: 9px;
+    top: calc(var(--font-size-m) / 2);
     width: 6px;
   }
 }
