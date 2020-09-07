@@ -12,6 +12,7 @@ import Footer from '../../Organisms/Footer'
 import SkillList from '../../Organisms/SkillList'
 import {graphql} from 'gatsby'
 import HeroImage from '../../Molecules/HeroImage'
+import LazyImage from '../../Atoms/LazyImage'
 
 const SceneTemplate = ({data}) => {
   const scene = data.scenesJson
@@ -24,7 +25,7 @@ const SceneTemplate = ({data}) => {
       <main>
         <section className={styles.firstview}>
           <HeroImage>
-            <img src={scene.image.publicURL} alt={scene.title} />
+            <LazyImage src={scene.image.publicURL} alt={scene.title} />
           </HeroImage>
           <Container>
             <NavigationBreadcrumb>

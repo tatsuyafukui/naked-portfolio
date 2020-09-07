@@ -8,6 +8,8 @@
 
 .imageWrap {
   height: 50vh;
+  max-height: 550px;
+  min-height: 270px;
   overflow: hidden;
   position: relative;
   width: 100%;
