@@ -5,7 +5,7 @@
 }
 
 .main {
-  padding-bottom: var(--space-32);
+  padding-bottom: var(--space-112);
 
   @include mediaQuery(md) {
     padding-bottom: 0;

@@ -1,5 +1,13 @@
 @import '../../properties';
 
+.main {
+  padding-bottom: var(--space-112);
+
+  @include mediaQuery(md) {
+    padding-bottom: 0;
+  }
+}
+
 .firstview {
   background-color: var(--color-white);
   margin-bottom: var(--space-96);

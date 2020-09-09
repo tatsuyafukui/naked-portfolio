@@ -26,7 +26,7 @@ const SkillTemplate = ({data, location}) => {
     <>
       <Seo title={skill.title} description={skill.overview} lang='ja' />
       <Header />
-      <main>
+      <main className={styles.main}>
         <HeroImage>
           <Container className={styles.heroContainer}>
             <div className={styles.heroTxtWrap}>

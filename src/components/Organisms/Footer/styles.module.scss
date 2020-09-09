@@ -3,7 +3,6 @@
 .footer {
   background: var(--color-white);
   border-top: var(--border);
-  margin-top: var(--space-80);
   padding: var(--space-56-fixed) 0;
 
   @include mediaQuery(sm) {
