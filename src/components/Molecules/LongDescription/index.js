@@ -1,15 +1,40 @@
 import React, {useState} from 'react'
+import styles from './styles.module.scss'
 import {LongTxt, InfoTxt} from '../../Atoms/Txt'
 import PropTypes from 'prop-types'
 import {useMediaQuery} from 'react-responsive'
 import {MEDIA_QUERY_MD} from '../../../constants'
-import TextTruncate from '../../Atoms/TextTruncate'
+import {containPresenter} from '../../utils/HoC'
 
-const LongDescription = ({
-  // lineClamp,
-  maxChars,
+const LongDescriptionPresenter = ({
+  clampCount,
+  children,
+  truncateButton,
+  className,
+  ...props
+}) => (
+  <LongTxt className={className} {...props}>
+    <span
+      className={styles.textTruncate}
+      style={clampCount}
+      dangerouslySetInnerHTML={{__html: children}}
+    />
+    {truncateButton}
+  </LongTxt>
+)
+
+LongDescriptionPresenter.propTypes = {
+  children: PropTypes.string.isRequired,
+  clampCount: PropTypes.object,
+  truncateButton: PropTypes.node,
+  className: PropTypes.string,
+}
+
+const LongDescriptionContainer = ({
+  lineClamp,
   truncateText,
   children,
+  presenter,
   ...props
 }) => {
   const [open, setOpen] = useState(false)
@@ -19,86 +44,33 @@ const LongDescription = ({
     setOpen(true)
   }
 
-  // 案１
-  // const a = (
-  //   <div dangerouslySetInnerHTML={{__html: children}}>
-  //     aaaaa
-  //     <a>aaa</a>
-  //     aaaaaa
-  //   </div>
-  // )
-  // let count = 0
-  //
-  // children = React.Children.map(a, child => {
-  //   if (child.type.string) {
-  //     count += child.length
-  //   }
-  //
-  //   if (count >= 120) {
-  //     // cut
-  //   }
-  //
-  //   return child
-  // })
-
-  // 案２→CSSで調整→レイアウトが崩れる
-  // コメントアウト外せば使えます
-  // =====================ここから=========================
-  // const isExpanded = !isMobile || open
-  //
-  // const style = {
-  //   WebkitLineClamp: !isExpanded && lineClamp,
-  //   WebkitBoxOrient: 'vertical',
-  //   display: '-webkit-box',
-  //   overflow: 'hidden',
-  // }
-  //
-  // return (
-  //   <LongTxt>
-  //     <span>
-  //       <span
-  //         className={styles.textTruncate}
-  //         style={style}
-  //         dangerouslySetInnerHTML={{__html: children}}
-  //       />
-  //       {!isExpanded && (
-  //         <span>
-  //           <button key={'read-more'} onClick={clickOpenHandler}>
-  //             <InfoTxt>{truncateText}</InfoTxt>
-  //           </button>
-  //         </span>
-  //       )}
-  //     </span>
-  //   </LongTxt>
-  // )
-  // =====================ここまで=========================
-
-  return (
-    <LongTxt>
-      <TextTruncate
-        open={!isMobile || open}
-        maxChars={maxChars}
-        truncateText={
-          <button key={'read-more'} onClick={clickOpenHandler}>
-            <InfoTxt>{truncateText}</InfoTxt>
-          </button>
-        }
-      >
-        {children}
-      </TextTruncate>
-    </LongTxt>
+  const isExpanded = !isMobile || open
+  const clampCount = {
+    WebkitLineClamp: !isExpanded ? lineClamp : 'unset',
+  }
+  const truncateButton = !isExpanded && (
+    <button key={'read-more'} onClick={clickOpenHandler}>
+      <InfoTxt>{truncateText}</InfoTxt>
+    </button>
   )
+
+  return presenter({clampCount, children, truncateButton, ...props})
 }
+
+const LongDescription = containPresenter(
+  LongDescriptionContainer,
+  LongDescriptionPresenter
+)
 
 export default LongDescription
 
 LongDescription.propTypes = {
   children: PropTypes.string.isRequired,
-  maxChars: PropTypes.number,
   truncateText: PropTypes.string,
+  lineClamp: PropTypes.number,
 }
 
 LongDescription.defaultProps = {
-  maxChars: 50,
   truncateText: '続きを読む',
+  lineClamp: 3,
 }
