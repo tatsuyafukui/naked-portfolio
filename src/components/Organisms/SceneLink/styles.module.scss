@@ -16,6 +16,7 @@
 
   @include mediaQuery(sm) {
     height: 218px;
+    min-height: unset;
   }
 }
 

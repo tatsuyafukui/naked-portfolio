@@ -63,5 +63,5 @@ LazyImage.propTypes = {
 
 LazyImage.defaultProps = {
   placeHolder:
-    'data:imageplaceHolder/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=',
+    'data:imageplaceHolder/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+ip1sAAAAASUVORK5CYII=',
 }
