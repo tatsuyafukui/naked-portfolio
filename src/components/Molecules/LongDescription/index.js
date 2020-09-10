@@ -24,8 +24,8 @@ const LongDescriptionPresenter = ({
 )
 
 LongDescriptionPresenter.propTypes = {
-  children: PropTypes.string.isRequired,
   clampCount: PropTypes.object,
+  children: PropTypes.string.isRequired,
   truncateButton: PropTypes.node,
   className: PropTypes.string,
 }
@@ -39,11 +39,9 @@ const LongDescriptionContainer = ({
 }) => {
   const [open, setOpen] = useState(false)
   const isMobile = useMediaQuery({query: MEDIA_QUERY_MD})
-
   const clickOpenHandler = () => {
     setOpen(true)
   }
-
   const isExpanded = !isMobile || open
   const clampCount = {
     WebkitLineClamp: !isExpanded ? lineClamp : 'unset',

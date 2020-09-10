@@ -5,23 +5,32 @@ import {mount} from 'enzyme'
 
 describe('LongDescriptionContainer', () => {
   const TEST_DESCRIPTION = 'x'.repeat(100)
-  it('PCの場合はopenは常にtrue', () => {
+  it('PCの場合はisExpandedは常にtrue', () => {
     const wrapper = mount(
       <ResponsiveContext.Provider value={{type: 'screen', width: 768}}>
         <LongDescription>{TEST_DESCRIPTION}</LongDescription>
       </ResponsiveContext.Provider>
     )
-    expect(wrapper.find('p.long').children().props().open).toBeTruthy()
+
+    expect(
+      wrapper.find('p.long').children().props().style.WebkitLineClamp
+    ).toBe('unset')
   })
 
-  it('SPの場合はopenはデフォルトはfalse. ボタンをClickしたらtrue', () => {
+  it('SPの場合はisExpandedはデフォルトはfalse. ボタンをClickしたらtrue', () => {
     const wrapper = mount(
       <ResponsiveContext.Provider value={{type: 'screen', width: 767}}>
         <LongDescription>{TEST_DESCRIPTION}</LongDescription>
       </ResponsiveContext.Provider>
     )
-    expect(wrapper.find('p.long').children().props().open).toBeFalsy()
+    expect(
+      wrapper.contains(<p className='txt info visualLevel1 '>続きを読む</p>)
+    ).toEqual(true)
+
     wrapper.find('button').simulate('click')
-    expect(wrapper.find('p.long').children().props().open).toBeTruthy()
+
+    expect(
+      wrapper.contains(<p className='txt info visualLevel1 '>続きを読む</p>)
+    ).toEqual(false)
   })
 })
