@@ -13,8 +13,8 @@ describe('LongDescriptionContainer', () => {
     )
 
     expect(
-      wrapper.find('p.long').children().props().style.WebkitLineClamp
-    ).toBe('unset')
+      wrapper.contains(<p className='txt info visualLevel1 '>続きを読む</p>)
+    ).toEqual(false)
   })
 
   it('SPの場合はisExpandedはデフォルトはfalse. ボタンをClickしたらtrue', () => {
