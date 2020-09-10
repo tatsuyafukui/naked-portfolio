@@ -37,9 +37,9 @@ const SceneTemplate = ({data}) => {
               <BoldHeading level={1} className={styles.title}>
                 {scene.title}
               </BoldHeading>
-              <div className={styles.description}>
-                <LongDescription>{scene.description}</LongDescription>
-              </div>
+              <LongDescription className={styles.description}>
+                {scene.description}
+              </LongDescription>
             </div>
           </Container>
         </section>
