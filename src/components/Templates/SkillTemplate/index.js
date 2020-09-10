@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Img from 'gatsby-image'
 import styles from './styles.module.scss'
 import Seo from '../../seo'
 import NavigationBreadcrumb from '../../Molecules/NavigationBreadcrumb'
@@ -12,11 +11,12 @@ import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
 import OgpList from '../../Organisms/OgpList'
 import HeroImage from '../../Molecules/HeroImage'
-import SkillShareSection from '../../Organisms/SkillShareSection'
+// import SkillShareSection from '../../Organisms/SkillShareSection'
 import SkillStandard from '../../Organisms/SkillStandard'
 import {graphql} from 'gatsby'
+import LazyImage from '../../Atoms/LazyImage'
 
-const SkillTemplate = ({data}) => {
+const SkillTemplate = ({data, location}) => {
   const skill = data.skillsJson
   const scene = data.skillsJson.scene
   const recommended = data.skillsJson.recommended
@@ -24,21 +24,23 @@ const SkillTemplate = ({data}) => {
 
   return (
     <>
-      <Seo title={skill.title} description={skill.overview} lang={'ja'} />
+      <Seo title={skill.title} description={skill.overview} lang='ja' />
       <Header />
       <main>
         <HeroImage>
-          <div
-            className={styles.keyVisual}
-            style={{backgroundImage: `url(${keyVisual})`}}
-          >
-            <Container>
+          <Container className={styles.heroContainer}>
+            <div className={styles.heroTxtWrap}>
               <BoldHeading level={1} className={styles.title}>
                 {skill.title}
               </BoldHeading>
               <Txt>{skill.subTitle}</Txt>
-            </Container>
-          </div>
+            </div>
+          </Container>
+          <LazyImage
+            className={styles.keyVisual}
+            src={keyVisual}
+            alt={skill.title}
+          />
         </HeroImage>
         <Container>
           <NavigationBreadcrumb className={styles.breadcrumb}>
@@ -56,9 +58,10 @@ const SkillTemplate = ({data}) => {
             概要
           </HighlightedHeading>
           <LongTxt dangerouslySetInnerHTML={{__html: skill.overview}} />
-          <Img
+          <LazyImage
             className={styles.image}
-            fluid={skill.image.childImageSharp.fluid}
+            src={skill.image.publicURL}
+            alt={skill.title}
           />
           <HighlightedHeading
             level={2}
@@ -92,7 +95,7 @@ const SkillTemplate = ({data}) => {
             おすすめの教材
           </HighlightedHeading>
           <OgpList ogpList={recommended} />
-          <SkillShareSection />
+          {/* <SkillShareSection title={skill.title} url={location.href} /> */}
         </NarrowedContainer>
       </main>
       <Footer />
@@ -102,6 +105,7 @@ const SkillTemplate = ({data}) => {
 
 SkillTemplate.propTypes = {
   data: PropTypes.object,
+  location: PropTypes.object,
 }
 
 export default SkillTemplate
@@ -120,11 +124,7 @@ export const query = graphql`
         practical
       }
       image {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
+        publicURL
       }
       scene {
         id
@@ -143,6 +143,8 @@ export const query = graphql`
             twitterCard
             ogDescription
             ogImage {
+              extension
+              publicURL
               childImageSharp {
                 fluid {
                   ...GatsbyImageSharpFluid_withWebp

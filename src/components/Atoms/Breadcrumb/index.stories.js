@@ -16,7 +16,7 @@ storiesOf('Atoms/Breadcrumb', module)
     </Breadcrumb>
   ))
   .add('Custom separator: >', () => (
-    <Breadcrumb separator={'>'}>
+    <Breadcrumb separator='>'>
       <a>item 1</a>
       <a>item 2</a>
       <a>item 3</a>

@@ -30,11 +30,7 @@
 }
 
 .item {
-  margin-bottom: var(--space-112);
-
-  @include mediaQuery(md) {
-    margin-bottom: var(--space-64-fixed);
-  }
+  margin-bottom: var(--space-64);
 
   @include mediaQuery(sm) {
     margin-bottom: var(--space-32-fixed);

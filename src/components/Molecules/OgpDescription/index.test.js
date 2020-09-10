@@ -9,7 +9,7 @@ describe('OgpDescription', () => {
   })
 
   it('descriptionがある時、InfoTxtを表示する', () => {
-    const wrapper = mount(<OgpDescription description={'description'} />)
+    const wrapper = mount(<OgpDescription description='description' />)
     expect(wrapper.find('p.description')).toHaveLength(1)
   })
 })

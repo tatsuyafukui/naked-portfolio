@@ -31,14 +31,13 @@
   ::after {
     background-color: var(--color-line);
     border-radius: var(--radius-circle);
-    bottom: 0;
     content: '';
     display: block;
     height: 6px;
     left: 0;
     margin: auto;
     position: absolute;
-    top: 0;
+    top: calc(var(--font-size-m) * var(--line-height-s) / 2);
     width: 6px;
   }
 }

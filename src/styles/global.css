@@ -37,6 +37,7 @@
   --color-linkedin: #2867b2;
   --color-button-primary: var(--color-aqua);
   --color-button-primary-hover: #23a4b0;
+  --color-404background: #f9fbfe;
 
   /* 文字：サイズ（レスポンシブ） */
   --font-size-xs: 14px;
@@ -134,6 +135,8 @@
   --z-header: none;
   --z-overlay: 10;
   --z-overlay-content: 20;
+  --z-404: 10;
+  --z-background: -10;
 }
 
 html {

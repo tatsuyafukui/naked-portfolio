@@ -15,15 +15,7 @@
       }
     },
     "image": {
-      "childImageSharp": {
-        "fluid": {
-          "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAACXBIWXMAABYlAAAWJQFJUiTwAAAEH0lEQVRIx61VW1NbVRTOD/CpoxahQCCFkEDCSXJy5TQ3IARardPRcXz1D+iMD1afdMYna28hhNKL4WqgUmvRUVGnM5UXqy/QQlsK1YIMlwBjB0oIuX2uvXMpDRYe6pr5zl5773W+s/Zaa68j29raQjweRzKZRCwWQyKR4DpbZ/NoNMrBbBjYGttnOluPRCIcTGd7MraxurqK6ekprK+tYWbmIdcjkQ08evQPgBSYhMNLWFiYJ9sVTExMYHFxEfnCnJAx5ebvf+DUWT+C3b0InDsPn78dwa4eXAp24fzFIO5PTWN0dAxt7R34orMbrW3tuHApiJ6+EPovD6Kzpw+3bo9zUk544pQPyioBzvpmGCUXLJIbWoMVFWoBL+wrIPJedNLHKqp1kNxeqAQzylQCypS1qKoxYd/+Upw80/qE8Cx5JCi08BrdEMi4WjBxaEQrCooPoi90Gd3kRYlaB/HVt6BtPAqtowl1tiY0eN5GtbYOrYFzTwhP+9pQVKZEU60dTaILBpsDOpMEsyih4IACvV8OoIsICw7WQGh5ExpnMyTpCOotXmgMFhTKKykM2wjPEGEhETqNTjQanHDR0W2OBkhGOwqLKyhW/TxeRQo1NFIDtPQh0dwAvdnNP1xYmkd42udHSbkKXks93vC8DgfFyWRxwCYewssHyjlZb2iA4qWHoDfTqONQ1ghQ6YwokivzCP0BqBUaNOudPCkGqx16I3lhsHFCdmQeQ0qEvvE1VFucUNtcMFk98NCxi+nIvqeO3BqgRSX0ehvUWhFVGgNUNLL47GcxDKUJeQy9xyiGLdA1HIXoOAyT5xjkVbV5HlINvkSeqHUmTpYFy/SLr8h5DHlSKCwaVws0JgdMtmaYpcPQmu0oKK3gtZsj9Ac6IK+sgWil7BrrcmDzEoUKoYGvCIO8Lg3mQ3xPoJISRBtEix3lSg0CHRfThOzuLoXDmLhzF/cm7+8AW2dXc4Wwm004vMz7gCzbHFKp1FNgDYCNzGh2dpbu+AzXs3vJZCqDtB3j4HeZPVKZBsAkuU3PykbkMdY31rGbMI5cc7g7fg/XBq/h+s838NvITdz4ZQTffTOMoSvfY+jrH7jO56Tn49urP+JK/xDujE9yTznhhZ9GYD3+Cd6/Ooy2W1N4b+g6pI99MHzwGcQPP4d4/MQzYf7oJCrf/RSB4V8zWaa4dC6s4sjELN6ZnEPT2AO4Rx/Ac/sveMYf7olmgm3sTwTnV4BEHDLWZTfp7JtEHE1Q12bdOJkeY2xO6+lxF5BtlDhySYkT6fMK48gRMi/zy4ZjM4rU2mOkIptpPTvm2TGJ/RchT39mpAIDlleBv+eB2TlgbiGtLy1vq5U9CHcg84vagT08TNHkme9m3tgTjINxybL/WnatngeMg/+X6REj5v8FTP4FnPFd2b4aPHIAAAAASUVORK5CYII=",
-          "aspectRatio": 0.7604562737642585,
-          "src": "/static/49a2343e00cf386c79817224d79d55ec/ee604/skill.png",
-          "srcSet": "/static/49a2343e00cf386c79817224d79d55ec/69585/skill.png 200w,\n/static/49a2343e00cf386c79817224d79d55ec/497c6/skill.png 400w,\n/static/49a2343e00cf386c79817224d79d55ec/ee604/skill.png 800w,\n/static/49a2343e00cf386c79817224d79d55ec/f3583/skill.png 1200w,\n/static/49a2343e00cf386c79817224d79d55ec/053e0/skill.png 1246w",
-          "sizes": "(max-width: 800px) 100vw, 800px"
-        }
-      }
+      "publicURL": "/static/4edfb1c97e8a31fdd17809f2ecced2c4/illustration.svg"
     },
     "overall": "まずはHTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどの様に見た目が変わるかを確認してみましょう。ブラウザの開発者ツールを使えば、表示レイアウトの確認・修正を簡単に行えます。<br/><br/>レイアウトを組むときは、\"ボックスモデル\"（縦並びや横並び）について理解しておくと、スムーズにWebページを作ることができます。CSSのプロパティはスタイルを適用するHTMLタグの種類によって結果が変わるものもあるので、その点も意識して学んでいくと良いでしょう。<br/><br/>慣れてきたら「HTML タグ」「HTML 属性」「CSS プロパティ」などで検索し、新しいタグやプロパティをどんどん使ってみましょう！",
     "overview": "HTML&CSSはWebページを作るために使われる言語です。<br/><br/>インターネット上に公開されているホームページや物販ページ（ECサイト）は、Webサーバー上にHTML&CSSで作成したファイルを置くことで、全世界の皆に公開することが出来ます。<br/><br/>HTMLは文字や画像など表示する対象とその構造を指定する役割があり、表示対象の特性に応じて様々な\"タグ\"を使用してWebページに表示する構造を記述します。CSSは色やレイアウトなど見た目を装飾する役割を担っており、HTMLで記述した\"タグ\"要素に対して\"プロパティ\"で見た目を指定します。",

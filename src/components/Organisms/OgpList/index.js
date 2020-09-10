@@ -18,7 +18,7 @@ const OgpList = ({ogpList, ...props}) => {
         ogpList.map(item => (
           <ListItem key={item.id} className={styles.listItem}>
             <BoldHeading level={3} visualLevel={5} className={styles.title}>
-              {item.title}ss
+              {item.fields ? item.fields.ogp.ogTitle : item.title}
             </BoldHeading>
             <div className={styles.ogpWrap}>
               <LongTxt className={styles.description}>
@@ -32,10 +32,7 @@ const OgpList = ({ogpList, ...props}) => {
                   description={item.fields.ogp.ogDescription}
                   url={item.url}
                   isbn={item.isbn}
-                  image={
-                    item.fields.ogp.ogImage &&
-                    item.fields.ogp.ogImage.childImageSharp.fluid
-                  }
+                  ogImage={item.fields.ogp.ogImage}
                   twitterCard={item.fields.ogp.twitterCard}
                 />
               ) : (

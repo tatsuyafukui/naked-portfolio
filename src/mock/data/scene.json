@@ -5,7 +5,7 @@
     "title": "Webページを作れるようになろう",
     "description": "プログラミング学習をしていても、そこからローカルで自分の力で開発を始めるにはまだまだ高い壁を感じてしまうかもしれません。しかし、ローカルで「自分だけのWebページ」を作ることが本当の創れる力につながります。このシーンのストーリーを読んでWebページをローカルで開発するために必要なスキルを確認しましょう！",
     "image": {
-      "publicURL": "/static/04582033037991281f57d537d78b3aab/scene1.svg"
+      "publicURL": "/static/79aca6b03201eae2ab20e2509c9dcc03/scene1.svg"
     },
     "fields": {
       "slug": "/scenes/web-basics"

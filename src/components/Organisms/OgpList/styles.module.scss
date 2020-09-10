@@ -7,12 +7,12 @@
 }
 
 .title {
-  display: inline-block;
-  margin-bottom: var(--space-12);
+  display: inline;
 }
 
 .description {
   margin-bottom: var(--space-16-fixed);
+  margin-top: var(--space-12);
 }
 
 .ogpWrap {

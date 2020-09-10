@@ -1,9 +1,23 @@
 @import '../../properties';
 
+.keyVisual,
+.heroTxtwrap {
+  position: absolute;
+}
+
 .keyVisual {
+  left: 0;
+  top: 0;
+  z-index: var(--z-background);
+}
+
+.heroContainer {
   align-items: center;
   display: flex;
   justify-content: center;
+}
+
+.heroTxtWrap {
   text-align: center;
 }
 
@@ -41,9 +55,11 @@
 
 .image {
   margin-top: var(--space-40);
+  width: 100%;
 
   @include mediaQuery(sm) {
     align-self: center;
+    max-width: unset;
     width: 100vw;
   }
 }
@@ -53,7 +69,6 @@
     border-radius: 5px;
     margin: 0 var(--space-2-fixed);
     padding: calc(0.5 * var(--space-2-fixed)) var(--space-6-fixed);
-    white-space: nowrap;
   }
 
   &[data-type='term'] {

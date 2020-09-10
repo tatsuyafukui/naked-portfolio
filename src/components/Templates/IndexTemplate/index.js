@@ -8,10 +8,12 @@ import List, {ListItem} from '../../Atoms/List'
 import SceneLink from '../../Organisms/SceneLink'
 import {BoldHeading} from '../../Atoms/Heading'
 import {LongTxt} from '../../Atoms/Txt'
+import Seo from '../../seo'
 
 const IndexTemplate = ({scenes}) => {
   return (
     <div className={styles.background}>
+      <Seo title='HOME' />
       <Header />
       <main className={styles.main}>
         <Container>

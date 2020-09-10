@@ -9,7 +9,7 @@
           "slug": "/scenes/web-basics"
         },
         "image": {
-          "publicURL": "/static/04582033037991281f57d537d78b3aab/scene1.svg"
+          "publicURL": "/static/79aca6b03201eae2ab20e2509c9dcc03/scene1.svg"
         }
       },
       {
@@ -20,7 +20,7 @@
           "slug": "/scenes/web-application-development"
         },
         "image": {
-          "publicURL": "/static/04582033037991281f57d537d78b3aab/scene1.svg"
+          "publicURL": "/static/79aca6b03201eae2ab20e2509c9dcc03/scene1.svg"
         }
       },
       {
@@ -31,7 +31,7 @@
           "slug": "/scenes/team-development"
         },
         "image": {
-          "publicURL": "/static/04582033037991281f57d537d78b3aab/scene1.svg"
+          "publicURL": "/static/79aca6b03201eae2ab20e2509c9dcc03/scene1.svg"
         }
       },
       {
@@ -42,7 +42,7 @@
           "slug": "/scenes/releasing-your-application"
         },
         "image": {
-          "publicURL": "/static/04582033037991281f57d537d78b3aab/scene1.svg"
+          "publicURL": "/static/79aca6b03201eae2ab20e2509c9dcc03/scene1.svg"
         }
       },
       {
@@ -53,7 +53,7 @@
           "slug": "/scenes/continuous-delivery"
         },
         "image": {
-          "publicURL": "/static/04582033037991281f57d537d78b3aab/scene1.svg"
+          "publicURL": "/static/79aca6b03201eae2ab20e2509c9dcc03/scene1.svg"
         }
       }
     ]
