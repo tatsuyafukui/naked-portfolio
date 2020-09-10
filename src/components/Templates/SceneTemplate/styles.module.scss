@@ -4,7 +4,7 @@
   padding-bottom: var(--space-112);
 
   @include mediaQuery(md) {
-    padding-bottom: 0;
+    padding-bottom: var(--space-64-fixed);
   }
 }
 

@@ -6,7 +6,6 @@
   padding: var(--space-56-fixed) 0;
 
   @include mediaQuery(sm) {
-    margin-top: var(--space-64-fixed);
     padding: var(--space-40-fixed) 0;
   }
 }
