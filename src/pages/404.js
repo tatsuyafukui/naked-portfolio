@@ -1,5 +1,5 @@
 import React from 'react'
-import NotFoundTemplate from '../components/Templates/404Template'
+import NotFoundTemplate from '../components/Templates/NotFoundTemplate'
 
 const NotFoundPage = () => <NotFoundTemplate />
 
