@@ -22,7 +22,7 @@ const SceneTemplate = ({data}) => {
     <div className={styles.background}>
       <Seo title={scene.title} description={scene.description} lang='ja' />
       <Header />
-      <main>
+      <main className={styles.main}>
         <section className={styles.firstview}>
           <HeroImage>
             <LazyImage src={scene.image.publicURL} alt={scene.title} />
