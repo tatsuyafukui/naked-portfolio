@@ -1,0 +1,9 @@
+@import '../../properties';
+
+main {
+  padding-bottom: var(--space-80-fixed);
+
+  @include mediaQuery(md) {
+    padding-bottom: var(--space-64-fixed);
+  }
+}
