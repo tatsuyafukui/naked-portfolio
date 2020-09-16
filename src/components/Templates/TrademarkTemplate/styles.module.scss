@@ -7,3 +7,11 @@ main {
     padding-bottom: var(--space-64-fixed);
   }
 }
+
+.item {
+  margin-bottom: var(--space-16-fixed);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

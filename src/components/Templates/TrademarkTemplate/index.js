@@ -1,6 +1,5 @@
 import React from 'react'
 import Seo from '../../seo'
-import PropTypes from 'prop-types'
 import Footer from '../../Organisms/Footer'
 import Header from '../../Organisms/Header'
 import styles from './styles.module.scss'
@@ -9,10 +8,20 @@ import NavigationBreadcrumb from '../../Molecules/NavigationBreadcrumb'
 import Link from '../../Atoms/Link'
 import {UnderlinedHeading} from '../../Atoms/Heading'
 import Txt, {LongTxt} from '../../Atoms/Txt'
-import {graphql} from 'gatsby'
+import {graphql, useStaticQuery} from 'gatsby'
 
-const TrademarkTemplate = ({data}) => {
-  const trademarks = data.allTrademarksJson.edges.node
+const TrademarkTemplate = () => {
+  const data = useStaticQuery(graphql`
+    {
+      allTrademarksJson {
+        nodes {
+          id
+          ownership
+        }
+      }
+    }
+  `)
+  const trademarks = data.allTrademarksJson.nodes
 
   return (
     <div>
@@ -24,9 +33,11 @@ const TrademarkTemplate = ({data}) => {
             <Link to='/'>Home</Link>
             <Txt>商標について</Txt>
           </NavigationBreadcrumb>
-          <UnderlinedHeading>Trademark</UnderlinedHeading>
+          <UnderlinedHeading>商標について</UnderlinedHeading>
           {trademarks.map(trademark => (
-            <LongTxt key={trademark.id}>{trademark.ownership}</LongTxt>
+            <LongTxt className={styles.item} key={trademark.id}>
+              {trademark.ownership}
+            </LongTxt>
           ))}
         </Container>
       </main>
@@ -35,21 +46,4 @@ const TrademarkTemplate = ({data}) => {
   )
 }
 
-TrademarkTemplate.propTypes = {
-  data: PropTypes.object.isRequired,
-}
-
 export default TrademarkTemplate
-
-export const query = graphql`
-  query {
-    allTrademarksJson {
-      edges {
-        node {
-          id
-          ownership
-        }
-      }
-    }
-  }
-`
