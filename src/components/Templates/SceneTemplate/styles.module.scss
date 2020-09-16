@@ -38,6 +38,7 @@
 .title {
   margin-right: var(--space-64);
   max-width: 430px;
+  min-width: 280px;
 
   @include mediaQuery(lg) {
     font-size: var(--font-size-xxxl-fixed) !important;
@@ -48,6 +49,7 @@
     margin-bottom: var(--space-24);
     margin-right: 0;
     max-width: 620px;
+    min-width: unset;
   }
 
   @include mediaQuery(sm) {

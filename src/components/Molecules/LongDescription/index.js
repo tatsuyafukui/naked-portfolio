@@ -1,44 +1,74 @@
 import React, {useState} from 'react'
+import styles from './styles.module.scss'
 import {LongTxt, InfoTxt} from '../../Atoms/Txt'
-import TextTruncate from '../../Atoms/TextTruncate'
 import PropTypes from 'prop-types'
 import {useMediaQuery} from 'react-responsive'
 import {MEDIA_QUERY_MD} from '../../../constants'
+import {containPresenter} from '../../utils/HoC'
 
-const LongDescription = ({maxChars, truncateText, children}) => {
+const LongDescriptionPresenter = ({
+  clampCount,
+  children,
+  truncateButton,
+  className,
+  ...props
+}) => (
+  <LongTxt className={className} {...props}>
+    <span
+      className={styles.textTruncate}
+      style={clampCount}
+      dangerouslySetInnerHTML={{__html: children}}
+    />
+    {truncateButton}
+  </LongTxt>
+)
+
+LongDescriptionPresenter.propTypes = {
+  clampCount: PropTypes.object,
+  children: PropTypes.string.isRequired,
+  truncateButton: PropTypes.node,
+  className: PropTypes.string,
+}
+
+const LongDescriptionContainer = ({
+  lineClamp,
+  truncateText,
+  children,
+  presenter,
+  ...props
+}) => {
   const [open, setOpen] = useState(false)
   const isMobile = useMediaQuery({query: MEDIA_QUERY_MD})
-
   const clickOpenHandler = () => {
     setOpen(true)
   }
-
-  return (
-    <LongTxt>
-      <TextTruncate
-        open={!isMobile || open}
-        maxChars={maxChars}
-        truncateText={
-          <button key='read-more' onClick={clickOpenHandler}>
-            <InfoTxt>{truncateText}</InfoTxt>
-          </button>
-        }
-      >
-        {children}
-      </TextTruncate>
-    </LongTxt>
+  const isExpanded = !isMobile || open
+  const clampCount = {
+    WebkitLineClamp: !isExpanded ? lineClamp : 'unset',
+  }
+  const truncateButton = !isExpanded && (
+    <button key={'read-more'} onClick={clickOpenHandler}>
+      <InfoTxt>{truncateText}</InfoTxt>
+    </button>
   )
+
+  return presenter({clampCount, children, truncateButton, ...props})
 }
+
+const LongDescription = containPresenter(
+  LongDescriptionContainer,
+  LongDescriptionPresenter
+)
 
 export default LongDescription
 
 LongDescription.propTypes = {
   children: PropTypes.string.isRequired,
-  maxChars: PropTypes.number,
   truncateText: PropTypes.string,
+  lineClamp: PropTypes.number,
 }
 
 LongDescription.defaultProps = {
-  maxChars: 50,
   truncateText: '続きを読む',
+  lineClamp: 3,
 }

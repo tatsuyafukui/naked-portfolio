@@ -5,7 +5,8 @@ import Seo from '../../seo'
 import NavigationBreadcrumb from '../../Molecules/NavigationBreadcrumb'
 import Container from '../../Atoms/Container'
 import Link from '../../Atoms/Link'
-import Txt, {LongTxt} from '../../Atoms/Txt'
+import Txt from '../../Atoms/Txt'
+import LongDescription from '../../Molecules/LongDescription'
 import {BoldHeading} from '../../Atoms/Heading'
 import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
@@ -36,11 +37,9 @@ const SceneTemplate = ({data}) => {
               <BoldHeading level={1} className={styles.title}>
                 {scene.title}
               </BoldHeading>
-              <div className={styles.description}>
-                <LongTxt
-                  dangerouslySetInnerHTML={{__html: scene.description}}
-                />
-              </div>
+              <LongDescription className={styles.description}>
+                {scene.description}
+              </LongDescription>
             </div>
           </Container>
         </section>
