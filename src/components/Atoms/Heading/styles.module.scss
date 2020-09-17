@@ -24,12 +24,10 @@
 
 .underline {
   align-self: flex-start;
-  border-bottom: solid 1px var(--color-opacity15-black);
+  border-bottom: var(--border);
   display: block;
   font-weight: var(--font-weight-bold);
-  margin-bottom: var(--space-40);
-  margin-top: var(--space-40);
-  padding-bottom: 0.5em;
+  padding-bottom: var(--space-24);
 }
 
 .h1 {

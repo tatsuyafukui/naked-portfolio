@@ -15,7 +15,6 @@ const TrademarkTemplate = () => {
     {
       allTrademarksJson {
         nodes {
-          id
           ownership
         }
       }
@@ -25,7 +24,7 @@ const TrademarkTemplate = () => {
 
   return (
     <div>
-      <Seo title='Trademark' />
+      <Seo title='商標について' />
       <Header />
       <main className={styles.main}>
         <Container>
@@ -33,9 +32,11 @@ const TrademarkTemplate = () => {
             <Link to='/'>Home</Link>
             <Txt>商標について</Txt>
           </NavigationBreadcrumb>
-          <UnderlinedHeading>商標について</UnderlinedHeading>
-          {trademarks.map(trademark => (
-            <LongTxt className={styles.item} key={trademark.id}>
+          <UnderlinedHeading className={styles.title}>
+            商標について
+          </UnderlinedHeading>
+          {trademarks.map((trademark, index) => (
+            <LongTxt className={styles.item} key={index}>
               {trademark.ownership}
             </LongTxt>
           ))}

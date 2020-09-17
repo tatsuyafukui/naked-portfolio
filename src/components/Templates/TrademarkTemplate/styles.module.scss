@@ -1,6 +1,6 @@
 @import '../../properties';
 
-main {
+.main {
   padding-bottom: var(--space-80-fixed);
 
   @include mediaQuery(md) {
@@ -8,8 +8,13 @@ main {
   }
 }
 
+.title {
+  margin-bottom: var(--space-40);
+  margin-top: var(--space-40);
+}
+
 .item {
-  margin-bottom: var(--space-16-fixed);
+  margin-bottom: var(--space-16);
 
   &:last-child {
     margin-bottom: 0;
