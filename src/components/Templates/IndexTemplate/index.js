@@ -8,6 +8,7 @@ import Txt, {LongTxt} from '../../Atoms/Txt'
 import {NarrowedContainer} from '../../Atoms/Container'
 import List, {ListItem} from '../../Atoms/List'
 import Button from '../../Atoms/Button'
+import {navigate} from 'gatsby'
 
 const IndexTemplate = () => {
   return (
@@ -201,7 +202,9 @@ const IndexTemplate = () => {
               </div>
             </List>
           </div>
-          <Button className={styles.button}>シーンを選ぼう</Button>
+          <Button onClick={() => navigate('/scenes')} className={styles.button}>
+            シーンを選ぼう
+          </Button>
         </NarrowedContainer>
       </main>
       <Footer className={styles.footer} />
