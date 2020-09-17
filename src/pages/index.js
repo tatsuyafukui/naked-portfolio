@@ -1,27 +1,8 @@
 import React from 'react'
-import {graphql, useStaticQuery} from 'gatsby'
 import IndexTemplate from '../components/Templates/IndexTemplate'
 
 const IndexPage = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      allScenesJson {
-        nodes {
-          id
-          numberTitle
-          title
-          fields {
-            slug
-          }
-          image {
-            publicURL
-          }
-        }
-      }
-    }
-  `)
-
-  return <IndexTemplate scenes={data.allScenesJson.nodes} />
+  return <IndexTemplate />
 }
 
 export default IndexPage

@@ -1,0 +1,38 @@
+@import '../../properties';
+
+.background {
+  background: var(--color-background);
+}
+
+.main {
+  padding-bottom: var(--space-112);
+
+  @include mediaQuery(md) {
+    padding-bottom: var(--space-64-fixed);
+  }
+}
+
+.titleWrap {
+  margin: var(--space-72) 0;
+  text-align: center;
+
+  @include mediaQuery(md) {
+    text-align: left;
+  }
+
+  @include mediaQuery(sm) {
+    text-align: left;
+  }
+}
+
+.title {
+  margin-bottom: var(--space-16);
+}
+
+.item {
+  margin-bottom: var(--space-64);
+
+  @include mediaQuery(sm) {
+    margin-bottom: var(--space-32-fixed);
+  }
+}
