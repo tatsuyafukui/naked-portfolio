@@ -23,6 +23,20 @@
   }
 }
 
+.scenes {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  > img {
+    border: var(--border);
+    height: 120px;
+    object-fit: cover;
+    width: 30%;
+  }
+}
+
 .standard {
   @include mediaQuery(sm) {
     align-self: center;
