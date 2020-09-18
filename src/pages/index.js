@@ -8,7 +8,7 @@ const IndexPage = () => {
       allScenesJson {
         nodes {
           id
-          numberTitle
+          number
           title
           fields {
             slug
