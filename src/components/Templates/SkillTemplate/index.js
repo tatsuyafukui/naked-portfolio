@@ -76,25 +76,18 @@ const SkillTemplate = ({data, location}) => {
             visualLevel={4}
             className={styles.highlightedHeading}
           >
-            学習の目安
-          </HighlightedHeading>
-          <SkillStandard standard={skill.standard} />
-          <HighlightedHeading
-            level={2}
-            visualLevel={4}
-            className={styles.highlightedHeading}
-          >
             ここから学ぼう
           </HighlightedHeading>
           <LongTxt dangerouslySetInnerHTML={{__html: skill.overall}} />
+          <OgpList ogpList={recommended} />
           <HighlightedHeading
             level={2}
             visualLevel={4}
             className={styles.highlightedHeading}
           >
-            おすすめの教材
+            チェックポイント
           </HighlightedHeading>
-          <OgpList ogpList={recommended} />
+          <SkillStandard standard={skill.standard} />
           {/* <SkillShareSection title={skill.title} url={location.href} /> */}
         </NarrowedContainer>
       </main>
