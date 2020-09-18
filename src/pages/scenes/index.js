@@ -1,8 +1,8 @@
 import React from 'react'
 import {graphql, useStaticQuery} from 'gatsby'
-import SceneIndexTemplate from '../../components/Templates/SceneIndexTemplate'
+import SceneListTemplate from '../../components/Templates/SceneListTemplate'
 
-const IndexPage = () => {
+const SceneListPage = () => {
   const data = useStaticQuery(graphql`
     query {
       allScenesJson {
@@ -21,7 +21,7 @@ const IndexPage = () => {
     }
   `)
 
-  return <SceneIndexTemplate scenes={data.allScenesJson.nodes} />
+  return <SceneListTemplate scenes={data.allScenesJson.nodes} />
 }
 
-export default IndexPage
+export default SceneListPage

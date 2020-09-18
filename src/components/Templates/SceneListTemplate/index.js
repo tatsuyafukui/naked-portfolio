@@ -10,7 +10,7 @@ import {BoldHeading} from '../../Atoms/Heading'
 import {LongTxt} from '../../Atoms/Txt'
 import Seo from '../../seo'
 
-const IndexTemplate = ({scenes}) => {
+const SceneListTemplate = ({scenes}) => {
   return (
     <div className={styles.background}>
       <Seo title='シーン一覧' />
@@ -41,8 +41,8 @@ const IndexTemplate = ({scenes}) => {
   )
 }
 
-export default IndexTemplate
+export default SceneListTemplate
 
-IndexTemplate.propTypes = {
+SceneListTemplate.propTypes = {
   scenes: PropTypes.array,
 }

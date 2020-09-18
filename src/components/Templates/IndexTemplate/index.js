@@ -12,7 +12,7 @@ import {navigate} from 'gatsby'
 
 const IndexTemplate = () => {
   return (
-    <div className={styles.background}>
+    <div>
       <Seo title='HOME' />
       <Header />
       <div className={styles.title}>
@@ -70,7 +70,7 @@ const IndexTemplate = () => {
                 <ListItem className={styles.listItem}>
                   <Txt tag='span'>
                     <strong>教材そのものではありません</strong>
-                  </Txt>{' '}
+                  </Txt>
                 </ListItem>
                 <LongTxt className={styles.listItemTxt}>
                   ロードマップは目標に対しての計画表です。実際に学ぶ教材と一緒に使うことで最大限の効果を発揮します。教材も紹介していますので、ぜひ合わせてご利用下さい。{' '}
@@ -80,7 +80,7 @@ const IndexTemplate = () => {
                 <ListItem className={styles.listItem}>
                   <Txt tag='span'>
                     <strong>学習には時間がかかります</strong>
-                  </Txt>{' '}
+                  </Txt>
                 </ListItem>
                 <LongTxt className={styles.listItemTxt}>
                   journeyではWeb開発に必要なスキルを24個に分けて紹介しています。1つ学ぶだけでも数週間〜数ヶ月かかることもありますが、焦らずに1歩ずつ目標へ向かいましょう。{' '}
@@ -113,7 +113,7 @@ const IndexTemplate = () => {
                 <ListItem className={styles.listItem}>
                   <Txt tag='span'>
                     <strong>学ぶ目的</strong>
-                  </Txt>{' '}
+                  </Txt>
                 </ListItem>
                 <LongTxt visualLevel={2} className={styles.listItemTxt}>
                   目標のためにスキルが<strong>なぜ必要</strong>か。実践で
@@ -124,7 +124,7 @@ const IndexTemplate = () => {
                 <ListItem className={styles.listItem}>
                   <Txt tag='span'>
                     <strong>ここから学ぼう</strong>
-                  </Txt>{' '}
+                  </Txt>
                 </ListItem>
                 <LongTxt visualLevel={2} className={styles.listItemTxt}>
                   スキルを<strong>どう学ぶ</strong>のか。
@@ -135,7 +135,7 @@ const IndexTemplate = () => {
                 <ListItem className={styles.listItem}>
                   <Txt tag='span'>
                     <strong>チェックポイント</strong>
-                  </Txt>{' '}
+                  </Txt>
                 </ListItem>
                 <LongTxt visualLevel={2} className={styles.listItemTxt}>
                   スキルを<strong>どこまで学べばいい</strong>
@@ -174,14 +174,14 @@ const IndexTemplate = () => {
                 <ListItem className={styles.olItem}>
                   <Txt visualLevel={2} tag='span'>
                     <strong>２. プログラミングの世界へ1歩踏み出そう</strong>
-                  </Txt>{' '}
+                  </Txt>
                 </ListItem>
               </div>
               <div>
                 <ListItem className={styles.olItem}>
                   <Txt visualLevel={2} tag='span'>
                     <strong>３. みんなでアプリケーションを開発しよう</strong>
-                  </Txt>{' '}
+                  </Txt>
                 </ListItem>
               </div>
               <div>
@@ -190,14 +190,14 @@ const IndexTemplate = () => {
                     <strong>
                       ４. 公開できるプロダクトに必要なことを知ろう
                     </strong>
-                  </Txt>{' '}
+                  </Txt>
                 </ListItem>
               </div>
               <div>
                 <ListItem className={styles.olItem}>
                   <Txt visualLevel={2} tag='span'>
                     <strong>５. 継続してプロダクトを届けよう</strong>
-                  </Txt>{' '}
+                  </Txt>
                 </ListItem>
               </div>
             </List>
@@ -207,7 +207,7 @@ const IndexTemplate = () => {
           </Button>
         </NarrowedContainer>
       </main>
-      <Footer className={styles.footer} />
+      <Footer />
     </div>
   )
 }
