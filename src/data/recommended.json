@@ -6,53 +6,10 @@
     "url": "https://prog-8.com/lessons/html/study/1"
   },
   {
-    "skillId": "html-and-css",
-    "title": "いちばんよくわかるHTML5&CSS3デザインきちんと入門",
-    "description": "目次が逆引き辞書になっていて、実現したいことからHTMLやCSSの書き方を調べられます。その他にもWebサイトが表示される仕組みやフォルダ構成、Webページ開発に必要な環境についてもわかりやすい表現で説明されています。",
-    "url": "https://www.amazon.co.jp/dp/4797388544",
-    "isbn": "4797388544"
-  },
-  {
-    "skillId": "html-and-css",
-    "title": "w3schools HTML Tutorial（英語）",
-    "description": "体系的にHTMLのタグや属性などを学ぶことができます。実行環境やクイズなども用意されており、内容も豊富なので、より深く学びたい人におすすめです。",
-    "url": "https://www.w3schools.com/html/"
-  },
-  {
-    "skillId": "html-and-css",
-    "title": "w3schools CSS Tutorial（英語）",
-    "description": "HTMLと同じく体系的にCSSのプロパティなどを学ぶことができます。実装の例も豊富なので参考にしながら自分のWebページに取り入れるのもいいでしょう。",
-    "url": "https://www.w3schools.com/css/"
-  },
-  {
-    "skillId": "html-and-css",
-    "title": "Web Content Accessibility Guidelines (WCAG) 2.1（英語）",
-    "description": "Webアクセシビリティのガイドラインです。より多くのユーザーが使いやすいWebページの作り方について知りたい人はぜひ読んでみましょう。",
-    "url": "https://www.w3.org/WAI/standards-guidelines/wcag/"
-  },
-  {
     "skillId": "editors",
     "title": "Documentation for Visual Studio Code（英語）",
     "description": "マイクロソフトが提供している現在多くの開発者が利用しているエディタです。無料で利用することができ拡張機能も豊富です。",
     "url": "https://code.visualstudio.com/docs"
-  },
-  {
-    "skillId": "editors",
-    "title": "ドキュメント - IntelliJ IDEA",
-    "description": "JavaやKotlinなどのJVM言語用の統合開発環境（IDE）です。コミュニティエディションは無料で利用できます。豊富な機能がデフォルトで備わっているので、IDEに興味があれば使ってみるとよいでしょう。",
-    "url": "https://www.jetbrains.com/ja-jp/idea/resources/"
-  },
-  {
-    "skillId": "editors",
-    "title": "Vim Tutorial（英語）",
-    "description": "初学者が使いこなすには練習が必要ですが、ターミナル上でコードを変更するときもあるため、基本的な操作は覚えておくとよいでしょう。Vimが使えるターミナルで「vimtutor」と入力してチュートリアルを行うのもおすすめです。",
-    "url": "https://www.tutorialspoint.com/vim/index.htm"
-  },
-  {
-    "skillId": "internet",
-    "title": "Progate Webについて知ろう！",
-    "description": "インターネットの入門の内容を会話や図解を中心に説明しています。概要を押さえたい方は記事を読んでみるとよいでしょう。",
-    "url": "https://prog-8.com/docs/web"
   },
   {
     "skillId": "internet",
@@ -62,19 +19,6 @@
     "isbn": "4797388811"
   },
   {
-    "skillId": "internet",
-    "title": "Webを支える技術",
-    "description": "インターネットを理解する上で欠かせないWebの説明がしっかりとされています。インターネットやWebについてもっと学びたい人は読んでおきましょう。",
-    "url": "https://www.amazon.co.jp/dp/4774142042",
-    "isbn": "4774142042"
-  },
-  {
-    "skillId": "internet",
-    "title": "Wikipedia インターネット",
-    "description": "インターネットの起源や歴史、社内的影響など周辺知識も含めたインターネットに関わる全体像を知ることができます。",
-    "url": "https://ja.wikipedia.org/wiki/internet"
-  },
-  {
     "skillId": "javascript",
     "title": "Progate JavaScript 学習コース Ⅰ",
     "description": "基本的な文法から学びたい人はProgateがおすすめです。はじめての人でも理解できるように説明されています。",
@@ -82,22 +26,9 @@
   },
   {
     "skillId": "javascript",
-    "title": "確かな力が身につくJavaScript「超」入門 第２版",
-    "description": "HTMLとCSSはなんとなくわかるけど、JavaScriptについての知識はゼロの読者を対象に書かれています。動きのあるWebページを作りながらAjaxやJSON、Web APIを使う方法を学べます。",
-    "url": "https://www.amazon.co.jp/dp/4815601577",
-    "isbn": "4815601577"
-  },
-  {
-    "skillId": "javascript",
-    "title": "JavaScript Primer ",
-    "description": "JavaScriptの教材として有名な書籍のオンライン版です。プログラミング経験者向けの内容ですが、実践に必要なことがカバーされているので、本格的にJavaScriptを学びたい人におすすめです。",
-    "url": "https://jsprimer.net/"
-  },
-  {
-    "skillId": "developer-tools",
-    "title": "Progate 検証ツール（デベロッパーモード）の使い方",
-    "description": "開発者ツールの入門として、HTMLとCSSのデバッグ方法について説明しています。はじめての方におすすめです。",
-    "url": "https://prog-8.com/docs/html-dev"
+    "title": "MDN JavaScript",
+    "description": "Progateで紹介できなかった、イベントや非同期処理、ブラウザ APIについてゼロから学ぶことができます。Progateで学んだことを復習しながら、学習を進めましょう。",
+    "url": "https://developer.mozilla.org/ja/docs/Learn/JavaScript"
   },
   {
     "skillId": "developer-tools",
@@ -106,76 +37,10 @@
     "url": "https://developers.google.com/web/tools/chrome-devtools?hl=ja"
   },
   {
-    "skillId": "developer-tools",
-    "title": "開発ツール",
-    "description": "Firefoxブラウザの開発者ツールのドキュメントです。Firefoxを利用している場合はこちらのドキュメントを読みましょう。",
-    "url": "https://developer.mozilla.org/ja/docs/Tools"
-  },
-  {
     "skillId": "server-side-programming",
     "title": "Progate Ruby 学習コース Ⅰ",
     "description": "Rubyはオープンソースのスクリプト言語で、Webアプリケーション開発で人気の言語です。Ruby on Railsというフレームワークと合わせて高い生産性で開発ができます。",
     "url": "https://prog-8.com/lessons/ruby/study/1"
-  },
-  {
-    "skillId": "server-side-programming",
-    "title": "Progate Python 学習コース Ⅰ",
-    "description": "Pythonは機械学習で有名ですが、Webアプリケーション開発でも人気のスクリプト言語です。「読みやすさ・わかりやすさ」をとても重視していて、Pythonを知らない人でも理解しやすいのが特徴です。",
-    "url": "https://prog-8.com/lessons/python/study/1"
-  },
-  {
-    "skillId": "server-side-programming",
-    "title": "w3schools Python Tutorial（英語）",
-    "description": "Progateを終わったあと、さらにPythonについて学びたい人におすすめです。",
-    "url": "https://www.w3schools.com/python/default.asp"
-  },
-  {
-    "skillId": "server-side-programming",
-    "title": "The Python Tutorial",
-    "description": "Pythonの公式チュートリアルです。他のプログラミング言語の経験がある人は公式チュートリアルで学ぶといいでしょう。",
-    "url": "https://docs.python.org/ja/3/tutorial/index.html"
-  },
-  {
-    "skillId": "server-side-programming",
-    "title": "Progate PHP 学習コース Ⅰ",
-    "description": "PHPはオープンソースのスクリプト言語で、HTMLに埋め込むことができるのが特徴です。WordPressでの利用も多いですが、Lalabelというフレームワークも人気で本格的なWebアプリケーション開発でも利用されています。",
-    "url": "https://prog-8.com/lessons/php/study/1"
-  },
-  {
-    "skillId": "server-side-programming",
-    "title": "w3schools PHP Tutorial（英語）",
-    "description": "Progateを終わったあと、さらにPHPについて学びたい人におすすめです。",
-    "url": "https://www.w3schools.com/php/default.asp"
-  },
-  {
-    "skillId": "server-side-programming",
-    "title": "Progate Java 学習コース Ⅰ",
-    "description": "Javaはコンパイラ言語での一種でオブジェクト指向のプログラミングにも向いています。歴史がありJava開発者も多く、エンタープライズ向けのアプリケーションで数多く採用されている人気の言語です。",
-    "url": "https://prog-8.com/lessons/java/study/1"
-  },
-  {
-    "skillId": "server-side-programming",
-    "title": "w3schools Java Tutorial（英語）",
-    "description": "Progateを終わったあと、さらにJavaについて学びたい人におすすめです。",
-    "url": "https://www.w3schools.com/java/default.asp"
-  },
-  {
-    "skillId": "server-side-programming",
-    "title": "Progate Go 学習コース Ⅰ",
-    "description": "GoはGoogleが開発した比較的新しいオープンソースのコンパイラ言語です。記述がシンプルでパフォーマンスにも優れているため、大規模な開発に向いています。",
-    "url": "https://prog-8.com/lessons/go/study/1"
-  },
-  {
-    "skillId": "server-side-programming",
-    "title": "Go Documentation（英語）",
-    "description": "Go言語の公式ドキュメントです。他のプログラミング言語の経験がある人は公式チュートリアルで学ぶといいでしょう。",
-    "url": "https://golang.org/doc"
-  },
-  {
-    "skillId": "server-side-programming",
-    "title": "The Rust Programming Language",
-    "description": "「the book」としても親しまれており、Rustについて基本原理から学ぶことができます。Rustは初学者には難易度が高いため、他のプログラミング言語を経験してから学ぶのがおすすめです。Webアプリケーション開発では、他の言語で書いた重い処理をRustで置き換えて高速にするなどの活用ができます。",
-    "url": "https://doc.rust-jp.rs/book/second-edition/foreword.html"
   },
   {
     "skillId": "object-oriented-programming",
@@ -183,20 +48,6 @@
     "description": "オブジェクト指向の全体像や必要性がわかりやすく説明されています。クラス、ポリモーフィズム、継承などの要点を押さえているので入門で読んでみると良いでしょう。",
     "url": "https://www.amazon.co.jp/dp/4822284654/",
     "isbn": "4822284654"
-  },
-  {
-    "skillId": "object-oriented-programming",
-    "title": "オブジェクト指向のこころ",
-    "description": "著者の経験した設計を例に、デザインパターンとそれを支えるオブジェクト指向の考え方について深く教えてくれる本です。プログラム設計にオブジェクト指向をどう生かすべきか今一つ理解できないという人にお薦めです。",
-    "url": "https://www.amazon.co.jp/dp/4621066048/",
-    "isbn": "4621066048"
-  },
-  {
-    "skillId": "object-oriented-programming",
-    "title": "オブジェクト指向入門 第2版 原則・コンセプト",
-    "description": "プロダクトの品質からオブジェクト指向の必要性、考え方を特定の言語に依存せずに概念から詳しく説明されています。ある程度の実装を経験してから読むとよりオブジェクト指向について理解できるでしょう。",
-    "url": "https://www.amazon.co.jp/dp/4798111112/",
-    "isbn": "4798111112"
   },
   {
     "skillId": "terminal-operations",
@@ -219,29 +70,9 @@
   },
   {
     "skillId": "databases",
-    "title": "SQL 第2版 ゼロからはじめるデータベース操作",
-    "description": "研修でも利用されるSQLの入門書です。データベースの基礎知識だけでなく、Webアプリケーションとの接続についても説明されています。Progateを終えた方におすすめです。",
-    "url": "https://www.amazon.co.jp/dp/4798144452",
-    "isbn": "4798144452"
-  },
-  {
-    "skillId": "databases",
-    "title": "達人に学ぶSQL徹底指南書 第2版 初級者で終わりたくないあなたへ",
-    "description": "SQLの機能を駆使したクエリの書き方のテクニックや設計、チューニングの考え方などについて学べます。「SQL 第2版 ゼロからはじめるデータベース操作」読んだ人におすすめです。",
-    "url": "https://www.amazon.co.jp/dp/4798157821",
-    "isbn": "4798157821"
-  },
-  {
-    "skillId": "databases",
     "title": "MySQL Tutorial - Learn MySQL Fast, Easy and Fun",
-    "description": "MySQL専用のチュートリアルです。インストールから説明されているので、MySQLを利用する人は読んでみましょう。",
+    "description": "MySQL専用のチュートリアルです。英語教材ですが、Progateでは紹介できなかったトランザクションやインデックスについても学ぶことができます。サーバーサイドプログラミングとの接続方法も解説されているので、ブラウザの翻訳機能を使って学んでみましょう。",
     "url": "https://www.mysqltutorial.org/"
-  },
-  {
-    "skillId": "databases",
-    "title": "PostgreSQL 超入門 第1回",
-    "description": "PostgreSQLのユーザーコミュニティが提供しているドキュメントです。PostgreSQLを利用する人は読んでみましょう。",
-    "url": "https://lets.postgresql.jp/documents/tutorial/postgresql-abc/1-1"
   },
   {
     "skillId": "web-application-frameworks",
@@ -256,42 +87,6 @@
     "url": "https://railsguides.jp/"
   },
   {
-    "skillId": "web-application-frameworks",
-    "title": "Progate Node.js 学習コース Ⅰ",
-    "description": "Node.jsの学習コースではExpressという軽量なフレームワークを使ってWebアプリケーションを作っていきます。すでにJavaScriptを学んでいる人におすすめです。",
-    "url": "https://prog-8.com/lessons/nodejs/study/1"
-  },
-  {
-    "skillId": "web-application-frameworks",
-    "title": "Express - Node.js web application framework（英語）",
-    "description": "Expressの公式サイトです。チュートリアルやドキュメントが揃っているので、開発で気になることがあったら読んでみましょう。",
-    "url": "https://expressjs.com/"
-  },
-  {
-    "skillId": "web-application-frameworks",
-    "title": "Lalavel - ウェブ職人のためのPHPフレームワーク",
-    "description": "LalavelはPHPで人気のフルスタックフレームワークです。クイックスタートのリンクからチュートリアルをはじめることができます。",
-    "url": "http://laravel.jp/"
-  },
-  {
-    "skillId": "web-application-frameworks",
-    "title": "Flaskへ ようこそ",
-    "description": "Pythonで人気の軽量なフレームワークです。簡単なWebアプリケーションの場合はFlaskを使ってみるといいでしょう。",
-    "url": "https://msiz07-flask-docs-ja.readthedocs.io/ja/latest/quickstart.html"
-  },
-  {
-    "skillId": "web-application-frameworks",
-    "title": "Django ドキュメント",
-    "description": "Flaskと同じくPythonで人気のフルスタックフレームワークです。インストールからチュートリアルの説明までされているので、Djangoを学ぶときは読んでみると良いでしょう。",
-    "url": "https://docs.djangoproject.com/ja/"
-  },
-  {
-    "skillId": "web-application-frameworks",
-    "title": "Learn about Spring（英語）",
-    "description": "Javaでもっとも人気のあるフレームワークです。柔軟で豊富な機能があるため、Webアプリケーション以外でも利用できます。",
-    "url": "https://spring.io/learn"
-  },
-  {
     "skillId": "web-api",
     "title": "Web API: The Good Parts",
     "description": "Web APIの必要性から、APIを公開に必要な知識について説明されています。",
@@ -299,45 +94,11 @@
     "isbn": "4873116864"
   },
   {
-    "skillId": "web-api",
-    "title": "Web技術速習テキスト",
-    "description": "WebAPIを使う方法について実在するWebAPI「Postman」などを使って解説しています。",
-    "url": "https://www.amazon.co.jp/dp/4844398768/",
-    "isbn": "4844398768"
-  },
-  {
-    "skillId": "web-api",
-    "title": "Use Cases, Tutorials, & Documentation（英語）",
-    "description": "Twitterが提供しているTwitter APIの紹介とドキュメントです。気になるものがあれば利用してみるといいでしょう。",
-    "url": "https://developer.twitter.com/en"
-  },
-  {
     "skillId": "development-flow",
     "title": "エクストリームプログラミング",
     "description": "アジャイル開発の原点となった書籍です。各プラクティスに対して「なぜ」を丁寧に説明してくれるので、背景を学びたい人におすすめです。",
     "url": "https://www.amazon.co.jp/dp/4274217620/",
     "isbn": "4274217620"
-  },
-  {
-    "skillId": "development-flow",
-    "title": "エンジニアリング組織論への招待",
-    "description": "アジャイルやウォーターフォール両方の面から開発を進めていくときの考え方について説明されています。読んでおくと現場でのチーム開発の進め方に役立つでしょう。",
-    "url": "https://www.amazon.co.jp/dp/4774196053/",
-    "isbn": "4774196053"
-  },
-  {
-    "skillId": "development-flow",
-    "title": "システム開発のためのWBSの作り方",
-    "description": "システム開発プロジェクトで実施する作業や成果物を分解する「WBS（Work Breakdown\nStructure）」の作り方から活用方法までを実践的に解説した１冊。アジャイル以前のスタンダードな開発の進め方や開発計画の基礎を知ることができます。",
-    "url": "https://www.amazon.co.jp/dp/4822211932/",
-    "isbn": "4822211932"
-  },
-  {
-    "skillId": "development-flow",
-    "title": "アジャイルサムライ",
-    "description": "アジャイルの具体的なプラクティスについてまとめられています。イラストや会話などもあり読みやすいので入門者におすすめです。",
-    "url": "https://www.amazon.co.jp/dp/4274068560/",
-    "isbn": "4274068560"
   },
   {
     "skillId": "design-specification",
@@ -348,24 +109,10 @@
   },
   {
     "skillId": "design-specification",
-    "title": "Design It! —プログラマーのためのアーキテクティング入門",
-    "description": "設計の要点と実践的な内容や事例が幅広く説明されています。具体的な進め方について学びたい人は読んでみるといいでしょう。",
-    "url": "https://www.amazon.co.jp/dp/4873118956",
-    "isbn": "4873118956"
-  },
-  {
-    "skillId": "design-specification",
     "title": "達人に学ぶDB設計 徹底指南書 初級者で終わりたくないあなたへ",
     "description": "リレーショナルデータベースの設計についての書籍です。データベースの設計について体系的に説明されているため、データベース設計入門として読むと良いでしょう。",
     "url": "https://www.amazon.co.jp/dp/4798124702",
     "isbn": "4798124702"
-  },
-  {
-    "skillId": "design-specification",
-    "title": "SQLアンチパターン",
-    "description": "リレーショナルデータベースの設計についての書籍です。具体的なケースのアンチパターンについて数多く紹介されているため、実際にSQLを使ってみたあとに読んでみるのがおすすめです。",
-    "url": "https://www.amazon.co.jp/dp/4873115892",
-    "isbn": "4873115892"
   },
   {
     "skillId": "git",
@@ -378,12 +125,6 @@
     "title": "Git - バージョン管理に関して",
     "description": "Gitの公式サイトで紹介されている書籍のオンライン版です。Gitの目的や仕組みから説明されています。",
     "url": "https://git-scm.com/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E7%AE%A1%E7%90%86%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6"
-  },
-  {
-    "skillId": "git",
-    "title": "クイックスタート",
-    "description": "GitHubの公式ドキュメントです。アカウント作成から実際に利用するまでサポートされています。",
-    "url": "https://docs.github.com/ja/github/getting-started-with-github/quickstart"
   },
   {
     "skillId": "git",
@@ -406,13 +147,6 @@
     "isbn": "4274217884"
   },
   {
-    "skillId": "testing",
-    "title": "実践テスト駆動開発",
-    "description": "モックオブジェクトを活用したテスト駆動開発について学ぶことができます。テスト駆動開発について学ぶならこちらの書籍も読んでみましょう。",
-    "url": "https://www.amazon.co.jp/dp/4798124583",
-    "isbn": "4798124583"
-  },
-  {
     "skillId": "refactoring",
     "title": "リーダブルコード",
     "description": "初学者でもすぐに始められる表面的なコードのきれいさについて学ぶことができます。内容も読みやすいので一度は読んでおきましょう。",
@@ -428,16 +162,10 @@
   },
   {
     "skillId": "server-configuration",
-    "title": "nginx Beginner’s Guide（英語）",
-    "description": "Webサーバーソフトウェアでは主流のnginxのガイドです。Webサーバーができることを実際に動かして学んでみましょう。nginxのインストール方法も使っているOSに合わせて調べてみましょう。",
-    "url": "http://nginx.org/en/docs/beginners_guide.html"
-  },
-  {
-    "skillId": "server-configuration",
-    "title": "決定版 コンピュータサイエンス図鑑",
-    "description": "ハードウェアやOS、サーバーソフトウェアの関係を一度整理したい方は読んでみるといいかもしれません。1ページごとに情報がまとまっていて、図解やイラストも多いので、楽しく学ぶことができます。",
-    "url": "https://www.amazon.co.jp/dp/4422414208",
-    "isbn": "4422414208"
+    "title": "図解まるわかり サーバーのしくみ",
+    "description": "サーバーの解説を図解で解説してくれる本です。",
+    "url": "https://www.amazon.co.jp/dp/4798160059",
+    "isbn": "4798160059"
   },
   {
     "skillId": "networking",
@@ -447,29 +175,10 @@
     "isbn": "4822283119"
   },
   {
-    "skillId": "networking",
-    "title": "ネットワーク構築の基礎",
-    "description": "TCP/IPやプロトコルなどのネットワークアーキテクチャーからスイッチやルータまで、ネットワークを学ぶ上で基礎となるキーワードを丁寧に説明しています。ネットワークを学びたいけれど知らない単語が多くて難しいという方におすすめです。",
-    "url": "https://www.amazon.co.jp/dp/4839933804",
-    "isbn": "4839933804"
-  },
-  {
     "skillId": "cloud-services",
     "title": "アマゾン ウェブ サービス（AWS） の開始方法 | AWS",
     "description": "AWSを利用する人は必要なドキュメントを探して実践してみましょう。",
     "url": "https://aws.amazon.com/jp/getting-started/?nc2=h_ql_le_gs"
-  },
-  {
-    "skillId": "cloud-services",
-    "title": "Documentation | Google Cloud",
-    "description": "GCPを利用する人は必要なドキュメントを探して実践してみましょう。",
-    "url": "https://cloud.google.com/docs"
-  },
-  {
-    "skillId": "cloud-services",
-    "title": "Azure を使ってみる | Microsoft Azure",
-    "description": "Azureを利用する人は必要なドキュメントを探して実践してみましょう。",
-    "url": "https://azure.microsoft.com/ja-jp/get-started/"
   },
   {
     "skillId": "web-security",
@@ -479,29 +188,10 @@
     "isbn": "4797393165"
   },
   {
-    "skillId": "web-security",
-    "title": "安全なウェブサイトの作り方：IPA 独立行政法人 情報処理推進機構",
-    "description": "IPAが発表している安全なウェブサイトの作り方です。無料のPDF資料やセキュリティ実装チェックリストも見れるので確認してみましょう。",
-    "url": "https://www.ipa.go.jp/security/vuln/websecurity.html"
-  },
-  {
-    "skillId": "web-security",
-    "title": "OWASP Top 10 Security Vulerabilities 2020 | Sucuri（英語）",
-    "description": "Webアプリケーションセキュリティの分野のオンラインコミュニティであるOWASPのサイトです。流行の脆弱性などを発表しているので、目を通しておくといいでしょう。",
-    "url": "https://sucuri.net/guides/owasp-top-10-security-vulnerabilities-2020/"
-  },
-  {
     "skillId": "ci-cd",
     "title": "circleci - Getting Started Introduction",
     "description": "CI/CDの代表的なツールです。概要から実際に動かすチュートリアルまであるので、自分で構築してどんなものか感覚を掴んでみるといいでしょう。",
     "url": "https://circleci.com/docs/2.0/getting-started/#section=getting-started"
-  },
-  {
-    "skillId": "ci-cd",
-    "title": "The DevOps ハンドブック 理論・原則・実践のすべて",
-    "description": "高い品質を確保しつつ、開発から運用に移るまでの時間を短縮することを目的とした一連のプラクティスを「DevOps」いいます。CI/CDのような仕組みがなぜ必要なのかを知りたい人は読んでみましょう。",
-    "url": "https://www.amazon.co.jp/dp/4822285480",
-    "isbn": "4822285480"
   },
   {
     "skillId": "data-analysis-platform",
