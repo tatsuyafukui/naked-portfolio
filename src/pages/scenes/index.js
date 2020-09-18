@@ -8,13 +8,18 @@ const SceneListPage = () => {
       allScenesJson {
         nodes {
           id
-          numberTitle
+          number
           title
           fields {
             slug
           }
           image {
             publicURL
+          }
+          goal
+          skills {
+            id
+            title
           }
         }
       }

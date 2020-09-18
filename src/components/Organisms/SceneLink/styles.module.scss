@@ -11,6 +11,10 @@
   height: 280px;
   position: relative;
   width: 100%;
+
+  @include mediaQuery(sm) {
+    height: 200px;
+  }
 }
 
 .image {
@@ -37,6 +41,11 @@
   text-align: center;
   top: var(--space-24);
   width: 80px;
+
+  @include mediaQuery(md) {
+    height: 70px;
+    width: 70px;
+  }
 }
 
 .numberTitle {
@@ -44,7 +53,7 @@
 }
 
 .number {
-  font-size: var(--font-size-xxl-fixed);
+  font-size: var(--font-size-xxl);
 }
 
 .textWrap {
@@ -54,6 +63,7 @@
 
 .skillList {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: var(--space-16);
 }
 
@@ -63,6 +73,10 @@
   margin: 0 var(--space-8) var(--space-8) 0;
   padding: var(--space-8) var(--space-16);
   white-space: nowrap;
+
+  &:last-child {
+    margin-bottom: var(--space-8);
+  }
 }
 
 .goal {

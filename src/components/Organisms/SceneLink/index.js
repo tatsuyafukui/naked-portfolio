@@ -38,16 +38,18 @@ const SceneLink = ({scene, className, ...props}) => (
           {scene.title}
         </BoldHeading>
         <List className={styles.skillList}>
-          <ListItem className={styles.skillListItem}>HTML&CSS</ListItem>
-          <ListItem className={styles.skillListItem}>HTML&CSS</ListItem>
-          <ListItem className={styles.skillListItem}>HTML&CSS</ListItem>
+          {scene.skills.map(skill => (
+            <ListItem className={styles.skillListItem} key={skill.id}>
+              {skill.title}
+            </ListItem>
+          ))}
         </List>
         <InfoTxt className={styles.goal}>
           <span>
             <FontAwesomeIcon icon={faFlag} className={styles.icon} />
             ゴール：
           </span>
-          <span>Webページの公開</span>
+          <span>{scene.goal}</span>
         </InfoTxt>
       </div>
     </MediaObjectLayout>
