@@ -45,6 +45,7 @@ const SkillTemplate = ({data, location}) => {
         <Container>
           <NavigationBreadcrumb className={styles.breadcrumb}>
             <Link to='/'>Home</Link>
+            <Link to='/scenes'>シーン一覧</Link>
             <Link to={scene.fields.slug}>{scene.numberTitle}</Link>
             <Txt>{skill.title}</Txt>
           </NavigationBreadcrumb>
