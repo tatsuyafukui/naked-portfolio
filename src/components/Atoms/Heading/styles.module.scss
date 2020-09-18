@@ -22,6 +22,14 @@
   padding: 0.33em 0.66em;
 }
 
+.underline {
+  align-self: flex-start;
+  border-bottom: var(--border);
+  display: block;
+  font-weight: var(--font-weight-bold);
+  padding-bottom: var(--space-24);
+}
+
 .h1 {
   font-size: var(--font-size-xxxxl);
 }

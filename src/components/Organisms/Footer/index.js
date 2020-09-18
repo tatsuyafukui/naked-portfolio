@@ -26,6 +26,10 @@ const FooterList = () => {
       url: 'https://prog-8.com/privacy_policy',
     },
     {
+      label: '商標について',
+      url: '/trademark',
+    },
+    {
       label: 'Twitter',
       url: 'https://twitter.com/progateJP',
     },

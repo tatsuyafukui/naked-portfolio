@@ -23,6 +23,7 @@ const headingFactory = role => ({
 const HeadingPresenter = headingFactory('normal')
 const BoldHeadingPresenter = headingFactory('bold')
 const HighlightedHeadingPresenter = headingFactory('highlight')
+const UnderlinedHeadingPresenter = headingFactory('underline')
 
 export const HeadingContainer = ({
   visualLevel,
@@ -48,6 +49,10 @@ export const BoldHeading = containPresenter(
 export const HighlightedHeading = containPresenter(
   HeadingContainer,
   HighlightedHeadingPresenter
+)
+export const UnderlinedHeading = containPresenter(
+  HeadingContainer,
+  UnderlinedHeadingPresenter
 )
 
 Heading.propTypes = {
@@ -77,6 +82,16 @@ HighlightedHeading.propTypes = {
 }
 
 HighlightedHeading.defaultProps = {
+  level: 2,
+}
+
+UnderlinedHeading.propTypes = {
+  children: PropTypes.node.isRequired,
+  level: PropTypes.number,
+  visualLevel: PropTypes.number,
+}
+
+UnderlinedHeading.defaultProps = {
   level: 2,
 }
 
