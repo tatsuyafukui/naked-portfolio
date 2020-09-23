@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 import Link from '../../Atoms/Link'
 import MediaObjectLayout from '../../Atoms/MediaObjectLayout'
 import {BoldHeading} from '../../Atoms/Heading'
-import {InfoTxt} from '../../Atoms/Txt'
+import Txt, {InfoTxt} from '../../Atoms/Txt'
 import LazyImage from '../../Atoms/LazyImage'
 import List, {ListItem} from '../../Atoms/List'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
@@ -16,7 +16,7 @@ const SceneLink = ({scene, className, ...props}) => (
     className={[styles.scene, className].join(' ')}
     {...props}
   >
-    <MediaObjectLayout summary='top'>
+    <MediaObjectLayout className={styles.mediaObjectLayout} summary='top'>
       <div className={styles.imageWrap}>
         <LazyImage
           className={styles.image}
@@ -25,25 +25,27 @@ const SceneLink = ({scene, className, ...props}) => (
           loading='lazy'
         />
         <div className={styles.numberCircle}>
-          <BoldHeading level={2} visualLevel={4} className={styles.numberTitle}>
+          <Txt visualLevel={4} className={styles.numberTitle}>
             シーン
-          </BoldHeading>
+          </Txt>
           <BoldHeading level={2} visualLevel={4} className={styles.number}>
             {scene.number}
           </BoldHeading>
         </div>
       </div>
       <div className={styles.textWrap}>
-        <BoldHeading level={3} visualLevel={3} className={styles.title}>
-          {scene.title}
-        </BoldHeading>
-        <List className={styles.skillList}>
-          {scene.skills.map(skill => (
-            <ListItem className={styles.skillListItem} key={skill.id}>
-              {skill.title}
-            </ListItem>
-          ))}
-        </List>
+        <div>
+          <BoldHeading level={3} visualLevel={3} className={styles.title}>
+            {scene.title}
+          </BoldHeading>
+          <List className={styles.skillList}>
+            {scene.skills.map(skill => (
+              <ListItem className={styles.skillListItem} key={skill.id}>
+                {skill.title}
+              </ListItem>
+            ))}
+          </List>
+        </div>
         <InfoTxt className={styles.goal}>
           <span>
             <FontAwesomeIcon icon={faFlag} className={styles.icon} />
