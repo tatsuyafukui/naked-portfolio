@@ -7,6 +7,10 @@
   overflow: hidden;
 }
 
+.mediaObjectLayout {
+  height: 100%;
+}
+
 .imageWrap {
   height: 280px;
   position: relative;
@@ -49,7 +53,8 @@
 }
 
 .numberTitle {
-  font-size: var(--font-size-xxs-fixed);
+  font-weight: var(--font-weight-bold) !important;
+  line-height: var(--line-height-xs) !important;
 }
 
 .number {
@@ -57,6 +62,10 @@
 }
 
 .textWrap {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
   padding: var(--space-32);
   width: 100%;
 }
@@ -69,13 +78,15 @@
 
 .skillListItem {
   background-color: var(--color-block);
-  border-radius: var(--radius-m);
-  margin: 0 var(--space-8) var(--space-8) 0;
-  padding: var(--space-8) var(--space-16);
+  border-radius: var(--radius-s);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+  margin: 0 var(--space-6-fixed) var(--space-6-fixed) 0;
+  padding: var(--space-6-fixed);
   white-space: nowrap;
 
   &:last-child {
-    margin-bottom: var(--space-8);
+    margin-bottom: var(--space-6-fixed);
   }
 }
 
@@ -96,8 +107,28 @@
   margin-right: var(--space-6-fixed);
 }
 
+.numberCircle,
+.number,
+.numberTitle,
+.title {
+  transition: var(--hover-animation-fast);
+}
+
 @media (hover: hover) {
   .scene:hover {
     text-decoration: none;
+
+    .numberCircle {
+      background-color: var(--color-link);
+    }
+
+    .number,
+    .numberTitle {
+      color: var(--color-white);
+    }
+
+    .title {
+      color: var(--color-link);
+    }
   }
 }

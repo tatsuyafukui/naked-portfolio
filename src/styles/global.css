@@ -66,6 +66,7 @@
   --font-weight-bold: 700;
 
   /* 文字：行間 */
+  --line-height-xs: 1;
   --line-height-s: 1.3;
   --line-height-m: 1.5;
   --line-height-l: 1.7;
@@ -775,6 +776,17 @@ pre tt::after {
 
 @media screen and (max-width: 991px) {
   :root {
+    --space-8: 6px;
+    --space-12: 10px;
+    --space-16: 12px;
+    --space-20: 16px;
+    --space-24: 20px;
+    --space-32: 24px;
+    --space-40: 32px;
+    --space-48: 40px;
+    --space-56: 48px;
+    --space-64: 56px;
+    --space-72: 64px;
     --space-80: 72px;
     --space-88: 80px;
     --space-96: 88px;
@@ -794,17 +806,6 @@ pre tt::after {
     --font-size-xxl: 24px;
     --font-size-xxxl: 32px;
     --font-size-xxxxl: 40px;
-    --space-8: 6px;
-    --space-12: 10px;
-    --space-16: 12px;
-    --space-20: 16px;
-    --space-24: 20px;
-    --space-32: 24px;
-    --space-40: 32px;
-    --space-48: 40px;
-    --space-56: 48px;
-    --space-64: 56px;
-    --space-72: 64px;
   }
 }
 
