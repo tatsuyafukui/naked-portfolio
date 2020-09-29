@@ -4,18 +4,18 @@ import styles from './styles.module.scss'
 import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
 import Container from '../../Atoms/Container'
-// import List, {ListItem} from '../../Atoms/List'
 import SceneLink from '../../Organisms/SceneLink'
 import Seo from '../../seo'
 import NavigationBreadcrumb from '../../Molecules/NavigationBreadcrumb'
 import Link from '../../Atoms/Link'
 import Txt from '../../Atoms/Txt'
+import Main from '../../Atoms/Main'
 
 const SceneListTemplate = ({scenes}) => (
   <div className={styles.background}>
     <Seo title='シーン一覧' />
     <Header />
-    <main className={styles.main}>
+    <Main>
       <Container>
         <NavigationBreadcrumb>
           <Link to='/'>Home</Link>
@@ -27,7 +27,7 @@ const SceneListTemplate = ({scenes}) => (
           ))}
         </div>
       </Container>
-    </main>
+    </Main>
     <Footer />
   </div>
 )

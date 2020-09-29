@@ -11,6 +11,7 @@ import Button from '../../Atoms/Button'
 import {navigate} from 'gatsby'
 import PropTypes from 'prop-types'
 import LazyImage from '../../Atoms/LazyImage'
+import Main from '../../Atoms/Main'
 
 const IndexTemplate = ({scenes}) => {
   return (
@@ -24,7 +25,7 @@ const IndexTemplate = ({scenes}) => {
           - Web開発者になるための学習ロードマップ -
         </BoldHeading>
       </div>
-      <main className={styles.main}>
+      <Main>
         <NarrowedContainer tag='article' className={styles.container}>
           <div>
             <HighlightedHeading
@@ -109,7 +110,7 @@ const IndexTemplate = ({scenes}) => {
             シーンを選ぼう
           </Button>
         </NarrowedContainer>
-      </main>
+      </Main>
       <Footer />
     </div>
   )
