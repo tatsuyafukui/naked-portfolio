@@ -5,7 +5,7 @@ import Seo from '../../seo'
 import NavigationBreadcrumb from '../../Molecules/NavigationBreadcrumb'
 import Container, {NarrowedContainer} from '../../Atoms/Container'
 import Link from '../../Atoms/Link'
-import Txt, {LongTxt} from '../../Atoms/Txt'
+import Txt from '../../Atoms/Txt'
 import {BoldHeading, HighlightedHeading} from '../../Atoms/Heading'
 import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
@@ -58,7 +58,10 @@ const SkillTemplate = ({data, location}) => {
           >
             概要
           </HighlightedHeading>
-          <LongTxt dangerouslySetInnerHTML={{__html: skill.overview}} />
+          <Txt
+            lineHeightLevel={5}
+            dangerouslySetInnerHTML={{__html: skill.overview}}
+          />
           <LazyImage
             className={styles.image}
             src={skill.image.publicURL}
@@ -71,7 +74,10 @@ const SkillTemplate = ({data, location}) => {
           >
             学ぶ目的
           </HighlightedHeading>
-          <LongTxt dangerouslySetInnerHTML={{__html: skill.purpose}} />
+          <Txt
+            lineHeightLevel={5}
+            dangerouslySetInnerHTML={{__html: skill.purpose}}
+          />
           <HighlightedHeading
             level={2}
             visualLevel={4}
@@ -79,7 +85,10 @@ const SkillTemplate = ({data, location}) => {
           >
             ここから学ぼう
           </HighlightedHeading>
-          <LongTxt dangerouslySetInnerHTML={{__html: skill.overall}} />
+          <Txt
+            lineHeightLevel={5}
+            dangerouslySetInnerHTML={{__html: skill.overall}}
+          />
           <OgpList ogpList={recommended} />
           <HighlightedHeading
             level={2}

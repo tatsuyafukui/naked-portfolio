@@ -24,13 +24,17 @@ describe('LongDescriptionContainer', () => {
       </ResponsiveContext.Provider>
     )
     expect(
-      wrapper.contains(<p className='txt info visualLevel1 '>続きを読む</p>)
+      wrapper.contains(
+        <p className='txt info visualLevel1 lineHeightLevel5'>続きを読む</p>
+      )
     ).toEqual(true)
 
     wrapper.find('button').simulate('click')
 
     expect(
-      wrapper.contains(<p className='txt info visualLevel1 '>続きを読む</p>)
+      wrapper.contains(
+        <p className='txt info visualLevel1 lineHeightLevel5'>続きを読む</p>
+      )
     ).toEqual(false)
   })
 })

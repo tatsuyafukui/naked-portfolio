@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import styles from './styles.module.scss'
-import {LongTxt, InfoTxt} from '../../Atoms/Txt'
+import Txt, {InfoTxt} from '../../Atoms/Txt'
 import PropTypes from 'prop-types'
 import {useMediaQuery} from 'react-responsive'
 import {MEDIA_QUERY_MD} from '../../../constants'
@@ -13,14 +13,14 @@ const LongDescriptionPresenter = ({
   className,
   ...props
 }) => (
-  <LongTxt className={className} {...props}>
+  <Txt lineHeightLevel={5} className={className} {...props}>
     <span
       className={styles.textTruncate}
       style={clampCount}
       dangerouslySetInnerHTML={{__html: children}}
     />
     {truncateButton}
-  </LongTxt>
+  </Txt>
 )
 
 LongDescriptionPresenter.propTypes = {

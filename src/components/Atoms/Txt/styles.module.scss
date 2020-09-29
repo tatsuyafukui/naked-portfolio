@@ -2,7 +2,6 @@
 
 .txt {
   color: var(--color-text);
-  line-height: var(--line-height-m);
 }
 
 .visualLevel1 {
@@ -21,8 +20,24 @@
   font-size: var(--font-size-xxs-fixed);
 }
 
-.long {
+.lineHeightLevel1 {
+  line-height: var(--line-height-xs);
+}
+
+.lineHeightLevel2 {
+  line-height: var(--line-height-s);
+}
+
+.lineHeightLevel3 {
+  line-height: var(--line-height-m);
+}
+
+.lineHeightLevel4 {
   line-height: var(--line-height-l);
+}
+
+.lineHeightLevel5 {
+  line-height: var(--line-height-xl);
 }
 
 .info {
