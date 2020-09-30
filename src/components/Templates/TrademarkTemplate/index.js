@@ -9,6 +9,7 @@ import Link from '../../Atoms/Link'
 import {UnderlinedHeading} from '../../Atoms/Heading'
 import Txt, {LongTxt} from '../../Atoms/Txt'
 import {graphql, useStaticQuery} from 'gatsby'
+import Main from '../../Atoms/Main'
 
 const TrademarkTemplate = () => {
   const data = useStaticQuery(graphql`
@@ -26,7 +27,7 @@ const TrademarkTemplate = () => {
     <div>
       <Seo title='商標について' />
       <Header />
-      <main className={styles.main}>
+      <Main>
         <Container>
           <NavigationBreadcrumb className={styles.breadcrumb}>
             <Link to='/'>Home</Link>
@@ -41,7 +42,7 @@ const TrademarkTemplate = () => {
             </LongTxt>
           ))}
         </Container>
-      </main>
+      </Main>
       <Footer />
     </div>
   )

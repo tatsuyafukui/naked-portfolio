@@ -15,6 +15,7 @@ import HeroImage from '../../Molecules/HeroImage'
 import SkillStandard from '../../Organisms/SkillStandard'
 import {graphql} from 'gatsby'
 import LazyImage from '../../Atoms/LazyImage'
+import Main from '../../Atoms/Main'
 
 const SkillTemplate = ({data, location}) => {
   const skill = data.skillsJson
@@ -26,7 +27,7 @@ const SkillTemplate = ({data, location}) => {
     <>
       <Seo title={skill.title} description={skill.overview} lang='ja' />
       <Header />
-      <main className={styles.main}>
+      <Main>
         <HeroImage>
           <Container className={styles.heroContainer}>
             <div className={styles.heroTxtWrap}>
@@ -91,7 +92,7 @@ const SkillTemplate = ({data, location}) => {
           <SkillStandard standard={skill.standard} />
           {/* <SkillShareSection title={skill.title} url={location.href} /> */}
         </NarrowedContainer>
-      </main>
+      </Main>
       <Footer />
     </>
   )

@@ -1,13 +1,5 @@
 @import '../../properties';
 
-.main {
-  padding-bottom: var(--space-80-fixed);
-
-  @include mediaQuery(md) {
-    padding-bottom: var(--space-64-fixed);
-  }
-}
-
 .title {
   margin-bottom: var(--space-40);
   margin-top: var(--space-40);

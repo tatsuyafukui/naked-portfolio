@@ -14,6 +14,7 @@ import SkillList from '../../Organisms/SkillList'
 import {graphql} from 'gatsby'
 import HeroImage from '../../Molecules/HeroImage'
 import LazyImage from '../../Atoms/LazyImage'
+import Main from '../../Atoms/Main'
 
 const SceneTemplate = ({data}) => {
   const scene = data.scenesJson
@@ -23,7 +24,7 @@ const SceneTemplate = ({data}) => {
     <div className={styles.background}>
       <Seo title={scene.title} description={scene.description} lang='ja' />
       <Header />
-      <main className={styles.main}>
+      <Main>
         <section className={styles.firstview}>
           <HeroImage>
             <LazyImage src={scene.image.publicURL} alt={scene.title} />
@@ -47,7 +48,7 @@ const SceneTemplate = ({data}) => {
         <Container>
           <SkillList skills={skills} />
         </Container>
-      </main>
+      </Main>
       <Footer className={styles.footer} />
     </div>
   )
