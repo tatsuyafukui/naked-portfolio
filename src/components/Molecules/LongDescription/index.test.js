@@ -25,7 +25,7 @@ describe('LongDescriptionContainer', () => {
     )
     expect(
       wrapper.contains(
-        <p className='txt info visualLevel1 lineHeightLevel5'>続きを読む</p>
+        <p className='txt info visualLevel1 lineHeightLevel3 '>続きを読む</p>
       )
     ).toEqual(true)
 
@@ -33,7 +33,7 @@ describe('LongDescriptionContainer', () => {
 
     expect(
       wrapper.contains(
-        <p className='txt info visualLevel1 lineHeightLevel5'>続きを読む</p>
+        <p className='txt info visualLevel1 lineHeightLevel3 '>続きを読む</p>
       )
     ).toEqual(false)
   })
