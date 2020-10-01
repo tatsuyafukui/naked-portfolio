@@ -4,7 +4,7 @@ import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
 import Seo from '../../seo'
 import {BoldHeading, HighlightedHeading} from '../../Atoms/Heading'
-import Txt, {LongTxt} from '../../Atoms/Txt'
+import Txt from '../../Atoms/Txt'
 import {NarrowedContainer} from '../../Atoms/Container'
 import List, {ListItem} from '../../Atoms/List'
 import Button from '../../Atoms/Button'
@@ -35,7 +35,7 @@ const IndexTemplate = ({scenes}) => {
             >
               目標に向かう学習をしよう
             </HighlightedHeading>
-            <LongTxt>
+            <Txt lineHeightLevel={5}>
               「学んだことが何に活かせるのかわからない」
               <br />
               「何をどこまで学べば良いのかわからない」
@@ -54,7 +54,7 @@ const IndexTemplate = ({scenes}) => {
               <br />
               <br />
               もし、あなたがWeb開発者になりたいという目標を持っているなら、きっとjourneyが役に立ちます。
-            </LongTxt>
+            </Txt>
           </div>
           <div>
             <HighlightedHeading
@@ -67,23 +67,23 @@ const IndexTemplate = ({scenes}) => {
             <List className={styles.standardItem}>
               <div>
                 <ListItem className={styles.listItem}>
-                  <Txt tag='span'>
+                  <Txt lineHeightLevel={5} tag='span'>
                     <strong>教材ではありません</strong>
                   </Txt>
                 </ListItem>
-                <LongTxt className={styles.listItemTxt}>
+                <Txt lineHeightLevel={5} className={styles.listItemTxt}>
                   ロードマップは目標に対しての計画表です。紹介している教材と一緒に使うことで最大限の効果を発揮します。
-                </LongTxt>
+                </Txt>
               </div>
               <div>
                 <ListItem className={styles.listItem}>
-                  <Txt tag='span'>
+                  <Txt lineHeightLevel={5} tag='span'>
                     <strong>入門向けではありません</strong>
                   </Txt>
                 </ListItem>
-                <LongTxt className={styles.listItemTxt}>
+                <Txt lineHeightLevel={5} className={styles.listItemTxt}>
                   Web開発者を目指す人のための実践的な内容となっており、分からないことがあれば自身で解決する力が必要となります。
-                </LongTxt>
+                </Txt>
               </div>
             </List>
           </div>
@@ -95,11 +95,11 @@ const IndexTemplate = ({scenes}) => {
             >
               5つのシーン
             </HighlightedHeading>
-            <LongTxt>
+            <Txt lineHeightLevel={5}>
               各スキルは５つのシーン（中間目標）に分けられています。自分の現在地やゴールに合ったシーンを選択してスキルを確認しましょう。
               <br />
               <br />
-            </LongTxt>
+            </Txt>
             <div className={styles.scenes}>
               {scenes.map(scene => (
                 <LazyImage key={scene.id} src={scene.image.publicURL} />

@@ -54,11 +54,16 @@
 }
 
 .image {
+  margin-left: auto;
+  margin-right: auto;
   margin-top: var(--space-40);
+  max-width: 620px;
   width: 100%;
 
   @include mediaQuery(sm) {
     align-self: center;
+    margin-left: unset;
+    margin-right: unset;
     max-width: unset;
     width: 100vw;
   }

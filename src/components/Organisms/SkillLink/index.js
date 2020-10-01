@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 import Link from '../../Atoms/Link'
 import MediaObjectLayout from '../../Atoms/MediaObjectLayout'
 import {BoldHeading} from '../../Atoms/Heading'
-import {LongTxt} from '../../Atoms/Txt'
+import Txt from '../../Atoms/Txt'
 import Img from 'gatsby-image'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faBook} from '@fortawesome/free-solid-svg-icons'
@@ -28,7 +28,9 @@ const SkillLink = ({skill, className, ...props}) => (
             {skill.title}
           </BoldHeading>
         </div>
-        <LongTxt className={styles.description}>{skill.description}</LongTxt>
+        <Txt lineHeightLevel={4} className={styles.description}>
+          {skill.description}
+        </Txt>
       </div>
     </MediaObjectLayout>
   </Link>

@@ -2,7 +2,7 @@
 
 exports[`Txt Renders correctly 1`] = `
 <p
-  className="txt base visualLevel1 "
+  className="txt base visualLevel1 lineHeightLevel3 "
 >
   Txt
 </p>

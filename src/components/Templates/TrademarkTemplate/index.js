@@ -7,7 +7,7 @@ import Container from '../../Atoms/Container'
 import NavigationBreadcrumb from '../../Molecules/NavigationBreadcrumb'
 import Link from '../../Atoms/Link'
 import {UnderlinedHeading} from '../../Atoms/Heading'
-import Txt, {LongTxt} from '../../Atoms/Txt'
+import Txt from '../../Atoms/Txt'
 import {graphql, useStaticQuery} from 'gatsby'
 import Main from '../../Atoms/Main'
 
@@ -37,9 +37,9 @@ const TrademarkTemplate = () => {
             商標について
           </UnderlinedHeading>
           {trademarks.map((trademark, index) => (
-            <LongTxt className={styles.item} key={index}>
+            <Txt lineHeightLevel={5} className={styles.item} key={index}>
               {trademark.ownership}
-            </LongTxt>
+            </Txt>
           ))}
         </Container>
       </Main>

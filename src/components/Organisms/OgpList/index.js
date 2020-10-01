@@ -5,7 +5,7 @@ import {ColoredLink} from '../../Atoms/Link'
 import Ogp from '../../Organisms/Ogp'
 import List, {ListItem} from '../../Atoms/List'
 import {BoldHeading} from '../../Atoms/Heading'
-import {LongTxt} from '../../Atoms/Txt'
+import Txt from '../../Atoms/Txt'
 import {useMediaQuery} from 'react-responsive'
 import {MEDIA_QUERY_SM} from '../../../constants'
 
@@ -21,9 +21,9 @@ const OgpList = ({ogpList, ...props}) => {
               {item.fields ? item.fields.ogp.ogTitle : item.title}
             </BoldHeading>
             <div className={styles.ogpWrap}>
-              <LongTxt className={styles.description}>
+              <Txt lineHeightLevel={5} className={styles.description}>
                 {item.description}
-              </LongTxt>
+              </Txt>
               {/* ogpがないサイトはリンクのみ */}
               {item.fields ? (
                 <Ogp
