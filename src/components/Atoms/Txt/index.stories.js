@@ -9,7 +9,6 @@ storiesOf('Atoms/Txt', module)
   .add('Text - VisualLevel 4', () => <Txt visualLevel={4}>Show text</Txt>)
   .add('Text - lineHeightLevel 1', () => (
     <Txt lineHeightLevel={1}>
-      {' '}
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the
       1500s, when an unknown printer took a galley of type and scrambled it to
@@ -23,7 +22,6 @@ storiesOf('Atoms/Txt', module)
   ))
   .add('Text - lineHeightLevel 2', () => (
     <Txt lineHeightLevel={2}>
-      {' '}
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the
       1500s, when an unknown printer took a galley of type and scrambled it to
@@ -37,7 +35,6 @@ storiesOf('Atoms/Txt', module)
   ))
   .add('Text - lineHeightLevel 3', () => (
     <Txt>
-      {' '}
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the
       1500s, when an unknown printer took a galley of type and scrambled it to
@@ -51,7 +48,6 @@ storiesOf('Atoms/Txt', module)
   ))
   .add('Text - lineHeightLevel 4', () => (
     <Txt lineHeightLevel={4}>
-      {' '}
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the
       1500s, when an unknown printer took a galley of type and scrambled it to
@@ -65,7 +61,6 @@ storiesOf('Atoms/Txt', module)
   ))
   .add('Text - lineHeightLevel 5', () => (
     <Txt lineHeightLevel={5}>
-      {' '}
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the
       1500s, when an unknown printer took a galley of type and scrambled it to
