@@ -33,7 +33,9 @@ const SkillOverall = ({overall}) => {
         {overall[active].tasks.map((task, index) => (
           <div key={index}>
             <p>{task.title}</p>
-            <p>{task.child}</p>
+            {task.child.map((child, index) => (
+              <p key={index}>{child}</p>
+            ))}
           </div>
         ))}
         <OgpList ogpList={overall[active].recommended} />
