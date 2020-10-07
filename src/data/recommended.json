@@ -3,229 +3,356 @@
     "skillId": "html-and-css",
     "title": "Progate HTML & CSS 初級編",
     "description": "初心者にもわかりやすくスライド形式で学習できるので自分のペースで学ぶことができます。環境構築が不要なのも学びやすいです。",
-    "url": "https://prog-8.com/lessons/html/study/1"
+    "url": "https://prog-8.com/lessons/html/study/1",
+    "level": "easy"
+  },
+  {
+    "skillId": "html-and-css",
+    "description": "アクセシビリティについて学べます",
+    "url": "https://wiki.developer.mozilla.org/ja/docs/Learn/Accessibility",
+    "level": "middle"
   },
   {
     "skillId": "editors",
     "title": "Documentation for Visual Studio Code（英語）",
-    "description": "マイクロソフトが提供している現在多くの開発者が利用しているエディタです。無料で利用することができ拡張機能も豊富です。",
-    "url": "https://code.visualstudio.com/docs"
+    "description": "近年ではもっとも主流となっているエディタです。まずは最低限のセットアップをしましょう。",
+    "url": "https://code.visualstudio.com/docs",
+    "level": "easy"
+  },
+  {
+    "skillId": "editors",
+    "title": "Documentation for Visual Studio Code（英語）",
+    "description": "editorでデバッグするための拡張機能です",
+    "url": "https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome",
+    "level": "middle"
   },
   {
     "skillId": "internet",
     "title": "イラスト図解式 この一冊で全部わかるWeb技術の基本",
     "description": "１ページ毎に説明と図がセットになっており、インターネットに関連ある用語が一通り説明されています。とても読みやすいのでおすすめです。",
     "url": "https://www.amazon.co.jp/dp/4797388811",
-    "isbn": "4797388811"
+    "isbn": "4797388811",
+    "level": "easy"
+  },
+  {
+    "skillId": "internet",
+    "title": "イラスト図解式 この一冊で全部わかるWeb技術の基本",
+    "description": "少し古いですが、入門の必読書として有名です。",
+    "url": "https://www.amazon.co.jp/dp/4774142042",
+    "isbn": "4774142042",
+    "level": "middle"
   },
   {
     "skillId": "javascript",
     "title": "Progate JavaScript 学習コース Ⅰ",
     "description": "基本的な文法から学びたい人はProgateがおすすめです。はじめての人でも理解できるように説明されています。",
-    "url": "https://prog-8.com/lessons/es6/study/1"
+    "url": "https://prog-8.com/lessons/es6/study/1",
+    "level": "easy"
   },
   {
     "skillId": "javascript",
     "title": "MDN JavaScript",
     "description": "Progateで紹介できなかった、イベントや非同期処理、ブラウザ APIについてゼロから学ぶことができます。Progateで学んだことを復習しながら、学習を進めましょう。",
-    "url": "https://developer.mozilla.org/ja/docs/Learn/JavaScript"
+    "url": "https://developer.mozilla.org/ja/docs/Learn/JavaScript",
+    "level": "middle"
   },
   {
     "skillId": "developer-tools",
     "title": "Chrome DevTool",
     "description": "多くの開発者が利用しているChromeブラウザの開発者ツールのドキュメントです。機能ごとにチュートリアルが用意されているので、使い方を調べたいときに読むといいでしょう。",
-    "url": "https://developers.google.com/web/tools/chrome-devtools?hl=ja"
+    "url": "https://developers.google.com/web/tools/chrome-devtools?hl=ja",
+    "level": "easy"
+  },
+  {
+    "skillId": "developer-tools",
+    "description": "まずは開発者ツールに触れてみましょう。",
+    "url": "https://prog-8.com/docs/html-dev",
+    "level": "middle"
   },
   {
     "skillId": "server-side-programming",
     "title": "Progate Ruby 学習コース Ⅰ",
     "description": "Rubyはオープンソースのスクリプト言語で、Webアプリケーション開発で人気の言語です。Ruby on Railsというフレームワークと合わせて高い生産性で開発ができます。",
-    "url": "https://prog-8.com/lessons/ruby/study/1"
+    "url": "https://prog-8.com/lessons/ruby/study/1",
+    "level": "easy"
+  },
+  {
+    "skillId": "server-side-programming",
+    "title": "Progate Ruby 学習コース Ⅰ",
+    "description": "本書はRubyの文法をサンプルコードで学び、例題でプログラミングの流れを体験できる解説書です。",
+    "url": "https://www.amazon.co.jp/dp/4774193976",
+    "isbn": "4774193976",
+    "level": "middle"
+  },
+  {
+    "skillId": "object-oriented-programming",
+    "title": "オブジェクト指向でなぜ作るのか 第2版",
+    "description": "クラスやインスタントなどを作ってRubyでオブジェクト指向を体験してみましょう。",
+    "url": "https://prog-8.com/lessons/ruby/study/4",
+    "level": "easy"
   },
   {
     "skillId": "object-oriented-programming",
     "title": "オブジェクト指向でなぜ作るのか 第2版",
     "description": "オブジェクト指向の全体像や必要性がわかりやすく説明されています。クラス、ポリモーフィズム、継承などの要点を押さえているので入門で読んでみると良いでしょう。",
     "url": "https://www.amazon.co.jp/dp/4822284654/",
-    "isbn": "4822284654"
+    "isbn": "4822284654",
+    "level": "middle"
   },
   {
     "skillId": "terminal-operations",
     "title": "Progate Command Line 学習コース 基礎編",
     "description": "ターミナルで利用するコマンドの中で最も利用するものが説明されています。ルートディレクトリやカレントディレクトリなどのパスについても学べるので初学者におすすめです。",
-    "url": "https://prog-8.com/lessons/commandline/study/1"
+    "url": "https://prog-8.com/lessons/commandline/study/1",
+    "level": "easy"
   },
   {
     "skillId": "terminal-operations",
     "title": "新しいLinuxの教科書",
     "description": "ターミナル操作の際によく使うコマンドだけでなく、LinuxOSの種類やシェルスクリプト、プロセスなど初めてLinuxを使う人が難しく感じるポイントを丁寧に解説しています。",
     "url": "https://www.amazon.co.jp/dp/4797380942/",
-    "isbn": "4797380942"
+    "isbn": "4797380942",
+    "level": "middle"
   },
   {
     "skillId": "databases",
     "title": "Progate SQL 学習コース Ⅰ",
     "description": "SQLの基本的な文法をわかりやすく、実際に動かしながら学ぶことができます。内容も充実しているため、まずはProgateで学ぶとよいでしょう。",
-    "url": "https://prog-8.com/lessons/sql/study/1"
+    "url": "https://prog-8.com/lessons/sql/study/1",
+    "level": "easy"
   },
   {
     "skillId": "databases",
     "title": "MySQL Tutorial - Learn MySQL Fast, Easy and Fun",
     "description": "MySQL専用のチュートリアルです。英語教材ですが、Progateでは紹介できなかったトランザクションやインデックスについても学ぶことができます。サーバーサイドプログラミングとの接続方法も解説されているので、ブラウザの翻訳機能を使って学んでみましょう。",
-    "url": "https://www.mysqltutorial.org/"
+    "url": "https://www.mysqltutorial.org/",
+    "level": "middle"
   },
   {
     "skillId": "web-application-frameworks",
     "title": "Progate Ruby on Rails 学習コース Ⅰ",
     "description": "Rubyで人気のフルスタックフレームワークです。豊富な機能を備えており、アプリケーションを作成する際のコード量が少なくなることで、開発効率を高めることができます。",
-    "url": "https://prog-8.com/lessons/rails5/study/1"
+    "url": "https://prog-8.com/lessons/rails5/study/1",
+    "level": "easy"
   },
   {
     "skillId": "web-application-frameworks",
     "title": "Ruby on Rails ガイド：体系的にRailsを学ぼう学ぼう",
-    "description": "Ruby on Railsの公式サイトです。豊富なチュートリアルで学べるので、深く知りたい人は読んでみましょう。",
-    "url": "https://railsguides.jp/"
+    "description": "実践的なチュートリアルで学べるので、Progateのあとにおすすめです。",
+    "url": "https://railstutorial.jp/",
+    "level": "middle"
+  },
+  {
+    "skillId": "web-api",
+    "title": "Web API: The Good Parts",
+    "description": "無料テストとプロトタイピングのためのWeb APIを使用できます。URLにアクセスしてAPIのイメージをつかみましょう。",
+    "url": "https://jsonplaceholder.typicode.com/",
+    "level": "easy"
   },
   {
     "skillId": "web-api",
     "title": "Web API: The Good Parts",
     "description": "Web APIの必要性から、APIを公開に必要な知識について説明されています。",
     "url": "https://www.amazon.co.jp/dp/4873116864",
-    "isbn": "4873116864"
+    "isbn": "4873116864",
+    "level": "middle"
   },
   {
     "skillId": "development-flow",
     "title": "エクストリームプログラミング",
     "description": "アジャイル開発の原点となった書籍です。各プラクティスに対して「なぜ」を丁寧に説明してくれるので、背景を学びたい人におすすめです。",
     "url": "https://www.amazon.co.jp/dp/4274217620/",
-    "isbn": "4274217620"
+    "isbn": "4274217620",
+    "level": "easy"
+  },
+  {
+    "skillId": "design-specification",
+    "description": "まずは、Webページのワイヤーフレームの作り方を学んでみましょう",
+    "url": "https://web-kanji.com/posts/making-wireframe",
+    "level": "easy"
   },
   {
     "skillId": "design-specification",
     "title": "Clean Architecture 達人に学ぶソフトウェアの構造と設計",
     "description": "「動く」だけではなく「正しく」作るための設計の考え方について学ぶことができます。実際に開発しないとわからない部分もありますが、設計について学びたい人は読んでみるといいでしょう。",
     "url": "https://www.amazon.co.jp/dp/4048930656",
-    "isbn": "4048930656"
+    "isbn": "4048930656",
+    "level": "middle"
   },
   {
     "skillId": "design-specification",
     "title": "達人に学ぶDB設計 徹底指南書 初級者で終わりたくないあなたへ",
     "description": "リレーショナルデータベースの設計についての書籍です。データベースの設計について体系的に説明されているため、データベース設計入門として読むと良いでしょう。",
     "url": "https://www.amazon.co.jp/dp/4798124702",
-    "isbn": "4798124702"
+    "isbn": "4798124702",
+    "level": "middle"
   },
   {
     "skillId": "git",
     "title": "Git 学習コース Ⅰ | Progate",
     "description": "Gitの基本的なコマンドについて学ぶことができます。とりあえずGit操作を体験してみたい人におすすめです。",
-    "url": "https://prog-8.com/lessons/git/study/1"
+    "url": "https://prog-8.com/lessons/git/study/1",
+    "level": "easy"
+  },
+  {
+    "skillId": "git",
+    "description": "Gitの環境構築からGitHubの設定まで説明しています。",
+    "url": "https://prog-8.com/docs/git-env",
+    "level": "easy"
   },
   {
     "skillId": "git",
     "title": "Git - バージョン管理に関して",
     "description": "Gitの公式サイトで紹介されている書籍のオンライン版です。Gitの目的や仕組みから説明されています。",
-    "url": "https://git-scm.com/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E7%AE%A1%E7%90%86%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6"
+    "url": "https://git-scm.com/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E7%AE%A1%E7%90%86%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6",
+    "level": "middle"
   },
   {
     "skillId": "git",
     "title": "GitHub Learning Lab",
     "description": "GitHubのチュートリアルを実戦形式で学ぶことができます。イシューの作成やプルリクエスト、コードレビューのイメージを掴みたい人は学んでみましょう。",
-    "url": "https://lab.github.com/"
+    "url": "https://lab.github.com/",
+    "level": "middle"
   },
   {
     "skillId": "testing",
     "title": "はじめて学ぶソフトウェアのテスト技法",
-    "description": "",
-    "url": "https://www.amazon.co.jp/dp/4822282511",
-    "isbn": "4822282511"
+    "description": "最低限ここだけを押さえていれば大丈夫が説明されています。",
+    "url": "https://qiita.com/jnchito/items/42193d066bd61c740612",
+    "level": "easy"
   },
   {
     "skillId": "testing",
     "title": "テスト駆動開発",
     "description": "「動作するきれいなコード」を実現するための手法について豊富なコードで説明されています。書籍のコードを写経しながら学んでみるといいでしょう。",
     "url": "https://www.amazon.co.jp/dp/4274217884",
-    "isbn": "4274217884"
+    "isbn": "4274217884",
+    "level": "middle"
   },
   {
     "skillId": "refactoring",
     "title": "リーダブルコード",
     "description": "初学者でもすぐに始められる表面的なコードのきれいさについて学ぶことができます。内容も読みやすいので一度は読んでおきましょう。",
     "url": "https://www.amazon.co.jp/dp/4873115655",
-    "isbn": "4873115655"
+    "isbn": "4873115655",
+    "level": "easy"
   },
   {
     "skillId": "refactoring",
     "title": "リファクタリング(第2版): 既存のコードを安全に改善する",
     "description": "オブジェクト指向やテスト駆動開発も含めた本格的なリファクタリングについての書籍です。豊富なパターンからリファクタリングの進め方を学ぶことができます。",
     "url": "https://www.amazon.co.jp/dp/4274224546",
-    "isbn": "4274224546"
+    "isbn": "4274224546",
+    "level": "middle"
   },
   {
     "skillId": "server-configuration",
-    "title": "図解まるわかり サーバーのしくみ",
-    "description": "サーバーの解説を図解で解説してくれる本です。",
-    "url": "https://www.amazon.co.jp/dp/4798160059",
-    "isbn": "4798160059"
+    "description": "「そもそもインフラとは何か?」というところからITインフラ全般の概要を解説します。",
+    "url": "https://www.amazon.co.jp/dp/4295003255",
+    "isbn": "4295003255",
+    "level": "middle"
   },
   {
     "skillId": "networking",
     "title": "ネットワークはなぜつながるのか 第2版 知っておきたいTCP/IP、LAN、光ファイバの基礎知識",
     "description": "ブラウザからURLにアクセスしてWebページが表示されるまでの仕組みについてわかりやすく説明されています。ネットワークの全体像を押さえたい人におすすめです。",
     "url": "https://www.amazon.co.jp/dp/4822283119/",
-    "isbn": "4822283119"
+    "isbn": "4822283119",
+    "level": "middle"
   },
   {
     "skillId": "cloud-services",
     "title": "アマゾン ウェブ サービス（AWS） の開始方法 | AWS",
     "description": "AWSを利用する人は必要なドキュメントを探して実践してみましょう。",
-    "url": "https://aws.amazon.com/jp/getting-started/?nc2=h_ql_le_gs"
+    "url": "https://aws.amazon.com/jp/getting-started/?nc2=h_ql_le_gs",
+    "level": "easy"
+  },
+  {
+    "skillId": "cloud-services",
+    "title": "アマゾン ウェブ サービス（AWS） の開始方法 | AWS",
+    "description": "本的なウェブアプリケーションを構築してみよう。",
+    "url": "https://aws.amazon.com/jp/getting-started/hands-on/build-web-app-s3-lambda-api-gateway-dynamodb/?trk=gs_card",
+    "level": "middle"
+  },
+  {
+    "skillId": "web-security",
+    "description": "簡単なセキュリティに関する実装を体験できます。",
+    "url": "https://prog-8.com/lessons/rails5/study/11",
+    "level": "easy"
   },
   {
     "skillId": "web-security",
     "title": "体系的に学ぶ 安全なWebアプリケーションの作り方 第2版 脆弱性が生まれる原理と対策の実践",
     "description": "Webセキュリティに関して基礎からわかりやすく説明されています。この書籍を読めば基礎は押さえられるでしょう。",
     "url": "https://www.amazon.co.jp/dp/4797393165",
-    "isbn": "4797393165"
+    "isbn": "4797393165",
+    "level": "middle"
   },
   {
     "skillId": "ci-cd",
     "title": "circleci - Getting Started Introduction",
     "description": "CI/CDの代表的なツールです。概要から実際に動かすチュートリアルまであるので、自分で構築してどんなものか感覚を掴んでみるといいでしょう。",
-    "url": "https://circleci.com/docs/2.0/getting-started/#section=getting-started"
+    "url": "https://circleci.com/docs/2.0/getting-started/#section=getting-started",
+    "level": "easy"
+  },
+  {
+    "skillId": "ci-cd",
+    "description": "複数の人たちでチームを組んで開発を進めていく際に必要な考え方や使用するツール、またそれらをうまく使いこなすためのノウハウをまとめています。",
+    "url": "https://www.amazon.co.jp/dp/4774164283",
+    "isbn": "4774164283",
+    "level": "middle"
   },
   {
     "skillId": "data-analysis-platform",
     "title": "データ分析基盤構築入門[Fluentd、Elasticsearch、Kibanaによるログ収集と可視化]",
     "description": "ツールの収集方法の説明だけでなく、データ分析基盤を構築するうえの考え方や具体例が説明されています。",
     "url": "https://www.amazon.co.jp/dp/477419218X",
-    "isbn": "477419218X"
+    "isbn": "477419218X",
+    "level": "middle"
+  },
+  {
+    "skillId": "performance",
+    "description": "パフォーマンスの概念から、分析方法、チューニングの考え方、実際の製品を想定したパフォーマンスまで、幅広く取り上げます。",
+    "url": "https://www.amazon.co.jp/dp/4798134600",
+    "isbn": "4798134600",
+    "level": "easy"
   },
   {
     "skillId": "performance",
     "title": "Webフロントエンド ハイパフォーマンス チューニング",
     "description": "フロントエンドのパフォーマンスチューニングについて学べます。ブラウザの仕組みや開発者ツールでの計測方法も説明されているので、イメージを掴みたい読んでみるといいでしょう。",
     "url": "https://www.amazon.co.jp/dp/4774189677",
-    "isbn": "4774189677"
+    "isbn": "4774189677",
+    "level": "middle"
   },
   {
     "skillId": "performance",
     "title": "SQL実践入門──高速でわかりやすいクエリの書き方",
     "description": "SQLのパフォーマンスについて学べる書籍です。本格的にSQLのチューニングについて学びたい人は読んでみましょう。",
     "url": "https://www.amazon.co.jp/dp/4774173010",
-    "isbn": "4774173010"
+    "isbn": "4774173010",
+    "level": "middle"
+  },
+  {
+    "skillId": "scalability",
+    "description": "WordPressを使ったブログサイトの構築を通じて、スケーラブルな Web システム構築を学んでいただけるウェビナーシリーズです。",
+    "url": "https://pages.awscloud.com/event_JAPAN_Hands-on-for-Beginners-Scalable_Contents.html",
+    "level": "easy"
   },
   {
     "skillId": "scalability",
     "title": "[Web開発者のための]大規模サービス技術入門 ―データ構造、メモリ、OS、DB、サーバ/インフラ",
     "description": "大規模なサービスを運用していくための具体的なノウハウが説明されています。スケーラビリティの考え方を学ぶのにおすすめです。",
     "url": "https://www.amazon.co.jp/dp/4774143073",
-    "isbn": "4774143073"
+    "isbn": "4774143073",
+    "level": "middle"
   },
   {
     "skillId": "fault-tolerance",
     "title": "[24時間365日] サーバ/インフラを支える技術 ‾スケーラビリティ、ハイパフォーマンス、省力運用",
     "description": "大規模なサービスを止めずに運用方法について説明されています。さまざまなサーバーの障害対応について学べます。",
     "url": "https://www.amazon.co.jp/dp/4774135666",
-    "isbn": "4774135666"
+    "isbn": "4774135666",
+    "level": "middle"
   }
 ]
