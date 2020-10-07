@@ -23,17 +23,11 @@
         "tasks": [
           {
             "title": "easy title1",
-            "child": [
-              "easy child1",
-              "easy child2"
-            ]
+            "child": ["easy child1", "easy child2"]
           },
           {
             "title": "easy title2",
-            "child": [
-              "easy child3",
-              "easy child4"
-            ]
+            "child": ["easy child3", "easy child4"]
           }
         ],
         "recommended": [
@@ -92,17 +86,11 @@
         "tasks": [
           {
             "title": "middle title1",
-            "child": [
-              "middle child1",
-              "middle child2"
-            ]
+            "child": ["middle child1", "middle child2"]
           },
           {
             "title": "middle title2",
-            "child": [
-              "middle child3",
-              "middle child4"
-            ]
+            "child": ["middle child3", "middle child4"]
           }
         ],
         "recommended": [
