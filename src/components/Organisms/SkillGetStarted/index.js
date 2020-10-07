@@ -7,6 +7,8 @@ import Img from 'gatsby-image'
 import Txt from '../../Atoms/Txt'
 import {BoldHeading, UnderlinedHeading} from '../../Atoms/Heading'
 import List, {ListItem} from '../../Atoms/List'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faBookReader} from '@fortawesome/free-solid-svg-icons'
 
 const SkillGetStarted = ({getStarted}) => {
   const [active, setActive] = useState('easy')
@@ -96,6 +98,7 @@ const SkillGetStarted = ({getStarted}) => {
           ))}
         </List>
         <UnderlinedHeading level={5} className={styles.booksHeading}>
+          <FontAwesomeIcon className={styles.bookIcon} icon={faBookReader} />
           おすすめの教材
         </UnderlinedHeading>
         <OgpList ogpList={getStarted[active].recommended} />
