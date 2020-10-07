@@ -9,18 +9,18 @@ import Txt from '../../Atoms/Txt'
 import {BoldHeading, HighlightedHeading} from '../../Atoms/Heading'
 import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
-import OgpList from '../../Organisms/OgpList'
+// import OgpList from '../../Organisms/OgpList'
 import HeroImage from '../../Molecules/HeroImage'
 // import SkillShareSection from '../../Organisms/SkillShareSection'
-import SkillStandard from '../../Organisms/SkillStandard'
+// import SkillStandard from '../../Organisms/SkillStandard'
 import {graphql} from 'gatsby'
 import LazyImage from '../../Atoms/LazyImage'
 import Main from '../../Atoms/Main'
+import SkillGetStarted from '../../Organisms/SkillGetStarted'
 
 const SkillTemplate = ({data, location}) => {
   const skill = data.skillsJson
   const scene = data.skillsJson.scene
-  const recommended = data.skillsJson.recommended
   const keyVisual = data.file.publicURL
 
   return (
@@ -86,7 +86,8 @@ const SkillTemplate = ({data, location}) => {
           >
             ここから学ぼう
           </HighlightedHeading>
-          <Txt
+          <SkillGetStarted getStarted={skill.getStarted} />
+          {/* <Txt
             lineHeightLevel={5}
             dangerouslySetInnerHTML={{__html: skill.overall}}
           />
@@ -98,7 +99,7 @@ const SkillTemplate = ({data, location}) => {
           >
             チェックポイント
           </HighlightedHeading>
-          <SkillStandard standard={skill.standard} />
+          <SkillStandard standard={skill.standard} /> */}
           {/* <SkillShareSection title={skill.title} url={location.href} /> */}
         </NarrowedContainer>
       </Main>
@@ -118,14 +119,71 @@ export const query = graphql`
   query($slug: String) {
     skillsJson(fields: {slug: {eq: $slug}}) {
       id
-      overall
       overview
       purpose
       title
       subTitle
-      standard {
-        basic
-        practical
+      getStarted {
+        easy {
+          description
+          tasks {
+            child
+            title
+          }
+          recommended {
+            fields {
+              ogp {
+                ogTitle
+                twitterCard
+                ogDescription
+                ogImage {
+                  extension
+                  publicURL
+                  childImageSharp {
+                    fluid {
+                      ...GatsbyImageSharpFluid_withWebp
+                    }
+                  }
+                }
+              }
+            }
+            id
+            title
+            description
+            isbn
+            url
+          }
+        }
+        middle {
+          description
+          tasks {
+            child
+            title
+          }
+          recommended {
+            fields {
+              ogp {
+                ogTitle
+                twitterCard
+                ogDescription
+                ogImage {
+                  extension
+                  publicURL
+                  childImageSharp {
+                    fluid {
+                      ...GatsbyImageSharpFluid_withWebp
+                    }
+                  }
+                }
+              }
+            }
+            id
+            title
+            description
+            isbn
+            url
+          }
+        }
       }
       image {
         publicURL
@@ -139,29 +197,6 @@ export const query = graphql`
         image {
           publicURL
         }
-      }
-      recommended {
-        fields {
-          ogp {
-            ogTitle
-            twitterCard
-            ogDescription
-            ogImage {
-              extension
-              publicURL
-              childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid_withWebp
-                }
-              }
-            }
-          }
-        }
-        id
-        title
-        description
-        isbn
-        url
       }
     }
     file(relativePath: {eq: "skills/skill_kv.svg"}) {
