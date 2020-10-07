@@ -82,7 +82,7 @@ export const OgpContainer = ({
   )
 
   let imageComponent
-  if (ogImage) {
+  if (ogImage && ogImage.childImageSharp) {
     if (ogImage.extension === 'svg' || ogImage.extension === 'gif') {
       imageComponent = (
         <LazyImage
