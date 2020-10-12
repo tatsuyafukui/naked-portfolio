@@ -32,10 +32,6 @@ const SkillGetStarted = ({getStarted}) => {
     }
   `)
 
-  const handleClick = level => {
-    setActiveLevel(level)
-  }
-
   const tabItems = [
     {
       id: 1,
@@ -43,7 +39,7 @@ const SkillGetStarted = ({getStarted}) => {
       title: 'プログラミング初心者',
       description: 'スキルをイメージできるレベル',
       icon: data.easy.childImageSharp.fluid,
-      handleClick: () => handleClick('easy'),
+      handleClick: () => setActiveLevel('easy'),
     },
     {
       id: 2,
@@ -51,7 +47,7 @@ const SkillGetStarted = ({getStarted}) => {
       title: 'ジュニアエンジニア',
       description: '自走できるレベル',
       icon: data.middle.childImageSharp.fluid,
-      handleClick: () => handleClick('middle'),
+      handleClick: () => setActiveLevel('middle'),
     },
   ]
 
