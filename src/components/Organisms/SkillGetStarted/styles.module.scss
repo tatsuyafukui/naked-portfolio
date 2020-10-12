@@ -7,6 +7,7 @@
 
 .tabItem {
   background-color: var(--color-block);
+  border: 3px solid var(--color-block);
   border-radius: var(--radius-m);
   flex: 1;
   padding: var(--space-24);
@@ -22,11 +23,11 @@
 }
 
 .tabInner {
-  opacity: 0.4;
+  opacity: 0.5;
 }
 
 .tabActive {
-  border: 3px solid var(--color-accent);
+  border-color: var(--color-accent);
 
   .tabInner {
     opacity: 1;
@@ -64,14 +65,14 @@
 }
 
 .taskWrap {
-  border-left: 2px solid var(--color-block);
+  border-left: 2px solid var(--color-opacity6-black);
   padding-left: calc(10px + var(--space-16-fixed));
-  padding-top: var(--space-32);
+  padding-top: var(--space-40);
   position: relative;
 }
 
 .taskWrap:first-child {
-  margin-top: var(--space-32);
+  margin-top: var(--space-40);
   padding-top: 0;
 
   .taskTitle::after {
@@ -114,5 +115,10 @@
 
 .booksHeading {
   margin-bottom: var(--space-32);
-  margin-top: var(--space-40);
+  margin-top: var(--space-48);
+}
+
+.bookIcon {
+  color: var(--color-opacity15-black);
+  margin-right: var(--space-12);
 }

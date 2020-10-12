@@ -7,9 +7,11 @@ import Img from 'gatsby-image'
 import Txt from '../../Atoms/Txt'
 import {BoldHeading, UnderlinedHeading} from '../../Atoms/Heading'
 import List, {ListItem} from '../../Atoms/List'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faBookReader} from '@fortawesome/free-solid-svg-icons'
 
 const SkillGetStarted = ({getStarted}) => {
-  const [active, setActive] = useState('easy')
+  const [activeLevel, setActiveLevel] = useState('easy')
 
   const data = useStaticQuery(graphql`
     {
@@ -37,6 +39,7 @@ const SkillGetStarted = ({getStarted}) => {
       title: 'プログラミング初心者',
       description: 'スキルをイメージできるレベル',
       icon: data.easy.childImageSharp.fluid,
+      handleClick: () => setActiveLevel('easy'),
     },
     {
       id: 2,
@@ -44,6 +47,7 @@ const SkillGetStarted = ({getStarted}) => {
       title: 'ジュニアエンジニア',
       description: '自走できるレベル',
       icon: data.middle.childImageSharp.fluid,
+      handleClick: () => setActiveLevel('middle'),
     },
   ]
 
@@ -53,12 +57,12 @@ const SkillGetStarted = ({getStarted}) => {
         {tabItems.map(tabItem => (
           <button
             className={
-              active === tabItem.level
+              activeLevel === tabItem.level
                 ? [styles.tabItem, styles.tabActive].join(' ')
                 : styles.tabItem
             }
             key={tabItem.level}
-            onClick={() => setActive(tabItem.level)}
+            onClick={tabItem.handleClick}
           >
             <div className={styles.tabInner}>
               <div className={styles.tabIconWrap}>
@@ -80,9 +84,9 @@ const SkillGetStarted = ({getStarted}) => {
         ))}
       </div>
       <div>
-        {/* <Txt>{getStarted[active].description}</Txt> */}
+        {/* <Txt>{getStarted[activeLevel].description}</Txt> */}
         <List>
-          {getStarted[active].tasks.map((task, index) => (
+          {getStarted[activeLevel].tasks.map((task, index) => (
             <ListItem className={styles.taskWrap} key={index}>
               <BoldHeading level={6} className={styles.taskTitle}>
                 {task.title}
@@ -96,9 +100,10 @@ const SkillGetStarted = ({getStarted}) => {
           ))}
         </List>
         <UnderlinedHeading level={5} className={styles.booksHeading}>
+          <FontAwesomeIcon className={styles.bookIcon} icon={faBookReader} />
           おすすめの教材
         </UnderlinedHeading>
-        <OgpList ogpList={getStarted[active].recommended} />
+        <OgpList ogpList={getStarted[activeLevel].recommended} />
       </div>
     </div>
   )
