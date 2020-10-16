@@ -439,7 +439,7 @@
     "sceneId": "web-application-development",
     "getStarted": {
       "easy": {
-        "description": "easy description",
+        "description": "データベースの最初の学習は、現在でも広く使われているリレーショナルデータベースがよいでしょう。まずは、リレーショナルデータベースを操作するSQLについて学びましょう。",
         "tasks": [
           {
             "title": "SQLでデータ取得をしてみよう",
