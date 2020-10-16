@@ -196,11 +196,19 @@
   },
   {
     "skillId": "development-flow",
-    "title": "エクストリームプログラミング",
-    "description": "アジャイル開発の原点となった書籍です。各プラクティスに対して「なぜ」を丁寧に説明してくれるので、背景を学びたい人におすすめです。",
-    "url": "https://www.amazon.co.jp/dp/4274217620/",
-    "isbn": "4274217620",
+    "title": "アジャイルサムライ",
+    "description": "アジャイル開発の全体像や具体的な進め方についてわかりやすく説明されています。アジャイル開発の入門としておすすめです。",
+    "url": "https://www.amazon.co.jp/dp/4274068560/",
+    "isbn": "4274068560",
     "level": "easy"
+  },
+  {
+    "skillId": "development-flow",
+    "title": "チーム開発実践入門",
+    "description": "チーム開発の進め方について、バージョン管理やタスク管理など幅広く説明されています。",
+    "url": "https://www.amazon.co.jp/dp/B07JLQD763/",
+    "isbn": "B07JLQD763",
+    "level": "middle"
   },
   {
     "skillId": "design-specification",
