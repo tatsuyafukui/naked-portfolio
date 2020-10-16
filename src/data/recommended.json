@@ -2,71 +2,101 @@
   {
     "skillId": "html-and-css",
     "title": "Progate HTML & CSS 初級編",
-    "description": "初心者にもわかりやすくスライド形式で学習できるので自分のペースで学ぶことができます。環境構築が不要なのも学びやすいです。",
+    "description": "プログラミング学習の最初におすすめがHTML＆CSSコースです。実際にWebページを作りながら学んでいきましょう。",
     "url": "https://prog-8.com/lessons/html/study/1",
     "level": "easy"
   },
   {
     "skillId": "html-and-css",
-    "description": "アクセシビリティについて学べます",
-    "url": "https://wiki.developer.mozilla.org/ja/docs/Learn/Accessibility",
+    "title": "Progate",
+    "description": "ローカル環境で開発してきたWebページを世界に公開してみましょう。GitHubの設定から公開までをサポートしています。",
+    "url": "https://prog-8.com/docs/github-pages",
+    "level": "middle"
+  },
+  {
+    "skillId": "html-and-css",
+    "title": "アクセシビリティ",
+    "description": "ある程度の実践をしたあとは、学んだスキルをどのように扱うかの知識も必要です。アクセシビリティの基本について学ぶことで、どのようなコードを書くべきかをイメージできるようになります。",
+    "url": "https://developer.mozilla.org/ja/docs/Learn/Accessibility",
     "level": "middle"
   },
   {
     "skillId": "editors",
     "title": "Documentation for Visual Studio Code（英語）",
-    "description": "近年ではもっとも主流となっているエディタです。まずは最低限のセットアップをしましょう。",
+    "description": "Visual Studio Codeはマイクロソフトが提供しているエディタです。まずはインストールを完了して、必要に応じて調べながら学習を進めましょう。",
     "url": "https://code.visualstudio.com/docs",
     "level": "easy"
   },
   {
     "skillId": "editors",
-    "title": "Documentation for Visual Studio Code（英語）",
-    "description": "editorでデバッグするための拡張機能です",
-    "url": "https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome",
+    "title": "デバッグ in Visual Studio Code（英語）",
+    "description": "Debugger for Chromeを使ってエディタ内でデバッグできるようになりましょう。JavaScriptのデバッグからはじめるのがおすすめです。",
+    "url": "https://code.visualstudio.com/docs/editor/debugging",
     "level": "middle"
   },
   {
     "skillId": "internet",
+    "title": "Progate",
+    "description": "必要な知識を限定して用語と役割を説明しています。最初に読んでみるのがおすすめです。",
+    "url": "https://prog-8.com/docs/web",
+    "level": "easy"
+  },
+  {
+    "skillId": "internet",
     "title": "イラスト図解式 この一冊で全部わかるWeb技術の基本",
-    "description": "１ページ毎に説明と図がセットになっており、インターネットに関連ある用語が一通り説明されています。とても読みやすいのでおすすめです。",
+    "description": "1ページ毎に説明と図がセットになっており、インターネットに関連ある用語が一通り説明されています。",
     "url": "https://www.amazon.co.jp/dp/4797388811",
     "isbn": "4797388811",
     "level": "easy"
   },
   {
     "skillId": "internet",
-    "title": "イラスト図解式 この一冊で全部わかるWeb技術の基本",
-    "description": "少し古いですが、入門の必読書として有名です。",
+    "title": "Webを支える技術",
+    "description": "少し古いですが、インターネットの基本を押さえる必読書です。インターネットの背景や仕組みを深く学ぶために読んでおきましょう。",
     "url": "https://www.amazon.co.jp/dp/4774142042",
     "isbn": "4774142042",
     "level": "middle"
   },
   {
+    "skillId": "internet",
+    "title": "GitHub Pages Doc",
+    "description": "GitHub Pagesに公開するための公式ドキュメントです。インターネットの基本で学んだことを意識しながら、カスタムドメインや404ページを設定してWebページを公開しましょう。",
+    "url": "https://docs.github.com/ja/free-pro-team@latest/github/working-with-github-pages/about-github-pages",
+    "level": "middle"
+  },
+  {
     "skillId": "javascript",
     "title": "Progate JavaScript 学習コース Ⅰ",
-    "description": "基本的な文法から学びたい人はProgateがおすすめです。はじめての人でも理解できるように説明されています。",
+    "description": "基本的な文法の学習はProgateに用意されています。実際に動かしながら学んでいきましょう。",
     "url": "https://prog-8.com/lessons/es6/study/1",
     "level": "easy"
   },
   {
     "skillId": "javascript",
-    "title": "MDN JavaScript",
-    "description": "Progateで紹介できなかった、イベントや非同期処理、ブラウザ APIについてゼロから学ぶことができます。Progateで学んだことを復習しながら、学習を進めましょう。",
-    "url": "https://developer.mozilla.org/ja/docs/Learn/JavaScript",
+    "title": "Progate JQuery 学習コース Ⅰ",
+    "description": "JavaScriptで直接DOMを扱うProgateのレッスンはまだありません。代わりにJavaScriptライブラリのJQueryを使うことでDOM操作のイメージを付けることができます。クリアした後は、JQueryで作った機能をJavaScriptで書き直してみましょう。",
+    "url": "https://prog-8.com/lessons/jquery/study/1",
+    "level": "easy"
+  },
+  {
+    "skillId": "javascript",
+    "title": "非同期 MDN",
+    "description": "JavaScriptのドキュメントがもっとも豊富なサイトです。辞書としてだけでなく、学習チュートリアルも用意されているので参考にして学んでいきましょう。",
+    "url": "https://developer.mozilla.org/ja/docs/Learn/JavaScript/Asynchronous",
     "level": "middle"
   },
   {
     "skillId": "developer-tools",
-    "title": "Chrome DevTool",
-    "description": "多くの開発者が利用しているChromeブラウザの開発者ツールのドキュメントです。機能ごとにチュートリアルが用意されているので、使い方を調べたいときに読むといいでしょう。",
-    "url": "https://developers.google.com/web/tools/chrome-devtools?hl=ja",
+    "title": "Progate",
+    "description": "初めて開発者ツールを使う人に向けた解説記事です。HTMLやCSSの確認ができるようになります。",
+    "url": "https://prog-8.com/docs/html-dev",
     "level": "easy"
   },
   {
     "skillId": "developer-tools",
-    "description": "まずは開発者ツールに触れてみましょう。",
-    "url": "https://prog-8.com/docs/html-dev",
+    "title": "Chrome DevTool",
+    "description": "開発者ツールの公式ドキュメントです。機能ごとにチュートリアルが用意されているので、使い方を調べたいときに読むといいでしょう。",
+    "url": "https://developers.google.com/web/tools/chrome-devtools?hl=ja",
     "level": "middle"
   },
   {
