@@ -102,7 +102,7 @@
   {
     "skillId": "server-side-programming",
     "title": "Progate Ruby 学習コース Ⅰ - Ⅲ",
-    "description": "ProgateのRubyコースでは基本的な文法、変数、条件分岐などを学ぶことができます。ProgateでRubyの基礎を身につけましょう。 on Railsというフレームワークと合わせて高い生産性で開発ができます。",
+    "description": "ProgateのRubyコースでは基本的な文法、変数、条件分岐などを学ぶことができます。ProgateでRubyの基礎を身につけましょう。",
     "url": "https://prog-8.com/lessons/ruby/study/1",
     "level": "easy"
   },
