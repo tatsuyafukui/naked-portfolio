@@ -2,14 +2,22 @@
   {
     "skillId": "html-and-css",
     "title": "Progate HTML & CSS 初級編",
-    "description": "初心者にもわかりやすくスライド形式で学習できるので自分のペースで学ぶことができます。環境構築が不要なのも学びやすいです。",
+    "description": "プログラミング学習の最初におすすめがHTML＆CSSコースです。実際にWebページを作りながら学んでいきましょう。",
     "url": "https://prog-8.com/lessons/html/study/1",
     "level": "easy"
   },
   {
     "skillId": "html-and-css",
-    "description": "アクセシビリティについて学べます",
-    "url": "https://wiki.developer.mozilla.org/ja/docs/Learn/Accessibility",
+    "title": "Progate",
+    "description": "ローカル環境で開発してきたWebページを世界に公開してみましょう。GitHubの設定から公開までをサポートしています。",
+    "url": "https://prog-8.com/docs/github-pages",
+    "level": "middle"
+  },
+  {
+    "skillId": "html-and-css",
+    "title": "アクセシビリティ",
+    "description": "ある程度の実践をしたあとは、学んだスキルをどのように扱うかの知識も必要です。アクセシビリティの基本について学ぶことで、どのようなコードを書くべきかをイメージできるようになります。",
+    "url": "https://developer.mozilla.org/ja/docs/Learn/Accessibility",
     "level": "middle"
   },
   {
