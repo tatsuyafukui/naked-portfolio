@@ -317,16 +317,17 @@
   },
   {
     "skillId": "cloud-services",
-    "title": "アマゾン ウェブ サービス（AWS） の開始方法 | AWS",
-    "description": "AWSを利用する人は必要なドキュメントを探して実践してみましょう。",
+    "title": "AWSで基本的なウェブアプリケーションを構築する",
+    "description": "AWSでWebアプリケーションをデプロイするための公式チュートリアルです。簡単に始めることができるので、最初に学んでいきましょう。",
     "url": "https://aws.amazon.com/jp/getting-started/?nc2=h_ql_le_gs",
     "level": "easy"
   },
   {
     "skillId": "cloud-services",
-    "title": "アマゾン ウェブ サービス（AWS） の開始方法 | AWS",
-    "description": "本的なウェブアプリケーションを構築してみよう。",
-    "url": "https://aws.amazon.com/jp/getting-started/hands-on/build-web-app-s3-lambda-api-gateway-dynamodb/?trk=gs_card",
+    "title": "amazon Web Services 基礎からのネットワーク&サーバー構築 改訂3版 (日本語) 単行本 – 2020/2/6",
+    "description": "AWSでWebアプリケーションを構築する方法をハンズオン形式で解説されています。サーバー構成やネットワークに関しても学ぶことができます。",
+    "url": "https://www.amazon.co.jp/dp/4296105442",
+    "isbn": "4296105442",
     "level": "middle"
   },
   {
