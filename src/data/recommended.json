@@ -332,14 +332,15 @@
   },
   {
     "skillId": "web-security",
-    "description": "簡単なセキュリティに関する実装を体験できます。",
-    "url": "https://prog-8.com/lessons/rails5/study/11",
+    "title": "Railsチュートリアル",
+    "description": "Railsチュートリアルでは、セキュリティも意識した実践的なユーザー登録機能を作れます。ユーザー登録からパスワードの再設定までを学んでいきましょう。",
+    "url": "https://railstutorial.jp/chapters/modeling_users?version=5.1#cha-modeling_users",
     "level": "easy"
   },
   {
     "skillId": "web-security",
     "title": "体系的に学ぶ 安全なWebアプリケーションの作り方 第2版 脆弱性が生まれる原理と対策の実践",
-    "description": "Webセキュリティに関して基礎からわかりやすく説明されています。この書籍を読めば基礎は押さえられるでしょう。",
+    "description": "Webセキュリティに関して基礎からわかりやすく説明されています。この書籍を読めば基礎を押さえることができます。",
     "url": "https://www.amazon.co.jp/dp/4797393165",
     "isbn": "4797393165",
     "level": "middle"
