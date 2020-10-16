@@ -161,14 +161,14 @@
   {
     "skillId": "web-application-frameworks",
     "title": "Progate Ruby on Rails 学習コース Ⅰ",
-    "description": "Rubyで人気のフルスタックフレームワークです。豊富な機能を備えており、アプリケーションを作成する際のコード量が少なくなることで、開発効率を高めることができます。",
+    "description": "Progateでは充実したRuby on Railsコースを用意しています。実際に動かしながらRailsについて学んでいきましょう。",
     "url": "https://prog-8.com/lessons/rails5/study/1",
     "level": "easy"
   },
   {
     "skillId": "web-application-frameworks",
     "title": "Ruby on Rails ガイド：体系的にRailsを学ぼう学ぼう",
-    "description": "実践的なチュートリアルで学べるので、Progateのあとにおすすめです。",
+    "description": "Railsチュートリアルは、バージョン管理やテスト、デプロイまでを通して実践的なRailsアプリケーション開発について学ぶことができます。",
     "url": "https://railstutorial.jp/",
     "level": "middle"
   },

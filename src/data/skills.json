@@ -506,7 +506,7 @@
     "sceneId": "web-application-development",
     "getStarted": {
       "easy": {
-        "description": "easy description",
+        "description": "RailsはRubyでWebアプリケーションを開発するときに最も使われるWebアプリケーションフレームワークです。豊富な機能を備えており、アプリケーションを作成する際のコード量が少なくなることで、開発効率を高めることができます。まずは、Railsを触りながら簡単なSNSアプリを作ってみましょう。",
         "tasks": [
           {
             "title": "Ruby on Railsを使ってみよう",
@@ -530,26 +530,19 @@
         ]
       },
       "middle": {
-        "description": "middle description",
+        "description": "ここでは、一般的にWebアプリケーションに備わっている機能を取り入れて、オリジナルのWebアプリケーションを作ることを目標に学んでいきます。すでに世の中に存在するアプリケーションを参考に機能を考えてみるものおすすめです。",
         "tasks": [
           {
-            "title": "図書館管理アプリを作ってみよう",
+            "title": "オリジナルWebアプリケーションを作ってみよう",
             "child": [
               "Railsをインストールしよう",
               "MySQLと接続してみよう",
-              "本の貸出機能を作ってみよう",
               "deviceを使ってログイン機能を作ってみよう",
               "omniauthを使ってGitHubログイン機能を作ってみよう",
-              "Active Storageを使ってS3に画像をアップロードしよう",
-              "herokuに図書館管理アプリをデプロイしてみよう"
-            ]
-          },
-          {
-            "title": "Webアプリケーションの基本を理解しよう",
-            "child": [
-              "MVCについて理解しよう",
-              "セッション管理と認証・認可の基本を知ろう",
-              "ORMとActive Recordの基本を学ぼう"
+              "Active Storageを使って画像アップロード機能を作ってみよう",
+              "ユーザーフォロー機能を作ってみよう",
+              "コメント機能を作ってみよう",
+              "Herokuにアプリケーションをデプロイしよう"
             ]
           }
         ]
