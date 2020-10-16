@@ -132,7 +132,7 @@
   {
     "skillId": "terminal-operations",
     "title": "Progate Command Line 学習コース 基礎編",
-    "description": "ターミナルで利用するコマンドの中で最も利用するものが説明されています。ルートディレクトリやカレントディレクトリなどのパスについても学べるので初学者におすすめです。",
+    "description": "ターミナルで利用する基本的なコマンドが説明されています。ルートディレクトリやカレントディレクトリなどのパスについても学べるので初学者におすすめです。",
     "url": "https://prog-8.com/lessons/commandline/study/1",
     "level": "easy"
   },
