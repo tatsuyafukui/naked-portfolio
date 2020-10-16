@@ -263,17 +263,17 @@
   },
   {
     "skillId": "testing",
-    "title": "はじめて学ぶソフトウェアのテスト技法",
-    "description": "最低限ここだけを押さえていれば大丈夫が説明されています。",
-    "url": "https://qiita.com/jnchito/items/42193d066bd61c740612",
+    "title": "テスト駆動開発",
+    "description": "テスト駆動開発を学ぶことで自動テストの書き方だけでなく、設計やリファクタリングとテストの関係もイメージできるようになります。写経しながら読み進めるのがおすすめです。",
+    "url": "https://www.amazon.co.jp/dp/4274217884",
+    "isbn": "4274217884",
     "level": "easy"
   },
   {
     "skillId": "testing",
-    "title": "テスト駆動開発",
-    "description": "「動作するきれいなコード」を実現するための手法について豊富なコードで説明されています。書籍のコードを写経しながら学んでみるといいでしょう。",
-    "url": "https://www.amazon.co.jp/dp/4274217884",
-    "isbn": "4274217884",
+    "title": "RSpecによるRailsテスト入門",
+    "description": "RSpecを使ってRailsアプリケーションに信頼性の高いテストを書く実践的なスキルについて学ぶことができます。",
+    "url": "https://leanpub.com/everydayrailsrspec-jp",
     "level": "middle"
   },
   {
