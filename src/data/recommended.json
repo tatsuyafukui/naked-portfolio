@@ -88,14 +88,14 @@
   {
     "skillId": "developer-tools",
     "title": "Chrome DevTool",
-    "description": "多くの開発者が利用しているChromeブラウザの開発者ツールのドキュメントです。機能ごとにチュートリアルが用意されているので、使い方を調べたいときに読むといいでしょう。",
-    "url": "https://developers.google.com/web/tools/chrome-devtools?hl=ja",
+    "description": "初めて開発者ツールを使う人に向けた解説記事です。HTMLやCSSの確認ができるようになります。",
+    "url": "https://prog-8.com/docs/html-dev",
     "level": "easy"
   },
   {
-    "skillId": "developer-tools",
-    "description": "まずは開発者ツールに触れてみましょう。",
-    "url": "https://prog-8.com/docs/html-dev",
+    "skillId": "Chrome DevTool",
+    "description": "開発者ツールの公式ドキュメントです。機能ごとにチュートリアルが用意されているので、使い方を調べたいときに読むといいでしょう。",
+    "url": "https://developers.google.com/web/tools/chrome-devtools?hl=ja",
     "level": "middle"
   },
   {
