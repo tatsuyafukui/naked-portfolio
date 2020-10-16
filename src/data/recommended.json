@@ -87,13 +87,14 @@
   },
   {
     "skillId": "developer-tools",
-    "title": "Chrome DevTool",
+    "title": "Progate",
     "description": "初めて開発者ツールを使う人に向けた解説記事です。HTMLやCSSの確認ができるようになります。",
     "url": "https://prog-8.com/docs/html-dev",
     "level": "easy"
   },
   {
-    "skillId": "Chrome DevTool",
+    "skillId": "developer-tools",
+    "title": "Chrome DevTool",
     "description": "開発者ツールの公式ドキュメントです。機能ごとにチュートリアルが用意されているので、使い方を調べたいときに読むといいでしょう。",
     "url": "https://developers.google.com/web/tools/chrome-devtools?hl=ja",
     "level": "middle"
