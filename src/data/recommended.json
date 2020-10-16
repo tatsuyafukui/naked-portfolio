@@ -67,15 +67,22 @@
   {
     "skillId": "javascript",
     "title": "Progate JavaScript 学習コース Ⅰ",
-    "description": "基本的な文法から学びたい人はProgateがおすすめです。はじめての人でも理解できるように説明されています。",
+    "description": "基本的な文法の学習はProgateに用意されています。実際に動かしながら学んでいきましょう。",
     "url": "https://prog-8.com/lessons/es6/study/1",
     "level": "easy"
   },
   {
     "skillId": "javascript",
-    "title": "MDN JavaScript",
-    "description": "Progateで紹介できなかった、イベントや非同期処理、ブラウザ APIについてゼロから学ぶことができます。Progateで学んだことを復習しながら、学習を進めましょう。",
-    "url": "https://developer.mozilla.org/ja/docs/Learn/JavaScript",
+    "title": "Progate JQuery 学習コース Ⅰ",
+    "description": "JavaScriptで直接DOMを扱うProgateのレッスンはまだありません。代わりにJavaScriptライブラリのJQueryを使うことでDOM操作のイメージを付けることができます。クリアした後は、JQueryで作った機能をJavaScriptで書き直してみましょう。",
+    "url": "https://prog-8.com/lessons/jquery/study/1",
+    "level": "easy"
+  },
+  {
+    "skillId": "javascript",
+    "title": "非同期 MDN",
+    "description": "JavaScriptのドキュメントがもっとも豊富なサイトです。辞書としてだけでなく、学習チュートリアルも用意されているので参考にして学んでいきましょう。",
+    "url": "https://developer.mozilla.org/ja/docs/Learn/JavaScript/Asynchronous",
     "level": "middle"
   },
   {

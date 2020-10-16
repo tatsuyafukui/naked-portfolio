@@ -178,10 +178,10 @@
     "sceneId": "web-basics",
     "getStarted": {
       "easy": {
-        "description": "プログラミングの",
+        "description": "ここでは、JavaScriptでWebページに動きを付けることを目標に学んでいきましょう。まずは、基本文法を押さえてからDOM操作にチャレンジしてみましょう。",
         "tasks": [
           {
-            "title": "ブラウザでJavaScriptを使って動きのあるWebページを作ります。まずは、基本的な文法から始めましょう！",
+            "title": "JavaScriptの基本を理解しよう",
             "child": [
               "基本的な構文を覚えよう",
               "FizzBuzzプログラムを作ってみよう"
@@ -207,7 +207,7 @@
         ]
       },
       "middle": {
-        "description": "非同期処理はJavaScriptの難しいポイントの一つです。実行順序を丁寧に押さえて非同期処理を使いこなせれば、作れる幅がぐっと広がります！",
+        "description": "非同期の学習は少し難易度が高いですが、Web APIの利用など実践では必ず登場します。最初は実行順序などから丁寧に学んでいきましょう。",
         "tasks": [
           {
             "title": "非同期処理を理解しよう",
