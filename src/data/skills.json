@@ -561,7 +561,7 @@
     "sceneId": "web-application-development",
     "getStarted": {
       "easy": {
-        "description": "easy description",
+        "description": "Web APIを活用して自分のアプリケーションに機能を追加できることを目指しましょう。まずは、無料のデータを使ってWeb APIのイメージを掴みましょう。",
         "tasks": [
           {
             "title": "Web APIを使ってみよう",
@@ -571,22 +571,21 @@
               "JSONを扱えるようになろう",
               "Ajaxで取得したデータをWebページに表示しよう",
               "net/httpを使ってRubyからWeb APIにアクセスしてみよう",
-              "Twitter APIを使って最新のツイートをWebアプリに表示してみよう"
+              "サードパーティAPIを使ってデータを自分のWebアプリに表示してみよう"
             ]
           }
         ]
       },
       "middle": {
-        "description": "middle description",
+        "description": "実践では、Web APIを利用するだけでなく設計して使ってもらう場面が多くあります。ここでは、Web APIを自分で作ることを目標に学習していきましょう。",
         "tasks": [
           {
-            "title": "図書館管理アプリをWeb API化してみよう",
+            "title": "オリジナルWebアプリケーションをWeb API化してみよう",
             "child": [
               "RESTの考え方を知ろう",
-              "書籍一覧のJSONを返すAPIを作ってみよう",
-              "書籍追加のAPIを作ってみよう",
-              "ログイン機能のAPIを作ってみよう",
-              "本の貸出機能のAPIを作って貸出フォームから呼び出してみよう　"
+              "ユーザーリストのJSONを返すAPIを作ってみよう",
+              "ユーザー追加のAPIを作ってみよう",
+              "ログイン機能のAPIを作ってみよう"
             ]
           }
         ]

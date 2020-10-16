@@ -174,15 +174,22 @@
   },
   {
     "skillId": "web-api",
-    "title": "Web API: The Good Parts",
-    "description": "無料テストとプロトタイピングのためのWeb APIを使用できます。URLにアクセスしてAPIのイメージをつかみましょう。",
+    "title": "Web API MDN",
+    "description": "APIの基本の説明からサンプルコードまで説明されています。サーバーからのデータ取得方法についてやサードパーティーAPIの説明を中心に学びましょう。",
+    "url": "https://developer.mozilla.org/ja/docs/Learn/JavaScript/Client-side_web_APIs/Introduction",
+    "level": "easy"
+  },
+  {
+    "skillId": "web-api",
+    "title": "JSONPlaceholder",
+    "description": "無料でWeb APIを試せるサイトです。Ajaxを使ってWeb APIにアクセスして、JSONを扱う練習をしてみましょう。",
     "url": "https://jsonplaceholder.typicode.com/",
     "level": "easy"
   },
   {
     "skillId": "web-api",
     "title": "Web API: The Good Parts",
-    "description": "Web APIの必要性から、APIを公開に必要な知識について説明されています。",
+    "description": "Web APIの必要性から、公開に必要な知識について説明されています。設計の考え方を中心に学べるので、自分でWeb APIを作るときに読んでおきましょう。",
     "url": "https://www.amazon.co.jp/dp/4873116864",
     "isbn": "4873116864",
     "level": "middle"
