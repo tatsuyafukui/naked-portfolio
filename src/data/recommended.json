@@ -294,9 +294,17 @@
   },
   {
     "skillId": "server-configuration",
-    "description": "「そもそもインフラとは何か?」というところからITインフラ全般の概要を解説します。",
-    "url": "https://www.amazon.co.jp/dp/4295003255",
-    "isbn": "4295003255",
+    "title": "新人エンジニアのためのインフラ入門　ThinkIT Books",
+    "description": "インフラを構成する上での基本がわかりやすく説明されています。Web3層構成についても解説されているので、入門として読んでみましょう。",
+    "url": "https://www.amazon.co.jp/dp/B07BDHJ8KV",
+    "isbn": "B07BDHJ8KV",
+    "level": "easy"
+  },
+  {
+    "skillId": "server-configuration",
+    "title": "Nginx Get Started",
+    "description": "Nginx公式の入門ページです。英語ですが、無料の教材なども紹介されているので、ブラウザの翻訳機能を使ってチェックしてみるといいでしょう。難しい場合は、具体的な構築方法などをブログや記事を調べてみるのがおすすめです。",
+    "url": "https://www.nginx.com/resources/wiki/start/",
     "level": "middle"
   },
   {
