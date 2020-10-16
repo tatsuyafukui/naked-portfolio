@@ -23,15 +23,15 @@
   {
     "skillId": "editors",
     "title": "Documentation for Visual Studio Code（英語）",
-    "description": "近年ではもっとも主流となっているエディタです。まずは最低限のセットアップをしましょう。",
+    "description": "Visual Studio Codeはマイクロソフトが提供しているエディタです。まずはインストールを完了して、必要に応じて調べながら学習を進めましょう。",
     "url": "https://code.visualstudio.com/docs",
     "level": "easy"
   },
   {
     "skillId": "editors",
-    "title": "Documentation for Visual Studio Code（英語）",
-    "description": "editorでデバッグするための拡張機能です",
-    "url": "https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome",
+    "title": "デバッグ in Visual Studio Code（英語）",
+    "description": "Debugger for Chromeを使ってエディタ内でデバッグできるようになりましょう。JavaScriptのデバッグからはじめるのがおすすめです。",
+    "url": "https://code.visualstudio.com/docs/editor/debugging",
     "level": "middle"
   },
   {
