@@ -212,24 +212,25 @@
   },
   {
     "skillId": "design-specification",
-    "description": "まずは、Webページのワイヤーフレームの作り方を学んでみましょう",
-    "url": "https://web-kanji.com/posts/making-wireframe",
+    "title": "Figma",
+    "description": "Figmaはブラウザやデスクトップアプリから、簡単に使い始めることができます。Figmaの使い方やWebページの設計方法は、さざまな記事があるので調べてみましょう",
+    "url": "https://www.figma.com/design/",
     "level": "easy"
   },
   {
     "skillId": "design-specification",
     "title": "Clean Architecture 達人に学ぶソフトウェアの構造と設計",
-    "description": "「動く」だけではなく「正しく」作るための設計の考え方について学ぶことができます。実際に開発しないとわからない部分もありますが、設計について学びたい人は読んでみるといいでしょう。",
+    "description": "「動く」だけではなく「正しく」作るためのソフトウェア設計の考え方について学ぶことができます。",
     "url": "https://www.amazon.co.jp/dp/4048930656",
     "isbn": "4048930656",
     "level": "middle"
   },
   {
     "skillId": "design-specification",
-    "title": "達人に学ぶDB設計 徹底指南書 初級者で終わりたくないあなたへ",
-    "description": "リレーショナルデータベースの設計についての書籍です。データベースの設計について体系的に説明されているため、データベース設計入門として読むと良いでしょう。",
-    "url": "https://www.amazon.co.jp/dp/4798124702",
-    "isbn": "4798124702",
+    "title": "SQLアンチパターン",
+    "description": "リレーショナルデータベースの設計について、アンチパターンの具体例と正しい方法の解説という展開でわかりやすく説明されています。",
+    "url": "https://www.amazon.co.jp/dp/4873115892",
+    "isbn": "4873115892",
     "level": "middle"
   },
   {
