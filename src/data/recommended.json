@@ -101,30 +101,30 @@
   },
   {
     "skillId": "server-side-programming",
-    "title": "Progate Ruby 学習コース Ⅰ",
-    "description": "Rubyはオープンソースのスクリプト言語で、Webアプリケーション開発で人気の言語です。Ruby on Railsというフレームワークと合わせて高い生産性で開発ができます。",
+    "title": "Progate Ruby 学習コース Ⅰ - Ⅲ",
+    "description": "ProgateのRubyコースでは基本的な文法、変数、条件分岐などを学ぶことができます。ProgateでRubyの基礎を身につけましょう。",
     "url": "https://prog-8.com/lessons/ruby/study/1",
     "level": "easy"
   },
   {
     "skillId": "server-side-programming",
-    "title": "Progate Ruby 学習コース Ⅰ",
-    "description": "本書はRubyの文法をサンプルコードで学び、例題でプログラミングの流れを体験できる解説書です。",
+    "title": "Ruby　入門",
+    "description": "Rubyの中級者向けの教材として有名な書籍です。知識だけでなく課題も用意されているので、手を動かしながら体系的に学びましょう。",
     "url": "https://www.amazon.co.jp/dp/4774193976",
     "isbn": "4774193976",
     "level": "middle"
   },
   {
     "skillId": "object-oriented-programming",
-    "title": "オブジェクト指向でなぜ作るのか 第2版",
-    "description": "クラスやインスタントなどを作ってRubyでオブジェクト指向を体験してみましょう。",
+    "title": "Progate Ruby Ⅳ - Ⅴ",
+    "description": "Rubyでオブジェクト指向を実現する基礎について学ぶことができます。実際に動かしながら学んでいきましょう。",
     "url": "https://prog-8.com/lessons/ruby/study/4",
     "level": "easy"
   },
   {
     "skillId": "object-oriented-programming",
     "title": "オブジェクト指向でなぜ作るのか 第2版",
-    "description": "オブジェクト指向の全体像や必要性がわかりやすく説明されています。クラス、ポリモーフィズム、継承などの要点を押さえているので入門で読んでみると良いでしょう。",
+    "description": "オブジェクト指向の全体像や必要性がわかりやすく説明されています。クラス、ポリモーフィズム、継承などの要点を押さえているので実践でイメージをつけたあとに読んでみるといいでしょう。",
     "url": "https://www.amazon.co.jp/dp/4822284654/",
     "isbn": "4822284654",
     "level": "middle"
@@ -132,7 +132,7 @@
   {
     "skillId": "terminal-operations",
     "title": "Progate Command Line 学習コース 基礎編",
-    "description": "ターミナルで利用するコマンドの中で最も利用するものが説明されています。ルートディレクトリやカレントディレクトリなどのパスについても学べるので初学者におすすめです。",
+    "description": "ターミナルで利用する基本的なコマンドが説明されています。ルートディレクトリやカレントディレクトリなどのパスについても学べるので初学者におすすめです。",
     "url": "https://prog-8.com/lessons/commandline/study/1",
     "level": "easy"
   },
@@ -147,7 +147,7 @@
   {
     "skillId": "databases",
     "title": "Progate SQL 学習コース Ⅰ",
-    "description": "SQLの基本的な文法をわかりやすく、実際に動かしながら学ぶことができます。内容も充実しているため、まずはProgateで学ぶとよいでしょう。",
+    "description": "データベースの環境構築不要でSQLの基本的な文法をわかりやすく、実際に動かしながら学ぶことができます。内容も充実しているため、まずはProgateで学ぶとよいでしょう。",
     "url": "https://prog-8.com/lessons/sql/study/1",
     "level": "easy"
   },
@@ -161,28 +161,35 @@
   {
     "skillId": "web-application-frameworks",
     "title": "Progate Ruby on Rails 学習コース Ⅰ",
-    "description": "Rubyで人気のフルスタックフレームワークです。豊富な機能を備えており、アプリケーションを作成する際のコード量が少なくなることで、開発効率を高めることができます。",
+    "description": "Progateでは充実したRuby on Railsコースを用意しています。実際に動かしながらRailsについて学んでいきましょう。",
     "url": "https://prog-8.com/lessons/rails5/study/1",
     "level": "easy"
   },
   {
     "skillId": "web-application-frameworks",
     "title": "Ruby on Rails ガイド：体系的にRailsを学ぼう学ぼう",
-    "description": "実践的なチュートリアルで学べるので、Progateのあとにおすすめです。",
+    "description": "Railsチュートリアルは、バージョン管理やテスト、デプロイまでを通して実践的なRailsアプリケーション開発について学ぶことができます。",
     "url": "https://railstutorial.jp/",
     "level": "middle"
   },
   {
     "skillId": "web-api",
-    "title": "Web API: The Good Parts",
-    "description": "無料テストとプロトタイピングのためのWeb APIを使用できます。URLにアクセスしてAPIのイメージをつかみましょう。",
+    "title": "Web API MDN",
+    "description": "APIの基本の説明からサンプルコードまで説明されています。サーバーからのデータ取得方法についてやサードパーティーAPIの説明を中心に学びましょう。",
+    "url": "https://developer.mozilla.org/ja/docs/Learn/JavaScript/Client-side_web_APIs/Introduction",
+    "level": "easy"
+  },
+  {
+    "skillId": "web-api",
+    "title": "JSONPlaceholder",
+    "description": "無料でWeb APIを試せるサイトです。Ajaxを使ってWeb APIにアクセスして、JSONを扱う練習をしてみましょう。",
     "url": "https://jsonplaceholder.typicode.com/",
     "level": "easy"
   },
   {
     "skillId": "web-api",
     "title": "Web API: The Good Parts",
-    "description": "Web APIの必要性から、APIを公開に必要な知識について説明されています。",
+    "description": "Web APIの必要性から、公開に必要な知識について説明されています。設計の考え方を中心に学べるので、自分でWeb APIを作るときに読んでおきましょう。",
     "url": "https://www.amazon.co.jp/dp/4873116864",
     "isbn": "4873116864",
     "level": "middle"
