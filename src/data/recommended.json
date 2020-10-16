@@ -196,80 +196,90 @@
   },
   {
     "skillId": "development-flow",
-    "title": "エクストリームプログラミング",
-    "description": "アジャイル開発の原点となった書籍です。各プラクティスに対して「なぜ」を丁寧に説明してくれるので、背景を学びたい人におすすめです。",
-    "url": "https://www.amazon.co.jp/dp/4274217620/",
-    "isbn": "4274217620",
+    "title": "アジャイルサムライ",
+    "description": "アジャイル開発の全体像や具体的な進め方についてわかりやすく説明されています。アジャイル開発の入門としておすすめです。",
+    "url": "https://www.amazon.co.jp/dp/4274068560/",
+    "isbn": "4274068560",
     "level": "easy"
   },
   {
+    "skillId": "development-flow",
+    "title": "チーム開発実践入門",
+    "description": "チーム開発の進め方について、バージョン管理やタスク管理など幅広く説明されています。",
+    "url": "https://www.amazon.co.jp/dp/B07JLQD763/",
+    "isbn": "B07JLQD763",
+    "level": "middle"
+  },
+  {
     "skillId": "design-specification",
-    "description": "まずは、Webページのワイヤーフレームの作り方を学んでみましょう",
-    "url": "https://web-kanji.com/posts/making-wireframe",
+    "title": "Figma",
+    "description": "Figmaはブラウザやデスクトップアプリから、簡単に使い始めることができます。Figmaの使い方やWebページの設計方法は、さざまな記事があるので調べてみましょう",
+    "url": "https://www.figma.com/design/",
     "level": "easy"
   },
   {
     "skillId": "design-specification",
     "title": "Clean Architecture 達人に学ぶソフトウェアの構造と設計",
-    "description": "「動く」だけではなく「正しく」作るための設計の考え方について学ぶことができます。実際に開発しないとわからない部分もありますが、設計について学びたい人は読んでみるといいでしょう。",
+    "description": "「動く」だけではなく「正しく」作るためのソフトウェア設計の考え方について学ぶことができます。",
     "url": "https://www.amazon.co.jp/dp/4048930656",
     "isbn": "4048930656",
     "level": "middle"
   },
   {
     "skillId": "design-specification",
-    "title": "達人に学ぶDB設計 徹底指南書 初級者で終わりたくないあなたへ",
-    "description": "リレーショナルデータベースの設計についての書籍です。データベースの設計について体系的に説明されているため、データベース設計入門として読むと良いでしょう。",
-    "url": "https://www.amazon.co.jp/dp/4798124702",
-    "isbn": "4798124702",
+    "title": "SQLアンチパターン",
+    "description": "リレーショナルデータベースの設計について、アンチパターンの具体例と正しい方法の解説という展開でわかりやすく説明されています。",
+    "url": "https://www.amazon.co.jp/dp/4873115892",
+    "isbn": "4873115892",
     "level": "middle"
   },
   {
     "skillId": "git",
     "title": "Git 学習コース Ⅰ | Progate",
-    "description": "Gitの基本的なコマンドについて学ぶことができます。とりあえずGit操作を体験してみたい人におすすめです。",
+    "description": "Gitの基本的なコマンドについて学ぶことができます。Git操作を体験してみたい人におすすめです。",
     "url": "https://prog-8.com/lessons/git/study/1",
     "level": "easy"
   },
   {
     "skillId": "git",
-    "description": "Gitの環境構築からGitHubの設定まで説明しています。",
+    "title": "Git 環境構築 | Progate",
+    "description": "Gitの環境構築からGitHubにプッシュするところまで解説しています。",
     "url": "https://prog-8.com/docs/git-env",
     "level": "easy"
   },
   {
     "skillId": "git",
     "title": "Git - バージョン管理に関して",
-    "description": "Gitの公式サイトで紹介されている書籍のオンライン版です。Gitの目的や仕組みから説明されています。",
-    "url": "https://git-scm.com/book/ja/v2/%E4%BD%BF%E3%81%84%E5%A7%8B%E3%82%81%E3%82%8B-%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E7%AE%A1%E7%90%86%E3%81%AB%E9%96%A2%E3%81%97%E3%81%A6",
+    "description": "Gitの公式サイトで紹介されている書籍のオンライン版です。Gitの目的や仕組みから説明されています。Progateでは紹介できなかったブランチやコンフリクトについて学ぶことができます。",
+    "url": "https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%81%AF",
     "level": "middle"
   },
   {
     "skillId": "git",
     "title": "GitHub Learning Lab",
-    "description": "GitHubのチュートリアルを実戦形式で学ぶことができます。イシューの作成やプルリクエスト、コードレビューのイメージを掴みたい人は学んでみましょう。",
-    "url": "https://lab.github.com/",
+    "description": "GitHubのチュートリアルを実戦形式で学ぶことができます。イシューの作成やプルリクエスト、コードレビューを体験するために使ってみましょう。英語の部分はブラウザの翻訳機能を使って学びましょう。",
+    "url": "https://lab.github.com/githubtraining/introduction-to-github",
     "level": "middle"
   },
   {
     "skillId": "testing",
-    "title": "はじめて学ぶソフトウェアのテスト技法",
-    "description": "最低限ここだけを押さえていれば大丈夫が説明されています。",
-    "url": "https://qiita.com/jnchito/items/42193d066bd61c740612",
+    "title": "テスト駆動開発",
+    "description": "テスト駆動開発を学ぶことで自動テストの書き方だけでなく、設計やリファクタリングとテストの関係もイメージできるようになります。写経しながら読み進めるのがおすすめです。",
+    "url": "https://www.amazon.co.jp/dp/4274217884",
+    "isbn": "4274217884",
     "level": "easy"
   },
   {
     "skillId": "testing",
-    "title": "テスト駆動開発",
-    "description": "「動作するきれいなコード」を実現するための手法について豊富なコードで説明されています。書籍のコードを写経しながら学んでみるといいでしょう。",
-    "url": "https://www.amazon.co.jp/dp/4274217884",
-    "isbn": "4274217884",
+    "title": "RSpecによるRailsテスト入門",
+    "description": "RSpecを使ってRailsアプリケーションに信頼性の高いテストを書く実践的なスキルについて学ぶことができます。",
+    "url": "https://leanpub.com/everydayrailsrspec-jp",
     "level": "middle"
   },
   {
     "skillId": "refactoring",
     "title": "リーダブルコード",
-    "description": "初学者でもすぐに始められる表面的なコードのきれいさについて学ぶことができます。内容も読みやすいので一度は読んでおきましょう。",
+    "description": "初学者でもすぐに始められるリファクタリングのスキルについて学ぶことができます。理解しやすいコードを書くために読んでみましょう。",
     "url": "https://www.amazon.co.jp/dp/4873115655",
     "isbn": "4873115655",
     "level": "easy"
@@ -277,16 +287,24 @@
   {
     "skillId": "refactoring",
     "title": "リファクタリング(第2版): 既存のコードを安全に改善する",
-    "description": "オブジェクト指向やテスト駆動開発も含めた本格的なリファクタリングについての書籍です。豊富なパターンからリファクタリングの進め方を学ぶことができます。",
+    "description": "豊富なパターンから実践的なリファクタリングの進め方を学ぶことができます。リファクタリングの目的や原則を学びましょう。",
     "url": "https://www.amazon.co.jp/dp/4274224546",
     "isbn": "4274224546",
     "level": "middle"
   },
   {
     "skillId": "server-configuration",
-    "description": "「そもそもインフラとは何か?」というところからITインフラ全般の概要を解説します。",
-    "url": "https://www.amazon.co.jp/dp/4295003255",
-    "isbn": "4295003255",
+    "title": "新人エンジニアのためのインフラ入門　ThinkIT Books",
+    "description": "インフラを構成する上での基本がわかりやすく説明されています。Web3層構成についても解説されているので、入門として読んでみましょう。",
+    "url": "https://www.amazon.co.jp/dp/B07BDHJ8KV",
+    "isbn": "B07BDHJ8KV",
+    "level": "easy"
+  },
+  {
+    "skillId": "server-configuration",
+    "title": "Nginx Get Started",
+    "description": "Nginx公式の入門ページです。英語ですが、無料の教材なども紹介されているので、ブラウザの翻訳機能を使ってチェックしてみるといいでしょう。難しい場合は、具体的な構築方法などをブログや記事を調べてみるのがおすすめです。",
+    "url": "https://www.nginx.com/resources/wiki/start/",
     "level": "middle"
   },
   {
@@ -299,28 +317,30 @@
   },
   {
     "skillId": "cloud-services",
-    "title": "アマゾン ウェブ サービス（AWS） の開始方法 | AWS",
-    "description": "AWSを利用する人は必要なドキュメントを探して実践してみましょう。",
+    "title": "AWSで基本的なウェブアプリケーションを構築する",
+    "description": "AWSでWebアプリケーションをデプロイするための公式チュートリアルです。簡単に始めることができるので、最初に学んでいきましょう。",
     "url": "https://aws.amazon.com/jp/getting-started/?nc2=h_ql_le_gs",
     "level": "easy"
   },
   {
     "skillId": "cloud-services",
-    "title": "アマゾン ウェブ サービス（AWS） の開始方法 | AWS",
-    "description": "本的なウェブアプリケーションを構築してみよう。",
-    "url": "https://aws.amazon.com/jp/getting-started/hands-on/build-web-app-s3-lambda-api-gateway-dynamodb/?trk=gs_card",
+    "title": "amazon Web Services 基礎からのネットワーク&サーバー構築 改訂3版 (日本語) 単行本 – 2020/2/6",
+    "description": "AWSでWebアプリケーションを構築する方法をハンズオン形式で解説されています。サーバー構成やネットワークに関しても学ぶことができます。",
+    "url": "https://www.amazon.co.jp/dp/4296105442",
+    "isbn": "4296105442",
     "level": "middle"
   },
   {
     "skillId": "web-security",
-    "description": "簡単なセキュリティに関する実装を体験できます。",
-    "url": "https://prog-8.com/lessons/rails5/study/11",
+    "title": "Railsチュートリアル",
+    "description": "Railsチュートリアルでは、セキュリティも意識した実践的なユーザー登録機能を作れます。ユーザー登録からパスワードの再設定までを学んでいきましょう。",
+    "url": "https://railstutorial.jp/chapters/modeling_users?version=5.1#cha-modeling_users",
     "level": "easy"
   },
   {
     "skillId": "web-security",
     "title": "体系的に学ぶ 安全なWebアプリケーションの作り方 第2版 脆弱性が生まれる原理と対策の実践",
-    "description": "Webセキュリティに関して基礎からわかりやすく説明されています。この書籍を読めば基礎は押さえられるでしょう。",
+    "description": "Webセキュリティに関して基礎からわかりやすく説明されています。この書籍を読めば基礎を押さえることができます。",
     "url": "https://www.amazon.co.jp/dp/4797393165",
     "isbn": "4797393165",
     "level": "middle"
