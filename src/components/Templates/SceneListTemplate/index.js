@@ -9,9 +9,14 @@ import Seo from '../../seo'
 import Main from '../../Atoms/Main'
 import {BoldHeading} from '../../Atoms/Heading'
 
-const SceneListTemplate = ({scenes}) => (
+const SceneListTemplate = ({scenes, location}) => (
   <div className={styles.background}>
-    <Seo title='シーン一覧' />
+    <Seo
+      title='シーン一覧'
+      description='自分に合ったシーンを選ぼう！'
+      href={location.href}
+      lang='ja'
+    />
     <Header />
     <Main>
       <Container>
@@ -33,4 +38,5 @@ export default SceneListTemplate
 
 SceneListTemplate.propTypes = {
   scenes: PropTypes.array,
+  location: PropTypes.object,
 }

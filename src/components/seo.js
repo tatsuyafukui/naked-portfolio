@@ -4,20 +4,26 @@ import {Helmet} from 'react-helmet'
 import {useStaticQuery, graphql} from 'gatsby'
 
 const Seo = ({description, image, lang, href, meta, title}) => {
-  const {site} = useStaticQuery(
+  const {site, file} = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
             title
             description
+            siteURL
           }
+        }
+        file(relativePath: {eq: "defaultOgp.png"}) {
+          publicURL
         }
       }
     `
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const metaImage = image || file.publicURL
+  const metaURL = href || site.siteMetadata.siteURL
 
   return (
     <Helmet
@@ -45,7 +51,7 @@ const Seo = ({description, image, lang, href, meta, title}) => {
         },
         {
           property: 'og:image',
-          content: image,
+          content: metaImage,
         },
         {
           property: 'og:type',
@@ -53,7 +59,7 @@ const Seo = ({description, image, lang, href, meta, title}) => {
         },
         {
           property: 'og:url',
-          content: href,
+          content: metaURL,
         },
         {
           property: 'og:locale',
@@ -73,7 +79,7 @@ const Seo = ({description, image, lang, href, meta, title}) => {
         },
         {
           name: 'twitter:image',
-          content: image,
+          content: metaImage,
         },
         {
           name: 'twitter:name',
@@ -91,7 +97,6 @@ const Seo = ({description, image, lang, href, meta, title}) => {
 Seo.defaultProps = {
   lang: 'en',
   meta: [],
-  description: '',
 }
 
 Seo.propTypes = {

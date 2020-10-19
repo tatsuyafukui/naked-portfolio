@@ -25,8 +25,8 @@ const SkillTemplate = ({data, location}) => {
     <>
       <Seo
         title={skill.title}
-        description={skill.overview}
-        image={skill.image.publicURL}
+        description={skill.description}
+        image={skill.thumbnail.publicURL}
         href={location.href}
         lang='ja'
       />
@@ -113,6 +113,10 @@ export const query = graphql`
       purpose
       title
       subTitle
+      description
+      thumbnail {
+        publicURL
+      }
       getStarted {
         easy {
           description
