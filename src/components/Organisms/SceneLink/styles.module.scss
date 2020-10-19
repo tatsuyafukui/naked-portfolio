@@ -28,7 +28,6 @@
 }
 
 .title {
-  font-size: var(--font-size-xl);
   margin-bottom: var(--space-20);
 }
 
@@ -55,10 +54,6 @@
 .numberTitle {
   font-weight: var(--font-weight-bold) !important;
   line-height: var(--line-height-xs) !important;
-}
-
-.number {
-  font-size: var(--font-size-xxl);
 }
 
 .textWrap {
