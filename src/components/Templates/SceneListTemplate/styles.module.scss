@@ -4,6 +4,10 @@
   background: var(--color-background);
 }
 
+.heading {
+  margin-top: var(--space-56-fixed);
+}
+
 .list {
   display: flex;
   flex-wrap: wrap;

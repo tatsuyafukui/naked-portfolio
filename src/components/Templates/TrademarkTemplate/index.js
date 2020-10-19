@@ -4,8 +4,6 @@ import Footer from '../../Organisms/Footer'
 import Header from '../../Organisms/Header'
 import styles from './styles.module.scss'
 import Container from '../../Atoms/Container'
-import NavigationBreadcrumb from '../../Molecules/NavigationBreadcrumb'
-import Link from '../../Atoms/Link'
 import {UnderlinedHeading} from '../../Atoms/Heading'
 import Txt from '../../Atoms/Txt'
 import {graphql, useStaticQuery} from 'gatsby'
@@ -29,10 +27,6 @@ const TrademarkTemplate = () => {
       <Header />
       <Main>
         <Container>
-          <NavigationBreadcrumb className={styles.breadcrumb}>
-            <Link to='/'>Home</Link>
-            <Txt>商標について</Txt>
-          </NavigationBreadcrumb>
           <UnderlinedHeading className={styles.title}>
             商標について
           </UnderlinedHeading>

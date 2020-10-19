@@ -10,8 +10,8 @@ import {DisableTxt} from '../../Atoms/Txt'
 const FooterList = () => {
   const links = [
     {
-      label: 'Progate',
-      url: 'https://prog-8.com/',
+      label: '初めての方へ',
+      url: '/',
     },
     {
       label: '運営会社',
@@ -60,7 +60,7 @@ const FooterList = () => {
 const Footer = ({className, ...props}) => (
   <footer className={[styles.footer, className].join(' ')} {...props}>
     <Container>
-      <Link to='/'>
+      <Link to='/scenes'>
         <Logo className={styles.logo} />
       </Link>
       <div className={styles.inner}>
