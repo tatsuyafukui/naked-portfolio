@@ -35,7 +35,7 @@ const SceneLink = ({scene, className, ...props}) => (
       </div>
       <div className={styles.textWrap}>
         <div>
-          <BoldHeading level={3} visualLevel={3} className={styles.title}>
+          <BoldHeading level={3} visualLevel={4} className={styles.title}>
             {scene.title}
           </BoldHeading>
           <List className={styles.skillList}>

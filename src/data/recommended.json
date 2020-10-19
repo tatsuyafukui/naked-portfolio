@@ -8,7 +8,7 @@
   },
   {
     "skillId": "html-and-css",
-    "title": "Progate",
+    "title": "自分で作ったWebページをインターネット上に公開しよう！",
     "description": "ローカル環境で開発してきたWebページを世界に公開してみましょう。GitHubの設定から公開までをサポートしています。",
     "url": "https://prog-8.com/docs/github-pages",
     "level": "middle"
@@ -22,14 +22,14 @@
   },
   {
     "skillId": "editors",
-    "title": "Documentation for Visual Studio Code（英語）",
+    "title": "Documentation for Visual Studio Code",
     "description": "Visual Studio Codeはマイクロソフトが提供しているエディタです。まずはインストールを完了して、必要に応じて調べながら学習を進めましょう。",
     "url": "https://code.visualstudio.com/docs",
     "level": "easy"
   },
   {
     "skillId": "editors",
-    "title": "デバッグ in Visual Studio Code（英語）",
+    "title": "デバッグ in Visual Studio Code",
     "description": "Debugger for Chromeを使ってエディタ内でデバッグできるようになりましょう。JavaScriptのデバッグからはじめるのがおすすめです。",
     "url": "https://code.visualstudio.com/docs/editor/debugging",
     "level": "middle"
@@ -213,7 +213,7 @@
   {
     "skillId": "design-specification",
     "title": "Figma",
-    "description": "Figmaはブラウザやデスクトップアプリから、簡単に使い始めることができます。Figmaの使い方やWebページの設計方法は、さざまな記事があるので調べてみましょう",
+    "description": "Figmaはブラウザやデスクトップアプリから、簡単に使い始めることができます。Figmaの使い方やWebページの設計方法は、さざまな記事があるので調べてみましょう。",
     "url": "https://www.figma.com/design/",
     "level": "easy"
   },
@@ -313,13 +313,13 @@
     "description": "ブラウザからURLにアクセスしてWebページが表示されるまでの仕組みについてわかりやすく説明されています。ネットワークの全体像を押さえたい人におすすめです。",
     "url": "https://www.amazon.co.jp/dp/4822283119/",
     "isbn": "4822283119",
-    "level": "middle"
+    "level": "easy"
   },
   {
     "skillId": "cloud-services",
     "title": "AWSで基本的なウェブアプリケーションを構築する",
     "description": "AWSでWebアプリケーションをデプロイするための公式チュートリアルです。簡単に始めることができるので、最初に学んでいきましょう。",
-    "url": "https://aws.amazon.com/jp/getting-started/?nc2=h_ql_le_gs",
+    "url": "https://aws.amazon.com/jp/getting-started/hands-on/build-web-app-s3-lambda-api-gateway-dynamodb/?e=gs2020&p=fullstack",
     "level": "easy"
   },
   {
@@ -347,69 +347,65 @@
   },
   {
     "skillId": "ci-cd",
-    "title": "circleci - Getting Started Introduction",
-    "description": "CI/CDの代表的なツールです。概要から実際に動かすチュートリアルまであるので、自分で構築してどんなものか感覚を掴んでみるといいでしょう。",
-    "url": "https://circleci.com/docs/2.0/getting-started/#section=getting-started",
+    "description": "CircleCIは導入や運用が簡単で使いやすく人気のCI/CDツールです。まずは、サンプルプロジェクトでCI/CD環境を構築してイメージを掴みましょう。",
+    "url": "https://circleci.com/docs/ja/2.0/getting-started/#section=getting-started",
     "level": "easy"
   },
   {
     "skillId": "ci-cd",
-    "description": "複数の人たちでチームを組んで開発を進めていく際に必要な考え方や使用するツール、またそれらをうまく使いこなすためのノウハウをまとめています。",
-    "url": "https://www.amazon.co.jp/dp/4774164283",
-    "isbn": "4774164283",
+    "description": "CircleCiでRuby on Railsをビルドする方法について説明されているガイドです。Railsのデモアプリケーションやデプロイの構成ごとの説明もあるので、参考にすると良いでしょう。",
+    "url": "https://circleci.com/docs/ja/2.0/language-ruby/",
     "level": "middle"
   },
   {
-    "skillId": "data-analysis-platform",
-    "title": "データ分析基盤構築入門[Fluentd、Elasticsearch、Kibanaによるログ収集と可視化]",
-    "description": "ツールの収集方法の説明だけでなく、データ分析基盤を構築するうえの考え方や具体例が説明されています。",
-    "url": "https://www.amazon.co.jp/dp/477419218X",
-    "isbn": "477419218X",
+    "skillId": "data-analytics-fundamentals",
+    "description": "Googleが提供している公式のチュートリアルサイトです。動画でわかりやすく説明されています。初級者向けコースを学んびながら、実際に自分のWebアプリケーションに取り入れてみましょう。。",
+    "url": "https://analytics.google.com/analytics/academy/course/6",
+    "level": "easy"
+  },
+  {
+    "skillId": "data-analytics-fundamentals",
+    "description": "大量データ分析/生成データの活用を視野に入れたデータ分析基盤の新しい考え方であるデータレイクについて説明されています。データ分析の基本から実際にAWSで構築する手法について学んでいきましょう。",
+    "url": "https://www.amazon.co.jp/dp/491031301X",
+    "isbn": "491031301X",
     "level": "middle"
   },
   {
     "skillId": "performance",
-    "description": "パフォーマンスの概念から、分析方法、チューニングの考え方、実際の製品を想定したパフォーマンスまで、幅広く取り上げます。",
+    "description": "クライアントサイドを中心としたパフォーマンスについて説明されています。日本語に翻訳されている情報は少ないので、英語のページをブラウザの翻訳機能を使って調べてみるといいでしょう。",
+    "url": "https://developer.mozilla.org/ja/docs/Learn/Performance",
+    "level": "easy"
+  },
+  {
+    "skillId": "performance",
+    "description": "パフォーマンスの基礎から実践的な内容まで解説されています。サーバーサイドの計測方法やチューニング方法について学びましょう。",
     "url": "https://www.amazon.co.jp/dp/4798134600",
     "isbn": "4798134600",
-    "level": "easy"
-  },
-  {
-    "skillId": "performance",
-    "title": "Webフロントエンド ハイパフォーマンス チューニング",
-    "description": "フロントエンドのパフォーマンスチューニングについて学べます。ブラウザの仕組みや開発者ツールでの計測方法も説明されているので、イメージを掴みたい読んでみるといいでしょう。",
-    "url": "https://www.amazon.co.jp/dp/4774189677",
-    "isbn": "4774189677",
-    "level": "middle"
-  },
-  {
-    "skillId": "performance",
-    "title": "SQL実践入門──高速でわかりやすいクエリの書き方",
-    "description": "SQLのパフォーマンスについて学べる書籍です。本格的にSQLのチューニングについて学びたい人は読んでみましょう。",
-    "url": "https://www.amazon.co.jp/dp/4774173010",
-    "isbn": "4774173010",
     "level": "middle"
   },
   {
     "skillId": "scalability",
-    "description": "WordPressを使ったブログサイトの構築を通じて、スケーラブルな Web システム構築を学んでいただけるウェビナーシリーズです。",
-    "url": "https://pages.awscloud.com/event_JAPAN_Hands-on-for-Beginners-Scalable_Contents.html",
+    "description": "ブログアプリの構築を通じて、AWSでスケーラブルなWebアプリケーションを構築する方法を学べます。",
+    "url": "https://pages.awscloud.com/event_JAPAN_Hands-on-for-Beginners-Scalable_LP.html?trk=aws_blog",
     "level": "easy"
   },
   {
     "skillId": "scalability",
-    "title": "[Web開発者のための]大規模サービス技術入門 ―データ構造、メモリ、OS、DB、サーバ/インフラ",
-    "description": "大規模なサービスを運用していくための具体的なノウハウが説明されています。スケーラビリティの考え方を学ぶのにおすすめです。",
-    "url": "https://www.amazon.co.jp/dp/4774143073",
-    "isbn": "4774143073",
+    "description": "AWS Auto Scaling は、安定した予測可能なパフォーマンスを可能な限り低コストで維持するためにアプリケーションをモニタリングし、容量を自動で調整します。AWSオートスケーリングを学び実践してみましょう。",
+    "url": "https://aws.amazon.com/jp/autoscaling/",
     "level": "middle"
   },
   {
     "skillId": "fault-tolerance",
-    "title": "[24時間365日] サーバ/インフラを支える技術 ‾スケーラビリティ、ハイパフォーマンス、省力運用",
-    "description": "大規模なサービスを止めずに運用方法について説明されています。さまざまなサーバーの障害対応について学べます。",
-    "url": "https://www.amazon.co.jp/dp/4774135666",
-    "isbn": "4774135666",
+    "description": "Amazon CloudWatchの公式チュートリアルです。具体的なシナリオに沿ってCloudWatchについて学ぶことができます。",
+    "url": "https://docs.aws.amazon.com/ja_jp/AmazonCloudWatch/latest/monitoring/CloudWatch-tutorials.html",
+    "level": "easy"
+  },
+  {
+    "skillId": "fault-tolerance",
+    "description": "インフラの設計で考慮するべき点がまとめられています。可用性や運用と保守の項目を読んでみるといいでしょう。",
+    "url": "https://www.amazon.co.jp/dp/4774162868",
+    "isbn": "4774162868",
     "level": "middle"
   }
 ]

@@ -84,7 +84,7 @@ const SkillGetStarted = ({getStarted}) => {
         ))}
       </div>
       <div>
-        {/* <Txt>{getStarted[activeLevel].description}</Txt> */}
+        <Txt lineHeightLevel={5}>{getStarted[activeLevel].description}</Txt>
         <List>
           {getStarted[activeLevel].tasks.map((task, index) => (
             <ListItem className={styles.taskWrap} key={index}>
