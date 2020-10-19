@@ -10,6 +10,7 @@ import {BoldHeading, HighlightedHeading} from '../../Atoms/Heading'
 import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
 import HeroImage from '../../Molecules/HeroImage'
+import SkillShareSection from '../../Organisms/SkillShareSection'
 import {graphql} from 'gatsby'
 import LazyImage from '../../Atoms/LazyImage'
 import Main from '../../Atoms/Main'
@@ -83,7 +84,7 @@ const SkillTemplate = ({data, location}) => {
             ここから学ぼう
           </HighlightedHeading>
           <SkillGetStarted getStarted={skill.getStarted} />
-          {/* <SkillShareSection title={skill.title} url={location.href} /> */}
+          <SkillShareSection title={skill.title} url={location.href} />
         </NarrowedContainer>
       </Main>
       <Footer />
