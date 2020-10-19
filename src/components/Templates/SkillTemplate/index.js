@@ -23,7 +23,13 @@ const SkillTemplate = ({data, location}) => {
 
   return (
     <>
-      <Seo title={skill.title} description={skill.overview} lang='ja' />
+      <Seo
+        title={skill.title}
+        description={skill.overview}
+        image={skill.image.publicURL}
+        href={location.href}
+        lang='ja'
+      />
       <Header />
       <Main>
         <HeroImage>
