@@ -8,7 +8,7 @@ import Container from '../../Atoms/Container'
 const Header = ({className, ...props}) => (
   <header className={[styles.header, className].join(' ')} {...props}>
     <Container>
-      <Link to='/'>
+      <Link to='/scenes'>
         <Logo className={styles.logo} />
       </Link>
     </Container>

@@ -31,7 +31,6 @@ const SceneTemplate = ({data}) => {
           </HeroImage>
           <Container>
             <NavigationBreadcrumb>
-              <Link to='/'>Home</Link>
               <Link to='/scenes'>シーン一覧</Link>
               <Txt>{scene.numberTitle}</Txt>
             </NavigationBreadcrumb>
