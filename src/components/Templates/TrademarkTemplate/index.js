@@ -13,7 +13,7 @@ import Main from '../../Atoms/Main'
 const TrademarkTemplate = ({location}) => {
   const data = useStaticQuery(graphql`
     {
-      allTrademarksJson {
+      allTrademarksJson(sort: {fields: ownership}) {
         nodes {
           ownership
         }

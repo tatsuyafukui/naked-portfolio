@@ -168,7 +168,7 @@
   {
     "skillId": "web-application-frameworks",
     "title": "Ruby on Rails ガイド：体系的にRailsを学ぼう学ぼう",
-    "description": "Railsチュートリアルは、バージョン管理やテスト、デプロイまでを通して実践的なRailsアプリケーション開発について学ぶことができます。",
+    "description": "バージョン管理やテスト、デプロイなど実践的なRailsアプリケーション開発について学ぶことができます。",
     "url": "https://railstutorial.jp/",
     "level": "middle"
   },
@@ -333,8 +333,8 @@
   {
     "skillId": "web-security",
     "title": "Railsチュートリアル",
-    "description": "Railsチュートリアルでは、セキュリティも意識した実践的なユーザー登録機能を作れます。ユーザー登録からパスワードの再設定までを学んでいきましょう。",
-    "url": "https://railstutorial.jp/chapters/modeling_users?version=5.1#cha-modeling_users",
+    "description": "Railsチュートリアルでは、セキュリティを意識した実践的なユーザー登録機能を開発します。バリデーションや認証などのセキュアな実装について学びましょう。",
+    "url": "https://railstutorial.jp/chapters/modeling_users",
     "level": "easy"
   },
   {
