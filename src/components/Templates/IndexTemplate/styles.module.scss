@@ -1,5 +1,25 @@
 @import '../../properties';
 
+.mainVisual {
+  margin-bottom: var(--space-120);
+  margin-top: var(--space-80);
+  text-align: center;
+}
+
+.mainVisualIcon {
+  margin-bottom: var(--space-32);
+  width: 140px;
+}
+
+.mainVisualTitle {
+  margin-bottom: var(--space-20);
+  white-space: pre-line;
+}
+
+.mainVisualSubTitle {
+  margin-bottom: var(--space-40);
+}
+
 .section {
   padding-top: var(--space-120);
 }

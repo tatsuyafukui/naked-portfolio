@@ -7,15 +7,17 @@ import Heading, {BoldHeading} from '../../Atoms/Heading'
 import Txt from '../../Atoms/Txt'
 import Container from '../../Atoms/Container'
 import Button from '../../Atoms/Button'
-// import {navigate} from 'gatsby'
+import {navigate, graphql, useStaticQuery} from 'gatsby'
 import Img from 'gatsby-image'
-import {graphql, useStaticQuery} from 'gatsby'
-// import BackgroundImage from 'gatsby-background-image'
 import Main from '../../Atoms/Main'
+import LazyImage from '../../Atoms/LazyImage'
 
 const IndexTemplate = () => {
   const data = useStaticQuery(graphql`
     {
+      mainVisualIcon: file(relativePath: {eq: "index/ken_icon.svg"}) {
+        publicURL
+      }
       sceneImage: file(relativePath: {eq: "index/scenes.png"}) {
         childImageSharp {
           fluid(maxWidth: 2000, quality: 100) {
@@ -34,6 +36,12 @@ const IndexTemplate = () => {
   `)
 
   const content = {
+    mainVisual: {
+      title: 'Webプロダクト開発\n学習ロードマップ',
+      subTitle: '学習の不安を自信に変えよう',
+      buttonLabel: 'ロードマップを見る',
+      image: data.mainVisualIcon.publicURL,
+    },
     scene: {
       title: '目標までの道のりを知る',
       description:
@@ -58,6 +66,26 @@ const IndexTemplate = () => {
       <Seo title='HOME' />
       <Header />
       <Main>
+        <Container className={styles.mainVisual}>
+          <LazyImage
+            src={content.mainVisual.image}
+            alt={content.mainVisual.title}
+            className={styles.mainVisualIcon}
+          />
+          <BoldHeading level={1} className={styles.mainVisualTitle}>
+            {content.mainVisual.title}
+          </BoldHeading>
+          <Heading
+            level={2}
+            visualLevel={4}
+            className={styles.mainVisualSubTitle}
+          >
+            {content.mainVisual.subTitle}
+          </Heading>
+          <Button onClick={() => navigate('/scenes')}>
+            {content.mainVisual.buttonLabel}
+          </Button>
+        </Container>
         <section className={[styles.sceneSection, styles.background].join(' ')}>
           <Container className={styles.container}>
             <div className={styles.textWrap}>
@@ -102,7 +130,9 @@ const IndexTemplate = () => {
             <Heading level={3} visualLevel={5} className={styles.ctaSubTitle}>
               {content.cta.subTitle}
             </Heading>
-            <Button>{content.cta.buttonLabel}</Button>
+            <Button onClick={() => navigate('/scenes')}>
+              {content.cta.buttonLabel}
+            </Button>
           </div>
         </Container>
       </Main>
