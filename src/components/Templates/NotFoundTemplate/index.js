@@ -7,7 +7,7 @@ import Footer from '../../Organisms/Footer'
 const NotFoundTemplate = () => {
   return (
     <div>
-      <Seo title='404: Not found' />
+      <Seo title='404: Not found' lang='ja' />
       <Header />
       <main>
         <Error404 />

@@ -2,9 +2,9 @@ import {getShareUrl} from './index'
 
 describe('ShareButton', () => {
   it('Twitter用のシェアリンクを生成', () => {
-    const shareUrl = getShareUrl('twitter', 'progate.com', 'defaultText')
+    const shareUrl = getShareUrl('twitter', 'progate.com')
     expect(shareUrl).toBe(
-      'https://twitter.com/intent/tweet?url=progate.com&hashtags=Progate&text=defaultText'
+      'https://twitter.com/intent/tweet?url=progate.com&hashtags=Progate,progate_journey&text=今日学んだことを共有しよう！'
     )
   })
   it('Facebook用のシェアリンクを生成', () => {

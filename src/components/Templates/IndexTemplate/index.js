@@ -16,7 +16,7 @@ import Main from '../../Atoms/Main'
 const IndexTemplate = ({scenes}) => {
   return (
     <div>
-      <Seo title='HOME' />
+      <Seo title='HOME' lang='ja' />
       <Header />
       <div className={styles.title}>
         <BoldHeading visualLevel={1}>journey</BoldHeading>

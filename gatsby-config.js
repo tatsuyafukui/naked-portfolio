@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Journey',
-    description: 'あなたが自信をもって目標へ向かうための学習ロードマップ',
+    title: 'Progate Journey',
+    description:
+      'Progate JourneyはWebプロダクトを開発するための学習ロードマップです。ロードマップを活用して学習の不安を自信に変えよう。',
     author: 'Progate, Inc.',
+    siteURL: 'https://journey.prog-8.com/',
   },
   plugins: [
     {
