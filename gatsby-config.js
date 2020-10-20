@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: 'Journey',
-    description: 'あなたが自信をもって目標へ向かうための学習ロードマップ',
+    title: 'Progate Journey',
+    description:
+      'Progate JourneyはWebプロダクトを開発するための学習ロードマップです。ロードマップを活用して学習の不安を自信に変えよう。',
     author: 'Progate, Inc.',
+    siteURL: 'https://journey.prog-8.com/',
   },
   plugins: [
     {
@@ -33,11 +35,11 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Progate Journey',
-        short_name: 'Journey',
-        description: 'あなたが自信をもって目標へ向かうための学習ロードマップ',
+        name: 'Progate journey',
+        short_name: 'journey',
+        description: 'Webプロダクト開発学習ロードマップ',
         lang: 'ja',
-        start_url: '/',
+        start_url: '/scenes',
         background_color: '#f9fbfe',
         theme_color: '#f9fbfe',
         display: 'standalone',

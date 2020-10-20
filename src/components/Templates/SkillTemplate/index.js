@@ -9,10 +9,8 @@ import Txt from '../../Atoms/Txt'
 import {BoldHeading, HighlightedHeading} from '../../Atoms/Heading'
 import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
-// import OgpList from '../../Organisms/OgpList'
 import HeroImage from '../../Molecules/HeroImage'
-// import SkillShareSection from '../../Organisms/SkillShareSection'
-// import SkillStandard from '../../Organisms/SkillStandard'
+import SkillShareSection from '../../Organisms/SkillShareSection'
 import {graphql} from 'gatsby'
 import LazyImage from '../../Atoms/LazyImage'
 import Main from '../../Atoms/Main'
@@ -25,7 +23,13 @@ const SkillTemplate = ({data, location}) => {
 
   return (
     <>
-      <Seo title={skill.title} description={skill.overview} lang='ja' />
+      <Seo
+        title={skill.title}
+        description={skill.description}
+        image={skill.thumbnail.publicURL}
+        href={location.href}
+        lang='ja'
+      />
       <Header />
       <Main>
         <HeroImage>
@@ -45,7 +49,6 @@ const SkillTemplate = ({data, location}) => {
         </HeroImage>
         <Container>
           <NavigationBreadcrumb className={styles.breadcrumb}>
-            <Link to='/'>Home</Link>
             <Link to='/scenes'>シーン一覧</Link>
             <Link to={scene.fields.slug}>{scene.numberTitle}</Link>
             <Txt>{skill.title}</Txt>
@@ -87,20 +90,7 @@ const SkillTemplate = ({data, location}) => {
             ここから学ぼう
           </HighlightedHeading>
           <SkillGetStarted getStarted={skill.getStarted} />
-          {/* <Txt
-            lineHeightLevel={5}
-            dangerouslySetInnerHTML={{__html: skill.overall}}
-          />
-          <OgpList ogpList={recommended} />
-          <HighlightedHeading
-            level={2}
-            visualLevel={4}
-            className={styles.highlightedHeading}
-          >
-            チェックポイント
-          </HighlightedHeading>
-          <SkillStandard standard={skill.standard} /> */}
-          {/* <SkillShareSection title={skill.title} url={location.href} /> */}
+          <SkillShareSection title={skill.title} url={location.href} />
         </NarrowedContainer>
       </Main>
       <Footer />
@@ -123,6 +113,10 @@ export const query = graphql`
       purpose
       title
       subTitle
+      description
+      thumbnail {
+        publicURL
+      }
       getStarted {
         easy {
           description

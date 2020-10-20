@@ -63,7 +63,7 @@ const IndexTemplate = () => {
 
   return (
     <>
-      <Seo title='HOME' />
+      <Seo title='HOME' lang='ja' />
       <Header />
       <Main>
         <Container className={styles.mainVisual}>

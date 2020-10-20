@@ -10,13 +10,12 @@ import {
 import {OutboundLink} from 'gatsby-plugin-google-analytics'
 
 const ShareButtonFactory = icon => ({
-  defaultText = '',
   url,
   eventAction = 'SNSシェア',
   className,
   ...props
 }) => {
-  const mediaUrl = getShareUrl(icon.iconName, defaultText, url)
+  const mediaUrl = getShareUrl(icon.iconName, url)
   return (
     <OutboundLink
       href={mediaUrl}
@@ -38,7 +37,6 @@ export const FacebookShareButton = ShareButtonFactory(faFacebook)
 export const LinkedinShareButton = ShareButtonFactory(faLinkedin)
 
 TwitterShareButton.propTypes = {
-  defaultText: PropTypes.string,
   url: PropTypes.string.isRequired,
   eventAction: PropTypes.string,
 }
@@ -53,10 +51,10 @@ LinkedinShareButton.propTypes = {
   eventAction: PropTypes.string,
 }
 
-export const getShareUrl = (media, url, defaultText) => {
+export const getShareUrl = (media, url) => {
   switch (media) {
     case faTwitter.iconName:
-      return `https://twitter.com/intent/tweet?url=${url}&hashtags=Progate&text=${defaultText}`
+      return `https://twitter.com/intent/tweet?url=${url}&hashtags=Progate,progate_journey&text=今日学んだことを共有しよう！`
     case faFacebook.iconName:
       return `https://www.facebook.com/share.php?u=${url}`
     case faLinkedin.iconName:

@@ -16,13 +16,19 @@ import HeroImage from '../../Molecules/HeroImage'
 import LazyImage from '../../Atoms/LazyImage'
 import Main from '../../Atoms/Main'
 
-const SceneTemplate = ({data}) => {
+const SceneTemplate = ({data, location}) => {
   const scene = data.scenesJson
   const skills = data.scenesJson.skills
 
   return (
     <div className={styles.background}>
-      <Seo title={scene.title} description={scene.description} lang='ja' />
+      <Seo
+        title={scene.title}
+        description={scene.description}
+        image={scene.image.publicURL}
+        href={location.href}
+        lang='ja'
+      />
       <Header />
       <Main>
         <section className={styles.firstview}>
@@ -31,7 +37,6 @@ const SceneTemplate = ({data}) => {
           </HeroImage>
           <Container>
             <NavigationBreadcrumb>
-              <Link to='/'>Home</Link>
               <Link to='/scenes'>シーン一覧</Link>
               <Txt>{scene.numberTitle}</Txt>
             </NavigationBreadcrumb>
@@ -56,6 +61,7 @@ const SceneTemplate = ({data}) => {
 
 SceneTemplate.propTypes = {
   data: PropTypes.object.isRequired,
+  location: PropTypes.object,
 }
 
 export default SceneTemplate
