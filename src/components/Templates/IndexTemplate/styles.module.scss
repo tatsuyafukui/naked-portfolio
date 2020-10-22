@@ -1,50 +1,80 @@
 @import '../../properties';
 
+.mainVisualWrap {
+  position: relative;
+}
+
+.mainVisualBackground {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: var(--z-background);
+
+  @include mediaQuery(sm) {
+    display: none;
+  }
+}
+
+.mainVisualBackgroundSp {
+  display: none;
+
+  @include mediaQuery(sm) {
+    display: block;
+  }
+}
+
 .mainVisual {
-  margin-bottom: var(--space-120);
-  margin-top: var(--space-80);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10%;
+  padding-top: 10%;
   text-align: center;
+
+  @include mediaQuery(sm) {
+    padding-bottom: 20%;
+    padding-top: 20%;
+  }
 }
 
 .mainVisualIcon {
   margin-bottom: var(--space-32);
-  width: 140px;
+  width: 120px;
+
+  @include mediaQuery(sm) {
+    width: 80px;
+  }
 }
 
 .mainVisualTitle {
   margin-bottom: var(--space-20);
   white-space: pre-line;
+
+  @include mediaQuery(sm) {
+    font-size: var(--font-size-xxl-fixed) !important;
+  }
 }
 
 .mainVisualSubTitle {
   margin-bottom: var(--space-40);
 }
 
-.section {
+.sectionContainer {
   padding-top: var(--space-120);
-}
 
-.sceneSection {
-  position: relative;
-}
-
-.background {
-  background-color: var(--color-background);
-}
-
-.container {
-  align-items: center;
-  bottom: 0;
-  display: flex;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  right: 0;
-  top: 0;
+  @include mediaQuery(sm) {
+    padding-top: var(--space-64-fixed);
+  }
 }
 
 .textWrap {
-  max-width: 40%;
+  margin: 0 auto var(--space-32);
+  max-width: 560px;
+  text-align: center;
 }
 
 .number {
@@ -54,17 +84,6 @@
 
 .title {
   margin-bottom: var(--space-16);
-}
-
-.sceneImage {
-  margin-left: auto;
-  width: 50%;
-}
-
-.skillImage {
-  margin: auto;
-  top: calc(var(--space-24) * -1);
-  width: 1680px;
 }
 
 .cta {

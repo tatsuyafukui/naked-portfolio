@@ -11,11 +11,22 @@ import {navigate, graphql, useStaticQuery} from 'gatsby'
 import Img from 'gatsby-image'
 import Main from '../../Atoms/Main'
 import LazyImage from '../../Atoms/LazyImage'
+// import HeroImage from '../../Molecules/HeroImage'
 
 const IndexTemplate = () => {
   const data = useStaticQuery(graphql`
     {
       mainVisualIcon: file(relativePath: {eq: "index/ken_icon.svg"}) {
+        publicURL
+      }
+      mainVisualBackground: file(
+        relativePath: {eq: "index/mv_background.svg"}
+      ) {
+        publicURL
+      }
+      mainVisualBackgroundSP: file(
+        relativePath: {eq: "index/mv_background_sp.svg"}
+      ) {
         publicURL
       }
       sceneImage: file(relativePath: {eq: "index/scenes.png"}) {
@@ -40,19 +51,16 @@ const IndexTemplate = () => {
       title: 'Webプロダクト開発\n学習ロードマップ',
       subTitle: '学習の不安を自信に変えよう',
       buttonLabel: 'ロードマップを見る',
-      image: data.mainVisualIcon.publicURL,
     },
     scene: {
       title: '目標までの道のりを知る',
       description:
         'プロダクトをつくれるWeb開発者になるまでの中間目標として5つのシーンを用意しました。次に学ぶことだけではなく、目標達成までの学習の全体像を確認することができます。',
-      image: data.sceneImage.childImageSharp.fluid,
     },
     skill: {
       title: '自分のレベルに合わせて学ぶ',
       description:
         '自分のレベルに合わせて、どこまで学ぶかを決めることができます。本当に必要な学習項目に絞って、効率よく学習を進めましょう。',
-      image: data.skillImage.childImageSharp.fluid,
     },
     cta: {
       title: 'さあ、はじめよう',
@@ -66,63 +74,76 @@ const IndexTemplate = () => {
       <Seo title='HOME' lang='ja' />
       <Header />
       <Main>
-        <Container className={styles.mainVisual}>
+        <div className={styles.mainVisualWrap}>
           <LazyImage
-            src={content.mainVisual.image}
+            src={data.mainVisualBackground.publicURL}
             alt={content.mainVisual.title}
-            className={styles.mainVisualIcon}
+            className={styles.mainVisualBackground}
           />
-          <BoldHeading level={1} className={styles.mainVisualTitle}>
-            {content.mainVisual.title}
-          </BoldHeading>
-          <Heading
-            level={2}
-            visualLevel={4}
-            className={styles.mainVisualSubTitle}
-          >
-            {content.mainVisual.subTitle}
-          </Heading>
-          <Button onClick={() => navigate('/scenes')}>
-            {content.mainVisual.buttonLabel}
-          </Button>
-        </Container>
-        <section className={[styles.sceneSection, styles.background].join(' ')}>
-          <Container className={styles.container}>
-            <div className={styles.textWrap}>
-              <BoldHeading level={3} className={styles.number}>
-                01
+          <LazyImage
+            src={data.mainVisualBackgroundSP.publicURL}
+            alt={content.mainVisual.title}
+            className={[
+              styles.mainVisualBackground,
+              styles.mainVisualBackgroundSp,
+            ].join(' ')}
+          />
+          <Container className={styles.mainVisual}>
+            <div>
+              <LazyImage
+                src={data.mainVisualIcon.publicURL}
+                alt={content.mainVisual.title}
+                className={styles.mainVisualIcon}
+              />
+              <BoldHeading level={1} className={styles.mainVisualTitle}>
+                {content.mainVisual.title}
               </BoldHeading>
-              <BoldHeading level={3} className={styles.title}>
-                {content.scene.title}
-              </BoldHeading>
-              <Txt lineHeightLevel={5}>{content.scene.description}</Txt>
+              <Heading
+                level={2}
+                visualLevel={4}
+                className={styles.mainVisualSubTitle}
+              >
+                {content.mainVisual.subTitle}
+              </Heading>
+              <Button onClick={() => navigate('/scenes')}>
+                {content.mainVisual.buttonLabel}
+              </Button>
             </div>
           </Container>
+        </div>
+        <Container tag={'section'} className={styles.sectionContainer}>
+          <div className={styles.textWrap}>
+            <BoldHeading level={3} className={styles.number}>
+              01
+            </BoldHeading>
+            <BoldHeading level={3} className={styles.title}>
+              {content.scene.title}
+            </BoldHeading>
+            <Txt lineHeightLevel={5}>{content.scene.description}</Txt>
+          </div>
           <Img
             className={styles.sceneImage}
-            fluid={content.scene.image}
+            fluid={data.sceneImage.childImageSharp.fluid}
             alt={content.scene.description}
           />
-        </section>
-        <section className={styles.section}>
-          <Container>
-            <div className={styles.textWrap}>
-              <BoldHeading level={3} className={styles.number}>
-                02
-              </BoldHeading>
-              <BoldHeading level={3} className={styles.title}>
-                {content.skill.title}
-              </BoldHeading>
-              <Txt lineHeightLevel={5}>{content.skill.description}</Txt>
-            </div>
-          </Container>
+        </Container>
+        <Container tag={'section'} className={styles.sectionContainer}>
+          <div className={styles.textWrap}>
+            <BoldHeading level={3} className={styles.number}>
+              02
+            </BoldHeading>
+            <BoldHeading level={3} className={styles.title}>
+              {content.skill.title}
+            </BoldHeading>
+            <Txt lineHeightLevel={5}>{content.skill.description}</Txt>
+          </div>
           <Img
             className={styles.skillImage}
-            fluid={content.skill.image}
+            fluid={data.skillImage.childImageSharp.fluid}
             alt={content.skill.description}
           />
-        </section>
-        <Container tag={'section'} className={styles.section}>
+        </Container>
+        <Container tag={'section'} className={styles.sectionContainer}>
           <div className={styles.cta}>
             <BoldHeading level={2} className={styles.ctaTitle}>
               {content.cta.title}
