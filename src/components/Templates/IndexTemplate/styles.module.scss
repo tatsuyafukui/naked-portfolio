@@ -36,8 +36,8 @@
   text-align: center;
 
   @include mediaQuery(sm) {
-    padding-bottom: 20%;
-    padding-top: 20%;
+    padding-bottom: 35%;
+    padding-top: 35%;
   }
 }
 
@@ -51,6 +51,7 @@
 }
 
 .mainVisualTitle {
+  color: var(--color-primary) !important;
   margin-bottom: var(--space-20);
   white-space: pre-line;
 
@@ -78,8 +79,12 @@
 }
 
 .number {
-  color: var(--color-accent);
+  color: var(--color-secondary) !important;
   margin-bottom: var(--space-12);
+}
+
+.numberAccentColor {
+  color: var(--color-accent) !important;
 }
 
 .title {
@@ -94,6 +99,7 @@
 }
 
 .ctaTitle {
+  color: var(--color-primary) !important;
   margin-bottom: var(--space-12);
 }
 

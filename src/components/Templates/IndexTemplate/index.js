@@ -53,11 +53,13 @@ const IndexTemplate = () => {
       buttonLabel: 'ロードマップを見る',
     },
     scene: {
+      number: '01',
       title: '目標までの道のりを知る',
       description:
         'プロダクトをつくれるWeb開発者になるまでの中間目標として5つのシーンを用意しました。次に学ぶことだけではなく、目標達成までの学習の全体像を確認することができます。',
     },
     skill: {
+      number: '02',
       title: '自分のレベルに合わせて学ぶ',
       description:
         '自分のレベルに合わせて、どこまで学ぶかを決めることができます。本当に必要な学習項目に絞って、効率よく学習を進めましょう。',
@@ -114,7 +116,7 @@ const IndexTemplate = () => {
         <Container tag={'section'} className={styles.sectionContainer}>
           <div className={styles.textWrap}>
             <BoldHeading level={3} className={styles.number}>
-              01
+              {content.scene.number}
             </BoldHeading>
             <BoldHeading level={3} className={styles.title}>
               {content.scene.title}
@@ -129,8 +131,11 @@ const IndexTemplate = () => {
         </Container>
         <Container tag={'section'} className={styles.sectionContainer}>
           <div className={styles.textWrap}>
-            <BoldHeading level={3} className={styles.number}>
-              02
+            <BoldHeading
+              level={3}
+              className={[styles.number, styles.numberAccentColor].join(' ')}
+            >
+              {content.skill.number}
             </BoldHeading>
             <BoldHeading level={3} className={styles.title}>
               {content.skill.title}
