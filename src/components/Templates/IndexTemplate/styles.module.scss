@@ -102,6 +102,7 @@
 
 .scrollImageWrap {
   border-radius: var(--radius-m);
+  overflow: hidden;
 
   @include mediaQuery(sm) {
     overflow-x: scroll;
