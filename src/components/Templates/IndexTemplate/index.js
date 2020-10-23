@@ -15,16 +15,14 @@ import LazyImage from '../../Atoms/LazyImage'
 const IndexTemplate = () => {
   const data = useStaticQuery(graphql`
     {
-      mainVisualIcon: file(relativePath: {eq: "index/ken_icon.svg"}) {
+      mainVisualIcon: file(relativePath: {eq: "index/kenIcon.svg"}) {
         publicURL
       }
-      mainVisualBackground: file(
-        relativePath: {eq: "index/mv_background.svg"}
-      ) {
+      mainVisualBackground: file(relativePath: {eq: "index/mvBackground.svg"}) {
         publicURL
       }
       mainVisualBackgroundSP: file(
-        relativePath: {eq: "index/mv_background_sp.svg"}
+        relativePath: {eq: "index/mvBackgroundSp.svg"}
       ) {
         publicURL
       }
@@ -35,7 +33,7 @@ const IndexTemplate = () => {
           }
         }
       }
-      sceneImageSP: file(relativePath: {eq: "index/scenes_sp.png"}) {
+      sceneImageSP: file(relativePath: {eq: "index/scenesSp.png"}) {
         childImageSharp {
           fluid(maxWidth: 1000, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp_noBase64
@@ -126,7 +124,7 @@ const IndexTemplate = () => {
             </div>
           </Container>
         </div>
-        <Container tag={'section'} className={styles.sectionContainer}>
+        <Container tag='section' className={styles.sectionContainer}>
           <div className={styles.textWrap}>
             <BoldHeading level={2} visualLevel={3} className={styles.number}>
               {content.scene.number}
@@ -138,7 +136,7 @@ const IndexTemplate = () => {
           </div>
           <Img fluid={sceneImageSources} alt={content.scene.description} />
         </Container>
-        <Container tag={'section'} className={styles.sectionContainer}>
+        <Container tag='section' className={styles.sectionContainer}>
           <div className={styles.textWrap}>
             <BoldHeading
               level={2}
@@ -159,7 +157,7 @@ const IndexTemplate = () => {
             />
           </div>
         </Container>
-        <Container tag={'section'} className={styles.sectionContainer}>
+        <Container tag='section' className={styles.sectionContainer}>
           <div className={styles.cta}>
             <BoldHeading level={2} className={styles.ctaTitle}>
               {content.cta.title}
