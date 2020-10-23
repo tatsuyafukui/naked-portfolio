@@ -25,7 +25,7 @@ const SkillTemplate = ({data, location}) => {
     <>
       <Seo
         title={skill.title}
-        description={skill.description}
+        description={skill.overview}
         image={skill.thumbnail.publicURL}
         href={location.href}
         lang='ja'
