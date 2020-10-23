@@ -102,10 +102,13 @@
 
 .scrollImageWrap {
   border-radius: var(--radius-m);
-  overflow-x: scroll;
 
-  > div {
-    width: 150%;
+  @include mediaQuery(sm) {
+    overflow-x: scroll;
+
+    > div {
+      width: 150%;
+    }
   }
 }
 
