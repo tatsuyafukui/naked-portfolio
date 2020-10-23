@@ -11,7 +11,6 @@ import {navigate, graphql, useStaticQuery} from 'gatsby'
 import Img from 'gatsby-image'
 import Main from '../../Atoms/Main'
 import LazyImage from '../../Atoms/LazyImage'
-// import HeroImage from '../../Molecules/HeroImage'
 
 const IndexTemplate = () => {
   const data = useStaticQuery(graphql`
@@ -36,6 +35,13 @@ const IndexTemplate = () => {
           }
         }
       }
+      sceneImageSP: file(relativePath: {eq: "index/scenes_sp.png"}) {
+        childImageSharp {
+          fluid(maxWidth: 1000, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp_noBase64
+          }
+        }
+      }
       skillImage: file(relativePath: {eq: "index/skills.png"}) {
         childImageSharp {
           fluid(maxWidth: 2000, quality: 100) {
@@ -46,11 +52,18 @@ const IndexTemplate = () => {
     }
   `)
 
+  const sceneImageSources = [
+    data.sceneImage.childImageSharp.fluid,
+    {
+      ...data.sceneImageSP.childImageSharp.fluid,
+      media: `(max-width: 544px)`,
+    },
+  ]
+
   const content = {
     mainVisual: {
       title: 'Webプロダクト開発\n学習ロードマップ',
       subTitle: '学習の不安を自信に変えよう',
-      buttonLabel: 'ロードマップを見る',
     },
     scene: {
       number: '01',
@@ -67,8 +80,8 @@ const IndexTemplate = () => {
     cta: {
       title: 'さあ、はじめよう',
       subTitle: '学習の不安を自信に変えよう',
-      buttonLabel: 'ロードマップを見る',
     },
+    buttonLabel: 'ロードマップを見る',
   }
 
   return (
@@ -108,14 +121,14 @@ const IndexTemplate = () => {
                 {content.mainVisual.subTitle}
               </Heading>
               <Button onClick={() => navigate('/scenes')}>
-                {content.mainVisual.buttonLabel}
+                {content.buttonLabel}
               </Button>
             </div>
           </Container>
         </div>
         <Container tag={'section'} className={styles.sectionContainer}>
           <div className={styles.textWrap}>
-            <BoldHeading level={3} className={styles.number}>
+            <BoldHeading level={2} visualLevel={3} className={styles.number}>
               {content.scene.number}
             </BoldHeading>
             <BoldHeading level={3} className={styles.title}>
@@ -123,16 +136,13 @@ const IndexTemplate = () => {
             </BoldHeading>
             <Txt lineHeightLevel={5}>{content.scene.description}</Txt>
           </div>
-          <Img
-            className={styles.sceneImage}
-            fluid={data.sceneImage.childImageSharp.fluid}
-            alt={content.scene.description}
-          />
+          <Img fluid={sceneImageSources} alt={content.scene.description} />
         </Container>
         <Container tag={'section'} className={styles.sectionContainer}>
           <div className={styles.textWrap}>
             <BoldHeading
-              level={3}
+              level={2}
+              visualLevel={3}
               className={[styles.number, styles.numberAccentColor].join(' ')}
             >
               {content.skill.number}
@@ -142,11 +152,12 @@ const IndexTemplate = () => {
             </BoldHeading>
             <Txt lineHeightLevel={5}>{content.skill.description}</Txt>
           </div>
-          <Img
-            className={styles.skillImage}
-            fluid={data.skillImage.childImageSharp.fluid}
-            alt={content.skill.description}
-          />
+          <div className={styles.scrollImageWrap}>
+            <Img
+              fluid={data.skillImage.childImageSharp.fluid}
+              alt={content.skill.description}
+            />
+          </div>
         </Container>
         <Container tag={'section'} className={styles.sectionContainer}>
           <div className={styles.cta}>
@@ -157,7 +168,7 @@ const IndexTemplate = () => {
               {content.cta.subTitle}
             </Heading>
             <Button onClick={() => navigate('/scenes')}>
-              {content.cta.buttonLabel}
+              {content.buttonLabel}
             </Button>
           </div>
         </Container>

@@ -31,9 +31,14 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  padding-bottom: 10%;
-  padding-top: 10%;
+  padding-bottom: 9%;
+  padding-top: 9%;
   text-align: center;
+
+  @include mediaQuery(md) {
+    padding-bottom: 10%;
+    padding-top: 10%;
+  }
 
   @include mediaQuery(sm) {
     padding-bottom: 35%;
@@ -44,6 +49,10 @@
 .mainVisualIcon {
   margin-bottom: var(--space-32);
   width: 120px;
+
+  @include mediaQuery(md) {
+    width: 100px;
+  }
 
   @include mediaQuery(sm) {
     width: 80px;
@@ -89,6 +98,15 @@
 
 .title {
   margin-bottom: var(--space-16);
+}
+
+.scrollImageWrap {
+  border-radius: var(--radius-m);
+  overflow-x: scroll;
+
+  > div {
+    width: 150%;
+  }
 }
 
 .cta {
