@@ -3,121 +3,177 @@ import styles from './styles.module.scss'
 import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
 import Seo from '../../seo'
-import {BoldHeading, HighlightedHeading} from '../../Atoms/Heading'
+import Heading, {BoldHeading} from '../../Atoms/Heading'
 import Txt from '../../Atoms/Txt'
-import {NarrowedContainer} from '../../Atoms/Container'
-import List, {ListItem} from '../../Atoms/List'
+import Container from '../../Atoms/Container'
 import Button from '../../Atoms/Button'
-import {navigate} from 'gatsby'
-import PropTypes from 'prop-types'
-import LazyImage from '../../Atoms/LazyImage'
+import {navigate, graphql, useStaticQuery} from 'gatsby'
+import Img from 'gatsby-image'
 import Main from '../../Atoms/Main'
+import LazyImage from '../../Atoms/LazyImage'
 
-const IndexTemplate = ({scenes}) => {
+const IndexTemplate = () => {
+  const data = useStaticQuery(graphql`
+    {
+      mainVisualIcon: file(relativePath: {eq: "index/kenIcon.svg"}) {
+        publicURL
+      }
+      mainVisualBackground: file(relativePath: {eq: "index/mvBackground.svg"}) {
+        publicURL
+      }
+      mainVisualBackgroundSP: file(
+        relativePath: {eq: "index/mvBackgroundSp.svg"}
+      ) {
+        publicURL
+      }
+      sceneImage: file(relativePath: {eq: "index/scenes.png"}) {
+        childImageSharp {
+          fluid(maxWidth: 2000, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp_noBase64
+          }
+        }
+      }
+      sceneImageSP: file(relativePath: {eq: "index/scenesSp.png"}) {
+        childImageSharp {
+          fluid(maxWidth: 1000, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp_noBase64
+          }
+        }
+      }
+      skillImage: file(relativePath: {eq: "index/skills.png"}) {
+        childImageSharp {
+          fluid(maxWidth: 2000, quality: 100) {
+            ...GatsbyImageSharpFluid_withWebp_noBase64
+          }
+        }
+      }
+    }
+  `)
+
+  const sceneImageSources = [
+    data.sceneImage.childImageSharp.fluid,
+    {
+      ...data.sceneImageSP.childImageSharp.fluid,
+      media: `(max-width: 544px)`,
+    },
+  ]
+
+  const content = {
+    mainVisual: {
+      title: 'Webプロダクト開発\n学習ロードマップ',
+      subTitle: '学習の不安を自信に変えよう',
+    },
+    scene: {
+      number: '01',
+      title: '目標までの道のりを知る',
+      description:
+        'プロダクトをつくれるWeb開発者になるまでの中間目標として5つのシーンを用意しました。次に学ぶことだけではなく、目標達成までの学習の全体像を確認することができます。',
+    },
+    skill: {
+      number: '02',
+      title: '自分のレベルに合わせて学ぶ',
+      description:
+        '自分のレベルに合わせて、どこまで学ぶかを決めることができます。本当に必要な学習項目に絞って、効率よく学習を進めましょう。',
+    },
+    cta: {
+      title: 'さあ、はじめよう',
+      subTitle: '学習の不安を自信に変えよう',
+    },
+    buttonLabel: 'ロードマップを見る',
+  }
+
   return (
-    <div>
+    <>
       <Seo title='HOME' lang='ja' />
       <Header />
-      <div className={styles.title}>
-        <BoldHeading visualLevel={1}>journey</BoldHeading>
-        <br />
-        <BoldHeading visualLevel={3}>
-          - Web開発者になるための学習ロードマップ -
-        </BoldHeading>
-      </div>
       <Main>
-        <NarrowedContainer tag='article' className={styles.container}>
-          <div>
-            <HighlightedHeading
-              level={2}
-              visualLevel={4}
-              className={styles.highlightedHeading}
-            >
-              目標に向かう学習をしよう
-            </HighlightedHeading>
-            <Txt lineHeightLevel={5}>
-              「学んだことが何に活かせるのかわからない」
-              <br />
-              「何をどこまで学べば良いのかわからない」
-              <br />
-              <br />
-              そんな<strong>不安を自信に変えるために目標へ向かう学習</strong>
-              を始めましょう。
-              <br />
-              <br />
-              学習を進める上で目標を持つことはとても大事です。
-              <br />
-              目標があると<strong>学ぶ理由が明確</strong>になり、
-              <strong>モチベーション維持</strong>に繋がります。
-              <br />
-              また、目標があれば詳細な学習の計画を立てることもできます。
-              <br />
-              <br />
-              もし、あなたがWeb開発者になりたいという目標を持っているなら、きっとjourneyが役に立ちます。
-            </Txt>
-          </div>
-          <div>
-            <HighlightedHeading
-              level={2}
-              visualLevel={4}
-              className={styles.highlightedHeading}
-            >
-              初めての方へ
-            </HighlightedHeading>
-            <List className={styles.standardItem}>
-              <div>
-                <ListItem className={styles.listItem}>
-                  <Txt lineHeightLevel={5} tag='span'>
-                    <strong>教材ではありません</strong>
-                  </Txt>
-                </ListItem>
-                <Txt lineHeightLevel={5} className={styles.listItemTxt}>
-                  ロードマップは目標に対しての計画表です。紹介している教材と一緒に使うことで最大限の効果を発揮します。
-                </Txt>
-              </div>
-              <div>
-                <ListItem className={styles.listItem}>
-                  <Txt lineHeightLevel={5} tag='span'>
-                    <strong>入門向けではありません</strong>
-                  </Txt>
-                </ListItem>
-                <Txt lineHeightLevel={5} className={styles.listItemTxt}>
-                  Web開発者を目指す人のための実践的な内容となっており、分からないことがあれば自身で解決する力が必要となります。
-                </Txt>
-              </div>
-            </List>
-          </div>
-          <div>
-            <HighlightedHeading
-              level={2}
-              visualLevel={4}
-              className={styles.highlightedHeading}
-            >
-              5つのシーン
-            </HighlightedHeading>
-            <Txt lineHeightLevel={5}>
-              各スキルは５つのシーン（中間目標）に分けられています。自分の現在地やゴールに合ったシーンを選択してスキルを確認しましょう。
-              <br />
-              <br />
-            </Txt>
-            <div className={styles.scenes}>
-              {scenes.map(scene => (
-                <LazyImage key={scene.id} src={scene.image.publicURL} />
-              ))}
+        <div className={styles.mainVisualWrap}>
+          <LazyImage
+            src={data.mainVisualBackground.publicURL}
+            alt={content.mainVisual.title}
+            className={styles.mainVisualBackground}
+          />
+          <LazyImage
+            src={data.mainVisualBackgroundSP.publicURL}
+            alt={content.mainVisual.title}
+            className={[
+              styles.mainVisualBackground,
+              styles.mainVisualBackgroundSp,
+            ].join(' ')}
+          />
+          <Container className={styles.mainVisual}>
+            <div>
+              <LazyImage
+                src={data.mainVisualIcon.publicURL}
+                alt={content.mainVisual.title}
+                className={styles.mainVisualIcon}
+              />
+              <BoldHeading level={1} className={styles.mainVisualTitle}>
+                {content.mainVisual.title}
+              </BoldHeading>
+              <Heading
+                level={2}
+                visualLevel={4}
+                className={styles.mainVisualSubTitle}
+              >
+                {content.mainVisual.subTitle}
+              </Heading>
+              <Button onClick={() => navigate('/scenes')}>
+                {content.buttonLabel}
+              </Button>
             </div>
+          </Container>
+        </div>
+        <Container tag='section' className={styles.sectionContainer}>
+          <div className={styles.textWrap}>
+            <BoldHeading level={2} visualLevel={3} className={styles.number}>
+              {content.scene.number}
+            </BoldHeading>
+            <BoldHeading level={3} className={styles.title}>
+              {content.scene.title}
+            </BoldHeading>
+            <Txt lineHeightLevel={5}>{content.scene.description}</Txt>
           </div>
-          <Button onClick={() => navigate('/scenes')} className={styles.button}>
-            シーンを選ぼう
-          </Button>
-        </NarrowedContainer>
+          <Img fluid={sceneImageSources} alt={content.scene.description} />
+        </Container>
+        <Container tag='section' className={styles.sectionContainer}>
+          <div className={styles.textWrap}>
+            <BoldHeading
+              level={2}
+              visualLevel={3}
+              className={[styles.number, styles.numberAccentColor].join(' ')}
+            >
+              {content.skill.number}
+            </BoldHeading>
+            <BoldHeading level={3} className={styles.title}>
+              {content.skill.title}
+            </BoldHeading>
+            <Txt lineHeightLevel={5}>{content.skill.description}</Txt>
+          </div>
+          <div className={styles.scrollImageWrap}>
+            <Img
+              fluid={data.skillImage.childImageSharp.fluid}
+              alt={content.skill.description}
+            />
+          </div>
+        </Container>
+        <Container tag='section' className={styles.sectionContainer}>
+          <div className={styles.cta}>
+            <BoldHeading level={2} className={styles.ctaTitle}>
+              {content.cta.title}
+            </BoldHeading>
+            <Heading level={3} visualLevel={5} className={styles.ctaSubTitle}>
+              {content.cta.subTitle}
+            </Heading>
+            <Button onClick={() => navigate('/scenes')}>
+              {content.buttonLabel}
+            </Button>
+          </div>
+        </Container>
       </Main>
       <Footer />
-    </div>
+    </>
   )
 }
 
 export default IndexTemplate
-
-IndexTemplate.propTypes = {
-  scenes: PropTypes.array,
-}

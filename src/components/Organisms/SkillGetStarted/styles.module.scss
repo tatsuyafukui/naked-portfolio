@@ -27,7 +27,7 @@
 }
 
 .tabActive {
-  border-color: var(--color-accent);
+  border-color: var(--color-secondary);
 
   .tabInner {
     opacity: 1;
@@ -92,7 +92,7 @@
   position: relative;
 
   &::before {
-    background-color: var(--color-accent);
+    background-color: var(--color-secondary);
     border-radius: var(--radius-circle);
     bottom: 0;
     content: '';

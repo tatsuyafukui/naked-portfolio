@@ -13,20 +13,22 @@
   --color-athens-gray: #f2f4f7;
   --color-turquoise: #32ddc9;
   --color-aqua: #30c8d6;
+  --color-orange: #f39d2e;
+  --color-purple: #380953;
 
   /* **** ブランディング層 **** */
 
   /* 色：色相名とカラーコードの紐付け */
   --color-base: var(--color-athens-gray);
-  --color-primary: var(--color-opacity87-black);
-  --color-secondary: var(--color-opacity60-black);
-  --color-accent: var(--color-turquoise);
+  --color-primary: var(--color-purple);
+  --color-secondary: var(--color-turquoise);
+  --color-accent: var(--color-orange);
 
   /* **** メディア層 **** */
 
   /* 色：媒体固有で使用する色 */
-  --color-text: var(--color-primary);
-  --color-text-info: var(--color-secondary);
+  --color-text: var(--color-opacity87-black);
+  --color-text-info: var(--color-opacity60-black);
   --color-text-disable: var(--color-opacity38-black);
   --color-line: var(--color-opacity15-black);
   --color-background: var(--color-base);
