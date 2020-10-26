@@ -29,6 +29,7 @@
 
 .title {
   margin-bottom: var(--space-20);
+  transition: var(--hover-animation-fast);
 }
 
 .numberCircle {
@@ -102,25 +103,9 @@
   margin-right: var(--space-6-fixed);
 }
 
-.numberCircle,
-.number,
-.numberTitle,
-.title {
-  transition: var(--hover-animation-fast);
-}
-
 @media (hover: hover) {
   .scene:hover {
     text-decoration: none;
-
-    .numberCircle {
-      background-color: var(--color-link);
-    }
-
-    .number,
-    .numberTitle {
-      color: var(--color-white);
-    }
 
     .title {
       color: var(--color-link);

@@ -28,7 +28,7 @@ const IndexTemplate = () => {
       }
       sceneImage: file(relativePath: {eq: "index/scenes.png"}) {
         childImageSharp {
-          fluid(maxWidth: 2000, quality: 100) {
+          fluid(maxWidth: 1140, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp_noBase64
           }
         }
@@ -42,7 +42,7 @@ const IndexTemplate = () => {
       }
       skillImage: file(relativePath: {eq: "index/skills.png"}) {
         childImageSharp {
-          fluid(maxWidth: 2000, quality: 100) {
+          fluid(maxWidth: 1140, quality: 100) {
             ...GatsbyImageSharpFluid_withWebp_noBase64
           }
         }
