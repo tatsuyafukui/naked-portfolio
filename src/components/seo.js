@@ -60,6 +60,14 @@ const Seo = ({description, image, lang, href, meta, title}) => {
           content: metaImage,
         },
         {
+          property: 'og:image:width',
+          content: '1200',
+        },
+        {
+          property: 'og:image:height',
+          content: '630',
+        },
+        {
           property: 'og:type',
           content: 'website',
         },
