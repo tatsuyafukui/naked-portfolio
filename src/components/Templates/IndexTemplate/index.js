@@ -51,10 +51,10 @@ const IndexTemplate = () => {
   `)
 
   const sceneImageSources = [
-    data.sceneImage.childImageSharp.fluid,
+    data.sceneImageSP.childImageSharp.fluid,
     {
-      ...data.sceneImageSP.childImageSharp.fluid,
-      media: `(max-width: 544px)`,
+      ...data.sceneImage.childImageSharp.fluid,
+      media: `(min-width: 545px)`,
     },
   ]
 
