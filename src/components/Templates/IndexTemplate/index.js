@@ -54,7 +54,7 @@ const IndexTemplate = () => {
     data.sceneImageSP.childImageSharp.fluid,
     {
       ...data.sceneImage.childImageSharp.fluid,
-      media: `(min-width: 545px)`,
+      media: '(min-width: 545px)',
     },
   ]
 
