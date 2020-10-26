@@ -88,12 +88,20 @@ const Seo = ({description, image, lang, href, meta, title}) => {
           content: metaImage,
         },
         {
+          name: 'twitter:url',
+          content: metaURL,
+        },
+        {
           name: 'twitter:name',
           content: '@progateJP',
         },
         {
           name: 'twitter:creator',
           content: '@progateJP',
+        },
+        {
+          property: 'fb:app_id',
+          content: '296639803850370',
         },
       ].concat(meta)}
     />
