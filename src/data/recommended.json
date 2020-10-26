@@ -37,14 +37,14 @@
   {
     "skillId": "internet",
     "title": "Progate",
-    "description": "必要な知識を限定して用語と役割を説明しています。最初に読んでみるのがおすすめです。",
+    "description": "必要最小限の用語と役割を説明しています。最初に読んでみるのがオススメです。",
     "url": "https://prog-8.com/docs/web",
     "level": "easy"
   },
   {
     "skillId": "internet",
     "title": "イラスト図解式 この一冊で全部わかるWeb技術の基本",
-    "description": "1ページ毎に説明と図がセットになっており、インターネットに関連ある用語が一通り説明されています。",
+    "description": "インターネットに関連する用語が一通り説明されています。1ページ毎に説明と図がセットになっていてわかりやすいです。",
     "url": "https://www.amazon.co.jp/dp/4797388811",
     "isbn": "4797388811",
     "level": "easy"
@@ -52,7 +52,7 @@
   {
     "skillId": "internet",
     "title": "Webを支える技術",
-    "description": "少し古いですが、インターネットの基本を押さえる必読書です。インターネットの背景や仕組みを深く学ぶために読んでおきましょう。",
+    "description": "少し内容が古いですが、インターネットの基本を押さえる必読書です。インターネットの背景や仕組みを深く学ぶために読んでおきましょう。",
     "url": "https://www.amazon.co.jp/dp/4774142042",
     "isbn": "4774142042",
     "level": "middle"
