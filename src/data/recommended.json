@@ -74,14 +74,14 @@
   {
     "skillId": "javascript",
     "title": "Progate JQuery 学習コース Ⅰ",
-    "description": "JavaScriptで直接DOMを扱うProgateのレッスンはまだありません。代わりにJavaScriptライブラリのJQueryを使うことでDOM操作のイメージを付けることができます。クリアした後は、JQueryで作った機能をJavaScriptで書き直してみましょう。",
+    "description": "JavaScriptで直接DOMを扱うProgateのレッスンはまだありません。代わりにJavaScriptライブラリのjQueryを使うことでDOM操作のイメージを付けることができます。クリアした後は、jQueryで作った機能をJavaScriptで書き直してみましょう。",
     "url": "https://prog-8.com/lessons/jquery/study/1",
     "level": "easy"
   },
   {
     "skillId": "javascript",
     "title": "非同期 MDN",
-    "description": "JavaScriptのドキュメントがもっとも豊富なサイトです。辞書としてだけでなく、学習チュートリアルも用意されているので参考にして学んでいきましょう。",
+    "description": "JavaScriptのドキュメントがもっとも充実したサイトです。辞書としてだけでなく、学習チュートリアルも用意されているので参考にして学んでいきましょう。",
     "url": "https://developer.mozilla.org/ja/docs/Learn/JavaScript/Asynchronous",
     "level": "middle"
   },
