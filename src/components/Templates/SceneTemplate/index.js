@@ -25,7 +25,7 @@ const SceneTemplate = ({data, location}) => {
       <Seo
         title={scene.title}
         description={scene.description}
-        image={scene.image.publicURL}
+        image={scene.ogImage.publicURL}
         href={location.href}
         lang='ja'
       />
@@ -74,6 +74,9 @@ export const query = graphql`
       title
       description
       image {
+        publicURL
+      }
+      ogImage {
         publicURL
       }
       skills {
