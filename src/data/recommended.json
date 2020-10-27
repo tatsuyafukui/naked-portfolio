@@ -147,7 +147,7 @@
   {
     "skillId": "databases",
     "title": "Progate SQL 学習コース Ⅰ",
-    "description": "データベースの環境構築不要でSQLの基本的な文法をわかりやすく、実際に動かしながら学ぶことができます。内容も充実しているため、まずはProgateで学ぶとよいでしょう。",
+    "description": "SQLの基本的な文法をわかりやすく、実際に動かしながら学ぶことができます。内容も充実しているため、まずはProgateで学ぶとよいでしょう。",
     "url": "https://prog-8.com/lessons/sql/study/1",
     "level": "easy"
   },
