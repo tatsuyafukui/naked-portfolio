@@ -60,6 +60,14 @@ const Seo = ({description, image, lang, href, meta, title}) => {
           content: metaImage,
         },
         {
+          property: 'og:image:width',
+          content: '1200',
+        },
+        {
+          property: 'og:image:height',
+          content: '630',
+        },
+        {
           property: 'og:type',
           content: 'website',
         },
@@ -88,12 +96,20 @@ const Seo = ({description, image, lang, href, meta, title}) => {
           content: metaImage,
         },
         {
+          name: 'twitter:url',
+          content: metaURL,
+        },
+        {
           name: 'twitter:name',
           content: '@progateJP',
         },
         {
           name: 'twitter:creator',
           content: '@progateJP',
+        },
+        {
+          property: 'fb:app_id',
+          content: '296639803850370',
         },
       ].concat(meta)}
     />
