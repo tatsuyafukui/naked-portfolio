@@ -241,7 +241,7 @@
     "sceneId": "web-basics",
     "getStarted": {
       "easy": {
-        "description": "ここでは、近年最も普及しているGoogle Chromeブラウザの開発者ツールを紹介しています。まずは、手軽に使えてWebページ開発に役立つHTMLとCSSの機能を学びましょう。",
+        "description": "ここでは、近年もっとも普及しているGoogle Chromeブラウザの開発者ツールを紹介しています。まずは、手軽に使えてWebページ開発に役立つHTMLとCSSの機能を学びましょう。",
         "tasks": [
           {
             "title": "開発者ツールに触れてみよう",
