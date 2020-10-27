@@ -100,6 +100,20 @@
   margin-bottom: var(--space-16);
 }
 
+.sceneImage {
+  @include mediaQuery(sm) {
+    display: none;
+  }
+}
+
+.sceneImageSP {
+  display: none;
+
+  @include mediaQuery(sm) {
+    display: block;
+  }
+}
+
 .scrollImageWrap {
   border-radius: var(--radius-m);
   overflow: hidden;
