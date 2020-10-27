@@ -117,14 +117,14 @@
   {
     "skillId": "object-oriented-programming",
     "title": "Progate Ruby Ⅳ - Ⅴ",
-    "description": "Rubyでオブジェクト指向を実現する基礎について学ぶことができます。実際に動かしながら学んでいきましょう。",
+    "description": "Rubyでオブジェクト指向の基礎について学ぶことができます。実際に動かしながら学んでいきましょう。",
     "url": "https://prog-8.com/lessons/ruby/study/4",
     "level": "easy"
   },
   {
     "skillId": "object-oriented-programming",
     "title": "オブジェクト指向でなぜ作るのか 第2版",
-    "description": "オブジェクト指向の全体像や必要性がわかりやすく説明されています。クラス、ポリモーフィズム、継承などの要点を押さえているので実践でイメージをつけたあとに読んでみるといいでしょう。",
+    "description": "オブジェクト指向の全体像や必要性がわかりやすく説明されています。クラス、ポリモーフィズム、継承などの要点を押さえているので実践でイメージをつけたあとに読んでみると良いでしょう。",
     "url": "https://www.amazon.co.jp/dp/4822284654/",
     "isbn": "4822284654",
     "level": "middle"
