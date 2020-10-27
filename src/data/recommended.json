@@ -2,7 +2,7 @@
   {
     "skillId": "html-and-css",
     "title": "Progate HTML & CSS 初級編",
-    "description": "プログラミング学習の最初におすすめがHTML＆CSSコースです。実際にWebページを作りながら学んでいきましょう。",
+    "description": "はじめてのプログラミング学習にオススメなのはProgateのHTML＆CSSコースです。実際にWebページを作りながら学んでいきましょう。",
     "url": "https://prog-8.com/lessons/html/study/1",
     "level": "easy"
   },
@@ -23,28 +23,28 @@
   {
     "skillId": "editors",
     "title": "Documentation for Visual Studio Code",
-    "description": "Visual Studio Codeはマイクロソフトが提供しているエディタです。まずはインストールを完了して、必要に応じて調べながら学習を進めましょう。",
+    "description": "Visual Studio Codeはマイクロソフトが提供しているエディタです。多機能なエディタなので、必要に応じて調べながら学習を進めましょう。",
     "url": "https://code.visualstudio.com/docs",
     "level": "easy"
   },
   {
     "skillId": "editors",
     "title": "デバッグ in Visual Studio Code",
-    "description": "Debugger for Chromeを使ってエディタ内でデバッグできるようになりましょう。JavaScriptのデバッグからはじめるのがおすすめです。",
+    "description": "Debugger for Chromeを使ってエディタ内でデバッグできるようになりましょう。JavaScriptのデバッグからはじめるのがオススメです。",
     "url": "https://code.visualstudio.com/docs/editor/debugging",
     "level": "middle"
   },
   {
     "skillId": "internet",
     "title": "Progate",
-    "description": "必要な知識を限定して用語と役割を説明しています。最初に読んでみるのがおすすめです。",
+    "description": "必要最小限の用語と役割を説明しています。最初に読んでみるのがオススメです。",
     "url": "https://prog-8.com/docs/web",
     "level": "easy"
   },
   {
     "skillId": "internet",
     "title": "イラスト図解式 この一冊で全部わかるWeb技術の基本",
-    "description": "1ページ毎に説明と図がセットになっており、インターネットに関連ある用語が一通り説明されています。",
+    "description": "インターネットに関連する用語が一通り説明されています。1ページ毎に説明と図がセットになっていてわかりやすいです。",
     "url": "https://www.amazon.co.jp/dp/4797388811",
     "isbn": "4797388811",
     "level": "easy"
@@ -52,7 +52,7 @@
   {
     "skillId": "internet",
     "title": "Webを支える技術",
-    "description": "少し古いですが、インターネットの基本を押さえる必読書です。インターネットの背景や仕組みを深く学ぶために読んでおきましょう。",
+    "description": "少し内容が古いですが、インターネットの基本を押さえる必読書です。インターネットの背景や仕組みを深く学ぶために読んでおきましょう。",
     "url": "https://www.amazon.co.jp/dp/4774142042",
     "isbn": "4774142042",
     "level": "middle"
@@ -74,14 +74,14 @@
   {
     "skillId": "javascript",
     "title": "Progate JQuery 学習コース Ⅰ",
-    "description": "JavaScriptで直接DOMを扱うProgateのレッスンはまだありません。代わりにJavaScriptライブラリのJQueryを使うことでDOM操作のイメージを付けることができます。クリアした後は、JQueryで作った機能をJavaScriptで書き直してみましょう。",
+    "description": "JavaScriptで直接DOMを扱うProgateのレッスンはまだありません。代わりにJavaScriptライブラリのjQueryを使うことでDOM操作のイメージを付けることができます。クリアした後は、jQueryで作った機能をJavaScriptで書き直してみましょう。",
     "url": "https://prog-8.com/lessons/jquery/study/1",
     "level": "easy"
   },
   {
     "skillId": "javascript",
     "title": "非同期 MDN",
-    "description": "JavaScriptのドキュメントがもっとも豊富なサイトです。辞書としてだけでなく、学習チュートリアルも用意されているので参考にして学んでいきましょう。",
+    "description": "JavaScriptのドキュメントがもっとも充実したサイトです。辞書としてだけでなく、学習チュートリアルも用意されているので参考にして学んでいきましょう。",
     "url": "https://developer.mozilla.org/ja/docs/Learn/JavaScript/Asynchronous",
     "level": "middle"
   },
