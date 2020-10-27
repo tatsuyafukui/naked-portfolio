@@ -50,14 +50,6 @@ const IndexTemplate = () => {
     }
   `)
 
-  const sceneImageSources = [
-    data.sceneImageSP.childImageSharp.fluid,
-    {
-      ...data.sceneImage.childImageSharp.fluid,
-      media: '(min-width: 545px)',
-    },
-  ]
-
   const content = {
     mainVisual: {
       title: 'Webプロダクト開発\n学習ロードマップ',
@@ -134,7 +126,16 @@ const IndexTemplate = () => {
             </BoldHeading>
             <Txt lineHeightLevel={5}>{content.scene.description}</Txt>
           </div>
-          <Img fluid={sceneImageSources} alt={content.scene.description} />
+          <Img
+            fluid={data.sceneImage.childImageSharp.fluid}
+            alt={content.scene.description}
+            className={styles.sceneImage}
+          />
+          <Img
+            fluid={data.sceneImageSP.childImageSharp.fluid}
+            alt={content.scene.description}
+            className={styles.sceneImageSP}
+          />
         </Container>
         <Container tag='section' className={styles.sectionContainer}>
           <div className={styles.textWrap}>
