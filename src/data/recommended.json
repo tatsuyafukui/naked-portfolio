@@ -117,14 +117,14 @@
   {
     "skillId": "object-oriented-programming",
     "title": "Progate Ruby Ⅳ - Ⅴ",
-    "description": "Rubyでオブジェクト指向を実現する基礎について学ぶことができます。実際に動かしながら学んでいきましょう。",
+    "description": "Rubyでオブジェクト指向の基礎について学ぶことができます。実際に動かしながら学んでいきましょう。",
     "url": "https://prog-8.com/lessons/ruby/study/4",
     "level": "easy"
   },
   {
     "skillId": "object-oriented-programming",
     "title": "オブジェクト指向でなぜ作るのか 第2版",
-    "description": "オブジェクト指向の全体像や必要性がわかりやすく説明されています。クラス、ポリモーフィズム、継承などの要点を押さえているので実践でイメージをつけたあとに読んでみるといいでしょう。",
+    "description": "オブジェクト指向の全体像や必要性がわかりやすく説明されています。クラス、ポリモーフィズム、継承などの要点を押さえているので実践でイメージをつけたあとに読んでみると良いでしょう。",
     "url": "https://www.amazon.co.jp/dp/4822284654/",
     "isbn": "4822284654",
     "level": "middle"
@@ -147,7 +147,7 @@
   {
     "skillId": "databases",
     "title": "Progate SQL 学習コース Ⅰ",
-    "description": "データベースの環境構築不要でSQLの基本的な文法をわかりやすく、実際に動かしながら学ぶことができます。内容も充実しているため、まずはProgateで学ぶとよいでしょう。",
+    "description": "SQLの基本的な文法をわかりやすく、実際に動かしながら学ぶことができます。内容も充実しているため、まずはProgateで学ぶとよいでしょう。",
     "url": "https://prog-8.com/lessons/sql/study/1",
     "level": "easy"
   },
@@ -175,7 +175,7 @@
   {
     "skillId": "web-api",
     "title": "Web API MDN",
-    "description": "APIの基本の説明からサンプルコードまで説明されています。サーバーからのデータ取得方法についてやサードパーティーAPIの説明を中心に学びましょう。",
+    "description": "APIの基本から実践的なサンプルコードまで網羅的にまとめられています。サーバーからデータを取得する方法やサードパーティーAPIの具体例などを学びましょう。",
     "url": "https://developer.mozilla.org/ja/docs/Learn/JavaScript/Client-side_web_APIs/Introduction",
     "level": "easy"
   },
@@ -189,7 +189,7 @@
   {
     "skillId": "web-api",
     "title": "Web API: The Good Parts",
-    "description": "Web APIの必要性から、公開に必要な知識について説明されています。設計の考え方を中心に学べるので、自分でWeb APIを作るときに読んでおきましょう。",
+    "description": "Web APIの必要性や公開に必要な知識について説明されています。設計の考え方を中心に学べるので、自分でWeb APIを作るときに読んでおきましょう。",
     "url": "https://www.amazon.co.jp/dp/4873116864",
     "isbn": "4873116864",
     "level": "middle"
