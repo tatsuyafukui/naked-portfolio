@@ -264,7 +264,7 @@
   {
     "skillId": "testing",
     "title": "テスト駆動開発",
-    "description": "テスト駆動開発を学ぶことで自動テストの書き方だけでなく、設計やリファクタリングとテストの関係もイメージできるようになります。写経しながら読み進めるのがおすすめです。",
+    "description": "テスト駆動開発を学ぶことで自動テストの書き方だけではなく、設計やリファクタリングがテストとどのような関係であるかイメージできるようになります。写経しながら読み進めるのがオススメです。",
     "url": "https://www.amazon.co.jp/dp/4274217884",
     "isbn": "4274217884",
     "level": "easy"
@@ -272,7 +272,7 @@
   {
     "skillId": "testing",
     "title": "RSpecによるRailsテスト入門",
-    "description": "RSpecを使ってRailsアプリケーションに信頼性の高いテストを書く実践的なスキルについて学ぶことができます。",
+    "description": "RSpecを使って信頼性の高いテストを書くスキルを学ぶことができます。",
     "url": "https://leanpub.com/everydayrailsrspec-jp",
     "level": "middle"
   },
