@@ -316,6 +316,18 @@
     "level": "easy"
   },
   {
+    "skillId": "networking",
+    "description": "Amazon VPCを利用することで、クラウド上で仮想ネットワークを構築することができます。これまでに学んだ知識を活かしてネットワークを構築してみましょう。",
+    "url": "https://docs.aws.amazon.com/ja_jp/vpc/latest/userguide/what-is-amazon-vpc.html",
+    "level": "middle"
+  },
+  {
+    "skillId": "networking",
+    "description": "Amazon EC2を使用することでクラウド上に仮想サーバーを構築することができます。チュートリアルを参考にWebサーバーを構築してみましょう。",
+    "url": "https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/EC2_GetStarted.html",
+    "level": "middle"
+  },
+  {
     "skillId": "cloud-services",
     "title": "AWSで基本的なウェブアプリケーションを構築する",
     "description": "AWSでWebアプリケーションをデプロイするための公式チュートリアルです。簡単に始めることができるので、最初に学んでいきましょう。",
@@ -385,8 +397,8 @@
   },
   {
     "skillId": "scalability",
-    "description": "ブログアプリの構築を通じて、AWSでスケーラブルなWebアプリケーションを構築する方法を学べます。",
-    "url": "https://pages.awscloud.com/event_JAPAN_Hands-on-for-Beginners-Scalable_LP.html?trk=aws_blog",
+    "description": "AWSでスケーラビリティを考慮したアプリケーションのデプロイを体験できます。それぞれのサーバーやネットワークの構成をイメージできるようになりましょう。",
+    "url": "https://aws.amazon.com/jp/getting-started/hands-on/build-wordpress-website/",
     "level": "easy"
   },
   {
