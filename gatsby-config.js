@@ -35,8 +35,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Progate journey',
-        short_name: 'journey',
+        name: 'Progate Journey',
+        short_name: 'Progate Journey',
         description: 'Webプロダクト開発学習ロードマップ',
         lang: 'ja',
         start_url: '/scenes',
@@ -49,8 +49,7 @@ module.exports = {
         },
       },
     },
-    // 'gatsby-plugin-offline',
-    'gatsby-plugin-remove-serviceworker',
+    'gatsby-plugin-offline',
     'gatsby-plugin-sass',
     'gatsby-plugin-eslint',
   ],
