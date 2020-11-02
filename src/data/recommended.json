@@ -359,7 +359,7 @@
   },
   {
     "skillId": "ci-cd",
-    "description": "CircleCIは導入や運用が簡単で使いやすく人気のCI/CDツールです。まずは、サンプルプロジェクトでCI/CD環境を構築してイメージを掴みましょう。",
+    "description": "CircleCiの公式チュートリアルです。まずは、サンプルプロジェクトでCI/CD環境を構築してイメージを掴めるようになりましょう。",
     "url": "https://circleci.com/docs/ja/2.0/getting-started/#section=getting-started",
     "level": "easy"
   },
