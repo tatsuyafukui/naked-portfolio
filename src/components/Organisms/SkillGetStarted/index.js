@@ -18,14 +18,14 @@ const SkillGetStarted = ({getStarted}) => {
       easy: file(relativePath: {eq: "skills/ben_icon.png"}) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluid_withWebp_noBase64
           }
         }
       }
       middle: file(relativePath: {eq: "skills/ken_icon.png"}) {
         childImageSharp {
           fluid {
-            ...GatsbyImageSharpFluid_withWebp
+            ...GatsbyImageSharpFluid_withWebp_noBase64
           }
         }
       }
