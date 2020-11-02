@@ -310,20 +310,20 @@
   {
     "skillId": "networking",
     "title": "ネットワークはなぜつながるのか 第2版 知っておきたいTCP/IP、LAN、光ファイバの基礎知識",
-    "description": "ブラウザからURLにアクセスしてWebページが表示されるまでの仕組みについてわかりやすく説明されています。ネットワークの全体像を押さえたい人におすすめです。",
+    "description": "ネットワークの基本はこの書籍を読むのがおすすめです。ブラウザにURLを入力してからWebページが表示されるまでの流れと、ネットワークの仕組みについてわかりやすく説明されています。",
     "url": "https://www.amazon.co.jp/dp/4822283119/",
     "isbn": "4822283119",
     "level": "easy"
   },
   {
     "skillId": "networking",
-    "description": "Amazon VPCを利用することで、クラウド上で仮想ネットワークを構築することができます。これまでに学んだ知識を活かしてネットワークを構築してみましょう。",
+    "description": "Amazon VPCを利用すると、クラウド上で仮想ネットワークを構築することができます。これまでに学んだ知識を活かしてネットワークを構築してみましょう。",
     "url": "https://docs.aws.amazon.com/ja_jp/vpc/latest/userguide/what-is-amazon-vpc.html",
     "level": "middle"
   },
   {
     "skillId": "networking",
-    "description": "Amazon EC2を使用することでクラウド上に仮想サーバーを構築することができます。チュートリアルを参考にWebサーバーを構築してみましょう。",
+    "description": "Amazon EC2を利用すると、クラウド上に仮想サーバーを構築することができます。チュートリアルを参考にWebサーバーを構築してみましょう。",
     "url": "https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/EC2_GetStarted.html",
     "level": "middle"
   },
