@@ -139,7 +139,7 @@
   {
     "skillId": "terminal-operations",
     "title": "新しいLinuxの教科書",
-    "description": "ターミナル操作の際によく使うコマンドだけでなく、LinuxOSの種類やシェルスクリプト、プロセスなど初めてLinuxを使う人が難しく感じるポイントを丁寧に解説しています。",
+    "description": "ターミナル操作の際によく使うコマンドだけでなく、LinuxOSの種類やシェルスクリプト、プロセスなど、初めてLinuxを使う人が難しく感じるポイントを丁寧に解説しています。",
     "url": "https://www.amazon.co.jp/dp/4797380942/",
     "isbn": "4797380942",
     "level": "middle"
@@ -168,7 +168,7 @@
   {
     "skillId": "web-application-frameworks",
     "title": "Ruby on Rails ガイド：体系的にRailsを学ぼう学ぼう",
-    "description": "バージョン管理やテスト、デプロイなど実践的なRailsアプリケーション開発について学ぶことができます。",
+    "description": "Railsチュートリアルは、バージョン管理やテスト、デプロイまでを通して実践的なRailsアプリケーション開発について学ぶことができます。",
     "url": "https://railstutorial.jp/",
     "level": "middle"
   },
