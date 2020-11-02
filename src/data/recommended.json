@@ -359,7 +359,7 @@
   },
   {
     "skillId": "ci-cd",
-    "description": "CircleCIは導入や運用が簡単で使いやすく人気のCI/CDツールです。まずは、サンプルプロジェクトでCI/CD環境を構築してイメージを掴みましょう。",
+    "description": "CircleCiの公式チュートリアルです。まずは、サンプルプロジェクトでCI/CD環境を構築してイメージを掴めるようになりましょう。",
     "url": "https://circleci.com/docs/ja/2.0/getting-started/#section=getting-started",
     "level": "easy"
   },
@@ -371,13 +371,13 @@
   },
   {
     "skillId": "data-analytics-fundamentals",
-    "description": "Googleが提供している公式のチュートリアルサイトです。動画でわかりやすく説明されています。初級者向けコースを学んびながら、実際に自分のWebアプリケーションに取り入れてみましょう。。",
+    "description": "Googleが提供している公式のチュートリアルサイトです。動画でわかりやすく説明されています。初級者向けコースを学びながら、実際に自分のWebアプリケーションに取り入れてみましょう。",
     "url": "https://analytics.google.com/analytics/academy/course/6",
     "level": "easy"
   },
   {
     "skillId": "data-analytics-fundamentals",
-    "description": "大量データ分析/生成データの活用を視野に入れたデータ分析基盤の新しい考え方であるデータレイクについて説明されています。データ分析の基本から実際にAWSで構築する手法について学んでいきましょう。",
+    "description": "データ分析基盤の新しい考え方であるデータレイクについて説明されています。データ分析の基本から実際にAWSで構築する手法について学んでいきましょう。",
     "url": "https://www.amazon.co.jp/dp/491031301X",
     "isbn": "491031301X",
     "level": "middle"
@@ -390,7 +390,7 @@
   },
   {
     "skillId": "performance",
-    "description": "パフォーマンスの基礎から実践的な内容まで解説されています。サーバーサイドの計測方法やチューニング方法について学びましょう。",
+    "description": "パフォーマンスの基礎から実践的な内容まで解説されています。サーバーサイドの計測やチューニングについて学びましょう。",
     "url": "https://www.amazon.co.jp/dp/4798134600",
     "isbn": "4798134600",
     "level": "middle"
@@ -403,7 +403,7 @@
   },
   {
     "skillId": "scalability",
-    "description": "AWS Auto Scaling は、安定した予測可能なパフォーマンスを可能な限り低コストで維持するためにアプリケーションをモニタリングし、容量を自動で調整します。AWSオートスケーリングを学び実践してみましょう。",
+    "description": "AWS Auto Scaling は、アクセス数やリソースの使用状況に応じて、自動でインスタンスの数を調整してくれる仕組みです。AWSオートスケーリングを学び、実践してみましょう。",
     "url": "https://aws.amazon.com/jp/autoscaling/",
     "level": "middle"
   },
