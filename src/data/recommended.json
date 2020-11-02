@@ -139,7 +139,7 @@
   {
     "skillId": "terminal-operations",
     "title": "新しいLinuxの教科書",
-    "description": "ターミナル操作の際によく使うコマンドだけでなく、LinuxOSの種類やシェルスクリプト、プロセスなど初めてLinuxを使う人が難しく感じるポイントを丁寧に解説しています。",
+    "description": "ターミナル操作の際によく使うコマンドだけでなく、LinuxOSの種類やシェルスクリプト、プロセスなど、初めてLinuxを使う人が難しく感じるポイントを丁寧に解説しています。",
     "url": "https://www.amazon.co.jp/dp/4797380942/",
     "isbn": "4797380942",
     "level": "middle"
@@ -168,7 +168,7 @@
   {
     "skillId": "web-application-frameworks",
     "title": "Ruby on Rails ガイド：体系的にRailsを学ぼう学ぼう",
-    "description": "バージョン管理やテスト、デプロイなど実践的なRailsアプリケーション開発について学ぶことができます。",
+    "description": "Railsチュートリアルは、バージョン管理やテスト、デプロイまでを通して実践的なRailsアプリケーション開発について学ぶことができます。",
     "url": "https://railstutorial.jp/",
     "level": "middle"
   },
@@ -303,27 +303,27 @@
   {
     "skillId": "server-configuration",
     "title": "Nginx Get Started",
-    "description": "Nginx公式の入門ページです。英語ですが、無料の教材なども紹介されているので、ブラウザの翻訳機能を使ってチェックしてみるといいでしょう。難しい場合は、具体的な構築方法などをブログや記事を調べてみるのがおすすめです。",
+    "description": "Nginx公式の入門ページです。英語ですが、無料の教材なども紹介されているので、ブラウザの翻訳機能を使ってチェックしてみるといいでしょう。難しい場合は、具体的な構築方法などをブログや記事を調べてみるのがオススメです。",
     "url": "https://www.nginx.com/resources/wiki/start/",
     "level": "middle"
   },
   {
     "skillId": "networking",
     "title": "ネットワークはなぜつながるのか 第2版 知っておきたいTCP/IP、LAN、光ファイバの基礎知識",
-    "description": "ブラウザからURLにアクセスしてWebページが表示されるまでの仕組みについてわかりやすく説明されています。ネットワークの全体像を押さえたい人におすすめです。",
+    "description": "ネットワークの基本はこの書籍を読むのがおすすめです。ブラウザにURLを入力してからWebページが表示されるまでの流れと、ネットワークの仕組みについてわかりやすく説明されています。",
     "url": "https://www.amazon.co.jp/dp/4822283119/",
     "isbn": "4822283119",
     "level": "easy"
   },
   {
     "skillId": "networking",
-    "description": "Amazon VPCを利用することで、クラウド上で仮想ネットワークを構築することができます。これまでに学んだ知識を活かしてネットワークを構築してみましょう。",
+    "description": "Amazon VPCを利用すると、クラウド上で仮想ネットワークを構築することができます。これまでに学んだ知識を活かしてネットワークを構築してみましょう。",
     "url": "https://docs.aws.amazon.com/ja_jp/vpc/latest/userguide/what-is-amazon-vpc.html",
     "level": "middle"
   },
   {
     "skillId": "networking",
-    "description": "Amazon EC2を使用することでクラウド上に仮想サーバーを構築することができます。チュートリアルを参考にWebサーバーを構築してみましょう。",
+    "description": "Amazon EC2を利用すると、クラウド上に仮想サーバーを構築することができます。チュートリアルを参考にWebサーバーを構築してみましょう。",
     "url": "https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/EC2_GetStarted.html",
     "level": "middle"
   },
@@ -345,14 +345,14 @@
   {
     "skillId": "web-security",
     "title": "Railsチュートリアル",
-    "description": "Railsチュートリアルでは、セキュリティを意識した実践的なユーザー登録機能を開発します。バリデーションや認証などのセキュアな実装について学びましょう。",
+    "description": "Railsチュートリアルでは、セキュリティも意識した実践的なユーザー登録機能を作れます。ユーザー登録からパスワードの再設定までを学んでいきましょう。",
     "url": "https://railstutorial.jp/chapters/modeling_users",
     "level": "easy"
   },
   {
     "skillId": "web-security",
     "title": "体系的に学ぶ 安全なWebアプリケーションの作り方 第2版 脆弱性が生まれる原理と対策の実践",
-    "description": "Webセキュリティに関して基礎からわかりやすく説明されています。この書籍を読めば基礎を押さえることができます。",
+    "description": "Webセキュリティに関して基礎からわかりやすく説明されていて、体系的に学ぶことができます。",
     "url": "https://www.amazon.co.jp/dp/4797393165",
     "isbn": "4797393165",
     "level": "middle"
