@@ -403,7 +403,7 @@
   },
   {
     "skillId": "scalability",
-    "description": "AWS Auto Scaling は、安定した予測可能なパフォーマンスを可能な限り低コストで維持するためにアプリケーションをモニタリングし、容量を自動で調整します。AWSオートスケーリングを学び実践してみましょう。",
+    "description": "AWS Auto Scaling は、アクセス数やリソースの使用状況に応じて、自動でインスタンスの数を調整してくれる仕組みです。AWSオートスケーリングを学び、実践してみましょう。",
     "url": "https://aws.amazon.com/jp/autoscaling/",
     "level": "middle"
   },
