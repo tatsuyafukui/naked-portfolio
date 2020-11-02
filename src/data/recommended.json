@@ -303,7 +303,7 @@
   {
     "skillId": "server-configuration",
     "title": "Nginx Get Started",
-    "description": "Nginx公式の入門ページです。英語ですが、無料の教材なども紹介されているので、ブラウザの翻訳機能を使ってチェックしてみるといいでしょう。難しい場合は、具体的な構築方法などをブログや記事を調べてみるのがおすすめです。",
+    "description": "Nginx公式の入門ページです。英語ですが、無料の教材なども紹介されているので、ブラウザの翻訳機能を使ってチェックしてみるといいでしょう。難しい場合は、具体的な構築方法などをブログや記事を調べてみるのがオススメです。",
     "url": "https://www.nginx.com/resources/wiki/start/",
     "level": "middle"
   },
