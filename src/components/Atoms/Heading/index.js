@@ -15,7 +15,7 @@ const headingFactory = role => ({
       styles.h,
       styles[role],
       styles[`h${visualLevel}`],
-      styles[`lineHeightLevel${lineHeightLevel}`],
+      `lineHeightLevel${lineHeightLevel}`,
       className,
     ].join(' ')}
     {...props}

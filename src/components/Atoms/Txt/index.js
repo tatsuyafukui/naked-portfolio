@@ -16,7 +16,7 @@ const txtFactory = role => ({
       styles.txt,
       styles[role],
       styles[`visualLevel${visualLevel}`],
-      styles[`lineHeightLevel${lineHeightLevel}`],
+      `lineHeightLevel${lineHeightLevel}`,
       className,
     ].join(' ')}
   />

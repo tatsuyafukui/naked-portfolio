@@ -19,8 +19,40 @@ storiesOf('Atoms/Heading', module)
       HeadingLevel:1, VisualLevel:2
     </Heading>
   ))
-  .add('Level:1, lineHeightLevel:5', () => (
-    <Heading level={1} lineHeightLevel={5}>
+  .add('lineHeightLevel:1', () => (
+    <Heading lineHeightLevel={1}>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book.
+    </Heading>
+  ))
+  .add('lineHeightLevel:2', () => (
+    <Heading lineHeightLevel={2}>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book.
+    </Heading>
+  ))
+  .add('lineHeightLevel:3', () => (
+    <Heading lineHeightLevel={3}>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book.
+    </Heading>
+  ))
+  .add('lineHeightLevel:4', () => (
+    <Heading lineHeightLevel={4}>
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      Lorem Ipsum has been the industry's standard dummy text ever since the
+      1500s, when an unknown printer took a galley of type and scrambled it to
+      make a type specimen book.
+    </Heading>
+  ))
+  .add('lineHeightLevel:5', () => (
+    <Heading lineHeightLevel={5}>
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry's standard dummy text ever since the
       1500s, when an unknown printer took a galley of type and scrambled it to
