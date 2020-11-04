@@ -2,7 +2,6 @@
 
 .h {
   color: var(--color-text);
-  line-height: var(--line-height-s);
 }
 
 .normal {
@@ -52,4 +51,24 @@
 
 .h6 {
   font-size: var(--font-size-m);
+}
+
+.lineHeightLevel1 {
+  line-height: var(--line-height-xs);
+}
+
+.lineHeightLevel2 {
+  line-height: var(--line-height-s);
+}
+
+.lineHeightLevel3 {
+  line-height: var(--line-height-m);
+}
+
+.lineHeightLevel4 {
+  line-height: var(--line-height-l);
+}
+
+.lineHeightLevel5 {
+  line-height: var(--line-height-xl);
 }

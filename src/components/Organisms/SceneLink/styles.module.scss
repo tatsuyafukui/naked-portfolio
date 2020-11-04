@@ -103,12 +103,10 @@
   margin-right: var(--space-6-fixed);
 }
 
-@media (hover: hover) {
-  .scene:hover {
-    text-decoration: none;
+.scene:hover {
+  text-decoration: none;
 
-    .title {
-      color: var(--color-link);
-    }
+  .title {
+    color: var(--color-link);
   }
 }
