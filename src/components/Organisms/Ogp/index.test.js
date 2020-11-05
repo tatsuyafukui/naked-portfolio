@@ -1,23 +1,6 @@
-import {getSummaryPosition, OgpContainer} from './index'
+import {OgpContainer} from './index'
 import data from '../../../mock/data/gatsby-img.json'
 import {mount} from 'enzyme'
-
-describe('関数getSummaryPosition', () => {
-  it('デフォルトの返り値はleft', () => {
-    const result = getSummaryPosition('other')
-    expect(result).toBe('left')
-  })
-
-  it('twitterCardがsummary_large_imageならtopを返す', () => {
-    const result = getSummaryPosition('summary_large_image')
-    expect(result).toBe('top')
-  })
-
-  it('twitterCardがsummaryならleftを返す', () => {
-    const result = getSummaryPosition('summary')
-    expect(result).toBe('left')
-  })
-})
 
 describe('Ogp', () => {
   const presenter = props => props
