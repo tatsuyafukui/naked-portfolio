@@ -206,7 +206,7 @@
     "skillId": "development-flow",
     "title": "チーム開発実践入門",
     "description": "チーム開発の進め方について、バージョン管理やタスク管理など幅広く説明されています。",
-    "url": "https://www.amazon.co.jp/dp/B07JLQD763/",
+    "url": "https://www.amazon.co.jp/dp/4774164283",
     "isbn": "B07JLQD763",
     "level": "middle"
   },
@@ -296,7 +296,7 @@
     "skillId": "server-configuration",
     "title": "新人エンジニアのためのインフラ入門　ThinkIT Books",
     "description": "インフラを構成する上での基本がわかりやすく説明されています。Web3層構成についても解説されているので、入門として読んでみましょう。",
-    "url": "https://www.amazon.co.jp/dp/B07BDHJ8KV",
+    "url": "https://www.amazon.co.jp/dp/4295003255",
     "isbn": "B07BDHJ8KV",
     "level": "easy"
   },
@@ -346,7 +346,7 @@
     "skillId": "web-security",
     "title": "Railsチュートリアル",
     "description": "Railsチュートリアルでは、セキュリティも意識した実践的なユーザー登録機能を作れます。ユーザー登録からパスワードの再設定までを学んでいきましょう。",
-    "url": "https://railstutorial.jp/chapters/modeling_users",
+    "url": "https://railstutorial.jp",
     "level": "easy"
   },
   {
