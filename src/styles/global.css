@@ -144,6 +144,7 @@
   --z-background: -10;
 }
 
+/* reset */
 html {
   box-sizing: border-box;
   font-family:
@@ -778,6 +779,7 @@ pre tt::after {
   }
 }
 
+/* レスポンシブでの余白とフォントサイズの管理 */
 @media screen and (max-width: 991px) {
   :root {
     --space-8: 6px;
@@ -833,4 +835,25 @@ pre tt::after {
     --space-112: 96px;
     --space-120: 104px;
   }
+}
+
+/* コンポーネント間で共通のスタイル */
+.lineHeightLevel1 {
+  line-height: var(--line-height-xs);
+}
+
+.lineHeightLevel2 {
+  line-height: var(--line-height-s);
+}
+
+.lineHeightLevel3 {
+  line-height: var(--line-height-m);
+}
+
+.lineHeightLevel4 {
+  line-height: var(--line-height-l);
+}
+
+.lineHeightLevel5 {
+  line-height: var(--line-height-xl);
 }

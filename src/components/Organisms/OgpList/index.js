@@ -17,7 +17,12 @@ const OgpList = ({ogpList, ...props}) => {
       {ogpList &&
         ogpList.map(item => (
           <ListItem key={item.id} className={styles.listItem}>
-            <BoldHeading level={3} visualLevel={5} className={styles.title}>
+            <BoldHeading
+              level={3}
+              visualLevel={5}
+              lineHeightLevel={3}
+              className={styles.title}
+            >
               {item.fields ? item.fields.ogp.ogTitle : item.title}
             </BoldHeading>
             <div className={styles.ogpWrap}>
