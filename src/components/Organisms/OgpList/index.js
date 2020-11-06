@@ -26,7 +26,7 @@ const OgpList = ({ogpList, ...props}) => {
               {item.fields ? item.fields.ogp.ogTitle : item.title}
             </BoldHeading>
             <div className={styles.ogpWrap}>
-              <Txt lineHeightLevel={5} className={styles.description}>
+              <Txt lineHeightLevel={4} className={styles.description}>
                 {item.description}
               </Txt>
               {/* ogpがないサイトはリンクのみ */}
