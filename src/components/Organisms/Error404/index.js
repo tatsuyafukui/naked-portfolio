@@ -29,7 +29,7 @@ const Error404 = () => {
           お探しのページは見つかりませんでした <br />
           下のボタンから再出発しましょう
         </Txt>
-        <Button onClick={() => navigate('/')}>HOMEに戻る</Button>
+        <Button onClick={() => navigate('/scenes')}>シーン一覧</Button>
       </Container>
       {illusts.allFile.nodes.map(illust => (
         <div
