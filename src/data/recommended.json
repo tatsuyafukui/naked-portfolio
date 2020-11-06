@@ -1,0 +1,423 @@
+[
+  {
+    "skillId": "html-and-css",
+    "title": "Progate HTML & CSS 初級編",
+    "description": "はじめてのプログラミング学習にオススメなのはProgateのHTML＆CSSコースです。実際にWebページを作りながら学んでいきましょう。",
+    "url": "https://prog-8.com/lessons/html/study/1",
+    "level": "easy"
+  },
+  {
+    "skillId": "html-and-css",
+    "title": "自分で作ったWebページをインターネット上に公開しよう！",
+    "description": "ローカル環境で開発してきたWebページを世界に公開してみましょう。GitHubの設定から公開までをサポートしています。",
+    "url": "https://prog-8.com/docs/github-pages",
+    "level": "middle"
+  },
+  {
+    "skillId": "html-and-css",
+    "title": "アクセシビリティ",
+    "description": "ある程度の実践をしたあとは、学んだスキルをどのように扱うかの知識も必要です。アクセシビリティの基本について学ぶことで、どのようなコードを書くべきかをイメージできるようになります。",
+    "url": "https://developer.mozilla.org/ja/docs/Learn/Accessibility",
+    "level": "middle"
+  },
+  {
+    "skillId": "editors",
+    "title": "Documentation for Visual Studio Code",
+    "description": "Visual Studio Codeはマイクロソフトが提供しているエディタです。多機能なエディタなので、必要に応じて調べながら学習を進めましょう。",
+    "url": "https://code.visualstudio.com/docs",
+    "level": "easy"
+  },
+  {
+    "skillId": "editors",
+    "title": "デバッグ in Visual Studio Code",
+    "description": "Debugger for Chromeを使ってエディタ内でデバッグできるようになりましょう。JavaScriptのデバッグからはじめるのがオススメです。",
+    "url": "https://code.visualstudio.com/docs/editor/debugging",
+    "level": "middle"
+  },
+  {
+    "skillId": "internet",
+    "title": "Progate",
+    "description": "必要最小限の用語と役割を説明しています。最初に読んでみるのがオススメです。",
+    "url": "https://prog-8.com/docs/web",
+    "level": "easy"
+  },
+  {
+    "skillId": "internet",
+    "title": "イラスト図解式 この一冊で全部わかるWeb技術の基本",
+    "description": "インターネットに関連する用語が一通り説明されています。1ページ毎に説明と図がセットになっていてわかりやすいです。",
+    "url": "https://www.amazon.co.jp/dp/4797388811",
+    "isbn": "4797388811",
+    "level": "easy"
+  },
+  {
+    "skillId": "internet",
+    "title": "Webを支える技術",
+    "description": "少し内容が古いですが、インターネットの基本を押さえる必読書です。インターネットの背景や仕組みを深く学ぶために読んでおきましょう。",
+    "url": "https://www.amazon.co.jp/dp/4774142042",
+    "isbn": "4774142042",
+    "level": "middle"
+  },
+  {
+    "skillId": "internet",
+    "title": "GitHub Pages Doc",
+    "description": "GitHub Pagesに公開するための公式ドキュメントです。インターネットの基本で学んだことを意識しながら、カスタムドメインや404ページを設定してWebページを公開しましょう。",
+    "url": "https://docs.github.com/ja/free-pro-team@latest/github/working-with-github-pages/about-github-pages",
+    "level": "middle"
+  },
+  {
+    "skillId": "javascript",
+    "title": "Progate JavaScript 学習コース Ⅰ",
+    "description": "基本的な文法の学習はProgateに用意されています。実際に動かしながら学んでいきましょう。",
+    "url": "https://prog-8.com/lessons/es6/study/1",
+    "level": "easy"
+  },
+  {
+    "skillId": "javascript",
+    "title": "Progate JQuery 学習コース Ⅰ",
+    "description": "JavaScriptで直接DOMを扱うProgateのレッスンはまだありません。代わりにJavaScriptライブラリのjQueryを使うことでDOM操作のイメージを付けることができます。クリアした後は、jQueryで作った機能をJavaScriptで書き直してみましょう。",
+    "url": "https://prog-8.com/lessons/jquery/study/1",
+    "level": "easy"
+  },
+  {
+    "skillId": "javascript",
+    "title": "非同期 MDN",
+    "description": "JavaScriptのドキュメントがもっとも充実したサイトです。辞書としてだけでなく、学習チュートリアルも用意されているので参考にして学んでいきましょう。",
+    "url": "https://developer.mozilla.org/ja/docs/Learn/JavaScript/Asynchronous",
+    "level": "middle"
+  },
+  {
+    "skillId": "developer-tools",
+    "title": "Progate",
+    "description": "初めて開発者ツールを使う人に向けた解説記事です。HTMLやCSSの確認ができるようになります。",
+    "url": "https://prog-8.com/docs/html-dev",
+    "level": "easy"
+  },
+  {
+    "skillId": "developer-tools",
+    "title": "Chrome DevTool",
+    "description": "開発者ツールの公式ドキュメントです。機能ごとにチュートリアルが用意されているので、使い方を調べたいときに読むといいでしょう。",
+    "url": "https://developers.google.com/web/tools/chrome-devtools?hl=ja",
+    "level": "middle"
+  },
+  {
+    "skillId": "server-side-programming",
+    "title": "Progate Ruby 学習コース Ⅰ - Ⅲ",
+    "description": "ProgateのRubyコースでは基本的な文法、変数、条件分岐などを学ぶことができます。ProgateでRubyの基礎を身につけましょう。",
+    "url": "https://prog-8.com/lessons/ruby/study/1",
+    "level": "easy"
+  },
+  {
+    "skillId": "server-side-programming",
+    "title": "Ruby　入門",
+    "description": "Rubyの中級者向けの教材として有名な書籍です。知識だけでなく課題も用意されているので、手を動かしながら体系的に学びましょう。",
+    "url": "https://www.amazon.co.jp/dp/4774193976",
+    "isbn": "4774193976",
+    "level": "middle"
+  },
+  {
+    "skillId": "object-oriented-programming",
+    "title": "Progate Ruby Ⅳ - Ⅴ",
+    "description": "Rubyでオブジェクト指向の基礎について学ぶことができます。実際に動かしながら学んでいきましょう。",
+    "url": "https://prog-8.com/lessons/ruby/study/4",
+    "level": "easy"
+  },
+  {
+    "skillId": "object-oriented-programming",
+    "title": "オブジェクト指向でなぜ作るのか 第2版",
+    "description": "オブジェクト指向の全体像や必要性がわかりやすく説明されています。クラス、ポリモーフィズム、継承などの要点を押さえているので実践でイメージをつけたあとに読んでみると良いでしょう。",
+    "url": "https://www.amazon.co.jp/dp/4822284654/",
+    "isbn": "4822284654",
+    "level": "middle"
+  },
+  {
+    "skillId": "terminal-operations",
+    "title": "Progate Command Line 学習コース 基礎編",
+    "description": "ターミナルで利用する基本的なコマンドが説明されています。ルートディレクトリやカレントディレクトリなどのパスについても学べるので初学者におすすめです。",
+    "url": "https://prog-8.com/lessons/commandline/study/1",
+    "level": "easy"
+  },
+  {
+    "skillId": "terminal-operations",
+    "title": "新しいLinuxの教科書",
+    "description": "ターミナル操作の際によく使うコマンドだけでなく、LinuxOSの種類やシェルスクリプト、プロセスなど、初めてLinuxを使う人が難しく感じるポイントを丁寧に解説しています。",
+    "url": "https://www.amazon.co.jp/dp/4797380942/",
+    "isbn": "4797380942",
+    "level": "middle"
+  },
+  {
+    "skillId": "databases",
+    "title": "Progate SQL 学習コース Ⅰ",
+    "description": "SQLの基本的な文法をわかりやすく、実際に動かしながら学ぶことができます。内容も充実しているため、まずはProgateで学ぶとよいでしょう。",
+    "url": "https://prog-8.com/lessons/sql/study/1",
+    "level": "easy"
+  },
+  {
+    "skillId": "databases",
+    "title": "MySQL Tutorial - Learn MySQL Fast, Easy and Fun",
+    "description": "MySQL専用のチュートリアルです。英語教材ですが、Progateでは紹介できなかったトランザクションやインデックスについても学ぶことができます。サーバーサイドプログラミングとの接続方法も解説されているので、ブラウザの翻訳機能を使って学んでみましょう。",
+    "url": "https://www.mysqltutorial.org/",
+    "level": "middle"
+  },
+  {
+    "skillId": "web-application-frameworks",
+    "title": "Progate Ruby on Rails 学習コース Ⅰ",
+    "description": "Progateでは充実したRuby on Railsコースを用意しています。実際に動かしながらRailsについて学んでいきましょう。",
+    "url": "https://prog-8.com/lessons/rails5/study/1",
+    "level": "easy"
+  },
+  {
+    "skillId": "web-application-frameworks",
+    "title": "Ruby on Rails ガイド：体系的にRailsを学ぼう学ぼう",
+    "description": "Railsチュートリアルは、バージョン管理やテスト、デプロイまでを通して実践的なRailsアプリケーション開発について学ぶことができます。",
+    "url": "https://railstutorial.jp/",
+    "level": "middle"
+  },
+  {
+    "skillId": "web-api",
+    "title": "Web API MDN",
+    "description": "APIの基本から実践的なサンプルコードまで網羅的にまとめられています。サーバーからデータを取得する方法やサードパーティーAPIの具体例などを学びましょう。",
+    "url": "https://developer.mozilla.org/ja/docs/Learn/JavaScript/Client-side_web_APIs/Introduction",
+    "level": "easy"
+  },
+  {
+    "skillId": "web-api",
+    "title": "JSONPlaceholder",
+    "description": "無料でWeb APIを試せるサイトです。Ajaxを使ってWeb APIにアクセスして、JSONを扱う練習をしてみましょう。",
+    "url": "https://jsonplaceholder.typicode.com/",
+    "level": "easy"
+  },
+  {
+    "skillId": "web-api",
+    "title": "Web API: The Good Parts",
+    "description": "Web APIの必要性や公開に必要な知識について説明されています。設計の考え方を中心に学べるので、自分でWeb APIを作るときに読んでおきましょう。",
+    "url": "https://www.amazon.co.jp/dp/4873116864",
+    "isbn": "4873116864",
+    "level": "middle"
+  },
+  {
+    "skillId": "development-flow",
+    "title": "アジャイルサムライ",
+    "description": "アジャイル開発の全体像や具体的な進め方について、わかりやすく説明されています。アジャイル開発の入門としてオススメです。",
+    "url": "https://www.amazon.co.jp/dp/4274068560/",
+    "isbn": "4274068560",
+    "level": "easy"
+  },
+  {
+    "skillId": "development-flow",
+    "title": "チーム開発実践入門",
+    "description": "チーム開発の進め方について、バージョン管理やタスク管理など幅広く説明されています。",
+    "url": "https://www.amazon.co.jp/dp/4774164283",
+    "isbn": "B07JLQD763",
+    "level": "middle"
+  },
+  {
+    "skillId": "design-specification",
+    "title": "Figma",
+    "description": "Figmaはブラウザやデスクトップアプリから、簡単に使い始めることができます。Figmaの使い方やWebページの設計方法は、さざまな記事があるので調べてみましょう。",
+    "url": "https://www.figma.com/design/",
+    "level": "easy"
+  },
+  {
+    "skillId": "design-specification",
+    "title": "Clean Architecture 達人に学ぶソフトウェアの構造と設計",
+    "description": "「動く」だけではなく「正しく」作るためのソフトウェア設計の考え方について学ぶことができます。",
+    "url": "https://www.amazon.co.jp/dp/4048930656",
+    "isbn": "4048930656",
+    "level": "middle"
+  },
+  {
+    "skillId": "design-specification",
+    "title": "SQLアンチパターン",
+    "description": "リレーショナルデータベースの設計について、アンチパターンの具体例と正しい方法の解説という展開でわかりやすく説明されています。",
+    "url": "https://www.amazon.co.jp/dp/4873115892",
+    "isbn": "4873115892",
+    "level": "middle"
+  },
+  {
+    "skillId": "git",
+    "title": "Git 学習コース Ⅰ | Progate",
+    "description": "Gitの基本的なコマンドについて学ぶことができます。Git操作を体験してみたい人にオススメです。",
+    "url": "https://prog-8.com/lessons/git/study/1",
+    "level": "easy"
+  },
+  {
+    "skillId": "git",
+    "title": "Git 環境構築 | Progate",
+    "description": "Gitの環境構築からGitHubにプッシュするところまでを解説しています。",
+    "url": "https://prog-8.com/docs/git-env",
+    "level": "easy"
+  },
+  {
+    "skillId": "git",
+    "title": "Git - バージョン管理に関して",
+    "description": "Gitの公式サイトで紹介されている書籍のオンライン版です。Gitの目的や仕組みから説明されています。Progateでは紹介できていないブランチやコンフリクトについて学ぶことができます。",
+    "url": "https://git-scm.com/book/ja/v2/Git-%E3%81%AE%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E6%A9%9F%E8%83%BD-%E3%83%96%E3%83%A9%E3%83%B3%E3%83%81%E3%81%A8%E3%81%AF",
+    "level": "middle"
+  },
+  {
+    "skillId": "git",
+    "title": "GitHub Learning Lab",
+    "description": "GitHubのチュートリアルを実戦形式で学ぶことができます。イシューの作成やプルリクエスト、コードレビューを体験するために使ってみましょう。英語の部分はブラウザの翻訳機能を使って学びましょう。",
+    "url": "https://lab.github.com/githubtraining/introduction-to-github",
+    "level": "middle"
+  },
+  {
+    "skillId": "testing",
+    "title": "テスト駆動開発",
+    "description": "テスト駆動開発を学ぶことで自動テストの書き方だけではなく、設計やリファクタリングがテストとどのような関係であるかイメージできるようになります。写経しながら読み進めるのがオススメです。",
+    "url": "https://www.amazon.co.jp/dp/4274217884",
+    "isbn": "4274217884",
+    "level": "easy"
+  },
+  {
+    "skillId": "testing",
+    "title": "RSpecによるRailsテスト入門",
+    "description": "RSpecを使って信頼性の高いテストを書くスキルを学ぶことができます。",
+    "url": "https://leanpub.com/everydayrailsrspec-jp",
+    "level": "middle"
+  },
+  {
+    "skillId": "refactoring",
+    "title": "リーダブルコード",
+    "description": "初学者でもすぐに始められるリファクタリングのスキルについて学ぶことができます。理解しやすいコードを書くために読んでみましょう。",
+    "url": "https://www.amazon.co.jp/dp/4873115655",
+    "isbn": "4873115655",
+    "level": "easy"
+  },
+  {
+    "skillId": "refactoring",
+    "title": "リファクタリング(第2版): 既存のコードを安全に改善する",
+    "description": "豊富なパターンから実践的なリファクタリングの進め方を学ぶことができます。リファクタリングの目的や原則を学びましょう。",
+    "url": "https://www.amazon.co.jp/dp/4274224546",
+    "isbn": "4274224546",
+    "level": "middle"
+  },
+  {
+    "skillId": "server-configuration",
+    "title": "新人エンジニアのためのインフラ入門　ThinkIT Books",
+    "description": "インフラを構成する上での基本がわかりやすく説明されています。Web3層構成についても解説されているので、入門として読んでみましょう。",
+    "url": "https://www.amazon.co.jp/dp/4295003255",
+    "isbn": "B07BDHJ8KV",
+    "level": "easy"
+  },
+  {
+    "skillId": "server-configuration",
+    "title": "Nginx Get Started",
+    "description": "Nginx公式の入門ページです。英語ですが、無料の教材なども紹介されているので、ブラウザの翻訳機能を使ってチェックしてみるといいでしょう。難しい場合は、具体的な構築方法などをブログや記事を調べてみるのがオススメです。",
+    "url": "https://www.nginx.com/resources/wiki/start/",
+    "level": "middle"
+  },
+  {
+    "skillId": "networking",
+    "title": "ネットワークはなぜつながるのか 第2版 知っておきたいTCP/IP、LAN、光ファイバの基礎知識",
+    "description": "ネットワークの基本はこの書籍を読むのがおすすめです。ブラウザにURLを入力してからWebページが表示されるまでの流れと、ネットワークの仕組みについてわかりやすく説明されています。",
+    "url": "https://www.amazon.co.jp/dp/4822283119/",
+    "isbn": "4822283119",
+    "level": "easy"
+  },
+  {
+    "skillId": "networking",
+    "description": "Amazon VPCを利用すると、クラウド上で仮想ネットワークを構築することができます。これまでに学んだ知識を活かしてネットワークを構築してみましょう。",
+    "url": "https://docs.aws.amazon.com/ja_jp/vpc/latest/userguide/what-is-amazon-vpc.html",
+    "level": "middle"
+  },
+  {
+    "skillId": "networking",
+    "description": "Amazon EC2を利用すると、クラウド上に仮想サーバーを構築することができます。チュートリアルを参考にWebサーバーを構築してみましょう。",
+    "url": "https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/EC2_GetStarted.html",
+    "level": "middle"
+  },
+  {
+    "skillId": "cloud-services",
+    "title": "AWSで基本的なウェブアプリケーションを構築する",
+    "description": "AWSでWebアプリケーションをデプロイするための公式チュートリアルです。簡単に始めることができるので、最初に学んでいきましょう。",
+    "url": "https://aws.amazon.com/jp/getting-started/hands-on/build-web-app-s3-lambda-api-gateway-dynamodb/?e=gs2020&p=fullstack",
+    "level": "easy"
+  },
+  {
+    "skillId": "cloud-services",
+    "title": "amazon Web Services 基礎からのネットワーク&サーバー構築 改訂3版 (日本語) 単行本 – 2020/2/6",
+    "description": "AWSでWebアプリケーションを構築する方法をハンズオン形式で解説されています。サーバー構成やネットワークに関しても学ぶことができます。",
+    "url": "https://www.amazon.co.jp/dp/4296105442",
+    "isbn": "4296105442",
+    "level": "middle"
+  },
+  {
+    "skillId": "web-security",
+    "title": "Railsチュートリアル",
+    "description": "Railsチュートリアルでは、セキュリティも意識した実践的なユーザー登録機能を作れます。ユーザー登録からパスワードの再設定までを学んでいきましょう。",
+    "url": "https://railstutorial.jp",
+    "level": "easy"
+  },
+  {
+    "skillId": "web-security",
+    "title": "体系的に学ぶ 安全なWebアプリケーションの作り方 第2版 脆弱性が生まれる原理と対策の実践",
+    "description": "Webセキュリティに関して基礎からわかりやすく説明されていて、体系的に学ぶことができます。",
+    "url": "https://www.amazon.co.jp/dp/4797393165",
+    "isbn": "4797393165",
+    "level": "middle"
+  },
+  {
+    "skillId": "ci-cd",
+    "description": "CircleCiの公式チュートリアルです。まずは、サンプルプロジェクトでCI/CD環境を構築してイメージを掴めるようになりましょう。",
+    "url": "https://circleci.com/docs/ja/2.0/getting-started/#section=getting-started",
+    "level": "easy"
+  },
+  {
+    "skillId": "ci-cd",
+    "description": "CircleCiでRuby on Railsをビルドする方法について説明されているガイドです。Railsのデモアプリケーションやデプロイの構成ごとの説明もあるので、参考にすると良いでしょう。",
+    "url": "https://circleci.com/docs/ja/2.0/language-ruby/",
+    "level": "middle"
+  },
+  {
+    "skillId": "data-analytics-fundamentals",
+    "description": "Googleが提供している公式のチュートリアルサイトです。動画でわかりやすく説明されています。初級者向けコースを学びながら、実際に自分のWebアプリケーションに取り入れてみましょう。",
+    "url": "https://analytics.google.com/analytics/academy/course/6",
+    "level": "easy"
+  },
+  {
+    "skillId": "data-analytics-fundamentals",
+    "description": "データ分析基盤の新しい考え方であるデータレイクについて説明されています。データ分析の基本から実際にAWSで構築する手法について学んでいきましょう。",
+    "url": "https://www.amazon.co.jp/dp/491031301X",
+    "isbn": "491031301X",
+    "level": "middle"
+  },
+  {
+    "skillId": "performance",
+    "description": "クライアントサイドを中心としたパフォーマンスについて説明されています。日本語に翻訳されている情報は少ないので、英語のページをブラウザの翻訳機能を使って調べてみるといいでしょう。",
+    "url": "https://developer.mozilla.org/ja/docs/Learn/Performance",
+    "level": "easy"
+  },
+  {
+    "skillId": "performance",
+    "description": "パフォーマンスの基礎から実践的な内容まで解説されています。サーバーサイドの計測やチューニングについて学びましょう。",
+    "url": "https://www.amazon.co.jp/dp/4798134600",
+    "isbn": "4798134600",
+    "level": "middle"
+  },
+  {
+    "skillId": "scalability",
+    "description": "AWSでスケーラビリティを考慮したアプリケーションのデプロイを体験できます。それぞれのサーバーやネットワークの構成をイメージできるようになりましょう。",
+    "url": "https://aws.amazon.com/jp/getting-started/hands-on/build-wordpress-website/",
+    "level": "easy"
+  },
+  {
+    "skillId": "scalability",
+    "description": "AWS Auto Scaling は、アクセス数やリソースの使用状況に応じて、自動でインスタンスの数を調整してくれる仕組みです。AWSオートスケーリングを学び、実践してみましょう。",
+    "url": "https://aws.amazon.com/jp/autoscaling/",
+    "level": "middle"
+  },
+  {
+    "skillId": "fault-tolerance",
+    "description": "Amazon CloudWatchの公式チュートリアルです。具体的なシナリオに沿ってCloudWatchについて学ぶことができます。",
+    "url": "https://docs.aws.amazon.com/ja_jp/AmazonCloudWatch/latest/monitoring/CloudWatch-tutorials.html",
+    "level": "easy"
+  },
+  {
+    "skillId": "fault-tolerance",
+    "description": "インフラの設計で考慮するべき点がまとめられています。可用性や運用と保守の項目を読んでみるといいでしょう。",
+    "url": "https://www.amazon.co.jp/dp/4774162868",
+    "isbn": "4774162868",
+    "level": "middle"
+  }
+]

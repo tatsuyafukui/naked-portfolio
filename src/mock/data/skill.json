@@ -1,0 +1,157 @@
+{
+  "skillsJson": {
+    "id": "html-and-css",
+    "title": "HTML&CSS",
+    "subTitle": "レイアウトを作れるようになろう",
+    "description": "ホームページやECサイトなど、全てのWebページでHTML&CSSは使われています。HTML&CSSを学べば、これまであなたの頭の中にあった考えを、形にして表現する手段を手に入れることができるのです。",
+    "thumbnail": {
+      "childImageSharp": {
+        "fluid": {
+          "aspectRatio": 1.5037593984962405,
+          "src": "/static/b9739f8cd757788a0b3eb8f11d088808/2a4de/html.png",
+          "srcSet": "/static/b9739f8cd757788a0b3eb8f11d088808/69585/html.png 200w,\n/static/b9739f8cd757788a0b3eb8f11d088808/497c6/html.png 400w,\n/static/b9739f8cd757788a0b3eb8f11d088808/2a4de/html.png 600w",
+          "sizes": "(max-width: 600px) 100vw, 600px"
+        }
+      }
+    },
+    "image": {
+      "publicURL": "/static/4edfb1c97e8a31fdd17809f2ecced2c4/illustration.svg"
+    },
+    "overall": {
+      "easy": {
+        "description": "easy description",
+        "tasks": [
+          {
+            "title": "easy title1",
+            "child": ["easy child1", "easy child2"]
+          },
+          {
+            "title": "easy title2",
+            "child": ["easy child3", "easy child4"]
+          }
+        ],
+        "recommended": [
+          {
+            "title": "Progate HTML & CSS 初級編",
+            "description": "初心者にもわかりやすくスライド形式で学習できるので自分のペースで学ぶことができます。環境構築が不要なのも学びやすいです。",
+            "fields": {
+              "ogp": {
+                "ogTitle": "HTML & CSS 学習コース 初級編 | Progate",
+                "twitterCard": "summary_large_image",
+                "ogDescription": "Progateはオンラインでプログラミングを学べるサービスです。プログラミングを学んでWEBアプリケーションを作ろう。",
+                "ogImage": {
+                  "childImageSharp": {
+                    "fluid": {
+                      "aspectRatio": 1.639344262295082,
+                      "src": "/static/b6f52ff8e397643881b45baa34bf59e7/ee604/1485928388770.png",
+                      "srcSet": "/static/b6f52ff8e397643881b45baa34bf59e7/69585/1485928388770.png 200w,\n/static/b6f52ff8e397643881b45baa34bf59e7/497c6/1485928388770.png 400w,\n/static/b6f52ff8e397643881b45baa34bf59e7/ee604/1485928388770.png 800w,\n/static/b6f52ff8e397643881b45baa34bf59e7/ccef1/1485928388770.png 980w",
+                      "sizes": "(max-width: 800px) 100vw, 800px"
+                    }
+                  }
+                }
+              }
+            },
+            "id": "d9abe430-216c-5693-a1a0-c705ea044b0e",
+            "isbn": null,
+            "url": "https://prog-8.com/lessons/html/study/1"
+          },
+          {
+            "title": "Progate HTML & CSS 初級編",
+            "description": "初心者にもわかりやすくスライド形式で学習できるので自分のペースで学ぶことができます。環境構築が不要なのも学びやすいです。",
+            "fields": {
+              "ogp": {
+                "ogTitle": "いちばんよくわかるHTML5&CSS3デザインきちんと入門 (Design&IDEA) | 狩野 祐東 |本 | 通販 | Amazon",
+                "twitterCard": null,
+                "ogDescription": "Amazonで狩野 祐東のいちばんよくわかるHTML5&CSS3デザインきちんと入門 (Design&IDEA)。アマゾンならポイント還元本が多数。狩野 祐東作品ほか、お急ぎ便対象商品は当日お届けも可能。またいちばんよくわかるHTML5&CSS3デザインきちんと入門 (Design&IDEA)もアマゾン配送商品なら通常配送無料。",
+                "ogImage": {
+                  "childImageSharp": {
+                    "fluid": {
+                      "aspectRatio": 0.7092198581560284,
+                      "src": "/static/d9df30bad4ac176446d9dfdcc635ed40/041b5/4797388544._SL500_.jpg",
+                      "srcSet": "/static/d9df30bad4ac176446d9dfdcc635ed40/f836f/4797388544._SL500_.jpg 200w,\n/static/d9df30bad4ac176446d9dfdcc635ed40/041b5/4797388544._SL500_.jpg 355w",
+                      "sizes": "(max-width: 355px) 100vw, 355px"
+                    }
+                  }
+                }
+              }
+            },
+            "id": "6e64feb9-d119-54e8-84c2-f5681cb4c652",
+            "isbn": "4797388544",
+            "url": "https://www.amazon.co.jp/dp/4797388544"
+          }
+        ]
+      },
+      "middle": {
+        "description": "middle description",
+        "tasks": [
+          {
+            "title": "middle title1",
+            "child": ["middle child1", "middle child2"]
+          },
+          {
+            "title": "middle title2",
+            "child": ["middle child3", "middle child4"]
+          }
+        ],
+        "recommended": [
+          {
+            "title": "Progate HTML & CSS 初級編",
+            "description": "初心者にもわかりやすくスライド形式で学習できるので自分のペースで学ぶことができます。環境構築が不要なのも学びやすいです。",
+            "fields": {
+              "ogp": {
+                "ogTitle": "HTML & CSS 学習コース 初級編 | Progate",
+                "twitterCard": "summary_large_image",
+                "ogDescription": "Progateはオンラインでプログラミングを学べるサービスです。プログラミングを学んでWEBアプリケーションを作ろう。",
+                "ogImage": {
+                  "childImageSharp": {
+                    "fluid": {
+                      "aspectRatio": 1.639344262295082,
+                      "src": "/static/b6f52ff8e397643881b45baa34bf59e7/ee604/1485928388770.png",
+                      "srcSet": "/static/b6f52ff8e397643881b45baa34bf59e7/69585/1485928388770.png 200w,\n/static/b6f52ff8e397643881b45baa34bf59e7/497c6/1485928388770.png 400w,\n/static/b6f52ff8e397643881b45baa34bf59e7/ee604/1485928388770.png 800w,\n/static/b6f52ff8e397643881b45baa34bf59e7/ccef1/1485928388770.png 980w",
+                      "sizes": "(max-width: 800px) 100vw, 800px"
+                    }
+                  }
+                }
+              }
+            },
+            "id": "d9abe430-216c-5693-a1a0-c705ea044b0e",
+            "isbn": null,
+            "url": "https://prog-8.com/lessons/html/study/1"
+          }
+        ]
+      }
+    },
+    "overview": "HTML&CSSはWebページを作るために使われる言語です。<br/><br/>インターネット上に公開されているホームページや物販ページ（ECサイト）は、Webサーバー上にHTML&CSSで作成したファイルを置くことで、全世界の皆に公開することが出来ます。<br/><br/>HTMLは文字や画像など表示する対象とその構造を指定する役割があり、表示対象の特性に応じて様々な\"タグ\"を使用してWebページに表示する構造を記述します。CSSは色やレイアウトなど見た目を装飾する役割を担っており、HTMLで記述した\"タグ\"要素に対して\"プロパティ\"で見た目を指定します。",
+    "purpose": "ホームページやECサイトなど、全てのWebページでHTMLとCSSは使われています。あなたがWebアプリケーションを開発したいと考えているなら、HTML&CSSの知識は必要不可欠です。<br/><br/>HTMLのタグに慣れてきたら、CSSについて学んでみましょう。CSSのプロパティを使いこなすことができれば、様々な画面サイズでの表示に対応した、思い通りの見た目のWebページを作ることができるようになります。<br/><br/>HTML&CSSを一通り使えるようになったら、ポートフォリオサイトなどを作ってあなたが発信したいことや共有したい情報を載せたり、あなたの作った作品を世界に発信してみましょう。<br/><br/>HTML&CSSを学べば、これまであなたの頭の中にあった考えや、誰にも見せたことのなかった作品を、誰もが見える形で表現する手段を手に入れることができるのです。",
+    "standard": {
+      "basic": [
+        "HTMLとCSSの役割を説明できる",
+        "ボックスモデルでレイアウトを組むことができる",
+        "HTMLのタグの属性やCSSのプロパティを調べて使うことができる",
+        "レスポンシブなページを作ることができる",
+        "ブラウザの開発者ツールを使ってデバッグができる"
+      ],
+      "practical": [
+        "CSSが適用される優先順位を説明できる",
+        "Webアクセシビリティに対応したページを作れる"
+      ]
+    },
+    "slug": "/scenes/web-basics/skills/html-and-css",
+    "fields": {
+      "slug": "/scenes/web-basics/skills/html-and-css"
+    },
+    "scene": {
+      "id": "web-basics",
+      "numberTitle": "シーン1",
+      "fields": {
+        "slug": "/scenes/web-basics"
+      },
+      "image": {
+        "publicURL": "/static/04582033037991281f57d537d78b3aab/scene1.svg"
+      }
+    }
+  },
+  "file": {
+    "publicURL": "/static/b81133fabd98f7bdc9e7dfa74543f515/skill_kv.svg"
+  }
+}

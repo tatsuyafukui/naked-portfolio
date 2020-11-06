@@ -1,14 +1,11 @@
 @import '../../properties';
 
 .navigationLink {
+  align-items: center;
+  display: flex;
   line-height: var(--line-height-s);
-  text-decoration: none;
 
   span {
-    padding-right: var(--space);
+    padding-right: 0.25em;
   }
-}
-
-.navigationLink:hover {
-  text-decoration: underline;
 }

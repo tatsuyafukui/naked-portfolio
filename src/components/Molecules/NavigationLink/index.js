@@ -5,15 +5,17 @@ import Link from '../../Atoms/Link'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faAngleRight} from '@fortawesome/free-solid-svg-icons'
 
-const NavigationLink = ({children, className, ...props}) => (
-  <Link className={[styles.navigationLink, className].join(' ')} {...props}>
+const NavigationLink = ({tag: Tag = Link, children, className, ...props}) => (
+  <Tag className={[styles.navigationLink, className].join(' ')} {...props}>
     <span>{children}</span>
     <FontAwesomeIcon icon={faAngleRight} />
-  </Link>
+  </Tag>
 )
 
 export default NavigationLink
 
 NavigationLink.propTypes = {
   children: PropTypes.node.isRequired,
+  tag: PropTypes.oneOfType([PropTypes.string, PropTypes.func]),
+  className: PropTypes.string,
 }

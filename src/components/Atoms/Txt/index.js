@@ -6,6 +6,7 @@ import {containPresenter} from '../../utils/HoC'
 const txtFactory = role => ({
   tag: Tag = 'p',
   visualLevel,
+  lineHeightLevel,
   className,
   ...props
 }) => (
@@ -15,6 +16,7 @@ const txtFactory = role => ({
       styles.txt,
       styles[role],
       styles[`visualLevel${visualLevel}`],
+      `lineHeightLevel${lineHeightLevel}`,
       className,
     ].join(' ')}
   />
@@ -24,9 +26,15 @@ const TxtPresenter = txtFactory('base')
 const InfoTxtPresenter = txtFactory('info')
 const DisableTxtPresenter = txtFactory('disable')
 
-export const TxtContainer = ({visualLevel, presenter, ...props}) => {
+export const TxtContainer = ({
+  visualLevel,
+  lineHeightLevel,
+  presenter,
+  ...props
+}) => {
   visualLevel = Math.max(1, Math.min(4, visualLevel))
-  return presenter({visualLevel, ...props})
+  lineHeightLevel = Math.max(1, Math.min(5, lineHeightLevel))
+  return presenter({visualLevel, lineHeightLevel, ...props})
 }
 
 const Txt = containPresenter(TxtContainer, TxtPresenter)
@@ -37,30 +45,36 @@ Txt.propTypes = {
   children: PropTypes.node,
   tag: PropTypes.string,
   visualLevel: PropTypes.number,
+  lineHeightLevel: PropTypes.number,
 }
 
 Txt.defaultProps = {
   visualLevel: 1,
+  lineHeightLevel: 3,
 }
 
 InfoTxt.propTypes = {
   children: PropTypes.node,
   tag: PropTypes.string,
   visualLevel: PropTypes.number,
+  lineHeightLevel: PropTypes.number,
 }
 
 InfoTxt.defaultProps = {
   visualLevel: 1,
+  lineHeightLevel: 3,
 }
 
 DisableTxt.propTypes = {
   children: PropTypes.node,
   tag: PropTypes.string,
   visualLevel: PropTypes.number,
+  lineHeightLevel: PropTypes.number,
 }
 
 DisableTxt.defaultProps = {
   visualLevel: 1,
+  lineHeightLevel: 3,
 }
 
 export default Txt

@@ -1,5 +1,151 @@
+:root {
+  /* **** バリュー（値）層 **** */
+
+  /* 色：色相名とカラーコードの紐付け */
+  --color-white: #fff;
+  --color-opacity87-black: rgba(0, 0, 0, 0.87);
+  --color-opacity60-black: rgba(0, 0, 0, 0.6);
+  --color-opacity38-black: rgba(0, 0, 0, 0.38);
+  --color-opacity15-black: rgba(0, 0, 0, 0.15);
+  --color-opacity6-black: rgba(0, 0, 0, 0.06);
+  --color-opacity2-black: rgba(0, 0, 0, 0.02);
+  --color-blue: #0366d6;
+  --color-athens-gray: #f2f4f7;
+  --color-turquoise: #32ddc9;
+  --color-aqua: #30c8d6;
+  --color-orange: #f39d2e;
+  --color-purple: #380953;
+
+  /* **** ブランディング層 **** */
+
+  /* 色：色相名とカラーコードの紐付け */
+  --color-base: var(--color-athens-gray);
+  --color-primary: var(--color-purple);
+  --color-secondary: var(--color-turquoise);
+  --color-accent: var(--color-orange);
+
+  /* **** メディア層 **** */
+
+  /* 色：媒体固有で使用する色 */
+  --color-text: var(--color-opacity87-black);
+  --color-text-info: var(--color-opacity60-black);
+  --color-text-disable: var(--color-opacity38-black);
+  --color-line: var(--color-opacity15-black);
+  --color-background: var(--color-base);
+  --color-overlay: var(--color-opacity60-black);
+  --color-link: var(--color-blue);
+  --color-block: var(--color-opacity2-black);
+  --color-twitter: #1da1f2;
+  --color-facebook: #1877f2;
+  --color-linkedin: #2867b2;
+  --color-button-primary: var(--color-aqua);
+  --color-button-primary-hover: #23a4b0;
+  --color-404background: #f9fbfe;
+
+  /* 文字：サイズ（レスポンシブ） */
+  --font-size-xs: 14px;
+  --font-size-s: 16px;
+  --font-size-m: 18px;
+  --font-size-l: 20px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 32px;
+  --font-size-xxxl: 40px;
+  --font-size-xxxxl: 48px;
+
+  /* 文字：サイズ（固定値） */
+  --font-size-xxxs-fixed: 10px;
+  --font-size-xxs-fixed: 12px;
+  --font-size-xs-fixed: 14px;
+  --font-size-s-fixed: 16px;
+  --font-size-m-fixed: 18px;
+  --font-size-l-fixed: 20px;
+  --font-size-xl-fixed: 24px;
+  --font-size-xxl-fixed: 32px;
+  --font-size-xxxl-fixed: 40px;
+  --font-size-xxxxl-fixed: 48px;
+
+  /* 文字：太さ（媒体に最適化した文字の太さ） */
+  --font-weight-default: 400;
+  --font-weight-bold: 700;
+
+  /* 文字：行間 */
+  --line-height-xs: 1;
+  --line-height-s: 1.3;
+  --line-height-m: 1.5;
+  --line-height-l: 1.7;
+  --line-height-xl: 2;
+
+  /* spacing values */
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-56: 56px;
+  --space-64: 64px;
+  --space-72: 72px;
+  --space-80: 80px;
+  --space-88: 88px;
+  --space-96: 96px;
+  --space-104: 104px;
+  --space-112: 112px;
+  --space-120: 120px;
+
+  /* fixed spacing values */
+  --space-2-fixed: 2px;
+  --space-4-fixed: 4px;
+  --space-6-fixed: 6px;
+  --space-8-fixed: 8px;
+  --space-12-fixed: 12px;
+  --space-16-fixed: 16px;
+  --space-20-fixed: 20px;
+  --space-24-fixed: 24px;
+  --space-32-fixed: 32px;
+  --space-40-fixed: 40px;
+  --space-48-fixed: 48px;
+  --space-56-fixed: 56px;
+  --space-64-fixed: 64px;
+  --space-72-fixed: 72px;
+  --space-80-fixed: 80px;
+  --space-88-fixed: 88px;
+  --space-96-fixed: 96px;
+  --space-104-fixed: 104px;
+  --space-112-fixed: 112px;
+  --space-120-fixed: 120px;
+
+  /* 枠に関する要素（媒体に最適化した枠デザイン要素） */
+  --line-width: 1px;
+  --line-style: solid;
+  --border: var(--line-width) var(--line-style) var(--color-line);
+
+  /* radius */
+  --radius-xs: 3px;
+  --radius-s: 5px;
+  --radius-m: 10px;
+  --radius-round: 100px;
+  --radius-circle: 50%;
+
+  /* フィードバックの定義（媒体に最適化したフィードバック・デザイン要素） */
+  --hover-feedback-opacity: 0.7;
+
+  /* アニメーションの定義（媒体に最適化したアニメーション・デザイン要素） */
+  --hover-animation-fast: 0.1s ease-out;
+  --hover-animation-default: 0.3s ease-out;
+  --hover-animation-slow: 0.4s ease-in-out;
+
+  /* Z 座標の管理（Web媒体/CSSではZ座標を管理する） */
+  --z-header: none;
+  --z-overlay: 10;
+  --z-overlay-content: 20;
+  --z-404: 10;
+  --z-background: -10;
+}
+
+/* reset */
 html {
-  /* font: 112.5%/1.45em georgia, serif; */
   box-sizing: border-box;
   font-family:
     -apple-system,
@@ -17,7 +163,7 @@ html {
 }
 
 body {
-  color: hsla(0, 0%, 0%, 0.8);
+  color: var(--color-text);
   -moz-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
   -webkit-font-feature-settings: 'kern', 'liga', 'clig', 'calt';
   font-feature-settings: 'kern', 'liga', 'clig', 'calt';
@@ -67,8 +213,13 @@ template {
 
 a {
   background-color: transparent;
+  color: inherit;
   text-decoration: none;
   -webkit-text-decoration-skip: objects;
+}
+
+a:hover {
+  text-decoration: currentColor underline;
 }
 
 a:active,
@@ -170,6 +321,16 @@ hr {
   padding-top: 0;
 }
 
+button {
+  appearance: none;
+  background: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+
 button,
 input,
 optgroup,
@@ -260,16 +421,6 @@ textarea {
 [type='search']::-webkit-search-cancel-button,
 [type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
-}
-
-::-webkit-input-placeholder {
-  color: inherit;
-  opacity: 0.54;
-}
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  font: inherit;
 }
 
 * {
@@ -363,6 +514,11 @@ ol {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
+}
+
+ul > :last-child,
+ol > :last-child {
+  margin-bottom: 0;
 }
 
 dl {
@@ -510,18 +666,6 @@ ul li {
   padding-left: 0;
 }
 
-li > ol {
-  margin-bottom: calc(1.45rem / 2);
-  margin-left: 1.45rem;
-  margin-top: calc(1.45rem / 2);
-}
-
-li > ul {
-  margin-bottom: calc(1.45rem / 2);
-  margin-left: 1.45rem;
-  margin-top: calc(1.45rem / 2);
-}
-
 blockquote *:last-child {
   margin-bottom: 0;
 }
@@ -633,4 +777,83 @@ pre tt::after {
   html {
     font-size: 100%;
   }
+}
+
+/* レスポンシブでの余白とフォントサイズの管理 */
+@media screen and (max-width: 991px) {
+  :root {
+    --space-8: 6px;
+    --space-12: 10px;
+    --space-16: 12px;
+    --space-20: 16px;
+    --space-24: 20px;
+    --space-32: 24px;
+    --space-40: 32px;
+    --space-48: 40px;
+    --space-56: 48px;
+    --space-64: 56px;
+    --space-72: 64px;
+    --space-80: 72px;
+    --space-88: 80px;
+    --space-96: 88px;
+    --space-104: 96px;
+    --space-112: 104px;
+    --space-120: 112px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  :root {
+    --font-size-xs: 12px;
+    --font-size-s: 14px;
+    --font-size-m: 16px;
+    --font-size-l: 18px;
+    --font-size-xl: 20px;
+    --font-size-xxl: 24px;
+    --font-size-xxxl: 32px;
+    --font-size-xxxxl: 40px;
+  }
+}
+
+@media screen and (max-width: 544px) {
+  :root {
+    --space-8: 4px;
+    --space-12: 6px;
+    --space-16: 8px;
+    --space-20: 12px;
+    --space-24: 16px;
+    --space-32: 20px;
+    --space-40: 24px;
+    --space-48: 32px;
+    --space-56: 40px;
+    --space-64: 48px;
+    --space-72: 56px;
+    --space-80: 64px;
+    --space-88: 72px;
+    --space-96: 80px;
+    --space-104: 88px;
+    --space-112: 96px;
+    --space-120: 104px;
+  }
+}
+
+/* コンポーネント間で共通のスタイル */
+.lineHeightLevel1 {
+  line-height: var(--line-height-xs);
+}
+
+.lineHeightLevel2 {
+  line-height: var(--line-height-s);
+}
+
+.lineHeightLevel3 {
+  line-height: var(--line-height-m);
+}
+
+.lineHeightLevel4 {
+  line-height: var(--line-height-l);
+}
+
+.lineHeightLevel5 {
+  line-height: var(--line-height-xl);
 }

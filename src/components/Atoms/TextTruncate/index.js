@@ -4,6 +4,10 @@ import {containPresenter} from '../../utils/HoC'
 
 const TextTruncatePresenter = ({children}) => <>{children}</>
 
+TextTruncatePresenter.propTypes = {
+  children: PropTypes.node.isRequired,
+}
+
 export const TextTruncateContainer = ({
   maxChars,
   truncateText,
@@ -17,7 +21,8 @@ export const TextTruncateContainer = ({
     maxChars >= 0 &&
     children.length > maxChars
   ) {
-    children = React.Children.toArray(children.slice(0, maxChars))
+    children = children.slice(0, maxChars) + ' ... '
+    children = React.Children.toArray(children)
     children.push(truncateText)
   }
 
@@ -37,7 +42,6 @@ TextTruncate.propTypes = {
 
 TextTruncate.defaultProps = {
   maxChars: 50,
-  truncateText: '...',
   open: false,
 }
 

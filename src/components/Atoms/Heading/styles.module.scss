@@ -2,7 +2,6 @@
 
 .h {
   color: var(--color-text);
-  line-height: var(--line-height-s);
 }
 
 .normal {
@@ -13,50 +12,43 @@
   font-weight: var(--font-weight-bold);
 }
 
-.h1 {
-  font-size: var(--font-size-xxxl);
+.highlight {
+  align-self: flex-start;
+  background: var(--color-block);
+  border-left: 3px solid var(--color-secondary);
+  display: inline-block;
+  font-weight: var(--font-weight-bold);
+  padding: 0.33em 0.66em;
+}
 
-  @include mediaQuery(md) {
-    font-size: var(--font-size-xxl);
-  }
+.underline {
+  align-self: flex-start;
+  border-bottom: var(--border);
+  display: block;
+  font-weight: var(--font-weight-bold);
+  padding-bottom: 0.6em;
+}
+
+.h1 {
+  font-size: var(--font-size-xxxxl);
 }
 
 .h2 {
-  font-size: var(--font-size-xxl);
-
-  @include mediaQuery(md) {
-    font-size: var(--font-size-xl);
-  }
+  font-size: var(--font-size-xxxl);
 }
 
 .h3 {
-  font-size: var(--font-size-xl);
-
-  @include mediaQuery(md) {
-    font-size: var(--font-size-l);
-  }
+  font-size: var(--font-size-xxl);
 }
 
 .h4 {
-  font-size: var(--font-size-l);
-
-  @include mediaQuery(md) {
-    font-size: var(--font-size-m);
-  }
+  font-size: var(--font-size-xl);
 }
 
 .h5 {
-  font-size: var(--font-size-m);
-
-  @include mediaQuery(md) {
-    font-size: var(--font-size-s);
-  }
+  font-size: var(--font-size-l);
 }
 
 .h6 {
-  font-size: var(--font-size-s);
-
-  @include mediaQuery(md) {
-    font-size: var(--font-size-xs);
-  }
+  font-size: var(--font-size-m);
 }

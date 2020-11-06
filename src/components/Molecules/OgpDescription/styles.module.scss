@@ -1,0 +1,25 @@
+@import '../../properties';
+
+.truncateText {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.description {
+  margin-bottom: var(--space-6-fixed);
+}
+
+.domainName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.linkIcon {
+  color: var(--color-text-disable);
+  font-size: 0.75em;
+  margin-right: var(--space-6-fixed);
+}

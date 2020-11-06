@@ -1,0 +1,34 @@
+@import '../../properties';
+
+.root {
+  height: 33.67vw;
+  position: relative;
+
+  @include mediaQuery(xl) {
+    height: 460px;
+  }
+
+  @include mediaQuery(md) {
+    height: 360px;
+  }
+
+  @include mediaQuery(sm) {
+    height: 250px;
+  }
+
+  > img,
+  > div {
+    height: 100%;
+    width: 100%;
+  }
+
+  > img {
+    object-fit: cover;
+  }
+
+  > div {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

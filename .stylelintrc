@@ -12,11 +12,13 @@
     "property-no-vendor-prefix": null,
     "selector-no-qualifying-type": null,
     "selector-no-vendor-prefix": null,
+    "value-no-vendor-prefix": null,
     "scss/at-mixin-pattern": null,
     "order/order": [
       "custom-properties",
       "declarations"
     ],
     "order/properties-alphabetical-order": true
-  }
+  },
+  "ignoreFiles": ["public/**"]
 }

@@ -1,0 +1,14 @@
+@import '../../properties';
+
+.title {
+  margin-bottom: var(--space-40);
+  margin-top: var(--space-40);
+}
+
+.item {
+  margin-bottom: var(--space-16-fixed);
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

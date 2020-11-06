@@ -1,0 +1,53 @@
+[
+  {
+    "ownership": "Amazon Web Services、\"Powered by Amazon Web Services\"ロゴ、およびかかる資料で使用されるその他のＡＷＳ商標は、米国その他の諸国における、Amazon.com, Inc.またはその関連会社の商標です。"
+  },
+  {
+    "ownership": "Microsoft、Windows、Microsoft Azureは、Microsoft Corporationの商標または登録商標です。"
+  },
+  {
+    "ownership": "Google、Google Chrome、Google Cloud Platform (GCP) 、Google Analyticsは、Google LLCの商標です。"
+  },
+  {
+    "ownership": "Java、JavaScript、およびMySQLは、Oracle Corporationおよびその子会社、関連会社の米国およびその他の国における商標または登録商標です。"
+  },
+  {
+    "ownership": "Mac は、米国およびその他の国で登録されたApple Inc.の商標です。"
+  },
+  {
+    "ownership": "GitHubは、GitHub Inc.の商標または登録商標です。"
+  },
+  {
+    "ownership": "Apache、Subversion、Tomcatは、Apache Software Foundationの米国およびその他の国における登録商標もしくは商標です。"
+  },
+  {
+    "ownership": "Jenkinsは、SOFTWARE IN PUBLIC INTEREST, INC. の米国およびその他の国における登録商標もしくは商標です。"
+  },
+  {
+    "ownership": "CrcleCIはCircle Internet Services、Inc.の商標または登録商標です。"
+  },
+  {
+    "ownership": "Linux は、Linus Torvalds 氏の日本およびその他の国における登録商標または商標です。"
+  },
+  {
+    "ownership": "PostgreSQLは、PostgreSQLの商標または登録商標です。"
+  },
+  {
+    "ownership": "RailsやRuby on Railsという名称、ならびにRailsのロゴ画像はDavid Heinemeier Hanssonの登録商標です。"
+  },
+  {
+    "ownership": "Gitは、Software Freedom Conservancy, Inc.の米国およびその他の国における登録商標もしくは商標です。"
+  },
+  {
+    "ownership": "Pythonは、Python Software Foundationの商標または登録商標です。"
+  },
+  {
+    "ownership": "Rustは、Mozilla Foundationの米国およびそのほかの国における商標または登録商標です。"
+  },
+  {
+    "ownership": "NginxはNGINX, Inc.の登録商標です。"
+  },
+  {
+    "ownership": "DockerはDocker,Inc.の米国およびその他の国における商標または登録商標です。"
+  }
+]

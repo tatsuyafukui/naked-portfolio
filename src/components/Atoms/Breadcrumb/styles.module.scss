@@ -1,15 +1,27 @@
 .ol {
   align-items: center;
   display: flex;
-  flex-wrap: wrap;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.li {
+  max-width: 50%;
+
+  > p,
+  > a {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+  }
 }
 
 .separator {
   display: flex;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: var(--space-12);
+  margin-right: var(--space-12);
   user-select: none;
 }

@@ -1,0 +1,32 @@
+@import '../../properties';
+
+.background {
+  background: var(--color-background);
+}
+
+.heading {
+  margin-top: var(--space-56);
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: calc(-1 * var(--space-32));
+  margin-top: var(--space-40);
+
+  @include mediaQuery(md) {
+    margin-right: 0;
+  }
+}
+
+.item {
+  margin-bottom: var(--space-32);
+  margin-right: var(--space-32);
+  width: calc(50% - var(--space-32));
+
+  @include mediaQuery(md) {
+    margin-bottom: var(--space-24-fixed);
+    margin-right: 0;
+    width: 100%;
+  }
+}

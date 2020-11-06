@@ -13,6 +13,18 @@ executors:
       - image: amazon/aws-cli
 
 commands:
+  run_test:
+    steps:
+      - checkout
+      - restore_cache:
+          key: node-dependencies-{{ checksum "package.json" }}
+      - run: yarn install
+      - save_cache:
+          paths:
+            - node_modules
+          key: node-dependencies-{{ checksum "package.json" }}
+      - run: yarn test
+      - run: yarn lint
   build_public_assets:
     parameters:
       environment:
@@ -56,6 +68,10 @@ commands:
             aws cloudfront create-invalidation --distribution-id << parameters.distribution_id >> --paths "/*"
 
 jobs:
+  test:
+    executor: journey_builder
+    steps:
+      - run_test
   build_staging:
     executor: journey_builder
     steps:
@@ -87,6 +103,7 @@ workflows:
   version: 2
   build_and_deploy_staging:
     jobs:
+      - test
       - build_staging:
           filters:
             branches:

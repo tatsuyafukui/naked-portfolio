@@ -1,58 +1,112 @@
 @import '../../properties';
 
 .scene {
+  background: var(--color-white);
+  border-radius: var(--radius-m);
   display: block;
+  overflow: hidden;
 }
 
-.layout {
+.mediaObjectLayout {
+  height: 100%;
+}
+
+.imageWrap {
+  height: 280px;
+  position: relative;
+  width: 100%;
+
   @include mediaQuery(sm) {
-    align-items: flex-start !important;
-    flex-direction: column !important;
+    height: 200px;
   }
 }
 
 .image {
-  flex-shrink: 0;
-  height: 293px;
-  width: 440px;
-
-  @include mediaQuery(md) {
-    height: 200px;
-    width: 300px;
-  }
-
-  @include mediaQuery(sm) {
-    align-self: center;
-    height: 66.66vw;
-    width: 100vw;
-  }
-}
-
-.textWrap {
-  margin-left: 32px;
-
-  @include mediaQuery(md) {
-    margin-left: 4.44%;
-  }
-
-  @include mediaQuery(sm) {
-    margin-left: 0;
-    margin-top: 12px;
-  }
-}
-
-.number {
-  color: var(--color-text-info);
-  margin-bottom: 8px;
-
-  @include mediaQuery(sm) {
-    font-size: var(--font-size-m) !important;
-    margin-bottom: 4px;
-  }
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .title {
-  @include mediaQuery(sm) {
-    font-size: var(--font-size-l) !important;
+  margin-bottom: var(--space-20);
+  transition: var(--hover-animation-fast);
+}
+
+.numberCircle {
+  align-items: center;
+  background-color: var(--color-white);
+  border-radius: var(--radius-circle);
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  justify-content: center;
+  left: var(--space-24);
+  position: absolute;
+  text-align: center;
+  top: var(--space-24);
+  width: 80px;
+
+  @include mediaQuery(md) {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+.numberTitle {
+  font-weight: var(--font-weight-bold) !important;
+  line-height: var(--line-height-xs) !important;
+}
+
+.textWrap {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--space-32);
+  width: 100%;
+}
+
+.skillList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: var(--space-16);
+}
+
+.skillListItem {
+  background-color: var(--color-block);
+  border-radius: var(--radius-s);
+  font-size: var(--font-size-xs);
+  line-height: var(--line-height-xs);
+  margin: 0 var(--space-6-fixed) var(--space-6-fixed) 0;
+  padding: var(--space-6-fixed);
+  white-space: nowrap;
+
+  &:last-child {
+    margin-bottom: var(--space-6-fixed);
+  }
+}
+
+.goal {
+  span:nth-child(1) {
+    align-items: center;
+    display: inline-flex;
+  }
+
+  span:nth-child(2) {
+    color: var(--color-text);
+  }
+}
+
+.icon {
+  color: var(--color-opacity15-black);
+  font-size: 0.77em;
+  margin-right: var(--space-6-fixed);
+}
+
+.scene:hover {
+  text-decoration: none;
+
+  .title {
+    color: var(--color-link);
   }
 }

@@ -1,23 +1,11 @@
 @import '../../properties';
 
-.navigationLink {
-  align-items: center;
-  color: var(--color-text);
-  display: flex;
-  font-size: var(--font-size-l);
-  justify-content: space-between;
-  padding: 24px 32px;
+.skillLink {
+  margin-top: var(--space-24);
+}
 
-  > :first-child {
-    padding-right: 24px !important;
-  }
-
-  svg {
-    color: var(--color-text-info);
-  }
-
-  @include mediaQuery(sm) {
-    font-size: var(--font-size-s);
-    padding: 24px 16px;
-  }
+.listItem {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--space-56);
 }

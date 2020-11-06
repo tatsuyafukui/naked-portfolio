@@ -1,7 +1,7 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const onCreateNode = require(`./gatsby-node-functions/onCreateNode`)
+const createSchemaCustomization = require(`./gatsby-node-functions/createSchemaCustomization`)
+const createPages = require(`./gatsby-node-functions/createPages`)
 
-// You can delete this file if you're not using it
+exports.onCreateNode = onCreateNode
+exports.createSchemaCustomization = createSchemaCustomization
+exports.createPages = createPages

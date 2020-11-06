@@ -1,143 +1,66 @@
 @import '../../properties';
 
-.main {
-  margin-top: 32px;
+.firstview {
+  background-color: var(--color-white);
+  margin-bottom: var(--space-96);
+  padding-bottom: var(--space-96);
 
   @include mediaQuery(md) {
-    margin-bottom: 4.16%;
+    margin-bottom: var(--space-56-fixed);
+    padding-bottom: var(--space-56-fixed);
   }
 
   @include mediaQuery(sm) {
-    margin-bottom: 8.53%;
+    margin-bottom: var(--space-48-fixed);
+    padding-bottom: var(--space-48-fixed);
   }
-}
-
-.breadcrumb {
-  margin-bottom: 12px;
-
-  @include mediaQuery(md) {
-    margin-bottom: 1.56%;
-  }
-
-  @include mediaQuery(sm) {
-    margin-bottom: 2.13%;
-  }
-}
-
-.icon {
-  color: var(--color-text-info);
 }
 
 .titleWrap {
-  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--space-24);
 
   @include mediaQuery(md) {
-    margin-bottom: 4.16%;
-  }
-
-  @include mediaQuery(sm) {
-    margin-bottom: 6.4%;
+    display: block;
+    margin-top: var(--space-8-fixed);
   }
 }
 
 .title {
-  @include mediaQuery(sm) {
-    font-size: var(--font-size-xl) !important;
-  }
-}
+  margin-right: var(--space-64);
+  max-width: 430px;
+  min-width: 280px;
 
-.imageContainer {
   @include mediaQuery(lg) {
-    padding: 0 !important;
+    font-size: var(--font-size-xxxl-fixed) !important;
   }
-}
-
-.visual {
-  height: 460px;
 
   @include mediaQuery(md) {
-    height: 360px;
-  }
-
-  @include mediaQuery(sm) {
-    height: 250px;
-  }
-}
-
-.body {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 48px;
-
-  @include mediaQuery(md) {
-    display: block;
-    margin-top: 5.2%;
-  }
-
-  @include mediaQuery(sm) {
-    display: block;
-    margin-top: 8.53%;
-  }
-
-  > :first-child {
-    margin-right: 3.5%;
+    font-size: var(--font-size-xxl-fixed) !important;
+    margin-bottom: var(--space-24);
+    margin-right: 0;
     max-width: 620px;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-
-    @include mediaQuery(md) {
-      margin-bottom: 6.25%;
-      margin-right: 0;
-    }
-
-    @include mediaQuery(sm) {
-      margin-bottom: 8.53%;
-    }
-  }
-
-  > :last-child {
-    flex: 1;
-    min-width: 300px;
-
-    @include mediaQuery(md) {
-      width: 100%;
-    }
-  }
-}
-
-.requireLabel {
-  margin-bottom: 24px;
-
-  @include mediaQuery(md) {
-    margin-bottom: 3.125%;
+    min-width: unset;
   }
 
   @include mediaQuery(sm) {
-    margin-bottom: 4.26%;
+    font-size: var(--font-size-xl-fixed) !important;
   }
 }
 
-.descriptionSp {
-  display: none;
+.description {
+  max-width: 580px;
 
-  @include mediaQuery(md) {
-    display: block;
+  a {
+    color: var(--color-link);
   }
 
-  .button {
-    appearance: none;
-    background: none;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    outline: none;
+  @include mediaQuery(md) {
+    max-width: 620px;
   }
 }
 
-.descriptionPc {
-  display: block;
-
-  @include mediaQuery(md) {
-    display: none;
-  }
+.background {
+  background: var(--color-background);
 }

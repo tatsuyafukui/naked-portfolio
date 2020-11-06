@@ -1,0 +1,27 @@
+@import '../../properties';
+
+.button {
+  border-radius: 3px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: var(--font-size-s);
+  line-height: 45px;
+  min-width: 140px;
+  padding: 0 var(--space-16-fixed);
+  text-align: center;
+  transition: var(--hover-animation-default);
+
+  @include mediaQuery(md) {
+    line-height: 40px;
+    min-width: 110px;
+  }
+}
+
+.primary {
+  background-color: var(--color-button-primary);
+  color: var(--color-white);
+
+  &:hover {
+    background-color: var(--color-button-primary-hover);
+  }
+}

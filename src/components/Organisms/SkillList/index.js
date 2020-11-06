@@ -1,23 +1,29 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styles from './styles.module.scss'
-import {ListBordered, ListItemBordered} from '../../Atoms/List'
-import NavigationLink from '../../Molecules/NavigationLink'
+import List, {ListItem} from '../../Atoms/List'
+import {BoldHeading} from '../../Atoms/Heading'
+import SkillLink from '../SkillLink'
 
-const SkillList = ({skills, ...props}) => (
-  <ListBordered {...props}>
+const SkillList = ({skills}) => (
+  <List tag='ol'>
     {skills.map(skill => (
-      <ListItemBordered key={skill.title}>
-        <NavigationLink to={skill.link} className={styles.navigationLink}>
-          {skill.title}
-        </NavigationLink>
-      </ListItemBordered>
+      <ListItem className={styles.listItem} key={skill.id}>
+        <BoldHeading tag='span' level={2} visualLevel={4}>
+          {skill.subTitle}
+        </BoldHeading>
+        <SkillLink skill={skill} className={styles.skillLink} />
+      </ListItem>
     ))}
-  </ListBordered>
+  </List>
 )
 
 export default SkillList
 
 SkillList.propTypes = {
-  className: PropTypes.string,
+  skills: PropTypes.array,
+}
+
+SkillList.defaultProps = {
+  skills: [],
 }

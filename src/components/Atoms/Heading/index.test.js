@@ -1,4 +1,3 @@
-import React from 'react'
 import {HeadingContainer} from './index'
 
 describe('HeadingContainer', () => {
@@ -39,5 +38,21 @@ describe('HeadingContainer', () => {
     })
     expect(tag).toBe('h6')
     expect(visualLevel).toBe(6)
+  })
+
+  it('１未満のlineHeightLevelは１とする', () => {
+    const {lineHeightLevel} = HeadingContainer({
+      presenter,
+      lineHeightLevel: 0,
+    })
+    expect(lineHeightLevel).toBe(1)
+  })
+
+  it('6以上のlineHeightLevelは5とする', () => {
+    const {lineHeightLevel} = HeadingContainer({
+      presenter,
+      lineHeightLevel: 6,
+    })
+    expect(lineHeightLevel).toBe(5)
   })
 })

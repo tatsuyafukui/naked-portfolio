@@ -1,0 +1,7 @@
+@import '../../properties';
+
+.textTruncate {
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  overflow: hidden;
+}
