@@ -29,7 +29,7 @@ const Seo = ({description, image, lang, href, meta, title}) => {
   const metaImage = image
     ? path.join(site.siteMetadata.siteURL, image)
     : path.join(site.siteMetadata.siteURL, file.publicURL)
-  const metaURL = href || site.siteMetadata.siteURL
+  const metaURL = href || site.siteMetadata.siteURL || metaImage // metaImage はあとで消す
 
   return (
     <Helmet
@@ -57,7 +57,7 @@ const Seo = ({description, image, lang, href, meta, title}) => {
         },
         {
           property: 'og:image',
-          content: metaImage,
+          content: 'https://prog-8.com/images/ogp/default.png',
         },
         {
           property: 'og:image:width',
@@ -93,7 +93,7 @@ const Seo = ({description, image, lang, href, meta, title}) => {
         },
         {
           name: 'twitter:image',
-          content: metaImage,
+          content: 'https://prog-8.com/images/ogp/default.png',
         },
         {
           name: 'twitter:url',
