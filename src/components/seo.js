@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import {Helmet} from 'react-helmet'
 import {useStaticQuery, graphql} from 'gatsby'
-import path from 'path'
 import removeMarkdown from 'remove-markdown'
 
 const Seo = ({description, image, lang, href, meta, title}) => {
@@ -27,8 +26,8 @@ const Seo = ({description, image, lang, href, meta, title}) => {
     ? removeMarkdown(description)
     : site.siteMetadata.description
   const metaImage = image
-    ? path.join(site.siteMetadata.siteURL, image)
-    : path.join(site.siteMetadata.siteURL, file.publicURL)
+    ? site.siteMetadata.siteURL + image
+    : site.siteMetadata.siteURL + file.publicURL
   const metaURL = href || site.siteMetadata.siteURL
 
   return (
