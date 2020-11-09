@@ -48,7 +48,7 @@ const Seo = ({description, image, lang, href, meta, title}) => {
         },
         {
           property: 'og:title',
-          content: `${site.siteMetadata.title} | ${title}`,
+          content: `${title} | ${site.siteMetadata.title}`,
         },
         {
           property: 'og:description',
@@ -84,7 +84,7 @@ const Seo = ({description, image, lang, href, meta, title}) => {
         },
         {
           name: 'twitter:title',
-          content: title,
+          content: `${title} | ${site.siteMetadata.title}`,
         },
         {
           name: 'twitter:description',
