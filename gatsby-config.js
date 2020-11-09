@@ -4,7 +4,7 @@ module.exports = {
     description:
       'Progate JourneyはWebプロダクトを開発するための学習ロードマップです。ロードマップを活用して学習の不安を自信に変えよう。',
     author: 'Progate, Inc.',
-    siteURL: 'https://journey.prog-8.com/',
+    siteURL: 'https://journey.prog-8.com',
   },
   plugins: [
     {
