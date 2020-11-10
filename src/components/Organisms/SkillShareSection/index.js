@@ -15,7 +15,11 @@ const SkillShareSection = ({title, url, className, ...props}) => (
     </BoldHeading>
     <List className={styles.list}>
       <ListItem className={styles.listItem}>
-        <TwitterShareButton url={url} eventAction={`${title}-Twitterシェア`} />
+        <TwitterShareButton
+          url={url}
+          title={title}
+          eventAction={`${title}-Twitterシェア`}
+        />
       </ListItem>
       <ListItem className={styles.listItem}>
         <FacebookShareButton
