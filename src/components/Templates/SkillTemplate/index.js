@@ -20,6 +20,7 @@ const SkillTemplate = ({data, location}) => {
   const skill = data.skillsJson
   const scene = data.skillsJson.scene
   const keyVisual = data.file.publicURL
+  const currentURL = data.site.siteMetadata.siteURL + location.pathname
 
   return (
     <>
@@ -27,7 +28,7 @@ const SkillTemplate = ({data, location}) => {
         title={skill.title}
         description={skill.overview}
         image={skill.thumbnail.publicURL}
-        href={location.href}
+        href={currentURL}
         lang='ja'
       />
       <Header />
@@ -90,7 +91,7 @@ const SkillTemplate = ({data, location}) => {
             ここから学ぼう
           </HighlightedHeading>
           <SkillGetStarted getStarted={skill.getStarted} />
-          <SkillShareSection title={skill.title} url={location.href} />
+          <SkillShareSection title={skill.title} url={currentURL} />
         </NarrowedContainer>
       </Main>
       <Footer />
@@ -107,6 +108,11 @@ export default SkillTemplate
 
 export const query = graphql`
   query($slug: String) {
+    site {
+      siteMetadata {
+        siteURL
+      }
+    }
     skillsJson(fields: {slug: {eq: $slug}}) {
       id
       overview
