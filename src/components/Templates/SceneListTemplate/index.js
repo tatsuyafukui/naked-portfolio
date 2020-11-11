@@ -14,7 +14,7 @@ const SceneListTemplate = ({scenes, location}) => (
     <Seo
       title='シーン一覧'
       description='プロダクトをつくれるWeb開発者になるまでの中間目標として5つのシーンを用意しました。次に学ぶことだけではなく、目標達成までの学習の全体像を確認することができます。'
-      href={location.href}
+      slug={location.pathname}
       lang='ja'
     />
     <Header />

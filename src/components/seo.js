@@ -4,7 +4,7 @@ import {Helmet} from 'react-helmet'
 import {useStaticQuery, graphql} from 'gatsby'
 import removeMarkdown from 'remove-markdown'
 
-const Seo = ({description, image, lang, href, meta, title}) => {
+const Seo = ({description, image, lang, slug, meta, title}) => {
   const {site, file} = useStaticQuery(
     graphql`
       query {
@@ -28,7 +28,9 @@ const Seo = ({description, image, lang, href, meta, title}) => {
   const metaImage = image
     ? site.siteMetadata.siteURL + image
     : site.siteMetadata.siteURL + file.publicURL
-  const metaURL = href || site.siteMetadata.siteURL
+  const metaURL = slug
+    ? site.siteMetadata.siteURL + slug
+    : site.siteMetadata.siteURL
 
   return (
     <Helmet
@@ -124,7 +126,7 @@ Seo.propTypes = {
   description: PropTypes.string,
   image: PropTypes.string,
   lang: PropTypes.string,
-  href: PropTypes.string,
+  slug: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
 }
