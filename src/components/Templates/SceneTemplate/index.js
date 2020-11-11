@@ -26,7 +26,7 @@ const SceneTemplate = ({data, location}) => {
         title={scene.title}
         description={scene.description}
         image={scene.ogImage.publicURL}
-        href={location.href}
+        slug={location.pathname}
         lang='ja'
       />
       <Header />

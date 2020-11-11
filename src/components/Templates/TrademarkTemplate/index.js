@@ -24,7 +24,7 @@ const TrademarkTemplate = ({location}) => {
 
   return (
     <div>
-      <Seo title='商標について' href={location.href} lang='ja' />
+      <Seo title='商標について' slug={location.pathname} lang='ja' />
       <Header />
       <Main>
         <Container>

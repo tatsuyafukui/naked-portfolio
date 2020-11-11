@@ -28,7 +28,7 @@ const SkillTemplate = ({data, location}) => {
         title={skill.title}
         description={skill.overview}
         image={skill.thumbnail.publicURL}
-        href={currentURL}
+        slug={location.pathname}
         lang='ja'
       />
       <Header />
