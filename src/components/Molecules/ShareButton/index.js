@@ -8,14 +8,32 @@ import {
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons'
 import {OutboundLink} from 'gatsby-plugin-google-analytics'
+import {useStaticQuery, graphql} from 'gatsby'
 
 const ShareButtonFactory = icon => ({
   url,
+  title,
   eventAction = 'SNSシェア',
   className,
   ...props
 }) => {
-  const mediaUrl = getShareUrl(icon.iconName, url)
+  const data = useStaticQuery(graphql`
+    {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
+  const mediaUrl = getShareUrl(
+    icon.iconName,
+    url,
+    title,
+    data.site.siteMetadata.title
+  )
+
   return (
     <OutboundLink
       href={mediaUrl}
@@ -51,10 +69,15 @@ LinkedinShareButton.propTypes = {
   eventAction: PropTypes.string,
 }
 
-export const getShareUrl = (media, url) => {
+export const getShareUrl = (media, url, skillTitle, siteTitle) => {
+  const [encodedSkillTitle, encodedSiteTitle] = [
+    encodeURIComponent(skillTitle),
+    encodeURIComponent(siteTitle),
+  ]
+
   switch (media) {
     case faTwitter.iconName:
-      return `https://twitter.com/intent/tweet?url=${url}&hashtags=Progate,progate_journey&text=今日学んだことを共有しよう！`
+      return `https://twitter.com/intent/tweet?url=${url}&hashtags=Progate,progate_journey&text=${encodedSkillTitle}%20%7C%20${encodedSiteTitle}`
     case faFacebook.iconName:
       return `https://www.facebook.com/share.php?u=${url}`
     case faLinkedin.iconName:
