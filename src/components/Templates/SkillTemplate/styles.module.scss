@@ -86,3 +86,27 @@
     border: var(--border);
   }
 }
+
+.colmun {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+
+  @include mediaQuery(sm) {
+    flex-direction: column-reverse;
+  }
+}
+
+.skillList {
+  margin-top: var(--space-64);
+  position: sticky;
+  top: 64px;
+}
+
+.hero {
+  height: 400px;
+}
+
+.listItemBordered {
+  padding: var(--space-16);
+}

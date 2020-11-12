@@ -15,6 +15,7 @@ import {graphql} from 'gatsby'
 import LazyImage from '../../Atoms/LazyImage'
 import Main from '../../Atoms/Main'
 import SkillGetStarted from '../../Organisms/SkillGetStarted'
+import {ListBordered, ListItemBordered} from '../../Atoms/List'
 
 const SkillTemplate = ({data, location}) => {
   const skill = data.skillsJson
@@ -33,7 +34,7 @@ const SkillTemplate = ({data, location}) => {
       />
       <Header />
       <Main>
-        <HeroImage>
+        <HeroImage className={styles.hero}>
           <Container className={styles.heroContainer}>
             <div className={styles.heroTxtWrap}>
               <BoldHeading level={1} className={styles.title}>
@@ -55,44 +56,61 @@ const SkillTemplate = ({data, location}) => {
             <Txt>{skill.title}</Txt>
           </NavigationBreadcrumb>
         </Container>
-        <NarrowedContainer tag='article' className={styles.container}>
-          <HighlightedHeading
-            level={2}
-            visualLevel={4}
-            className={styles.highlightedHeading}
-          >
-            概要
-          </HighlightedHeading>
-          <Txt
-            lineHeightLevel={5}
-            dangerouslySetInnerHTML={{__html: skill.overview}}
-          />
-          <LazyImage
-            className={styles.image}
-            src={skill.image.publicURL}
-            alt={skill.title}
-          />
-          <HighlightedHeading
-            level={2}
-            visualLevel={4}
-            className={styles.highlightedHeading}
-          >
-            学ぶ目的
-          </HighlightedHeading>
-          <Txt
-            lineHeightLevel={5}
-            dangerouslySetInnerHTML={{__html: skill.purpose}}
-          />
-          <HighlightedHeading
-            level={2}
-            visualLevel={4}
-            className={styles.highlightedHeading}
-          >
-            ここから学ぼう
-          </HighlightedHeading>
-          <SkillGetStarted getStarted={skill.getStarted} />
-          <SkillShareSection title={skill.title} url={currentURL} />
-        </NarrowedContainer>
+        <Container className={styles.colmun}>
+          <ListBordered className={styles.skillList}>
+            <ListItemBordered className={styles.listItemBordered}>
+              <Link to={scene.fields.slug}>
+                <BoldHeading level={4}>{scene.title}</BoldHeading>
+              </Link>
+            </ListItemBordered>
+            {scene.skills.map(skill => (
+              <ListItemBordered
+                className={styles.listItemBordered}
+                key={skill.id}
+              >
+                <Link to={skill.fields.slug}>{skill.title}</Link>
+              </ListItemBordered>
+            ))}
+          </ListBordered>
+          <NarrowedContainer tag='article' className={styles.container}>
+            <HighlightedHeading
+              level={2}
+              visualLevel={4}
+              className={styles.highlightedHeading}
+            >
+              概要
+            </HighlightedHeading>
+            <Txt
+              lineHeightLevel={5}
+              dangerouslySetInnerHTML={{__html: skill.overview}}
+            />
+            <LazyImage
+              className={styles.image}
+              src={skill.image.publicURL}
+              alt={skill.title}
+            />
+            <HighlightedHeading
+              level={2}
+              visualLevel={4}
+              className={styles.highlightedHeading}
+            >
+              学ぶ目的
+            </HighlightedHeading>
+            <Txt
+              lineHeightLevel={5}
+              dangerouslySetInnerHTML={{__html: skill.purpose}}
+            />
+            <HighlightedHeading
+              level={2}
+              visualLevel={4}
+              className={styles.highlightedHeading}
+            >
+              ここから学ぼう
+            </HighlightedHeading>
+            <SkillGetStarted getStarted={skill.getStarted} />
+            <SkillShareSection title={skill.title} url={currentURL} />
+          </NarrowedContainer>
+        </Container>
       </Main>
       <Footer />
     </>
@@ -191,11 +209,19 @@ export const query = graphql`
       scene {
         id
         numberTitle
+        title
         fields {
           slug
         }
         image {
           publicURL
+        }
+        skills {
+          id
+          fields {
+            slug
+          }
+          title
         }
       }
     }
