@@ -49,7 +49,7 @@ module.exports = {
         },
       },
     },
-    'gatsby-plugin-offline',
+    'gatsby-plugin-remove-serviceworker',
     'gatsby-plugin-sass',
     'gatsby-plugin-eslint',
   ],
