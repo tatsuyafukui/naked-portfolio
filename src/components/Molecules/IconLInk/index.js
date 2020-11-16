@@ -28,8 +28,8 @@ const iconLinkFactory = (icon, summary = 'left', role) => ({
 )
 
 export const NavigationLink = iconLinkFactory(faAngleRight)
-export const BackLink = iconLinkFactory(faAngleLeft, 'right', 'back')
-export const TextSkillLink = iconLinkFactory(faBook, 'right', 'skill')
+export const BackLink = iconLinkFactory(faAngleLeft, 'right')
+export const TextSkillLink = iconLinkFactory(faBook, 'right')
 
 NavigationLink.propTypes = {
   children: PropTypes.node.isRequired,
