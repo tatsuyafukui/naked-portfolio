@@ -1,0 +1,10 @@
+{
+  "site": {
+    "siteMetadata": {
+      "author": "Progate, Inc.",
+      "description": "Progate JourneyはWebプロダクトを開発するための学習ロードマップです。ロードマップを活用して学習の不安を自信に変えよう。",
+      "siteURL": "https://journey.prog-8.com",
+      "title": "Progate Journey"
+    }
+  }
+}

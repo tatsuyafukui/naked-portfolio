@@ -5,7 +5,7 @@ import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
 import Container from '../../Atoms/Container'
 import SceneLink from '../../Organisms/SceneLink'
-import Seo from '../../seo'
+import Seo from '../../Atoms/Seo'
 import Main from '../../Atoms/Main'
 import {BoldHeading} from '../../Atoms/Heading'
 
