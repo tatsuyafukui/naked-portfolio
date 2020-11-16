@@ -98,12 +98,12 @@ const SeoPresenter = ({
 )
 
 SeoPresenter.propTypes = {
-  lang: PropTypes.string,
+  lang: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   siteTitle: PropTypes.string.isRequired,
-  metaDescription: PropTypes.string,
-  metaImage: PropTypes.string,
-  metaURL: PropTypes.string,
+  metaDescription: PropTypes.string.isRequired,
+  metaImage: PropTypes.string.isRequired,
+  metaURL: PropTypes.string.isRequired,
   meta: PropTypes.arrayOf(PropTypes.object),
 }
 
