@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {DisableTxt, InfoTxt} from '../../Atoms/Txt'
-import NavigationLink from '../NavigationLink'
+import {NavigationLink} from '../IconLInk'
 import styles from '../../Molecules/OgpDescription/styles.module.scss'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faLink} from '@fortawesome/free-solid-svg-icons'
