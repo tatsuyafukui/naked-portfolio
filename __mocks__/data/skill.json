@@ -7,10 +7,13 @@
     "thumbnail": {
       "childImageSharp": {
         "fluid": {
+          "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+UlEQVQ4y22TSQ7DMAwD9f/PZV8/42IMTMAEPQhNTJaiqLiWZWnzPLdpmtq2bb2O42jXdbV93/s7nHEcO29d13ae56s4U6MUSFABCLwjbBM4/EcBDcEB64Ip4jMEBXhOF+IacRrOC5KEBBWgCTjvNAenEJMDbmSFCKAiCjiuLuWIiX8jK8fgNxfiqLkQnTpJcjRTArpA1AYKZZMc1Twzsvq3VbOykVvVpVs1T78OzgpCZpBj6NLAvxxEzNPIKrcK4FIot+monufSvnlWque35RiGbSM58rxJOq1/W/1mlTfFi2AjzTyfjULDMLwyU4C67/sRgEeZvRzrBxQKi5BoMPTUAAAAAElFTkSuQmCC",
           "aspectRatio": 1.5037593984962405,
-          "src": "/static/b9739f8cd757788a0b3eb8f11d088808/2a4de/html.png",
-          "srcSet": "/static/b9739f8cd757788a0b3eb8f11d088808/69585/html.png 200w,\n/static/b9739f8cd757788a0b3eb8f11d088808/497c6/html.png 400w,\n/static/b9739f8cd757788a0b3eb8f11d088808/2a4de/html.png 600w",
-          "sizes": "(max-width: 600px) 100vw, 600px"
+          "src": "/static/50ec8a350f93d3174e9e3108c057469b/2a4de/thumbnail.png",
+          "srcSet": "/static/50ec8a350f93d3174e9e3108c057469b/69585/thumbnail.png 200w,\n/static/50ec8a350f93d3174e9e3108c057469b/497c6/thumbnail.png 400w,\n/static/50ec8a350f93d3174e9e3108c057469b/2a4de/thumbnail.png 600w",
+          "originalImg": "/static/50ec8a350f93d3174e9e3108c057469b/2a4de/thumbnail.png",
+          "sizes": "(max-width: 600px) 100vw, 600px",
+          "srcSetWebp": "/static/50ec8a350f93d3174e9e3108c057469b/61e93/thumbnail.webp 200w,\n/static/50ec8a350f93d3174e9e3108c057469b/1f5c5/thumbnail.webp 400w,\n/static/50ec8a350f93d3174e9e3108c057469b/ad85c/thumbnail.webp 600w"
         }
       }
     },
@@ -42,10 +45,13 @@
                 "ogImage": {
                   "childImageSharp": {
                     "fluid": {
-                      "aspectRatio": 1.639344262295082,
-                      "src": "/static/b6f52ff8e397643881b45baa34bf59e7/ee604/1485928388770.png",
-                      "srcSet": "/static/b6f52ff8e397643881b45baa34bf59e7/69585/1485928388770.png 200w,\n/static/b6f52ff8e397643881b45baa34bf59e7/497c6/1485928388770.png 400w,\n/static/b6f52ff8e397643881b45baa34bf59e7/ee604/1485928388770.png 800w,\n/static/b6f52ff8e397643881b45baa34bf59e7/ccef1/1485928388770.png 980w",
-                      "sizes": "(max-width: 800px) 100vw, 800px"
+                      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAABfUlEQVQ4y3WUWY7FIAwEff+7Zd9zGUYVqZDH0vuwSIBu3HZDPM/TjPu+23mebd/3tixLm+e5jePY1nVt27b1tYwhruvqmOCHAAQBk9M0fd8EJBz0vm8nkJhDxBBwBGAWWWADYE+ViPE4jg/AXkYyhwQMe8GwN5QikdKVAZhDzZo5AgwEZm65otbP9CUhk5xF3U/mrFvzyLXjZAjYpGRGs+Bb6YwemqUHZHaxEvjPmnWzWWZmncVEtQAbrB1As7B5WTp7q/TwxxoAUgZrEDhm6TYmZ/750AbYDMjZqA2q4c3aZhHM65Kw+L/cr3QIhmHoh1abWe/IxbeDGhgCMjBrr51mF0PYrM82+d56haxd7iABOEsn7MFnbC2QpWc5+bGwdox6Ubm9hgKzDAmyeZnTGjlzMfo17KDXJ/tOedW8YnLD7Hh46ZXgQ6EEs6iH6j0zNsuwfr9sY9Bxr6h2ql7ttnFC2ygj35hsmXxjfKHE/LMNBNl3yqhPVq23V5a1P2Hpc76Wqnb5AAAAAElFTkSuQmCC",
+                      "aspectRatio": 1,
+                      "src": "/static/fca8e6f0192605994287d4f2c69a4f53/63d84/square.png",
+                      "srcSet": "/static/fca8e6f0192605994287d4f2c69a4f53/69585/square.png 200w,\n/static/fca8e6f0192605994287d4f2c69a4f53/497c6/square.png 400w,\n/static/fca8e6f0192605994287d4f2c69a4f53/63d84/square.png 418w",
+                      "originalImg": "/static/fca8e6f0192605994287d4f2c69a4f53/63d84/square.png",
+                      "sizes": "(max-width: 418px) 100vw, 418px",
+                      "srcSetWebp": "/static/fca8e6f0192605994287d4f2c69a4f53/61e93/square.webp 200w,\n/static/fca8e6f0192605994287d4f2c69a4f53/1f5c5/square.webp 400w,\n/static/fca8e6f0192605994287d4f2c69a4f53/79e7c/square.webp 418w"
                     }
                   }
                 }
@@ -66,10 +72,13 @@
                 "ogImage": {
                   "childImageSharp": {
                     "fluid": {
-                      "aspectRatio": 0.7092198581560284,
-                      "src": "/static/d9df30bad4ac176446d9dfdcc635ed40/041b5/4797388544._SL500_.jpg",
-                      "srcSet": "/static/d9df30bad4ac176446d9dfdcc635ed40/f836f/4797388544._SL500_.jpg 200w,\n/static/d9df30bad4ac176446d9dfdcc635ed40/041b5/4797388544._SL500_.jpg 355w",
-                      "sizes": "(max-width: 355px) 100vw, 355px"
+                      "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAcCAYAAABh2p9gAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB90lEQVRIx32VW67CMAxEvf+98WgLFLqZXp1IB02tcj9CQhqPHzNO6v1+75/P5zDWdd1fr9c+z/MY1+t1v91u+zRNY/CdfeZuWy4AWJZlGNzv9wHiwJjv3Tn/GQaAfQHweDzGuFwuA5CPz+fze2jbtgMIAILgnOgZOC82Mg0NBWEWBKcC4BxA1jhlzZliweipCIATjAAyAwDIwDPpvJIIgDiMsUMwZs/0DAwK8DIN8scrEbi26KYjCHt8t/YMy1AYKweJYCQRHSRJ0E4ySy2ZjkApBVNWj/zXebJ+0KEgRKAcJEEi2GPuYjaDoUOZ1DsgAGucYu5rolQFrosfteimafwnJTOwHNiOCGXyLI0EkP1ORkqJuXpf6gkQ1kRhBNYXMAm0k5RXdSYzDQ5pnJFnOyoZS1DZTkSgHJjPmDQD624Z2PuynAT0m0UQjL0TATGi7KhDLwtgdPYytfRqIwJFbLoZwKihIF6utpVgyqjfKoIAagajhgIwrKFSSEn80qI1tI6Vd1tnUi363Y4yetuS/zquMyKSSYVMVO51MadteasIIpPKQjnIZt6L/YUcKWcNGT6PWYIubJ1Loq8j6/JW6QT8IsKHCYBsBlt1CPtXR2RLyajkZCcdHikfGSNQDspAYXvm7LFP+/ItsIb8N7WzKy1bMu9S7f8ARL2iGx5NnxIAAAAASUVORK5CYII=",
+                      "aspectRatio": 0.7067137809187279,
+                      "src": "/static/aff6eb176afd6552a820e01aa0275601/535ad/amazonBook.png",
+                      "srcSet": "/static/aff6eb176afd6552a820e01aa0275601/69585/amazonBook.png 200w,\n/static/aff6eb176afd6552a820e01aa0275601/535ad/amazonBook.png 353w",
+                      "originalImg": "/static/aff6eb176afd6552a820e01aa0275601/535ad/amazonBook.png",
+                      "sizes": "(max-width: 353px) 100vw, 353px",
+                      "srcSetWebp": "/static/aff6eb176afd6552a820e01aa0275601/61e93/amazonBook.webp 200w,\n/static/aff6eb176afd6552a820e01aa0275601/55828/amazonBook.webp 353w"
                     }
                   }
                 }

@@ -10,7 +10,7 @@ describe('OgpList', () => {
   })
 
   it('ogpがあるサイトはOGPコンポーネントを表示する', () => {
-    const ogpList = [data.bookOgp, data.progateOgp, data.summaryOgp]
+    const ogpList = [data.bookOgp, data.largeOgp, data.summaryOgp]
 
     const wrapper = mount(<OgpList ogpList={ogpList} />)
     expect(wrapper.find(`div.ogBody`)).toHaveLength(3)
