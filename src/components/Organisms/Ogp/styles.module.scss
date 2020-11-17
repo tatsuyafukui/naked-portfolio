@@ -24,17 +24,17 @@
 }
 
 .textTruncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 100%;
-}
-
-.multilineTextTruncate {
   -webkit-box-orient: vertical;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
   overflow: hidden;
+}
+
+.singleLineTextTruncate {
+  -webkit-line-clamp: 1;
+}
+
+.multiLineTextTruncate {
+  -webkit-line-clamp: 2;
 }
 
 .top {
