@@ -29,13 +29,19 @@
   }
 }
 
-.container {
+.content {
   display: flex;
   flex-direction: column;
-  margin-top: var(--space-64);
+  margin-left: 2%;
+  max-width: 700px;
+  width: 100%;
 
   a {
     color: var(--color-link);
+  }
+
+  @include mediaQuery(md) {
+    margin-left: 0;
   }
 }
 
@@ -69,7 +75,7 @@
   }
 }
 
-.container span {
+.content span {
   &[data-type] {
     border-radius: 5px;
     margin: 0 var(--space-2-fixed);
@@ -88,11 +94,12 @@
 }
 
 .colmun {
-  align-items: baseline;
+  align-items: flex-start;
   display: flex;
   justify-content: space-between;
+  margin-top: var(--space-40);
 
-  @include mediaQuery(sm) {
+  @include mediaQuery(md) {
     flex-direction: column-reverse;
   }
 }

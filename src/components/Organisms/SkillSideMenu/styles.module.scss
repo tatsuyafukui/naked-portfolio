@@ -1,1 +1,37 @@
 @import '../../properties';
+
+.root {
+  margin-left: calc(var(--space-16-fixed) * -1);
+  margin-top: calc(var(--space-8-fixed) * -1);
+  min-width: 200px;
+  position: sticky;
+  top: var(--space-48-fixed);
+}
+
+.listItem {
+  margin-left: var(--space-16-fixed);
+}
+
+.listItemLink {
+  color: var(--color-text-info);
+  display: block;
+  padding: var(--space-8-fixed) var(--space-16-fixed);
+
+  svg {
+    color: var(--color-icon);
+  }
+}
+
+.active {
+  color: var(--color-text);
+  font-weight: var(--font-weight-bold);
+
+  svg {
+    color: var(--color-secondary);
+  }
+
+  &:hover {
+    cursor: default;
+    text-decoration: none;
+  }
+}

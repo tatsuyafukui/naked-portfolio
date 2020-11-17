@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styles from './styles.module.scss'
 import Seo from '../../seo'
 import NavigationBreadcrumb from '../../Molecules/NavigationBreadcrumb'
-import Container, {NarrowedContainer} from '../../Atoms/Container'
+import Container from '../../Atoms/Container'
 import Link from '../../Atoms/Link'
 import Txt from '../../Atoms/Txt'
 import {BoldHeading, HighlightedHeading} from '../../Atoms/Heading'
@@ -58,7 +58,7 @@ const SkillTemplate = ({data, location}) => {
         </Container>
         <Container className={styles.colmun}>
           <SkillSideMenu scene={scene} />
-          <NarrowedContainer tag='article' className={styles.container}>
+          <article className={styles.content}>
             <HighlightedHeading
               level={2}
               visualLevel={4}
@@ -95,7 +95,7 @@ const SkillTemplate = ({data, location}) => {
             </HighlightedHeading>
             <SkillGetStarted getStarted={skill.getStarted} />
             <SkillShareSection title={skill.title} url={currentURL} />
-          </NarrowedContainer>
+          </article>
         </Container>
       </Main>
       <Footer />
