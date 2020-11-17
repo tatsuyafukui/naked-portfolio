@@ -104,7 +104,7 @@ SeoPresenter.propTypes = {
   metaDescription: PropTypes.string.isRequired,
   metaImage: PropTypes.string.isRequired,
   metaURL: PropTypes.string.isRequired,
-  meta: PropTypes.arrayOf(PropTypes.object),
+  meta: PropTypes.arrayOf(PropTypes.object).isRequired,
 }
 
 export const SeoContainer = ({
