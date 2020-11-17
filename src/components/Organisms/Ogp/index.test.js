@@ -1,5 +1,5 @@
 import {OgpContainer} from './index'
-import data from '../../../mock/data/gatsby-img.json'
+import data from '../../../../__mocks__/data/gatsby-img.json'
 import {mount} from 'enzyme'
 
 describe('Ogp', () => {

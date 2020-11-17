@@ -2,7 +2,7 @@ import React from 'react'
 import {storiesOf} from '@storybook/react'
 import Container from '../../Atoms/Container'
 import SkillLink from './index'
-import skill from '../../../mock/data/skill.json'
+import skill from '../../../../__mocks__/data/skill.json'
 
 storiesOf('Organisms/SkillLink', module).add('Default', () => (
   <div style={style}>
