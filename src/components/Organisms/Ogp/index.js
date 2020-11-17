@@ -13,7 +13,7 @@ import OgpDescription, {
 import {OutboundLink} from 'gatsby-plugin-google-analytics'
 
 const OgpPresenter = ({
-  truncate,
+  truncateLine,
   title,
   url,
   imageComponent,
@@ -38,7 +38,12 @@ const OgpPresenter = ({
     >
       {imageComponent}
       <div className={[styles.ogBody].join(' ')}>
-        <Heading level={6} className={[styles.ogTitle, truncate].join(' ')}>
+        <Heading
+          level={6}
+          className={[styles.ogTitle, styles.textTruncate, truncateLine].join(
+            ' '
+          )}
+        >
           {title}
         </Heading>
         {ogpDescription}
@@ -48,7 +53,7 @@ const OgpPresenter = ({
 )
 
 OgpPresenter.propTypes = {
-  truncate: PropTypes.string,
+  truncateLine: PropTypes.string,
   title: PropTypes.node.isRequired,
   url: PropTypes.node.isRequired,
   imageComponent: PropTypes.node,
@@ -71,8 +76,10 @@ export const OgpContainer = ({
   const domainName = new URL(url).hostname
   const summaryPosition =
     twitterCard === 'summary_large_image' ? 'top' : 'right'
-  const truncate =
-    isMobile || isAmazon ? styles.multilineTextTruncate : styles.textTruncate
+  const truncateLine =
+    isMobile || isAmazon
+      ? styles.multiLineTextTruncate
+      : styles.singleLineTextTruncate
   const ogpDescription = isAmazon ? (
     <AmazonOgpDescription />
   ) : (
@@ -104,7 +111,7 @@ export const OgpContainer = ({
   }
 
   return presenter({
-    truncate,
+    truncateLine,
     url,
     title,
     imageComponent,

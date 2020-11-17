@@ -29,8 +29,8 @@ describe('Ogp', () => {
     expect(wrapper.name()).toEqual('AmazonOgpDescription')
   })
 
-  it('isMobile = trueかつisbn = trueの場合は、styles.multilineTextTruncateを返す', () => {
-    const {truncate} = OgpContainer({
+  it('isMobile = trueかつisbn = trueの場合は、styles.multiLineTextTruncateを返す', () => {
+    const {truncateLine} = OgpContainer({
       title: 'Title',
       description: 'description',
       url: 'https://prog-8.com/',
@@ -39,11 +39,11 @@ describe('Ogp', () => {
       isMobile: true,
       presenter,
     })
-    expect(truncate).toEqual('multilineTextTruncate')
+    expect(truncateLine).toEqual('multiLineTextTruncate')
   })
 
-  it('isMobile = falseかつisbn = trueの場合は、styles.multilineTextTruncateを返す', () => {
-    const {truncate} = OgpContainer({
+  it('isMobile = falseかつisbn = trueの場合は、styles.multiLineTextTruncateを返す', () => {
+    const {truncateLine} = OgpContainer({
       title: 'Title',
       description: 'description',
       url: 'https://prog-8.com/',
@@ -52,11 +52,11 @@ describe('Ogp', () => {
       isMobile: false,
       presenter,
     })
-    expect(truncate).toEqual('multilineTextTruncate')
+    expect(truncateLine).toEqual('multiLineTextTruncate')
   })
 
-  it('isMobile = falseかつisbn = falseの場合は、styles.textTruncateを返す', () => {
-    const {truncate} = OgpContainer({
+  it('isMobile = falseかつisbn = falseの場合は、styles.singleLineTextTruncateを返す', () => {
+    const {truncateLine} = OgpContainer({
       title: 'Title',
       description: 'description',
       url: 'https://prog-8.com/',
@@ -65,11 +65,11 @@ describe('Ogp', () => {
       isMobile: false,
       presenter,
     })
-    expect(truncate).toEqual('textTruncate')
+    expect(truncateLine).toEqual('singleLineTextTruncate')
   })
 
-  it('isMobile = trueかつisbn = falseの場合は、styles.multilineTextTruncateを返す', () => {
-    const {truncate} = OgpContainer({
+  it('isMobile = trueかつisbn = falseの場合は、styles.multiLineTextTruncateを返す', () => {
+    const {truncateLine} = OgpContainer({
       title: 'Title',
       description: 'description',
       url: 'https://prog-8.com/',
@@ -78,6 +78,6 @@ describe('Ogp', () => {
       isMobile: true,
       presenter,
     })
-    expect(truncate).toEqual('multilineTextTruncate')
+    expect(truncateLine).toEqual('multiLineTextTruncate')
   })
 })
