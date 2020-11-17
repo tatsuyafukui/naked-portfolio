@@ -8,7 +8,7 @@ const SkillSideMenu = ({scene, className, ...props}) => (
   <List className={[styles.root, className].join(' ')} {...props}>
     <ListItem>
       <BackLink to={scene.fields.slug} className={styles.listItemLink}>
-        {scene.title}
+        <span className={styles.truncate}>{scene.title}</span>
       </BackLink>
     </ListItem>
     {scene.skills.map(skill => (
@@ -18,7 +18,7 @@ const SkillSideMenu = ({scene, className, ...props}) => (
           className={styles.listItemLink}
           activeClassName='styles-module--active--56lYK'
         >
-          {skill.title}
+          <span className={styles.truncate}>{skill.title}</span>
         </TextSkillLink>
       </ListItem>
     ))}

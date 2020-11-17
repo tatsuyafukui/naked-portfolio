@@ -34,7 +34,7 @@ const SkillTemplate = ({data, location}) => {
       />
       <Header />
       <Main>
-        <HeroImage className={styles.hero}>
+        <HeroImage className={styles.heroImage}>
           <Container className={styles.heroContainer}>
             <div className={styles.heroTxtWrap}>
               <BoldHeading level={1} className={styles.title}>
@@ -56,7 +56,7 @@ const SkillTemplate = ({data, location}) => {
             <Txt>{skill.title}</Txt>
           </NavigationBreadcrumb>
         </Container>
-        <Container className={styles.colmun}>
+        <Container className={styles.column}>
           <SkillSideMenu scene={scene} />
           <article className={styles.content}>
             <HighlightedHeading

@@ -11,6 +11,14 @@
   z-index: var(--z-background);
 }
 
+.heroImage {
+  height: 300px !important;
+
+  @include mediaQuery(sm) {
+    height: 250px !important;
+  }
+}
+
 .heroContainer {
   align-items: center;
   display: flex;
@@ -32,7 +40,7 @@
 .content {
   display: flex;
   flex-direction: column;
-  margin-left: 2%;
+  margin-left: 3%;
   max-width: 700px;
   width: 100%;
 
@@ -42,6 +50,24 @@
 
   @include mediaQuery(md) {
     margin-left: 0;
+  }
+}
+
+.content span {
+  &[data-type] {
+    border-radius: 5px;
+    margin: 0 var(--space-2-fixed);
+    padding: calc(0.5 * var(--space-2-fixed)) var(--space-6-fixed);
+  }
+
+  &[data-type='term'] {
+    background: #fffaf0;
+    color: #b85600;
+  }
+
+  &[data-type='search'] {
+    background: var(--color-block);
+    border: var(--border);
   }
 }
 
@@ -75,25 +101,7 @@
   }
 }
 
-.content span {
-  &[data-type] {
-    border-radius: 5px;
-    margin: 0 var(--space-2-fixed);
-    padding: calc(0.5 * var(--space-2-fixed)) var(--space-6-fixed);
-  }
-
-  &[data-type='term'] {
-    background: #fffaf0;
-    color: #b85600;
-  }
-
-  &[data-type='search'] {
-    background: var(--color-block);
-    border: var(--border);
-  }
-}
-
-.colmun {
+.column {
   align-items: flex-start;
   display: flex;
   justify-content: space-between;
@@ -102,18 +110,4 @@
   @include mediaQuery(md) {
     flex-direction: column-reverse;
   }
-}
-
-.skillList {
-  margin-top: var(--space-64);
-  position: sticky;
-  top: 64px;
-}
-
-.hero {
-  height: 400px;
-}
-
-.listItemBordered {
-  padding: var(--space-16);
 }
