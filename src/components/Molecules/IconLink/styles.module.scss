@@ -1,0 +1,17 @@
+@import '../../properties';
+
+.iconLink {
+  line-height: var(--line-height-s);
+}
+
+.mediaObjectLayout {
+  display: inline-flex !important;
+}
+
+.left {
+  padding-right: 0.4em;
+}
+
+.right {
+  padding-left: 0.4em;
+}
