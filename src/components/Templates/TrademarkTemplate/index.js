@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Seo from '../../seo'
+import Seo from '../../Atoms/Seo'
 import Footer from '../../Organisms/Footer'
 import Header from '../../Organisms/Header'
 import styles from './styles.module.scss'

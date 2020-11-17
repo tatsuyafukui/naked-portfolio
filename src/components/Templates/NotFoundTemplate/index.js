@@ -1,5 +1,5 @@
 import React from 'react'
-import Seo from '../../seo'
+import Seo from '../../Atoms/Seo'
 import Header from '../../Organisms/Header'
 import Error404 from '../../Organisms/Error404'
 import Footer from '../../Organisms/Footer'
