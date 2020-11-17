@@ -15,7 +15,7 @@ import {graphql} from 'gatsby'
 import LazyImage from '../../Atoms/LazyImage'
 import Main from '../../Atoms/Main'
 import SkillGetStarted from '../../Organisms/SkillGetStarted'
-import {ListBordered, ListItemBordered} from '../../Atoms/List'
+import SkillSideMenu from '../../Organisms/SkillSideMenu'
 
 const SkillTemplate = ({data, location}) => {
   const skill = data.skillsJson
@@ -57,21 +57,7 @@ const SkillTemplate = ({data, location}) => {
           </NavigationBreadcrumb>
         </Container>
         <Container className={styles.colmun}>
-          <ListBordered className={styles.skillList}>
-            <ListItemBordered className={styles.listItemBordered}>
-              <Link to={scene.fields.slug}>
-                <BoldHeading level={4}>{scene.title}</BoldHeading>
-              </Link>
-            </ListItemBordered>
-            {scene.skills.map(skill => (
-              <ListItemBordered
-                className={styles.listItemBordered}
-                key={skill.id}
-              >
-                <Link to={skill.fields.slug}>{skill.title}</Link>
-              </ListItemBordered>
-            ))}
-          </ListBordered>
+          <SkillSideMenu scene={scene} />
           <NarrowedContainer tag='article' className={styles.container}>
             <HighlightedHeading
               level={2}
