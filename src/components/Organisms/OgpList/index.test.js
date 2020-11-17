@@ -1,6 +1,6 @@
 import React from 'react'
 import OgpList from './index'
-import data from '../../../mock/data/recommended.json'
+import data from '../../../../__mocks__/data/recommended.json'
 import {mount} from 'enzyme'
 
 describe('OgpList', () => {

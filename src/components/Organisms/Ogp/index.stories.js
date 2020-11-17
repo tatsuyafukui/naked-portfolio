@@ -1,7 +1,7 @@
 import React from 'react'
 import {storiesOf} from '@storybook/react'
 import Ogp from './index'
-import data from '../../../mock/data/gatsby-img.json'
+import data from '../../../../__mocks__/data/gatsby-img.json'
 
 storiesOf('Organisms/Ogp', module)
   .add('Default', () => (

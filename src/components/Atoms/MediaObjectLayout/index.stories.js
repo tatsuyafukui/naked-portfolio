@@ -1,7 +1,7 @@
 import React from 'react'
 import {storiesOf} from '@storybook/react'
 import MediaObjectLayout from './index'
-import imgData from '../../../mock/data/gatsby-img.json'
+import imgData from '../../../../__mocks__/data/gatsby-img.json'
 import Img from 'gatsby-image'
 
 storiesOf('Atoms/MediaObjectLayout', module)

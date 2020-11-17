@@ -1,7 +1,7 @@
 import {SeoContainer} from './index'
 import {useStaticQuery} from 'gatsby'
-import siteData from '../../../mock/data/site.json'
-import fileData from '../../../mock/data/file.json'
+import siteData from '../../../../__mocks__/data/site.json'
+import fileData from '../../../../__mocks__/data/file.json'
 
 beforeEach(() => {
   useStaticQuery.mockImplementation(() => ({
