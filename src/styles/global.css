@@ -31,6 +31,7 @@
   --color-text-info: var(--color-opacity60-black);
   --color-text-disable: var(--color-opacity38-black);
   --color-line: var(--color-opacity15-black);
+  --color-icon: var(--color-opacity15-black);
   --color-background: var(--color-base);
   --color-overlay: var(--color-opacity60-black);
   --color-link: var(--color-blue);

@@ -3,23 +3,23 @@ import PropTypes from 'prop-types'
 import styles from './styles.module.scss'
 import Seo from '../../Atoms/Seo'
 import NavigationBreadcrumb from '../../Molecules/NavigationBreadcrumb'
-import Container, {NarrowedContainer} from '../../Atoms/Container'
+import Container from '../../Atoms/Container'
 import Link from '../../Atoms/Link'
 import Txt from '../../Atoms/Txt'
-import {BoldHeading, HighlightedHeading} from '../../Atoms/Heading'
+import {HighlightedHeading} from '../../Atoms/Heading'
 import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
-import HeroImage from '../../Molecules/HeroImage'
 import SkillShareSection from '../../Organisms/SkillShareSection'
 import {graphql} from 'gatsby'
 import LazyImage from '../../Atoms/LazyImage'
 import Main from '../../Atoms/Main'
 import SkillGetStarted from '../../Organisms/SkillGetStarted'
+import SkillSideMenu from '../../Organisms/SkillSideMenu'
+import SkillTitle from '../../Organisms/SkillTitle'
 
 const SkillTemplate = ({data, location}) => {
   const skill = data.skillsJson
   const scene = data.skillsJson.scene
-  const keyVisual = data.file.publicURL
   const currentURL = data.site.siteMetadata.siteURL + location.pathname
 
   return (
@@ -33,21 +33,7 @@ const SkillTemplate = ({data, location}) => {
       />
       <Header />
       <Main>
-        <HeroImage>
-          <Container className={styles.heroContainer}>
-            <div className={styles.heroTxtWrap}>
-              <BoldHeading level={1} className={styles.title}>
-                {skill.title}
-              </BoldHeading>
-              <Txt>{skill.subTitle}</Txt>
-            </div>
-          </Container>
-          <LazyImage
-            className={styles.keyVisual}
-            src={keyVisual}
-            alt={skill.title}
-          />
-        </HeroImage>
+        <SkillTitle skill={skill} />
         <Container>
           <NavigationBreadcrumb className={styles.breadcrumb}>
             <Link to='/scenes'>シーン一覧</Link>
@@ -55,44 +41,47 @@ const SkillTemplate = ({data, location}) => {
             <Txt>{skill.title}</Txt>
           </NavigationBreadcrumb>
         </Container>
-        <NarrowedContainer tag='article' className={styles.container}>
-          <HighlightedHeading
-            level={2}
-            visualLevel={4}
-            className={styles.highlightedHeading}
-          >
-            概要
-          </HighlightedHeading>
-          <Txt
-            lineHeightLevel={5}
-            dangerouslySetInnerHTML={{__html: skill.overview}}
-          />
-          <LazyImage
-            className={styles.image}
-            src={skill.image.publicURL}
-            alt={skill.title}
-          />
-          <HighlightedHeading
-            level={2}
-            visualLevel={4}
-            className={styles.highlightedHeading}
-          >
-            学ぶ目的
-          </HighlightedHeading>
-          <Txt
-            lineHeightLevel={5}
-            dangerouslySetInnerHTML={{__html: skill.purpose}}
-          />
-          <HighlightedHeading
-            level={2}
-            visualLevel={4}
-            className={styles.highlightedHeading}
-          >
-            ここから学ぼう
-          </HighlightedHeading>
-          <SkillGetStarted getStarted={skill.getStarted} />
-          <SkillShareSection title={skill.title} url={currentURL} />
-        </NarrowedContainer>
+        <Container className={styles.column}>
+          <SkillSideMenu scene={scene} />
+          <article className={styles.content}>
+            <HighlightedHeading
+              level={2}
+              visualLevel={4}
+              className={styles.highlightedHeading}
+            >
+              概要
+            </HighlightedHeading>
+            <Txt
+              lineHeightLevel={5}
+              dangerouslySetInnerHTML={{__html: skill.overview}}
+            />
+            <LazyImage
+              className={styles.image}
+              src={skill.image.publicURL}
+              alt={skill.title}
+            />
+            <HighlightedHeading
+              level={2}
+              visualLevel={4}
+              className={styles.highlightedHeading}
+            >
+              学ぶ目的
+            </HighlightedHeading>
+            <Txt
+              lineHeightLevel={5}
+              dangerouslySetInnerHTML={{__html: skill.purpose}}
+            />
+            <HighlightedHeading
+              level={2}
+              visualLevel={4}
+              className={styles.highlightedHeading}
+            >
+              ここから学ぼう
+            </HighlightedHeading>
+            <SkillGetStarted getStarted={skill.getStarted} />
+            <SkillShareSection title={skill.title} url={currentURL} />
+          </article>
+        </Container>
       </Main>
       <Footer />
     </>
@@ -191,16 +180,21 @@ export const query = graphql`
       scene {
         id
         numberTitle
+        title
         fields {
           slug
         }
         image {
           publicURL
         }
+        skills {
+          id
+          fields {
+            slug
+          }
+          title
+        }
       }
-    }
-    file(relativePath: {eq: "skills/skill_kv.svg"}) {
-      publicURL
     }
   }
 `
