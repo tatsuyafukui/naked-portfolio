@@ -22,10 +22,13 @@
         "thumbnail": {
           "childImageSharp": {
             "fluid": {
+              "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+UlEQVQ4y22TSQ7DMAwD9f/PZV8/42IMTMAEPQhNTJaiqLiWZWnzPLdpmtq2bb2O42jXdbV93/s7nHEcO29d13ae56s4U6MUSFABCLwjbBM4/EcBDcEB64Ip4jMEBXhOF+IacRrOC5KEBBWgCTjvNAenEJMDbmSFCKAiCjiuLuWIiX8jK8fgNxfiqLkQnTpJcjRTArpA1AYKZZMc1Twzsvq3VbOykVvVpVs1T78OzgpCZpBj6NLAvxxEzNPIKrcK4FIot+monufSvnlWque35RiGbSM58rxJOq1/W/1mlTfFi2AjzTyfjULDMLwyU4C67/sRgEeZvRzrBxQKi5BoMPTUAAAAAElFTkSuQmCC",
               "aspectRatio": 1.5037593984962405,
-              "src": "/static/b9739f8cd757788a0b3eb8f11d088808/2a4de/html.png",
-              "srcSet": "/static/b9739f8cd757788a0b3eb8f11d088808/69585/html.png 200w,\n/static/b9739f8cd757788a0b3eb8f11d088808/497c6/html.png 400w,\n/static/b9739f8cd757788a0b3eb8f11d088808/2a4de/html.png 600w",
-              "sizes": "(max-width: 600px) 100vw, 600px"
+              "src": "/static/50ec8a350f93d3174e9e3108c057469b/2a4de/thumbnail.png",
+              "srcSet": "/static/50ec8a350f93d3174e9e3108c057469b/69585/thumbnail.png 200w,\n/static/50ec8a350f93d3174e9e3108c057469b/497c6/thumbnail.png 400w,\n/static/50ec8a350f93d3174e9e3108c057469b/2a4de/thumbnail.png 600w",
+              "originalImg": "/static/50ec8a350f93d3174e9e3108c057469b/2a4de/thumbnail.png",
+              "sizes": "(max-width: 600px) 100vw, 600px",
+              "srcSetWebp": "/static/50ec8a350f93d3174e9e3108c057469b/61e93/thumbnail.webp 200w,\n/static/50ec8a350f93d3174e9e3108c057469b/1f5c5/thumbnail.webp 400w,\n/static/50ec8a350f93d3174e9e3108c057469b/ad85c/thumbnail.webp 600w"
             }
           }
         }
@@ -41,10 +44,13 @@
         "thumbnail": {
           "childImageSharp": {
             "fluid": {
+              "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+UlEQVQ4y22TSQ7DMAwD9f/PZV8/42IMTMAEPQhNTJaiqLiWZWnzPLdpmtq2bb2O42jXdbV93/s7nHEcO29d13ae56s4U6MUSFABCLwjbBM4/EcBDcEB64Ip4jMEBXhOF+IacRrOC5KEBBWgCTjvNAenEJMDbmSFCKAiCjiuLuWIiX8jK8fgNxfiqLkQnTpJcjRTArpA1AYKZZMc1Twzsvq3VbOykVvVpVs1T78OzgpCZpBj6NLAvxxEzNPIKrcK4FIot+monufSvnlWque35RiGbSM58rxJOq1/W/1mlTfFi2AjzTyfjULDMLwyU4C67/sRgEeZvRzrBxQKi5BoMPTUAAAAAElFTkSuQmCC",
               "aspectRatio": 1.5037593984962405,
-              "src": "/static/b9739f8cd757788a0b3eb8f11d088808/2a4de/html.png",
-              "srcSet": "/static/b9739f8cd757788a0b3eb8f11d088808/69585/html.png 200w,\n/static/b9739f8cd757788a0b3eb8f11d088808/497c6/html.png 400w,\n/static/b9739f8cd757788a0b3eb8f11d088808/2a4de/html.png 600w",
-              "sizes": "(max-width: 600px) 100vw, 600px"
+              "src": "/static/50ec8a350f93d3174e9e3108c057469b/2a4de/thumbnail.png",
+              "srcSet": "/static/50ec8a350f93d3174e9e3108c057469b/69585/thumbnail.png 200w,\n/static/50ec8a350f93d3174e9e3108c057469b/497c6/thumbnail.png 400w,\n/static/50ec8a350f93d3174e9e3108c057469b/2a4de/thumbnail.png 600w",
+              "originalImg": "/static/50ec8a350f93d3174e9e3108c057469b/2a4de/thumbnail.png",
+              "sizes": "(max-width: 600px) 100vw, 600px",
+              "srcSetWebp": "/static/50ec8a350f93d3174e9e3108c057469b/61e93/thumbnail.webp 200w,\n/static/50ec8a350f93d3174e9e3108c057469b/1f5c5/thumbnail.webp 400w,\n/static/50ec8a350f93d3174e9e3108c057469b/ad85c/thumbnail.webp 600w"
             }
           }
         }
@@ -60,10 +66,13 @@
         "thumbnail": {
           "childImageSharp": {
             "fluid": {
+              "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+UlEQVQ4y22TSQ7DMAwD9f/PZV8/42IMTMAEPQhNTJaiqLiWZWnzPLdpmtq2bb2O42jXdbV93/s7nHEcO29d13ae56s4U6MUSFABCLwjbBM4/EcBDcEB64Ip4jMEBXhOF+IacRrOC5KEBBWgCTjvNAenEJMDbmSFCKAiCjiuLuWIiX8jK8fgNxfiqLkQnTpJcjRTArpA1AYKZZMc1Twzsvq3VbOykVvVpVs1T78OzgpCZpBj6NLAvxxEzNPIKrcK4FIot+monufSvnlWque35RiGbSM58rxJOq1/W/1mlTfFi2AjzTyfjULDMLwyU4C67/sRgEeZvRzrBxQKi5BoMPTUAAAAAElFTkSuQmCC",
               "aspectRatio": 1.5037593984962405,
-              "src": "/static/b9739f8cd757788a0b3eb8f11d088808/2a4de/html.png",
-              "srcSet": "/static/b9739f8cd757788a0b3eb8f11d088808/69585/html.png 200w,\n/static/b9739f8cd757788a0b3eb8f11d088808/497c6/html.png 400w,\n/static/b9739f8cd757788a0b3eb8f11d088808/2a4de/html.png 600w",
-              "sizes": "(max-width: 600px) 100vw, 600px"
+              "src": "/static/50ec8a350f93d3174e9e3108c057469b/2a4de/thumbnail.png",
+              "srcSet": "/static/50ec8a350f93d3174e9e3108c057469b/69585/thumbnail.png 200w,\n/static/50ec8a350f93d3174e9e3108c057469b/497c6/thumbnail.png 400w,\n/static/50ec8a350f93d3174e9e3108c057469b/2a4de/thumbnail.png 600w",
+              "originalImg": "/static/50ec8a350f93d3174e9e3108c057469b/2a4de/thumbnail.png",
+              "sizes": "(max-width: 600px) 100vw, 600px",
+              "srcSetWebp": "/static/50ec8a350f93d3174e9e3108c057469b/61e93/thumbnail.webp 200w,\n/static/50ec8a350f93d3174e9e3108c057469b/1f5c5/thumbnail.webp 400w,\n/static/50ec8a350f93d3174e9e3108c057469b/ad85c/thumbnail.webp 600w"
             }
           }
         }
@@ -79,10 +88,13 @@
         "thumbnail": {
           "childImageSharp": {
             "fluid": {
+              "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+UlEQVQ4y22TSQ7DMAwD9f/PZV8/42IMTMAEPQhNTJaiqLiWZWnzPLdpmtq2bb2O42jXdbV93/s7nHEcO29d13ae56s4U6MUSFABCLwjbBM4/EcBDcEB64Ip4jMEBXhOF+IacRrOC5KEBBWgCTjvNAenEJMDbmSFCKAiCjiuLuWIiX8jK8fgNxfiqLkQnTpJcjRTArpA1AYKZZMc1Twzsvq3VbOykVvVpVs1T78OzgpCZpBj6NLAvxxEzNPIKrcK4FIot+monufSvnlWque35RiGbSM58rxJOq1/W/1mlTfFi2AjzTyfjULDMLwyU4C67/sRgEeZvRzrBxQKi5BoMPTUAAAAAElFTkSuQmCC",
               "aspectRatio": 1.5037593984962405,
-              "src": "/static/b9739f8cd757788a0b3eb8f11d088808/2a4de/html.png",
-              "srcSet": "/static/b9739f8cd757788a0b3eb8f11d088808/69585/html.png 200w,\n/static/b9739f8cd757788a0b3eb8f11d088808/497c6/html.png 400w,\n/static/b9739f8cd757788a0b3eb8f11d088808/2a4de/html.png 600w",
-              "sizes": "(max-width: 600px) 100vw, 600px"
+              "src": "/static/50ec8a350f93d3174e9e3108c057469b/2a4de/thumbnail.png",
+              "srcSet": "/static/50ec8a350f93d3174e9e3108c057469b/69585/thumbnail.png 200w,\n/static/50ec8a350f93d3174e9e3108c057469b/497c6/thumbnail.png 400w,\n/static/50ec8a350f93d3174e9e3108c057469b/2a4de/thumbnail.png 600w",
+              "originalImg": "/static/50ec8a350f93d3174e9e3108c057469b/2a4de/thumbnail.png",
+              "sizes": "(max-width: 600px) 100vw, 600px",
+              "srcSetWebp": "/static/50ec8a350f93d3174e9e3108c057469b/61e93/thumbnail.webp 200w,\n/static/50ec8a350f93d3174e9e3108c057469b/1f5c5/thumbnail.webp 400w,\n/static/50ec8a350f93d3174e9e3108c057469b/ad85c/thumbnail.webp 600w"
             }
           }
         }
@@ -98,10 +110,13 @@
         "thumbnail": {
           "childImageSharp": {
             "fluid": {
+              "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+UlEQVQ4y22TSQ7DMAwD9f/PZV8/42IMTMAEPQhNTJaiqLiWZWnzPLdpmtq2bb2O42jXdbV93/s7nHEcO29d13ae56s4U6MUSFABCLwjbBM4/EcBDcEB64Ip4jMEBXhOF+IacRrOC5KEBBWgCTjvNAenEJMDbmSFCKAiCjiuLuWIiX8jK8fgNxfiqLkQnTpJcjRTArpA1AYKZZMc1Twzsvq3VbOykVvVpVs1T78OzgpCZpBj6NLAvxxEzNPIKrcK4FIot+monufSvnlWque35RiGbSM58rxJOq1/W/1mlTfFi2AjzTyfjULDMLwyU4C67/sRgEeZvRzrBxQKi5BoMPTUAAAAAElFTkSuQmCC",
               "aspectRatio": 1.5037593984962405,
-              "src": "/static/b9739f8cd757788a0b3eb8f11d088808/2a4de/html.png",
-              "srcSet": "/static/b9739f8cd757788a0b3eb8f11d088808/69585/html.png 200w,\n/static/b9739f8cd757788a0b3eb8f11d088808/497c6/html.png 400w,\n/static/b9739f8cd757788a0b3eb8f11d088808/2a4de/html.png 600w",
-              "sizes": "(max-width: 600px) 100vw, 600px"
+              "src": "/static/50ec8a350f93d3174e9e3108c057469b/2a4de/thumbnail.png",
+              "srcSet": "/static/50ec8a350f93d3174e9e3108c057469b/69585/thumbnail.png 200w,\n/static/50ec8a350f93d3174e9e3108c057469b/497c6/thumbnail.png 400w,\n/static/50ec8a350f93d3174e9e3108c057469b/2a4de/thumbnail.png 600w",
+              "originalImg": "/static/50ec8a350f93d3174e9e3108c057469b/2a4de/thumbnail.png",
+              "sizes": "(max-width: 600px) 100vw, 600px",
+              "srcSetWebp": "/static/50ec8a350f93d3174e9e3108c057469b/61e93/thumbnail.webp 200w,\n/static/50ec8a350f93d3174e9e3108c057469b/1f5c5/thumbnail.webp 400w,\n/static/50ec8a350f93d3174e9e3108c057469b/ad85c/thumbnail.webp 600w"
             }
           }
         }
