@@ -2,6 +2,7 @@
 
 .scene {
   background: var(--color-white);
+  border: var(--border);
   border-radius: var(--radius-m);
   display: block;
   overflow: hidden;
@@ -12,12 +13,12 @@
 }
 
 .imageWrap {
-  height: 280px;
+  height: 200px;
   position: relative;
   width: 100%;
 
   @include mediaQuery(sm) {
-    height: 200px;
+    height: 150px;
   }
 }
 
@@ -25,6 +26,16 @@
   height: 100%;
   object-fit: cover;
   width: 100%;
+}
+
+.overlay {
+  background-color: var(--color-overlay);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--z-overlay);
 }
 
 .title {
@@ -45,16 +56,23 @@
   text-align: center;
   top: var(--space-24);
   width: 80px;
+  z-index: var(--z-overlay-content);
 
   @include mediaQuery(md) {
     height: 70px;
     width: 70px;
+  }
+
+  @include mediaQuery(sm) {
+    height: 60px;
+    width: 60px;
   }
 }
 
 .numberTitle {
   font-weight: var(--font-weight-bold) !important;
   line-height: var(--line-height-xs) !important;
+  margin-top: var(--space-6-fixed);
 }
 
 .textWrap {

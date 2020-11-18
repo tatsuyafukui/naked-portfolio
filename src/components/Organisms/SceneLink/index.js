@@ -18,6 +18,7 @@ const SceneLink = ({scene, className, ...props}) => (
   >
     <MediaObjectLayout className={styles.mediaObjectLayout} summary='top'>
       <div className={styles.imageWrap}>
+        <div className={styles.overlay} />
         <LazyImage
           className={styles.image}
           src={scene.image.publicURL}

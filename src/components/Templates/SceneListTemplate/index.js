@@ -7,10 +7,10 @@ import Container from '../../Atoms/Container'
 import SceneLink from '../../Organisms/SceneLink'
 import Seo from '../../Atoms/Seo'
 import Main from '../../Atoms/Main'
-import {BoldHeading} from '../../Atoms/Heading'
+import Heading from '../../Atoms/Heading'
 
 const SceneListTemplate = ({scenes, location}) => (
-  <div className={styles.background}>
+  <>
     <Seo
       title='シーン一覧'
       description='プロダクトをつくれるWeb開発者になるまでの中間目標として5つのシーンを用意しました。次に学ぶことだけではなく、目標達成までの学習の全体像を確認することができます。'
@@ -18,11 +18,11 @@ const SceneListTemplate = ({scenes, location}) => (
       lang='ja'
     />
     <Header />
-    <Main>
+    <Main className={styles.main}>
       <Container>
-        <BoldHeading level={1} visualLevel={2} className={styles.heading}>
+        <Heading level={1} visualLevel={2}>
           自分にあったシーンを選ぼう
-        </BoldHeading>
+        </Heading>
         <div className={styles.list}>
           {scenes.map(scene => (
             <SceneLink className={styles.item} scene={scene} key={scene.id} />
@@ -31,7 +31,7 @@ const SceneListTemplate = ({scenes, location}) => (
       </Container>
     </Main>
     <Footer />
-  </div>
+  </>
 )
 
 export default SceneListTemplate
