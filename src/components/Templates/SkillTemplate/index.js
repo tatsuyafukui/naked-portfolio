@@ -6,21 +6,20 @@ import NavigationBreadcrumb from '../../Molecules/NavigationBreadcrumb'
 import Container from '../../Atoms/Container'
 import Link from '../../Atoms/Link'
 import Txt from '../../Atoms/Txt'
-import {BoldHeading, HighlightedHeading} from '../../Atoms/Heading'
+import {HighlightedHeading} from '../../Atoms/Heading'
 import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
-import HeroImage from '../../Molecules/HeroImage'
 import SkillShareSection from '../../Organisms/SkillShareSection'
 import {graphql} from 'gatsby'
 import LazyImage from '../../Atoms/LazyImage'
 import Main from '../../Atoms/Main'
 import SkillGetStarted from '../../Organisms/SkillGetStarted'
 import SkillSideMenu from '../../Organisms/SkillSideMenu'
+import SkillTitle from '../../Organisms/SkillTitle'
 
 const SkillTemplate = ({data, location}) => {
   const skill = data.skillsJson
   const scene = data.skillsJson.scene
-  const keyVisual = data.file.publicURL
   const currentURL = data.site.siteMetadata.siteURL + location.pathname
 
   return (
@@ -34,21 +33,7 @@ const SkillTemplate = ({data, location}) => {
       />
       <Header />
       <Main>
-        <HeroImage className={styles.heroImage}>
-          <Container className={styles.heroContainer}>
-            <div className={styles.heroTxtWrap}>
-              <BoldHeading level={1} className={styles.title}>
-                {skill.title}
-              </BoldHeading>
-              <Txt>{skill.subTitle}</Txt>
-            </div>
-          </Container>
-          <LazyImage
-            className={styles.keyVisual}
-            src={keyVisual}
-            alt={skill.title}
-          />
-        </HeroImage>
+        <SkillTitle skill={skill} />
         <Container>
           <NavigationBreadcrumb className={styles.breadcrumb}>
             <Link to='/scenes'>シーン一覧</Link>
@@ -210,9 +195,6 @@ export const query = graphql`
           title
         }
       }
-    }
-    file(relativePath: {eq: "skills/skill_kv.svg"}) {
-      publicURL
     }
   }
 `

@@ -1,0 +1,53 @@
+@import '../../properties';
+
+.root {
+  margin-top: var(--space-40);
+
+  @include mediaQuery(sm) {
+    margin-top: 0;
+    padding: 0 !important;
+  }
+}
+
+.inner {
+  align-items: center;
+  background-color: var(--color-block);
+  border-radius: var(--radius-m);
+  display: flex;
+  padding: var(--space-64);
+
+  @include mediaQuery(sm) {
+    flex-direction: column;
+    padding: var(--space-32-fixed) var(--space-24-fixed);
+  }
+}
+
+.textWrap {
+  margin-left: var(--space-40);
+
+  @include mediaQuery(sm) {
+    margin-left: 0;
+    margin-top: var(--space-20-fixed);
+    text-align: center;
+  }
+}
+
+.title {
+  margin-bottom: var(--space-8);
+
+  @include mediaQuery(sm) {
+    font-size: var(--font-size-xl-fixed) !important;
+  }
+}
+
+.icon {
+  width: 130px;
+
+  @include mediaQuery(md) {
+    width: 110px;
+  }
+
+  @include mediaQuery(sm) {
+    width: 80px;
+  }
+}
