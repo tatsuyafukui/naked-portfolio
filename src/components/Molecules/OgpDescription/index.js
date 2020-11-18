@@ -31,7 +31,7 @@ OgpDescription.propTypes = {
 }
 
 export const AmazonOgpDescription = () => (
-  <NavigationLink tag={InfoTxt} visualLevel={2}>
-    Amazonで詳細を見る
-  </NavigationLink>
+  <InfoTxt visualLevel={2}>
+    <NavigationLink tag='span'>Amazonで詳細を見る</NavigationLink>
+  </InfoTxt>
 )
