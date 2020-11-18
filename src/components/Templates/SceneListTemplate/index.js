@@ -10,7 +10,7 @@ import Main from '../../Atoms/Main'
 import {BoldHeading} from '../../Atoms/Heading'
 
 const SceneListTemplate = ({scenes, location}) => (
-  <div className={styles.background}>
+  <>
     <Seo
       title='シーン一覧'
       description='プロダクトをつくれるWeb開発者になるまでの中間目標として5つのシーンを用意しました。次に学ぶことだけではなく、目標達成までの学習の全体像を確認することができます。'
@@ -31,7 +31,7 @@ const SceneListTemplate = ({scenes, location}) => (
       </Container>
     </Main>
     <Footer />
-  </div>
+  </>
 )
 
 export default SceneListTemplate
