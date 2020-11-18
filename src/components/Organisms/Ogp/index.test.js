@@ -1,5 +1,5 @@
 import {OgpContainer} from './index'
-import data from '../../../../__mocks__/data/gatsby-img.json'
+import data from '../../../../__mocks__/data/recommended.json'
 import {mount} from 'enzyme'
 
 describe('Ogp', () => {
@@ -9,7 +9,7 @@ describe('Ogp', () => {
       title: 'Title',
       description: 'description',
       url: 'https://prog-8.com/',
-      image: data.square,
+      ogImage: data.summaryOgp.fields.ogp.ogImage,
       presenter,
     })
     const wrapper = mount(ogpDescription)
@@ -21,7 +21,7 @@ describe('Ogp', () => {
       title: 'Title',
       description: 'description',
       url: 'https://prog-8.com/',
-      image: data.square,
+      ogImage: data.summaryOgp.fields.ogp.ogImage,
       isbn: '4822281515',
       presenter,
     })
@@ -34,7 +34,7 @@ describe('Ogp', () => {
       title: 'Title',
       description: 'description',
       url: 'https://prog-8.com/',
-      image: data.square,
+      ogImage: data.summaryOgp.fields.ogp.ogImage,
       isbn: '4822281515',
       isMobile: true,
       presenter,
@@ -47,7 +47,7 @@ describe('Ogp', () => {
       title: 'Title',
       description: 'description',
       url: 'https://prog-8.com/',
-      image: data.square,
+      ogImage: data.summaryOgp.fields.ogp.ogImage,
       isbn: '4822281515',
       isMobile: false,
       presenter,
@@ -60,7 +60,7 @@ describe('Ogp', () => {
       title: 'Title',
       description: 'description',
       url: 'https://prog-8.com/',
-      image: data.square,
+      ogImage: data.summaryOgp.fields.ogp.ogImage,
       isbn: false,
       isMobile: false,
       presenter,
@@ -73,7 +73,7 @@ describe('Ogp', () => {
       title: 'Title',
       description: 'description',
       url: 'https://prog-8.com/',
-      image: data.square,
+      ogImage: data.summaryOgp.fields.ogp.ogImage,
       isbn: false,
       isMobile: true,
       presenter,

@@ -1,7 +1,7 @@
 import React from 'react'
 import {storiesOf} from '@storybook/react'
 import Ogp from './index'
-import data from '../../../../__mocks__/data/gatsby-img.json'
+import data from '../../../../__mocks__/data/recommended.json'
 
 storiesOf('Organisms/Ogp', module)
   .add('Default', () => (
@@ -10,7 +10,7 @@ storiesOf('Organisms/Ogp', module)
       description='Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s'
       url='https://prog-8.com'
       twitterCard='summary'
-      image={data.square}
+      ogImage={data.summaryOgp.fields.ogp.ogImage}
     />
   ))
   .add('AmazonOgp', () => (
@@ -19,7 +19,7 @@ storiesOf('Organisms/Ogp', module)
       description='Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s'
       url='https://prog-8.com'
       isbn='4822281515'
-      image={data.book}
+      ogImage={data.bookOgp.fields.ogp.ogImage}
     />
   ))
   .add('twitterCard is summary_large_image', () => (
@@ -29,7 +29,7 @@ storiesOf('Organisms/Ogp', module)
       description='Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s'
       url='https://prog-8.com'
       twitterCard='summary_large_image'
-      image={data.summaryLarge}
+      ogImage={data.largeOgp.fields.ogp.ogImage}
     />
   ))
   .add('OGP without images', () => (
