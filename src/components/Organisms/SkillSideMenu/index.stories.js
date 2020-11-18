@@ -1,19 +1,8 @@
-// import React from 'react'
-// import {storiesOf} from '@storybook/react'
-// import Container from '../../Atoms/Container'
-// import SceneLink from './index'
-// import data from '../../../mock/data/scene'
+import React from 'react'
+import {storiesOf} from '@storybook/react'
+import SkillSideMenu from './index'
+import scene from '../../../../__mocks__/data/scene.json'
 
-// storiesOf('Organisms/SceneLink', module).add('Default', () => (
-//   <div style={style}>
-//     <Container>
-//       <SceneLink scene={data.scenesJson} />
-//     </Container>
-//   </div>
-// ))
-
-// const style = {
-//   height: '100vh',
-//   background: '#F2F4F7',
-//   padding: '32px 0',
-// }
+storiesOf('Organisms/SkillSideMenu', module).add('Default', () => (
+  <SkillSideMenu scene={scene.scenesJson} />
+))

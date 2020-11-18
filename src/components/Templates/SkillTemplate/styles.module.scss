@@ -1,42 +1,5 @@
 @import '../../properties';
 
-.keyVisual,
-.heroTxtwrap {
-  position: absolute;
-}
-
-.keyVisual {
-  left: 0;
-  top: 0;
-  z-index: var(--z-background);
-}
-
-.heroImage {
-  height: 300px !important;
-
-  @include mediaQuery(sm) {
-    height: 250px !important;
-  }
-}
-
-.heroContainer {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-.heroTxtWrap {
-  text-align: center;
-}
-
-.title {
-  margin-bottom: var(--space-8);
-
-  @include mediaQuery(sm) {
-    font-size: var(--font-size-xl-fixed) !important;
-  }
-}
-
 .content {
   display: flex;
   flex-direction: column;
