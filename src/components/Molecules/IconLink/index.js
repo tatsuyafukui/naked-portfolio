@@ -20,7 +20,11 @@ const iconLinkFactory = (icon, summary = 'left', role) => ({
     className={[styles.iconLink, className, styles[role]].join(' ')}
     {...props}
   >
-    <MediaObjectLayout summary={summary} className={styles.mediaObjectLayout}>
+    <MediaObjectLayout
+      tag='span'
+      summary={summary}
+      className={styles.mediaObjectLayout}
+    >
       <span className={styles[summary]}>{children}</span>
       <FontAwesomeIcon icon={icon} />
     </MediaObjectLayout>
