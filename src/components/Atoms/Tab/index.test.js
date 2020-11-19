@@ -6,19 +6,19 @@ describe('Tab', () => {
   const presenter = props => props
 
   it('slectedがtrueならstyles.selectedを付与する', () => {
-    const {className} = TabItemContainer({
+    const {selectedClass} = TabItemContainer({
       presenter,
       selected: true,
     })
-    expect(className).toBe('tab selected')
+    expect(selectedClass).toBe('selected')
   })
 
   it('slectedがfalseならstyles.selectedを付与しない', () => {
-    const {className} = TabItemContainer({
+    const {selectedClass} = TabItemContainer({
       presenter,
       selected: false,
     })
-    expect(className).toBe('tab')
+    expect(selectedClass).toBe('')
   })
 
   it('slectedがtrueならtabIndexは0', () => {

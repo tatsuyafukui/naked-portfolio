@@ -3,24 +3,27 @@ import PropTypes from 'prop-types'
 import styles from './styles.module.scss'
 import {containPresenter} from '../../utils/HoC'
 
-const TabItemPresenter = ({selected, ...props}) => {
-  return <button role='tab' aria-selected={selected} {...props} />
+const TabItemPresenter = ({selected, selectedClass, className, ...props}) => {
+  return (
+    <button
+      role='tab'
+      aria-selected={selected}
+      className={[styles.tab, selectedClass, className].join(' ')}
+      {...props}
+    />
+  )
 }
 
 TabItemPresenter.propTypes = {
-  children: PropTypes.node,
   className: PropTypes.string,
-  onClick: PropTypes.func,
   selected: PropTypes.bool,
-  value: PropTypes.any,
-  tabIndex: PropTypes.number,
+  selectedClass: PropTypes.string,
 }
 
 export const TabItemContainer = ({
   selected,
   value,
   onClick,
-  className,
   presenter,
   ...props
 }) => {
@@ -31,14 +34,13 @@ export const TabItemContainer = ({
   }
 
   const selectedClass = selected ? styles.selected : ''
-  const classes = [styles.tab, selectedClass, className].join(' ').trim()
   const tabIndex = selected ? 0 : -1
 
   return presenter({
-    className: classes,
     tabIndex,
     onClick: handleClick,
     selected,
+    selectedClass,
     ...props,
   })
 }
