@@ -1,0 +1,51 @@
+@import 'src/components/properties';
+
+.tabs {
+  display: flex;
+  margin-bottom: var(--space-40);
+}
+
+.tabItem {
+  border: 3px solid var(--color-block);
+  border-radius: var(--radius-m);
+  flex: 1;
+  text-align: left;
+
+  &:first-child {
+    margin-right: var(--space-24);
+  }
+
+  @include mediaQuery(sm) {
+    text-align: center;
+  }
+}
+
+.tabIconWrap {
+  align-items: center;
+  display: flex;
+  margin-bottom: var(--space-24);
+
+  @include mediaQuery(sm) {
+    flex-direction: column;
+  }
+}
+
+.tabIcon {
+  width: 70px;
+
+  @include mediaQuery(sm) {
+    width: 60px;
+  }
+}
+
+.tabTextWrap {
+  margin-left: var(--space-16);
+
+  @include mediaQuery(sm) {
+    margin-top: var(--space-16-fixed);
+  }
+}
+
+.levelText {
+  margin-bottom: var(--space-6-fixed);
+}

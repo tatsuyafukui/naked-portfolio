@@ -1,0 +1,12 @@
+@import '../../properties';
+
+.tab {
+  background-color: var(--color-block);
+  opacity: 0.5;
+  padding: var(--space-24);
+}
+
+.tab.selected {
+  border-color: var(--color-secondary);
+  opacity: 1;
+}
