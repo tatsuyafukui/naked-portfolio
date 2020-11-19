@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "value": "easy",
+    "title": "プログラミング初心者",
+    "description": "スキルをイメージできるレベル",
+    "icon": "../images/skills/ken_icon.png"
+  },
+  {
+    "id": 2,
+    "value": "middle",
+    "title": "ジュニアエンジニア",
+    "description": "自走できるレベル",
+    "icon": "../images/skills/ben_icon.png"
+  }
+]

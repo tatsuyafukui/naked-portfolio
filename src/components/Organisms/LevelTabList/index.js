@@ -8,41 +8,25 @@ import TabItem, {TabList} from '../../Atoms/Tab'
 import {graphql, useStaticQuery} from 'gatsby'
 
 const LevelTabList = ({value, onClick}) => {
-  const data = useStaticQuery(graphql`
+  const {allLevelJson} = useStaticQuery(graphql`
     {
-      easy: file(relativePath: {eq: "skills/ben_icon.png"}) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp_noBase64
-          }
-        }
-      }
-      middle: file(relativePath: {eq: "skills/ken_icon.png"}) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid_withWebp_noBase64
+      allLevelJson {
+        nodes {
+          id
+          description
+          value
+          title
+          icon {
+            childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid_withWebp_noBase64
+              }
+            }
           }
         }
       }
     }
   `)
-
-  const tabItems = [
-    {
-      id: 1,
-      level: 'easy',
-      title: 'プログラミング初心者',
-      description: 'スキルをイメージできるレベル',
-      icon: data.easy.childImageSharp.fluid,
-    },
-    {
-      id: 2,
-      level: 'middle',
-      title: 'ジュニアエンジニア',
-      description: '自走できるレベル',
-      icon: data.middle.childImageSharp.fluid,
-    },
-  ]
 
   return (
     <TabList
@@ -51,26 +35,22 @@ const LevelTabList = ({value, onClick}) => {
       onClick={onClick}
       aria-label='level tabs'
     >
-      {tabItems.map(tabItem => (
-        <TabItem
-          key={tabItem.id}
-          className={styles.tabItem}
-          value={tabItem.level}
-        >
+      {allLevelJson.nodes.map(level => (
+        <TabItem key={level.id} className={styles.tabItem} value={level.value}>
           <div className={styles.tabIconWrap}>
             <Img
               className={styles.tabIcon}
-              fluid={tabItem.icon}
-              alt={tabItem.title}
+              fluid={level.icon.childImageSharp.fluid}
+              alt={level.title}
             />
             <div className={styles.tabTextWrap}>
               <BoldHeading level={6} className={styles.levelText}>
-                レベル{tabItem.id}
+                レベル{level.id}
               </BoldHeading>
-              <BoldHeading level={6}>{tabItem.title}</BoldHeading>
+              <BoldHeading level={6}>{level.title}</BoldHeading>
             </div>
           </div>
-          <Txt>{tabItem.description}</Txt>
+          <Txt>{level.description}</Txt>
         </TabItem>
       ))}
     </TabList>
