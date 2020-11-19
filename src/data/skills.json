@@ -170,7 +170,7 @@
     "id": "javascript",
     "title": "JavaScript",
     "subTitle": "Webページに動きをつけてみよう",
-    "description": "HTML&HTMLやCSSだけでは少し退屈なWebページに感じたかもしれません。WebページにJavaScriptを取り入れることで、クリックやスクロールなど、ユーザーの操作に応じた動的な表現が可能になります。このような仕掛けを用意して、楽しさや利便性を備えたWebページを作れるようになりましょう。",
+    "description": "HTMLやCSSだけでは少し退屈なWebページに感じたかもしれません。WebページにJavaScriptを取り入れることで、クリックやスクロールなど、ユーザーの操作に応じた動的な表現が可能になります。このような仕掛けを用意して、楽しさや利便性を備えたWebページを作れるようになりましょう。",
     "thumbnail": "../images/skills/javascript/thumbnail.png",
     "overview": "JavaScriptは世界でもっとも使われているプログラミング言語の1つであり、近代的なWebページを作成するためには欠かせません。<br><br>クリックでHTML要素の色や形を変えたりアニメーションを表示したりなど、JavaScriptはWebページにさまざまな動きをつけることができます。JavaScriptはHTMLやCSSと共に、Webページの表示や動作の処理に使われます。<br><br>ユーザーの操作によって動的に変化するWebページが主流となってきたことから、現在JavaScriptは多くのWebページで利用されています。",
     "image": "../images/skills/javascript/illustration.svg",
