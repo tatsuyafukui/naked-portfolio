@@ -14,10 +14,6 @@ const FooterList = () => {
       url: '/',
     },
     {
-      label: 'Progate',
-      url: 'https://prog-8.com',
-    },
-    {
       label: '運営会社',
       url: 'https://prog-8.com/about',
     },

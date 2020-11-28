@@ -3,16 +3,16 @@
     "test": "test","id":
   "html-and-css",
     "title": "HTML & CSS",
-    "subTitle": "レイアウトを作れるようになろう",
-    "description": "ホームページやECサイトなど、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
+    "subTitle": "aaaaaaaaaaaaaaaaaaaa",
+    "description": "aaaaaaaaaaaaaaaaaaaaaa、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
     "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "HTMLとCSSはWebページを作るために使われる言語です。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "overview": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
     "image": "../images/skills/html-and-css/illustration.svg",
-    "purpose": "ホームページやECサイトなど、全てのWebページでHTMLとCSSは使われています。あなたがWebページを作成したいと考えているなら、HTMLとCSSの知識は必要不可欠です。<br><br>CSSのプロパティを使いこなすことができれば、さまざまな画面サイズの表示に対応した、思い通りの見た目のWebページを作れるようになります。あなたはアイデアを形にして世界中に公開できるようになるということです。<br><br>HTMLとCSSを一通り使えるようになったら、ポートフォリオサイトなどを作ってあなたが共有したい情報や、あなたの作った作品を世界に発信してみましょう。",
+    "purpose": "aaaaaaaaaaaaaaaaaaaaaaaaaaaa、全てのWebページでHTMLとCSSは使われています。あなたがWebページを作成したいと考えているなら、HTMLとCSSの知識は必要不可欠です。<br><br>CSSのプロパティを使いこなすことができれば、さまざまな画面サイズの表示に対応した、思い通りの見た目のWebページを作れるようになります。あなたはアイデアを形にして世界中に公開できるようになるということです。<br><br>HTMLとCSSを一通り使えるようになったら、ポートフォリオサイトなどを作ってあなたが共有したい情報や、あなたの作った作品を世界に発信してみましょう。",
     "sceneId": "web-basics",
     "getStarted": {
       "easy": {
-        "description": "シンプルなWebページを作成するのに必要な知識は多くありません。まずは、HTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどのように見た目が変わるかを学んでいきましょう。",
+        "description": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa。まずは、HTMLの基本的なタグを使ってシンプルなWebページの構造を作成したあと、CSSを使ってどのように見た目が変わるかを学んでいきましょう。",
         "tasks": [
           {
             "title": "HTML&CSSの基本を理解しよう",
