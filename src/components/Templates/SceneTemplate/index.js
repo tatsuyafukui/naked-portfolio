@@ -23,7 +23,6 @@ const SceneTemplate = ({data, location}) => {
         slug={location.pathname}
         lang='ja'
       />
-      <Header />
       <Main>
         <Scene scene={scene} />
         <Container>
@@ -45,6 +44,7 @@ export default SceneTemplate
 export const query = graphql`
   query($slug: String) {
     scenesJson(fields: {slug: {eq: $slug}}) {
+      test
       id
       numberTitle
       title

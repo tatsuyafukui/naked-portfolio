@@ -102,6 +102,7 @@ export const query = graphql`
       }
     }
     skillsJson(fields: {slug: {eq: $slug}}) {
+      test
       id
       overview
       purpose

@@ -1,6 +1,7 @@
 [
   {
-    "id": "web-basics",
+    "test": "test","id":
+ "web-basics",
     "number": 1,
     "numberTitle": "シーン1",
     "title": "Webページを作ろう",
@@ -10,7 +11,8 @@
     "goal": "Webページの公開"
   },
   {
-    "id": "web-application-development",
+    "test": "test","id":
+ "web-application-development",
     "number": 2,
     "numberTitle": "シーン2",
     "title": "Webアプリケーションを形にしよう",
@@ -20,7 +22,8 @@
     "goal": "Webアプリケーションの公開"
   },
   {
-    "id": "team-development",
+    "test": "test","id":
+ "team-development",
     "number": 3,
     "numberTitle": "シーン3",
     "title": "みんなでアプリケーションを開発しよう",
@@ -30,7 +33,8 @@
     "goal": "チームでのアプリケーション開発"
   },
   {
-    "id": "releasing-your-application",
+    "test": "test","id":
+ "releasing-your-application",
     "number": 4,
     "numberTitle": "シーン4",
     "title": "公開できるプロダクトに必要なことを知ろう",
@@ -40,7 +44,8 @@
     "goal": "ユーザーの利用を想定した環境とセキュリティの理解"
   },
   {
-    "id": "continuous-delivery",
+    "test": "test","id":
+ "continuous-delivery",
     "number": 5,
     "numberTitle": "シーン5",
     "title": "プロダクトを継続して届けよう",
