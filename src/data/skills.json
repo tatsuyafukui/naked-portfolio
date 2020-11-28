@@ -1,14 +1,13 @@
 [
   {
-    "test": "test","id":
-  "html-and-css",
+    "id": "html-and-css",
     "title": "HTML & CSS",
-    "subTitle": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
-    "description": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
+    "subTitle": "レイアウトを作れるようになろう",
+    "description": "ホームページやECサイトなど、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
     "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "overview": "HTMLとCSSはWebページを作るために使われる言語です。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
     "image": "../images/skills/html-and-css/illustration.svg",
-    "purpose": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたがWebページを作成したいと考えているなら、HTMLとCSSの知識は必要不可欠です。<br><br>CSSのプロパティを使いこなすことができれば、さまざまな画面サイズの表示に対応した、思い通りの見た目のWebページを作れるようになります。あなたはアイデアを形にして世界中に公開できるようになるということです。<br><br>HTMLとCSSを一通り使えるようになったら、ポートフォリオサイトなどを作ってあなたが共有したい情報や、あなたの作った作品を世界に発信してみましょう。",
+    "purpose": "ホームページやECサイトなど、全てのWebページでHTMLとCSSは使われています。あなたがWebページを作成したいと考えているなら、HTMLとCSSの知識は必要不可欠です。<br><br>CSSのプロパティを使いこなすことができれば、さまざまな画面サイズの表示に対応した、思い通りの見た目のWebページを作れるようになります。あなたはアイデアを形にして世界中に公開できるようになるということです。<br><br>HTMLとCSSを一通り使えるようになったら、ポートフォリオサイトなどを作ってあなたが共有したい情報や、あなたの作った作品を世界に発信してみましょう。",
     "sceneId": "web-basics",
     "getStarted": {
       "easy": {
@@ -61,13 +60,12 @@
     }
   },
   {
-    "test": "test","id":
-  "editors",
+    "id": "editors",
     "title": "エディタ",
-    "subTitle": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
-    "description": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
-    "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "subTitle": "快適にコーディングするために開発環境を整えよう",
+    "description": "エディタを使うと、入力補完や文法チェックなどの機能により、快適にプログラミングができるようになります。お気に入りのエディタを見つけて、効率良くWebページを開発しましょう。",
+    "thumbnail": "../images/skills/editors/thumbnail.png",
+    "overview": "エディタ（テキストエディタ）はプログラミングのコードを書くときに使うツールです。<br>エディタにはコードの構文を検知して彩色する機能（<span data-type='term'>シンタックスハイライト</span>）や、入力しようとしている構文を予測して候補を表示する機能（<span data-type='term'>入力補完</span>）などがあります。これらの機能により、開発効率を上げることができます。</span><br><br>エディタには、より効率的にコードを書くためのさまざまな<span data-type='term'>プラグイン</span>が用意されています。例えば不揃いなコードに自動で改行をできたり、関数をクリックするとその関数の定義部分に飛べたりなど、繰り返し行う面倒な作業をサポートしてくれます。<br><br>また、エディタの種類には<span data-type='term'>統合開発環境（IDE）</span>と呼ばれるものもあります。IDEはコードのコンパイルやデバッグ、プログラムのテストも行える多機能なエディタです。",
     "image": "../images/skills/editors/illustration.svg",
     "purpose": "エディタを利用するとコーディングが快適になり、開発効率の向上が期待できます。<br><br>コーディングはメモ帳でも行うことができます。しかし、メモ帳はコーディングを前提としたツールではないため、その効率を上げる機能は備わっていません。<br><br>エディタを使えば、シンタックスハイライトや補完機能などにより、快適にコーディングができるようになることでしょう。その他にもプラグインを導入することで必要な機能を随時追加できます。<br><br>どのエディターを使うか迷ったら、その他の拡張機能やIDE機能についても調べて判断しましょう。<br><br>エディタを利用して、コーディングを快適に行いましょう。",
     "sceneId": "web-basics",
@@ -119,13 +117,12 @@
     }
   },
   {
-    "test": "test","id":
-  "internet",
+    "id": "internet",
     "title": "インターネット",
-    "subTitle": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
-    "description": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
-    "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "subTitle": "Webの仕組みを知ろう",
+    "description": "すべてのWebページはインターネットの仕組みの上に成り立っています。そのため、Webページの公開にはインターネットの基本的な知識が必要です。開発したWebページを世界に公開する準備をしましょう。",
+    "thumbnail": "../images/skills/internet/thumbnail.png",
+    "overview": "私たちが利用しているWebページは、インターネットの仕組みの上で動いています。コンピューターをインターネットにつなげることで、世界中のサーバーやコンピューターとデータをやりとりできるようになります。<span data-type='term'>ブラウザ</span>でWebページをみたり、離れた相手にメールを送ったりできるのもインターネットのおかげです。<br><br>インターネットはデータを要求する<span data-type='term'>クライアント</span>とそれに応答する<span data-type='term'>サーバー</span>とのやりとりで成り立っています。クライアントからの要求を<span data-type='term'>リクエスト</span>、サーバーからの応答を<span data-type='term'>レスポンス</span>と呼びます。<br><br>ブラウザのタイトルバーに<span data-type='term'>URL</span>を入力するとWebページが表示されます。これがどのような仕組みで動いているのか知っておきましょう。まず、クライアントであるブラウザはURLに対応したサーバーに向けて、Webページを取得するためのリクエストを送信します。その後リクエストを受信したサーバーが所定のHTMLファイルなどのデータをクライアントに返すことで、ブラウザ上にWebページが表示される仕組みになっています。<br><br>このようなクライアントとサーバーのやり取りは<span data-type='term'>HTTP（Hypertext Transfer Protocol）</span>という予め定められた通信のルールに則って行われます。このルールは<span data-type='term'>通信プロトコル</span>と呼ばれており、HTTP以外にも用途によってさまざまなプロトコルが用意されています。",
     "image": "../images/skills/internet/illustration.svg",
     "purpose": "Webページを作れるようになるには、インターネットとWebの仕組みを理解する必要があります。<br><br>Webページの公開にはサーバーの準備やドメインの取得、HTMLファイルの配置などが必要です。これらの役割や働きを理解するにはインターネットの基本的な知識が必要となります。まずはHTTP通信やIPアドレス、ドメイン名などについて学びましょう。<br><br>ユーザーがWebページにアクセスするとき、必ずインターネットを経由します。インターネットについて学んでWebの仕組みを理解し、Webページを公開できるようになりましょう。",
     "sceneId": "web-basics",
@@ -170,13 +167,12 @@
     }
   },
   {
-    "test": "test","id":
-  "javascript",
+    "id": "javascript",
     "title": "JavaScript",
-    "subTitle": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
-    "description": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
-    "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "subTitle": "Webページに動きをつけてみよう",
+    "description": "HTMLやCSSだけでは少し退屈なWebページに感じたかもしれません。WebページにJavaScriptを取り入れることで、クリックやスクロールなど、ユーザーの操作に応じた動的な表現が可能になります。このような仕掛けを用意して、楽しさや利便性を備えたWebページを作れるようになりましょう。",
+    "thumbnail": "../images/skills/javascript/thumbnail.png",
+    "overview": "JavaScriptは世界でもっとも使われているプログラミング言語の1つであり、近代的なWebページを作成するためには欠かせません。<br><br>クリックでHTML要素の色や形を変えたりアニメーションを表示したりなど、JavaScriptはWebページにさまざまな動きをつけることができます。JavaScriptはHTMLやCSSと共に、Webページの表示や動作の処理に使われます。<br><br>ユーザーの操作によって動的に変化するWebページが主流となってきたことから、現在JavaScriptは多くのWebページで利用されています。",
     "image": "../images/skills/javascript/illustration.svg",
     "purpose": "JavaScriptを使ってWebページに動的な表現を取り入れることで、ユーザーに操作した感覚を与えることや、ローディング中の待ち時間を退屈にさせないことが可能になります。このような仕掛けにより、Webページを利用するユーザーに「楽しく・心地よい」体験を提供できます。<br><br>また、JavaScriptで作られたフロントエンド用のライブラリやフレームワークも登場しており、代表的なものに<span data-type='term'>React</span>、<span data-type='term'>Vue</span>、<span data-type='term'>Angular</span>などがあります。<br><br>このように、楽しさや利便性を備えたWebページを作るうえではJavaScriptは欠かせない言語となっています。<br><br>Webフロントエンド開発で高機能なWebページを作りたい場合は、JavaScriptを学ぶとよいでしょう。",
     "sceneId": "web-basics",
@@ -234,13 +230,12 @@
     }
   },
   {
-    "test": "test","id":
-  "developer-tools",
+    "id": "developer-tools",
     "title": "開発者ツール",
-    "subTitle": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
-    "description": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
-    "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "subTitle": "Webページ開発のデバッグをしよう",
+    "description": "開発を行っているとレイアウトが崩れたり、JavaScriptが思うように動かなかったりすることもあるでしょう。そんなときは開発者ツールを使って原因を調査できます。自分で原因を見つけて解決できれば、あなたはどんなWebページも開発することができるでしょう。",
+    "thumbnail": "../images/skills/developer-tools/thumbnail.png",
+    "overview": "開発者ツールはWebページ開発の<span data-type='term'>デバッグ</span>に使える機能で、各ブラウザが提供しています。<br><br>開発者ツールを使えば、HTMLソースコードがWebページ上のどの部分に表示されていて、HTML要素にどのようなCSSプロパティが適用されているかを一覧で確認することができます。また、JavaScriptの実行状況も確認することが可能です。<br><br>その他にも、サーバーとの通信状況や通信にかかる時間、<span data-type='term'>Cookie（クッキー）</span>をはじめとする<span data-type='term'>ストレージ</span>の状態など、開発に必要な多くの情報を確認することができます。",
     "image": "../images/skills/developer-tools/illustration.svg",
     "purpose": "Webページを作っていると、レイアウトが崩れたり、JavaScriptが思うように動かなかったりなどの不具合が発生することがあります。それらを修正するには、原因となるコードを特定しなければなりません。開発者ツールを使用すれば、Webページと同時にHTMLの構造やJavaScriptのエラー、レスポンシブ表示などを確認できるため、不具合の発見と原因の調査を進めやすくなります。開発者ツールの使い方を学んで、自分で原因を見つけて解決できるようになりましょう。",
     "sceneId": "web-basics",
@@ -278,13 +273,12 @@
     }
   },
   {
-    "test": "test","id":
-  "server-side-programming",
+    "id": "server-side-programming",
     "title": "サーバーサイドプログラミング",
-    "subTitle": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
-    "description": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
-    "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "subTitle": "サーバーで動くプログラムを作ろう",
+    "description": "世界でよく使われているWebアプリケーションの多くはフロントエンドとサーバーサイドのプログラムが連携して動いています。Webアプリケーション開発のために、サーバーサイドのプログラミング言語について学びましょう。",
+    "thumbnail": "../images/skills/server-side-programming/thumbnail.png",
+    "overview": "サーバーサイドのプログラミング言語とは、サーバーで動作するプログラムを実装するための言語の総称です。<span data-type='term'>Ruby</span>、<span data-type='term'>Python</span>、<span data-type='term'>Java</span>、<span data-type='term'>PHP</span>などの長年使われているものから、<span data-type='term'>Rust</span>や<span data-type='term'>Go言語</span>などの比較的新しいものまで、さまざまな種類の言語があります。<br><br>サーバーサイドの言語は、JavaやGoなどのコンパイラを用いる<span data-type='term'>コンパイラ言語</span>と、RubyやPythonなどのインタプリタを用いる<span data-type='term'>スクリプト言語</span>に大きく分けられます。<br>コンパイラ言語は処理速度の速さやコンパイラのチェックによるバグの防止などが利点です。一方スクリプト言語は、手軽に実行して結果を確認できるので開発スピードが向上するという利点があります。<br><br>どのサーバーサイドの言語を使用しても、クライアント（ブラウザ）からの要求に応じて処理を行い、処理結果を返すというWebアプリケーションの動きは同じです。基本的に制約はありませんが、得意とする処理やフレームワークには特徴があるので、自分が作成したいアプリケーションの種類と自分のスキルに応じて選択すると良いでしょう。",
     "image": "../images/skills/server-side-programming/illustration.svg",
     "purpose": "動画サービスやECサイトなど、世界中で使われているWebアプリケーションは、いずれかのサーバーサイドのプログラミング言語を用いて作られています。<br><br>HTML、CSS、JavaScriptだけでは、いつ誰がアクセスしても同じ表示となる静的なWebページしか作れませんでした。サーバーサイドのプログラミング言語を学ぶことで、ユーザーのリクエストに応じた動的なWebページを作れるようになります。<br><br>本格的なWebアプリケーションの作成のために、サーバーサイドの言語を学びましょう。",
     "sceneId": "web-application-development",
@@ -339,13 +333,12 @@
     }
   },
   {
-    "test": "test","id":
-  "object-oriented-programming",
+    "id": "object-oriented-programming",
     "title": "オブジェクト指向",
-    "subTitle": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
-    "description": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
-    "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "subTitle": "コードを整理し、機能の追加や変更をしやすくしよう",
+    "description": "オブジェクト指向は、Webアプリケーションを作成するための基礎となる考え方やプログラミング技術です。オブジェクト指向で開発することにより、見通しがよく、メンテナンス性に優れたプログラムとなります。",
+    "thumbnail": "../images/skills/object-oriented-programming/thumbnail.png",
+    "overview": "オブジェクト指向とは、オブジェクトという”モノ”単位でシステムを作る考え方です。オブジェクト指向により、見通しが良いシステムを作ることができます。<br><br>オブジェクト指向では、ひな形である<span data-type='term'>クラス</span>を定義して、クラスに<span data-type='term'>属性</span>や<span data-type='term'>振る舞い</span>を記述します。オブジェクトはクラスの定義に従って必要なときに生成されます。オブジェクト同士が相互に協調しながら効率的に動作するのがオブジェクト指向の特徴です。<br><br>「乗り物」クラスを例に、「具体的な乗り物」オブジェクトを作る流れを図で確認してみましょう。乗り物クラスには共通する属性や振る舞いを定義します。これにより似た振る舞いをもつさまざまな乗り物を1つのクラスから派生して作ることができます。",
     "image": "../images/skills/object-oriented-programming/illustration.svg",
     "purpose": "オブジェクト指向を学ぶことで、作りたい機能をどのようにプログラミングすると良いかをイメージできるようになります。<br><br>オブジェクト指向の考え方に沿ってプログラムを構成することで、オブジェクト間の<span data-type='term'>独立性</span>や<span data-type='term'>拡張性</span>、<span data-type='term'>再利用性</span>が高まり、機能追加や修正が容易になります。<br><br>例えば、オブジェクトの振る舞いに変更が必要な場合、それがある単一のクラスの内部に閉じた独立性の高いものであれば、他のクラスで作られたオブジェクトに影響を与えずに修正することができます。<br><br>オブジェクト指向を学んで、メンテナンスしやすいプログラムを書けるようになりましょう。",
     "sceneId": "web-application-development",
@@ -384,13 +377,12 @@
     }
   },
   {
-    "test": "test","id":
-  "terminal-operations",
+    "id": "terminal-operations",
     "title": "ターミナル操作",
-    "subTitle": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
-    "description": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
-    "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "subTitle": "コンピュータの操作を効率的にできるようになろう",
+    "description": "アプリケーション開発では、パッケージのインストールやファイル操作など、ターミナルを使ってコマンドを実行する場面がたくさんあります。開発や環境構築に必要なターミナル操作を学びましょう。",
+    "thumbnail": "../images/skills/terminal-operations/thumbnail.png",
+    "overview": "マウスでウィンドウ上のアイコンをクリックするなど、ユーザーがコンピュータの操作を視覚的に行う方法のことを<span data-type='term'>GUI（グラフィカル・ユーザー・インターフェース）</span>といいます。それに対して、ユーザーがテキストをベースとしたコマンド操作でコンピューターを操作することを<span data-type='term'>CUI（キャラクター・ユーザー・インターフェース）</span>といいます。<br><br>ターミナルとは、入力されたコマンドを通してコンピューターとやりとりをするCUIツールです。<br><br>ターミナルで使用するコマンドは、<span data-type='term'>シェル</span>という種類のプログラムで解釈・実行されます。<br><br>OSによって動いているシェルが異なるため、ターミナルで使えるコマンドもOSによって違いがあります。開発でよく使われるのは<span data-type='term'>Linux</span>系のコマンドです。Macでは標準で使うことができ、Windowsでも設定を変えれば使えるようになります。",
     "image": "../images/skills/terminal-operations/illustration.svg",
     "purpose": "ターミナルを利用することで効率的にコンピューターを操作することができます。<br><br>Webアプリケーション開発では、ライブラリのインストールやデータベースの操作などを行いますが、これらの作業はターミナル上でのCUI操作が基本です。<br><br>GUI操作でもほとんどの操作は可能ですが、CUI操作であればショートカットキーや入力補完を使えるため、より効率的に操作できます。<br><br>また、アプリケーションを公開するためのサーバーにはLinux系のOSが幅広く利用されているので、Linuxコマンドについても学習が必要です。OSやアプリケーションの環境設定や確認作業といった、ほぼ全ての作業をターミナルで行うことになります。<br><br>ターミナル操作について学んで、効率よく作業できるようになりましょう。",
     "sceneId": "web-application-development",
@@ -436,13 +428,12 @@
     }
   },
   {
-    "test": "test","id":
-  "databases",
+    "id": "databases",
     "title": "データベース",
-    "subTitle": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
-    "description": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
-    "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "subTitle": "データベースを扱ったWebアプリケーションの機能を作ろう",
+    "description": "データベースを使えばユーザーや商品情報など、さまざまな蓄積データを扱ったWebアプリケーションを作ることができます。本格的なサービスを作るために、データベースについて学びましょう。",
+    "thumbnail": "../images/skills/databases/thumbnail.png",
+    "overview": "データベースとは、アプリケーションで扱うべきデータをプログラムコードから分離して集中管理する仕組みです。アプリケーションは、データベースを使うことで正しく安全にデータの追加・更新などができます。<br><br>データベースにはその構成の違いにより、<span data-type='term'>リレーショナルデータベース（RDB）</span>や、<span data-type='term'>NoSQL</span>と呼ばれる<span data-type='term'>非リレーショナルデータベース</span>などの種類があります。その中で最も広く使われているのがリレーショナルデータベースです。リレーショナルデータベースは、データを<span data-type='term'>テーブル</span>の集合体で管理します。テーブルはデータの種類ごとに複数の<span data-type='term'>カラム</span>を持っており、<span data-type='term'>主キー</span>や<span data-type='term'>外部キー</span>などの各種の制約を設定してから使用します。データベースのテーブル構成や制約の設計は、システム全体の性能に影響する非常に重要な項目です。<br><br>Webアプリケーションでデータベースを扱うには、プログラム内にデータベースを操作するコードを記述する必要があります。例えばリレーショナルデータベースでは、<span data-type='term'>SQL</span>と呼ばれる専用の言語をプログラムコードに含めることでデータの作成や取得、更新、削除などの操作を行うことができます。",
     "image": "../images/skills/databases/illustration.svg",
     "purpose": "データベースについて学ぶことで、Webアプリケーションで扱うデータを正しく管理できるようになります。<br><br>Webアプリケーションで扱うデータは、会員登録時のユーザーデータやECサイトの商品データなど膨大です。データベースを使うことで、関連しあうデータを一括で保存し、その中から目的のデータを素早く検索して表示することが可能となります。<br><br>また、データベースは複数のユーザーの同時利用によるデータの消失や重複などを防止でき、整合性を保つことができます。データの暗号化によるセキュリティ向上やバックアップ機能などによりデータの保全も可能です。<br><br>近年のWebアプリケーションフレームワークを使えば、直接SQLを使わずにO/Rマッパーで実装することも可能です。ただし、このマッパー内部ではSQLが動いているので、効率的なデータアクセスを実現するためにSQLの学習も必要となるでしょう。<br><br>本格的なサービスを作るために、データベースについて学びましょう。",
     "sceneId": "web-application-development",
@@ -503,13 +494,12 @@
     }
   },
   {
-    "test": "test","id":
-  "web-application-frameworks",
+    "id": "web-application-frameworks",
     "title": "Webアプリケーションフレームワーク",
-    "subTitle": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
-    "description": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
-    "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "subTitle": "フレームワークを使用して効率よく開発しよう",
+    "description": "実際のWebアプリケーション開発ではフレームワークを使うのが一般的です。フレームワークの仕組みを理解して、Webアプリケーションを形にしましょう。",
+    "thumbnail": "../images/skills/web-application-frameworks/thumbnail.png",
+    "overview": "Webアプリケーションフレームワークとは、効率的にWebアプリケーション開発を行うための枠組みです。フレームワークはサーバーサイドの言語ごとに、いくつかの種類が存在します。例えば、Rubyのフレームワークなら、<span data-type='term'>Ruby on Rails</span>や<span data-type='term'>Sinatra</span>などがあります。<br><br>現在のWebアプリケーションフレームワークの多くは<span data-type='term'>MVCモデル</span>に従って作られています。<br><br>MVCモデルとは、アプリケーションを<span data-type='term'>Model</span>、<span data-type='term'>View</span>、<span data-type='term'>Controller</span>といわれる各機能ごとに分類して作成するプログラミングモデルです。Modelはアプリケーションで扱うデータや<span data-type='term'>ビジネスロジック</span>と呼ばれる処理を行います。Viewはフロントエンドの表示処理を行い、Controllerはユーザーからの命令を分析してModelやViewと連携を行います。<br><br>MVCモデルのWebアプリケーションフレームワークは、MVCモデルの概念に従ってアプリケーションの処理の流れを制御し、開発者にテンプレートや機能を提供します。",
     "image": "../images/skills/web-application-frameworks/illustration.svg",
     "purpose": "フレームワークを取り入れることで手軽にWebアプリケーションを開発できるようになります。<br><br>世の中のWebアプリケーションの多くはフレームワークを使って作られています。本格的なWeb開発をする場合、フレームワークの知識は必須でしょう。<br><br>フレームワークを使えば、用意されたルールやテンプレートに沿って開発できるため、作業効率が向上します。またフォルダ構造についても用意されたものを使えるため、プログラムの分割に迷うことが少なくなります。<br><br>フレームワークを利用して、Webアプリケーションの基本的な動作や仕組みについて学びましょう。",
     "sceneId": "web-application-development",
@@ -559,13 +549,12 @@
     }
   },
   {
-    "test": "test","id":
-  "web-api",
+    "id": "web-api",
     "title": "Web API",
-    "subTitle": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
-    "description": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
-    "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "subTitle": "公開されたAPIの機能を取り入れ、作れる幅を広げよう",
+    "description": "Web APIの仕組みを使えば、公開されている機能やデータを利用することができます。Web APIを積極的に活用して、さまざまな機能をアプリケーションに取り入れてみましょう。",
+    "thumbnail": "../images/skills/web-api/thumbnail.png",
+    "overview": "APIとはApplication Programming Interfaceの略で、アプリケーションの個々の機能を分離して使用するための取り決めのことです。<br><br>Web APIは、HTTPプロトコルを利用してインターネット経由で呼び出せるAPIです。公開されたWeb APIの機能やデータは別のシステムから利用することができます。<br><br>利用する際は、機能とリクエスト・レスポンスの形式さえ分かっていれば、API内部の詳しい処理を知る必要がありません。Web APIへアクセスするには<span data-type='term'>エンドポイント</span>と呼ばれるURLを指定します。<br><br>機能やリクエスト・レスポンスの形式を知るには、Web APIの提供者が用意しているドキュメントを参考にします。レスポンスの形式はプログラムで操作しやすい<span data-type='term'>JSON形式</span>が一般的です。<br><br>近年多くのWeb APIが公開されており、それらを使ったWebアプリケーションがたくさん作られています。",
     "image": "../images/skills/web-api/illustration.svg",
     "purpose": "既に公開されたWeb APIサービスがあれば、それを利用することでアプリケーションのオリジナルの機能開発に注力できます。<br><br>これまでは、ログイン機能やメール送信機能などアプリケーションのさまざまな機能を自身で作る必要がありました。しかしWeb APIを利用すると、これらの機能を簡単にアプリケーションに取り込むことが可能です。<br><br>他にも現在では、Web APIを利用してモダンなユーザーインタフェースなどを実現しているWebサイトが多くあります。たとえば、地図表示部分では非同期にWeb APIを呼び出す<span data-type='term'>Ajax</span>という方式を使うことで、スムーズな操作を可能にしています。<br><br>公開されているAPIを積極的に活用して、さまざまなWebアプリケーションを効率的に開発しましょう。",
     "sceneId": "web-application-development",
@@ -603,13 +592,12 @@
     }
   },
   {
-    "test": "test","id":
-  "development-flow",
+    "id": "development-flow",
     "title": "開発フロー",
-    "subTitle": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
-    "description": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
-    "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "subTitle": "実際の開発現場をイメージできるようになろう",
+    "description": "チーム開発では、開発手順を共有して協力しながら作業を進める必要があります。チームで本格的なアプリケーションを開発できるようになるために、開発フローについて学びましょう。",
+    "thumbnail": "../images/skills/development-flow/thumbnail.png",
+    "overview": "開発フローとはWebアプリケーション開発の作業工程のことです。開発フローには主に、設計、実装、テストの作業フェーズがあります。<br><br>設計フェーズではこれから作るWebアプリケーションの実現方法をまとめます。開発フェーズでは実際にアプリケーションを作成し、完成したアプリケーションの動きをテストフェーズで確認します。<br><br>開発フローにはさまざまな手法や考え方があり、代表的な手法としては、<span data-type='term'>ウォータフォール型開発</span>と<span data-type='term'>アジャイル型開発</span>があります。どちらも設計・実装・テストを行うという点では同じですが、その進め方が異なります。ウォーターフォール型ではアプリケーション単位で設計からテストを一貫して進めるのに対し、アジャイル型では機能単位で設計からテストを小さく繰り返しながら進めます。<br><br>チーム開発では作業者が複数人いるため、タスクやスケジュールを管理して役割を分担する必要があります。また、作業者が異なっても品質を担保できるように、<span data-type='term'>レビューフロー</span>や<span data-type='term'>コーディング規約</span>など、プロジェクトのルール整備も必要となるでしょう。",
     "image": "../images/skills/development-flow/illustration.svg",
     "purpose": "開発フローを学ぶと、チーム開発を効率的に進められるようになります。<br><br>開発に着手する前に開発フローとスケジュールについてチーム内で共有できていれば、認識を合わせながら作業を進められるようになります。例えば、協力して作業するときの段取りがスムーズになることや、問題が発生したときのフォローがしやすくなることなどが挙げられます。<br><br>開発フローについて学んで、チーム開発にチャレンジするための準備をしましょう。",
     "sceneId": "team-development",
@@ -658,13 +646,12 @@
     }
   },
   {
-    "test": "test","id":
-  "design-specification",
+    "id": "design-specification",
     "title": "仕様と設計",
-    "subTitle": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
-    "description": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
-    "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "subTitle": "どんなものをどうやって作るのかを考えよう",
+    "description": "どんなアプリケーションをどのように作るかが明確になっていないと、チームで開発を進めるときに迷ってしまいます。アプリケーション開発を始める前に、開発の目標である仕様と具体的な実現方法である設計を定めましょう。",
+    "thumbnail": "../images/skills/design-specification/thumbnail.png",
+    "overview": "アプリケーションの開発を始める前に仕様と設計を決めましょう。そうすることで手戻りを少なくすることができます。<br><br>仕様とは、アプリケーションで解決したい課題や実現したいことなど、開発の目的や目標をまとめたものです。仕様では、ユーザーがアプリケーションを使ってできることや、負荷に耐えうるシステムの性能なども決めます。<br><br>設計とは、仕様を実現するための具体的な方法をまとめたものです。設計には<span data-type='term'>概要設計</span>と<span data-type='term'>詳細設計</span>の2段階があります。概要設計では画面や機能などユーザーに見える範囲のものを決めます。詳細設計では各々の機能の<span data-type='term'>モジュール構成</span>や<span data-type='term'>データ構造</span>など、開発者が実装するために必要なものを決めます。<br><br>あるグループ内で写真を共有するためのWebアプリケーション開発について、仕様と設計を考えてみましょう。この場合考えられる仕様は、「一般ユーザーは写真を投稿し・閲覧できる」や「管理ユーザーは、会員登録を承認し管理する」などです。<br><br>この仕様に対する概要設計は「投稿画面や一覧画面などのレイアウト」や「一般ユーザーと管理ユーザーの機能の一覧」などです。詳細設計は「ユーザー登録とユーザー管理機能の詳細」や「写真投稿機能の詳細」や「写真テーブルの構成」などになります。",
     "image": "../images/skills/design-specification/illustration.svg",
     "purpose": "仕様をチームで共有できていると、ユーザーがどんな風にアプリケーションを利用する想定なのかを、各メンバーがイメージできるようなります。<br><br>さらに設計もできていれば、機能とその実現方法に認識のズレを生むことがなく、手戻りを抑えながら作業を進めることができるようになるでしょう。<br><br>一方、手戻りが多発すると、アプリケーションが完成しない可能性もありえます。そうならないためにも、仕様で決めるべきものや、設計するべきものについて学びましょう。",
     "sceneId": "team-development",
@@ -710,13 +697,12 @@
     }
   },
   {
-    "test": "test","id":
-  "git",
+    "id": "git",
     "title": "Git",
-    "subTitle": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
-    "description": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
-    "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "subTitle": "バージョン管理システムを使ってチームでコードを共有しよう",
+    "description": "仕様と設計で作りたいものを明確にしたら、実際にチームで開発を始めます。チーム開発ではコードを共有することが必要です。そのツールであるGitについて学びましょう。",
+    "thumbnail": "../images/skills/git/thumbnail.png",
+    "overview": "Gitはプログラムコードなどの変更履歴を管理する<span data-type='term'>バージョン管理システム</span>です。バージョン管理システムには他にも種類はありますが、ここでは近年もっとも一般的なGitについて説明します。<br><br>Gitを使うと、コードの修正者や日時などの変更履歴を確認できるようになります。その結果、問題が起きたときに、元の状態に戻したり正しく修正したりできます。<br><br>Gitのコード管理には<span data-type='term'>リモートリポジトリ</span>と呼ばれるクラウド上のコードと、<span data-type='term'>ローカルリポジトリ</span>と呼ばれる自分のPC上のコードが存在します。また、<span data-type='term'>ブランチ</span>と呼ばれる機能で複数の開発者が同時にコードを編集することが可能となっています。<br><br>ブランチを使った開発の流れを見ていきましょう。<br>まず、開発者は自分のローカルリポジトリで作業用のブランチを作成します。コードの編集が終わったら、そのブランチをリモートリポジトリで共有します。最後に、<span data-type='term'>マージ</span>機能を使ってリモートリポジトリ上のメインとなるブランチに集約していきます。<br><br>マージする時に<span data-type='term'>コンフリクト</span>と呼ばれる、編集したコードの行が重なる問題が発生する場合がありますが、Gitの機能を使って正しく対応することが可能になっています。",
     "image": "../images/skills/git/illustration.svg",
     "purpose": "Gitは開発の効率化や不具合の迅速な修正など、コードをバージョン管理をするメリットは強力なため、多くの現場で使われています。Gitが使われている現場では、Gitが使えないと開発に加われないため、必須のスキルと言えるでしょう。<br><br>新しいメンバーが変更履歴から過去のコードの経緯を確認できたり、他のメンバーの作業状況を把握してフォローをしたりと、チーム開発において応用が効くスキルです。<br><br>GitHubなどのバージョン管理サービスを利用すればコードのレビューなども簡単に行うことができるようになります。<br><br>チーム開発をスムーズに進めるために必須のスキルであるGitについて学んでみましょう。",
     "sceneId": "team-development",
@@ -766,13 +752,12 @@
     }
   },
   {
-    "test": "test","id":
-  "testing",
+    "id": "testing",
     "title": "テスト",
-    "subTitle": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
-    "description": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
-    "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "subTitle": "不具合の少ない高品質なコードにしよう",
+    "description": "アプリケーションの安定稼働には、不具合の少ない高品質なプログラムコードが不可欠です。コードを作成したら、都度その部分のテストを実施して行きましょう。また、コードを修正した場合にも必ずテストを実施する習慣を身に付けて、チームで品質の高いアプリケーションを開発できるようになりましょう。",
+    "thumbnail": "../images/skills/testing/thumbnail.png",
+    "overview": "テストとはアプリケーションが想定どおりに動くことを確認するプロセスです。「期待する動き」をまとめた<span data-type='term'>テストケース</span>をもとに、「実際の動き」を確認します。<br><br>テストの範囲や目的は開発フェーズによって異なります。通常は大きく3つの段階（<span data-type='term'>単体テスト</span>、<span data-type='term'>結合テスト</span>、<span data-type='term'>システムテスト</span>）に分けて行います。単体テストはメソッド単位、結合テストは機能単位と、小さな粒度からテストを始めます。システムテストでは実際にユーザが利用することを想定して、アプリケーション全体で動作を確認します。<br><br>単体テストはアプリケーションの最小単位でテストを行うため、テスト全体の土台とも言えます。このタイミングでバグを発見して修正できるようになると、アプリケーションの品質が大きく向上します。テストは一度行うだけでなく、コードの変更に合わせて継続して繰り返し行うことが重要です。<br><br>テストには2つの実施方法があります。1つは人の手で確認する<span data-type='term'>手動テスト</span>です。もう1つは自動化ツールなどにテストケースを設定して行う<span data-type='term'>自動テスト</span>です。近年、ますますアプリケーションの規模が大きくなり、変更も頻繁に発生するようになってきています。そのため、各フェーズのテストには自動化ツールやフレームワークが活用されることが多いです。",
     "image": "../images/skills/testing/illustration.svg",
     "purpose": "チーム開発では、異なる開発者のコードが影響してバグが生まれたり、コードの変更によって予期せぬ影響が発生したりすることがあります。<br><br>テストを継続的に実施すると、そのような不具合をすぐに見つけられるようになります。既存のコードに変更を加えるような開発も安心して行えるようになるので、開発のスピードが向上することでしょう。<br><br>また、適切なテストケースの作成方法を学ぶと、不具合を抑えるために開発で注意することを意識できようになります。<br><br>アプリケーションの開発現場では機能追加や変更のたびにテストを行います。自動テストについて是非学んでおきましょう。",
     "sceneId": "team-development",
@@ -831,13 +816,12 @@
     }
   },
   {
-    "test": "test","id":
-  "refactoring",
+    "id": "refactoring",
     "title": "リファクタリング",
-    "subTitle": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
-    "description": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
-    "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "subTitle": "開発を進めやすいコードに改良しよう",
+    "description": "継続的に機能追加を行うためには、開発を進めていく中で複雑になった設計やコードを随時改善していく必要があります。リファクタリングをして、コードを読みやすく、修正しやすく、バグも発見しやすい状態を維持しましょう。",
+    "thumbnail": "../images/skills/refactoring/thumbnail.png",
+    "overview": "リファクタリングとは、プログラムの機能を保ちながら理解しやすいコードに改良することです。具体的には、重複したコードを整理したり、変数や関数の命名を分かりやすくしたりすることなどが挙げられます。<br><br>リファクタリングを行う場合は、プログラムの機能を壊さない慎重さが必要です。自動テストを都度実行しながら、徐々に範囲を広げていくのが良いでしょう。<br><br>リファクタリングを行うタイミングは、専用に作業期間を設ける場合や、通常の開発フロー中で行う場合など、さまざまです。いずれにしても、現状を把握するために調査や分析を行い、どこまでリファクタリングを行うか目標を定める必要があるでしょう。<br><br>リファクタリングの目的や方法と実施範囲を確認し、チーム内で相談しながら進めましょう。",
     "image": "../images/skills/refactoring/illustration.svg",
     "purpose": "見通しの良いコードを書く技術は、チーム開発において重要なスキルです。<br><br>初期のプロダクト開発や仕様変更の激しい開発現場では、とりあえず動くものを作ることが優先され、コードの読みやすさは後回しにされやすいです。このような状態が続くとコードの品質が徐々に下がり、既存のコードに影響を与えずに機能を追加することが難しくなります。<br><br>リファクタリングを定期的に行うと、コードが読みやすくなり、バグも発見しやすくなるため、開発コストの削減や長期的な開発速度の向上につながります。<br><br>改善したくても、動いているコードを変更することが怖く、リファクタリングできない開発現場がよくあります。リファクタリング手法についてきちんと学び、恐れずにコードの改善に取り組めるようになりましょう。",
     "sceneId": "team-development",
@@ -877,13 +861,12 @@
     }
   },
   {
-    "test": "test","id":
-  "server-configuration",
+    "id": "server-configuration",
     "title": "サーバー構成",
-    "subTitle": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
-    "description": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
-    "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "subTitle": "アプリケーションの公開に向けてサーバーの準備をしよう",
+    "description": "ユーザーに安定したプロダクトを届けるには、サーバーにアプリケーションを配置してアクセスできるようにするだけでなく、サーバーのスペックや台数などの構成を決める必要があります。プロダクトの公開に向けて、サーバーを準備できるようになりましょう。",
+    "thumbnail": "../images/skills/server-configuration/thumbnail.png",
+    "overview": "サーバーとはクライアントの要求に対してさまざまな機能を提供する、ネットワークに繋がったコンピューターのことです。サーバーがクライアントとやり取りするには、ネットワークで繋がっている必要があります。<br><br>サーバーには、<span data-type='term'>Webサーバー</span>、<span data-type='term'>アプリケーションサーバー</span>、<span data-type='term'>データベースサーバー</span>といった役割があります。この3つで構成されているWebアプリケーションの構成を<span data-type='term'>Web3層構成</span>と呼びます。<br><br>各サーバーには、役割に応じたサーバーソフトウェアがインストールされています。Webサーバーの<span data-type='term'>サーバーソフトウェア</span>には<span data-type='term'>Apache</span>や<span data-type='term'>Nginx</span>などがあります。同様に、アプリケーションサーバーには<span data-type='term'>Puma</span>や<span data-type='term'>Tomcat</span>、データベースサーバーには<span data-type='term'>MySQL</span>や<span data-type='term'>PostgreSQL</span>などがあります。開発環境では、1台のコンピューターに3つのサーバーソフトウェアをインストールする場合もありますが、本番環境ではそれぞれ別のコンピューターを用意するのが一般的です。<br><br>ユーザーがWebアプリケーションにアクセスしたとき、サーバーではどのような処理が行われているか見てみましょう。<br>まずは、トップページのような静的なページについてです。この場合はWebサーバーがリクエストを受け取り、用意されたHTMLファイルをレスポンスします。<br>次に、ログイン後のユーザー情報のように、ユーザー毎に表示内容が変わる動的なページについてです。この場合は、Webサーバーを経由してアプリケーションサーバーへリクエストが届きます。アプリケーションサーバーは必要に応じてデータベースサーバーからデータを取得して計算を行い、その結果をWebサーバー経由でレスポンスします。",
     "image": "../images/skills/server-configuration/illustration.svg",
     "purpose": "Webアプリケーションの公開のために必要となるサーバーの役割やスペック、調達方法を決められるようになりましょう。<br><br>WebアプリケーションはWeb3層構成の上で運用する形が一般的ですが、システムの規模や目的によっては<span data-type='term'>メールサーバー</span>や<span data-type='term'>プロキシサーバー</span>なども組み合わせる必要があります。必要なサーバーの役割の決定は、全体の仕様と機能の設計ができてから行います。<br><br>各サーバーのスペックや台数を決めるためには、想定されるユーザー数や必要となる処理能力を試算する必要があります。基本的なスペックの基準となる<span data-type='term'>メモリ</span>や<span data-type='term'>CPU</span>、<span data-type='term'>ストレージ</span>についても押さえておきましょう。<br><br>それぞれのサーバーの役割を良く理解し、アプリケーションの公開に向けて必要なサーバー構成を実現できるようになりましょう。",
     "sceneId": "releasing-your-application",
@@ -938,13 +921,12 @@
     }
   },
   {
-    "test": "test","id":
-  "networking",
+    "id": "networking",
     "title": "ネットワーク",
-    "subTitle": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
-    "description": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
-    "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "subTitle": "サービス公開に必要な通信の仕組みを知ろう",
+    "description": "役割に応じて複数のサーバーを用意したあとは、サーバー同士を連携させ、実際にユーザーからアクセスできるように設定する必要があります。HTTPやDNSの知識だけでなく、どういう仕組みでサーバーが通信しているのかを学んで、ユーザーの利用に耐えられる環境を用意しましょう。",
+    "thumbnail": "../images/skills/networking/thumbnail.png",
+    "overview": "ネットワークとは、コンピュータなどの機器が相互に接続してデータ通信を行う仕組みのことです。インターネットはネットワークの一部であり、<span data-type='term'>プロトコル</span>という多重構造の通信技術を基本としています。インターネット上の通信は、<span data-type='term'>TCP/IPプロトコル</span>に基づいてやりとりされます。<br><br>IPアドレスには、インターネット上で住所の役割を果たす<span data-type='term'>グローバルIPアドレス</span>と、システム内部で各サーバーが通信するために割り当てられる<span data-type='term'>ローカルIPアドレス</span>があります。インターネット上のWebアプリケーションは、1つ以上のグローバルIPアドレスを持ってます。<br><br>Webアプリケーションを構成するネットワークは、ユーザーからアクセスできる開かれた部分と、内部に閉じた部分の<span data-type='term'>LAN（ローカルエリアネットワーク）</span>に分けて管理することが重要です。そうすることで、外部からの不要なアクセス経路を遮断してセキュリティリスクを減らすことができます。<br><br>例えばWeb3層構成の場合、WebサーバーはWebアプリケーションをインターネットに繋げて、ユーザからのアクセスを可能にします。アプリケーションサーバーやデータベースサーバーはユーザーから直接アクセスできないように、LANに限定するなどの設定が必要となります。",
     "image": "../images/skills/networking/illustration.svg",
     "purpose": "ユーザーがWebアプリケーションを使えるようにするために、クライアントやサーバー間で通信が行えるネットワークを設定する必要があります。ネットワークに関する知識があれば自信を持って設定ができるでしょう。<br><br>知っておくべきこととしては、グローバルIPアドレスとローカルIPアドレスの仕組みや<span data-type='term'>NAT変換</span>、プロトコルと<span data-type='term'>ポート番号</span>の関係性、<span data-type='term'>ルーティング</span>の仕組みなどが挙げられます。<br><br>本格的なプロダクトを公開するために、ネットワークについて学びましょう。",
     "sceneId": "releasing-your-application",
@@ -1021,13 +1003,12 @@
     }
   },
   {
-    "test": "test","id":
-  "cloud-services",
+    "id": "cloud-services",
     "title": "クラウドサービス",
-    "subTitle": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
-    "description": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
-    "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "subTitle": "クラウド環境にプロダクトを公開しよう",
+    "description": "サーバーなどを含めたプロダクトの公開に必要な環境はクラウドサービスを利用することで、安価で簡単に用意することができます。クラウドサービスを利用してプロダクトを公開しましょう。",
+    "thumbnail": "../images/skills/cloud-services/thumbnail.png",
+    "overview": "クラウドサービスとはネットワークを経由してサーバーやソフトウェアなどを利用できるサービスの総称です。その中には開発したWebアプリケーションを公開するためのサービスがあります。具体的にはAmazonが提供している<span data-type='term'><a href='https://aws.amazon.com/' target='_blank' rel='noopener noreferrer'>アマゾン ウェブ サービス（AWS）</a></span>やMicrosoftの<span data-type='term'>Azure</span>、Googleの<span data-type='term'>Google Cloud Platform（GCP）</span>などです。<br><br>これらのクラウドサービスは公開に必要なサービスだけではなく、ストレージやデータベースなど、さまざまなサービスを提供しています。<br><br>サーバーやネットワークの設定は、クラウドサービスが提供している管理画面を使って行います。管理画面を扱うには、サーバーやネットワークの基本的な知識を持っていることが前提となります。",
     "image": "../images/skills/cloud-services/illustration.svg",
     "purpose": "クラウドサービスが普及する以前、本格的なプロダクトを公開するためにはサーバーやネットワーク機器を購入する必要がありましたが、初期費用以外にもメンテナンスなどの維持費用がかかる点が課題でした。<br><br>クラウドサービスを利用すれば、これらの諸費用を抑えることが可能です。プロダクトの公開時には、自分でサーバーを用意する必要がなく、さらに最小の構成でサービスを始められます。運用時には、CPUやメモリの不足を解消するリソースの追加や、故障した機器の入れ替えなど、必要となった時に迅速に対応できます。<br><br>クラウドサービスで運用しやすい環境を構築し、本格的なプロダクトを公開しましょう。",
     "sceneId": "releasing-your-application",
@@ -1087,13 +1068,12 @@
     }
   },
   {
-    "test": "test","id":
-  "web-security",
+    "id": "web-security",
     "title": "Webセキュリティ",
-    "subTitle": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
-    "description": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
-    "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "subTitle": "安全なサービスを届けよう",
+    "description": "脆弱性のあるWebアプリケーションをインターネット上で公開すると、攻撃の対象となりユーザー情報の流出などの恐れがあります。ユーザーに安心して使ってもらえるプロダクトを、自信を持って公開するためにWebアプリケーションのセキュリティについて学んでおきましょう。",
+    "thumbnail": "../images/skills/web-security/thumbnail.png",
+    "overview": "世界中の人が利用できるように、早くプロダクトを公開したいと思うかも知れません。しかし、セキュリティ対策が不十分なまま公開すると、継続性に関わる問題を招く恐れがあります。例えば、データの漏洩やシステムへの侵入により情報を破壊されたり、<span data-type='term'>マルウェア</span>を設置されたり、他サイトへの攻撃の<span data-type='term'>踏み台</span>に利用されたりなどが挙げられます。<br><br>このような問題を起こしうるシステムの欠陥を<span data-type='term'>脆弱性</span>や<span data-type='term'>セキュリティバグ</span>と呼びます。<br><br>Webアプリケーションに対する攻撃には<span data-type='term'>SQLインジェクション</span>や<span data-type='term'>ディレクトリ・トラバーサル</span>などさまざまな手法があります。脆弱性の潜む部分を理解して、安全性に配慮しながら開発することで、Webアプリケーションを公開するリスクを最小限に抑えることができます。<br><br>また、Webアプリケーションだけでなくサーバーやネットワークなどに関わる脆弱性についての対応も重要です。例えばサーバーにおいてはOSやサーバーソフトウェアのアップデートや、ログインアカウントの適切な運用などを行い、不正アクセスを防ぎます。また、ネットワークにおける対策は、通信データの<span data-type='term'>暗号化</span>や<span data-type='term'>ファイアーウォール</span>の導入などが挙げられます。",
     "image": "../images/skills/web-security/illustration.svg",
     "purpose": "ユーザーが安心してWebアプリケーションを使い続けられるようにすることは、開発者にとって重要な責務です。<br><br>もしセキュリティ対策が不十分なWebアプリケーションを公開してしまうと、個人情報漏洩によりユーザーが被害を被るリスクがあります。そのようなアプリケーションでは、ユーザーは安心して使うことができません。<br><br>ユーザーが安心して使い続けられるWebアプリケーションを作るために、セキュリティ対策について学びましょう。",
     "sceneId": "releasing-your-application",
@@ -1152,13 +1132,12 @@
     }
   },
   {
-    "test": "test","id":
-  "ci-cd",
+    "id": "ci-cd",
     "title": "CI/CD",
-    "subTitle": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
-    "description": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
-    "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "subTitle": "継続的にプロダクトを改善しユーザーに素早く届けよう",
+    "description": "追加したい機能や改善したい問題があったときに、素早く開発してプロダクトに取り込むことができれば、最新のプロダクトを安定してユーザーに届けることができます。CI/CDの仕組みを取り入れると、テストやビルド、デプロイなど、別々で行なっていた作業を自動化できます。それらを継続的に行うことで開発の質とスピードを向上させましょう。",
+    "thumbnail": "../images/skills/ci-cd/thumbnail.png",
+    "overview": "CI/CDとはContinuous Integration（継続的インテグレーション）とContinuous Delivery（継続的デリバリー）の略称です。継続的インテグレーションとは、ソフトウェアの変更を常にテストしながら統合することを指します。継続的デリバリーとは自動で本番環境にリリースする開発手法のことです。CI/CDの仕組みがあると、<span data-type='term'>テスト</span>・<span data-type='term'>ビルド</span>・<span data-type='term'>デプロイ</span>というフローを自動化することができます。<br><br>CI/CDの仕組みを準備するには、専用のツールとGitなどのバージョン管理システムを連携させる必要があります。専用のツールは<span data-type='term'>Jenkins</span>や<span data-type='term'>CircleCI</span>などが代表的です。これらのツールはバージョン管理システムへのコミットを検知し、テスト・ビルド・デプロイを自動で行います。また、各フェーズで失敗した時に通知する仕組みを作ることで、開発者は素早く修復に取り組むことができます。<br><br>このようにCI/CDは、小さく開発とリリースを繰り返すアジャイル開発と相性の良い手法です。",
     "image": "../images/skills/ci-cd/illustration.svg",
     "purpose": "CI/CDを取り入れることで、開発者の生産性向上やアプリケーションの品質向上が期待できます。<br><br>サービスのリリース後も、機能の追加や不具合の修正は頻繁に行われます。CI/CDの環境があると、テスト・ビルド・デプロイの自動実行と、それらの成否の通知のおかげで、品質を保ちつつ素早く開発できます。<br><br>品質を担保しつつ開発スピードを高めるためにCI/CDについて学びましょう。",
     "sceneId": "continuous-delivery",
@@ -1198,13 +1177,12 @@
     }
   },
   {
-    "test": "test","id":
-  "data-analytics-fundamentals",
+    "id": "data-analytics-fundamentals",
     "title": "データ分析基盤",
-    "subTitle": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
-    "description": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
-    "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "subTitle": "プロダクトの利用状況を把握し改善に役立てよう",
+    "description": "システムから得られる様々なデータを収集し分析することで、よく利用されるコンテンツやユーザー属性毎の行動傾向などプロダクトの状況を把握できます。プロダクトの状況を把握できればシステムの問題点も明確となり、改善に向けた取り組みを行えるため、より良いユーザー体験を届けられます。データ収集と分析の仕組みをシステムに取り入れて、プロダクトの改善に取り組みましょう。",
+    "thumbnail": "../images/skills/data-analysis-platform/thumbnail.png",
+    "overview": "Webアプリケーションをリリースしたら、ユーザーのサービス利用状況やシステムの稼働状況を知るために、データの分析を行いましょう。分析することで、アプリケーションの改善点やシステムの問題点を把握することが可能です。<br><br>データを分析して改善点や問題点を把握する例をみてみましょう。あるECサイトにおいて、特定の商品ジャンルの売り上げが極端に少ないという問題があったとします。何もデータが無ければ、問題の原因が商品の魅力の低さにあるのか、ユーザーを誘致できていないことにあるのか、はたまたシステムにあるのかなど、絞ることが難しいです。<br><br>もし、該当する商品の<span data-type='term'>ページビュー</span>が高いというデータがあれば、メニュー構成を分かりやすくしたり、レコメンド機能のパラメータを見直したりと、ページ内に絞った改善策を打つことができます。また、<span data-type='term'>離脱率</span>が高いというデータがあれば、離脱率の高い時間帯での<span data-type='term'>レスポンス時間</span>を調べ、システム性能に問題がないか確認することもできるでしょう。",
     "image": "../images/skills/data-analysis-platform/illustration.svg",
     "purpose": "サービスに対するユーザーの不満を開発者が察知して改善することは簡単ではありません。しかし、様々なデータを分析して問題を把握できるようになれば、それを改善してユーザー体験を向上させることが可能です。<br><br>多くのユーザーに満足してもらえるようなサービスにするために、分析基盤は欠かせないでしょう。<br><br>まずは、データ分析基盤について学んで、現状を把握するために必要なデータを揃える必要があります。データが揃ったら分析を行い、仮説・検証を回せるようになりましょう。",
     "sceneId": "continuous-delivery",
@@ -1240,13 +1218,12 @@
     }
   },
   {
-    "test": "test","id":
-  "performance",
+    "id": "performance",
     "title": "パフォーマンス",
-    "subTitle": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
-    "description": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
-    "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "subTitle": "ユーザー体験を向上させよう",
+    "description": "プロダクトを改善するポイントはエラーやバグだけではありません。パフォーマンスに問題があると、Webページの読み込みや動作に時間がかかりユーザー体験の悪化につながってしまいます。パフォーマンスを改善してプロダクトを快適に使ってもらえるようにしましょう。",
+    "thumbnail": "../images/skills/performance/thumbnail.png",
+    "overview": "パフォーマンスとは、Webアプリケーションが限られたシステムリソースで、効率よく機能しているかを示すものです。Webアプリケーションのパフォーマンスは、ユーザーの操作に対する<span data-type='term'>応答速度</span>で測られます。パフォーマンスが良ければページの表示やボタンの反応に時間がかからず、優れたユーザ体験を提供することが可能です。<br><br>パフォーマンス低下の原因は、処理するデータ量の増加やそれに伴う空きメモリの不足、効率の悪い計算処理などさまざまです。これらを解決するには、まずは現状を正しく知るための計測が必要です。計測方法には、開発者ツールのネットワーク監視やその他診断ツールを使う方法、プログラムに計測用コードを埋め込む方法などがあります。<br><br>特定のページや機能の応答時間が遅かった場合、プログラムのどこかに主な原因が存在していると考えられます。この様なパフォーマンス低下に関わる箇所や原因を<span data-type='term'>ボトルネック</span>といいます。パフォーマンスを改善するには、このボトルネックを突き止めて、適切に解決する必要があります。",
     "image": "../images/skills/performance/illustration.svg",
     "purpose": "Webアプリケーションのパフォーマンスを正しく把握して、必要に応じて改善していくことは、ユーザーに快適な環境を提供するために必要なことです。<br><br>Webアプリケーションを公開した直後はパフォーマンスに問題が無かったとしても、ユーザー数の増加や機能追加などにより徐々にパフォーマンスは低下するものです。問題をいち早く見つけるには、パフォーマンスの目標値を定めて常に計測しておくことが必要です。<br><br>また、見つかった問題の難易度が高く、すぐには改善できない場合もあります。しかし、問題が積み重なると、ボトルネックの特定が難しくなるので、改善しないまでも調査については随時行うことが望まれます。<br><br>まずは、パフォーマンスの計測方法と主な改善の方法を学びましょう。",
     "sceneId": "continuous-delivery",
@@ -1295,13 +1272,12 @@
     }
   },
   {
-    "test": "test","id":
-  "scalability",
+    "id": "scalability",
     "title": "スケーラビリティ",
-    "subTitle": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
-    "description": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
-    "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "subTitle": "ユーザー数が増えても動き続ける仕組みを作ろう",
+    "description": "サーバーの故障やユーザー数増加などにより負荷が上がると、性能の低下やサービスの一時的な停止などの問題が発生する事があります。安定してプロダクトを届けるために、アプリケーションやデータベース、ハードウェアなどを拡張できる状態にしましょう。",
+    "thumbnail": "../images/skills/scalability/thumbnail.png",
+    "overview": "スケーラビリティとは、ユーザー数の増加に伴う負荷の増加に対し、システムが適切に対応できる能力のことです。スケーラビリティの高いシステムを作るには、負荷に応して処理能力を上げられる構成である必要があります。<br><br>処理能力を高める代表的な手法として<span data-type='term'>スケールアップ</span>と<span data-type='term'>スケールアウト</span>があります。<br><br>スケールアップとは、サーバーのCPUやメモリなどのリソースを増強することでサーバー単体の処理能力を向上させる手法です。スケールアウトとは、サーバーの台数を増やして処理を分散させ、システム全体の処理能力を向上させる手法です。<br><br>スケールアウトの場合、複数のサーバーにリクエストを分散させるために<span data-type='term'>ロードバランサー</span>の導入などが推奨されます。また、データベースサーバーを複数構成にした場合、データを同期する仕組みも必要となります。<br><br>スケールアウトとスケールアップは目的に応じて使い分けられます。例えば、負荷の高い時間帯だけ処理能力を向上させたい場合はスケールアウトを行います。一方、スケールアップは分散できない処理において、サーバーの処理能力が不足する場合に実施します。<br><br>クラウドサービスを使えば、アクセス数の増減に応じてサーバー数やリソース量を自動で調整することも可能です。",
     "image": "../images/skills/scalability/illustration.svg",
     "purpose": "スケーラビリティの高いシステムを構築できるようになれば、ユーザー数が急激に増えてもサーバーが落ちることはなく、サービスを提供し続けることができます。<br><br>将来的なサービスの成長を見越して、<span data-type='term'>スケーリング</span>の仕組みを取り入れたシステムの構築を目指しましょう。",
     "sceneId": "continuous-delivery",
@@ -1340,13 +1316,12 @@
     }
   },
   {
-    "test": "test","id":
-  "fault-tolerance",
+    "id": "fault-tolerance",
     "title": "耐障害性",
-    "subTitle": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST",
-    "description": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST、全てのWebページでHTMLとCSSは使われています。あなたの頭の中にある考えを表現したり発信したりする手段を手に入れましょう。",
-    "thumbnail": "../images/skills/html-and-css/thumbnail.png",
-    "overview": "TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST。<br><br>HTMLやCSSが書かれたファイルをWebサーバー上に置くことで、全世界の人にWebページを公開することができます。<br><br>HTMLはWebページに表示する文字や画像などの内容とそれらの構造を指定する役割があり、さまざまな<span data-type='term'>タグ</span>を使用して記述します。<br><br>CSSは色やレイアウトなど見た目を装飾する役割があり、HTMLで記述した要素に対して<span data-type='term'>プロパティ</span>で見た目を指定します。",
+    "subTitle": "プロダクトの問題に対応できるようになろう",
+    "description": "障害の発生により、たびたびサービスに悪影響が出るシステムでは、ユーザーはサービスを使えないストレスを抱え、開発者は障害の発生に怯える日々を送ることになります。障害が発生してもサービスの停止を回避できるようなシステムを作れるようになりましょう。",
+    "thumbnail": "../images/skills/fault-tolerance/thumbnail.png",
+    "overview": "サービスを止めることなく提供し続けるためには、システムの一部に障害が発生しても処理を継続できる仕組みを取り入れる必要があります。また、障害の発生頻度を減らすことや、障害が発生しても迅速に復旧できることなども重要です。このようなシステムを耐障害性の高いシステムと呼びます。<br><br>システムの一部に障害が発生しても処理を継続させるには冗長化が有効です。<span data-type='term'>冗長化</span>とは、同じ役割のサーバーを複数台用意し、1台故障しても他のサーバーで処理を継続できる構成にすることです。複数台のサーバーで処理を行うので、処理能力の向上も兼ねています。<br><br>障害の発生頻度を減らすには予防保守が効果的です。具体的には、メモリやプロセスを監視して障害の予兆の時点で事前に防ぐことや、データベースのパフォーマンス向上のためにインデックス再編成すること、老朽化したサーバーなどの機器を交換することなどが挙げられます。<br><br>障害の復旧としては、<span data-type='term'>ログファイル</span>から障害原因を特定し、できるだけ迅速に対応することが肝心です。このとき、調査から復旧までの作業手順を事前に取り決めておくとスムーズに進めることができます。<br><br>このように対策を行うことでシステムは障害に強くなり、結果としてサービスを安定して提供できるようになります。",
     "image": "../images/skills/fault-tolerance/illustration.svg",
     "purpose": "障害によるサービス停止を起こしにくいシステムを構築できれば、ユーザーに安定してサービスを届けられます。<br><br>Webアプリケーションをリリースすると、ユーザー数の増加に伴い、サーバー負荷やデータ量が増加します。次第にレスポンスが悪くなり、これが積み重なると障害へ発展する可能性があります。しかし、全ての障害要因を未然に取り除くことは困難なため、開発者は障害の発生を想定して様々な準備を行う必要があります。<br><br>冗長化されたシステムを構築して、障害対応中もユーザーにサービスを提供し続けられるようにしましょう。さらに予防保守を取り入れて、障害の発生頻度をできるだけ下げることも大切です。<br><br>障害に強いシステムを構築するための方法について学んでいきましょう。",
     "sceneId": "continuous-delivery",

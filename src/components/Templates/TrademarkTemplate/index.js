@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Seo from '../../Atoms/Seo'
 import Footer from '../../Organisms/Footer'
 import Header from '../../Organisms/Header'
 import styles from './styles.module.scss'
@@ -10,7 +9,7 @@ import Txt from '../../Atoms/Txt'
 import {graphql, useStaticQuery} from 'gatsby'
 import Main from '../../Atoms/Main'
 
-const TrademarkTemplate = ({location}) => {
+const TrademarkTemplate = () => {
   const data = useStaticQuery(graphql`
     {
       allTrademarksJson(sort: {fields: ownership}) {
@@ -24,7 +23,6 @@ const TrademarkTemplate = ({location}) => {
 
   return (
     <div>
-      <Seo title='商標について' slug={location.pathname} lang='ja' />
       <Header />
       <Main>
         <Container>

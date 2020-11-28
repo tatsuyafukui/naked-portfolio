@@ -7,7 +7,6 @@ import Container from '../../Atoms/Container'
 import Link from '../../Atoms/Link'
 import Txt from '../../Atoms/Txt'
 import {HighlightedHeading} from '../../Atoms/Heading'
-import Header from '../../Organisms/Header'
 import Footer from '../../Organisms/Footer'
 import SkillShareSection from '../../Organisms/SkillShareSection'
 import {graphql} from 'gatsby'
@@ -24,13 +23,7 @@ const SkillTemplate = ({data, location}) => {
 
   return (
     <>
-      <Seo
-        title={skill.title}
-        description={skill.overview}
-        image={skill.thumbnail.publicURL}
-        slug={location.pathname}
-        lang='ja'
-      />
+
       <Main>
         <SkillTitle skill={skill} />
         <Container>
@@ -102,7 +95,6 @@ export const query = graphql`
       }
     }
     skillsJson(fields: {slug: {eq: $slug}}) {
-      test
       id
       overview
       purpose
