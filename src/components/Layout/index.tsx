@@ -59,7 +59,6 @@ const Index: React.FC = ({ children }: any) => {
 export const SceneLayout: React.FC = ({ children }: any) => {
   return (
     <>
-      <Header />
       <div
         style={{
           margin: `0 auto`,
@@ -68,7 +67,6 @@ export const SceneLayout: React.FC = ({ children }: any) => {
       >
         <main>{children}</main>
       </div>
-      <Footer />
     </>
   );
 };
