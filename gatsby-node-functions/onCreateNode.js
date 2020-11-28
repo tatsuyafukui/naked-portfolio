@@ -79,7 +79,7 @@ module.exports = onCreateNode
 const fetchOgp = async url => {
   return await ogs({url}, (error, results) => {
     if (error) {
-      throw Error('OGP取得のURLが不適切です')
+      // throw Error('OGP取得のURLが不適切です')
     }
     return results
   })
