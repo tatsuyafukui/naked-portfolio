@@ -17,7 +17,6 @@ const SceneListTemplate = ({scenes, location}) => (
       slug={location.pathname}
       lang='ja'
     />
-    <Header />
     <Main className={styles.main}>
       <Container>
         <Heading level={1} visualLevel={2}>

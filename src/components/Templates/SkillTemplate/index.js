@@ -31,7 +31,6 @@ const SkillTemplate = ({data, location}) => {
         slug={location.pathname}
         lang='ja'
       />
-      <Header />
       <Main>
         <SkillTitle skill={skill} />
         <Container>
