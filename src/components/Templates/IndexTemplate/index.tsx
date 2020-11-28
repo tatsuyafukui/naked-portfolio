@@ -26,10 +26,7 @@ const IndexTemplate: React.FC<IProps> = props => {
           <div className={style.flex}>
             <div className={style.topSectionLeft}>
               <Heading level={Level.h1}>目標へ向かう学習を</Heading>
-              <Txt>Journeyはあなたが自信をもって目標へ向かうための学習ロードマップです</Txt>
-            </div>
-            <div className={style.topSectionRight}>
-              <Img fixed={props.mainVisual} />
+              <Txt>Journeyはあなたが自信をもって目標へ向かうための学習ロードマップですaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</Txt>
             </div>
           </div>
         </div>

@@ -13,7 +13,6 @@ const Index: React.FC = ({ children }: any) => {
       <ThemeContext.Consumer>
         {theme => (
           <div className={theme.dark ? style.dark : style.light}>
-            <Header/>
             <ThemeContext.Consumer>
               {theme => (
                 <div
@@ -50,7 +49,6 @@ const Index: React.FC = ({ children }: any) => {
             <div>
               <main>{children}</main>
             </div>
-            <Footer/>
           </div>
         )}
       </ThemeContext.Consumer>
