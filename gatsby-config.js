@@ -7,13 +7,6 @@ module.exports = {
     siteURL: 'https://journey.prog-8.com',
   },
   plugins: [
-    {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        trackingId: 'UA-52935465-1',
-        cookieFlags: 'SameSite=None; Secure',
-      },
-    },
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-source-filesystem',
