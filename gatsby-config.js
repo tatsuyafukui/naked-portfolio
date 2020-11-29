@@ -9,6 +9,14 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: 'journey-deploy-test',
+        protocol: "https",
+        hostname: "d1j0casclmtpq3.cloudfront.net",
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',

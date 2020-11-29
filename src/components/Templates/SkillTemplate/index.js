@@ -20,7 +20,7 @@ const SkillTemplate = ({data, location}) => {
   const skill = data.skillsJson
   const scene = data.skillsJson.scene
   const currentURL = data.site.siteMetadata.siteURL + location.pathname
-
+  console.log(skill.first.split(' '))
   return (
     <>
 
@@ -95,6 +95,7 @@ export const query = graphql`
       }
     }
     skillsJson(fields: {slug: {eq: $slug}}) {
+      first
       id
       overview
       purpose
